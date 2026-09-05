@@ -1,0 +1,20 @@
+{
+  "id": "LEG-BL2021-971-HIST-3RD",
+  "path": "bytes/LEG-BL2021-971-HIST-3RD.bin",
+  "sha256": "7dba928f467c4c3f8f4d98617a583e7a20bd3dd8065188b9fc7adc69ebde1b19",
+  "bytes": 48075,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25668715&GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7",
+  "final_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25668715&GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7",
+  "retrieved_at": "2026-09-05T01:19:16+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 37369,
+      "byte_length": 67,
+      "method": "exact-bytes",
+      "claim": "Official action text for third reading: O'Connell moved to suspend the rules and offered Amendment No. 2 -- this is the specific sentence LEG-BL2021-971's manifest anchor was written for, and it disagrees with Amendment No. 2's own PDF, which is sponsored by Erin Evans. Video of this reading: https://nashville.legistar.com/Video.aspx?Mode=Granicus&ID1=2173&ID2=100192&Mode2=Video (not transcribed)."
+    }
+  ]
+}

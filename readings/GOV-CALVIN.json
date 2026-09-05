@@ -1,0 +1,20 @@
+{
+  "id": "GOV-CALVIN",
+  "path": "bytes/GOV-CALVIN.bin",
+  "sha256": "97114caefd97da6e6f66350a0046a9e3755459497cc310043a43c59a18a2d165",
+  "bytes": 84073,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services/people/april-calvin",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services/people/april-calvin",
+  "retrieved_at": "2026-09-05T01:19:32+00:00",
+  "wayback_timestamp": "20250315184446",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 5997,
+      "byte_length": 27,
+      "method": "exact-bytes",
+      "claim": "Establishes tenure at a given date. Capture on a schedule so a departure is timestamped against a live prior capture."
+    }
+  ]
+}

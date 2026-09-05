@@ -1,0 +1,22 @@
+{
+  "id": "GOV-MDHA-CA",
+  "path": "bytes/GOV-MDHA-CA.historical-20230510220542.bin",
+  "sha256": "c40f8f65405746f314c42ffbbcf7c7bf361c6ed8153577c230cda6b9b2005fd3",
+  "bytes": 95314,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/social-services/homeless-impact-division/about-homelessness/reports-and-documents",
+  "final_url": "https://www.nashville.gov/departments/social-services/homeless-impact-division/about-homelessness/reports-and-documents",
+  "retrieved_at": "2026-09-05T01:20:49+00:00",
+  "wayback_timestamp": "20230510220542",
+  "historical": true,
+  "live_url_status_at_recovery": 403,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 62040,
+      "byte_length": 37,
+      "method": "exact-bytes",
+      "claim": "Documents the prior state before the role migrated into OHS. This page is legacy and at risk of removal, so archive it first."
+    }
+  ]
+}

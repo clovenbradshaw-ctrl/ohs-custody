@@ -1,0 +1,136 @@
+2026-09-05T00:52:13+00:00  run start  entries=45  archive=False  proxy=False
+2026-09-05T00:52:13+00:00  GOV-MDHA-CA              ANCHOR MISSING  anchor-not-found  sha=73c2b962f250  48562B
+2026-09-05T00:52:16+00:00  GOV-CALVIN               held  sha=97114caefd97  84073B  anchor@5997 via exact-bytes
+2026-09-05T00:52:18+00:00  GOV-MAYOR-DIR            ANCHOR MISSING  anchor-not-found  sha=957580e805b4  101777B
+2026-09-05T00:52:20+00:00  CTB-TACKETT-AUG26        held  sha=1d55cfbb103b  203334B  anchor@165810 via exact-bytes
+2026-09-05T00:52:22+00:00  BNR-WILSON               held  sha=bb45c9223a85  383807B  anchor@120187 via exact-bytes
+2026-09-05T00:52:26+00:00  BNR-MARTINI-LEAVE        held  sha=c55d0f4316d7  381635B  anchor@118057 via exact-bytes
+2026-09-05T00:52:29+00:00  SCN-AUDIT-APPROVED       held  sha=812f66b1ead4  267325B  anchor@172201 via exact-bytes
+2026-09-05T00:52:31+00:00  SCN-WELSCH-FILING        held  sha=5369dc760ea7  262245B  anchor@172721 via exact-bytes
+2026-09-05T00:52:34+00:00  SCN-NONTRAD              held  sha=99124a8a8fe5  270598B  anchor@188465 via exact-bytes
+2026-09-05T00:52:36+00:00  SCN-PATTERSON            held  sha=23d4dfdf7e82  294238B  anchor@207951 via exact-bytes
+2026-09-05T00:52:38+00:00  FOX-OPENBOOK             held  sha=7ba1c107697c  302566B  anchor@45985 via exact-bytes
+2026-09-05T00:52:40+00:00  RT-BULLSHITTERY          held  sha=908cbf9ea630  323062B  anchor@109598 via exact-bytes
+2026-09-05T00:52:42+00:00  MHRC-DETERMINATION       skipped, no url
+2026-09-05T00:52:42+00:00  AUD-PACKET-SEP23         skipped, no url
+2026-09-05T00:52:42+00:00  run end  captured=0  anchor-missing=2  fetch-failed=0  skipped=2
+2026-09-05T01:01:22+00:00  run start  entries=45  archive=False  proxy=False
+2026-09-05T01:01:23+00:00  GOV-MDHA-CA              ANCHOR MISSING  anchor-not-found  sha=0b1fe70e16f5  48562B
+2026-09-05T01:01:26+00:00  GOV-MDHA-CA              RECOVERED from snapshot 20230510220542  sha=c40f8f654057  anchor@62040 via exact-bytes  (live=403)
+2026-09-05T01:01:28+00:00  run end  captured=0  anchor-missing=1  fetch-failed=0  skipped=0
+2026-09-05T01:04:02+00:00  run start  entries=46  archive=False  proxy=False
+2026-09-05T01:04:03+00:00  GOV-OHS-CA-2023          held  sha=7e3c2d425055  99343B  anchor@55264 via exact-bytes
+2026-09-05T01:04:05+00:00  FOX-LAPSE                held  sha=4ee137f3ec93  303157B  anchor@45202 via exact-bytes
+2026-09-05T01:04:07+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=0
+2026-09-05T01:08:03+00:00  run start  entries=46  archive=False  proxy=False
+2026-09-05T01:08:04+00:00  AUD-HID-2023             PDF held  sha=79a8223f0b8b  page 8  text_offset 20225 via normalised-text
+2026-09-05T01:08:07+00:00  LEG-AMD1                 PDF held  sha=997e7142e5db  page 1  text_offset 401 via exact-text
+2026-09-05T01:08:09+00:00  LEG-AMD2                 PDF held  sha=857e0a1ff8bf  page 1  text_offset 807 via exact-text
+2026-09-05T01:08:12+00:00  AUD-CTTE-DEC9            PDF held  sha=b5c44ffde381  page 1  text_offset 180 via exact-text
+2026-09-05T01:08:14+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=0
+2026-09-05T01:09:00+00:00  run start  entries=46  archive=False  proxy=False
+2026-09-05T01:09:00+00:00  LEG-BL2021-971           ANCHOR MISSING  anchor-not-found  sha=a9aa265e40cc  149437B
+2026-09-05T01:09:02+00:00  run end  captured=0  anchor-missing=1  fetch-failed=0  skipped=0
+2026-09-05T01:15:26+00:00  run start  entries=46  archive=True  proxy=False
+2026-09-05T01:15:26+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T01:15:26+00:00  GOV-CALVIN               held  sha=97114caefd97  84073B  anchor@5997 via exact-bytes
+2026-09-05T01:15:28+00:00  GOV-CALVIN               archived 20250315184446 (reused-existing)
+2026-09-05T01:15:30+00:00  run end  captured=1  anchor-missing=0  fetch-failed=0  skipped=0
+2026-09-05T01:16:25+00:00  run start  entries=48  archive=True  proxy=False
+2026-09-05T01:16:25+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T01:16:26+00:00  AUD-HID-2023             PDF held  sha=79a8223f0b8b  page 8  text_offset 20225 via normalised-text
+2026-09-05T01:16:27+00:00  AUD-HID-2023             archived 20260609184709 (reused-existing)
+2026-09-05T01:16:29+00:00  LEG-BL2021-971           ANCHOR MISSING  anchor-not-found  sha=0784b4f47865  149437B
+2026-09-05T01:16:35+00:00  LEG-BL2021-971           not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:16:37+00:00  LEG-BL2021-971-HIST-2ND  held  sha=02a6114f4633  47040B  anchor@36678 via exact-bytes
+2026-09-05T01:16:38+00:00  LEG-BL2021-971-HIST-2ND  not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:16:40+00:00  LEG-BL2021-971-HIST-3RD  held  sha=8ba0b3923a03  48075B  anchor@37369 via exact-bytes
+2026-09-05T01:16:41+00:00  LEG-BL2021-971-HIST-3RD  not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:16:44+00:00  LEG-AMD1                 PDF held  sha=997e7142e5db  page 1  text_offset 401 via exact-text
+2026-09-05T01:16:45+00:00  LEG-AMD1                 archived 20250911045419 (reused-existing)
+2026-09-05T01:16:47+00:00  LEG-AMD2                 PDF held  sha=857e0a1ff8bf  page 1  text_offset 807 via exact-text
+2026-09-05T01:16:47+00:00  LEG-AMD2                 archived 20250911062307 (reused-existing)
+2026-09-05T01:16:50+00:00  AUD-CTTE-DEC9            PDF held  sha=b5c44ffde381  page 1  text_offset 180 via exact-text
+2026-09-05T01:16:50+00:00  AUD-CTTE-DEC9            not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:16:53+00:00  GOV-MDHA-CA              ANCHOR MISSING  anchor-not-found  sha=9b3ca9cf6bac  48562B
+2026-09-05T01:16:58+00:00  GOV-MDHA-CA              not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:17:00+00:00  GOV-OHS-CA-2023          held  sha=6dd5b9ce1742  99343B  anchor@55264 via exact-bytes
+2026-09-05T01:17:01+00:00  GOV-OHS-CA-2023          archived 20260406175323 (reused-existing)
+2026-09-05T01:17:03+00:00  GOV-CALVIN               held  sha=97114caefd97  84073B  anchor@5997 via exact-bytes
+2026-09-05T01:17:03+00:00  GOV-CALVIN               archived 20250315184446 (reused-existing)
+2026-09-05T01:17:05+00:00  GOV-MAYOR-DIR            ANCHOR MISSING  anchor-not-found  sha=d652da1914af  101777B
+2026-09-05T01:17:06+00:00  GOV-MAYOR-DIR            archived 20250731050512 (reused-existing)
+2026-09-05T01:17:08+00:00  CTB-TACKETT-AUG26        held  sha=1d55cfbb103b  203334B  anchor@165810 via exact-bytes
+2026-09-05T01:17:11+00:00  CTB-TACKETT-AUG26        not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:17:13+00:00  BNR-WILSON               held  sha=c56a04b80896  384241B  anchor@120187 via exact-bytes
+2026-09-05T01:17:13+00:00  BNR-WILSON               archived 20260819181048 (reused-existing)
+2026-09-05T01:17:16+00:00  BNR-MARTINI-LEAVE        held  sha=c55d0f4316d7  381635B  anchor@118057 via exact-bytes
+2026-09-05T01:17:16+00:00  BNR-MARTINI-LEAVE        archived 20260210095225 (reused-existing)
+2026-09-05T01:17:18+00:00  SCN-AUDIT-APPROVED       held  sha=812f66b1ead4  267325B  anchor@172201 via exact-bytes
+2026-09-05T01:17:18+00:00  SCN-AUDIT-APPROVED       archived 20260829234815 (reused-existing)
+2026-09-05T01:17:20+00:00  SCN-WELSCH-FILING        held  sha=5369dc760ea7  262245B  anchor@172721 via exact-bytes
+2026-09-05T01:17:21+00:00  SCN-WELSCH-FILING        archived 20260625172930 (reused-existing)
+2026-09-05T01:17:23+00:00  SCN-NONTRAD              held  sha=99124a8a8fe5  270598B  anchor@188465 via exact-bytes
+2026-09-05T01:17:24+00:00  SCN-NONTRAD              archived 20260829234814 (reused-existing)
+2026-09-05T01:17:26+00:00  SCN-PATTERSON            held  sha=23d4dfdf7e82  294238B  anchor@207951 via exact-bytes
+2026-09-05T01:17:26+00:00  SCN-PATTERSON            archived 20260829234815 (reused-existing)
+2026-09-05T01:17:28+00:00  FOX-OPENBOOK             held  sha=f90f49b68543  303792B  anchor@45997 via exact-bytes
+2026-09-05T01:17:29+00:00  FOX-OPENBOOK             archived 20260710005506 (reused-existing)
+2026-09-05T01:17:31+00:00  FOX-LAPSE                held  sha=4ee137f3ec93  303157B  anchor@45202 via exact-bytes
+2026-09-05T01:17:31+00:00  FOX-LAPSE                archived 20250901131757 (reused-existing)
+2026-09-05T01:17:33+00:00  RT-BULLSHITTERY          held  sha=47112ca63bec  323062B  anchor@109598 via exact-bytes
+2026-09-05T01:17:36+00:00  RT-BULLSHITTERY          not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:17:39+00:00  GOV-MDHA-CA              RECOVERED from snapshot 20230510220542  sha=c40f8f654057  anchor@62040 via exact-bytes  (live=403)
+2026-09-05T01:17:41+00:00  run end  captured=13  anchor-missing=3  fetch-failed=0  skipped=0
+2026-09-05T01:19:07+00:00  run start  entries=48  archive=True  proxy=False
+2026-09-05T01:19:07+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T01:19:08+00:00  AUD-HID-2023             PDF held  sha=79a8223f0b8b  page 8  text_offset 20225 via normalised-text
+2026-09-05T01:19:08+00:00  AUD-HID-2023             archived 20260609184709 (reused-existing)
+2026-09-05T01:19:10+00:00  LEG-BL2021-971           ANCHOR MISSING  anchor-not-found  sha=9a47f8b72fd5  149437B
+2026-09-05T01:19:11+00:00  LEG-BL2021-971           not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:19:14+00:00  LEG-BL2021-971-HIST-2ND  held  sha=73630a1ea306  47040B  anchor@36678 via exact-bytes
+2026-09-05T01:19:14+00:00  LEG-BL2021-971-HIST-2ND  not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:19:16+00:00  LEG-BL2021-971-HIST-3RD  held  sha=7dba928f467c  48075B  anchor@37369 via exact-bytes
+2026-09-05T01:19:17+00:00  LEG-BL2021-971-HIST-3RD  not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:19:19+00:00  LEG-AMD1                 PDF held  sha=997e7142e5db  page 1  text_offset 401 via exact-text
+2026-09-05T01:19:19+00:00  LEG-AMD1                 archived 20250911045419 (reused-existing)
+2026-09-05T01:19:22+00:00  LEG-AMD2                 PDF held  sha=857e0a1ff8bf  page 1  text_offset 807 via exact-text
+2026-09-05T01:19:22+00:00  LEG-AMD2                 archived 20250911062307 (reused-existing)
+2026-09-05T01:19:24+00:00  AUD-CTTE-DEC9            PDF held  sha=b5c44ffde381  page 1  text_offset 180 via exact-text
+2026-09-05T01:19:24+00:00  AUD-CTTE-DEC9            not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:19:27+00:00  GOV-MDHA-CA              ANCHOR MISSING  anchor-not-found  sha=b8b3e474d5e4  48562B
+2026-09-05T01:19:27+00:00  GOV-MDHA-CA              not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:19:29+00:00  GOV-OHS-CA-2023          held  sha=85d3af871db9  99343B  anchor@55264 via exact-bytes
+2026-09-05T01:19:29+00:00  GOV-OHS-CA-2023          archived 20260406175323 (reused-existing)
+2026-09-05T01:19:32+00:00  GOV-CALVIN               held  sha=97114caefd97  84073B  anchor@5997 via exact-bytes
+2026-09-05T01:19:32+00:00  GOV-CALVIN               archived 20250315184446 (reused-existing)
+2026-09-05T01:19:34+00:00  GOV-MAYOR-DIR            ANCHOR MISSING  anchor-not-found  sha=48a0dda39382  101777B
+2026-09-05T01:19:34+00:00  GOV-MAYOR-DIR            archived 20250731050512 (reused-existing)
+2026-09-05T01:19:36+00:00  CTB-TACKETT-AUG26        held  sha=1d55cfbb103b  203334B  anchor@165810 via exact-bytes
+2026-09-05T01:19:37+00:00  CTB-TACKETT-AUG26        not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:19:39+00:00  BNR-WILSON               held  sha=84ac82ba4e8f  384240B  anchor@120187 via exact-bytes
+2026-09-05T01:19:39+00:00  BNR-WILSON               archived 20260819181048 (reused-existing)
+2026-09-05T01:19:41+00:00  BNR-MARTINI-LEAVE        held  sha=19ae76612fec  381636B  anchor@118057 via exact-bytes
+2026-09-05T01:19:41+00:00  BNR-MARTINI-LEAVE        archived 20260210095225 (reused-existing)
+2026-09-05T01:19:43+00:00  SCN-AUDIT-APPROVED       held  sha=5356b2f3b196  267325B  anchor@172201 via exact-bytes
+2026-09-05T01:19:43+00:00  SCN-AUDIT-APPROVED       archived 20260829234815 (reused-existing)
+2026-09-05T01:19:46+00:00  SCN-WELSCH-FILING        held  sha=802cd366a1a7  262245B  anchor@172721 via exact-bytes
+2026-09-05T01:19:46+00:00  SCN-WELSCH-FILING        archived 20260625172930 (reused-existing)
+2026-09-05T01:19:48+00:00  SCN-NONTRAD              held  sha=53eaf1995b63  270598B  anchor@188465 via exact-bytes
+2026-09-05T01:19:48+00:00  SCN-NONTRAD              archived 20260829234814 (reused-existing)
+2026-09-05T01:19:50+00:00  SCN-PATTERSON            held  sha=fa2d720f1be1  294238B  anchor@207951 via exact-bytes
+2026-09-05T01:19:51+00:00  SCN-PATTERSON            archived 20260829234815 (reused-existing)
+2026-09-05T01:19:53+00:00  FOX-OPENBOOK             held  sha=b6fae0bc84c2  303388B  anchor@46000 via exact-bytes
+2026-09-05T01:19:53+00:00  FOX-OPENBOOK             archived 20260710005506 (reused-existing)
+2026-09-05T01:19:55+00:00  FOX-LAPSE                held  sha=4ee137f3ec93  303157B  anchor@45202 via exact-bytes
+2026-09-05T01:19:55+00:00  FOX-LAPSE                archived 20250901131757 (reused-existing)
+2026-09-05T01:19:58+00:00  RT-BULLSHITTERY          held  sha=77108cf25ca4  323065B  anchor@109598 via exact-bytes
+2026-09-05T01:19:58+00:00  RT-BULLSHITTERY          not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:20:01+00:00  GOV-MDHA-CA              RECOVERED from snapshot 20230510220542  sha=c40f8f654057  anchor@62040 via exact-bytes  (live=403)
+2026-09-05T01:20:03+00:00  run end  captured=13  anchor-missing=3  fetch-failed=0  skipped=0
+2026-09-05T01:20:45+00:00  run start  entries=48  archive=True  proxy=False
+2026-09-05T01:20:45+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T01:20:45+00:00  GOV-MDHA-CA              ANCHOR MISSING  anchor-not-found  sha=e6b154afcd9f  48562B
+2026-09-05T01:20:46+00:00  GOV-MDHA-CA              not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T01:20:49+00:00  GOV-MDHA-CA              RECOVERED from snapshot 20230510220542  sha=c40f8f654057  anchor@62040 via exact-bytes  (live=403)
+2026-09-05T01:20:51+00:00  run end  captured=0  anchor-missing=1  fetch-failed=0  skipped=0

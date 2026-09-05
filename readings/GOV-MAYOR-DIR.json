@@ -1,0 +1,12 @@
+{
+  "id": "GOV-MAYOR-DIR",
+  "path": "bytes/GOV-MAYOR-DIR.bin",
+  "sha256": "48a0dda3938269d3986ea431f8477a0779ab1f16ec8d813ec81d91e8c358cb11",
+  "bytes": 101777,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/mayor/staff-directory",
+  "final_url": "https://www.nashville.gov/departments/mayor/staff-directory",
+  "retrieved_at": "2026-09-05T01:19:34+00:00",
+  "wayback_timestamp": "20250731050512",
+  "spans": []
+}

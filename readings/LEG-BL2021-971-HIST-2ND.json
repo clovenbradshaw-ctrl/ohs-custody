@@ -1,0 +1,20 @@
+{
+  "id": "LEG-BL2021-971-HIST-2ND",
+  "path": "bytes/LEG-BL2021-971-HIST-2ND.bin",
+  "sha256": "73630a1ea306ff2ec9ce5e5981f01d59dfcc8e675704c59ad53a456a25b207f5",
+  "bytes": 47040,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25536701&GUID=571AD86D-26F0-4983-A5A5-B6A7F8A7AAE1",
+  "final_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25536701&GUID=571AD86D-26F0-4983-A5A5-B6A7F8A7AAE1",
+  "retrieved_at": "2026-09-05T01:19:14+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 36678,
+      "byte_length": 48,
+      "method": "exact-bytes",
+      "claim": "Official action text for second reading: O'Connell offered and moved Amendment No. 1, matching that amendment PDF's own sponsor line."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "SCN-WELSCH-FILING",
+  "path": "bytes/SCN-WELSCH-FILING.bin",
+  "sha256": "802cd366a1a7270cfb6683fe34fb5786bb09480b353def8b668bacf79d22e347",
+  "bytes": 262245,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
+  "final_url": "https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
+  "retrieved_at": "2026-09-05T01:19:46+00:00",
+  "wayback_timestamp": "20260625172930",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 172721,
+      "byte_length": 13,
+      "method": "exact-bytes",
+      "claim": "Carries the request document as an attachment. Archive the attachment separately once its direct URL is known."
+    }
+  ]
+}

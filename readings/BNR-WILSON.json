@@ -1,0 +1,20 @@
+{
+  "id": "BNR-WILSON",
+  "path": "bytes/BNR-WILSON.bin",
+  "sha256": "84ac82ba4e8f289431e526b97a41e928af6f4c6b28cd61046113da2f688699cd",
+  "bytes": 384240,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://nashvillebanner.com/2026/08/18/metro-ops-chief-kristin-wilson-resigns/",
+  "final_url": "https://nashvillebanner.com/2026/08/18/metro-ops-chief-kristin-wilson-resigns/",
+  "retrieved_at": "2026-09-05T01:19:39+00:00",
+  "wayback_timestamp": "20260819181048",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 120187,
+      "byte_length": 52,
+      "method": "exact-bytes",
+      "claim": "Resignation letter language and the 28 Aug final day."
+    }
+  ]
+}

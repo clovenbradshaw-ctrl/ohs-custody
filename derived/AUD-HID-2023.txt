@@ -1,0 +1,1311 @@
+FINAL REPORT  
+Audit of the Metropolitan Nashville 
+Homeless Impact Division 
+March 30, 2023 
+A Report to the  
+Audit Committee 
+Mayor  
+John Cooper 
+Social Services Director 
+Renee Pratt 
+Homeless Impact Division 
+Executive Director 
+April Calvin 
+Audit Committee Members 
+Tom Bates 
+Kelly Flannery 
+Sharon Hurt 
+Jim Shulman 
+Kyonztè Toombs 
+Metropolitan 
+Nashville 
+Office of 
+Internal Audit 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+EXECUTIVE SUMMARY 
+March 30, 2023 
+Audit of the Metropolitan Nashville Homeless 
+Impact Division 
+BACKGROUND 
+The Homeless Impact Division is a division within the Metropolitan Nashville 
+Social Services Department. The division provides staffing and other resources 
+to assist the Nashville-Davidson County Continuum of Care Homelessness 
+Planning Council in carrying out its duties and responsibilities. The 
+responsibilities and duties are established by Chapter 2.144.020 of the 
+Metropolitan Nashville Code of Ordinances. 
+OBJECTIVES AND SCOPE  
+The audit objectives were to determine if the Homeless Impact Division: 
+•  Coordinated the governance and oversight responsibilities and activities of 
+the Homelessness Planning Council. 
+•  Maintained a Homeless Management Information System to effectively 
+coordinate service and programs delivery. 
+•  Established internal controls to ensure authorized access to homelessness 
+data and equitable service delivery. 
+The scope of the audit included the operations of the Homeless Impact Division   
+between January 1, 2020, and December 31, 2021.  
+WHAT WE FOUND 
+The Homeless Impact Division staff is dedicated to ending homelessness. 
+Established policies and procedures guide homeless outreach, the coordinated 
+entry process, and the Homeless Management Information System. 
+However, the coordinated entry policies and procedures did not include all 
+areas required by the Federal Housing and Urban Development agency. The 
+progression of adopted 2019-2022 Strategic Community Plan was hindered due 
+to the COVID-19 pandemic and is currently going through a revision. However, 
+documentation of plan progression while it was in place was not readily 
+available. The division also lacks an encampment management team or plan. 
+Access and security controls of the Homeless Management Information System 
+were not consistently applied. Additionally, the capability of the software could 
+be enhanced.   
+Why We Did This Audit 
+The audit was initiated due 
+to the importance of 
+homelessness response 
+and support in urban 
+areas. 
+What We Recommend 
+• Update coordinated 
+entry policies and 
+procedures to include all 
+Housing and Urban 
+Development 
+requirements. 
+• Monitor the Strategic 
+Community Plan. 
+• Monitor and control 
+access to client-level 
+data in the Homeless 
+Management 
+Information System. 
+• Develop an encampment 
+management plan. 
+• Explore the full potential 
+of the HMIS software 
+application. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+GOVERNANCE 
+The Homelessness Planning Council makes decisions and recommendations as the Nashville-Davidson 
+County Continuum of Care’s governing. The governance structure is established by Title 24 of the Code 
+of Federal Regulations. Responsibilities of the Homelessness Planning Council include implementing a 
+coordinated and focused approach to ending homelessness, developing measurable objectives, 
+maintaining accurate and current data on homeless populations, and educating interested parties on 
+issues related to homelessness. 
+The Homelessness Planning Council consists of 25 voting members. The Mayor appoints 8 members, 
+the Nashville-Davidson County Continuum of Care elects 14 members, and the Vice Mayor appoints 3 
+members. Five of the voting members are required to have experienced homelessness. The 
+Metropolitan Homeless Planning Council charter authorized the creation of committees and working 
+groups. A total of 14 committees existed during the audit period. See Appendix C. 
+The Homeless Impact Division is the primary staffing for the Homelessness Planning Council. The 
+division is overseen by an executive director that reports to the director of Social Services. In June 
+2022, the Metropolitan Nashville Council unanimously passed ordinance BL2021-971 that establishes 
+an independent Office of Homeless Services with the aim of stabilizing policy and homelessness 
+response efforts between mayoral administrations. The opening of the office is pending final 
+administrative procedures. 
+BACKGROUND 
+The Homeless Emergency Assistance and Rapid Transition to Housing (HEARTH) Act of 2009 created a 
+collaborative, inclusive, community-based inspired process and approach to planning and managing 
+effective homeless assistance resources and programs to end homelessness in the country. The 
+HEARTH Act also codifies into law the Continuum of Care planning process, a longstanding part of 
+United States Housing and Urban Development’s application process to assist homeless individuals 
+and families by providing greater coordination in responding to their needs. 
+The Nashville Davidson County Continuum of Care Homelessness Planning Council was established for 
+the purpose of facilitating the process and approach of the Nashville Davidson County Continuum of 
+Care program. The Metropolitan Development and Housing Agency is the collaborative applicant of 
+the continuum of care process. The Homeless Impact Division is the planning and coordinating entity.  
+The Homeless Impact Division provides staffing and resources to assist the Homelessness Planning 
+Council in carrying out its duties and responsibilities. The assistance includes serving as the lead for the 
+Homeless Management Information System and Coordinated Entry. The Homeless Impact Division does 
+not provide direct services to the homeless, but instead it coordinates with and provides referrals to 
+private and governmental agencies that provide services directly to the homeless population. The 
+Homeless Impact Division operates through five divisions including Outreach, Coordinated Entry, 
+Homeless Management Information System, Landlord Management, and Grant Coordination. The 
+Homeless Impact Division has 14 full-time positions. The budget versus actual expenditures for the last 
+three fiscal years can be seen in Exhibit 1 below. 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+Exhibit 1: Operating Budget Appropriations vs. Actual Expenditures 
+Fiscal Year   
+Budget 
+Actual 
+Variance 
+2021 
+2020 
+2019 
+ $      1,511,700  
+ $       1,222,546  
+ $      289,154  
+ $      2,062,200  
+ $       1,886,439  
+ $      175,761  
+ $      2,058,700  
+ $       1,837,914  
+ $      220,786  
+Source: Metropolitan Nashville Oracle R12 Reporting System 
+The Homeless Impact Division utilizes a Homeless Management Information System. The Homeless 
+Management Information System is a local system used to collect client-level data and data on the 
+provision of housing and services to homeless individuals and families or those at risk of homelessness. 
+Each Continuum of Care is responsible for selecting a Homeless Management Information System 
+software that complies with the United States Housing and Urban Development Agency’s data 
+collection, management, and reporting standards. The Housing and Urban Development Agency set the 
+standards to ensure the privacy and safety of client data. 
+All organizations and agencies involved in working with the homeless are encouraged to have access to 
+the system, and organizations receiving government funds are required to enter client level data into 
+the system. Approximately 36 organizations and agencies have access to the local Homeless 
+Management Information System. 
+Exhibit 2 shows available and utilized beds information as coordinated with stakeholders by the 
+Homeless Impact Division.  
+Exhibit 2: Bed Utilization by Housing Type 
+Housing Type 
+Available 
+Beds 
+Occupied 
+Beds 
+Utilization 
+Rate 
+Year-Round 
+Beds 
+Occupied 
+Beds 
+Utilization 
+Rate 
+2020 
+2021 
+Emergency Shelter 
+Other Permanent Housing 
+Permanent Supportive Housing 
+Rapid Re-housing 
+Safe Haven 
+Transitional Housing 
+1387 
+119 
+1033 
+243 
+5 
+335 
+1208 
+103 
+998 
+243 
+5 
+219 
+Totals 
+3122 
+2776 
+87% 
+87% 
+97% 
+100% 
+100% 
+65% 
+89% 
+Source: Homeless Management Information System Coordinated Entry Module 
+Coordinated Entry 
+1794 
+101 
+1041 
+607 
+7 
+327 
+912 
+94 
+1093 
+607 
+4 
+191 
+3877 
+2901 
+51% 
+93% 
+105% 
+100% 
+57% 
+58% 
+75% 
+Coordinated Entry is a Continuum of Care established process to coordinate access, assessment, 
+prioritization, and referrals quickly and equitably to housing and services. The coordinated entry process 
+is Housing First oriented, such that people are housed quickly without preconditions or service 
+participation requirements.  
+The Coordinated Entry data collected is defined by the Homeless Management Information Systems 
+Data Standard elements for Coordinated Entry. Collecting the data also supports management reporting 
+on specific parts of the coordinated entry process, such as active client lists, coverage and demand, and 
+permanent housing placements and retention. Exhibit 3 shows client-level information assessed and 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+2 
+ 
+ 
+ 
+input into the Coordinated Entry system since the Homeless Impact Division became the Homeless 
+Management Information System lead in November 2018. 
+Exhibit 3: Client-level Information from the Homeless Management Information System by Race 
+Race 
+2018 
+2019 
+2020 
+2021 
+Totals 
+Black, African American, or African 
+     513  
+  1,102  
+  1,515  
+  1,661  
+  4,791  
+White 
+     546  
+     948  
+  1,186  
+  1,637  
+  4,317  
+American Indian, Alaska Native, or Indigenous 
+        17  
+        34  
+        44  
+        78  
+     173  
+Native Hawaiian or Pacific Islander 
+          2  
+        10  
+        10  
+          8  
+        30  
+Asian or Asian American 
+          6  
+        16  
+        16  
+        25  
+        63  
+Other 
+        28  
+        18  
+        13  
+        35  
+        94  
+Total 
+  1,112  
+  2,128  
+  2,784  
+  3,444  
+  9,468  
+Source: Homeless Management Information System Coordinated Entry Module 
+Assessment and Prioritization 
+Assessment and prioritization ensure individuals with the greatest needs receive priority for housing and 
+homeless assistance available in the continuum of care. During prioritization, the coordinated entry staff 
+use assessment data to compare the participant’s level of need with the needs of others on the priority 
+list. Staff prioritize the participant for housing and supportive services based on the continuum of care’s 
+prioritization standards. The prioritization standards are documented in written policies and procedures 
+and applied consistently. The Homeless Impact Division coordinates referrals with 10 independent 
+homeless organizations and agencies that provide homeless services as part of the continuum of care 
+program. Exhibit 4 shows total referrals made through the coordinated entry system during the audit 
+period. 
+Exhibit 4: Coordinated Entry Referrals by Race and Housing Type 
+Housing Type 
+Black, African, 
+African American 
+White 
+Undisclosed 
+Other 
+Totals 
+2020 
+2021 
+2020 
+2021 
+2020 
+2021 
+2020 
+2021 
+Individual Rapid 
+Rehousing 
+Family Rapid Rehousing 
+Youth Rapid Rehousing 
+Other 
+Totals 
+71 
+55 
+50 
+61 
+237 
+92 
+105 
+17 
+187 
+401 
+120 
+20 
+25 
+29 
+194 
+131 
+37 
+3 
+168 
+339 
+7 
+1 
+4 
+4 
+2 
+4 
+- 
+9 
+13 
+106 
+7 
+30 
+5 
+93 
+3 
+265 
+441 
+421 
+109 
+753 
+16 
+15 
+156 
+366 
+1,724 
+Source: Homeless Management Information System Coordinated Entry Module 
+Low Barrier Housing Collective 
+The Low Barrier Housing Collective service provided by the Homeless Impact Division was established to 
+connect individuals and families experiencing homelessness to private housing units. The units offer 
+flexible screening criteria in exchange for benefits designed to mitigate risk for the property owner. Data 
+reviewed during the audit showed outreach to approximately 31 property managers managing an 
+approximate total of 14,362 existing units in their portfolios.  
+Audit of the Metropolitan Nashville Homeless Impact Division 
+3 
+ 
+ 
+  
+  
+ 
+OBJECTIVES AND CONCLUSIONS 
+1.  Did the Homeless Impact Division effectively coordinate the governance and oversight 
+responsibilities of the Homelessness Planning Council?   
+Generally, yes.  The Homeless Impact Division has knowledgeable staff committed to ending 
+homelessness.  Policies and procedures were in place to guide staff in coordinating homeless 
+services with providers. However, the coordinated entry policies and procedures manual could be 
+improved to include all Housing and Urban Development required policies and procedures. (See 
+Observation B.) The Homeless Impact Division also did not have an encampment management and 
+intervention plan during the period under review. (See Observation C.) 
+The Homelessness Planning Council implemented a three-year Strategic Community Plan spanning 
+between 2019 to 2022. In 2021, the Homeless Impact Division documented the progress made since 
+the inception of the Strategic Community Plan. However, documentation to verify the progress on 
+the plan was not readily available. In November 2021, the Homelessness Planning Council voted to 
+form an ad hoc committee to review and update the Strategic Community Plan. The Homeless 
+Impact Division should ensure that review and monitoring procedures are in place to keep the 
+Homelessness Planning Commission updated once the revision is completed. Additionally, 
+documentation related to progression of the plan should be retained made readily available. (See 
+Observation A.)  
+Homelessness Planning Council meetings were regularly scheduled, held, and attended by 
+management and staff of the Homeless Impact Division. Documentation of minutes of 
+Homelessness Planning Council meetings were not maintained by the Homeless Impact Division. 
+(See Observation F).  
+2.  Did the Homeless Impact Division establish a Homeless Management Information System to 
+effectively coordinate service and programs delivery?  
+Generally, yes.  The Homeless Impact Division in collaboration with the Metropolitan Development and 
+Housing Agency has established a Homeless Management Information Systems as required by the 
+United States Housing and Urban Development Agency. The Emergency Solutions Grant administered by 
+the Housing and Urban Development Agency is the primary source of funding for the Homeless 
+Management Information System, including acquisition, staffing and maintenance.  
+Authorized agencies of the Nashville-Davidson County Continuum of Care have access to enter 
+information about homeless individuals and families. The agencies can also retrieve information about 
+completed referrals performed by the Homeless Impact Division.  Various reports are available in the 
+Homeless Management Information System and are presented to the Housing and Urban Development 
+Agency, the Homelessness Planning Council, and other committees as needed. 
+The Nashville-Davidson Continuum of Care adopted WellSky Community Services cloud-based system as 
+its Homeless Management Information System. WellSky complies with the Housing and Urban 
+Development's data collection, management, and reporting standards. The Homeless Impact Division is 
+the lead agency for the Homeless Management Information System and has staff trained to operate and 
+manage the system. However, certain aspects of managing the Homeless Management Information 
+System software could be improved. (See Observations D and E.) 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+4 
+ 
+ 
+ 
+ 
+3.  Did the Homeless Impact Division establish internal controls to ensure authorized access to data and 
+equitable service delivery? 
+Generally, yes. Access to the Homeless Management Information System is controlled by the 
+Homeless Impact Division and is granted only after following a series of Housing and Urban 
+Development guidelines and requirements. The guidelines include the completion of a new user 
+checklist, a data-sharing agreement, and an end-user license agreement. However, not all access 
+granted conformed to the guidelines. Additionally, controls surrounding Homeless Impact Division 
+staff access to the coordinated entry data could be improved and the division did not ensure the 
+presence of a secured cloud data hosting environment. (See Observation D.) 
+The Homeless Impact Division performs the coordinated entry process which connects those at risk 
+for homelessness to housing services. However, there was no evidence of coordinated entry process 
+monitoring and evaluation by management. (See Observation E).  
+Audit of the Metropolitan Nashville Homeless Impact Division 
+5 
+ 
+ 
+  
+AUDIT OBSERVATIONS  
+Internal control helps entities achieve important objectives and sustain and improve performance. The 
+Committee of Sponsoring Organizations of the Treadway Commission, Internal Control – Integrated 
+Framework (COSO), enables organizations to effectively and efficiently develop systems of internal 
+control that adapt to changing business and operating environment, mitigate risks to acceptable levels, 
+and support sound decision-making and governance of the organization. The audit observations listed 
+are offered to assist management in fulfilling their internal control responsibilities. 
+Observation A– Strategic Community Plan  
+A Strategic Community Plan was established in July 2019 and was expected to make an impact of 
+reducing the number of individuals experiencing homelessness by 25 percent within the three years. 
+However, the COVID-19 pandemic had a negative impact on the progression of the plan. In 2021, the 
+Homeless Impact Division reviewed the plan and noted which outcomes of the plan were complete, in-
+progress, or not started.  
+In November 2021, a motion was passed by the Homelessness Planning Commission to review and 
+update the Strategic Community Plan. An audit procedure was conducted to review and verify the 
+progress made on the Strategic Community Plan while the plan was in place. Documentation was not 
+readily available to verify the progression of the plan.  As of January 2023, the strategic plan refresh has 
+not been completed. When completed, regular monitoring and status reporting to the Homelessness 
+Planning Council should be conducted to assist with the successful progression of the plan. Additionally, 
+plan implementation documentation should be retained and made readily available for review by 
+internal and external stakeholders. Without regular monitoring and status reporting, the effectiveness 
+of the Strategic Community Plan will be impaired. 
+Criteria:    
+•  COSO, Control Activities–Principle 10. The organization selects and develops control activities 
+that contribute to the mitigation of risks to the achievement of objectives to acceptable levels. 
+•  COSO, Control Activities–Principle 16. The organization selects, develops, and performs ongoing 
+and/or separate evaluations to ascertain whether the components of internal control are 
+present and functioning. 
+Assessed Risk Rating:  
+High                       
+Recommendation for management of the Homeless Impact Division:  
+Coordinate with the Homelessness Planning Council to ensure that the plan continues to be relevant 
+through periodic reviews of goals, benchmarks, and monitoring activities. Ensure that appropriate 
+information about implementation status is maintained for internal and external stakeholders. 
+Observation B– Coordinated Entry Policies and Procedures   
+The coordinated entry policies and procedures manual did not include all the required policies and 
+procedures from the United States Housing and Urban Development Agency. The Housing and Urban 
+Development Agency Coordinated Entry Notice establishes new requirements that Continuums of Care 
+and recipients of Continuums of Care Program and Emergency Solutions Grants Program funding must 
+meet related to the development and use of a centralized or coordinated assessment system. Only 12 
+out of 23 (52 percent) of required Housing and Urban Development policies and procedures were 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+6 
+ 
+ 
+implemented by the Homeless Impact Division. Coordinated entry policies in Nashville were compared 
+with Memphis, and no significant differences in the incorporation of Housing and Urban Development 
+Agency required policies were identified. 
+Coordinated Entry is a critical part of the path to ending homelessness. Not implementing these 
+required policies and procedures could harm the effectiveness of the coordinated entry process and 
+possibly result in the loss of federal funding. 
+Criteria:    
+•  COSO, Control Activities–Principle 12. The organization deploys control activities through 
+policies that establish what is expected and procedures that put policies into action. 
+•  Coordinated Entry Process Self-Assessment Tool – U.S. Department of Housing and Urban 
+Department 
+•  Outline for a Continuum of Care's Coordinated Entry "Policies & Procedures" Document – U.S 
+Department of Housing and Urban Department  
+Assessed Risk Rating:  
+High                       
+Recommendation for management of the Homeless Impact Division:  
+Update the policies and procedures manual to include all required Housing and Urban Development 
+policies and procedures or document the reason for exclusion.  
+Observation C– Encampment Management Plan   
+The Homeless Impact Division reported a count of 16 homeless encampment locations but does not 
+have an encampment plan. Homelessness in Nashville impacts not only the homeless, but also 
+government resources, local businesses, and the communities in which the encampments are located. 
+An encampment plan designed with the specific characteristics and changing needs of the homeless 
+population will provide an effective strategy and policy directions to monitor and deal with the growth 
+and conditions of encampments. Lack of an encampment plan will negatively impact the homeless 
+population and the Nashville community.  
+Criteria:    
+•  COSO, Control Activities–Principle 10. The organization selects and develops control activities 
+that contribute to the mitigation of risks to the achievement of objectives to acceptable levels. 
+•  COSO, Control Activities–Principle 12. The organization deploys control activities through 
+policies that establish what is expected and procedures that put policies into action. 
+•  COSO, Control Activities–Principle 16. The organization selects, develops, and performs ongoing 
+and/or separate evaluations to ascertain whether the components of internal control are 
+present and functioning. 
+•  7 Principles for Addressing Encampments – U.S. Interagency Council on Homelessness 
+Assessed Risk Rating:  
+High                       
+Audit of the Metropolitan Nashville Homeless Impact Division 
+7 
+ 
+ 
+ 
+Recommendation for management of the Homeless Impact Division:  
+Establish an encampment management team comprising of Metropolitan Nashville departments, 
+community organizations, and community leaders involved in addressing homelessness. The 
+encampment management team should be responsible for creating an encampment management plan 
+that includes strategies and policy directions to address the physical management of homeless 
+encampments and establishes criteria for determining and coordinating the types of interventions to 
+undertake at encampments. 
+Observation D– Homeless Management Information System User Access and Data 
+Security   
+The Homeless Management Information System team did not maintain complete documentation of 
+system user access. Additionally, a process was not established for ensuring that data housed in the 
+cloud environment with the system vendor is secure.  
+The Housing and Urban Development Agency privacy and security standards seek to protect the 
+confidentiality of personal information while allowing for reasonable, responsible, and limited uses and 
+data disclosures. Thirteen out of 46 (28 percent) Homeless Management Information System users did 
+not have a completed end-user license agreement, 3 out of 46 (6 percent) users had end-user 
+agreements with missing information, and 3 out of 46 (6 percent) users had dates on the end-user 
+agreements that were after the dates their agency was granted access.  
+Additionally, the Homeless Impact Division did not request assurance from the Homeless Management 
+Information System, WellSky, that data housed in their cloud environment is secured. Client data cannot 
+be trusted to be secure without assurance that the service provider has controls in place for the system. 
+Criteria:    
+•  COSO, Control Activities–Principle 10. The organization selects and develops control activities 
+that contribute to the mitigation of risks to the achievement of objectives to acceptable levels. 
+•  COSO, Control Activities-Principle 11-The organization selects and develops general control 
+activities over technology to support the achievement of objectives. 
+Assessed Risk Rating:  
+High                       
+Recommendation for management of the Homeless Impact Division:  
+1.  Ensure access to the Homeless Management Information System is granted only after new users 
+have completed all necessary steps and an end-user license agreement is properly executed. 
+Retain copies of all end-user license agreements for review.  
+2.  Annually request a SOC 2 Type 2 report from WellSky to ensure data is secure and always 
+available. 
+Observation E – Homeless Management Information System Software Review and 
+Update   
+The Homeless Impact Division as the Homeless Management Information System lead agency did not 
+perform regular reviews of the software using tools provided by the Housing and Urban Development 
+Agency. The agency provides tools to assist communities in monitoring, evaluating, and improving the 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+8 
+ 
+ 
+Homeless Management Information System. Specifically, the Vendor Capacity checklist provides an 
+overview of both Housing and Urban Development requirements of a Homeless Management 
+Information System and common technical and functional features communities may require and expect 
+from the system.  
+As a critical first step in identifying and changing racial and ethnic disparities in a community’s systems 
+and services, the Race and Ethnicity tool uses Homeless Management Information System data to 
+facilitate analysis of racial disparities among individuals experiencing homelessness. For example, 
+analysis of data would alert management to investigate why other minority groups are not being 
+assessed into the coordinated entry system compared to Black or White racial groups.  
+Homeless Impact Division staff acknowledged operational issues with the software and a lack of 
+knowledge about the full capability of the Homeless Management Information System. Failure to use 
+the tools provided by the Housing and Urban Development increases the risk of that the Homeless 
+Management Information System will not be used in the most effective and efficient manner. 
+Criteria:  
+•  COSO, Control Activities–Principle 16. The organization selects, develops, and performs ongoing 
+and/or separate evaluations to ascertain whether the components of internal control are 
+present and functioning. 
+•  Homeless Management Information System Software Vendor Capacity and System 
+Administrator Checklists – U.S. Housing and Urban Development Agency 
+Assessed Risk Rating:  
+Medium                                                                                                  
+Recommendation for management of the Homeless Impact Division:  
+Establish a process for periodic completion and review of the Housing and Urban Development 
+resources that improve both system administration and software vendor oversight. 
+Observation F – Retention of Homelessness Planning Council Meeting Minutes   
+The Homeless Impact Division did not retain copies of all meeting minutes held by the Homelessness 
+Planning Council and the Planning Executive Committee. Eight of the 24 (33 percent) Homelessness 
+Planning Council meetings and 14 out of 22 (64 percent) Planning Executive meetings reviewed did not 
+have copies of meeting minutes. Without meeting minutes, transparency to the public is diminished. 
+Additionally, management is not able to provide evidence how the Homeless Impact Division responded 
+to mission-critical deliberations and decisions made by the Homelessness Planning Council and Planning 
+Executive Committees. 
+Criteria:    
+•  COSO, Control Activities–Principle 10. The organization selects and develops control activities 
+that contribute to the mitigation of risks to the achievement of objectives to acceptable levels. 
+Assessed Risk Rating:  
+Medium                                                                                                  
+Recommendation for management of the Homeless Impact Division:  
+Document and retain meeting minutes for all Homelessness Planning Council and Executive Planning 
+meetings. 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+9 
+ 
+ 
+GOVERNMENT AUDITING STANDARDS COMPLIANCE 
+We conducted this performance audit in accordance with generally accepted government auditing 
+standards. Those standards require that we plan and perform the audit to obtain sufficient, appropriate 
+evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives. 
+We believe that the evidence obtained provides a reasonable basis for our observations and conclusions 
+based on our audit objectives. 
+METHODOLOGY 
+To accomplish our audit objectives, we performed the following steps: 
+▪ 
+Interviewed key personnel within the Homeless Impact Division. 
+▪  Reviewed Metropolitan Nashville ordinances related to the Homeless Planning Council and the 
+Homeless Impact Division. 
+▪  Reviewed relevant Federal Housing and Urban Development guidelines, policies, and procedures, 
+and the 2019-2022 Strategic Community Plan to end homelessness. 
+▪  Evaluated internal controls in place during the audit period. 
+▪  Performed inquiries and observations of procedures. 
+▪  Reviewed sample selections to determine the effectiveness of internal controls. 
+▪  Reviewed reports from the Homeless Management Information System and the Low Barrier Housing 
+Collective website. 
+▪  Considered risk of fraud, waste, and abuse. 
+▪  Considered information technology risks. 
+AUDIT TEAM 
+Jessica Henderson, CFE, Staff Auditor 
+Innocent Dargbey, CPA, CMFO, CICA, Auditor-in-Charge 
+Seth Hatfield, CPA, CIA, CCFO, CFE, Quality Assurance 
+Lauren Riley, CPA, CIA, CFE, CMFO, ACDA, Metropolitan Auditor 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+10 
+ 
+ 
+ 
+APPENDIX A – MANAGEMENT RESPONSE AND ACTION PLAN 
+JOHN COOPER 
+  MAYOR 
+                                                                   RENEE PRATT 
+                                          EXECUTIVE DIRECTOR 
+METROPOLITAN GOVERNMENT OF NASHVILLE AND DAVIDSON COUNTY 
+                  METROPOLITAN SOCIAL SERVICES 
+                                                                                                                     800 2ND AVENUE NORTH, SUITE 100 
+                                                                            NASHVILLE, TENNESSEE 37201 
+March 3, 2023 
+Lauren Riley, Metropolitan Auditor 
+Office of Internal Audit 
+400 James Robertson Parkway, Ste, 190  
+Nashville, TN  37219 
+RE: Audit of Metro Homeless Impact Division  
+       Between Jan.1, 2020 to December 31, 2021 
+Dear Mrs. Riley, 
+Metro Social Services is in receipt of the Audit conducted on Metro Homeless Impact Division and is satisfied with 
+the audit work completed and resulting recommendations. Your review began during a time that the entire nation 
+was experiencing the “great resignation” and as a Metro Department we were not exempt.  Since then, we have 
+developed and cultivated new employees and we have already implemented a majority of the suggested measures to 
+address items ranked with a medium to high risk. Please review the Management Response and Action Plan 
+attached. 
+We appreciate the work you and your staff put into this assignment.  Innocent Dargbey really worked to fully 
+understand our process. If you have any questions, please let me know. 
+Sincerely, 
+Renee Pratt, Executive Director 
+Metro Social Service 
+CC:   
+Jessica Henderson, CFE, Staff Auditor 
+Innocent Dargbey, CPA, CMFO, CICA, Auditor-in-Charge 
+Seth Hatfield, CPA, CIA, CCFO, CFE, Quality Assurance 
+Lauren Riley, CPA, CIA, CFE, CMFO, ACDA, Metropolitan Auditor 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+11 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX A – MANAGEMENT RESPONSE AND ACTION PLAN 
+We believe that operational management is in a unique position to best understand their operations 
+and may be able to identify more innovative and effective approaches and we encourage them to do so 
+when providing their response to our recommendations. 
+Recommendation 
+Concurrence and Corrective 
+Action Plan 
+Proposed Completion 
+Date 
+Risk 
+H 
+H 
+Recommendations for the management of the Homeless Impact Division to: 
+A.1 Coordinate with the Homeless 
+Planning Council to ensure that the 
+plan continues to be relevant through 
+periodic reviews of goals, 
+benchmarks, and monitoring 
+activities. Ensure that appropriate 
+information about implementation 
+status is maintained for internal and 
+external stakeholders. 
+Implemented – 2/4/2022 
+Accept. The 2019 Strategic 
+Community Plan was 
+interrupted by the COVID-19 
+pandemic. Agencies and local 
+government had to pivot to 
+provide life saving measures. 
+Once the Governor’s “Safer at 
+Home” restrictions were lifted 
+the Community decided to 
+discontinue the use of the 
+prior strategy and begin a 
+Strategic Plan Refresh. This 
+made regular monitoring and 
+status reporting obsolete. The 
+Homelessness Planning 
+Council identified a small ad 
+hoc committee to complete 
+the Strategic Plan Refresh. 
+Currently, a newly identified 
+committee will finalize the 
+plan by adding metrics and 
+outcomes. The Homelessness 
+Planning Council will continue 
+to review the process. 
+B.1 Update the policies and 
+procedures manual to include all 
+required Housing and Urban 
+Development policies and procedures 
+or document the reason for the 
+exclusion. 
+  6/30/2023 
+Accept. The Coordinated 
+Entry Policies and Procedures 
+were reviewed by the 
+Continuum of Care, Executive 
+Committee, and the 
+Homelessness Planning 
+Council. We will enter the 
+comment period to address 
+this concern. Required and 
+recommended policies are 
+being reviewed and all 
+changes will need to be 
+accepted by the Continuum of 
+Care and the Homelessness 
+Planning Council prior to 
+modifying.  
+Audit of the Metropolitan Nashville Homeless Impact Division 
+12 
+ 
+ 
+ 
+ 
+  
+ 
+  
+ 
+APPENDIX A – MANAGEMENT RESPONSE AND ACTION PLAN 
+Recommendation 
+C.1 Establish an encampment 
+management team comprising of 
+Metropolitan Nashville departments, 
+community organizations, and 
+community leaders involved in 
+addressing homelessness. The 
+encampment management team 
+should be responsible for creating an 
+encampment management plan that 
+includes strategies and policy 
+directions to address the physical 
+management of homeless 
+encampments and establish criteria 
+for determining and coordinating the 
+types of interventions to undertake at 
+encampments.  
+Concurrence and Corrective 
+Action Plan 
+Accept. MHID completed a 
+community Encampment 
+Outdoor Housing Plan, 
+composed by Community 
+partners, multiple Metro 
+departments, committee 
+leaders, and people with lived 
+experience during frequent 
+community meetings. This 
+strategy was drafted from 
+other cities making great 
+strides on ending 
+homelessness and it aligns 
+with federal guidance of 
+UISCH’s recently released 
+strategy.  
+D.1 Ensure that access to the 
+Homeless Management Information 
+System is granted only after new 
+users have completed all necessary 
+steps and an end-user license 
+agreement is properly executed. 
+Retain copies of all end-user license 
+agreements for review. 
+D.2 Annually request a SOC 2 Type 2 
+report from WellSky to ensure data is 
+secure and always available.  
+Accept. While previous MHID 
+management did not retain all 
+end user agreements, this has 
+since been rectified. All 
+current and future HMIS users 
+cannot access the system until 
+necessary documents and 
+trainings have been 
+completed. All completed 
+agreements are retained and 
+stored. HMIS staffing 
+experienced 100% turnover at 
+the start of this audit. Under 
+current leadership, we have 
+rebuilt the entire HMIS 
+Department. The new team 
+has since obtained system 
+level training, vendor 
+bootcamp, HUD technical 
+assistance and other 
+professional development 
+opportunities by attending 
+National Data Conferences. 
+Accept. Annually, we will 
+request a copy of the SOC 
+Type 2 Report to ensure that 
+our data is secure with 
+WellSky. 
+H 
+H 
+H 
+Proposed Completion 
+Date 
+Implemented - 10/18/2022 
+ Implemented – 9/15/2022 
+Implemented – 3/21/2022 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+13 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+  
+ 
+Proposed Completion 
+Date 
+ Implemented – 9/1/2022 
+APPENDIX A – MANAGEMENT RESPONSE AND ACTION PLAN 
+Recommendation 
+E.1 Establish a process for periodic 
+completion and review of the Housing 
+and Urban Development resources 
+that improve both system 
+administration and software vendor 
+oversight. 
+M 
+Concurrence and Corrective 
+Action Plan 
+Accept. During the Nation’s 
+“Great Resignation” HMIS 
+staffing had 100% turnover 
+during the audit. While staff 
+did not have knowledge about 
+the full capability of the 
+software during this audit 
+period because they were still 
+in the training period, HMIS is 
+now fully knowledgeable. The 
+tools for system 
+administration and software 
+oversight are currently 
+completed quarterly.  
+F.1 Document and retain meeting 
+minutes for all Homelessness Planning 
+Council and Executive Planning 
+meetings. 
+M 
+Accept. Under current 
+leadership, minutes and 
+agendas are maintained on a 
+Metro server using a device 
+provided by Metro. 
+ Implemented – 10/8/2021 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+14 
+ 
+ 
+ 
+  
+ 
+  
+ 
+  
+APPENDIX B – ASSESSED RISK RATING 
+Observations identified during the course of the audit are assigned a risk rating, as outlined in the table 
+below. The risk rating is based on the financial, operational, compliance or reputational impact the issue 
+identified has on the Metropolitan Nashville Government. Items deemed “Low Risk” will be considered 
+“Emerging Issues” in the final report and do not require a management response and corrective action 
+plan. 
+Rating 
+Financial 
+Internal Controls 
+Compliance 
+Public 
+HIGH 
+Large financial impact 
+>$25,000 
+Remiss in 
+responsibilities of being 
+a custodian of the 
+public trust 
+MEDIUM 
+Moderate financial 
+impact 
+$25,000 to $10,000 
+LOW/ 
+Emerging 
+Issues 
+Low financial impact 
+<$10,000 
+Missing, or 
+inadequate key 
+internal controls 
+Noncompliance with 
+applicable Federal, 
+state, and local laws, 
+or Metro Nashville 
+Government policies 
+High probability 
+for negative 
+public trust 
+perception 
+Partial controls 
+Not adequate to 
+identify 
+noncompliance or 
+misappropriation 
+timely 
+Internal controls in 
+place but not 
+consistently efficient 
+or effective 
+Implementing / 
+enhancing controls 
+could prevent future 
+problems 
+Inconsistent 
+compliance with 
+Federal, state, and 
+local laws, or Metro 
+Nashville Government 
+policies 
+Generally complies 
+with Federal, state, 
+and local laws, or 
+Metro Nashville 
+Government policies, 
+but some minor 
+discrepancies exist 
+The potential for 
+negative public 
+trust perception 
+Low probability 
+for negative 
+public trust 
+perception 
+Efficiency 
+Opportunity 
+An efficiency opportunity is where controls are functioning as intended; however, a modification 
+would make the process more efficient 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+15 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX C – ADDITIONAL RESOURCES 
+Committee 
+ Equity & Diversity Committee 
+ Consumer Advisory Board (CAB) 
+ Data Committee 
+PIT Count Sub-Committee 
+Shelter Committee 
+Governance Charter Committee 
+HMIS Oversight Committee 
+Membership Committee 
+Nominating Committee 
+Duties and Responsibilities 
+Evaluates for inequities in homeless services to determine if race, 
+ethnicity, stereotypes, 
+and biases influence how assistance is delivered. 
+Develops/implements strategies, and identifies resources 
+available, to reduce 
+disparities in the homeless system 
+Is intended to be a diverse group of individuals with lived 
+experience working to provide input on specific CoC matters and 
+connect those experiencing homelessness to resources while 
+addressing barriers and establishing an information network for 
+homeless needs and resources. 
+ Promotes and ensures the collection of quality, comprehensive 
+and relevant data about: 1) people experiencing homelessness in 
+Nashville/Davidson County; and 2) the efforts of the local 
+Continuum of Care (CoC) to address and end homelessness here. 
+The purpose of these activities is to equip the CoC with the 
+planning, research, communications, and related tools needed to 
+ensure that any incidence of homelessness in Nashville will be 
+rare, brief and occur only once. 
+HUD requires communities across the country to take a census of 
+the people who are literally experiencing homelessness on one 
+night during the last ten days of January. This is a snapshot of the 
+homeless population in Nashville on one night. This committee 
+plans and oversees the annual count and operates as a 
+subcommittee of the Data Committee. 
+Coordinates among outreach, shelter, and government providers 
+to ensure people living outdoors have the information they need 
+to access shelter and services during heat, cold, floods, and other 
+extreme weather situations. 
+Reviews the Governance Charter and makes any 
+recommendations for change or revision at least annually. 
+Develops, recommends, and revises as needed any bylaws and/or 
+policies and procedures deemed necessary for the ongoing 
+operation of the Planning Council and CoC General Membership. 
+Recommends policy guidance for the CoC Planning Council on 
+issues related to the implementation and use of the Homeless 
+Management Information System (HMIS). The Committee also 
+ensures that HMIS users adhere to the established policies or 
+requirements. 
+Collects and manages membership applications for the CoC 
+General Membership and ensures membership policies and 
+practices are followed. The committee also leads efforts to 
+recruit, retain, and motivate diverse membership participation in 
+the CoC, as well as track attendance at General Membership 
+meetings for the purposes of voting rights and offering committee 
+support. 
+Recruits and selects qualified, willing members of the CoC and/or 
+community at-large to serve as Planning Council members and 
+presents the nominees to the CoC General Membership as 
+requested. 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+16 
+ 
+ 
+ 
+APPENDIX C – ADDITIONAL RESOURCES 
+Committee 
+Duties and Responsibilities 
+Performance Evaluation Committee 
+Standards of Care Committee 
+Veteran Workgroup 
+Youth Action Board 
+Youth & Young Adult Steering Committee 
+Annually prepares scoring matrices for HUD CoC programs, 
+provides trainings for potential grant applicants, scores grant 
+applications, and presents preliminary ranking of grant proposals 
+to the Planning Council for approval. 
+The Continuum of Care (CoC) is responsible for establishing and 
+ensuring compliance with Written Standards for administering 
+assistance as outlined by the Homeless Emergency Assistance and 
+Rapid Transition to Housing (HEARTH) Act for CoC and Emergency 
+Solutions Grant (ESG) funded programs. The CoC Written 
+Standards, therefore, shall be aligned with standards for ESG 
+funded programs within the CoC’s geographic area. The 
+committee will also take on the tasks of the Coordinated Entry 
+Committee as outlined in the current Nashville-Davidson County 
+CoC Charter. Those tasks are to ensure that “community-wide 
+Coordinated Entry policies and procedures are in place and are 
+aligned with HUD requirements.” The Committee identifies 
+relevant key stakeholders for input on the Written Standards 
+draft before presenting it to the Planning Council for approval 
+Works to create a sustainable systems approach that is capable of 
+meeting and maintaining the federal criteria and benchmarks that 
+effectively end veteran homelessness in Nashville. 
+A group of youth and young adults who are experiencing 
+homelessness or have experienced homelessness, that provides 
+advice to the Nashville CoC in its efforts to effectively end 
+homelessness for unaccompanied youth, particularly in the 
+planning and project implementation phases for a HUD Youth 
+Homelessness Demonstration Program (YHDP) grant to the city. 
+Focuses on preventing and ending homelessness for 
+unaccompanied youth and young adults. 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+17 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX C – ADDITIONAL RESOURCES 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+18 
+ 
+ 
+ 
+ 
+APPENDIX C – ADDITIONAL RESOURCES 
+Selected Glossary of Terms 
+Continuum of Care - The group organized to carry out the responsibilities required under 24 CFR part 
+578 and is composed of representatives of organizations, including nonprofit homeless service 
+providers, victim service providers, faith-based organizations, governments, businesses, advocates, 
+public housing agencies, school districts, social service providers, mental health agencies, hospitals, 
+universities, affordable housing developers, law enforcement, organizations that serve homeless and 
+formerly homeless veterans, and homeless and formally homeless individuals to the extent these groups 
+are represented within the geographic area and are available to participate. 
+Homeless Management Information System - A local information technology system used to collect 
+client-level data and data on the provision of housing and services to homeless individuals and families 
+and persons at risk of homelessness. Each CoC is responsible for selecting an HMIS software solution 
+that complies with HUD's data collection, management, and reporting standards. 
+Joint Transitional Housing and Permanent Housing-Rapid-Re-housing - Commonly referred to as “TH-
+RRH”, this combines two existing program components–transitional housing and permanent housing-
+rapid rehousing–in a single project to serve individuals and families experiencing homelessness. Program 
+participants chose the type of housing that best fits their needs that will result in obtaining or 
+maintaining permanent housing. 
+Permanent Supportive Housing - A CoC program component type providing indefinite leasing or rental 
+assistance combined with supportive services for disabled persons experiencing homelessness so that 
+they may live independently. 
+Rapid Re-Housing - A permanent housing solution emphasizing housing search and relocation services 
+and short- and medium-term rental assistance to move homeless persons and families (with or without a 
+disability) as rapidly as possible into housing. Safe Haven - A type of supportive housing designed to serve 
+hard-to-reach homeless persons with severe mental illness who come primarily from the streets and have 
+been unable or unwilling to participate in housing or supportive services. While no longer an eligible new 
+component of the CoC Program, these types of projects continue to be eligible for renewal of leasing, 
+operating,  supportive  services,  rental  assistance,  HMIS  and  project  administrative  costs  under  24  CFR 
+578.33(d)(1),  so  long  as  the  project  continues  to  serve  the  same  population  and  the  same  number of 
+program participants or units in the same type of housing as identified in their most recently amended 
+grant  agreement  signed  before  August  31,  2012.Transitional  Housing  -  Designed  to  provide  homeless 
+individuals  and  families  with  the  interim  stability  and  support  to  successfully  move  to  and  maintain 
+permanent housing. 
+Audit of the Metropolitan Nashville Homeless Impact Division 
+19 
+ 
+ 

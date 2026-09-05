@@ -1,0 +1,20 @@
+{
+  "id": "RT-BULLSHITTERY",
+  "path": "bytes/RT-BULLSHITTERY.bin",
+  "sha256": "77108cf25ca4243a116a3e00cc58f82dd86342547f1d0cbf6195615c7eb79b34",
+  "bytes": 323065,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of",
+  "final_url": "https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of",
+  "retrieved_at": "2026-09-05T01:19:58+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 109598,
+      "byte_length": 29,
+      "method": "exact-bytes",
+      "claim": "Your published record of the Calvin email, the Koch contracts, and the Clutch model. Archive your own work so the priority of publication is fixed."
+    }
+  ]
+}

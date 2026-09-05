@@ -1,0 +1,340 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="ctl00_Head1"><title>
+	Metropolitan Nashville and Davidson County, TN - Action Details
+</title><link href="CalendarControl.css" rel="stylesheet" type="text/css" /><link href="Skins/Tacoma/TabStrip.Tacoma.css" rel="Stylesheet" type="text/css" /><link href="Skins/Tacoma/AccessibilityCommons.css" rel="Stylesheet" type="text/css" />
+    <script type="text/JavaScript" src="AccessibilityFocusManagement.js"></script>
+
+
+    <style>
+        .skip-to-content {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            z-index: 100;
+            color: #0443B0;
+            padding: 10px;
+            text-decoration: none;
+            font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background: #fff;
+        }
+
+        .skip-to-content:focus {
+            position: fixed;
+            left: 4px;
+            top: 4px;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            outline: 2px solid #0443B0;
+        }
+    </style>
+
+    <script>
+        function focusMainContent() {
+            var mainContent = document.getElementById('mainContent');
+            if (mainContent) {
+                mainContent.setAttribute('tabindex', '-1');
+                mainContent.focus();
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="./Scripts/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="CalendarControl.js" language="javascript"></script>
+    <script type="text/javascript">
+        var addthis_config = {
+            ui_cobrand: "powered by Legistar",
+            ui_header_color: "#660000",
+            ui_header_background: "#f7eecd",
+            ui_508_compliant: true,
+            data_track_clickback: true
+        }
+    </script>
+    <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#username=legistarinsite" async="async"></script>
+    <script type="text/javascript">
+        window.name = "MasterWindow";
+        var first = true;
+        var first2 = true;
+        function OpenTelerikWindow(url) {
+            var w = radopen(url, 'RadWindow1');
+            w.add_pageLoad(function () {
+                focusRadWindow(w);
+            });
+
+            if (first) {
+                //w.togglePin(); 
+                first = false;
+            }
+        }
+        function OpenTelerikWindow2(url) {
+            var w = radopen(url, 'RadWindow2')
+            if (first2) {
+                //w.togglePin(); 
+                first2 = false;
+            }
+        }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTMGN2RHVZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TTMGN2RHVZ');
+    </script>
+    <meta name="author" content="Granicus, Inc." /><meta name="format-detection" content="telephone=no" /><link href="/WebResource.axd?d=HkmiNSkKJcp9zYO7iQ4LQenL3JpSZe2UGKB_Pk4r5YQRuZzPsLMsZzwrSvy9lruIl5GkgwLvHWu67vwJMwKSFxUTlVdL05GtcnLDPfablFs-ZjDTV4SRhTyPSYW1NSg5lG_yG93x297US-_TNEi91A2&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=urCACUaUZeT6oPoIZXShbnlgytxq3wMs7tMUnmP4aoFvw0sx5OWFviaAe2ZbWlhhQMX8Mi0FTDYCb8Y-WNvbuSFn44BI8cOyIzL5cbvgqlL7S5R5XTCNn8Q3MetXqXHM0&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=uMHMJgpmGPen0kzqrN8LWYpZovkUM17mZ-jnfMO1-mIpfJ3Mr86M6T5OMXNr2U0Pk9W3KFcYt5svpDY2wx41YtI055hyXPIDrtrd24Kg09JMsO8GiraCk1bp2kCwGMqpZqezdMXXuW0xEV6n7QuSEOHmuyo6kgwFzlOpXFFZ29M1&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=lsHxUYuoKn-ifTgGVgyNZf3eZVw2bqdnrrfBJ8SSWF0J6XTAyGsj2XcoukzmozU2bdmLMxJ7YwvzKl3RXRh794KwnXvNcPwTMFgJz1q2H-NkU9XddzMi2rc7GFYRGxglrSKxgkmfnuvKqK1tihnG7Q2&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=vsKpXOsoEwDUfVug9KOqSmMo0ZYmPmZq9pNuuInW9K8LhCVDiGx-4gStdZMuqyTrdQnKi2y2KGw-JDYkasLPmGPVTN_zZ42kaVpGhkB2gwWbSGRzM94ksIhHXxPA1yg_0&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=gGPJcKA2egeNvbDi_oMTrZQzMPZHhEQ0hmhbdFcuHMCg1mLBd2_O72dBkCkDfQ_FtyfPokWEk71-f0biNDBijcKF2cbjGOFkLqzBLNnzrv7MZm8BQmoKzeN6l0sbKF2FwrVKqiAYBc-g20wgLAmF3Q2&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=Nhf6TpUj19KZ9rhEj2xtdQWB1AE9x3dfjERCbojyAxXP6CcFUcpIuRIjIS_IzCgwDtzHlcE6eqDW_UkCZmMuD4x586LEbaG9IrmDoMtO4sXgHE8h6D9e_UqLYjifNbvG0&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=7RkMGAtaEIp2mKcOqdFCIpTlALKrRqMWBcpUfEVqZDRAcTON93eeg1VWMn9vjLDHerUGnVdJKMZP8zv8YJhqkfjFeF3AJkEqmbxWwem3_RafwQTUXWmkdAR-pgkwzOwyHrBav9bQkHGzPkQG7ZRd_Q2&amp;t=639229567706948907" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body id="ctl00_body1" style="margin: 0px; border: 0px;" class="tacoma_">
+    <div id="globalTooltip" class="custom-tooltip"></div>
+    <a href="#mainContent" class="skip-to-content" onclick="focusMainContent()">Skip to main content</a>
+    <form name="aspnetForm" method="post" action="./HistoryDetail.aspx?ID=25668715&amp;GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7" id="aspnetForm" style="direction:ltr;">
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a15e07564-f3d5-441e-a01b-5763caea6096%3aea597d4b%3bTelerik.Web.UI%2c+Version%3d2020.1.114.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3a40a36146-6362-49db-b4b5-57ab81f34dac%3ae330518b%3a16e4e7cd%3af7645509%3a24ee1bba%3a33715776%3a88144a7a%3a1e771326%3a8e6f0d33%3a1f3a7489%3aed16cbdc%3a6a6d718d%3a2003d0b8%3ac128760b%3ac8618e41%3a1a73651d%3a333f8d94%3a58366029" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E1E7B4F1" />
+        
+        <div id="ctl00_divBody">
+            <div id="ctl00_divMyAccountOut" style="position:absolute;right:5px;top:5px;background-color:#334460;">
+                <a id="ctl00_hypSignIn" href="SignIn.aspx?ReturnUrl=TXlBY2NvdW50LmFzcHg%3d"><font face="Tahoma" color="White" size="2">Sign In</font></a>
+            </div>
+            
+            <div id="ctl00_divTop"><div style="background-color: #15224C;"><img alt="" src="https://webcontent.granicusops.com/content/nashville/images/Nashville030420.png" /></div><!-- start: Google Translate --> <div id="google_translate_element"></div> <script type="text/javascript"> function googleTranslateElementInit() { new google.translate.TranslateElement(
+
+{ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.VERTICAL }
+, 'google_translate_element'); } </script> <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <style> #google_translate_element { float: right; padding-right: .5em; } </style> <script type="text/javascript"> setInterval(function () { var p = document.getElementById('goog-gt-votingHiddenPane'); if (p && p.parentNode)
+
+{ p.parentNode.removeChild(p); }
+}, 1000); </script> <!-- end: Google Translate --></div>
+            
+            <div id="ctl00_divTabs">
+                <div id="ctl00_tabTop" class="RadTabStrip RadTabStrip_Tacoma RadTabStripTop_Tacoma RadTabStripTop"><font face="Tahoma" size="2">
+	<!-- 2020.1.114.45 --><div class="rtsLevel rtsLevel1">
+		<ul class="rtsUL"><li class="rtsLI rtsFirst"><a class="rtsLink" href="http://nashville.legistar.com"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Home</span></span></span></a></li><li class="rtsLI"><a class="rtsLink rtsBefore" href="Legislation.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Legislative Search</span></span></span></a></li><li class="rtsLI"><a class="rtsLink rtsSelected" href="Calendar.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Meeting Calendar</span></span></span></a></li><li class="rtsLI"><a class="rtsLink rtsAfter" href="MainBody.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Metropolitan Council</span></span></span></a></li><li class="rtsLI"><a class="rtsLink" href="Departments.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Legislative Bodies</span></span></span></a></li><li class="rtsLI rtsLast"><a class="rtsLink" href="http://documents.nashville.gov/request/form/legislation"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Archived Legislation (Pre-May 2026)</span></span></span></a></li></ul>
+	</div><input id="ctl00_tabTop_ClientState" name="ctl00_tabTop_ClientState" type="hidden" />
+</font></div>
+            </div>
+            <div id="ctl00_divLeft">
+            </div>
+            <div id="ctl00_divHeader" style="width: 100%; height: 28px">
+                <div id="divHeaderLeft">
+                    
+                </div>
+                <div id="divHeaderRight" style="float: right; height: 16px">
+                    
+                    
+                </div>
+            </div>
+            <div id="ctl00_Div1">
+                <div id="ctl00_Div2">
+                    <main id="mainContent" role="main" tabindex="-1">
+                    <div id="ctl00_divMiddle">
+                        
+    <head>
+        <script type="text/JavaScript" src="GridFilter.js"></script> 
+        <script type="text/JavaScript" src="AccessibilityFocusManagement.js"></script>
+        <link href="Skins/Tacoma/AccessibilityCommons.css" rel="Stylesheet" type="text/css" />
+    </head>
+
+    <div id="ctl00_ContentPlaceHolder1_RadAjaxManager1SU">
+	<span id="ctl00_ContentPlaceHolder1_RadAjaxManager1" style="display:none;"></span>
+</div>
+    <div id="ctl00_ContentPlaceHolder1_RadAjaxLoadingPanel1" style="display:none;height:75px;width:75px;">
+	
+        <img alt="Loading..." src='/WebResource.axd?d=GlPPRoa3q1QmM_XFN5If4CxfN3S-cgQzypn6SHyBpvWh8wyZ5Cm_qsz7Vq9HLR86gm168gofzhhVQd4idaTUzMIuCpSQXhldpsbKcc80H-BmChfdAao3Pq3facHVJk-jMrBOnhhYV9yZqT-SvW4bfQ2&amp;t=639229567706948907'
+             style="border: 0px;" />
+    
+</div>
+    
+    <div id="ctl00_ContentPlaceHolder1_tabTop" class="RadTabStrip RadTabStrip_Default RadTabStripTop_Default RadTabStripTop"><font face="Tahoma" size="2">
+	<div class="rtsLevel rtsLevel1">
+		<ul class="rtsUL"><li class="rtsLI rtsFirst rtsLast"><a class="rtsLink rtsSelected" href="#"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Details</span></span></span></a></li></ul>
+	</div><input id="ctl00_ContentPlaceHolder1_tabTop_ClientState" name="ctl00_ContentPlaceHolder1_tabTop_ClientState" type="hidden" />
+</font></div>
+    <h1 class="sr-only">History Details</h1>
+    <div id="ctl00_ContentPlaceHolder1_MultiPageTop" class="RadMultiPage RadMultiPage_Default">
+	<div id="ctl00_ContentPlaceHolder1_pageTop1" class="rmpView">
+		
+            <table border="0" cellpadding="2" cellspacing="2" width="100%">
+                <tr>
+                    <td valign="top" style="width: 150px">
+                        <span id="ctl00_ContentPlaceHolder1_lblFilePrompt"><font face="Tahoma" color="Navy" size="2">File #:</font></span>
+                    </td>
+                    <td valign="top">
+                        <a id="ctl00_ContentPlaceHolder1_hypFile" href="LegislationDetail.aspx?ID=5197292&amp;GUID=38B64936-8F8D-4AAC-B511-710E7D633231" target="MasterWindow"><font face="Tahoma" color="Blue" size="2">BL2021971</font></a>
+                        
+                        &nbsp;&nbsp;
+                        
+                        
+                    </td>
+                </tr>
+            </table>
+            <table id="ctl00_ContentPlaceHolder1_tblType" border="0" cellpadding="2" cellspacing="2" width="100%">
+			<tr>
+				<td valign="top" style="width: 150px">
+                        <span id="ctl00_ContentPlaceHolder1_lblTypePrompt"><font face="Tahoma" color="Navy" size="2">Type:</font></span>
+                    </td>
+				<td valign="top">
+                        <span id="ctl00_ContentPlaceHolder1_lblType"><font face="Tahoma" color="Black" size="2">Bill</font></span>
+                    </td>
+			</tr>
+		</table>
+		
+            
+            <table id="ctl00_ContentPlaceHolder1_tblTitle" border="0" cellpadding="2" cellspacing="2" width="100%">
+			<tr>
+				<td valign="top" style="width: 150px">
+                        <span id="ctl00_ContentPlaceHolder1_lblTitlePrompt"><font face="Tahoma" color="Navy" size="2">Title:</font></span>
+                    </td>
+				<td valign="top">
+                        <span id="ctl00_ContentPlaceHolder1_lblTitle"><font face="Tahoma" color="Black" size="2">An ordinance to amend Title 2 of the Metropolitan Code of Laws to create an Office Homeless Services.</font></span>
+                    </td>
+			</tr>
+		</table>
+		
+            <table border="0" cellpadding="2" cellspacing="2" width="100%">
+                <tr>
+                    
+                    
+                    
+                    
+                </tr>
+            </table>
+            
+            
+            
+            <table id="ctl00_ContentPlaceHolder1_tblAction" border="0" cellpadding="2" cellspacing="2" width="100%">
+			<tr>
+				<td valign="top" style="width: 150px">
+                        <span id="ctl00_ContentPlaceHolder1_lblActionPrompt"><font face="Tahoma" color="Navy" size="2">Action:</font></span>
+                    </td>
+				<td valign="top">
+                        <span id="ctl00_ContentPlaceHolder1_lblAction"><font face="Tahoma" color="Black" size="2">passed on third reading as amended</font></span>
+                    </td>
+			</tr>
+		</table>
+		
+            <table id="ctl00_ContentPlaceHolder1_tblActionText" border="0" cellpadding="2" cellspacing="2" width="100%">
+			<tr>
+				<td valign="top" style="width: 150px">
+                        <span id="ctl00_ContentPlaceHolder1_lblActionTextPrompt"><font face="Tahoma" color="Navy" size="2">Action text:</font></span>
+                    </td>
+				<td valign="top">
+                        <span id="ctl00_ContentPlaceHolder1_lblActionText"><font face="Tahoma" color="Black" size="2">Council Member O'Connell moved to suspend the rules of procedure to introduce a late amendment. Without objection, Council Member O'Connell offered Amendment No. 2 and moved that it be adopted, which motion was seconded and approved by a voice vote of the Council. Council Member O'Connell moved to pass the bill on third reading as amended, which motion was seconded and approved by the following vote: Yes (35): Mendes, Hurt, Allen, Suara, Hall, Toombs, Gamble, Swope, Parker, Withers, Benedict, VanReece, Hancock, Young, Evans, Bradford, Syracuse, Welsch, Sledge, Cash, O'Connell, Taylor, Hausser, Druffel, Murphy, Pulley, Johnston, Nash, Vercher, Porterfield, Sepulveda, Rutherford, Lee, Henderson, and Rosenberg; No (0); Abstain (0).</font></span>
+                    </td>
+			</tr>
+		</table>
+		
+        
+	</div><input id="ctl00_ContentPlaceHolder1_MultiPageTop_ClientState" name="ctl00_ContentPlaceHolder1_MultiPageTop_ClientState" type="hidden" />
+</div>
+    <div id="ctl00_ContentPlaceHolder1_tabBottom" class="RadTabStrip RadTabStrip_Default RadTabStripTop_Default RadTabStripTop"><font face="Tahoma" size="2">
+	<div class="rtsLevel rtsLevel1">
+		<ul class="rtsUL"><li class="rtsLI rtsFirst rtsLast"><a class="rtsLink rtsSelected" href="#"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Votes (0:0)</span></span></span></a></li></ul>
+	</div><input id="ctl00_ContentPlaceHolder1_tabBottom_ClientState" name="ctl00_ContentPlaceHolder1_tabBottom_ClientState" type="hidden" />
+</font></div>
+    <div id="ctl00_ContentPlaceHolder1_MultiPageBottom" class="RadMultiPage RadMultiPage_Default">
+	<div id="ctl00_ContentPlaceHolder1_pageVote" class="rmpView">
+		
+            <table id="ctl00_ContentPlaceHolder1_tblVote1" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td>
+                        <div tabindex="0" id="ctl00_ContentPlaceHolder1_menuVote" class="RadMenu RadMenu_Default" role="menubar" style="z-index:3500;"><font face="Tahoma" size="2">
+					<ul class="rmRootGroup rmHorizontal">
+						<li class="rmItem rmFirst rmLast"><a class="rmLink rmRootLink rmDisabled" href="#"><font color="Black"><span class="rmText">0 records</span></font></a></li>
+					</ul><input id="ctl00_ContentPlaceHolder1_menuVote_ClientState" name="ctl00_ContentPlaceHolder1_menuVote_ClientState" type="hidden" />
+				</font></div>
+                    </td>
+			</tr>
+		</table>
+		
+            <table id="ctl00_ContentPlaceHolder1_tblVote2" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td>
+                        <div id="ctl00_ContentPlaceHolder1_gridVote" class="RadGrid RadGrid_Default" style="font-family:Tahoma;font-size:10pt;width:99.5%;">
+
+				<table class="rgMasterTable" border="0" id="ctl00_ContentPlaceHolder1_gridVote_ctl00" frame="void" width="100%" style="table-layout:auto;empty-cells:show;">
+					<colgroup>
+		<col  />
+		<col  />
+	</colgroup>
+<thead>
+						<tr>
+							<th scope="col" class="rgHeader" valign="middle" nowrap="nowrap" style="text-align:left;vertical-align:middle;">Person Name</th><th scope="col" class="rgHeader" valign="middle" nowrap="nowrap" style="text-align:left;vertical-align:middle;">Vote</th>
+						</tr>
+					</thead><tbody>
+					<tr class="rgNoRecords">
+						<td colspan="2" style="text-align:left;"><div>No records to display.</div></td>
+					</tr>
+					</tbody>
+
+				</table><div id="ctl00_ContentPlaceHolder1_gridVote_SharedCalendarContainer" style="display:none;">
+
+				</div><input id="ctl00_ContentPlaceHolder1_gridVote_ClientState" name="ctl00_ContentPlaceHolder1_gridVote_ClientState" type="hidden" />	</div>
+				
+                    </td>
+			</tr>
+		</table>
+		
+        
+	</div><input id="ctl00_ContentPlaceHolder1_MultiPageBottom_ClientState" name="ctl00_ContentPlaceHolder1_MultiPageBottom_ClientState" type="hidden" />
+</div>
+
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                    </main>
+                </div>
+            </div>
+            <div id="ctl00_divRight">
+            </div>
+            <div id="ctl00_divBottom">
+                
+            </div>
+        </div>
+        
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl00_RadScriptManager1_TSM');Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTabStrip, {"_selectedIndex":2,"_skin":"Tacoma","causesValidation":false,"clickSelectedTab":true,"clientStateFieldID":"ctl00_tabTop_ClientState","selectedIndexes":["2"],"tabData":[{"value":"Home"},{"value":"Legislation"},{"value":"Calendar"},{"value":"MainBody"},{"value":"Departments"},{"value":"End5"}]}, null, null, $get("ctl00_tabTop"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[{InitControlID : "",UpdatedControls : [{ControlID:"",PanelID:""}]}],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"ctl00_ContentPlaceHolder1_RadAjaxLoadingPanel1","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$ContentPlaceHolder1$RadAjaxManager1","updatePanelsRenderMode":0}, null, null, $get("ctl00_ContentPlaceHolder1_RadAjaxManager1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"skin":"","uniqueID":"ctl00$ContentPlaceHolder1$RadAjaxLoadingPanel1","zIndex":90000}, null, null, $get("ctl00_ContentPlaceHolder1_RadAjaxLoadingPanel1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTabStrip, {"_selectedIndex":0,"_skin":"Default","clientStateFieldID":"ctl00_ContentPlaceHolder1_tabTop_ClientState","selectedIndexes":["0"],"tabData":[{"value":"Details"}]}, null, null, $get("ctl00_ContentPlaceHolder1_tabTop"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMultiPage, {"clientStateFieldID":"ctl00_ContentPlaceHolder1_MultiPageTop_ClientState","pageViewData":[{"id":"ctl00_ContentPlaceHolder1_pageTop1"}],"selectedIndex":0}, null, null, $get("ctl00_ContentPlaceHolder1_MultiPageTop"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadTabStrip, {"_selectedIndex":0,"_skin":"Default","clientStateFieldID":"ctl00_ContentPlaceHolder1_tabBottom_ClientState","multiPageID":"ctl00_ContentPlaceHolder1_MultiPageBottom","selectedIndexes":["0"],"tabData":[{"value":"Votes","pageViewID":"ctl00_ContentPlaceHolder1_pageVote"}]}, null, null, $get("ctl00_ContentPlaceHolder1_tabBottom"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMenu, {"_childListElementCssClass":null,"_postBackReference":"__doPostBack(\u0027ctl00$ContentPlaceHolder1$menuVote\u0027,\u0027arguments\u0027)","_skin":"Default","attributes":{"role":"menubar"},"clientStateFieldID":"ctl00_ContentPlaceHolder1_menuVote_ClientState","collapseAnimation":"{\"type\":12,\"duration\":200}","collapseDelay":50,"defaultGroupSettings":"{\"flow\":0,\"expandDirection\":0}","enableAriaSupport":true,"expandAnimation":"{\"duration\":450}","expandDelay":50,"itemData":[{"groupSettings":{"flow":0,"expandDirection":0},"attributes":{"role":"menuitem","aria-haspopup":"true","aria-expanded":"false","aria-label":"0 records"},"postBack":0,"value":"Results","enabled":false}]}, null, null, $get("ctl00_ContentPlaceHolder1_menuVote"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_ContentPlaceHolder1_gridVote","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"AllowDragToGroup":true,"AllowKeyboardNavigation":true,"ShouldCreateRows":true,"ReorderColumnsOnClient":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0,"AllowRowSelect":true,"EnableDragToSelectRows":true,"UseClientSelectColumnOnly":true},"Scrolling":{},"Resizing":{"AllowColumnResize":true},"ClientMessages":{"DragToGroupOrReorder":""},"KeyboardNavigationSettings":{"AllowActiveRowCycle":true,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"MoveDownKey":40,"MoveUpKey":38,"SaveChangesKey":85,"CancelChangesKey":81},"Animation":{},"Virtualization":{}},"Skin":"Default","UniqueID":"ctl00$ContentPlaceHolder1$gridVote","ValidationSettings":{"EnableValidation":true,"ValidationGroup":"","CommandsToValidate":["PerformInsert","Update"]},"_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"M/d/yyyy h:mm:ss tt","_editIndexes":"[]","_embeddedSkin":true,"_freezeText":"Freeze","_gridTableViewsData":"[{\"ClientID\":\"ctl00_ContentPlaceHolder1_gridVote_ctl00\",\"UniqueID\":\"ctl00$ContentPlaceHolder1$gridVote$ctl00\",\"PageSize\":100,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":false,\"AllowNaturalSort\":false,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":false,\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_renderActiveItemStyle\":\"\",\"_renderActiveItemStyleClass\":\"rgActiveRow\",\"_columnsData\":[{\"UniqueName\":\"NameFull\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"Vote\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridBoundColumn\",\"ColumnGroupName\":\"\",\"Editable\":true,\"DataTypeName\":\"System.String\",\"DataField\":\"Vote\",\"Display\":true}]}]","_masterClientID":"ctl00_ContentPlaceHolder1_gridVote_ctl00","_shouldFocusOnPage":false,"_unfreezeText":"Unfreeze","allowMultiRowSelection":true,"clientStateFieldID":"ctl00_ContentPlaceHolder1_gridVote_ClientState","renderMode":1}, {"filterMenuShowing":gridFilterMenuShowing}, null, $get("ctl00_ContentPlaceHolder1_gridVote"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadMultiPage, {"clientStateFieldID":"ctl00_ContentPlaceHolder1_MultiPageBottom_ClientState","pageViewData":[{"id":"ctl00_ContentPlaceHolder1_pageVote"},{"id":"ctl00_ContentPlaceHolder1_pageRollCall"}],"selectedIndex":0}, null, null, $get("ctl00_ContentPlaceHolder1_MultiPageBottom"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>

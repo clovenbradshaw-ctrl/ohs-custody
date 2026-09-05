@@ -1,0 +1,22 @@
+{
+  "id": "LEG-AMD1",
+  "path": "bytes/LEG-AMD1.bin",
+  "sha256": "997e7142e5db5d60f4f01a2f832e6b089badc3943316aaf4d7b7a0ab3d3518ca",
+  "bytes": 101936,
+  "media_type": "application/pdf",
+  "source_url": "https://nashville.legistar.com/View.ashx?M=F&ID=10956003&GUID=14EC3D89-8ADD-41B7-A5ED-C349E645E0D5",
+  "final_url": "https://nashville.legistar.com/View.ashx?M=F&ID=10956003&GUID=14EC3D89-8ADD-41B7-A5ED-C349E645E0D5",
+  "retrieved_at": "2026-09-05T01:19:19+00:00",
+  "wayback_timestamp": "20250911045419",
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 1,
+      "text_offset": 401,
+      "text_length": 19,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "997e7142e5db5d60f4f01a2f832e6b089badc3943316aaf4d7b7a0ab3d3518ca",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

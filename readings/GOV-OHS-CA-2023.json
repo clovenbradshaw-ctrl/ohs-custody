@@ -1,0 +1,20 @@
+{
+  "id": "GOV-OHS-CA-2023",
+  "path": "bytes/GOV-OHS-CA-2023.bin",
+  "sha256": "85d3af871db9cf4a9b923f15afd8c9f1fc2dfb82a97e23eb11f780335713c759",
+  "bytes": 99343,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services/continuum-care",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services/continuum-care",
+  "retrieved_at": "2026-09-05T01:19:29+00:00",
+  "wayback_timestamp": "20260406175323",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 55264,
+      "byte_length": 72,
+      "method": "exact-bytes",
+      "claim": "Dates the transfer of the HUD Collaborative Applicant role from MDHA to OHS to November 2023, the fact GOV-MDHA-CA's now-dead page used to carry from the other side."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "CTB-TACKETT-AUG26",
+  "path": "bytes/CTB-TACKETT-AUG26.bin",
+  "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
+  "bytes": 203334,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+  "final_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+  "retrieved_at": "2026-09-05T01:19:36+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 165810,
+      "byte_length": 65,
+      "method": "exact-bytes",
+      "claim": "Only located text of the MHRC determination. The underlying letter is not yet in hand, so this is a quoting source and not the record itself."
+    }
+  ]
+}

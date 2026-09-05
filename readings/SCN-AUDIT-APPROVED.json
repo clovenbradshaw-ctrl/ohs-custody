@@ -1,0 +1,20 @@
+{
+  "id": "SCN-AUDIT-APPROVED",
+  "path": "bytes/SCN-AUDIT-APPROVED.bin",
+  "sha256": "5356b2f3b1966b8ce1d7b0bd362dac99f33adb1ae1718e2e0d99b1fafb8a5ed9",
+  "bytes": 267325,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashvillescene.com/news/pithinthewind/office-of-homeless-services-audit/article_b5044f4a-32a6-46ca-ac32-363cf673bfe0.html",
+  "final_url": "https://www.nashvillescene.com/news/pithinthewind/office-of-homeless-services-audit/article_b5044f4a-32a6-46ca-ac32-363cf673bfe0.html",
+  "retrieved_at": "2026-09-05T01:19:43+00:00",
+  "wayback_timestamp": "20260829234815",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 172201,
+      "byte_length": 29,
+      "method": "exact-bytes",
+      "claim": "Establishes the 23 Sep 2025 approval, the scope role of the vice mayor, and the auditor present."
+    }
+  ]
+}

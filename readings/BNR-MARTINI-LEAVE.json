@@ -1,0 +1,20 @@
+{
+  "id": "BNR-MARTINI-LEAVE",
+  "path": "bytes/BNR-MARTINI-LEAVE.bin",
+  "sha256": "19ae76612fec06f027545fd5b7b05c69825ce79ff04ed49f545dbc01ab7dea48",
+  "bytes": 381636,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://nashvillebanner.com/2026/01/09/nashville-emergency-communications-director-leave/",
+  "final_url": "https://nashvillebanner.com/2026/01/09/nashville-emergency-communications-director-leave/",
+  "retrieved_at": "2026-09-05T01:19:41+00:00",
+  "wayback_timestamp": "20260210095225",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 118057,
+      "byte_length": 30,
+      "method": "exact-bytes",
+      "claim": "The sentence that breaks the unchecked-appointee framing and forces the stronger version of the argument."
+    }
+  ]
+}

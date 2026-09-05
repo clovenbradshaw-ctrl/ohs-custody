@@ -1,0 +1,22 @@
+{
+  "id": "AUD-HID-2023",
+  "path": "bytes/AUD-HID-2023.bin",
+  "sha256": "79a8223f0b8b3443bea6bcac66cfcd3c888c88060b3a5045bad610c7ac6c7baf",
+  "bytes": 972892,
+  "media_type": "application/pdf",
+  "source_url": "https://www.nashville.gov/sites/default/files/2023-04/Homeless-Impact-Division-230330.pdf?ct=1681999881",
+  "final_url": "https://www.nashville.gov/sites/default/files/2023-04/Homeless-Impact-Division-230330.pdf?ct=1681999881",
+  "retrieved_at": "2026-09-05T01:19:07+00:00",
+  "wayback_timestamp": "20260609184709",
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 8,
+      "text_offset": 20225,
+      "text_length": 31,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "79a8223f0b8b3443bea6bcac66cfcd3c888c88060b3a5045bad610c7ac6c7baf",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

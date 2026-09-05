@@ -1,0 +1,20 @@
+{
+  "id": "FOX-LAPSE",
+  "path": "bytes/FOX-LAPSE.bin",
+  "sha256": "4ee137f3ec93049775f6d9f9bba6e2d2eb6d5c1e31647d2d4b5bda874c7604f4",
+  "bytes": 303157,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://fox17.com/news/local/metro-council-cites-lack-of-oversight-after-contract-lapse-at-homeless-housing-facility",
+  "final_url": "https://fox17.com/news/local/metro-council-cites-lack-of-oversight-after-contract-lapse-at-homeless-housing-facility",
+  "retrieved_at": "2026-09-05T01:19:55+00:00",
+  "wayback_timestamp": "20250901131757",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 45202,
+      "byte_length": 32,
+      "method": "exact-bytes",
+      "claim": "Metro Finance confirming the voucher workaround. URL needs checking, it was reconstructed and may 404."
+    }
+  ]
+}

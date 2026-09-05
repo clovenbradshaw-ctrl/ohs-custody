@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source custody register / Office of Homeless Services</title>
+<style>
+  :root{
+    --paper:#edeff2;
+    --surface:#ffffff;
+    --ink:#15181d;
+    --muted:#59616e;
+    --faint:#8b93a1;
+    --rule:#d3d8df;
+    --rule-strong:#aab2be;
+    --oxide:#b0522c;
+    --oxide-bg:#f7ece6;
+    --green:#1e5c48;
+    --green-bg:#e6efeb;
+    --blue:#2c4780;
+    --blue-bg:#e7ebf4;
+    --slate:#4a5568;
+    --slate-bg:#eaecf0;
+    --sans: "Inter", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+    --mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:15px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px 96px}
+
+  /* ---------- masthead ---------- */
+  .masthead{padding:44px 0 26px;border-bottom:2px solid var(--ink)}
+  .masthead h1{
+    font-family:var(--mono);
+    font-size:clamp(21px,3.4vw,31px);
+    font-weight:600;
+    letter-spacing:-0.02em;
+    line-height:1.2;
+    margin:0 0 14px;
+  }
+  .masthead h1 .slash{color:var(--faint);font-weight:400}
+  .standfirst{max-width:64ch;color:var(--muted);margin:0 0 22px;font-size:14.5px}
+  .standfirst strong{color:var(--ink);font-weight:600}
+
+  .tally{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule-strong);background:var(--surface)}
+  .tally div{
+    flex:1 1 auto;min-width:104px;padding:11px 14px;
+    border-right:1px solid var(--rule);
+  }
+  .tally div:last-child{border-right:0}
+  .tally b{display:block;font-family:var(--mono);font-size:22px;font-weight:600;line-height:1.1}
+  .tally span{font-size:11.5px;color:var(--muted);letter-spacing:0.01em}
+  .tally .t-open b{color:var(--oxide)}
+  .tally .t-done b{color:var(--green)}
+
+  /* ---------- controls ---------- */
+  .controls{
+    position:sticky;top:0;z-index:20;
+    background:var(--paper);
+    padding:14px 0 12px;
+    border-bottom:1px solid var(--rule-strong);
+    margin-bottom:2px;
+  }
+  .ctl-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .ctl-row + .ctl-row{margin-top:9px}
+  input[type=search]{
+    flex:1 1 220px;min-width:0;
+    font-family:var(--sans);font-size:14px;
+    padding:7px 11px;border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink);
+  }
+  .chip{
+    font-family:var(--sans);font-size:12.5px;
+    padding:6px 11px;border:1px solid var(--rule-strong);background:var(--surface);
+    color:var(--muted);cursor:pointer;
+  }
+  .chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn{
+    font-family:var(--sans);font-size:12.5px;font-weight:500;
+    padding:6px 12px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;
+  }
+  .btn.ghost{background:var(--surface);color:var(--ink)}
+  .btn:disabled{opacity:.42;cursor:not-allowed}
+  button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{
+    outline:2px solid var(--blue);outline-offset:2px;
+  }
+
+  /* ---------- register ---------- */
+  .entry{
+    background:var(--surface);
+    border-bottom:1px solid var(--rule);
+    padding:20px 18px 18px 0;
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:0 22px;
+  }
+  .entry.at-risk{box-shadow:inset 4px 0 0 var(--oxide)}
+  .entry.captured{box-shadow:inset 4px 0 0 var(--green)}
+  .gutter{padding-left:18px}
+  .eid{font-family:var(--mono);font-size:11.5px;color:var(--ink);font-weight:600;word-break:break-all}
+  .tier{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.35}
+  .stamp{
+    display:inline-block;margin-top:9px;
+    font-family:var(--mono);font-size:10.5px;font-weight:600;
+    padding:3px 7px;border:1px solid currentColor;
+  }
+  .s-unverified{color:var(--oxide);background:var(--oxide-bg)}
+  .s-captured{color:var(--green);background:var(--green-bg)}
+  .s-missing{color:#7a2020;background:#f6e8e8}
+  .s-held{color:var(--slate);background:var(--slate-bg)}
+  .prio{display:block;margin-top:7px;font-size:10.5px;color:var(--oxide);font-weight:600}
+
+  /* archive tier: how a capture is attested, separate from whether the
+     anchor was found in it. These carry different evidentiary weight and
+     are deliberately never folded into the status stamp above. */
+  .tierbadge{
+    display:inline-block;margin:6px 0 0;margin-left:6px;
+    font-family:var(--mono);font-size:10px;font-weight:600;
+    padding:2px 6px;border:1px solid currentColor;border-radius:2px;
+  }
+  .t-independent{color:var(--green);background:var(--green-bg)}
+  .t-historical{color:var(--blue);background:var(--blue-bg)}
+  .t-local{color:var(--slate);background:var(--slate-bg)}
+  .t-none{color:var(--faint);background:transparent;border-style:dashed}
+
+  .body h3{margin:0 0 3px;font-size:16px;font-weight:600;line-height:1.35}
+  .claim{margin:0 0 11px;color:var(--muted);font-size:13.5px;max-width:66ch}
+  .anchor{
+    font-family:var(--mono);font-size:12.5px;
+    background:#f4f6f9;border-left:3px solid var(--rule-strong);
+    padding:7px 11px;margin:0 0 11px;max-width:66ch;word-break:break-word;
+  }
+  .anchor::before{content:"anchor  ";color:var(--faint)}
+
+  .machine{
+    font-family:var(--mono);font-size:11.5px;color:var(--muted);
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
+    gap:3px 16px;margin:0 0 11px;
+  }
+  .machine i{font-style:normal;color:var(--faint)}
+  .machine em{font-style:normal;color:var(--ink);word-break:break-all}
+  .url{font-family:var(--mono);font-size:11.5px;word-break:break-all;color:var(--muted);margin:0 0 10px}
+
+  /* the byte ruler: where the anchor sits inside the captured document */
+  .ruler{margin:0 0 12px;max-width:520px}
+  .ruler-track{position:relative;height:15px;background:#eef1f5;border:1px solid var(--rule)}
+  .ruler-hit{position:absolute;top:-1px;bottom:-1px;background:var(--blue);min-width:2px}
+  .ruler-cap{font-family:var(--mono);font-size:10.5px;color:var(--faint);margin-top:3px;display:flex;justify-content:space-between}
+  .ruler.empty .ruler-track{background:repeating-linear-gradient(135deg,#f2f4f7,#f2f4f7 5px,#e8ebf0 5px,#e8ebf0 10px)}
+
+  .actions{display:flex;flex-wrap:wrap;gap:6px}
+  .actions a,.actions button{
+    font-family:var(--sans);font-size:11.5px;
+    padding:4px 9px;border:1px solid var(--rule-strong);background:var(--surface);
+    color:var(--ink);text-decoration:none;cursor:pointer;white-space:nowrap;
+  }
+  .actions a:hover,.actions button:hover{border-color:var(--ink)}
+  .actions .dead{opacity:.4;pointer-events:none}
+  .actions .primary{border-color:var(--blue);color:var(--blue)}
+
+  /* ---------- panels ---------- */
+  .panel{background:var(--surface);border:1px solid var(--rule-strong);margin:30px 0;padding:20px 22px}
+  .panel h2{margin:0 0 10px;font-size:15px;font-weight:600}
+  .panel p{margin:0 0 11px;color:var(--muted);font-size:13.5px;max-width:70ch}
+  .panel p:last-child{margin-bottom:0}
+  .panel code{font-family:var(--mono);font-size:12px;background:#f4f6f9;padding:1px 4px}
+  ol.steps{margin:0;padding-left:20px;color:var(--muted);font-size:13.5px;max-width:70ch}
+  ol.steps li{margin-bottom:7px}
+  ol.steps b{color:var(--ink);font-weight:600}
+  textarea{
+    width:100%;min-height:96px;font-family:var(--mono);font-size:11.5px;
+    border:1px solid var(--rule-strong);padding:9px;background:#fbfcfd;color:var(--ink);resize:vertical;
+  }
+  .warn{border-left:4px solid var(--oxide);background:var(--oxide-bg);border-color:var(--rule-strong)}
+  .warn h2{color:var(--oxide)}
+  .warn p{color:#6d3d24}
+
+  .foot{margin-top:36px;padding-top:16px;border-top:1px solid var(--rule-strong);font-size:12px;color:var(--faint);max-width:70ch}
+  .empty-state{padding:44px 18px;text-align:center;color:var(--muted);font-size:14px;background:var(--surface);border-bottom:1px solid var(--rule)}
+
+  @media (max-width:640px){
+    .entry{grid-template-columns:1fr;gap:12px 0;padding-right:14px}
+    .gutter{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+    .tier{margin-top:0}
+    .stamp{margin-top:0}
+    .prio{margin-top:0}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>Source custody register <span class="slash">/</span> Office of Homeless Services</h1>
+  <p class="standfirst">
+    One row per anchored citation in the standby overview. Each row carries the live source, a link that jumps a browser to the exact words, a Wayback capture, and once the runner has been over it, the byte offset where those words sit inside the retrieved file.
+    <strong>Every row starts unverified.</strong> A row turns green only when a machine has fetched the bytes, hashed them, and found the anchor inside them.
+  </p>
+  <div class="tally">
+    <div><b id="tTotal">0</b><span>anchored rows</span></div>
+    <div class="t-open"><b id="tOpen">0</b><span>unverified</span></div>
+    <div class="t-done"><b id="tDone">0</b><span>bytes confirmed</span></div>
+    <div><b id="tMissing">0</b><span>no URL yet</span></div>
+    <div><b id="tPrimary">0</b><span>primary records</span></div>
+  </div>
+</header>
+
+<section class="panel warn">
+  <h2>What this file could not do by itself</h2>
+  <p>
+    The container this register was built in blocks outbound traffic to every domain in it. Probing <code>web.archive.org</code>, <code>nashville.gov</code>, <code>nashville.legistar.com</code> and <code>substack.com</code> all returned <code>403</code> with the header <code>x-deny-reason: host_not_allowed</code>. So no source was fetched, no bytes were snipped, and nothing was pushed to the Wayback Machine from here.
+  </p>
+  <p>
+    The snipping and archiving therefore run on your side, from <code>snip_and_archive.py</code>, which ships alongside this file. It fetches each URL, writes the raw bytes to disk untouched, takes a SHA-256, locates the anchor and records its byte span, then submits the URL to the Wayback Machine and polls until the capture is confirmed. It writes back an enriched manifest. Paste that manifest into the box at the bottom of this page and every row here fills in.
+  </p>
+</section>
+
+<div class="controls">
+  <div class="ctl-row">
+    <input type="search" id="q" placeholder="Filter by name, anchor, claim, domain" aria-label="Filter rows">
+    <button class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="unverified" aria-pressed="false">Unverified</button>
+    <button class="chip" data-filter="captured" aria-pressed="false">Confirmed</button>
+    <button class="chip" data-filter="primary-record" aria-pressed="false">Primary</button>
+    <button class="chip" data-filter="priority" aria-pressed="false">Priority</button>
+    <button class="chip" data-filter="missing" aria-pressed="false">No URL</button>
+  </div>
+  <div class="ctl-row">
+    <button class="btn ghost" id="copySpn">Copy every capture URL</button>
+    <button class="btn ghost" id="openBatch">Open next five captures</button>
+    <button class="btn ghost" id="copyCurl">Copy curl batch</button>
+    <button class="btn ghost" id="exportJson">Download manifest</button>
+    <span id="batchNote" style="font-size:11.5px;color:var(--muted)"></span>
+  </div>
+</div>
+
+<main id="register"></main>
+
+<section class="panel">
+  <h2>Load the enriched manifest</h2>
+  <p>Paste the JSON that <code>snip_and_archive.py</code> writes to <code>sources.enriched.json</code>. The register redraws with hashes, byte spans and capture timestamps. Nothing is stored, so keep the file.</p>
+  <textarea id="importBox" placeholder="Paste sources.enriched.json here" aria-label="Enriched manifest"></textarea>
+  <div class="ctl-row" style="margin-top:9px">
+    <button class="btn" id="importBtn">Load manifest</button>
+    <span id="importNote" style="font-size:12px;color:var(--muted)"></span>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>How a row gets confirmed</h2>
+  <ol class="steps">
+    <li><b>Fetch.</b> The runner requests the URL and writes the response body to <code>bytes/&lt;id&gt;.bin</code> with no decoding, no cleanup, no reformatting. Headers go to a sidecar so the content type and server date survive.</li>
+    <li><b>Hash.</b> SHA-256 over those exact bytes. This is what makes a later claim about what the page said checkable rather than assertable.</li>
+    <li><b>Locate.</b> Three passes, and the row records which one hit. <code>exact-bytes</code> is a straight byte search and the offset is unarguable. <code>normalised-text</code> decodes with the declared charset, builds a character-to-byte index, folds whitespace runs, smart quotes and HTML entities, then maps the hit back to a real byte offset. <code>tag-stripped</code> also skips markup, which is what catches a quote broken by an <code>em</code> or a link, but it can also match across a table cell boundary, so treat those rows as needing an eye. A miss is reported as a miss.</li>
+    <li><b>Archive.</b> The URL goes to the Wayback Machine through the Save Page Now API, and the runner polls the job until it returns a timestamp. If a recent capture already exists it is reused unless you pass <code>--force</code>.</li>
+    <li><b>Write back.</b> Status, hash, length, byte span and capture timestamp land in the manifest.</li>
+  </ol>
+</section>
+
+<section class="panel">
+  <h2>Handing the bytes to eoreader7</h2>
+  <p>
+    The <code>bytes/</code> directory the runner produces is deliberately in the shape the reader wants: content-addressed raw files with a manifest carrying provenance and an offset span per anchor. That matches the pattern already in the lineage, the content-hashed binary store with an export-pointer manifest, and it keeps the anchor addressable at <code>byte_offset</code> rather than at some cleaned-up character index.
+  </p>
+  <p>
+    The runner stops at that boundary on purpose. It writes <code>readings/&lt;id&gt;.json</code> with the path, hash, media type and anchor span, and leaves a clearly marked adapter function empty. I did not have the v7 tree open, so I am not going to invent the signature for <code>createRecursiveReader</code> and have you debug a call I guessed at. Point the adapter at the real entry point in <code>native/kernel/reading.js</code> and the rest of the pipeline is already fed.
+  </p>
+</section>
+
+<section class="panel">
+  <h2>Two documents that would change the piece</h2>
+  <p>
+    The register carries two rows with no URL at all. The MHRC determination and staff investigative report exist and have been quoted, but the outlet that quoted them promised source links in its online edition and did not publish them. The September 2025 audit committee packet holds the audit request verbatim and the adopted scope. Neither is reachable from a search index, which means both are records requests rather than fetches, and neither can be archived until they are in hand.
+  </p>
+  <p>
+    Until then the piece rests on a secondary source for its central civil rights finding. That is worth naming in the copy rather than smoothing over.
+  </p>
+</section>
+
+<p class="foot">
+  Register generated 5 September 2026 for the standby overview. Anchors are short location strings, not quotations, and are sized to be distinctive enough for a machine to find and short enough to carry no expressive content of their own. Capture status is asserted only where a hash exists.
+</p>
+
+</div>
+
+<script type="application/json" id="manifest">
+{
+  "manifest_version": "1",
+  "case": "ohs-standby-overview",
+  "case_label": "Office of Homeless Services standby overview",
+  "generated": "2026-09-05",
+  "note": "Anchors are short distinctive needles for machine location, not full quotations. The runner locates each anchor in the fetched bytes and records the byte span. Status begins at unverified for every entry by design: nothing here is confirmed until the bytes confirm it.",
+  "entries": [
+    {
+      "id": "AUD-HID-2023",
+      "label": "Metro Internal Audit, Homeless Impact Division, 30 Mar 2023",
+      "tier": "primary-record",
+      "doctype": "audit-pdf",
+      "url": "https://www.nashville.gov/sites/default/files/2023-04/Homeless-Impact-Division-230330.pdf?ct=1681999881",
+      "anchor": "Only 12 out of 23 (52 percent)",
+      "claim": "The 52 percent HUD non-compliance figure and its HIGH risk rating originate here, for the predecessor division rather than OHS.",
+      "used_for": "Rebuttal to the no-major-issues claim",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "MUNI-263040",
+      "label": "Metro Code 2.63.040, director appointment",
+      "tier": "primary-record",
+      "doctype": "municipal-code",
+      "url": "https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
+      "anchor": "shall be appointed by the mayor",
+      "claim": "The enacted code vests appointment in the mayor, leaving the planning council only a seat in the interview process.",
+      "used_for": "Section V, the ordinance",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "MUNI-263040-HR",
+      "label": "Metro Code 2.63.040, HR interview clause",
+      "tier": "primary-record",
+      "doctype": "municipal-code",
+      "url": "https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
+      "anchor": "at least one representative of the Nashville Davidson County",
+      "claim": "The residual council role is participation in interviewing, not nomination and not removal.",
+      "used_for": "Section V, the ordinance",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "LEG-BL2021-971",
+      "label": "Legistar file BL2021-971, action text",
+      "tier": "primary-record",
+      "doctype": "legislative-file",
+      "url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=5197292&GUID=38B64936-8F8D-4AAC-B511-710E7D633231",
+      "anchor": "moved to suspend the rules of procedure to introduce a late amendment",
+      "claim": "The third-reading amendment came in under suspended rules. The action text credits O'Connell with offering Amendment No. 2.",
+      "used_for": "Section V, the hinge of the piece",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "LEG-AMD1",
+      "label": "Amendment No. 1 to Substitute BL2021-971",
+      "tier": "primary-record",
+      "doctype": "amendment-pdf",
+      "url": "https://nashville.legistar.com/View.ashx?M=F&ID=10956003&GUID=14EC3D89-8ADD-41B7-A5ED-C349E645E0D5",
+      "anchor": "list of three names",
+      "claim": "Sponsor attribution on this document is unresolved and decides who removed council nomination power.",
+      "used_for": "Correction 4, unresolved",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "LEG-AMD2",
+      "label": "Amendment No. 2 to Substitute BL2021-971",
+      "tier": "primary-record",
+      "doctype": "amendment-pdf",
+      "url": "https://nashville.legistar.com/View.ashx?M=F&ID=11001383&GUID=D633BDF9-F5DF-4695-BC56-DED8DF2E930E",
+      "anchor": "SPONSORED BY",
+      "claim": "Sponsor attribution on this document is unresolved and decides who removed council nomination power.",
+      "used_for": "Correction 4, unresolved",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "LEG-RS2025-1436",
+      "label": "RS2025-1436, DePaul USA Strobel House contract",
+      "tier": "primary-record",
+      "doctype": "legislative-file",
+      "url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=7512689&GUID=DF93A2EA-943B-4E0B-99D2-182A21F6E7F7",
+      "anchor": "Depaul USA",
+      "claim": "The replacement contract and its attachments carry the gag clause that needs verifying at section D.8.",
+      "used_for": "Section VI, the ledger",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "LEG-RS2025-1711",
+      "label": "RS2025-1711, spending plan resolution",
+      "tier": "primary-record",
+      "doctype": "legislative-file",
+      "url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=7778274&GUID=3F3BCDD9-3D97-4817-BB93-11D613D6EBA9",
+      "anchor": "Office of Homeless Services",
+      "claim": "Council asked for a spending methodology and got a non-answer.",
+      "used_for": "Section VI, the ledger",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "LEG-RS2024-490",
+      "label": "RS2024-490, ARPA reallocation",
+      "tier": "primary-record",
+      "doctype": "legislative-file",
+      "url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=6706795&GUID=3911D2DC-BA71-4A2D-B975-458961A0A8A8",
+      "anchor": "American Rescue Plan",
+      "claim": "Authorized purpose here decides whether direct rent payments were within authority. Reconcile against the resolution numbers cited on invoices.",
+      "used_for": "Federal grant compliance leg",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "LEG-RS2022-1860",
+      "label": "RS2022-1860, original ARPA appropriation",
+      "tier": "primary-record",
+      "doctype": "legislative-file",
+      "url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=5931612&GUID=A7A86D37-9FCC-4D05-88E4-2CEF9EBC82D4",
+      "anchor": "American Rescue Plan",
+      "claim": "Origin of the money later reallocated to homeless services. Needed to settle the R22-1699 versus RS2022-1860 discrepancy.",
+      "used_for": "Federal grant compliance leg",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "AUD-CTTE-INDEX",
+      "label": "Metro Audit Committee meetings index",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/internal-audit/boards/audit-committee/meetings",
+      "anchor": "Audit Committee",
+      "claim": "Index page from which the 23 Sep 2025 packet and every later agenda hangs. Capture repeatedly, since it changes.",
+      "used_for": "Trigger monitoring",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "AUD-CTTE-DEC9",
+      "label": "Audit Committee minutes, 9 Dec 2025",
+      "tier": "primary-record",
+      "doctype": "minutes-pdf",
+      "url": "https://www.nashville.gov/sites/default/files/2025-12/12092025_AuditCommitteeMintues_APPROVED.pdf?ct=1767366514",
+      "anchor": "Audit Committee",
+      "claim": "Contains no OHS status item, which is the evidentiary basis for saying the audit was still open at that date.",
+      "used_for": "The eleven months of silence",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "AUD-FY2027",
+      "label": "Internal Audit reports, FY2027",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
+      "anchor": "Fiscal Year 2027",
+      "claim": "Negative evidence. Capture on a schedule so the absence of an OHS report is provable on specific dates.",
+      "used_for": "Trigger monitoring",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "AUD-FY2026",
+      "label": "Internal Audit reports, FY2026",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2026",
+      "anchor": "Fiscal Year 2026",
+      "claim": "Negative evidence for the fiscal year in which the audit was approved.",
+      "used_for": "Trigger monitoring",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "AUD-INVEST",
+      "label": "Internal Audit investigation reports index",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/internal-audit/investigation-reports",
+      "anchor": "Investigation",
+      "claim": "Where the landlord engagement investigation would surface if it concluded.",
+      "used_for": "Trigger monitoring",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "GOV-HPC-HIST",
+      "label": "Nashville.gov, Homelessness Planning Council origin",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/office-homeless-services/boards/homelessness",
+      "anchor": "During the summer of 2017",
+      "claim": "The 2018 consolidation was recommended by a HUD-facilitated working group, which is the fair version of that history.",
+      "used_for": "Section III, told fairly",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "GOV-MDHA-CA",
+      "label": "Nashville.gov, MDHA as collaborative applicant",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/social-services/homeless-impact-division/about-homelessness/reports-and-documents",
+      "anchor": "serves as the collaborative applicant",
+      "claim": "Documents the prior state before the role migrated into OHS. This page is legacy and at risk of removal, so archive it first.",
+      "used_for": "Section II, the four pillars",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "GOV-PIT-2026",
+      "label": "Nashville.gov, 2026 Point-in-Time count",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/office-homeless-services/news/2026-pit-count",
+      "anchor": "2,298 people",
+      "claim": "Certified 2026 count, up 5.4 percent. Note the unsheltered figure differs from one news account.",
+      "used_for": "Outcomes against spending",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "GOV-CALVIN",
+      "label": "Nashville.gov, April Calvin director page",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/office-homeless-services/people/april-calvin",
+      "anchor": "Office of Homeless Services",
+      "claim": "Establishes tenure at a given date. Capture on a schedule so a departure is timestamped against a live prior capture.",
+      "used_for": "Trigger monitoring",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "GOV-MAYOR-DIR",
+      "label": "Nashville.gov, mayor's office staff directory",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/mayor/staff-directory",
+      "anchor": "Chief of Operations and Performance",
+      "claim": "Carries the OEM notation in Wilson's title and will change as her seat is refilled. Archive before it turns over.",
+      "used_for": "Correction 5, reporting line",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "CTB-TACKETT-AUG26",
+      "label": "The Contributor, Tackett, 5 Aug 2026",
+      "tier": "secondary-quoting-primary",
+      "doctype": "news",
+      "url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+      "anchor": "disproportionate adverse effect on Black women and women of color",
+      "claim": "Only located text of the MHRC determination. The underlying letter is not yet in hand, so this is a quoting source and not the record itself.",
+      "used_for": "Section VIII, MHRC",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "CTB-HPC-POWER",
+      "label": "The Contributor, planning council has no power over resources",
+      "tier": "secondary-quoting-primary",
+      "doctype": "news",
+      "url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+      "anchor": "absolutely no power over Metro resources",
+      "claim": "The governance board's own description of its powerlessness, from the former division director.",
+      "used_for": "Section VII, the board's own account",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "CTB-SHELBY",
+      "label": "The Contributor, OHS statement on Shelby House return",
+      "tier": "secondary-quoting-primary",
+      "doctype": "news",
+      "url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+      "anchor": "reallocated through Metro's approved process",
+      "claim": "OHS on the record about where the returned allocation went. Watch for double counting against the Holladay figure.",
+      "used_for": "Returned allocations",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "CTB-2018",
+      "label": "The Contributor, history leading to OHS",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://thecontributor.org/learn-more-about-the-history-that-led-to-the-office-of-homeless-services/",
+      "anchor": "BL2018-1199",
+      "claim": "Dates the elimination of the Metropolitan Homelessness Commission and the creation of the planning council.",
+      "used_for": "Section III",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "BNR-WILSON",
+      "label": "Nashville Banner, Wilson resignation",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://nashvillebanner.com/2026/08/18/metro-ops-chief-kristin-wilson-resigns/",
+      "anchor": "to take a pause, to reflect on the work accomplished",
+      "claim": "Resignation letter language and the 28 Aug final day.",
+      "used_for": "Section I, the peg",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "AX-WILSON",
+      "label": "Axios Nashville, Wilson resignation",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.axios.com/local/nashville/2026/08/18/mayoral-aide-kristin-wilson-resigns-from-top-metro-post",
+      "anchor": "fourth top aide to leave the mayor's office",
+      "claim": "Places the departure in a run of four senior exits since July 2025.",
+      "used_for": "Section I, the peg",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "BNR-MARTINI-LEAVE",
+      "label": "Nashville Banner, Martini placed on leave",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://nashvillebanner.com/2026/01/09/nashville-emergency-communications-director-leave/",
+      "anchor": "subject to civil service rules",
+      "claim": "The sentence that breaks the unchecked-appointee framing and forces the stronger version of the argument.",
+      "used_for": "Correction 5",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "SCN-MARTINI-FIRED",
+      "label": "Nashville Scene, Martini terminated",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.nashvillescene.com/news/pithinthewind/emergency-communications-steve-martini-fired/article_253e665e-a881-5971-a96f-0e78e0e950c2.html",
+      "anchor": "pervasive culture of fear",
+      "claim": "Outside counsel's finding and the 2 Feb 2026 termination date.",
+      "used_for": "Section IX, the pattern",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "SCN-AUDIT-APPROVED",
+      "label": "Nashville Scene, audit approved",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.nashvillescene.com/news/pithinthewind/office-of-homeless-services-audit/article_b5044f4a-32a6-46ca-ac32-363cf673bfe0.html",
+      "anchor": "first step to restoring trust",
+      "claim": "Establishes the 23 Sep 2025 approval, the scope role of the vice mayor, and the auditor present.",
+      "used_for": "Section VI",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "SCN-WELSCH-FILING",
+      "label": "Nashville Scene, Welsch audit request filing",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
+      "anchor": "audit request",
+      "claim": "Carries the request document as an attachment. Archive the attachment separately once its direct URL is known.",
+      "used_for": "Audit scope reconstruction",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "SCN-NONTRAD",
+      "label": "Nashville Scene, non-traditional housing program",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.nashvillescene.com/news/citylimits/ohs-non-traditional-housing-program/article_a359ddae-8c2f-4fe5-9efb-6c6d4321e474.html",
+      "anchor": "eight unhoused families to move from the Nashville Rescue Mission",
+      "claim": "The August 2024 texts, the coordinated entry bypass, and the ARPA figure.",
+      "used_for": "Section II, the harms",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "SCN-PATTERSON",
+      "label": "Nashville Scene, planning council chair on being stripped of power",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.nashvillescene.com/news/citylimits/office-of-homeless-services-2025/article_053499a2-9ac8-4664-9710-a759932e62cf.html",
+      "anchor": "operating as the chair of the Homeless Planning Council",
+      "claim": "The board chair describing the director as running the board. Strongest single line for the governance section.",
+      "used_for": "Section VII",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "SCN-COVER-PIT",
+      "label": "Nashville Scene, count steady despite funding",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.nashvillescene.com/news/coverstory/office-of-homeless-services-point-in-time-count/article_b63fa2f9-df20-432b-b858-750780680bc8.html",
+      "anchor": "citizen effort to publicly audit",
+      "claim": "Outside characterisation of the community audit effort. Relevant to disclosure of your own role.",
+      "used_for": "Disclosure paragraph",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "FOX-OPENBOOK",
+      "label": "Fox 17, Calvin open book statement",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://fox17.com/features/high-cost-of-homelessness/nashvilles-office-of-homeless-services-to-undergo-audit-amid-scrutiny-metro-council-member-backlash",
+      "anchor": "no major issues were identified",
+      "claim": "The on-record rebuttal the piece has to carry, and the claim the 2023 audit tests.",
+      "used_for": "Right of reply",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "FOX-LAPSE",
+      "label": "Fox 17, contract lapse and oversight",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://fox17.com/news/local/metro-council-cites-lack-of-oversight-after-contract-lapse-at-behind-homeless-housing-facility",
+      "anchor": "bypassing the finance department",
+      "claim": "Metro Finance confirming the voucher workaround. URL needs checking, it was reconstructed and may 404.",
+      "used_for": "Section VI, the ledger",
+      "url_status": "unconfirmed",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "NC5-WELSCH",
+      "label": "NewsChannel 5, financial irregularities",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.newschannel5.com/news/financial-irregularities-a-metro-council-member-wants-ohs-investigated",
+      "anchor": "we have not improved our numbers by any measure",
+      "claim": "The 3.2 million figure, its component categories, and Calvin's denial.",
+      "used_for": "Audit scope reconstruction",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "BNR-COUNCIL-DEPAUL",
+      "label": "Nashville Banner, council approves DePaul contract",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://nashvillebanner.com/2025/08/20/metro-council-rezoning-vote-the-nations/",
+      "anchor": "not an ideal process",
+      "claim": "Calvin conceding the procurement failure on the record.",
+      "used_for": "Section VI, the ledger",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "RT-BULLSHITTERY",
+      "label": "Rich Text, Liberal Bullshittery",
+      "tier": "own-publication",
+      "doctype": "own-article",
+      "url": "https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of",
+      "anchor": "should not be posted publicly",
+      "claim": "Your published record of the Calvin email, the Koch contracts, and the Clutch model. Archive your own work so the priority of publication is fixed.",
+      "used_for": "Prior publication, do not repeat",
+      "priority": "high",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "RT-15M",
+      "label": "Rich Text, another 1.5M without accounting",
+      "tier": "own-publication",
+      "doctype": "own-article",
+      "url": "https://readrichtext.substack.com/p/another-15m-without-accounting-for",
+      "anchor": "outside of any procurement process",
+      "claim": "Your record of the off-contract rent payments and the business unit ledger.",
+      "used_for": "Section VI, the ledger",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "RT-WAYFAIR",
+      "label": "Rich Text, apparent 86K procurement",
+      "tier": "own-publication",
+      "doctype": "own-article",
+      "url": "https://readrichtext.substack.com/p/null_results-apparent-86k-procurement",
+      "anchor": "86,103.61",
+      "claim": "The furniture spend, its date, and the absence of a vendor contract.",
+      "used_for": "Section VI, the ledger",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "RT-OHS-EMAIL",
+      "label": "Rich Text, OHS email to council",
+      "tier": "own-publication",
+      "doctype": "own-article",
+      "url": "https://readrichtext.substack.com/p/read-office-of-homeless-services",
+      "anchor": "OHS Community Audit",
+      "claim": "OHS characterising your published data as misleading. Their words, preserved.",
+      "used_for": "Right of reply",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "PRO-DEPAUL-CEO",
+      "label": "Prometheoid, DePaul executive director resigns",
+      "tier": "own-publication",
+      "doctype": "own-article",
+      "url": "https://prometheoid.substack.com/p/exec-director-of-depaul-usa-strobel",
+      "anchor": "did not have a valid contract",
+      "claim": "Your record of the resignation following publication.",
+      "used_for": "Section VI, the ledger",
+      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "MHRC-DETERMINATION",
+      "label": "MHRC Title VI determination letter, Tucker",
+      "tier": "primary-record",
+      "doctype": "not-yet-located",
+      "url": "",
+      "anchor": "probable cause",
+      "claim": "The actual determination and staff investigative report. Not located. The Contributor promised links that were never published. This is the single most valuable missing document.",
+      "used_for": "Section VIII, MHRC",
+      "priority": "critical",
+      "url_status": "missing",
+      "capture": {"status": "not-located", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "AUD-PACKET-SEP23",
+      "label": "Audit Committee agenda packet, 23 Sep 2025",
+      "tier": "primary-record",
+      "doctype": "not-yet-located",
+      "url": "",
+      "anchor": "Office of Homeless Services",
+      "claim": "Contains the Welsch request verbatim and the adopted scope. Not yet located at a direct URL. Reach it from the meetings index.",
+      "used_for": "Audit scope reconstruction",
+      "priority": "critical",
+      "url_status": "missing",
+      "capture": {"status": "not-located", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    },
+    {
+      "id": "TRUTHOUT-NDP",
+      "label": "Truthout, Nashville surveillance outsourcing",
+      "tier": "secondary",
+      "doctype": "not-yet-located",
+      "url": "",
+      "anchor": "Electronic Frontier Foundation",
+      "claim": "Source for the O'Connell privacy record. Cited in research without a retrievable URL, so it is unconfirmed.",
+      "used_for": "Section VII, the record against the record",
+      "url_status": "missing",
+      "capture": {"status": "not-located", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+    }
+  ]
+}
+</script>
+<script>
+(function(){
+  "use strict";
+
+  var manifest = JSON.parse(document.getElementById('manifest').textContent);
+  var state = { filter:'all', query:'', batchIndex:0 };
+
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function host(u){
+    try { return new URL(u).hostname.replace(/^www\./,''); } catch(e){ return ''; }
+  }
+  function fragLink(url, anchor){
+    if(!url || !anchor) return '';
+    return url + '#:~:text=' + encodeURIComponent(anchor);
+  }
+  function spnLink(url){ return url ? 'https://web.archive.org/save/' + url : ''; }
+  function waybackLink(url){ return url ? 'https://web.archive.org/web/2/' + url : ''; }
+  function availLink(url){ return url ? 'https://archive.org/wayback/available?url=' + encodeURIComponent(url) : ''; }
+  function archivedFrag(e){
+    var ts = e.capture && e.capture.wayback_timestamp;
+    if(!ts || !e.url) return '';
+    var base = 'https://web.archive.org/web/' + ts + '/' + e.url;
+    return e.anchor ? base + '#:~:text=' + encodeURIComponent(e.anchor) : base;
+  }
+  function statusOf(e){
+    var c = e.capture || {};
+    if(c.status === 'not-located' || !e.url) return 'missing';
+    if(c.status === 'captured' && c.sha256) return 'captured';
+    return 'unverified';
+  }
+
+  // The coarse status above drives the top filter chips and counters and
+  // stays a 3-way split on purpose. Individual rows show more: a PDF that
+  // never had a text layer and a page that's flat-out paywalled are both
+  // "unverified" up there, but they are not the same finding, and the brief
+  // is explicit that this interface should not flatten them.
+  var STAMPS = {
+    'captured':       {cls:'s-captured',  text:'bytes confirmed + archived'},
+    'bytes-held':     {cls:'s-held',      text:'bytes held, not yet archived'},
+    'local-only':     {cls:'s-held',      text:'local only, no independent archive'},
+    'anchor-missing': {cls:'s-unverified',text:'anchor not found'},
+    'no-text-layer':  {cls:'s-unverified',text:'no PDF text layer'},
+    'paywalled':      {cls:'s-unverified',text:'paywalled'},
+    'fetch-failed':   {cls:'s-missing',   text:'fetch failed'},
+    'not-located':    {cls:'s-missing',   text:'no url'},
+    'unverified':     {cls:'s-unverified',text:'unverified'}
+  };
+  function stampInfo(e){
+    var c = e.capture || {};
+    if(!e.url) return STAMPS['not-located'];
+    return STAMPS[c.status] || STAMPS['unverified'];
+  }
+
+  var TIERS = {
+    'wayback-spn2':      {cls:'t-independent', text:function(c){return 'archived just now → web.archive.org';}},
+    'wayback-existing':  {cls:'t-independent', text:function(c){return 'independent capture on file (' + waybackDate(c.wayback_timestamp) + ')';}},
+    'archive-today':     {cls:'t-independent', text:function(){return 'archived → archive.today';}},
+    'wayback-historical':{cls:'t-historical',  text:function(c){return 'historical only, from ' + waybackDate(c.wayback_timestamp) + ' -- not today\'s content';}},
+    'local-only':        {cls:'t-local',       text:function(){return 'local only, no independent archive';}}
+  };
+  function waybackDate(ts){
+    if(!ts || ts.length < 8) return ts || 'unknown date';
+    return ts.slice(0,4) + '-' + ts.slice(4,6) + '-' + ts.slice(6,8);
+  }
+  function tierBadge(e){
+    var c = e.capture || {};
+    if(!e.url) return '';
+    var t = TIERS[c.archive_tier];
+    if(!t) return '<span class="tierbadge t-none">not archived yet</span>';
+    return '<span class="tierbadge ' + t.cls + '">' + esc(t.text(c)) + '</span>';
+  }
+  function tierLabel(t){
+    return ({
+      'primary-record':'primary record',
+      'secondary-quoting-primary':'secondary, quotes a record',
+      'secondary':'secondary',
+      'own-publication':'own publication'
+    })[t] || t;
+  }
+
+  function matches(e){
+    var st = statusOf(e);
+    var f = state.filter;
+    if(f === 'unverified' && st !== 'unverified') return false;
+    if(f === 'captured' && st !== 'captured') return false;
+    if(f === 'missing' && st !== 'missing') return false;
+    if(f === 'primary-record' && e.tier !== 'primary-record') return false;
+    if(f === 'priority' && !e.priority) return false;
+    if(state.query){
+      var hay = [e.id,e.label,e.anchor,e.claim,e.url,e.used_for].join(' ').toLowerCase();
+      if(hay.indexOf(state.query) === -1) return false;
+    }
+    return true;
+  }
+
+  function ruler(e){
+    var c = e.capture || {};
+
+    // A PDF's anchor lives in extracted text, on a page -- never in the raw
+    // (compressed) bytes. Drawing that against c.bytes would put the dot in
+    // a meaningless place and, worse, dress a text offset up as a byte
+    // offset. Task 2 is explicit that the interface must not let that
+    // happen, so a PDF gets its own ruler, ticked in pages, with the text
+    // offset given only as a plain number alongside it.
+    if(c.anchor_page != null){
+      var pages = c.page_count || c.anchor_page;
+      var pleft = pages > 1 ? Math.max(0, Math.min(100, ((c.anchor_page - 1) / pages) * 100)) : 0;
+      var pwidth = Math.max(2, 100 / Math.max(pages, 1));
+      return '<div class="ruler"><div class="ruler-track">' +
+             '<div class="ruler-hit" style="left:' + pleft.toFixed(3) + '%;width:' + pwidth.toFixed(3) + '%"></div>' +
+             '</div><div class="ruler-cap"><span>page 1</span><span>page ' + c.anchor_page +
+             ' of ' + pages + ' &middot; text offset ' + (c.anchor_text_offset != null ? c.anchor_text_offset.toLocaleString() : '?') +
+             ' in extracted text (' + esc(c.extractor || 'pdfminer') + ')</span></div></div>';
+    }
+
+    if(!c.bytes || c.anchor_offset == null){
+      return '<div class="ruler empty"><div class="ruler-track"></div>' +
+             '<div class="ruler-cap"><span>byte span unknown</span><span>run the snipper</span></div></div>';
+    }
+    var left = Math.max(0, Math.min(100, (c.anchor_offset / c.bytes) * 100));
+    var width = Math.max(0.6, Math.min(100 - left, ((c.anchor_length || 1) / c.bytes) * 100));
+    return '<div class="ruler"><div class="ruler-track">' +
+           '<div class="ruler-hit" style="left:' + left.toFixed(3) + '%;width:' + width.toFixed(3) + '%"></div>' +
+           '</div><div class="ruler-cap"><span>0</span><span>offset ' + c.anchor_offset.toLocaleString() +
+           ' of ' + c.bytes.toLocaleString() + ' bytes</span></div></div>';
+  }
+
+  function row(e){
+    var st = statusOf(e);
+    var c = e.capture || {};
+    var cls = st === 'captured' ? 'captured' : (st === 'missing' ? '' : 'at-risk');
+    var stamp = stampInfo(e);
+
+    var acts = [];
+    if(e.url){
+      acts.push('<a href="' + esc(e.url) + '" target="_blank" rel="noopener">Live source</a>');
+      if(e.anchor) acts.push('<a class="primary" href="' + esc(fragLink(e.url, e.anchor)) + '" target="_blank" rel="noopener">Jump to anchor</a>');
+      acts.push('<a href="' + esc(spnLink(e.url)) + '" target="_blank" rel="noopener">Capture now</a>');
+      acts.push('<a href="' + esc(waybackLink(e.url)) + '" target="_blank" rel="noopener">Wayback</a>');
+      acts.push('<a href="' + esc(availLink(e.url)) + '" target="_blank" rel="noopener">Capture status</a>');
+      var af = archivedFrag(e);
+      if(af) acts.push('<a class="primary" href="' + esc(af) + '" target="_blank" rel="noopener">Archived anchor</a>');
+      acts.push('<button data-curl="' + esc(e.id) + '">Copy curl</button>');
+    } else {
+      acts.push('<span class="dead">No URL to fetch</span>');
+    }
+
+    return '<article class="entry ' + cls + '" data-id="' + esc(e.id) + '">' +
+      '<div class="gutter">' +
+        '<div class="eid">' + esc(e.id) + (e.added ? ' <span title="' + esc(e.added) + '" style="color:var(--blue);cursor:help">&#9733;</span>' : '') + '</div>' +
+        '<div class="tier">' + esc(tierLabel(e.tier)) + (host(e.url) ? '<br>' + esc(host(e.url)) : '') + '</div>' +
+        '<span class="stamp ' + stamp.cls + '">' + esc(stamp.text) + '</span>' +
+        tierBadge(e) +
+        (e.priority ? '<span class="prio">' + esc(e.priority) + '</span>' : '') +
+      '</div>' +
+      '<div class="body">' +
+        '<h3>' + esc(e.label) + '</h3>' +
+        '<p class="claim">' + esc(e.claim) + '</p>' +
+        (e.anchor ? '<div class="anchor">' + esc(e.anchor) + '</div>' : '') +
+        (e.url ? '<div class="url">' + esc(e.url) + '</div>' : '') +
+        ruler(e) +
+        '<div class="machine">' +
+          '<div><i>sha256</i> <em>' + esc(c.sha256 ? c.sha256.slice(0,20) + '\u2026' : 'not taken') + '</em></div>' +
+          '<div><i>length</i> <em>' + (c.bytes ? c.bytes.toLocaleString() + ' B' : 'unknown') + '</em></div>' +
+          '<div><i>captured</i> <em>' + esc(c.wayback_timestamp || 'no snapshot') + '</em></div>' +
+          '<div><i>fetched</i> <em>' + esc(c.fetched_at || 'never') + '</em></div>' +
+          '<div><i>used in</i> <em>' + esc(e.used_for || '') + '</em></div>' +
+          '<div><i>type</i> <em>' + esc(c.content_type || e.doctype || '') + '</em></div>' +
+        '</div>' +
+        '<div class="actions">' + acts.join('') + '</div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function render(){
+    var list = manifest.entries.filter(matches);
+    var reg = document.getElementById('register');
+    reg.innerHTML = list.length
+      ? list.map(row).join('')
+      : '<div class="empty-state">No rows match that filter. Clear the search or pick All.</div>';
+
+    var all = manifest.entries;
+    document.getElementById('tTotal').textContent   = all.length;
+    document.getElementById('tOpen').textContent    = all.filter(function(e){return statusOf(e)==='unverified';}).length;
+    document.getElementById('tDone').textContent    = all.filter(function(e){return statusOf(e)==='captured';}).length;
+    document.getElementById('tMissing').textContent = all.filter(function(e){return statusOf(e)==='missing';}).length;
+    document.getElementById('tPrimary').textContent = all.filter(function(e){return e.tier==='primary-record';}).length;
+  }
+
+  function withUrls(){
+    return manifest.entries.filter(function(e){ return !!e.url; });
+  }
+
+  function copy(text, note){
+    var done = function(ok){
+      var el = document.getElementById('batchNote');
+      el.textContent = ok ? note : 'Clipboard blocked. Use Download manifest instead.';
+      setTimeout(function(){ el.textContent = ''; }, 4000);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){done(true);}, function(){done(false);});
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      var ok = false; try{ ok = document.execCommand('copy'); }catch(e){}
+      document.body.removeChild(ta); done(ok);
+    }
+  }
+
+  document.getElementById('copySpn').addEventListener('click', function(){
+    var urls = withUrls().map(function(e){ return spnLink(e.url); });
+    copy(urls.join('\n'), urls.length + ' capture URLs copied');
+  });
+
+  document.getElementById('copyCurl').addEventListener('click', function(){
+    var lines = withUrls().map(function(e){
+      return 'curl -sL --compressed -A "custody-register/1" -o "bytes/' + e.id + '.bin" "' + e.url + '"';
+    });
+    copy(lines.join('\n'), lines.length + ' curl lines copied');
+  });
+
+  document.getElementById('openBatch').addEventListener('click', function(){
+    var list = withUrls();
+    var slice = list.slice(state.batchIndex, state.batchIndex + 5);
+    if(!slice.length){
+      state.batchIndex = 0;
+      document.getElementById('batchNote').textContent = 'Reached the end. Press again to start over.';
+      return;
+    }
+    slice.forEach(function(e){ window.open(spnLink(e.url), '_blank', 'noopener'); });
+    state.batchIndex += 5;
+    document.getElementById('batchNote').textContent =
+      'Opened ' + Math.min(state.batchIndex, list.length) + ' of ' + list.length + '. Browsers throttle bulk tabs, so go five at a time.';
+  });
+
+  document.getElementById('exportJson').addEventListener('click', function(){
+    var blob = new Blob([JSON.stringify(manifest, null, 2)], {type:'application/json'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'sources.json';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1500);
+  });
+
+  document.getElementById('importBtn').addEventListener('click', function(){
+    var note = document.getElementById('importNote');
+    var raw = document.getElementById('importBox').value.trim();
+    if(!raw){ note.textContent = 'Nothing pasted.'; return; }
+    try {
+      var next = JSON.parse(raw);
+      if(!next.entries || !Array.isArray(next.entries)) throw new Error('no entries array');
+      var known = {};
+      manifest.entries.forEach(function(e){ known[e.id] = e; });
+      var merged = 0, added = 0;
+      next.entries.forEach(function(incoming){
+        var e = known[incoming.id];
+        if(e){
+          if(incoming.capture){ e.capture = incoming.capture; merged++; }
+          if(incoming.url && !e.url){ e.url = incoming.url; }
+        } else {
+          // A capture run can discover and add sources the original
+          // manifest never had -- a corrected URL that got its own id, a
+          // successor page, a Legistar sub-page the summary view hides.
+          // Those still belong on the register, not just in the JSON file.
+          manifest.entries.push(incoming);
+          known[incoming.id] = incoming;
+          added++;
+        }
+      });
+      render();
+      note.textContent = 'Merged capture data for ' + merged + ' row(s)' +
+        (added ? ', added ' + added + ' new entry(ies) not in the original manifest' : '') + '.';
+    } catch(err){
+      note.textContent = 'Could not read that. ' + err.message;
+    }
+  });
+
+  document.getElementById('q').addEventListener('input', function(ev){
+    state.query = ev.target.value.trim().toLowerCase();
+    render();
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.chip'), function(btn){
+    btn.addEventListener('click', function(){
+      Array.prototype.forEach.call(document.querySelectorAll('.chip'), function(b){
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      state.filter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  document.getElementById('register').addEventListener('click', function(ev){
+    var b = ev.target.closest('button[data-curl]');
+    if(!b) return;
+    var e = manifest.entries.filter(function(x){ return x.id === b.dataset.curl; })[0];
+    if(!e || !e.url) return;
+    var cmd = 'mkdir -p bytes && curl -sL --compressed -A "custody-register/1" \\\n' +
+              '  -D "bytes/' + e.id + '.headers" -o "bytes/' + e.id + '.bin" \\\n' +
+              '  "' + e.url + '" && shasum -a 256 "bytes/' + e.id + '.bin"';
+    copy(cmd, 'curl for ' + e.id + ' copied');
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
