@@ -1,0 +1,21 @@
+{
+  "id": "MHRC-ED-DETERMINATION",
+  "path": "bytes/MHRC-ED-DETERMINATION.bin",
+  "sha256": "2f270d7bb48a96321d813227cb9ed762a0a24eda18050f38708d1b25042e4eb4",
+  "bytes": 177197,
+  "media_type": "application/pdf",
+  "source_url": null,
+  "provenance": "Supplied directly by the user (Michael Lacy) via local file from Downloads, 2026-09-05, already redacted (complainant names) by whoever provided it. Original public URL not yet confirmed.",
+  "retrieved_at": "2026-09-05T03:05:50+00:00",
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 4,
+      "text_offset": 8649,
+      "text_length": 98,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "2f270d7bb48a96321d813227cb9ed762a0a24eda18050f38708d1b25042e4eb4",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

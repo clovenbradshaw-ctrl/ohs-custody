@@ -1,0 +1,21 @@
+{
+  "id": "MHRC-STAFF-INVESTIGATIVE-REPORT",
+  "path": "bytes/MHRC-STAFF-INVESTIGATIVE-REPORT.bin",
+  "sha256": "9525c5b2311002766418403de7cd0f941911170b1d70d7c8eb318bd3e708a525",
+  "bytes": 351568,
+  "media_type": "application/pdf",
+  "source_url": null,
+  "provenance": "Supplied directly by the user (Michael Lacy) via local file from Downloads, 2026-09-05. Original public URL not yet confirmed.",
+  "retrieved_at": "2026-09-05T03:05:50+00:00",
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 9,
+      "text_offset": 21477,
+      "text_length": 143,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "9525c5b2311002766418403de7cd0f941911170b1d70d7c8eb318bd3e708a525",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

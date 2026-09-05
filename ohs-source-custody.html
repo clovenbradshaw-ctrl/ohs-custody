@@ -217,10 +217,10 @@
 <section class="panel warn">
   <h2>What this file could not do by itself</h2>
   <p>
-    The container this register was built in blocks outbound traffic to every domain in it. Probing <code>web.archive.org</code>, <code>nashville.gov</code>, <code>nashville.legistar.com</code> and <code>substack.com</code> all returned <code>403</code> with the header <code>x-deny-reason: host_not_allowed</code>. So no source was fetched, no bytes were snipped, and nothing was pushed to the Wayback Machine from here.
+    The data baked into this register was captured by <code>snip_and_archive.py</code> running with real outbound access -- every URL below was actually fetched, hashed, and anchor-located from live bytes, not simulated. Two things still could not be done automatically: Wayback Machine (SPN2) submission needs <code>IA_ACCESS_KEY</code>/<code>IA_SECRET_KEY</code> credentials that were not available, and archive.today's submit endpoint puts a reCAPTCHA in front of anything that reads as scripted, which this project does not attempt to solve or bypass. Rows without an independent archive are marked <strong>local-only</strong> -- the bytes and hash are real and on disk, just not yet attested to by a third party.
   </p>
   <p>
-    The snipping and archiving therefore run on your side, from <code>snip_and_archive.py</code>, which ships alongside this file. It fetches each URL, writes the raw bytes to disk untouched, takes a SHA-256, locates the anchor and records its byte span, then submits the URL to the Wayback Machine and polls until the capture is confirmed. It writes back an enriched manifest. Paste that manifest into the box at the bottom of this page and every row here fills in.
+    Re-running <code>snip_and_archive.py</code> (which ships alongside this file) with those credentials set will fill in the missing archive tier for any row still marked local-only, and will not touch or re-verify rows that are already independently archived. It writes back an enriched manifest -- paste that into the box at the bottom of this page and every row here updates.
   </p>
 </section>
 
@@ -239,6 +239,7 @@
     <button class="btn ghost" id="openBatch">Open next five captures</button>
     <button class="btn ghost" id="copyCurl">Copy curl batch</button>
     <button class="btn ghost" id="exportJson">Download manifest</button>
+    <button class="btn ghost" id="exportStructuredJson" title="A flattened, annotated export for programmatic reading -- same facts as the manifest, plain-English status meanings, no pipeline-internal field names.">Download structured JSON</button>
     <span id="batchNote" style="font-size:11.5px;color:var(--muted)"></span>
   </div>
 </div>
@@ -1601,10 +1602,10 @@
       "doctype": "not-yet-located",
       "url": "",
       "anchor": "probable cause",
-      "claim": "The actual determination and staff investigative report. Not located. The Contributor promised links that were never published. This is the single most valuable missing document.",
-      "used_for": "Section VIII, MHRC",
+      "claim": "RESOLVED as two separate entries, not one: MHRC-ED-DETERMINATION (Executive Director Davie Tucker's probable cause letter, redacted) and MHRC-STAFF-INVESTIGATIVE-REPORT (the underlying staff report Tucker adopted by reference). Both supplied directly to this project 2026-09-05, not fetched from a URL -- The Contributor's promised links were still never published anywhere this project could find. This stub is left in place, retitled, so a search for MHRC-DETERMINATION lands on where the real answer is.",
+      "used_for": "Section VIII, MHRC -- see MHRC-ED-DETERMINATION / MHRC-STAFF-INVESTIGATIVE-REPORT",
       "priority": "critical",
-      "url_status": "missing",
+      "url_status": "superseded",
       "capture": {
         "status": "not-located",
         "wayback_timestamp": null,
@@ -1614,6 +1615,66 @@
         "anchor_length": null,
         "content_type": null,
         "fetched_at": null
+      }
+    },
+    {
+      "id": "MHRC-STAFF-INVESTIGATIVE-REPORT",
+      "label": "MHRC staff investigative report, 26 Jun 2026",
+      "tier": "primary-record",
+      "doctype": "report-pdf",
+      "url": "",
+      "anchor": "there is a probable cause to believe that OHS\u2019s administration of federally-funded housing programs did not comply with Title VI requirements",
+      "claim": "The full staff investigative report underlying the probable-cause determination (MHRC-ED-DETERMINATION adopts this report's Findings of Fact by reference). Covers an OHS program that placed 8 families from Nashville Rescue Mission overflow into units at The Ave and Hillside Crossing (Aug 2024-Sep 2025): no complete written policy for participant selection ever produced (\"OHS has not responded to requests\"), conflicting accounts on whether Coordinated Entry was used, rent assistance cut/restructured under a described \"breakdown plan\" leading to eviction/lease-violation notices, 2 of 8 families never got the promised housing vouchers, and a former Step Up employee who resigned after declining to revise a written statement (Findings 21-23). 6 of the 8 women participants (75%) identify as Black. As written, this document contains no complainant names -- refers throughout to \"the complainant\" and unnamed witnesses -- so no redaction was needed on this copy. IMPORTANT: probable cause is an investigative threshold, explicitly NOT a finding of liability (the ED's own determination letter says so directly) -- report it as what MHRC found sufficient evidence to investigate further, not as an adjudicated fact.",
+      "used_for": "Section VIII, MHRC -- the civil rights finding",
+      "added": "Supplied directly to this project as a local file (not fetched from a URL) on 2026-09-05. Original public source/URL not yet confirmed -- The Contributor's Aug 2026 article promised to link this and never did; whether this copy came from that promised (but unfulfilled) link, a direct PRR, or another channel is not yet established. See capture.note.",
+      "capture": {
+        "status": "local-only",
+        "wayback_timestamp": null,
+        "sha256": "9525c5b2311002766418403de7cd0f941911170b1d70d7c8eb318bd3e708a525",
+        "bytes": 351568,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": "application/pdf",
+        "fetched_at": "2026-09-05T03:05:50+00:00",
+        "note": "Provided directly, not fetched from a URL. Provenance: Supplied directly by the user (Michael Lacy) via local file from Downloads, 2026-09-05. Original public URL not yet confirmed.",
+        "local_path": "bytes/MHRC-STAFF-INVESTIGATIVE-REPORT.bin",
+        "archive_tier": "local-only",
+        "extractor": "pdfminer.six 20260107",
+        "page_count": 9,
+        "anchor_method": "normalised-text",
+        "anchor_page": 9,
+        "anchor_text_offset": 21477,
+        "anchor_text_length": 143
+      }
+    },
+    {
+      "id": "MHRC-ED-DETERMINATION",
+      "label": "MHRC Executive Director probable cause determination, 30 Jun 2026 (redacted)",
+      "tier": "primary-record",
+      "doctype": "letter-pdf",
+      "url": "",
+      "anchor": "there is probable cause to believe that the administration of federally funded housing assistance",
+      "claim": "Executive Director Davie Tucker Jr.'s determination letter, adopting MHRC-STAFF-INVESTIGATIVE-REPORT's Findings of Fact by reference. This is the document The Contributor (CTB-TACKETT-AUG26) quotes verbatim without ever linking -- the anchor text matches that reporting exactly, confirming this is the actual source. Lays out a ~10-month procedural history (Aug 28 2025 HubNashville inquiry through Jun 26 2026 staff report): OHS's PIO told MHRC in Oct 2025 the matter was 'not a Title VI issue' and that the individuals were 'no longer eligible... because they were \"no longer homeless\"'; OHS did not respond to multiple meeting requests; a formal complaint was filed Jan 23, 2026 after informal efforts failed. Determination: probable cause found; complaint upheld; advances to formal conciliation. Complainant names are redacted (blacked out) in the copy supplied to this project -- preserved as-is, not a redaction this project performed or could reverse. Explicitly states: 'probable cause is not a finding of guilt... Nothing in this Determination constitutes a final finding of discrimination or liability.'",
+      "used_for": "Section VIII, MHRC -- the civil rights finding, and dating/naming who made it",
+      "added": "Supplied directly to this project as a local file (not fetched from a URL) on 2026-09-05, already redacted by whoever provided it. Original public source/URL not yet confirmed. See capture.note.",
+      "capture": {
+        "status": "local-only",
+        "wayback_timestamp": null,
+        "sha256": "2f270d7bb48a96321d813227cb9ed762a0a24eda18050f38708d1b25042e4eb4",
+        "bytes": 177197,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": "application/pdf",
+        "fetched_at": "2026-09-05T03:05:50+00:00",
+        "note": "Provided directly, not fetched from a URL. Provenance: Supplied directly by the user (Michael Lacy) via local file from Downloads, 2026-09-05, already redacted (complainant names) by whoever provided it. Original public URL not yet confirmed.",
+        "local_path": "bytes/MHRC-ED-DETERMINATION.bin",
+        "archive_tier": "local-only",
+        "extractor": "pdfminer.six 20260107",
+        "page_count": 5,
+        "anchor_method": "normalised-text",
+        "anchor_page": 4,
+        "anchor_text_offset": 8649,
+        "anchor_text_length": 98
       }
     },
     {
@@ -1699,7 +1760,7 @@
       "doctype": "minutes-pdf",
       "url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
       "anchor": "Audit of Office of Homeless Services Financial Processes to the 2025 annual audit plan",
-      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them. That request letter itself was located separately and directly -- see WELSCH-AUDIT-REQUEST-LETTER -- but its identity as the exact document 'provided' at this meeting is not yet independently confirmed (its own provenance is a local file supplied to this project, not a fetch from a public URL).",
+      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them. That request letter itself was located separately and directly -- see WELSCH-AUDIT-REQUEST-LETTER -- but its identity as the exact document 'provided' at this meeting is not yet independently confirmed (its own provenance is a local file supplied to this project, not a fetch from a public URL). Video of the full meeting: https://www.youtube.com/watch?v=vsGlPI9B0DE (not transcribed -- no transcription tool available, and downloading video from YouTube is against its terms of service; noted per the same rule the original brief set for the Legistar reading videos). If someone reviews it directly, it may show whether Welsch's dollar figures were read into the record even though the written minutes don't contain them.",
       "used_for": "Task 4b, the hinge of the audit's origin",
       "added": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest.",
       "capture": {
@@ -2344,7 +2405,7 @@
       }
     }
   ],
-  "last_run": "2026-09-05T02:53:20+00:00"
+  "last_run": "2026-09-05T03:05:50+00:00"
 }
 </script>
 <script>
@@ -2431,6 +2492,76 @@
     })[t] || t;
   }
 
+  // Mirrors build_structured_json.py exactly -- same facts, same field names, so
+  // the file you'd get from the pipeline and the one this button downloads
+  // never disagree. See that script if these two ever need to change.
+  var STATUS_MEANING = {
+    'captured': 'The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.',
+    'bytes-held': 'The anchor text was confirmed present in the fetched/hashed bytes, but no independent archive of this capture exists yet.',
+    'local-only': 'The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project\'s own local hash backs it.',
+    'anchor-missing': 'The URL was fetched and hashed, but the claimed anchor text was NOT found in it. Read the entry\'s note: this usually means the live page has changed since it was cited, or the anchor lives on a different page/attachment than the one captured here.',
+    'no-text-layer': 'This PDF has no extractable text layer (looks scanned/image-only). Not OCR\'d -- a human has to decide whether to transcribe it.',
+    'not-located': 'No URL exists for this claim yet. It is either still being searched for, or was superseded -- check the note for where the real answer ended up.',
+    'fetch-failed': 'The URL could not be fetched (network/HTTP error). See the note for the specific failure.',
+    'unverified': 'Not yet attempted.'
+  };
+  var LOCATION_KIND_MEANING = {
+    'byte-offset': 'offset/length are a byte position in the raw HTTP response body (bytes/<id>.bin).',
+    'pdf-page-text': 'offset/length are a character position in text extracted from the PDF by pdfminer.six (derived/<id>.txt), on the given page. NOT a byte offset into the PDF itself -- PDF content streams are compressed.',
+    'rendered-dom-text': 'offset/length are a character position in text captured from a browser-rendered DOM (derived/<id>.rendered.txt), because the raw HTTP response for this URL is a JS application shell with no content in it at all.'
+  };
+  var ARCHIVE_TIERS_INDEPENDENT = {'wayback-existing':1,'wayback-spn2':1,'archive-today':1,'wayback-historical':1};
+
+  function structuredLocationFor(c){
+    if(c.anchor_page != null && c.rendered_text_offset == null){
+      return {kind:'pdf-page-text', page:c.anchor_page, offset:c.anchor_text_offset, length:c.anchor_text_length};
+    }
+    if(c.rendered_text_offset != null){
+      return {kind:'rendered-dom-text', offset:c.rendered_text_offset, length:c.rendered_text_length};
+    }
+    if(c.anchor_offset != null){
+      return {kind:'byte-offset', offset:c.anchor_offset, length:c.anchor_length};
+    }
+    return null;
+  }
+  function structuredArchiveFor(c){
+    if(!ARCHIVE_TIERS_INDEPENDENT[c.archive_tier]) return null;
+    return {
+      tier: c.archive_tier,
+      url: c.wayback_url || c.archive_today_url || null,
+      timestamp: c.wayback_timestamp || null,
+      as_of_today: c.archive_tier !== 'wayback-historical'
+    };
+  }
+  function structuredEntry(e){
+    var c = e.capture || {};
+    var sha = c.sha256 || c.rendered_sha256;
+    var out = {
+      id: e.id, label: e.label, url: e.url || null, tier: e.tier,
+      claim: e.claim, anchor: e.anchor, used_for: e.used_for,
+      status: c.status, status_meaning: STATUS_MEANING[c.status] || null,
+      evidence: sha ? {
+        sha256: sha, bytes: c.bytes, content_type: c.content_type,
+        fetched_at: c.fetched_at, location: structuredLocationFor(c), archive: structuredArchiveFor(c)
+      } : null
+    };
+    if(c.note) out.note = c.note;
+    if(e.added) out.provenance_note = e.added;
+    if(e.url_correction) out.url_correction = e.url_correction;
+    return out;
+  }
+  function buildStructuredDoc(){
+    return {
+      case: manifest.case, case_label: manifest.case_label,
+      generated_at: new Date().toISOString(),
+      derived_from: 'sources.enriched.json (via this register\'s loaded data)',
+      how_to_use: 'Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project\'s own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person\'s letter or statement are that person\'s allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.',
+      status_meaning: STATUS_MEANING,
+      location_kind_meaning: LOCATION_KIND_MEANING,
+      entries: manifest.entries.map(structuredEntry)
+    };
+  }
+
   function matches(e){
     var st = statusOf(e);
     var f = state.filter;
@@ -2503,6 +2634,7 @@
     var acts = [];
     if(e.url){
       acts.push('<a href="' + esc(e.url) + '" target="_blank" rel="noopener">Live source</a>');
+      acts.push('<button data-copy-url="' + esc(e.id) + '" title="Copy the plain source URL">Copy URL</button>');
       if(e.anchor) acts.push('<a class="primary" href="' + esc(fragLink(e.url, e.anchor)) + '" target="_blank" rel="noopener">Jump to anchor</a>');
       acts.push('<a href="' + esc(spnLink(e.url)) + '" target="_blank" rel="noopener">Capture now</a>');
       acts.push('<a href="' + esc(waybackLink(e.url)) + '" target="_blank" rel="noopener">Wayback</a>');
@@ -2611,6 +2743,15 @@
     setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1500);
   });
 
+  document.getElementById('exportStructuredJson').addEventListener('click', function(){
+    var blob = new Blob([JSON.stringify(buildStructuredDoc(), null, 2)], {type:'application/json'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'sources.structured.json';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1500);
+  });
+
   document.getElementById('importBtn').addEventListener('click', function(){
     var note = document.getElementById('importNote');
     var raw = document.getElementById('importBox').value.trim();
@@ -2660,14 +2801,23 @@
   });
 
   document.getElementById('register').addEventListener('click', function(ev){
-    var b = ev.target.closest('button[data-curl]');
-    if(!b) return;
-    var e = manifest.entries.filter(function(x){ return x.id === b.dataset.curl; })[0];
-    if(!e || !e.url) return;
-    var cmd = 'mkdir -p bytes && curl -sL --compressed -A "custody-register/1" \\\n' +
-              '  -D "bytes/' + e.id + '.headers" -o "bytes/' + e.id + '.bin" \\\n' +
-              '  "' + e.url + '" && shasum -a 256 "bytes/' + e.id + '.bin"';
-    copy(cmd, 'curl for ' + e.id + ' copied');
+    var curlBtn = ev.target.closest('button[data-curl]');
+    if(curlBtn){
+      var ce = manifest.entries.filter(function(x){ return x.id === curlBtn.dataset.curl; })[0];
+      if(!ce || !ce.url) return;
+      var cmd = 'mkdir -p bytes && curl -sL --compressed -A "custody-register/1" \\\n' +
+                '  -D "bytes/' + ce.id + '.headers" -o "bytes/' + ce.id + '.bin" \\\n' +
+                '  "' + ce.url + '" && shasum -a 256 "bytes/' + ce.id + '.bin"';
+      copy(cmd, 'curl for ' + ce.id + ' copied');
+      return;
+    }
+    var urlBtn = ev.target.closest('button[data-copy-url]');
+    if(urlBtn){
+      var ue = manifest.entries.filter(function(x){ return x.id === urlBtn.dataset.copyUrl; })[0];
+      if(!ue || !ue.url) return;
+      copy(ue.url, 'URL for ' + ue.id + ' copied');
+      return;
+    }
   });
 
   render();

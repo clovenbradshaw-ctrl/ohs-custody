@@ -316,3 +316,10 @@
 2026-09-05T02:53:20+00:00  WELSCH-AUDIT-REQUEST-LETTER skipped, no url
 2026-09-05T02:53:20+00:00  WELSCH-AUDIT-REQUEST-LETTER LOCAL INGEST held  sha=2047adbfde04  page 1  text_offset 1549 via normalised-text
 2026-09-05T02:53:20+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=1
+2026-09-05T03:05:50+00:00  run start  entries=73  archive=True  proxy=False
+2026-09-05T03:05:50+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T03:05:50+00:00  MHRC-STAFF-INVESTIGATIVE-REPORT skipped, no url
+2026-09-05T03:05:50+00:00  MHRC-ED-DETERMINATION    skipped, no url
+2026-09-05T03:05:50+00:00  MHRC-STAFF-INVESTIGATIVE-REPORT LOCAL INGEST held  sha=9525c5b23110  page 9  text_offset 21477 via normalised-text
+2026-09-05T03:05:50+00:00  MHRC-ED-DETERMINATION    LOCAL INGEST held  sha=2f270d7bb48a  page 4  text_offset 8649 via normalised-text
+2026-09-05T03:05:50+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=2
