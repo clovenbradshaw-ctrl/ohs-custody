@@ -1404,7 +1404,7 @@
       "doctype": "minutes-pdf",
       "url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
       "anchor": "Audit of Office of Homeless Services Financial Processes to the 2025 annual audit plan",
-      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them, so the $3.2M line-item breakdown is not sourced to this document and remains not-located.",
+      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them. That request letter itself was located separately and directly -- see WELSCH-AUDIT-REQUEST-LETTER -- but its identity as the exact document 'provided' at this meeting is not yet independently confirmed (its own provenance is a local file supplied to this project, not a fetch from a public URL).",
       "used_for": "Task 4b, the hinge of the audit's origin",
       "added": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest.",
       "capture": {
@@ -1428,6 +1428,36 @@
         "archive_note": "no-ia-credentials",
         "archive_today_note": "blocked:captcha-gate",
         "archive_tier": "local-only"
+      }
+    },
+    {
+      "id": "WELSCH-AUDIT-REQUEST-LETTER",
+      "label": "Councilmember Welsch, letter to Audit Committee requesting OHS audit",
+      "tier": "primary-record",
+      "doctype": "letter-pdf",
+      "url": "",
+      "anchor": "requiring immediate forensic examination",
+      "claim": "IMPORTANT: this is Councilmember Ginny Welsch's own letter to the Metro Audit Committee -- an allegation and audit-request document, NOT an audit finding, despite the filename 'OHS Audit Executive Summary.pdf'. It is signed by Welsch, not the Office of Internal Audit, and itemizes the $3.2M+ figure into named components (DePaul/L-6054 invoices $568,923; Landlord Engagement funds $565,577; a single department credit card $130,109 plus $46,994.14 in reimbursements, including a $1,800 charge to 'WP COLEYSJJ' Welsch states 'appears to be' Coley's Jook Junt 'operated by Director Calvin's sister'; ARPA funding-cliff exposure $2,000,000; 'temporary service' miscoding $11,000,000; and others), plus safety-incident and staffing allegations at Strobel House. Every figure and claim in this document is Welsch's own characterization, sourced in her footnotes mostly to PRR-obtained documents on Google Drive/Sites that this project has not yet accessed or verified independently. Do not cite any figure from this document as an established fact -- attribute it to Welsch's letter specifically. The Coley's Jook Junt / 'Director Calvin's sister' claim is now attributable to a named, on-record source (Welsch, in a letter to the Audit Committee) rather than an untraceable rumor, which is a real change from this project's earlier note on COLEYS-JOOK-JUNT/NASHVILLEVOYAGER-SHATICKA -- but Welsch's own footnote 6 for that line cites only a 'Reimbursement expense' record, not a family-relationship document, so the relationship itself is still not independently verified by any source this project has seen.",
+      "used_for": "Task 4b, the itemized $3.2M breakdown; the audit's origin",
+      "added": "Supplied directly to this project as a local file (not fetched from a URL) on 2026-09-05. Original public source/URL not yet confirmed -- provenance needs to be established: is this the exact document referenced as 'provided' to the Sept 23, 2025 Audit Committee meeting, or a copy circulated separately? See capture.note.",
+      "capture": {
+        "status": "local-only",
+        "wayback_timestamp": null,
+        "sha256": "2047adbfde0460da61c25972ac9909b2f18444c80519e980ba28d59f18e273a7",
+        "bytes": 164868,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": "application/pdf",
+        "fetched_at": "2026-09-05T02:53:20+00:00",
+        "note": "Provided directly, not fetched from a URL. Provenance: Supplied directly by the user (Michael Lacy) via local file from Downloads, 2026-09-05. File mtime 2026-09-04T21:50 local. Original public URL not yet confirmed.",
+        "local_path": "bytes/WELSCH-AUDIT-REQUEST-LETTER.bin",
+        "archive_tier": "local-only",
+        "extractor": "pdfminer.six 20260107",
+        "page_count": 4,
+        "anchor_method": "normalised-text",
+        "anchor_page": 1,
+        "anchor_text_offset": 1549,
+        "anchor_text_length": 41
       }
     },
     {
@@ -2019,5 +2049,5 @@
       }
     }
   ],
-  "last_run": "2026-09-05T02:44:03+00:00"
+  "last_run": "2026-09-05T02:53:20+00:00"
 }

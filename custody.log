@@ -311,3 +311,8 @@
 2026-09-05T02:44:03+00:00  MUNI-263040              RENDERED held  sha=4d12915d7d79  offset 2056 via exact-text
 2026-09-05T02:44:03+00:00  MUNI-263040-HR           RENDERED held  sha=4d12915d7d79  offset 2214 via exact-text
 2026-09-05T02:44:03+00:00  run end  captured=0  anchor-missing=2  fetch-failed=0  skipped=0
+2026-09-05T02:53:20+00:00  run start  entries=71  archive=True  proxy=False
+2026-09-05T02:53:20+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T02:53:20+00:00  WELSCH-AUDIT-REQUEST-LETTER skipped, no url
+2026-09-05T02:53:20+00:00  WELSCH-AUDIT-REQUEST-LETTER LOCAL INGEST held  sha=2047adbfde04  page 1  text_offset 1549 via normalised-text
+2026-09-05T02:53:20+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=1

@@ -622,6 +622,95 @@ def capture_rendered_text(entry, out, logfile, rendered_path):
     }, indent=2), encoding="utf-8")
 
 
+def ingest_local_pdf(entry, out, logfile, local_path, provenance):
+    """
+    For a document handed to the project directly rather than fetched from a
+    URL -- a PRR response, a document a source shares by hand -- there is no
+    HTTP response to be faithful to, so Rule 1 becomes: the bytes on disk
+    are exactly the file as received, unaltered, hashed before anything
+    reads it. The chain-of-custody fact that matters here is provenance
+    (who supplied it, how, when), not a server response, and `provenance`
+    is required precisely so that never goes unstated. This does not and
+    cannot establish where else, if anywhere, this document is publicly
+    posted -- that is a separate, explicit thing to go check.
+    """
+    eid = entry["id"]
+    cap = entry.setdefault("capture", {})
+    lp = pathlib.Path(local_path)
+    raw = lp.read_bytes()
+    sha = hashlib.sha256(raw).hexdigest()
+
+    blob = out / "bytes" / f"{eid}.bin"
+    blob.write_bytes(raw)
+    (out / "bytes" / f"{eid}.headers.json").write_text(json.dumps({
+        "source": "local-ingest",
+        "original_filename": lp.name,
+        "provenance": provenance,
+        "ingested_at": now_iso(),
+    }, indent=2), encoding="utf-8")
+
+    cap.update({
+        "sha256": sha,
+        "bytes": len(raw),
+        "content_type": "application/pdf",
+        "fetched_at": now_iso(),
+        "local_path": str(blob),
+        "archive_tier": "local-only",
+        "note": f"Provided directly, not fetched from a URL. Provenance: {provenance}",
+    })
+
+    text, page_offsets, extractor_version = extract_pdf_text(raw)
+    extractor = f"pdfminer.six {extractor_version}"
+    cap["extractor"] = extractor
+    cap["page_count"] = len(page_offsets)
+
+    derived_dir = out / "derived"
+    derived_dir.mkdir(parents=True, exist_ok=True)
+    (derived_dir / f"{eid}.pages.json").write_text(json.dumps(page_offsets, indent=2), encoding="utf-8")
+
+    if text is None:
+        cap["status"] = "no-text-layer"
+        log(logfile, f"{eid:24} LOCAL INGEST, no text layer  pages={len(page_offsets)}  sha={sha[:12]}")
+        return
+
+    (derived_dir / f"{eid}.txt").write_text(text, encoding="utf-8")
+    offset, length, method = find_in_text(text, entry.get("anchor"))
+    cap["anchor_method"] = method
+
+    span = None
+    if offset is None:
+        cap["status"] = "anchor-missing"
+        log(logfile, f"{eid:24} LOCAL INGEST, anchor missing  {method}  sha={sha[:12]}")
+    else:
+        page = page_for_offset(page_offsets, offset)
+        cap["status"] = "local-only"
+        cap["anchor_page"] = page
+        cap["anchor_text_offset"] = offset
+        cap["anchor_text_length"] = length
+        log(logfile, f"{eid:24} LOCAL INGEST held  sha={sha[:12]}  page {page}  text_offset {offset} via {method}")
+        span = {
+            "kind": "anchor-pdf",
+            "page": page,
+            "text_offset": offset,
+            "text_length": length,
+            "extractor": extractor,
+            "derived_from_sha256": sha,
+            "method": "pdf-text-layer",
+        }
+
+    (out / "readings" / f"{eid}.json").write_text(json.dumps({
+        "id": eid,
+        "path": str(blob),
+        "sha256": sha,
+        "bytes": len(raw),
+        "media_type": "application/pdf",
+        "source_url": None,
+        "provenance": provenance,
+        "retrieved_at": cap["fetched_at"],
+        "spans": [span] if span else [],
+    }, indent=2), encoding="utf-8")
+
+
 # ------------------------------------------------------------- archiving
 
 def existing_snapshot(url, session):
@@ -734,6 +823,11 @@ def main():
                     help="ID:path/to/rendered.txt -- locate the anchor in a "
                          "browser-rendered text capture for a page whose raw "
                          "HTTP response is a JS app shell (Municode). Repeatable.")
+    ap.add_argument("--ingest-local", action="append", default=[],
+                    help="ID:path/to/file.pdf|provenance text -- hash and locate "
+                         "the anchor in a PDF provided directly rather than fetched "
+                         "from a URL. Pipe-separated so provenance text can contain "
+                         "colons. Repeatable.")
     args = ap.parse_args()
 
     out = pathlib.Path(args.out)
@@ -955,6 +1049,18 @@ def main():
             log(logfile, f"{'render':24} unknown id {eid!r}, skipping")
             continue
         capture_rendered_text(entry, out, logfile, rpath)
+
+    for spec in args.ingest_local:
+        eid, _, rest = spec.partition(":")
+        lpath, _, provenance = rest.partition("|")
+        entry = by_id.get(eid)
+        if not entry:
+            log(logfile, f"{'ingest':24} unknown id {eid!r}, skipping")
+            continue
+        if not provenance:
+            log(logfile, f"{eid:24} cannot ingest, no provenance given")
+            continue
+        ingest_local_pdf(entry, out, logfile, lpath, provenance)
 
     enriched = out / "sources.enriched.json"
     manifest["last_run"] = now_iso()

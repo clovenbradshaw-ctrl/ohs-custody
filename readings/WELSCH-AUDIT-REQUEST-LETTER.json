@@ -1,0 +1,21 @@
+{
+  "id": "WELSCH-AUDIT-REQUEST-LETTER",
+  "path": "bytes/WELSCH-AUDIT-REQUEST-LETTER.bin",
+  "sha256": "2047adbfde0460da61c25972ac9909b2f18444c80519e980ba28d59f18e273a7",
+  "bytes": 164868,
+  "media_type": "application/pdf",
+  "source_url": null,
+  "provenance": "Supplied directly by the user (Michael Lacy) via local file from Downloads, 2026-09-05. File mtime 2026-09-04T21:50 local. Original public URL not yet confirmed.",
+  "retrieved_at": "2026-09-05T02:53:20+00:00",
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 1,
+      "text_offset": 1549,
+      "text_length": 41,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "2047adbfde0460da61c25972ac9909b2f18444c80519e980ba28d59f18e273a7",
+      "method": "pdf-text-layer"
+    }
+  ]
+}
