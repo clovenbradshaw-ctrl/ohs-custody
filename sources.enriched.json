@@ -15,14 +15,26 @@
       "claim": "The 52 percent HUD non-compliance figure and its HIGH risk rating originate here, for the predecessor division rather than OHS.",
       "used_for": "Rebuttal to the no-major-issues claim",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
+        "status": "captured",
+        "wayback_timestamp": "20260609184709",
+        "sha256": "79a8223f0b8b3443bea6bcac66cfcd3c888c88060b3a5045bad610c7ac6c7baf",
+        "bytes": 972892,
         "anchor_offset": null,
         "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "content_type": "application/pdf",
+        "fetched_at": "2026-09-05T01:28:53+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashville.gov/sites/default/files/2023-04/Homeless-Impact-Division-230330.pdf?ct=1681999881",
+        "local_path": "bytes/AUD-HID-2023.bin",
+        "extractor": "pdfminer.six 20260107",
+        "page_count": 21,
+        "anchor_method": "normalised-text",
+        "anchor_page": 8,
+        "anchor_text_offset": 20225,
+        "anchor_text_length": 31,
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260609184709/https://www.nashville.gov/sites/default/files/2023-04/Homeless-Impact-Division-230330.pdf?ct=1681999881"
       }
     },
     {
@@ -76,14 +88,21 @@
       "used_for": "Section V, the hinge of the piece",
       "note": "The action-text sentence in this entry's own anchor is NOT on this LegislationDetail.aspx page -- it lives on the linked HistoryDetail.aspx sub-page for the third-reading row, which the site renders as a JS popup rather than a plain link. Captured separately and correctly anchored as LEG-BL2021-971-HIST-3RD (and the second-reading counterpart, LEG-BL2021-971-HIST-2ND). This entry is left anchor-missing deliberately rather than repointed, per the brief's rule against loosening an anchor to make it pass -- it is honestly describing this specific URL's content, which is the bill summary, not the action log.",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
+        "status": "anchor-missing",
+        "wayback_timestamp": "20260119115645",
+        "sha256": "7394d12402a1ac3c471118fa33d8528d6e1470491ee4cbbbb3c1015a32d48e52",
+        "bytes": 149437,
         "anchor_offset": null,
         "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "content_type": "text/html; charset=utf-8",
+        "fetched_at": "2026-09-05T01:28:56+00:00",
+        "http_status": 200,
+        "final_url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=5197292&GUID=38B64936-8F8D-4AAC-B511-710E7D633231",
+        "anchor_method": "anchor-not-found",
+        "local_path": "bytes/LEG-BL2021-971.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260119115645/https://nashville.legistar.com/LegislationDetail.aspx?ID=5197292&GUID=38B64936-8F8D-4AAC-B511-710E7D633231"
       }
     },
     {
@@ -97,14 +116,21 @@
       "used_for": "Section V, the hinge of the piece",
       "added": "Not in the original manifest. Added 2026-09-05: found via the meeting-detail page for the 6/7/2022 Metropolitan Council meeting (MeetingDetail.aspx?ID=965721&GUID=C4ED5A72-7FAC-4B02-BB2A-CE72C8400C2C), which Legistar links from LEG-BL2021-971's history grid as a per-row JS popup, not a plain href.",
       "capture": {
-        "status": "unverified",
+        "status": "local-only",
         "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "sha256": "443790375fb8380e8e33a367f99098a3a46363228c603223b0777d3f53973fb7",
+        "bytes": 47040,
+        "anchor_offset": 36678,
+        "anchor_length": 48,
+        "content_type": "text/html; charset=utf-8",
+        "fetched_at": "2026-09-05T01:29:00+00:00",
+        "http_status": 200,
+        "final_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25536701&GUID=571AD86D-26F0-4983-A5A5-B6A7F8A7AAE1",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/LEG-BL2021-971-HIST-2ND.bin",
+        "archive_note": "no-ia-credentials",
+        "archive_today_note": "blocked:captcha-gate",
+        "archive_tier": "local-only"
       }
     },
     {
@@ -118,14 +144,21 @@
       "used_for": "Section V, the hinge of the piece",
       "added": "Not in the original manifest. Added 2026-09-05, same discovery path as LEG-BL2021-971-HIST-2ND but for the 6/21/2022 meeting (MeetingDetail.aspx?ID=965745&GUID=6F19C43A-678F-41DF-993A-9D1AD19A7720).",
       "capture": {
-        "status": "unverified",
+        "status": "local-only",
         "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "sha256": "ba8c572261eb73545bbcf28c7b370e0813d44cf8e543133887923462637d702d",
+        "bytes": 48075,
+        "anchor_offset": 37369,
+        "anchor_length": 67,
+        "content_type": "text/html; charset=utf-8",
+        "fetched_at": "2026-09-05T01:29:05+00:00",
+        "http_status": 200,
+        "final_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25668715&GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/LEG-BL2021-971-HIST-3RD.bin",
+        "archive_note": "no-ia-credentials",
+        "archive_today_note": "blocked:captcha-gate",
+        "archive_tier": "local-only"
       }
     },
     {
@@ -138,14 +171,26 @@
       "claim": "Sponsor attribution on this document is unresolved and decides who removed council nomination power.",
       "used_for": "Correction 4, unresolved",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
+        "status": "captured",
+        "wayback_timestamp": "20250911045419",
+        "sha256": "997e7142e5db5d60f4f01a2f832e6b089badc3943316aaf4d7b7a0ab3d3518ca",
+        "bytes": 101936,
         "anchor_offset": null,
         "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "content_type": "application/pdf",
+        "fetched_at": "2026-09-05T01:29:08+00:00",
+        "http_status": 200,
+        "final_url": "https://nashville.legistar.com/View.ashx?M=F&ID=10956003&GUID=14EC3D89-8ADD-41B7-A5ED-C349E645E0D5",
+        "local_path": "bytes/LEG-AMD1.bin",
+        "extractor": "pdfminer.six 20260107",
+        "page_count": 1,
+        "anchor_method": "exact-text",
+        "anchor_page": 1,
+        "anchor_text_offset": 401,
+        "anchor_text_length": 19,
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20250911045419/https://nashville.legistar.com/View.ashx?M=F&ID=10956003&GUID=14EC3D89-8ADD-41B7-A5ED-C349E645E0D5"
       }
     },
     {
@@ -158,14 +203,26 @@
       "claim": "Sponsor attribution on this document is unresolved and decides who removed council nomination power.",
       "used_for": "Correction 4, unresolved",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
+        "status": "captured",
+        "wayback_timestamp": "20250911062307",
+        "sha256": "857e0a1ff8bf0b7457c4e5334ecaf53d8b16c6d32fe78c1b2a06a4eaf38feec1",
+        "bytes": 103270,
         "anchor_offset": null,
         "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "content_type": "application/pdf",
+        "fetched_at": "2026-09-05T01:29:12+00:00",
+        "http_status": 200,
+        "final_url": "https://nashville.legistar.com/View.ashx?M=F&ID=11001383&GUID=D633BDF9-F5DF-4695-BC56-DED8DF2E930E",
+        "local_path": "bytes/LEG-AMD2.bin",
+        "extractor": "pdfminer.six 20260107",
+        "page_count": 1,
+        "anchor_method": "exact-text",
+        "anchor_page": 1,
+        "anchor_text_offset": 807,
+        "anchor_text_length": 12,
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20250911062307/https://nashville.legistar.com/View.ashx?M=F&ID=11001383&GUID=D633BDF9-F5DF-4695-BC56-DED8DF2E930E"
       }
     },
     {
@@ -278,14 +335,26 @@
       "claim": "Contains no OHS status item, which is the evidentiary basis for saying the audit was still open at that date.",
       "used_for": "The eleven months of silence",
       "capture": {
-        "status": "unverified",
+        "status": "local-only",
         "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
+        "sha256": "b5c44ffde381115084595952ecd351d35304556211ea0f78ffe7fe57e8059023",
+        "bytes": 181769,
         "anchor_offset": null,
         "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "content_type": "application/pdf",
+        "fetched_at": "2026-09-05T01:29:15+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashville.gov/sites/default/files/2025-12/12092025_AuditCommitteeMintues_APPROVED.pdf?ct=1767366514",
+        "local_path": "bytes/AUD-CTTE-DEC9.bin",
+        "extractor": "pdfminer.six 20260107",
+        "page_count": 3,
+        "anchor_method": "exact-text",
+        "anchor_page": 1,
+        "anchor_text_offset": 180,
+        "anchor_text_length": 15,
+        "archive_note": "no-ia-credentials",
+        "archive_today_note": "blocked:captcha-gate",
+        "archive_tier": "local-only"
       }
     },
     {
@@ -386,18 +455,18 @@
         "anchor_offset": 62040,
         "anchor_length": 37,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T01:20:49+00:00",
+        "fetched_at": "2026-09-05T01:30:13+00:00",
         "http_status": 403,
         "final_url": "https://www.nashville.gov/departments/social-services/homeless-impact-division/about-homelessness/reports-and-documents",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/GOV-MDHA-CA.historical-20230510220542.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "reused-existing",
         "archive_today_note": "blocked:captcha-gate",
         "archive_tier": "wayback-historical",
         "wayback_url": "https://web.archive.org/web/20230510220542/https://www.nashville.gov/departments/social-services/homeless-impact-division/about-homelessness/reports-and-documents",
         "recovered_from_preexisting_snapshot": true,
         "live_url_status": 403,
-        "note": "Live URL returned 403 as of 2026-09-05T01:20:49+00:00, confirmed through direct fetch, the n8n proxy, and a live browser render -- not a client-specific block. Object of record for the anchor is a pre-existing Wayback Machine capture timestamped 20230510220542, located via the public CDX API. Nothing was freshly submitted to archive.org for this row.",
+        "note": "Live URL returned 403 as of 2026-09-05T01:30:13+00:00, confirmed through direct fetch, the n8n proxy, and a live browser render -- not a client-specific block. Object of record for the anchor is a pre-existing Wayback Machine capture timestamped 20230510220542, located via the public CDX API. Nothing was freshly submitted to archive.org for this row.",
         "wayback_anchor_url": "https://web.archive.org/web/20230510220542/https://www.nashville.gov/departments/social-services/homeless-impact-division/about-homelessness/reports-and-documents#:~:text=serves%20as%20the%20collaborative%20applicant"
       }
     },
@@ -413,14 +482,22 @@
       "priority": "high",
       "added": "Not in the original manifest. Added 2026-09-05 by the capture agent after GOV-MDHA-CA's live URL began returning 403 (see its capture.note) -- this is the current live page carrying the successor fact, dated to the transition itself rather than merely replacing a dead link.",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20260406175323",
+        "sha256": "eb2fa95541a938408bba52edd0c9b035d56c126fd888753efb792119bed9871e",
+        "bytes": 99343,
+        "anchor_offset": 55264,
+        "anchor_length": 72,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:22+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashville.gov/departments/office-homeless-services/continuum-care",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/GOV-OHS-CA-2023.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260406175323/https://www.nashville.gov/departments/office-homeless-services/continuum-care",
+        "wayback_anchor_url": "https://web.archive.org/web/20260406175323/https://www.nashville.gov/departments/office-homeless-services/continuum-care#:~:text=designated%20by%20the%20General%20Membership%20as%20the%20Collaborative%20Applicant%20%28CA%29"
       }
     },
     {
@@ -454,14 +531,22 @@
       "used_for": "Trigger monitoring",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20250315184446",
+        "sha256": "97114caefd97da6e6f66350a0046a9e3755459497cc310043a43c59a18a2d165",
+        "bytes": 84073,
+        "anchor_offset": 5997,
+        "anchor_length": 27,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:28+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashville.gov/departments/office-homeless-services/people/april-calvin",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/GOV-CALVIN.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20250315184446/https://www.nashville.gov/departments/office-homeless-services/people/april-calvin",
+        "wayback_anchor_url": "https://web.archive.org/web/20250315184446/https://www.nashville.gov/departments/office-homeless-services/people/april-calvin#:~:text=Office%20of%20Homeless%20Services"
       }
     },
     {
@@ -475,14 +560,21 @@
       "used_for": "Correction 5, reporting line",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
+        "status": "anchor-missing",
+        "wayback_timestamp": "20250731050512",
+        "sha256": "7de3bdb39467920cd419469712ce79e6fdf2af3ae8a6843cc66f17de99ded282",
+        "bytes": 101777,
         "anchor_offset": null,
         "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:31+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashville.gov/departments/mayor/staff-directory",
+        "anchor_method": "anchor-not-found",
+        "local_path": "bytes/GOV-MAYOR-DIR.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20250731050512/https://www.nashville.gov/departments/mayor/staff-directory"
       }
     },
     {
@@ -496,14 +588,21 @@
       "used_for": "Section VIII, MHRC",
       "priority": "high",
       "capture": {
-        "status": "unverified",
+        "status": "local-only",
         "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
+        "bytes": 203334,
+        "anchor_offset": 165810,
+        "anchor_length": 65,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:33+00:00",
+        "http_status": 200,
+        "final_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/CTB-TACKETT-AUG26.bin",
+        "archive_note": "no-ia-credentials",
+        "archive_today_note": "blocked:captcha-gate",
+        "archive_tier": "local-only"
       }
     },
     {
@@ -577,14 +676,22 @@
       "used_for": "Section I, the peg",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20260819181048",
+        "sha256": "84ac82ba4e8f289431e526b97a41e928af6f4c6b28cd61046113da2f688699cd",
+        "bytes": 384240,
+        "anchor_offset": 120187,
+        "anchor_length": 52,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:37+00:00",
+        "http_status": 200,
+        "final_url": "https://nashvillebanner.com/2026/08/18/metro-ops-chief-kristin-wilson-resigns/",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/BNR-WILSON.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260819181048/https://nashvillebanner.com/2026/08/18/metro-ops-chief-kristin-wilson-resigns/",
+        "wayback_anchor_url": "https://web.archive.org/web/20260819181048/https://nashvillebanner.com/2026/08/18/metro-ops-chief-kristin-wilson-resigns/#:~:text=to%20take%20a%20pause%2C%20to%20reflect%20on%20the%20work%20accomplished"
       }
     },
     {
@@ -618,14 +725,22 @@
       "used_for": "Correction 5",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20260210095225",
+        "sha256": "19ae76612fec06f027545fd5b7b05c69825ce79ff04ed49f545dbc01ab7dea48",
+        "bytes": 381636,
+        "anchor_offset": 118057,
+        "anchor_length": 30,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:39+00:00",
+        "http_status": 200,
+        "final_url": "https://nashvillebanner.com/2026/01/09/nashville-emergency-communications-director-leave/",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/BNR-MARTINI-LEAVE.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260210095225/https://nashvillebanner.com/2026/01/09/nashville-emergency-communications-director-leave/",
+        "wayback_anchor_url": "https://web.archive.org/web/20260210095225/https://nashvillebanner.com/2026/01/09/nashville-emergency-communications-director-leave/#:~:text=subject%20to%20civil%20service%20rules"
       }
     },
     {
@@ -659,14 +774,22 @@
       "used_for": "Section VI",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20260829234815",
+        "sha256": "5356b2f3b1966b8ce1d7b0bd362dac99f33adb1ae1718e2e0d99b1fafb8a5ed9",
+        "bytes": 267325,
+        "anchor_offset": 172201,
+        "anchor_length": 29,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:42+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashvillescene.com/news/pithinthewind/office-of-homeless-services-audit/article_b5044f4a-32a6-46ca-ac32-363cf673bfe0.html",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/SCN-AUDIT-APPROVED.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260829234815/https://www.nashvillescene.com/news/pithinthewind/office-of-homeless-services-audit/article_b5044f4a-32a6-46ca-ac32-363cf673bfe0.html",
+        "wayback_anchor_url": "https://web.archive.org/web/20260829234815/https://www.nashvillescene.com/news/pithinthewind/office-of-homeless-services-audit/article_b5044f4a-32a6-46ca-ac32-363cf673bfe0.html#:~:text=first%20step%20to%20restoring%20trust"
       }
     },
     {
@@ -680,14 +803,21 @@
       "used_for": "Audit scope reconstruction",
       "priority": "high",
       "capture": {
-        "status": "unverified",
+        "status": "local-only",
         "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "sha256": "802cd366a1a7270cfb6683fe34fb5786bb09480b353def8b668bacf79d22e347",
+        "bytes": 262245,
+        "anchor_offset": 172721,
+        "anchor_length": 13,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:45+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/SCN-WELSCH-FILING.bin",
+        "archive_note": "no-ia-credentials",
+        "archive_today_note": "blocked:captcha-gate",
+        "archive_tier": "local-only"
       }
     },
     {
@@ -701,14 +831,22 @@
       "used_for": "Section II, the harms",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20260829234814",
+        "sha256": "53eaf1995b63dee50a7afd9ed9224195f5be8100f689d1744d838da5be3871f4",
+        "bytes": 270598,
+        "anchor_offset": 188465,
+        "anchor_length": 65,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:53+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashvillescene.com/news/citylimits/ohs-non-traditional-housing-program/article_a359ddae-8c2f-4fe5-9efb-6c6d4321e474.html",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/SCN-NONTRAD.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260829234814/https://www.nashvillescene.com/news/citylimits/ohs-non-traditional-housing-program/article_a359ddae-8c2f-4fe5-9efb-6c6d4321e474.html",
+        "wayback_anchor_url": "https://web.archive.org/web/20260829234814/https://www.nashvillescene.com/news/citylimits/ohs-non-traditional-housing-program/article_a359ddae-8c2f-4fe5-9efb-6c6d4321e474.html#:~:text=eight%20unhoused%20families%20to%20move%20from%20the%20Nashville%20Rescue%20Mission"
       }
     },
     {
@@ -722,14 +860,22 @@
       "used_for": "Section VII",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20260829234815",
+        "sha256": "fa2d720f1be1a356b5bf3dea26ea44788ba741cda04b01d0e523fe40c42d8658",
+        "bytes": 294238,
+        "anchor_offset": 207951,
+        "anchor_length": 55,
+        "content_type": "text/html; charset=UTF-8",
+        "fetched_at": "2026-09-05T01:29:55+00:00",
+        "http_status": 200,
+        "final_url": "https://www.nashvillescene.com/news/citylimits/office-of-homeless-services-2025/article_053499a2-9ac8-4664-9710-a759932e62cf.html",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/SCN-PATTERSON.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260829234815/https://www.nashvillescene.com/news/citylimits/office-of-homeless-services-2025/article_053499a2-9ac8-4664-9710-a759932e62cf.html",
+        "wayback_anchor_url": "https://web.archive.org/web/20260829234815/https://www.nashvillescene.com/news/citylimits/office-of-homeless-services-2025/article_053499a2-9ac8-4664-9710-a759932e62cf.html#:~:text=operating%20as%20the%20chair%20of%20the%20Homeless%20Planning%20Council"
       }
     },
     {
@@ -763,14 +909,22 @@
       "used_for": "Right of reply",
       "priority": "high",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20260710005506",
+        "sha256": "3bb9e4215681f76504f8e19ef8be8389dba34221b343c13987af24339d5f212f",
+        "bytes": 304093,
+        "anchor_offset": 45994,
+        "anchor_length": 31,
+        "content_type": "text/html; charset=utf-8",
+        "fetched_at": "2026-09-05T01:29:58+00:00",
+        "http_status": 200,
+        "final_url": "https://fox17.com/features/high-cost-of-homelessness/nashvilles-office-of-homeless-services-to-undergo-audit-amid-scrutiny-metro-council-member-backlash",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/FOX-OPENBOOK.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20260710005506/https://fox17.com/features/high-cost-of-homelessness/nashvilles-office-of-homeless-services-to-undergo-audit-amid-scrutiny-metro-council-member-backlash",
+        "wayback_anchor_url": "https://web.archive.org/web/20260710005506/https://fox17.com/features/high-cost-of-homelessness/nashvilles-office-of-homeless-services-to-undergo-audit-amid-scrutiny-metro-council-member-backlash#:~:text=no%20major%20issues%20were%20identified"
       }
     },
     {
@@ -785,14 +939,22 @@
       "url_status": "confirmed",
       "url_correction": "Original manifest URL had an extra '-behind-' segment ('...contract-lapse-at-behind-homeless-housing-facility') and 307-redirected to /error (404). Correct slug found 2026-09-05 via web search for the Strobel House/DePaul USA contract-lapse coverage and confirmed live with the anchor present verbatim: '...contract-lapse-at-homeless-housing-facility'.",
       "capture": {
-        "status": "unverified",
-        "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "status": "captured",
+        "wayback_timestamp": "20250901131757",
+        "sha256": "e51069f7b2aad12431ed2c750d4f4a5ba7d891a2029772934d93e7cc3fe31ecc",
+        "bytes": 303576,
+        "anchor_offset": 45199,
+        "anchor_length": 32,
+        "content_type": "text/html; charset=utf-8",
+        "fetched_at": "2026-09-05T01:30:01+00:00",
+        "http_status": 200,
+        "final_url": "https://fox17.com/news/local/metro-council-cites-lack-of-oversight-after-contract-lapse-at-homeless-housing-facility",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/FOX-LAPSE.bin",
+        "archive_tier": "wayback-existing",
+        "archive_note": "reused-existing",
+        "wayback_url": "https://web.archive.org/web/20250901131757/https://fox17.com/news/local/metro-council-cites-lack-of-oversight-after-contract-lapse-at-homeless-housing-facility",
+        "wayback_anchor_url": "https://web.archive.org/web/20250901131757/https://fox17.com/news/local/metro-council-cites-lack-of-oversight-after-contract-lapse-at-homeless-housing-facility#:~:text=bypassing%20the%20finance%20department"
       }
     },
     {
@@ -846,14 +1008,21 @@
       "used_for": "Prior publication, do not repeat",
       "priority": "high",
       "capture": {
-        "status": "unverified",
+        "status": "local-only",
         "wayback_timestamp": null,
-        "sha256": null,
-        "bytes": null,
-        "anchor_offset": null,
-        "anchor_length": null,
-        "content_type": null,
-        "fetched_at": null
+        "sha256": "fcbd292437b0e5c0813f98ff1c09ce9d1b12515a08ee23b253a91ba0382b1298",
+        "bytes": 323062,
+        "anchor_offset": 109598,
+        "anchor_length": 29,
+        "content_type": "text/html; charset=utf-8",
+        "fetched_at": "2026-09-05T01:30:04+00:00",
+        "http_status": 200,
+        "final_url": "https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of",
+        "anchor_method": "exact-bytes",
+        "local_path": "bytes/RT-BULLSHITTERY.bin",
+        "archive_note": "no-ia-credentials",
+        "archive_today_note": "blocked:captcha-gate",
+        "archive_tier": "local-only"
       }
     },
     {
@@ -1002,5 +1171,5 @@
       }
     }
   ],
-  "last_run": "2026-09-05T01:20:51+00:00"
+  "last_run": "2026-09-05T01:30:15+00:00"
 }

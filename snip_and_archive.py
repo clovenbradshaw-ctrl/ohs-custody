@@ -666,6 +666,25 @@ def main():
     logfile = out / "custody.log"
 
     manifest = json.loads(pathlib.Path(args.manifest).read_text(encoding="utf-8"))
+
+    # Carry forward capture data from a prior enriched output for any entry
+    # this run does not touch, so a narrow --only slice doesn't reset the
+    # rest of the manifest's already-captured rows back to "unverified".
+    # The input manifest (sources.json, normally) stays authoritative for
+    # the entry's own editorial fields -- url, anchor, claim, and so on --
+    # only the derived capture block is ever carried over.
+    prior_path = out / "sources.enriched.json"
+    if prior_path.exists():
+        try:
+            prior = json.loads(prior_path.read_text(encoding="utf-8"))
+            prior_by_id = {e["id"]: e for e in prior.get("entries", [])}
+            for entry in manifest["entries"]:
+                old = prior_by_id.get(entry["id"])
+                if old and old.get("capture", {}).get("status") not in (None, "unverified"):
+                    entry["capture"] = old["capture"]
+        except Exception as exc:
+            log(logfile, f"warning: could not merge prior {prior_path.name}: {exc}")
+
     access = os.environ.get("IA_ACCESS_KEY", "")
     secret = os.environ.get("IA_SECRET_KEY", "")
     proxy = os.environ.get("EO_PROXY") or None

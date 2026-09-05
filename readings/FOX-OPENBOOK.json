@@ -1,17 +1,17 @@
 {
   "id": "FOX-OPENBOOK",
   "path": "bytes/FOX-OPENBOOK.bin",
-  "sha256": "b6fae0bc84c22cd47c6f4333413d3b70a201944b14eb47cc7a46f9dd9ec9b154",
-  "bytes": 303388,
+  "sha256": "3bb9e4215681f76504f8e19ef8be8389dba34221b343c13987af24339d5f212f",
+  "bytes": 304093,
   "media_type": "text/html; charset=utf-8",
   "source_url": "https://fox17.com/features/high-cost-of-homelessness/nashvilles-office-of-homeless-services-to-undergo-audit-amid-scrutiny-metro-council-member-backlash",
   "final_url": "https://fox17.com/features/high-cost-of-homelessness/nashvilles-office-of-homeless-services-to-undergo-audit-amid-scrutiny-metro-council-member-backlash",
-  "retrieved_at": "2026-09-05T01:19:53+00:00",
+  "retrieved_at": "2026-09-05T01:29:58+00:00",
   "wayback_timestamp": "20260710005506",
   "spans": [
     {
       "kind": "anchor",
-      "byte_offset": 46000,
+      "byte_offset": 45994,
       "byte_length": 31,
       "method": "exact-bytes",
       "claim": "The on-record rebuttal the piece has to carry, and the claim the 2023 audit tests."
