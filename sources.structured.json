@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-05T03:15:25+00:00",
+  "generated_at": "2026-09-05T03:33:29+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -1900,6 +1900,31 @@
         }
       },
       "provenance_note": "From the user's research doc; not in the original manifest."
+    },
+    {
+      "id": "SEPT23-MEETING-TRANSCRIPT",
+      "label": "Sept 23, 2025 Audit Committee meeting, local Whisper transcript",
+      "url": "https://www.youtube.com/watch?v=vsGlPI9B0DE",
+      "tier": "secondary",
+      "claim": "IMPORTANT CAVEATS: this is a machine (Whisper large-v3-turbo) transcript of the meeting video, generated locally by this project on 2026-09-05 -- it is NOT an official record, has no speaker diarization (who-said-what has to be inferred from context), and contains at least two probable name misspellings already spotted (\"Michael Lacey\" for Michael Lacy; \"John Crossland\" for external auditor Crosslin, who AUD-CTTE-SEP23-MINUTES already names correctly). Treat every quote pulled from it as needing a second listen against the original audio before being printed as verbatim. That said, the substance is a real finding: the written minutes (AUD-CTTE-SEP23-MINUTES) never mention public comment happening at all, but this recording captures a public comment period, including a speaker introduced as 'Mr. Michael Lacey' stating: 'Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light.' A later, apparently different speaker credits him further: 'I didn't know what was going on until Mike Lacey went out there and made public records request and found out what was going on.' The written record of this meeting is incomplete without this.",
+      "anchor": "Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light",
+      "used_for": "Task 4b, showing the written minutes omit public comment entirely",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "059d575c602c1b9073b1badafa7a16cd3d09c622be8c484124dff1367de5497c",
+        "bytes": 83627,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-05T03:33:23+00:00",
+        "location": {
+          "kind": "byte-offset",
+          "offset": 5868,
+          "length": 145
+        },
+        "archive": null
+      },
+      "note": "Derived artifact: MLX Whisper (large-v3-turbo) transcript of a video the user downloaded directly (not fetched by this project). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
+      "provenance_note": "Not in the original manifest. Generated 2026-09-05 by this project: audio downloaded by the user directly (not by this project, per YouTube's terms), transcribed locally via MLX Whisper (no cloud), then passed through a second local pass (eoreader7's referent-discovery engine, organs/cast.js) for named-entity extraction. All versions preserved: transcripts/sept23-audit-committee.txt (plain text), .segments.json (timestamped), .entities.json (the eoreader7 pass, 45 referents auto-discovered, 45 disclosed as having unresolved pronoun/descriptor coreference -- see that file's own gaps array rather than trusting any referent list as complete)."
     }
   ]
 }

@@ -1,0 +1,6172 @@
+{
+  "audio_path": "/Users/mlacy/Documents/3.0/sept23-audit-committee.wav",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.0,
+      "text": "The meeting is now called to order."
+    },
+    {
+      "start": 3.0,
+      "end": 6.0,
+      "text": "We have public comments."
+    },
+    {
+      "start": 6.0,
+      "end": 7.0,
+      "text": "Yes."
+    },
+    {
+      "start": 7.0,
+      "end": 9.0,
+      "text": "We had a public comment sign-up sheet"
+    },
+    {
+      "start": 9.0,
+      "end": 13.0,
+      "text": "per the audit committee standards that were set when this was established."
+    },
+    {
+      "start": 13.0,
+      "end": 17.0,
+      "text": "We will listen to a maximum of eight people for two minutes each."
+    },
+    {
+      "start": 17.0,
+      "end": 20.0,
+      "text": "Mr. Walker will time each individual."
+    },
+    {
+      "start": 20.0,
+      "end": 24.0,
+      "text": "He will call each person out and will give a 30-second warning whenever you're close to the time"
+    },
+    {
+      "start": 24.0,
+      "end": 29.0,
+      "text": "and then once the timer goes off, that is the end of the two-minute period."
+    },
+    {
+      "start": 29.0,
+      "end": 32.0,
+      "text": "Okay, first person we have is Tim Lee."
+    },
+    {
+      "start": 32.0,
+      "end": 35.0,
+      "text": "Good evening."
+    },
+    {
+      "start": 35.0,
+      "end": 43.0,
+      "text": "I'm here to talk about the audit with the Office of Homeless Services."
+    },
+    {
+      "start": 43.0,
+      "end": 47.0,
+      "text": "I guess you've got two audits that you're considering."
+    },
+    {
+      "start": 47.0,
+      "end": 51.0,
+      "text": "I've worked with the COC, which is not under your prurory,"
+    },
+    {
+      "start": 51.0,
+      "end": 58.0,
+      "text": "but I've seen nothing but professionalism from the Office of Homeless Services."
+    },
+    {
+      "start": 58.0,
+      "end": 65.0,
+      "text": "And I've looked over the letter that Ms. Welch has submitted with all the complaints."
+    },
+    {
+      "start": 65.0,
+      "end": 71.0,
+      "text": "I just find it a little bit over the top, and I think it's more of a packed job."
+    },
+    {
+      "start": 71.0,
+      "end": 76.0,
+      "text": "And I have all the confidence in the world of the Office of Homeless Services."
+    },
+    {
+      "start": 76.0,
+      "end": 82.0,
+      "text": "There's a real backbone behind getting a homeless situation under control."
+    },
+    {
+      "start": 82.0,
+      "end": 86.0,
+      "text": "The COC is not helping a whole lot."
+    },
+    {
+      "start": 86.0,
+      "end": 94.0,
+      "text": "And I would like you to kind of consider not doing an audit on any of these complaints"
+    },
+    {
+      "start": 94.0,
+      "end": 97.0,
+      "text": "that have been issued by Ms. Welch."
+    },
+    {
+      "start": 97.0,
+      "end": 98.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 98.0,
+      "end": 99.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 99.0,
+      "end": 100.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 100.0,
+      "end": 101.0,
+      "text": "All right."
+    },
+    {
+      "start": 101.0,
+      "end": 104.0,
+      "text": "The next person is Mr. Derrick McCloud."
+    },
+    {
+      "start": 104.0,
+      "end": 106.0,
+      "text": "Hello, everyone."
+    },
+    {
+      "start": 106.0,
+      "end": 114.0,
+      "text": "My name is Derrick McCloud, and I'm very grateful for the Office of Homeless Services."
+    },
+    {
+      "start": 114.0,
+      "end": 118.0,
+      "text": "I am a resident at Strobel House."
+    },
+    {
+      "start": 118.0,
+      "end": 124.0,
+      "text": "Due to being homeless and living a very destructive life,"
+    },
+    {
+      "start": 124.0,
+      "end": 130.0,
+      "text": "the Office of Homeless Services has given me an opportunity to have a place to call home."
+    },
+    {
+      "start": 130.0,
+      "end": 136.0,
+      "text": "That place to call home has allowed me to get enrolled at Nashville State Community College,"
+    },
+    {
+      "start": 136.0,
+      "end": 144.0,
+      "text": "where I am majoring in social work and about to be inducted into the Phi Beta Kappa National Honor Society."
+    },
+    {
+      "start": 144.0,
+      "end": 149.0,
+      "text": "This January also has allowed me to get licensed in ministry,"
+    },
+    {
+      "start": 149.0,
+      "end": 153.0,
+      "text": "all because I've had a place to call home."
+    },
+    {
+      "start": 153.0,
+      "end": 159.0,
+      "text": "So, please, let's do the right thing about the Office of Homeless Services."
+    },
+    {
+      "start": 159.0,
+      "end": 160.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 160.0,
+      "end": 161.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 161.0,
+      "end": 163.0,
+      "text": "All right."
+    },
+    {
+      "start": 163.0,
+      "end": 164.0,
+      "text": "Mark Chandler."
+    },
+    {
+      "start": 164.0,
+      "end": 170.0,
+      "text": "My name is Mark Chandler, and I'm a resident of Roadway, Harding Place."
+    },
+    {
+      "start": 170.0,
+      "end": 175.0,
+      "text": "Office of Homeless Services pretty much saved my life."
+    },
+    {
+      "start": 175.0,
+      "end": 179.0,
+      "text": "I was living in Tent City, and they closed Tent City down."
+    },
+    {
+      "start": 179.0,
+      "end": 181.0,
+      "text": "When I first got there, I didn't want to be there."
+    },
+    {
+      "start": 181.0,
+      "end": 182.0,
+      "text": "I thought it was like jail."
+    },
+    {
+      "start": 182.0,
+      "end": 187.0,
+      "text": "But since then, I have a new view of how I've been in that place out there."
+    },
+    {
+      "start": 187.0,
+      "end": 192.0,
+      "text": "It's allowed me to, like you said, I can call home."
+    },
+    {
+      "start": 192.0,
+      "end": 202.0,
+      "text": "And by extension, the people that run it out there, the hospitality hub, they're not like any other agency I've dealt with."
+    },
+    {
+      "start": 202.0,
+      "end": 204.0,
+      "text": "You're not a statistic out there."
+    },
+    {
+      "start": 204.0,
+      "end": 205.0,
+      "text": "These people really care about you."
+    },
+    {
+      "start": 205.0,
+      "end": 207.0,
+      "text": "You know, whatever you need, they're there."
+    },
+    {
+      "start": 207.0,
+      "end": 209.0,
+      "text": "You know, if I need someone to talk to, they're there."
+    },
+    {
+      "start": 209.0,
+      "end": 215.0,
+      "text": "You know, if I need a bus pass, if I need to get my ID, whatever I need to get to get to permanent housing."
+    },
+    {
+      "start": 215.0,
+      "end": 220.0,
+      "text": "Not just get permanent housing, but have a foundation under me that supports sustainability."
+    },
+    {
+      "start": 220.0,
+      "end": 224.0,
+      "text": "That I can, you know, when I leave there, I can maintain that."
+    },
+    {
+      "start": 224.0,
+      "end": 225.0,
+      "text": "They're there, you know."
+    },
+    {
+      "start": 225.0,
+      "end": 228.0,
+      "text": "I think it's the best thing that ever happened to homelessness in Nashville."
+    },
+    {
+      "start": 228.0,
+      "end": 230.0,
+      "text": "And I've been around homelessness."
+    },
+    {
+      "start": 230.0,
+      "end": 232.0,
+      "text": "I've been homeless on and off for 20 years."
+    },
+    {
+      "start": 232.0,
+      "end": 235.0,
+      "text": "You know, I've dealt with Salvation Army, Rumanian."
+    },
+    {
+      "start": 235.0,
+      "end": 236.0,
+      "text": "There's nothing like OHS."
+    },
+    {
+      "start": 236.0,
+      "end": 239.0,
+      "text": "It's the best thing that ever happened to be seated in terms of homelessness."
+    },
+    {
+      "start": 239.0,
+      "end": 240.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 240.0,
+      "end": 241.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 241.0,
+      "end": 245.0,
+      "text": "Allyson Cantway."
+    },
+    {
+      "start": 245.0,
+      "end": 248.0,
+      "text": "Hi, my name is Allison Cantway."
+    },
+    {
+      "start": 248.0,
+      "end": 252.0,
+      "text": "I'm the Assistant Director of Planning and Research at the Office of Homeless Services."
+    },
+    {
+      "start": 252.0,
+      "end": 255.0,
+      "text": "I just want to start by saying that OHS has nothing to hide."
+    },
+    {
+      "start": 255.0,
+      "end": 257.0,
+      "text": "We're really proud of the work that we're doing."
+    },
+    {
+      "start": 257.0,
+      "end": 261.0,
+      "text": "We share more data with the community than nearly any department we share."
+    },
+    {
+      "start": 261.0,
+      "end": 266.0,
+      "text": "This 20-slide deck with literally hundreds of numbers once a month at the Public Health and Safety Committee."
+    },
+    {
+      "start": 266.0,
+      "end": 269.0,
+      "text": "And we do this because it's important for us to be good stewards of public funding."
+    },
+    {
+      "start": 269.0,
+      "end": 271.0,
+      "text": "And we've committed to being open and transparent."
+    },
+    {
+      "start": 271.0,
+      "end": 274.0,
+      "text": "We're not perfect, but we've made corrections along the way."
+    },
+    {
+      "start": 274.0,
+      "end": 277.0,
+      "text": "We're always open to hearing about ways that we can improve."
+    },
+    {
+      "start": 277.0,
+      "end": 284.0,
+      "text": "But we've been under investigations, audits, and ethical complaints, many of them that have originated from a single council member,"
+    },
+    {
+      "start": 284.0,
+      "end": 286.0,
+      "text": "which have not found major issues with our department."
+    },
+    {
+      "start": 286.0,
+      "end": 290.0,
+      "text": "We're currently under an internal investigation that was initiated by the same person."
+    },
+    {
+      "start": 290.0,
+      "end": 294.0,
+      "text": "To address largely the same inaccurate allegations."
+    },
+    {
+      "start": 294.0,
+      "end": 297.0,
+      "text": "You know, I've been with OHS since it was created in 2023."
+    },
+    {
+      "start": 297.0,
+      "end": 302.0,
+      "text": "I spent about five years previously in another metro department that did similar work, similar size."
+    },
+    {
+      "start": 302.0,
+      "end": 306.0,
+      "text": "In my time there, we were just never targeted like this."
+    },
+    {
+      "start": 306.0,
+      "end": 312.0,
+      "text": "And all of this takes precious staff time away from serving the most vulnerable among us, which is why we all joined this department."
+    },
+    {
+      "start": 312.0,
+      "end": 317.0,
+      "text": "Our office has been committed to serving the most vulnerable population that is least likely to access services."
+    },
+    {
+      "start": 317.0,
+      "end": 327.0,
+      "text": "I know there are people in the community that don't agree with us serving this population, but these people want and they deserve a bed, air conditioning, a shower, a door to close, and a place to live safely."
+    },
+    {
+      "start": 327.0,
+      "end": 331.0,
+      "text": "This is not easy. Providing housing to those that need it most can be really hard."
+    },
+    {
+      "start": 331.0,
+      "end": 338.0,
+      "text": "And unfortunately, just like in apartment complexes and subdivisions, there can be emphasis of theft, violence, fires, arguments."
+    },
+    {
+      "start": 338.0,
+      "end": 343.0,
+      "text": "These challenges are not unique to Nashville and happen in all residential facilities, unfortunately."
+    },
+    {
+      "start": 343.0,
+      "end": 348.0,
+      "text": "But our Housing First and Trauma Informed principles tell us that we must continue no matter how hard the work is."
+    },
+    {
+      "start": 348.0,
+      "end": 352.0,
+      "text": "I'm proud of the work that we've done. I think that Nashville should be proud of the work that we've done."
+    },
+    {
+      "start": 352.0,
+      "end": 362.0,
+      "text": "And while we absolutely want to be transparent and provide accountability, we care most about making sure that all Nashvillians are able to secure attainable and accessible housing."
+    },
+    {
+      "start": 362.0,
+      "end": 364.0,
+      "text": "Thank you for your time and for letting me speak."
+    },
+    {
+      "start": 364.0,
+      "end": 367.0,
+      "text": "Thank you. Mr. Michael Lacey."
+    },
+    {
+      "start": 367.0,
+      "end": 382.0,
+      "text": "Good afternoon. Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light."
+    },
+    {
+      "start": 382.0,
+      "end": 394.0,
+      "text": "Much of this evidence has been dismissed by senior Metro leadership as merely personality conflicts, misunderstandings fueled by the excessive passion of advocates for the unhoused."
+    },
+    {
+      "start": 394.0,
+      "end": 405.0,
+      "text": "What's more, information from public records and reported by local media, including the Nashville scene and banner, has been called fake news by senior OHS leadership."
+    },
+    {
+      "start": 405.0,
+      "end": 414.0,
+      "text": "But this request contains no reference to personality types or management styles. It does not include hearsay or rumors."
+    },
+    {
+      "start": 414.0,
+      "end": 425.0,
+      "text": "Instead, you'll find direct citations to public records, financial statements, officially reported metrics, police reports, and discussion from the floor of Metro Council sessions."
+    },
+    {
+      "start": 425.0,
+      "end": 429.0,
+      "text": "I'll ask you to do what anyone who sincerely wants the truth would ask."
+    },
+    {
+      "start": 429.0,
+      "end": 432.0,
+      "text": "Please just examine the evidence."
+    },
+    {
+      "start": 432.0,
+      "end": 439.0,
+      "text": "You're entitled to assume the worst of my intentions for speaking here today, but please examine the evidence."
+    },
+    {
+      "start": 439.0,
+      "end": 445.0,
+      "text": "The relevant questions for you are simple. How was money spent and how is it supposed to be spent?"
+    },
+    {
+      "start": 445.0,
+      "end": 449.0,
+      "text": "What processes were meant to be followed and were they actually followed?"
+    },
+    {
+      "start": 449.0,
+      "end": 452.0,
+      "text": "What was meant to be accomplished and what was actually accomplished?"
+    },
+    {
+      "start": 452.0,
+      "end": 457.0,
+      "text": "We are not here today because mistakes were made or a few rules were bent for a greater purpose."
+    },
+    {
+      "start": 457.0,
+      "end": 458.0,
+      "text": "30 seconds."
+    },
+    {
+      "start": 458.0,
+      "end": 471.0,
+      "text": "We are here because critical issues were not acknowledged. They appear to have been hidden. They went unaddressed. And the people who have the least power in the city, as is too often the case, seems to be the one paying the price."
+    },
+    {
+      "start": 471.0,
+      "end": 486.0,
+      "text": "We all want to move forward. But to move forward, we must learn. And that begins with undertaking a simple, nonpartisan, bureaucratic thing that is not an assertion of wrongdoing, but merely an acknowledgement of accountability and routine oversight."
+    },
+    {
+      "start": 486.0,
+      "end": 490.0,
+      "text": "Please perform a comprehensive audit of the Office of Homeless Services."
+    },
+    {
+      "start": 490.0,
+      "end": 495.0,
+      "text": "All right, next part. Liz Maynard. Oh, I'm sorry. Steve Redner."
+    },
+    {
+      "start": 495.0,
+      "end": 496.0,
+      "text": "Steve Redner."
+    },
+    {
+      "start": 496.0,
+      "end": 499.0,
+      "text": "No, I switched to the five-day."
+    },
+    {
+      "start": 499.0,
+      "end": 500.0,
+      "text": "We just moved everybody down."
+    },
+    {
+      "start": 500.0,
+      "end": 514.0,
+      "text": "Okay, okay. Thank you so much. It's a good afternoon to everybody. I want to thank Mike Lacey for the work that he's done on this. I think there's, he's brought to attention some compliance and asset management issues."
+    },
+    {
+      "start": 514.0,
+      "end": 532.0,
+      "text": "One of the issues that came up was that there were payments that were made on an expired contract. And that's a violation of policy. When Office of Homeless Services contracted with DePaul USA, it was for four months for operation and maintenance contract."
+    },
+    {
+      "start": 532.0,
+      "end": 547.0,
+      "text": "I wanted to see a one-year operation and maintenance contract, not a four-month. And so what happened was, they paid it for four months, and they continued to pay on that contract. The problem is, we don't have a long-term contract. After four months, the vendor can go out there and double, triple the price if they want."
+    },
+    {
+      "start": 547.0,
+      "end": 559.0,
+      "text": "Because you have people who are living over there. And when they're living there, what are you going to do? Have those people become displaced? I'm a big advocate for the homeless people. And I just think the way that was handled was really wrong."
+    },
+    {
+      "start": 559.0,
+      "end": 569.0,
+      "text": "Mike did a really good job. I didn't know about any of this. I'm a general member. I'm a part of the COC general membership. I didn't know what was going on."
+    },
+    {
+      "start": 569.0,
+      "end": 579.0,
+      "text": "I expect reports about what is happening to Strobel House. I just assumed, oh, I guess DePaul got an extension of their contract. I heard nothing."
+    },
+    {
+      "start": 579.0,
+      "end": 600.0,
+      "text": "I was going to say, oh, I'm a big fan of the COC general membership. I didn't know what was going on until Mike Lacey went out there and made public records request and found out what was going on. And that really got me wound up and upset. I addressed the council. I think Angie Henderson is aware of what I said. I actually questioned the judgment and the leadership of Office of Homeless Services. This should not happen."
+    },
+    {
+      "start": 600.0,
+      "end": 627.0,
+      "text": "And yet I don't know because what we have Metro accounting system does not monitor grant contracts until they're done. So that system is going to be changing. But for the Office of Homeless Services gets a lot of money through grant contracts, but they're only going to reviewed by the Metro Finance after they're completed. So where we're at right now is I'm supporting an audit. It doesn't have to be performance audit, but just a general audit. Thank you so much."
+    },
+    {
+      "start": 627.0,
+      "end": 628.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 628.0,
+      "end": 629.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 629.0,
+      "end": 630.0,
+      "text": "Liz Maynard."
+    },
+    {
+      "start": 630.0,
+      "end": 631.0,
+      "text": "Liz Maynard."
+    },
+    {
+      "start": 631.0,
+      "end": 632.0,
+      "text": "I missed your question."
+    },
+    {
+      "start": 632.0,
+      "end": 633.0,
+      "text": "I'm Liz Maynard."
+    },
+    {
+      "start": 633.0,
+      "end": 656.98,
+      "text": "I am Vice Chair of the Homeless Planning Council, also lived experience. I will be five years sober. In December, I've been housed for five years now. I was homeless for over 10. Office of Homeless Services, I literally would not be here today. I didn't have the resources to obviously get housing or get any mentality"
+    },
+    {
+      "start": 656.98,
+      "end": 672.98,
+      "text": "to stay sober. When I had gone to the hospital and they said prepare your family, two weeks max, I was into roadway. I was getting bus passes to get to neighborhood health. I got referral, found out I had cirrhosis. I would have not been able to get any of that taken care of."
+    },
+    {
+      "start": 672.98,
+      "end": 700.98,
+      "text": "Leaving, um, over there at Wallace, leaving there, I got my permanent housing and all the way through that, if I needed food, they were there. If I needed a bus pass, they were there. I had, you know, counseling, everything. They made sure the whole transition. They're not the office lights, go off, lock the door type of people. I have gotten phone calls on weekends to make sure I was okay and I had everything I need."
+    },
+    {
+      "start": 700.98,
+      "end": 710.98,
+      "text": "They have literally saved my life. They saved so many. I think taking time to this, I'll like, every time we're, we're talking about something like this, one of my friends is dying out there."
+    },
+    {
+      "start": 710.98,
+      "end": 725.98,
+      "text": "And so I just want to keep like, let's not put speed bumps or roadblocks any way, shape or form in their way of the work that they're doing because they're not, this isn't a number. A person is not a number. A person is a human being that could be lying on the sidewalk right now."
+    },
+    {
+      "start": 725.98,
+      "end": 729.98,
+      "text": "Thank you. Thank you. Thank you."
+    },
+    {
+      "start": 729.98,
+      "end": 740.98,
+      "text": "Dee Dee Bird. Yeah. Dee Dee Bird. I'm a, um, community advocate activist. I live in District 35, which was the home of Brookmead and Cammon before we got all those individuals housed."
+    },
+    {
+      "start": 740.98,
+      "end": 753.98,
+      "text": "One of the things that I'm very concerned about is that just like Liz said, the work continues. Okay. Every department in Metro Nashville is audited. Every department we've called for an audit of Metro Parks multiple times."
+    },
+    {
+      "start": 753.98,
+      "end": 777.98,
+      "text": "We have requested FOIA information multiple times because we too want to follow the money to make sure that people are doing their due diligence. I want to bring up the fact that the COC, which I'm a member of also as the general public, they were not able to, to put into place a group of people that could take care of the Strabble House. We had to bring someone from outside DePaul."
+    },
+    {
+      "start": 777.98,
+      "end": 807.96,
+      "text": "The Salvation Army, the Salvation Army started the roadway in, which is where most of our individuals from Brookmead went after one year, they no longer wanted to do that service. So we had to bring in hospitality hub. And my point here is that the COC of Nashville is not capable of taking care of the big homeless issue that we have. And we have been watching this intently. And I've been in so many meetings. And one of the things that I have seen is CM Welsh, who's a"
+    },
+    {
+      "start": 807.96,
+      "end": 837.94,
+      "text": "dragged Jay Surveyor over the coals, which when he was the interim director, it was the most humiliating thing I've ever seen. These people are doing hard work. It is fluid. It changes every day. It is about human beings. And the fact that we're standing here today in front of you, discussing an audit for monetary figures that change because my point was that Salvation Army couldn't do that job anymore. We had to bring in somebody else. It changes every year. Sometimes it changes."
+    },
+    {
+      "start": 837.94,
+      "end": 859.44,
+      "text": "every four months. That's why they wanted a four month contract. They didn't know what they were getting into. They'd never been to Nashville before. We had to bring in outside help. So I think there are other ways to deal with this than this type of audit by someone who has continuously wanted to make problems for the Office of Home and Services. Thank you."
+    },
+    {
+      "start": 859.94,
+      "end": 860.6600000000001,
+      "text": "Thank you."
+    },
+    {
+      "start": 861.6600000000001,
+      "end": 862.34,
+      "text": "That's it."
+    },
+    {
+      "start": 862.6600000000001,
+      "end": 863.1600000000001,
+      "text": "That's it."
+    },
+    {
+      "start": 863.36,
+      "end": 865.4200000000001,
+      "text": "I was going to contribute for your comments today."
+    },
+    {
+      "start": 865.7600000000001,
+      "end": 866.1800000000001,
+      "text": "Thank you."
+    },
+    {
+      "start": 866.18,
+      "end": 866.68,
+      "text": "Thank you."
+    },
+    {
+      "start": 871.38,
+      "end": 875.4799999999999,
+      "text": "Next item on the agenda is the approval of the minutes from the previous meeting."
+    },
+    {
+      "start": 876.18,
+      "end": 876.9799999999999,
+      "text": "Do we hear a motion?"
+    },
+    {
+      "start": 877.4,
+      "end": 877.8399999999999,
+      "text": "So moved."
+    },
+    {
+      "start": 878.5799999999999,
+      "end": 878.9,
+      "text": "Second."
+    },
+    {
+      "start": 879.52,
+      "end": 880.3,
+      "text": "All in favor?"
+    },
+    {
+      "start": 880.76,
+      "end": 881.06,
+      "text": "Aye."
+    },
+    {
+      "start": 881.5799999999999,
+      "end": 882.3,
+      "text": "Any opposed?"
+    },
+    {
+      "start": 883.9799999999999,
+      "end": 884.92,
+      "text": "Motion carries."
+    },
+    {
+      "start": 886.92,
+      "end": 887.62,
+      "text": "Old business?"
+    },
+    {
+      "start": 888.0,
+      "end": 888.28,
+      "text": "Yes."
+    },
+    {
+      "start": 888.28,
+      "end": 889.4,
+      "text": "Our item on old business."
+    },
+    {
+      "start": 889.4,
+      "end": 889.9,
+      "text": "Yes."
+    },
+    {
+      "start": 889.9,
+      "end": 901.3,
+      "text": "So if you'll remember, we carry forward the Nashville General Hospital investigation to each agenda as we follow the remediation of those recommendations that were made through that investigation."
+    },
+    {
+      "start": 901.3,
+      "end": 907.6,
+      "text": "Within your workbook, there is a matrix of the recommendations and the related allegations."
+    },
+    {
+      "start": 907.6,
+      "end": 922.0,
+      "text": "If you see a yes, that means not only has General Hospital taken the steps to remediate and address that recommendation, but it also means our lead investigator, Paul, has gone out and actually verified that it is actually remediated."
+    },
+    {
+      "start": 922.0,
+      "end": 924.0,
+      "text": "There is only one left."
+    },
+    {
+      "start": 924.0,
+      "end": 932.3,
+      "text": "The one that is left relates to the physician that was utilizing space and services of Nashville General Hospital without an agreement in place."
+    },
+    {
+      "start": 932.44,
+      "end": 944.66,
+      "text": "The reason that this one is still open is because they are still trying to quantify the amount, like square footage and the individuals for the self-reported start violation that they are putting together."
+    },
+    {
+      "start": 944.66,
+      "end": 948.64,
+      "text": "Once that happens, that is when that one will be closed."
+    },
+    {
+      "start": 948.76,
+      "end": 950.5799999999999,
+      "text": "But other than that, they are making headway."
+    },
+    {
+      "start": 950.7199999999999,
+      "end": 954.74,
+      "text": "As you all saw, they recently signed a new PSA with Meharry."
+    },
+    {
+      "start": 955.64,
+      "end": 962.54,
+      "text": "And Dr. Elders, their interim CEO, has worked very close with Paul to make sure that all of these are getting addressed."
+    },
+    {
+      "start": 963.54,
+      "end": 964.48,
+      "text": "Are there any questions?"
+    },
+    {
+      "start": 966.98,
+      "end": 967.6999999999999,
+      "text": "Question, Mayor."
+    },
+    {
+      "start": 967.7,
+      "end": 982.72,
+      "text": "Chair, on this material we have here regarding the lawsuit for the overbilling by City Ballet that was filed in August of 2025, I didn't know if we could just have sort of a status report on that."
+    },
+    {
+      "start": 982.8000000000001,
+      "end": 985.12,
+      "text": "Will we anticipate the timeline for that being?"
+    },
+    {
+      "start": 985.12,
+      "end": 986.6600000000001,
+      "text": "We don't have a timeline for that."
+    },
+    {
+      "start": 986.7800000000001,
+      "end": 989.6,
+      "text": "We are just aware that the lawsuit has been filed in all honesty."
+    },
+    {
+      "start": 990.1600000000001,
+      "end": 992.6800000000001,
+      "text": "Past that legal information, we don't have."
+    },
+    {
+      "start": 992.94,
+      "end": 996.9200000000001,
+      "text": "We just know that they're pursuing the refunding of that overpayment."
+    },
+    {
+      "start": 996.92,
+      "end": 997.52,
+      "text": "Okay."
+    },
+    {
+      "start": 998.18,
+      "end": 1001.06,
+      "text": "And if I may, Chair, I have three questions."
+    },
+    {
+      "start": 1002.2199999999999,
+      "end": 1011.8399999999999,
+      "text": "For the remediated issue around contract signatures and some of the backdating and not signing and some of those issues,"
+    },
+    {
+      "start": 1012.4599999999999,
+      "end": 1021.5799999999999,
+      "text": "I think I had elevated this in a previous meeting just from a continuity of process standpoint and consistency across all our Metro departments."
+    },
+    {
+      "start": 1021.5799999999999,
+      "end": 1025.3799999999999,
+      "text": "I'm seeing here that DocuSign has been purchased for use on all contracts."
+    },
+    {
+      "start": 1025.38,
+      "end": 1039.3200000000002,
+      "text": "I apologize if I don't remember the answer to this prior, but I had wondered why, as a Metro government, we do not have kind of like an enterprise contract for DocuSign, either held by General Services, finance, or legal."
+    },
+    {
+      "start": 1039.32,
+      "end": 1044.62,
+      "text": "And literally, if you are within Metro government, you use DocuSign full stop."
+    },
+    {
+      "start": 1044.62,
+      "end": 1050.4599999999998,
+      "text": "And like, why is like the hospital authority buying DocuSign and this department's buying DocuSign?"
+    },
+    {
+      "start": 1050.6,
+      "end": 1052.1799999999998,
+      "text": "Can anybody speak to that?"
+    },
+    {
+      "start": 1052.56,
+      "end": 1060.78,
+      "text": "I mean, correct me if I'm wrong, but since General Hospital is its own component entity, it does not utilize the same contracts that Metro government has."
+    },
+    {
+      "start": 1060.78,
+      "end": 1071.8,
+      "text": "It's kind of like when we're looking into the financial contract that they're using for assistance, piggybacking off of ours and whether or not that's allowed is my understanding, is that they do have to have their own standalone contracts."
+    },
+    {
+      "start": 1072.26,
+      "end": 1072.56,
+      "text": "Okay."
+    },
+    {
+      "start": 1073.26,
+      "end": 1074.0,
+      "text": "Is that correct, director?"
+    },
+    {
+      "start": 1074.0,
+      "end": 1076.72,
+      "text": "That is correct regarding DocuSign for the hospital."
+    },
+    {
+      "start": 1077.04,
+      "end": 1077.34,
+      "text": "Okay."
+    },
+    {
+      "start": 1077.68,
+      "end": 1081.16,
+      "text": "And would that be true for any of our other kind of authorities?"
+    },
+    {
+      "start": 1081.16,
+      "end": 1081.48,
+      "text": "Very."
+    },
+    {
+      "start": 1081.48,
+      "end": 1083.1000000000001,
+      "text": "It's a great question."
+    },
+    {
+      "start": 1083.5600000000002,
+      "end": 1095.92,
+      "text": "And we can definitely look into that, vice mayor, as to, because I am not sure of the answer as to why the entirety of Metro, which I think is your question, does not use DocuSign."
+    },
+    {
+      "start": 1096.14,
+      "end": 1098.18,
+      "text": "And it is definitely by department."
+    },
+    {
+      "start": 1098.7,
+      "end": 1101.28,
+      "text": "So, but we can look into that and report back to you."
+    },
+    {
+      "start": 1101.52,
+      "end": 1102.3200000000002,
+      "text": "I appreciate that."
+    },
+    {
+      "start": 1102.46,
+      "end": 1104.4,
+      "text": "And then I think the last question."
+    },
+    {
+      "start": 1106.5800000000002,
+      "end": 1107.52,
+      "text": "Nope, that was it."
+    },
+    {
+      "start": 1107.64,
+      "end": 1107.96,
+      "text": "Thank you."
+    },
+    {
+      "start": 1107.96,
+      "end": 1108.9,
+      "text": "Thank you."
+    },
+    {
+      "start": 1108.9,
+      "end": 1108.9,
+      "text": ""
+    },
+    {
+      "start": 1111.16,
+      "end": 1113.4,
+      "text": "Can I just add real quick about General Hospital?"
+    },
+    {
+      "start": 1113.72,
+      "end": 1115.3200000000002,
+      "text": "We have been working with them."
+    },
+    {
+      "start": 1115.5400000000002,
+      "end": 1120.8400000000001,
+      "text": "Finance has been working with General Hospital as well as their contractor for accounting services."
+    },
+    {
+      "start": 1121.4,
+      "end": 1124.52,
+      "text": "And I will report that has been going really, really well."
+    },
+    {
+      "start": 1125.1200000000001,
+      "end": 1128.8200000000002,
+      "text": "And so I just wanted to report that that has been smooth."
+    },
+    {
+      "start": 1129.28,
+      "end": 1134.0400000000002,
+      "text": "We have had a lot of transparent, honest conversations back and forth about their accounting."
+    },
+    {
+      "start": 1134.6200000000001,
+      "end": 1138.0800000000002,
+      "text": "And it looks like their close for FY25 is."
+    },
+    {
+      "start": 1140.0800000000002,
+      "end": 1140.5600000000002,
+      "text": "So."
+    },
+    {
+      "start": 1141.16,
+      "end": 1142.18,
+      "text": "Thank you."
+    },
+    {
+      "start": 1142.18,
+      "end": 1142.2,
+      "text": "Thank you."
+    },
+    {
+      "start": 1142.2,
+      "end": 1143.8200000000002,
+      "text": "Good news."
+    },
+    {
+      "start": 1146.4,
+      "end": 1147.22,
+      "text": "New business."
+    },
+    {
+      "start": 1147.3600000000001,
+      "end": 1147.72,
+      "text": "New business."
+    },
+    {
+      "start": 1148.0,
+      "end": 1152.48,
+      "text": "So the first three items under new business are somewhat lumped together."
+    },
+    {
+      "start": 1153.16,
+      "end": 1156.72,
+      "text": "As you know, we do have the request for the audit for the Office of Homeless Services."
+    },
+    {
+      "start": 1157.26,
+      "end": 1163.5600000000002,
+      "text": "Typically when we have audit requests, the committee asks about other work that's been done in our office related to that."
+    },
+    {
+      "start": 1163.56,
+      "end": 1168.8,
+      "text": "We just happened to have just issued two follow-up reports that touched on homeless services."
+    },
+    {
+      "start": 1168.8,
+      "end": 1173.82,
+      "text": "The caveat being that when these audits were done, one's an investigation, one's an audit."
+    },
+    {
+      "start": 1174.34,
+      "end": 1177.06,
+      "text": "They were underneath social services at the time."
+    },
+    {
+      "start": 1177.06,
+      "end": 1180.6799999999998,
+      "text": "This was prior to Office of Homeless Services becoming a standalone department."
+    },
+    {
+      "start": 1180.84,
+      "end": 1181.96,
+      "text": "We have not audited those."
+    },
+    {
+      "start": 1182.3,
+      "end": 1183.72,
+      "text": "But I'll start with the investigation."
+    },
+    {
+      "start": 1183.94,
+      "end": 1189.8799999999999,
+      "text": "Back in 2024, we issued an investigative report into allegations of contracts at social services."
+    },
+    {
+      "start": 1189.88,
+      "end": 1192.42,
+      "text": "There were two allegations related to this."
+    },
+    {
+      "start": 1192.42,
+      "end": 1197.7800000000002,
+      "text": "One had to do with wasteful spending on a contract for services not rendered."
+    },
+    {
+      "start": 1197.78,
+      "end": 1206.02,
+      "text": "And then the other one had to do with utilizing services by an outside vendor or an out-of-state vendor when a local vendor could have been utilized."
+    },
+    {
+      "start": 1206.44,
+      "end": 1214.02,
+      "text": "Both of these allegations were unsubstantiated, but there were two recommendations that came out of that investigation, which is typical for our investigations."
+    },
+    {
+      "start": 1214.82,
+      "end": 1218.8799999999999,
+      "text": "The first one was recouping funds that were overpaid to the vendor."
+    },
+    {
+      "start": 1219.74,
+      "end": 1224.24,
+      "text": "There were some unallowable costs as well as one invoice had something that was double billed almost."
+    },
+    {
+      "start": 1224.8999999999999,
+      "end": 1225.84,
+      "text": "But it was about $1,500."
+    },
+    {
+      "start": 1225.84,
+      "end": 1231.0,
+      "text": "So the recommendation there was to try to reach out to the vendor and recoup those funds."
+    },
+    {
+      "start": 1231.22,
+      "end": 1232.58,
+      "text": "That attempt was made."
+    },
+    {
+      "start": 1233.6599999999999,
+      "end": 1236.58,
+      "text": "The overpayment was reimbursed."
+    },
+    {
+      "start": 1237.5,
+      "end": 1243.24,
+      "text": "What social services, which we may have to get Director Pratt if there's any questions related to this because she's in the other room."
+    },
+    {
+      "start": 1244.4199999999998,
+      "end": 1249.62,
+      "text": "The second piece of it was unallowable expenses that were requested for reimbursement from the vendor."
+    },
+    {
+      "start": 1249.62,
+      "end": 1257.3999999999999,
+      "text": "Unfortunately, what the old CFO at social services did was he told the vendor that that was okay."
+    },
+    {
+      "start": 1258.28,
+      "end": 1260.4599999999998,
+      "text": "And so the vendor never repaid them when they reached out."
+    },
+    {
+      "start": 1260.46,
+      "end": 1265.16,
+      "text": "So recently, social services reached out again to ask for repayment."
+    },
+    {
+      "start": 1265.16,
+      "end": 1279.8000000000002,
+      "text": "And they came to an agreement with the vendor that since the amount of time that has passed since that payment was made and since the old CFO told them it was allowed, that they decided not to pursue getting the other $1,100-ish back."
+    },
+    {
+      "start": 1280.52,
+      "end": 1281.72,
+      "text": "So that was the first recommendation."
+    },
+    {
+      "start": 1281.72,
+      "end": 1292.88,
+      "text": "The second recommendation was to put a process in place so that that doesn't happen again, making sure those invoices are compared to contracts so that any payments that are made, they're not overpayments and they're not paying on allowable expenses."
+    },
+    {
+      "start": 1293.26,
+      "end": 1299.18,
+      "text": "We verified that a process was put into place and that it was operating so both of those were considered implemented."
+    },
+    {
+      "start": 1299.88,
+      "end": 1302.04,
+      "text": "Are there any questions on the investigation?"
+    },
+    {
+      "start": 1302.04,
+      "end": 1303.04,
+      "text": "Okay."
+    },
+    {
+      "start": 1303.04,
+      "end": 1317.54,
+      "text": "The next one was we did an audit of the Homeless Impact Division, which was what Homeless Services was before it moved out from underneath social services."
+    },
+    {
+      "start": 1317.54,
+      "end": 1318.68,
+      "text": "We did this one."
+    },
+    {
+      "start": 1318.78,
+      "end": 1322.6,
+      "text": "We issued it in 2023, which was right before it became its own standalone department."
+    },
+    {
+      "start": 1323.72,
+      "end": 1330.8,
+      "text": "But with that, when Office of Homeless Services became its own department, these recommendations followed it to the actual department."
+    },
+    {
+      "start": 1330.8,
+      "end": 1334.24,
+      "text": "The audit itself looked at a number of things."
+    },
+    {
+      "start": 1334.34,
+      "end": 1336.32,
+      "text": "It looked at the governance of the Homeless Planning Council."
+    },
+    {
+      "start": 1337.12,
+      "end": 1340.72,
+      "text": "It looked at the security of the data that they were collecting."
+    },
+    {
+      "start": 1341.36,
+      "end": 1347.28,
+      "text": "And it looked at their processes for coordinated entry and other processes they had in place for effectiveness."
+    },
+    {
+      "start": 1348.1399999999999,
+      "end": 1350.5,
+      "text": "That audit resulted in seven recommendations."
+    },
+    {
+      "start": 1350.5,
+      "end": 1360.6399999999999,
+      "text": "These recommendations, kind of lumping them together, some of them were related to securing data and running some reports to make sure that the data administration is secured."
+    },
+    {
+      "start": 1360.8,
+      "end": 1366.1599999999999,
+      "text": "Documenting minutes to our Homeless Planning Council meetings."
+    },
+    {
+      "start": 1367.12,
+      "end": 1375.28,
+      "text": "And also making an encampment strategy as well as an encampment team and some other pieces that were there."
+    },
+    {
+      "start": 1375.6,
+      "end": 1377.84,
+      "text": "Six out of seven of them were fully implemented."
+    },
+    {
+      "start": 1377.84,
+      "end": 1389.1799999999998,
+      "text": "The one that was not fully implemented and was partially implemented related to HUD has some required policies and procedures that are supposed to be in the organization's operating manual."
+    },
+    {
+      "start": 1389.84,
+      "end": 1394.8999999999999,
+      "text": "At the time of our initial audit, 11 of them, 11 out of 23, were not in that manual."
+    },
+    {
+      "start": 1395.3999999999999,
+      "end": 1399.0,
+      "text": "At the time of our follow-up audit, five were still not in that manual."
+    },
+    {
+      "start": 1399.72,
+      "end": 1401.36,
+      "text": "So that one was partially implemented."
+    },
+    {
+      "start": 1401.36,
+      "end": 1408.24,
+      "text": "I will note that since that audit follow-up came out in July, those five have been added."
+    },
+    {
+      "start": 1408.4799999999998,
+      "end": 1415.1999999999998,
+      "text": "And as of September 10th, they were approved by the Homeless Planning Council within that manual."
+    },
+    {
+      "start": 1416.0,
+      "end": 1417.84,
+      "text": "So that one now, we have not verified it."
+    },
+    {
+      "start": 1417.8999999999999,
+      "end": 1418.5,
+      "text": "We have not seen it."
+    },
+    {
+      "start": 1418.54,
+      "end": 1422.58,
+      "text": "So I won't say it's completely closed, but it has been reported as being implemented."
+    },
+    {
+      "start": 1423.52,
+      "end": 1425.4799999999998,
+      "text": "Are there any questions on that follow-up?"
+    },
+    {
+      "start": 1425.48,
+      "end": 1428.34,
+      "text": "Could you just restate that last part?"
+    },
+    {
+      "start": 1428.56,
+      "end": 1434.94,
+      "text": "As of September 10th, the meeting of the Homelessness Planning Council, those five remaining things were included on?"
+    },
+    {
+      "start": 1434.94,
+      "end": 1438.84,
+      "text": "Were included in the new manual that gets approved by the Planning Council."
+    },
+    {
+      "start": 1438.94,
+      "end": 1439.38,
+      "text": "Okay, yeah."
+    },
+    {
+      "start": 1442.46,
+      "end": 1446.92,
+      "text": "Lauren, once you verify this, you will report back to the committee too."
+    },
+    {
+      "start": 1447.1,
+      "end": 1447.6200000000001,
+      "text": "Okay, thank you."
+    },
+    {
+      "start": 1447.7,
+      "end": 1451.48,
+      "text": "It won't be a standalone report, but it would be actually reported back as being closed."
+    },
+    {
+      "start": 1451.68,
+      "end": 1452.42,
+      "text": "Okay, thank you."
+    },
+    {
+      "start": 1452.42,
+      "end": 1453.42,
+      "text": "Okay."
+    },
+    {
+      "start": 1456.14,
+      "end": 1456.9,
+      "text": "Next item."
+    },
+    {
+      "start": 1457.0800000000002,
+      "end": 1457.3000000000002,
+      "text": "Okay."
+    },
+    {
+      "start": 1457.5,
+      "end": 1465.1200000000001,
+      "text": "So this flows into our next item, which is the request, the audit request for the Office of Homeless Services."
+    },
+    {
+      "start": 1465.74,
+      "end": 1471.92,
+      "text": "Within each of your workbooks, you have the initial request from Council Member Welsh that states the concerns,"
+    },
+    {
+      "start": 1472.5,
+      "end": 1476.64,
+      "text": "financial and operational concerns relating to the Office of Homeless Services,"
+    },
+    {
+      "start": 1476.64,
+      "end": 1482.6000000000001,
+      "text": "as well as you also have a separate packet yesterday and into today."
+    },
+    {
+      "start": 1482.76,
+      "end": 1487.0,
+      "text": "We did receive a number of emails supporting this audit,"
+    },
+    {
+      "start": 1487.3200000000002,
+      "end": 1490.6000000000001,
+      "text": "and so we've printed them out for each of you to have in review."
+    },
+    {
+      "start": 1491.96,
+      "end": 1498.24,
+      "text": "And so with that, I will turn it back over for your decision on how you want to dismiss."
+    },
+    {
+      "start": 1498.24,
+      "end": 1498.44,
+      "text": "Yes."
+    },
+    {
+      "start": 1499.34,
+      "end": 1499.58,
+      "text": "Okay."
+    },
+    {
+      "start": 1500.46,
+      "end": 1502.0,
+      "text": "So would you like to make some comment?"
+    },
+    {
+      "start": 1502.7,
+      "end": 1503.68,
+      "text": "Yes, I would, if I could."
+    },
+    {
+      "start": 1503.68,
+      "end": 1503.8,
+      "text": "Okay."
+    },
+    {
+      "start": 1504.54,
+      "end": 1504.84,
+      "text": "Wait."
+    },
+    {
+      "start": 1504.96,
+      "end": 1505.14,
+      "text": "Wait."
+    },
+    {
+      "start": 1505.5,
+      "end": 1505.9,
+      "text": "Sorry."
+    },
+    {
+      "start": 1506.16,
+      "end": 1506.48,
+      "text": "I'm sorry."
+    },
+    {
+      "start": 1506.7,
+      "end": 1507.16,
+      "text": "No, you go."
+    },
+    {
+      "start": 1507.8,
+      "end": 1511.76,
+      "text": "Well, I just wanted to add that I believe that last time we had a similar situation"
+    },
+    {
+      "start": 1511.76,
+      "end": 1519.28,
+      "text": "where you wished to hear from one or more persons regarding a specific request for an audit,"
+    },
+    {
+      "start": 1519.74,
+      "end": 1526.08,
+      "text": "and the way you entertained that before, you had a motion to decide to have a hearing,"
+    },
+    {
+      "start": 1526.54,
+      "end": 1531.44,
+      "text": "and you set time limits for how long you'd like to hear from each person who would be speaking,"
+    },
+    {
+      "start": 1532.08,
+      "end": 1533.8,
+      "text": "and that was all rolled into one motion."
+    },
+    {
+      "start": 1535.64,
+      "end": 1536.04,
+      "text": "So."
+    },
+    {
+      "start": 1536.04,
+      "end": 1543.1399999999999,
+      "text": "Last time, Chair, it was also five minutes per person, which, I mean, just for the record."
+    },
+    {
+      "start": 1543.54,
+      "end": 1544.6599999999999,
+      "text": "So we'll entertain a motion."
+    },
+    {
+      "start": 1545.28,
+      "end": 1545.3999999999999,
+      "text": "So."
+    },
+    {
+      "start": 1547.5,
+      "end": 1547.8999999999999,
+      "text": "Second."
+    },
+    {
+      "start": 1548.22,
+      "end": 1549.52,
+      "text": "Yeah, I will second that motion."
+    },
+    {
+      "start": 1549.6399999999999,
+      "end": 1550.1399999999999,
+      "text": "All in favor?"
+    },
+    {
+      "start": 1550.54,
+      "end": 1550.8,
+      "text": "Aye."
+    },
+    {
+      "start": 1552.28,
+      "end": 1555.0,
+      "text": "So we will allow each of you to speak for five minutes."
+    },
+    {
+      "start": 1560.34,
+      "end": 1561.1599999999999,
+      "text": "Thank you so much."
+    },
+    {
+      "start": 1561.22,
+      "end": 1566.02,
+      "text": "I really appreciate the opportunity to come before you today to talk about my request for an audit."
+    },
+    {
+      "start": 1566.04,
+      "end": 1572.56,
+      "text": "You all have the packet in hand that details many of the reasons that I think underscore the need for an audit,"
+    },
+    {
+      "start": 1572.72,
+      "end": 1573.8799999999999,
+      "text": "so I'm not going to repeat those here."
+    },
+    {
+      "start": 1574.24,
+      "end": 1581.2,
+      "text": "But I do want to call attention to two overarching issues that I believe warrant a comprehensive examination of this department at this time."
+    },
+    {
+      "start": 1581.8,
+      "end": 1588.34,
+      "text": "And the first centers on finance and a lack of compliance with financial policies,"
+    },
+    {
+      "start": 1588.34,
+      "end": 1592.3999999999999,
+      "text": "potentially not acting responsibly in accordance with the law,"
+    },
+    {
+      "start": 1592.86,
+      "end": 1597.62,
+      "text": "and a lack of transparency within the department around these issues."
+    },
+    {
+      "start": 1598.08,
+      "end": 1600.82,
+      "text": "And those, again, are underscored in the document that I gave."
+    },
+    {
+      "start": 1601.28,
+      "end": 1605.62,
+      "text": "The recent debacle with the DePaul contract at Strobel House underscores this."
+    },
+    {
+      "start": 1606.2399999999998,
+      "end": 1612.76,
+      "text": "OHS continued to pay invoices despite those invoices making it obvious that the numbers did not add up."
+    },
+    {
+      "start": 1612.84,
+      "end": 1619.0,
+      "text": "They referred to a contract that was expired, but the amount of the contract on the invoice was triple what the actual contract was."
+    },
+    {
+      "start": 1619.5,
+      "end": 1623.4599999999998,
+      "text": "So the question is, what else are they not aware of?"
+    },
+    {
+      "start": 1623.46,
+      "end": 1629.72,
+      "text": "Can we trust any of these numbers that we're getting from them if there's such a disconnect between what is actually happening on the ground"
+    },
+    {
+      "start": 1629.72,
+      "end": 1631.46,
+      "text": "and what they think is happening on the ground?"
+    },
+    {
+      "start": 1631.8400000000001,
+      "end": 1635.22,
+      "text": "I specifically asked the director about this at a committee meeting,"
+    },
+    {
+      "start": 1635.64,
+      "end": 1640.04,
+      "text": "and she said there were two contracts and they just got confused and didn't realize that a contract had expired,"
+    },
+    {
+      "start": 1640.14,
+      "end": 1641.1200000000001,
+      "text": "so that gives me pause."
+    },
+    {
+      "start": 1641.94,
+      "end": 1643.46,
+      "text": "The second area is ethics."
+    },
+    {
+      "start": 1643.46,
+      "end": 1650.66,
+      "text": "The ARP funding that we received was specifically directed towards implementing a housing-first policy to address homelessness."
+    },
+    {
+      "start": 1651.24,
+      "end": 1653.9,
+      "text": "But the question is, are we doing housing-first?"
+    },
+    {
+      "start": 1654.44,
+      "end": 1659.6200000000001,
+      "text": "Are people being referred to in a timely manner when we have available permanent and temporary housing options,"
+    },
+    {
+      "start": 1659.72,
+      "end": 1661.04,
+      "text": "and why or why not?"
+    },
+    {
+      "start": 1661.3600000000001,
+      "end": 1662.4,
+      "text": "I would say they are not."
+    },
+    {
+      "start": 1662.74,
+      "end": 1664.92,
+      "text": "What happens when a landlord gives back money?"
+    },
+    {
+      "start": 1665.26,
+      "end": 1665.96,
+      "text": "We don't know."
+    },
+    {
+      "start": 1666.3400000000001,
+      "end": 1671.24,
+      "text": "Why are we keeping beds open for over a year when we have people on the street who need those beds?"
+    },
+    {
+      "start": 1671.24,
+      "end": 1674.5,
+      "text": "Is what is happening really housing-first,"
+    },
+    {
+      "start": 1674.82,
+      "end": 1680.2,
+      "text": "and is it in line with our understanding of what an ethical, person-centered, housing-focused approach is?"
+    },
+    {
+      "start": 1680.54,
+      "end": 1684.46,
+      "text": "I would argue no, but I believe that is a question for the auditor to determine."
+    },
+    {
+      "start": 1685.1200000000001,
+      "end": 1691.1,
+      "text": "In the ordinance that created this department, OHS's role was outlined as coordinating and bringing people together,"
+    },
+    {
+      "start": 1691.34,
+      "end": 1696.88,
+      "text": "but instead we're hearing distrust from the very community partners that OHS is tasked to bring it together."
+    },
+    {
+      "start": 1696.88,
+      "end": 1704.16,
+      "text": "At the most recent meeting of the HPC, the community's CE procedures you referred to earlier were voted on after months of discussion."
+    },
+    {
+      "start": 1704.6200000000001,
+      "end": 1713.24,
+      "text": "But at the last minute, the very last minute, OHS sent in a document contradicting the entire CE procedure document put together by a COC committee."
+    },
+    {
+      "start": 1713.94,
+      "end": 1720.96,
+      "text": "Fortunately, OHS's recommendations were not adopted, but the question is, why were they so aggressively, I would say, divisive?"
+    },
+    {
+      "start": 1720.96,
+      "end": 1724.3,
+      "text": "I really believe that we need answers to these questions."
+    },
+    {
+      "start": 1725.3,
+      "end": 1733.14,
+      "text": "I believe an audit is warranted to help our community understand how Metro has implemented millions of dollars designated towards homelessness."
+    },
+    {
+      "start": 1733.8600000000001,
+      "end": 1736.66,
+      "text": "An audit could be a first step toward restoring trust."
+    },
+    {
+      "start": 1737.1000000000001,
+      "end": 1739.3600000000001,
+      "text": "It will help our community improve on what we're doing."
+    },
+    {
+      "start": 1739.9,
+      "end": 1744.56,
+      "text": "We are at a critical point where millions of dollars in homelessness funding is going away."
+    },
+    {
+      "start": 1744.56,
+      "end": 1754.1799999999998,
+      "text": "We have to create more transparency and open discourse to rebuild a system that has not worked based on the endpoint I and my colleagues have received from our constituents."
+    },
+    {
+      "start": 1754.96,
+      "end": 1761.8,
+      "text": "If you don't look at this, we cannot improve on what we're doing, and we cannot provide a full range of services to the people that deserve those services."
+    },
+    {
+      "start": 1761.8,
+      "end": 1775.8,
+      "text": "And finally, I would say Metro has a policy that any recipient of $750,000 in federal fundings are required to undergo a single audit to ensure appropriate financial controls and program compliance."
+    },
+    {
+      "start": 1776.86,
+      "end": 1781.22,
+      "text": "Metro as a whole is audited under this Single Audit Act, but the departments are not."
+    },
+    {
+      "start": 1781.22,
+      "end": 1793.54,
+      "text": "But Metro's grant manual requires compliance with a single audit act, so any Metro grant recipient of more than $750,000 of ARP or other federal funding dollars has to undergo an audit."
+    },
+    {
+      "start": 1793.82,
+      "end": 1798.82,
+      "text": "And we make nonprofits do this, which can cost a nonprofit upwards of $50,000 to do it."
+    },
+    {
+      "start": 1798.82,
+      "end": 1816.8,
+      "text": "So if we are requiring nonprofits to undergo this audit, and other departments within Metro, like Metro Transit goes through, MDHA goes through this audit, which I believe is ethically and legally correct, I think that our departments should be held to the very same standard."
+    },
+    {
+      "start": 1817.26,
+      "end": 1822.84,
+      "text": "We are in danger with this particular administration if we find that these monies have been misspent of having this money clawed back."
+    },
+    {
+      "start": 1822.84,
+      "end": 1846.1,
+      "text": "And I think that an audit would assure everyone that these monies have actually been spent in the way that they are required to be spent, and that we can rest easy knowing that when we lose this funding, that we will be able to continue and build the system with new funding that comes in, with everyone knowing that the dollars are being used appropriately and in the way that best addresses the needs of our unhoused population."
+    },
+    {
+      "start": 1846.4399999999998,
+      "end": 1847.26,
+      "text": "Thank you so much."
+    },
+    {
+      "start": 1847.98,
+      "end": 1848.56,
+      "text": "Thank you."
+    },
+    {
+      "start": 1852.84,
+      "end": 1854.48,
+      "text": "Hello."
+    },
+    {
+      "start": 1854.48,
+      "end": 1854.6,
+      "text": "Hello."
+    },
+    {
+      "start": 1854.8799999999999,
+      "end": 1856.08,
+      "text": "Thank you all for having me."
+    },
+    {
+      "start": 1856.1799999999998,
+      "end": 1860.0,
+      "text": "Director April Calvin, the Director of the Office of Homeless Services."
+    },
+    {
+      "start": 1860.84,
+      "end": 1864.4599999999998,
+      "text": "One, I'd like to say thank you for having us, and thank you for your time."
+    },
+    {
+      "start": 1865.1799999999998,
+      "end": 1866.8799999999999,
+      "text": "OHS is pretty much an open book."
+    },
+    {
+      "start": 1867.1,
+      "end": 1868.56,
+      "text": "We are open to audits."
+    },
+    {
+      "start": 1868.6599999999999,
+      "end": 1869.86,
+      "text": "We're open to questions."
+    },
+    {
+      "start": 1870.3799999999999,
+      "end": 1879.06,
+      "text": "I'm proud to reveal that in the last three years, we've been through a number of the audits that you've discussed today, and we actually just completed a single audit."
+    },
+    {
+      "start": 1879.1599999999999,
+      "end": 1880.76,
+      "text": "Thank you for reminding me of that."
+    },
+    {
+      "start": 1880.76,
+      "end": 1887.32,
+      "text": "We just completed a single audit in our department as well, so departments do actually go through single audits annually as well."
+    },
+    {
+      "start": 1887.96,
+      "end": 1892.96,
+      "text": "So managing our funds and contracting obligations, it's very important to us."
+    },
+    {
+      "start": 1893.16,
+      "end": 1894.32,
+      "text": "We take that seriously."
+    },
+    {
+      "start": 1894.32,
+      "end": 1902.8799999999999,
+      "text": "We see the impact of the work on the 3,800 individual faces that we helped to house within the last two years."
+    },
+    {
+      "start": 1902.88,
+      "end": 1912.22,
+      "text": "Also providing shelter, meals, basic necessities, SOCs, connecting them to services, job opportunities, being able to help."
+    },
+    {
+      "start": 1912.2800000000002,
+      "end": 1912.94,
+      "text": "You heard a lot."
+    },
+    {
+      "start": 1913.22,
+      "end": 1916.24,
+      "text": "Just want to say thank you for all of the support we have here with public comment."
+    },
+    {
+      "start": 1916.5200000000002,
+      "end": 1918.96,
+      "text": "Heard a lot about some of the great work that's happened in our office."
+    },
+    {
+      "start": 1919.38,
+      "end": 1923.46,
+      "text": "The last two years have really revealed a huge change in that effort."
+    },
+    {
+      "start": 1923.46,
+      "end": 1928.8,
+      "text": "You have a document or a brochure in front of you that speaks to a lot of the numbers, so I won't repeat that."
+    },
+    {
+      "start": 1929.26,
+      "end": 1936.1000000000001,
+      "text": "But I do want to say in the last two years, our office has kind of held the line under the current housing pressures that we have."
+    },
+    {
+      "start": 1936.14,
+      "end": 1939.32,
+      "text": "We've held the line at 2.4 percent of an increase."
+    },
+    {
+      "start": 1939.32,
+      "end": 1948.9199999999998,
+      "text": "And cities our size that we like to look to as model cities had an increase of 36 percent, 19 percent, 14 percent."
+    },
+    {
+      "start": 1949.6399999999999,
+      "end": 1955.0,
+      "text": "Strobel House was one of the tools that was implemented that helped us to be able to address homelessness."
+    },
+    {
+      "start": 1955.3,
+      "end": 1960.1,
+      "text": "And it currently serves 68 percent of people experiencing chronic-level homelessness."
+    },
+    {
+      "start": 1960.62,
+      "end": 1968.1599999999999,
+      "text": "In the last three years, last four years, was the first time that our community really started to address chronic-level homelessness."
+    },
+    {
+      "start": 1968.16,
+      "end": 1974.8000000000002,
+      "text": "People that stayed outside for five years, an average of five years experiencing chronic homelessness, it is expensive."
+    },
+    {
+      "start": 1975.16,
+      "end": 1978.0,
+      "text": "And it does take a lot of funding to address that population."
+    },
+    {
+      "start": 1978.3000000000002,
+      "end": 1979.78,
+      "text": "And we're committed to that."
+    },
+    {
+      "start": 1980.3600000000001,
+      "end": 1982.28,
+      "text": "We also host resource fairs."
+    },
+    {
+      "start": 1982.3600000000001,
+      "end": 1985.42,
+      "text": "Our job is responsible for training the community."
+    },
+    {
+      "start": 1985.5400000000002,
+      "end": 1992.0800000000002,
+      "text": "And we host resource fairs, providing food, material goods, and providing services to the service providers."
+    },
+    {
+      "start": 1992.08,
+      "end": 2001.8,
+      "text": "This year, we operated the cold-weather shelter at an unprecedented 46 nights, averaging 270 individuals per night providing hot meals."
+    },
+    {
+      "start": 2002.1799999999998,
+      "end": 2007.98,
+      "text": "I'd like to say that we're super proud of being able to provide them a Thanksgiving meal utilizing Cracker Barrel."
+    },
+    {
+      "start": 2007.98,
+      "end": 2018.9,
+      "text": "Also, we are excited to share that our department helped to increase the average funding of federal funds that we receive here in Nashville by 68 percent."
+    },
+    {
+      "start": 2019.08,
+      "end": 2024.54,
+      "text": "And 45 percent reductions in deaths of people experiencing homelessness within one year."
+    },
+    {
+      "start": 2025.5,
+      "end": 2027.5,
+      "text": "I know I'm running out of time, so I'm trying to go a little faster."
+    },
+    {
+      "start": 2027.5,
+      "end": 2036.9,
+      "text": "A couple of other things that we implemented would be utilizing data and coordinated entry at our cold-weather shelter."
+    },
+    {
+      "start": 2037.36,
+      "end": 2046.52,
+      "text": "And we also started operating the coordinated entry line, two things that we took on as we moved away from Metro Social Services."
+    },
+    {
+      "start": 2047.62,
+      "end": 2052.12,
+      "text": "A couple of other things that I'm really excited to talk about is the increased data entry."
+    },
+    {
+      "start": 2052.12,
+      "end": 2060.7799999999997,
+      "text": "We, in the last two years, we've paid for a bridge to sync the data from the Nashville Rescue Mission to have that data directly imported into our database."
+    },
+    {
+      "start": 2061.02,
+      "end": 2062.62,
+      "text": "So there's a lot of great things going on."
+    },
+    {
+      "start": 2062.98,
+      "end": 2065.5,
+      "text": "And, yes, we do provide training and conferences."
+    },
+    {
+      "start": 2065.72,
+      "end": 2071.3199999999997,
+      "text": "We bring national leaders here to help with training our community because it is more cost-effective."
+    },
+    {
+      "start": 2071.62,
+      "end": 2078.2799999999997,
+      "text": "But also, we utilize HUD funding as it is intended, taking people to conferences, taking our community,"
+    },
+    {
+      "start": 2078.28,
+      "end": 2083.52,
+      "text": "our staff, people with lived experience to national conferences."
+    },
+    {
+      "start": 2084.0600000000004,
+      "end": 2088.1200000000003,
+      "text": "A statement from Drew Freeman, CEO and on our Homeless Planning Council."
+    },
+    {
+      "start": 2088.2400000000002,
+      "end": 2095.1400000000003,
+      "text": "He says sending him and his staff to an NEH conference, which is a national conference, was transformative for him and his team."
+    },
+    {
+      "start": 2095.1400000000003,
+      "end": 2102.28,
+      "text": "We utilize those federal funds for that exact event because agencies don't necessarily have the funding to be able to provide for that."
+    },
+    {
+      "start": 2103.96,
+      "end": 2105.1000000000004,
+      "text": "Structured transparency."
+    },
+    {
+      "start": 2105.1,
+      "end": 2109.0,
+      "text": "We provide monthly reports to the Homeless Planning Council."
+    },
+    {
+      "start": 2109.42,
+      "end": 2112.92,
+      "text": "We provide ARPA reports to Health and Safety."
+    },
+    {
+      "start": 2113.2799999999997,
+      "end": 2115.18,
+      "text": "We answer questions whenever available."
+    },
+    {
+      "start": 2115.96,
+      "end": 2119.8399999999997,
+      "text": "Also, we report data on our dashboards, on our websites."
+    },
+    {
+      "start": 2120.4,
+      "end": 2127.2799999999997,
+      "text": "And we host 14 to 16 COC continuum of care meetings."
+    },
+    {
+      "start": 2127.44,
+      "end": 2131.68,
+      "text": "We are going to work closely with finance, watching for best practices."
+    },
+    {
+      "start": 2131.68,
+      "end": 2139.72,
+      "text": "Audits are tools for accountability to assist with appropriately assessing the state of things and clearing up misunderstandings."
+    },
+    {
+      "start": 2139.8199999999997,
+      "end": 2141.04,
+      "text": "I thank you all for your time."
+    },
+    {
+      "start": 2141.04,
+      "end": 2143.04,
+      "text": "Thank you."
+    },
+    {
+      "start": 2147.22,
+      "end": 2151.06,
+      "text": "Do we have questions from anyone on the committee?"
+    },
+    {
+      "start": 2153.64,
+      "end": 2156.7,
+      "text": "Can we ask questions of folks who just wanted to ask?"
+    },
+    {
+      "start": 2156.7,
+      "end": 2157.58,
+      "text": "Thank you, Mr. Chair."
+    },
+    {
+      "start": 2157.58,
+      "end": 2160.04,
+      "text": "Thank you for being here."
+    },
+    {
+      "start": 2160.04,
+      "end": 2165.02,
+      "text": "It's obvious from the folks that we've heard from that your office makes a lot of difference for a lot of people."
+    },
+    {
+      "start": 2165.74,
+      "end": 2173.34,
+      "text": "The issue of expending funds on the contract that had expired at DePaul was clearly concerning to a lot of us."
+    },
+    {
+      "start": 2173.34,
+      "end": 2187.32,
+      "text": "I seem to recall when we considered the new contracts, there was a discussion in the budget committee and you mentioned several remedial actions your office has taken to make sure that doesn't happen again."
+    },
+    {
+      "start": 2187.44,
+      "end": 2188.76,
+      "text": "Would you mind reiterating those?"
+    },
+    {
+      "start": 2189.76,
+      "end": 2195.32,
+      "text": "Thank you so much for that time, for being able to share that, because that was a section I skipped over quickly."
+    },
+    {
+      "start": 2195.32,
+      "end": 2203.2200000000003,
+      "text": "Yes, our department, we have four, three, three of our admin and finance team."
+    },
+    {
+      "start": 2203.34,
+      "end": 2207.54,
+      "text": "They are actually enrolled in the state-level CCFO training."
+    },
+    {
+      "start": 2208.1800000000003,
+      "end": 2212.6800000000003,
+      "text": "We are in the closing discussions of a contract administrator."
+    },
+    {
+      "start": 2213.44,
+      "end": 2221.0,
+      "text": "We used to have just a grants coordinator, but we see it as important to have a contract administrator to help with working with legal and our finance team."
+    },
+    {
+      "start": 2221.0,
+      "end": 2228.62,
+      "text": "Also, you know, we've reviewed processes as it relates to POs, purchase orders, and direct vouchers."
+    },
+    {
+      "start": 2228.82,
+      "end": 2232.4,
+      "text": "And I know finance is putting some systems in place."
+    },
+    {
+      "start": 2232.72,
+      "end": 2239.48,
+      "text": "There was not a PO system for contracts as it relates to nonprofit agreements, but I know there are systems that are being put in place."
+    },
+    {
+      "start": 2239.92,
+      "end": 2250.98,
+      "text": "We're going to continue to work closely with finance, having regular meetings with Janine's, sorry, Director Janine's entire team on addressing things as our department continues to grow."
+    },
+    {
+      "start": 2251.0,
+      "end": 2252.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 2252.0,
+      "end": 2252.0,
+      "text": ""
+    },
+    {
+      "start": 2252.0,
+      "end": 2253.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 2253.0,
+      "end": 2254.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 2254.0,
+      "end": 2255.0,
+      "text": "Thank you."
+    },
+    {
+      "start": 2255.0,
+      "end": 2258.0,
+      "text": "Do you receive the single audit report?"
+    },
+    {
+      "start": 2258.0,
+      "end": 2259.0,
+      "text": "We do."
+    },
+    {
+      "start": 2259.0,
+      "end": 2262.0,
+      "text": "So, if you want me to talk through the single audit."
+    },
+    {
+      "start": 2262.0,
+      "end": 2268.0,
+      "text": "So, and Crossland is here as well today, because they're, I think, walking through their audit plan, so they're happy to opine on this too."
+    },
+    {
+      "start": 2268.0,
+      "end": 2269.0,
+      "text": "So, we're doing the single audit?"
+    },
+    {
+      "start": 2269.0,
+      "end": 2270.0,
+      "text": "Yes."
+    },
+    {
+      "start": 2270.0,
+      "end": 2286.0,
+      "text": "So, the way the single audit works is the finance team is responsible for working with each department to gather the grant data, and we compile all of that information into one single audit."
+    },
+    {
+      "start": 2286.0,
+      "end": 2299.0,
+      "text": "But the auditors, Crossland, take that data, and they sample that data, and they actually go in and test that, test the departments for compliance with the single audit."
+    },
+    {
+      "start": 2299.0,
+      "end": 2309.0,
+      "text": "And, you know, I think John's around the corner, he can probably elaborate a little bit more about their testing procedures, because that's not what we do."
+    },
+    {
+      "start": 2309.0,
+      "end": 2318.0,
+      "text": "But we gather, compile the information, send that information to Crossland, and then Crossland actually audits that information at a department level."
+    },
+    {
+      "start": 2318.0,
+      "end": 2321.0,
+      "text": "Do they issue a report at the department level?"
+    },
+    {
+      "start": 2321.0,
+      "end": 2340.0,
+      "text": "They do not issue a report at the department level, but each department is subject to their selection criteria, where they will go in and actually look at actual invoices related to various audits, various grants, sorry, if that makes sense."
+    },
+    {
+      "start": 2340.0,
+      "end": 2343.0,
+      "text": "And then they issue one audit for the single audit."
+    },
+    {
+      "start": 2343.0,
+      "end": 2350.0,
+      "text": "It actually comes back before the audit committee, as well as the management letter."
+    },
+    {
+      "start": 2350.0,
+      "end": 2361.0,
+      "text": "So, do we know, and I mean, you may easily say, you don't have that information, do we know what grants they selected from this department?"
+    },
+    {
+      "start": 2361.0,
+      "end": 2362.0,
+      "text": "I do not know."
+    },
+    {
+      "start": 2362.0,
+      "end": 2368.0,
+      "text": "That would be a question, John, John Crossland, I'm sorry to ask you to come in."
+    },
+    {
+      "start": 2368.0,
+      "end": 2374.0,
+      "text": "Do you mind maybe talking through how you test the single audit when you're auditing single audit?"
+    },
+    {
+      "start": 2374.0,
+      "end": 2376.0,
+      "text": "I think that would be helpful for the group."
+    },
+    {
+      "start": 2376.0,
+      "end": 2379.0,
+      "text": "By the way, John Crossland."
+    },
+    {
+      "start": 2379.0,
+      "end": 2380.0,
+      "text": "You would identify yourself for the viewing public."
+    },
+    {
+      "start": 2380.0,
+      "end": 2381.0,
+      "text": "Yes, thank you."
+    },
+    {
+      "start": 2381.0,
+      "end": 2382.0,
+      "text": "John Crossland."
+    },
+    {
+      "start": 2382.0,
+      "end": 2383.0,
+      "text": "Yeah."
+    },
+    {
+      "start": 2383.0,
+      "end": 2384.0,
+      "text": "Auditor?"
+    },
+    {
+      "start": 2384.0,
+      "end": 2387.0,
+      "text": "Auditor, external auditor."
+    },
+    {
+      "start": 2387.0,
+      "end": 2394.0,
+      "text": "It's a complex process to calculate what programs you test for a single audit."
+    },
+    {
+      "start": 2394.0,
+      "end": 2397.0,
+      "text": "Metro Nashville is considered a low risk auditee."
+    },
+    {
+      "start": 2397.0,
+      "end": 2406.0,
+      "text": "So, we have to cover a minimum of 20% of the total federal expenditures in the current fiscal year."
+    },
+    {
+      "start": 2406.0,
+      "end": 2410.0,
+      "text": "If you're high risk, it would be 40%."
+    },
+    {
+      "start": 2410.0,
+      "end": 2411.0,
+      "text": "It's difficult."
+    },
+    {
+      "start": 2411.0,
+      "end": 2420.0,
+      "text": "There's a complex calculation to determine whether you're low risk or not, but mainly it's whether you've had material weaknesses in each of the last two years."
+    },
+    {
+      "start": 2420.0,
+      "end": 2428.0,
+      "text": "If you've had one material weakness on a grant each of the last two years, you're considered a high risk auditee and it goes up to 40%."
+    },
+    {
+      "start": 2428.0,
+      "end": 2437.0,
+      "text": "How we pick each major program is even more complex."
+    },
+    {
+      "start": 2437.0,
+      "end": 2439.0,
+      "text": "How we get to the 20%."
+    },
+    {
+      "start": 2439.0,
+      "end": 2443.0,
+      "text": "If you have a type, there's type A and there's type B programs."
+    },
+    {
+      "start": 2443.0,
+      "end": 2452.0,
+      "text": "Type A programs that are considered high risk, which are programs right now for Metro over $3 million."
+    },
+    {
+      "start": 2452.0,
+      "end": 2461.0,
+      "text": "The normal threshold is $750,000 if your federal expenditures are $25 million total or less."
+    },
+    {
+      "start": 2461.0,
+      "end": 2473.0,
+      "text": "Once you get above $25 million up to $100 million, that threshold keeps climbing up at 3% of what your total expenditures are until you get to $3 million."
+    },
+    {
+      "start": 2473.0,
+      "end": 2480.0,
+      "text": "And then once you're above $100 million, it goes back to percentage and keeps going up."
+    },
+    {
+      "start": 2480.0,
+      "end": 2492.0,
+      "text": "So if you have a program right now that's $750,000 in expenditures during the year, or $3 million, excuse me, $3 million during the year,"
+    },
+    {
+      "start": 2492.0,
+      "end": 2500.0,
+      "text": "and it has not been audited in each of the previous two years, it will be a type A high risk program and it will be audited."
+    },
+    {
+      "start": 2500.0,
+      "end": 2509.0,
+      "text": "If it was tested in each of the, in any of the previous two years, you won't have to audit it again until that third year."
+    },
+    {
+      "start": 2509.0,
+      "end": 2512.0,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 2512.0,
+      "end": 2516.0,
+      "text": "I feel like we need a primer on that on paper and to put it on others."
+    },
+    {
+      "start": 2516.0,
+      "end": 2518.0,
+      "text": "Because I'm like, it's a lot of grants."
+    },
+    {
+      "start": 2518.0,
+      "end": 2519.0,
+      "text": "It's a lot."
+    },
+    {
+      "start": 2519.0,
+      "end": 2522.0,
+      "text": "And there's a lot of grants in Nashville."
+    },
+    {
+      "start": 2522.0,
+      "end": 2523.0,
+      "text": "Yeah."
+    },
+    {
+      "start": 2523.0,
+      "end": 2524.0,
+      "text": "No trouble."
+    },
+    {
+      "start": 2524.0,
+      "end": 2525.0,
+      "text": "Thanks, John."
+    },
+    {
+      "start": 2525.0,
+      "end": 2526.0,
+      "text": "Appreciate it."
+    },
+    {
+      "start": 2526.0,
+      "end": 2527.0,
+      "text": "Mm-hmm."
+    },
+    {
+      "start": 2527.0,
+      "end": 2528.0,
+      "text": "Other questions?"
+    },
+    {
+      "start": 2528.0,
+      "end": 2529.0,
+      "text": "Discussion?"
+    },
+    {
+      "start": 2529.0,
+      "end": 2552.0,
+      "text": "So, I guess, you know, from my perspective, I know that, you know, some things were said as to kind of, you know, sentiment, you know, relative to Councilmember Welch."
+    },
+    {
+      "start": 2552.0,
+      "end": 2576.0,
+      "text": "But I do just want to convey, while maintaining confidence, that I hear from a broad spectrum of Councilmembers, politically left, right, center, suburban, urban, about concern around many of the things that Ms. Welch specifically outlined."
+    },
+    {
+      "start": 2576.0,
+      "end": 2581.0,
+      "text": "And so I just wanted to speak that into the room."
+    },
+    {
+      "start": 2581.0,
+      "end": 2595.0,
+      "text": "Councilman Coopin has, you know, sent an email, appointed Councilman Coopin to the Homeless Planning Council because so much of his downtown District 19 does intersect this issue."
+    },
+    {
+      "start": 2595.0,
+      "end": 2608.0,
+      "text": "And so, you know, I try to make sure there's a diversity of Councilmembers participating in that process so that they can become sort of the subject matter experts for Council."
+    },
+    {
+      "start": 2608.0,
+      "end": 2618.0,
+      "text": "So, without attributing that to any particular member who has participated in the Homelessness Planning Council, but just more generally, I did want to speak that into the room."
+    },
+    {
+      "start": 2618.0,
+      "end": 2626.0,
+      "text": "Because I do not believe it is a singular concern of Councilmember Welch."
+    },
+    {
+      "start": 2626.0,
+      "end": 2630.0,
+      "text": "So, I just wanted to say that for the record."
+    },
+    {
+      "start": 2630.0,
+      "end": 2640.0,
+      "text": "And then I am still thinking about kind of what next to ask to sort of move our discussion forward, Chair."
+    },
+    {
+      "start": 2640.0,
+      "end": 2650.0,
+      "text": "Dr. Lauren, if we were to add this to your audit plan, what does that do to your audit plan?"
+    },
+    {
+      "start": 2650.0,
+      "end": 2654.0,
+      "text": "My recommendation for this one actually would be just to add it."
+    },
+    {
+      "start": 2654.0,
+      "end": 2656.0,
+      "text": "I can't tell you which one to remove normally."
+    },
+    {
+      "start": 2656.0,
+      "end": 2660.0,
+      "text": "I think we talk about which one will we remove."
+    },
+    {
+      "start": 2660.0,
+      "end": 2663.0,
+      "text": "We somewhat have a plan if we were to add this one."
+    },
+    {
+      "start": 2663.0,
+      "end": 2669.0,
+      "text": "We would have somebody do two audits at one time trying to fulfill this need."
+    },
+    {
+      "start": 2669.0,
+      "end": 2673.16,
+      "text": "but it would eventually mean that one of the audits on the plan at least most likely would"
+    },
+    {
+      "start": 2673.16,
+      "end": 2677.96,
+      "text": "not get started during this plan year that doesn't mean it would not get completed eventually we"
+    },
+    {
+      "start": 2677.96,
+      "end": 2682.76,
+      "text": "would just move it to the next plan year it's not going to shift the other ones don't have"
+    },
+    {
+      "start": 2682.76,
+      "end": 2687.48,
+      "text": "a strong pressing need to be completed with the exception of one which we've already"
+    },
+    {
+      "start": 2687.48,
+      "end": 2692.6,
+      "text": "figured out staffing on and so it's not going to shift too much if you put this on"
+    },
+    {
+      "start": 2692.6,
+      "end": 2706.44,
+      "text": "is there a a it seems like it's generally a good idea to to take a look at a new department or"
+    },
+    {
+      "start": 2706.44,
+      "end": 2713.3199999999997,
+      "text": "agency at some period of time after they've first been stood up is there a generally accepted standard"
+    },
+    {
+      "start": 2713.3199999999997,
+      "end": 2719.56,
+      "text": "for how long that period of time should be before you go in and see how things are going so we we"
+    },
+    {
+      "start": 2719.56,
+      "end": 2725.7999999999997,
+      "text": "have the office of financial accountability of a and i think someone someone spoke about it"
+    },
+    {
+      "start": 2726.68,
+      "end": 2734.36,
+      "text": "but what that is is there is monitoring to nonprofits that's what that team does and they will go in if"
+    },
+    {
+      "start": 2734.36,
+      "end": 2741.64,
+      "text": "there has been a grant and a contract they will go in and review we call it a monitoring it's not we"
+    },
+    {
+      "start": 2741.64,
+      "end": 2746.52,
+      "text": "don't call it an audit but they will go in and work with the nonprofit to make sure that everything that"
+    },
+    {
+      "start": 2746.52,
+      "end": 2753.72,
+      "text": "was paid to the nonprofit was in accordance with the grant contract it is done again someone said"
+    },
+    {
+      "start": 2753.72,
+      "end": 2760.84,
+      "text": "this it is done after the fact and then those those monitors monitoring reports reviews are written up"
+    },
+    {
+      "start": 2760.84,
+      "end": 2766.84,
+      "text": "they're discussed with the department at the time if there is any findings they are similar to what's"
+    },
+    {
+      "start": 2766.84,
+      "end": 2773.24,
+      "text": "here a corrective action plan that's put in place there's also corrective action plan that could happen at"
+    },
+    {
+      "start": 2773.24,
+      "end": 2783.4799999999996,
+      "text": "the nonprofit level as well so um so ofa does kind of grant monitoring after the fact we have a um slew of"
+    },
+    {
+      "start": 2783.4799999999996,
+      "end": 2789.72,
+      "text": "financial policies i mean there are a lot of financial policies and they go by kind of different divisions"
+    },
+    {
+      "start": 2789.72,
+      "end": 2797.24,
+      "text": "so you know treasury has policies and we have policies in accounts we have poli we have a lot of policies"
+    },
+    {
+      "start": 2797.24,
+      "end": 2804.2799999999997,
+      "text": "we actually just updated all of our financial policies and rolled those out on friday and sent"
+    },
+    {
+      "start": 2804.2799999999997,
+      "end": 2810.68,
+      "text": "all of those out to the departments we are working on a training for all of the policies as well it is"
+    },
+    {
+      "start": 2810.68,
+      "end": 2817.3999999999996,
+      "text": "the responsibility of the departments to know the policies and adhere to the financial policies i'm"
+    },
+    {
+      "start": 2817.3999999999996,
+      "end": 2821.64,
+      "text": "going to say that one more time it is the responsibility of the departments to know the"
+    },
+    {
+      "start": 2821.64,
+      "end": 2829.56,
+      "text": "policies and adhere to those policies however we do believe that there is an opportunity for finance"
+    },
+    {
+      "start": 2829.56,
+      "end": 2835.3199999999997,
+      "text": "to do a better job to make sure that finance managers and finance staff within the departments are"
+    },
+    {
+      "start": 2835.3199999999997,
+      "end": 2840.6,
+      "text": "trained on those policies so that they have an opportunity to ask questions about the policies and"
+    },
+    {
+      "start": 2840.6,
+      "end": 2848.7599999999998,
+      "text": "learn to do to do better if that makes sense um so i think i answered your question um"
+    },
+    {
+      "start": 2848.76,
+      "end": 2856.28,
+      "text": "um good information but i don't think i think what he was getting at go ahead councilman i'm sorry yeah"
+    },
+    {
+      "start": 2856.28,
+      "end": 2861.96,
+      "text": "well i mean the last year is exactly i mean the the question and i i appreciate that but the question"
+    },
+    {
+      "start": 2861.96,
+      "end": 2865.7200000000003,
+      "text": "was just simply is there a a sort of standard set of time that"
+    },
+    {
+      "start": 2868.6800000000003,
+      "end": 2875.1600000000003,
+      "text": "is a standard practice when you would go back in and do a review or audit whatever the case may be of a"
+    },
+    {
+      "start": 2875.16,
+      "end": 2879.64,
+      "text": "new department or agency we we would not do that that would be something that's yeah"
+    },
+    {
+      "start": 2879.64,
+      "end": 2884.68,
+      "text": "yeah i didn't answer yeah yeah sorry i know i was like that's really not department of government right"
+    },
+    {
+      "start": 2884.68,
+      "end": 2891.3999999999996,
+      "text": "has which doesn't i mean it happens um but at the same time i think one we would give the the department"
+    },
+    {
+      "start": 2891.3999999999996,
+      "end": 2896.7599999999998,
+      "text": "a little bit of time to stand up um and operate so we're not we're not auditing procedures that have"
+    },
+    {
+      "start": 2896.7599999999998,
+      "end": 2902.2,
+      "text": "just gotten to play and then we don't really have know if they actually are staying there um in particular"
+    },
+    {
+      "start": 2902.2,
+      "end": 2907.3999999999996,
+      "text": "with office homeless services since we had recently done the ones that we touched on with follow-ups"
+    },
+    {
+      "start": 2908.2799999999997,
+      "end": 2914.12,
+      "text": "we would almost consider those we try to do things within five years metro is huge and our staff is"
+    },
+    {
+      "start": 2914.12,
+      "end": 2920.8399999999997,
+      "text": "small and sometimes other things come up and they knock some departments out a little bit longer but i"
+    },
+    {
+      "start": 2920.8399999999997,
+      "end": 2925.3199999999997,
+      "text": "would say within five years of starting it would be when we would try to ideally i think the time frame"
+    },
+    {
+      "start": 2925.32,
+      "end": 2928.92,
+      "text": "will be about three to five years um that way they have time to operate"
+    },
+    {
+      "start": 2931.4,
+      "end": 2939.7200000000003,
+      "text": "and we have enough data that we can actually audit i guess against jeremy i ask i guess my pandemic brain"
+    },
+    {
+      "start": 2940.28,
+      "end": 2950.1200000000003,
+      "text": "where where are we in the timeline for the new department um when you say that what do you uh when you say"
+    },
+    {
+      "start": 2950.12,
+      "end": 2956.3599999999997,
+      "text": "well i guess when um uh the homeless impact division was no longer under the umbrella of"
+    },
+    {
+      "start": 2956.92,
+      "end": 2964.8399999999997,
+      "text": "social services and the department was um stood up and i and i know chair we're not i don't think"
+    },
+    {
+      "start": 2964.8399999999997,
+      "end": 2972.2,
+      "text": "technically supposed to be posing questions to um uh our guest or maybe we can but i know director"
+    },
+    {
+      "start": 2972.2,
+      "end": 2979.56,
+      "text": "calvin would know the answer to this that's at your discretion i don't know okay thank you we are two"
+    },
+    {
+      "start": 2979.56,
+      "end": 2995.24,
+      "text": "years old two years okay thank you okay if i may add we um in ofa i didn't finish but um in ofa we were just awarded this year a new staff person to do financial policy compliance work"
+    },
+    {
+      "start": 2995.88,
+      "end": 3002.2799999999997,
+      "text": "um that pop that that person has been hired and that person is in the process of being trained"
+    },
+    {
+      "start": 3002.28,
+      "end": 3010.0400000000004,
+      "text": "so that they can go out to various departments and actually do compliance for policies um we plan to"
+    },
+    {
+      "start": 3010.0400000000004,
+      "end": 3016.52,
+      "text": "come back and add another person for financial policy compliance um in the next budget cycle"
+    },
+    {
+      "start": 3016.52,
+      "end": 3022.1200000000003,
+      "text": "but i didn't i feel like i would be short-sighted if i didn't mention that that we are working to do"
+    },
+    {
+      "start": 3022.1200000000003,
+      "end": 3028.52,
+      "text": "financial policy compliance at the departments which would be kind of real time we feel like that's"
+    },
+    {
+      "start": 3028.52,
+      "end": 3033.64,
+      "text": "important piece that's been missing and we just have not had the staff to do that so we were very thankful"
+    },
+    {
+      "start": 3033.64,
+      "end": 3035.64,
+      "text": "we got that awarded in the budget this year"
+    },
+    {
+      "start": 3040.04,
+      "end": 3049.0,
+      "text": "so i know you know chair if i may i'm sorry um uh similar to the discussion um that we had about uh the"
+    },
+    {
+      "start": 3049.0,
+      "end": 3059.48,
+      "text": "uh the property assessor's office right and kind of where it was on kind of the routine cadence um of"
+    },
+    {
+      "start": 3059.48,
+      "end": 3066.04,
+      "text": "audits and then additionally just because we were having kind of a um you know community convergence"
+    },
+    {
+      "start": 3066.04,
+      "end": 3073.88,
+      "text": "moment of really high property valuation right that's not to um impugn the assessor's office or to"
+    },
+    {
+      "start": 3073.88,
+      "end": 3079.08,
+      "text": "say that anything bad happened but sometimes when they're just a broad kind of uh community concern"
+    },
+    {
+      "start": 3079.08,
+      "end": 3085.56,
+      "text": "around something um conducting an audit um allays those concerns right like you can just kind of dig"
+    },
+    {
+      "start": 3085.56,
+      "end": 3092.2000000000003,
+      "text": "into that and then finally say um you know for the record that we we looked into this and it's it's to"
+    },
+    {
+      "start": 3092.2000000000003,
+      "end": 3099.56,
+      "text": "the benefit of the department um and so um you know that's kind of the ground that i'm i'm trying to"
+    },
+    {
+      "start": 3099.56,
+      "end": 3110.84,
+      "text": "find right that that um because this is a space in government that is um very uh fraught with a whole"
+    },
+    {
+      "start": 3110.84,
+      "end": 3118.36,
+      "text": "lot of um community partners um a lot of different opinions it's a challenging space um to work in and"
+    },
+    {
+      "start": 3118.36,
+      "end": 3126.2,
+      "text": "so i'm trying to figure out kind of how to hold space for um some uh form of this that would be um"
+    },
+    {
+      "start": 3126.2,
+      "end": 3136.9199999999996,
+      "text": "um constructive um uh and um kind of allay those concerns um i don't know if that is doable i don't"
+    },
+    {
+      "start": 3136.9199999999996,
+      "end": 3144.4399999999996,
+      "text": "know if that means parsing some particular aspect of what the request is or from a i guess director from"
+    },
+    {
+      "start": 3144.4399999999996,
+      "end": 3153.64,
+      "text": "your perspective um you know whether you say kind of we're gonna audit the whole thing and then staff"
+    },
+    {
+      "start": 3153.64,
+      "end": 3161.72,
+      "text": "gets in there and then they parse out some things that are emblematic of certain concerns or if you"
+    },
+    {
+      "start": 3161.72,
+      "end": 3166.92,
+      "text": "kind of flip that and you say okay well here are some very specific particular concerns and then you"
+    },
+    {
+      "start": 3166.92,
+      "end": 3171.7999999999997,
+      "text": "go out into it at a more micro level i think if you were to do the more micro level you don't necessarily"
+    },
+    {
+      "start": 3171.7999999999997,
+      "end": 3177.48,
+      "text": "address the broader concern and so i'm struggling a little bit with how to balance that and i don't"
+    },
+    {
+      "start": 3177.48,
+      "end": 3181.64,
+      "text": "know if you could speak to that you know when i look at the concerns the biggest thing that stuck"
+    },
+    {
+      "start": 3181.64,
+      "end": 3188.12,
+      "text": "out to me was more of the financial operations um since we touched on some of the services provided"
+    },
+    {
+      "start": 3188.12,
+      "end": 3194.2,
+      "text": "under homeless impact division and the policies around those services i would say almost not to"
+    },
+    {
+      "start": 3194.2,
+      "end": 3199.64,
+      "text": "look at those with this audit um since we just did that follow-up as well and to focus more on the"
+    },
+    {
+      "start": 3199.64,
+      "end": 3206.3599999999997,
+      "text": "financial operations and those processes um because i think that that hits more of the concerns related"
+    },
+    {
+      "start": 3206.3599999999997,
+      "end": 3211.48,
+      "text": "to the contracting and the spending if that's the method we want to go with this one the assessors was a"
+    },
+    {
+      "start": 3211.48,
+      "end": 3216.76,
+      "text": "little bit of a different situation where the concerns spanned a lot more and we really didn't"
+    },
+    {
+      "start": 3216.76,
+      "end": 3221.56,
+      "text": "know that space um this one we know a little bit more because we did do the homeless impact division"
+    },
+    {
+      "start": 3221.56,
+      "end": 3226.92,
+      "text": "audit even though it was under social services much of that has continued over um so my recommendation"
+    },
+    {
+      "start": 3226.92,
+      "end": 3231.8,
+      "text": "would be actually to scope this one a little bit more just towards the financial operations i"
+    },
+    {
+      "start": 3231.8,
+      "end": 3238.04,
+      "text": "wouldn't say specifically what kind of operations grants whether it's po's or contracts or anything like"
+    },
+    {
+      "start": 3238.04,
+      "end": 3241.56,
+      "text": "that i would leave that part open but i would focus more on the financial operations"
+    },
+    {
+      "start": 3243.16,
+      "end": 3250.04,
+      "text": "um chair may i pose a follow-up question to director reed please director reed can you conceive of a way in"
+    },
+    {
+      "start": 3250.04,
+      "end": 3255.96,
+      "text": "which that would then be compatible to the work that you were highlighting and elevating as it relates to"
+    },
+    {
+      "start": 3256.6,
+      "end": 3262.7599999999998,
+      "text": "um you know the back end of the grant and the new policies like can can you see a synergy here that's"
+    },
+    {
+      "start": 3262.76,
+      "end": 3268.6800000000003,
+      "text": "constructive yeah absolutely absolutely we actually work quite a bit with lauren's lauren's office"
+    },
+    {
+      "start": 3268.6800000000003,
+      "end": 3275.96,
+      "text": "director riley's office and internal audit and we we really work hand in hand so i'm always happy to"
+    },
+    {
+      "start": 3275.96,
+      "end": 3283.0,
+      "text": "assist the internal audit in any of their audits and and will be available our resources will be available to do that"
+    },
+    {
+      "start": 3283.0,
+      "end": 3299.96,
+      "text": "um director riley i guess i will chair if i may articulate a motion and then if um the chart the auditor wants to um uh uh"
+    },
+    {
+      "start": 3301.48,
+      "end": 3306.52,
+      "text": "change that i would welcome it because i do want to make sure that the scope um is uh"
+    },
+    {
+      "start": 3306.52,
+      "end": 3319.24,
+      "text": "uh more specific to the the financial piece um and so um i would move that we do add an audit to the audit plan"
+    },
+    {
+      "start": 3320.28,
+      "end": 3332.7599999999998,
+      "text": "scoped specifically to um the financial um uh items uh elevated i guess by ms welsh but not"
+    },
+    {
+      "start": 3332.76,
+      "end": 3339.88,
+      "text": "not that that precludes anything that would be adjacent or um uh determined uh in in that process"
+    },
+    {
+      "start": 3343.0,
+      "end": 3347.88,
+      "text": "and yeah i'll just put that motion out there for purpose of discussion see if it's seconded"
+    },
+    {
+      "start": 3347.88,
+      "end": 3352.0400000000004,
+      "text": "is there a second second any discussion"
+    },
+    {
+      "start": 3352.04,
+      "end": 3364.2799999999997,
+      "text": "i would just add that um i i think the work that you you do is clearly evident by the support that you"
+    },
+    {
+      "start": 3364.2799999999997,
+      "end": 3372.2,
+      "text": "have here today and i do think that your department is is really doing doing some great work and um and"
+    },
+    {
+      "start": 3372.7599999999998,
+      "end": 3380.44,
+      "text": "so i don't think the financial audit is any reflection of the work great work that you guys are doing"
+    },
+    {
+      "start": 3380.44,
+      "end": 3390.04,
+      "text": "because i do think you do are doing fantastic work um i will also say that we all go through audits um you"
+    },
+    {
+      "start": 3390.04,
+      "end": 3394.92,
+      "text": "know my department's going through a credit card audit right now and so i don't think going through an"
+    },
+    {
+      "start": 3394.92,
+      "end": 3400.36,
+      "text": "audit is necessarily reflective of the work that you are doing in the community and i think that needs to"
+    },
+    {
+      "start": 3400.36,
+      "end": 3406.68,
+      "text": "be said thank you thank you and then i would concur with that as well director i do want to express"
+    },
+    {
+      "start": 3406.68,
+      "end": 3413.3999999999996,
+      "text": "appreciation to everybody who came today and to your staff and team um my hope chair as i articulated"
+    },
+    {
+      "start": 3413.3999999999996,
+      "end": 3421.96,
+      "text": "earlier is that given um some of the the consternation and concern and with um a specific kind of scoping"
+    },
+    {
+      "start": 3421.96,
+      "end": 3429.24,
+      "text": "more particular to the the finance hopefully that um uh is constructive and it's something that is as"
+    },
+    {
+      "start": 3429.24,
+      "end": 3438.12,
+      "text": "is a is a positive um moving forward um for your team so i do have a question lauren so i am a strobel"
+    },
+    {
+      "start": 3438.12,
+      "end": 3444.3599999999997,
+      "text": "like i am related to the strobel family so i don't know if i can i don't think that precludes me from"
+    },
+    {
+      "start": 3444.3599999999997,
+      "end": 3454.6,
+      "text": "voting i don't think that's a conflict i do want to throw that out that that okay do you have any financial"
+    },
+    {
+      "start": 3454.6,
+      "end": 3462.04,
+      "text": "interest at all no other than giving i'm a donor but outside of that i do not have any financial"
+    },
+    {
+      "start": 3462.04,
+      "end": 3466.44,
+      "text": "interest at all do you believe that you can act in an unbiased manner in this vote i do i think it's"
+    },
+    {
+      "start": 3466.44,
+      "end": 3471.24,
+      "text": "fine for you okay okay thank you do we have any other discussion"
+    },
+    {
+      "start": 3474.04,
+      "end": 3482.2,
+      "text": "you have a motion on the floor and give a second all in favor aye any opposed motion carries"
+    },
+    {
+      "start": 3484.6,
+      "end": 3489.0,
+      "text": "a motion on the floor and i will add my thanks as well to each of you who have been here and spoken"
+    },
+    {
+      "start": 3489.0,
+      "end": 3497.3199999999997,
+      "text": "today thank you so much yes thank you i'm really proud of you i really enjoyed it"
+    },
+    {
+      "start": 3500.92,
+      "end": 3506.12,
+      "text": "i will seat my chair i was about to say we are going to have to kind of turn over a little bit"
+    },
+    {
+      "start": 3506.12,
+      "end": 3522.8399999999997,
+      "text": "thank you thank you thank you"
+    },
+    {
+      "start": 3525.4,
+      "end": 3527.88,
+      "text": "listen i think the groundbreaking for struggle"
+    },
+    {
+      "start": 3527.88,
+      "end": 3533.1600000000003,
+      "text": "i mean that's weird i was like you better fall through a call because he introduced me to"
+    },
+    {
+      "start": 3533.1600000000003,
+      "end": 3538.6,
+      "text": "the bell invite me to your graduation will you do that because i'm really proud of you"
+    },
+    {
+      "start": 3538.6,
+      "end": 3544.2000000000003,
+      "text": "i'm really proud of you this fall so what's going on this fall we're still in the meeting"
+    },
+    {
+      "start": 3544.2000000000003,
+      "end": 3550.04,
+      "text": "it's still in progress you can take that discussion to the hall yeah the meeting's still going"
+    },
+    {
+      "start": 3550.04,
+      "end": 3561.24,
+      "text": "good"
+    },
+    {
+      "start": 3561.24,
+      "end": 3591.22,
+      "text": "Thank you."
+    },
+    {
+      "start": 3591.24,
+      "end": 3593.08,
+      "text": "It's not me, I don't know."
+    },
+    {
+      "start": 3593.22,
+      "end": 3594.3799999999997,
+      "text": "Does that belong to somebody?"
+    },
+    {
+      "start": 3594.6,
+      "end": 3596.8999999999996,
+      "text": "Is that Tim's?"
+    },
+    {
+      "start": 3602.08,
+      "end": 3603.4199999999996,
+      "text": "Mr. Lee, perhaps?"
+    },
+    {
+      "start": 3603.58,
+      "end": 3603.72,
+      "text": "Tim?"
+    },
+    {
+      "start": 3603.9399999999996,
+      "end": 3605.1,
+      "text": "Mr. Lee, that was there?"
+    },
+    {
+      "start": 3607.08,
+      "end": 3607.52,
+      "text": "Tim?"
+    },
+    {
+      "start": 3607.7599999999998,
+      "end": 3610.68,
+      "text": "Well, I thought Tim Lee, he was here, but I didn't know if he brought anything."
+    },
+    {
+      "start": 3611.3599999999997,
+      "end": 3612.8399999999997,
+      "text": "He's in his seat."
+    },
+    {
+      "start": 3613.6,
+      "end": 3614.3999999999996,
+      "text": "I found out."
+    },
+    {
+      "start": 3618.56,
+      "end": 3619.72,
+      "text": "I think it's been worked out."
+    },
+    {
+      "start": 3619.72,
+      "end": 3620.12,
+      "text": "Okay."
+    },
+    {
+      "start": 3620.6,
+      "end": 3621.7,
+      "text": "There's two chairs."
+    },
+    {
+      "start": 3622.2799999999997,
+      "end": 3623.64,
+      "text": "There's three, four."
+    },
+    {
+      "start": 3624.12,
+      "end": 3625.22,
+      "text": "There's four chairs."
+    },
+    {
+      "start": 3625.22,
+      "end": 3627.1,
+      "text": "There's four chairs if you guys want to come in."
+    },
+    {
+      "start": 3630.62,
+      "end": 3631.22,
+      "text": "Thank you."
+    },
+    {
+      "start": 3631.22,
+      "end": 3631.62,
+      "text": "Can y'all consider?"
+    },
+    {
+      "start": 3632.62,
+      "end": 3634.3799999999997,
+      "text": "One, two, three, four, don't worry."
+    },
+    {
+      "start": 3636.12,
+      "end": 3637.4399999999996,
+      "text": "I'm just wondering if you're excited."
+    },
+    {
+      "start": 3638.08,
+      "end": 3638.52,
+      "text": "All right."
+    },
+    {
+      "start": 3638.56,
+      "end": 3639.02,
+      "text": "Well, good afternoon."
+    },
+    {
+      "start": 3639.08,
+      "end": 3640.3599999999997,
+      "text": "It's nice to be with you all today."
+    },
+    {
+      "start": 3640.36,
+      "end": 3645.36,
+      "text": "Our office recently issued an investigative report related to the Davidson County Clerk's Office."
+    },
+    {
+      "start": 3646.6200000000003,
+      "end": 3648.46,
+      "text": "Real quick, I think it's important, though."
+    },
+    {
+      "start": 3648.5,
+      "end": 3649.7400000000002,
+      "text": "We've got some important people."
+    },
+    {
+      "start": 3649.88,
+      "end": 3652.04,
+      "text": "We've got Ms. Winn, who is a county clerk."
+    },
+    {
+      "start": 3652.04,
+      "end": 3659.22,
+      "text": "The way this kind of unfolded, you had a person at the county clerk's office who saw something"
+    },
+    {
+      "start": 3659.22,
+      "end": 3659.98,
+      "text": "that was suspicious."
+    },
+    {
+      "start": 3660.46,
+      "end": 3663.52,
+      "text": "They notified management of that suspicious activity."
+    },
+    {
+      "start": 3664.02,
+      "end": 3667.38,
+      "text": "There is a law that, you know, they went in there and they started doing their due diligence"
+    },
+    {
+      "start": 3667.38,
+      "end": 3670.2400000000002,
+      "text": "to see, you know, what was going on."
+    },
+    {
+      "start": 3670.38,
+      "end": 3676.54,
+      "text": "When they got to a point where they felt there could be potential fraud, they reported to"
+    },
+    {
+      "start": 3676.54,
+      "end": 3678.02,
+      "text": "the state just like they should have."
+    },
+    {
+      "start": 3678.1,
+      "end": 3682.42,
+      "text": "So that's something to, one, that you had an employee who reported the suspicious activity."
+    },
+    {
+      "start": 3682.98,
+      "end": 3686.6800000000003,
+      "text": "Two, that you had a department that followed through on the law and contacted the state."
+    },
+    {
+      "start": 3687.1600000000003,
+      "end": 3691.7200000000003,
+      "text": "The state contacted us and then we said, Paul, which we appreciate Paul did all the work."
+    },
+    {
+      "start": 3691.84,
+      "end": 3692.98,
+      "text": "We appreciate the work that he did."
+    },
+    {
+      "start": 3692.98,
+      "end": 3697.82,
+      "text": "So, to put it simply, it deals with the misappropriation of cash."
+    },
+    {
+      "start": 3698.32,
+      "end": 3700.9,
+      "text": "You have two different licenses that we're going to be talking about."
+    },
+    {
+      "start": 3701.3,
+      "end": 3705.26,
+      "text": "You've got a standard business license and then you've got a minimal activity business license."
+    },
+    {
+      "start": 3706.28,
+      "end": 3710.28,
+      "text": "The main difference between the two, if you're a business, is how much revenue you bring in."
+    },
+    {
+      "start": 3710.32,
+      "end": 3713.04,
+      "text": "So if it's over $100,000, you do a standard business license."
+    },
+    {
+      "start": 3713.38,
+      "end": 3716.04,
+      "text": "If it's under $100,000, you do a minimal activity license."
+    },
+    {
+      "start": 3716.26,
+      "end": 3721.46,
+      "text": "For the purposes of this investigation, distinguishing factors would include,"
+    },
+    {
+      "start": 3721.46,
+      "end": 3727.16,
+      "text": "if it's a minimal activity license, whether it's the, you know, you're getting the application"
+    },
+    {
+      "start": 3727.16,
+      "end": 3731.9,
+      "text": "for the first time or you're getting a renewal, all that has to be handled by the Davidson County"
+    },
+    {
+      "start": 3731.9,
+      "end": 3732.56,
+      "text": "Clerk's Office."
+    },
+    {
+      "start": 3732.7,
+      "end": 3733.64,
+      "text": "They take the cash."
+    },
+    {
+      "start": 3734.3,
+      "end": 3739.98,
+      "text": "And the system will not print that license without there being cash recorded into the system."
+    },
+    {
+      "start": 3739.98,
+      "end": 3744.0,
+      "text": "And then later down the line, part of their closeout procedures will be matching,"
+    },
+    {
+      "start": 3744.52,
+      "end": 3749.5,
+      "text": "reconciling what was recorded in the system versus what cash they actually have in front of them."
+    },
+    {
+      "start": 3749.5,
+      "end": 3755.06,
+      "text": "If it's a standard business license, if it's the initial application, that will be handled"
+    },
+    {
+      "start": 3755.06,
+      "end": 3756.84,
+      "text": "by the Davidson County Clerk's Office."
+    },
+    {
+      "start": 3757.32,
+      "end": 3764.28,
+      "text": "However, if it's any subsequent renewal, that is paid to the Department of Revenue directly"
+    },
+    {
+      "start": 3764.28,
+      "end": 3765.12,
+      "text": "to the state."
+    },
+    {
+      "start": 3765.56,
+      "end": 3767.88,
+      "text": "But there are some customers who want to come in."
+    },
+    {
+      "start": 3767.92,
+      "end": 3770.12,
+      "text": "They don't have the printer capabilities or whatnot."
+    },
+    {
+      "start": 3770.24,
+      "end": 3771.38,
+      "text": "So they can't print the license."
+    },
+    {
+      "start": 3771.5,
+      "end": 3775.18,
+      "text": "So they will go into the Davidson County Clerk's Office to print the license."
+    },
+    {
+      "start": 3775.18,
+      "end": 3778.72,
+      "text": "But there's no money exchange, so there's nothing put into the system."
+    },
+    {
+      "start": 3779.8999999999996,
+      "end": 3783.1,
+      "text": "Well, basically what happens, you had a staff member there."
+    },
+    {
+      "start": 3783.46,
+      "end": 3785.2,
+      "text": "They were able to manipulate the system."
+    },
+    {
+      "start": 3785.94,
+      "end": 3788.96,
+      "text": "And somebody would come in for a minimal activity license, okay?"
+    },
+    {
+      "start": 3789.22,
+      "end": 3790.2999999999997,
+      "text": "They're supposed to make a payment."
+    },
+    {
+      "start": 3790.64,
+      "end": 3794.56,
+      "text": "But they could manipulate the system as if it were a standard business license."
+    },
+    {
+      "start": 3794.56,
+      "end": 3798.72,
+      "text": "So no money was recorded into the system."
+    },
+    {
+      "start": 3798.7999999999997,
+      "end": 3799.98,
+      "text": "They could print the license."
+    },
+    {
+      "start": 3800.38,
+      "end": 3801.58,
+      "text": "That person could take the money."
+    },
+    {
+      "start": 3801.7799999999997,
+      "end": 3805.38,
+      "text": "And since it's not recorded in the system, it's not going to be part of the reconciliation process."
+    },
+    {
+      "start": 3806.2,
+      "end": 3810.66,
+      "text": "So Paul went out there, and they were helpful in terms of trying to figure out what happened,"
+    },
+    {
+      "start": 3810.7,
+      "end": 3811.7999999999997,
+      "text": "how much money was stolen."
+    },
+    {
+      "start": 3812.2599999999998,
+      "end": 3816.44,
+      "text": "Couldn't totally get a great feel on how much because there were some limitations in terms"
+    },
+    {
+      "start": 3816.44,
+      "end": 3817.98,
+      "text": "of the type of work that you could do."
+    },
+    {
+      "start": 3817.98,
+      "end": 3824.04,
+      "text": "But basically they were able to confirm through video cameras that the person was taking money"
+    },
+    {
+      "start": 3824.04,
+      "end": 3831.2,
+      "text": "from certain customers, certain businesses, but there was no corresponding entry into the system."
+    },
+    {
+      "start": 3831.86,
+      "end": 3833.94,
+      "text": "So it was substantiated."
+    },
+    {
+      "start": 3834.42,
+      "end": 3837.42,
+      "text": "That person resigned back in November, I think, of 2024."
+    },
+    {
+      "start": 3838.44,
+      "end": 3840.28,
+      "text": "They had put some controls in place."
+    },
+    {
+      "start": 3841.1,
+      "end": 3846.96,
+      "text": "One of them, they're working with the software vendor to make it where if it is a minimum activity license,"
+    },
+    {
+      "start": 3846.96,
+      "end": 3849.88,
+      "text": "you cannot put into the system that it's a standard business license."
+    },
+    {
+      "start": 3850.38,
+      "end": 3851.26,
+      "text": "They're working with that."
+    },
+    {
+      "start": 3852.04,
+      "end": 3855.68,
+      "text": "They've hired a position that's basically going to serve as kind of like an external,"
+    },
+    {
+      "start": 3855.9,
+      "end": 3860.56,
+      "text": "like an extra set of eyes in terms of they're going to do spot checks on, you know,"
+    },
+    {
+      "start": 3860.64,
+      "end": 3865.64,
+      "text": "going through the cameras, making sure policies and procedures are being formed, that sort of thing."
+    },
+    {
+      "start": 3866.08,
+      "end": 3867.68,
+      "text": "And they're also working with the vendor."
+    },
+    {
+      "start": 3867.84,
+      "end": 3872.54,
+      "text": "One of the issues that was you could not reconcile the state business license,"
+    },
+    {
+      "start": 3872.64,
+      "end": 3875.82,
+      "text": "what was printed versus what money was actually being received by the state."
+    },
+    {
+      "start": 3875.82,
+      "end": 3876.64,
+      "text": "That was very difficult."
+    },
+    {
+      "start": 3876.64,
+      "end": 3878.7799999999997,
+      "text": "So they're working to resolve it that way."
+    },
+    {
+      "start": 3880.8799999999997,
+      "end": 3883.6,
+      "text": "That's it in a nutshell in terms of very short and sweet,"
+    },
+    {
+      "start": 3883.72,
+      "end": 3886.2,
+      "text": "but we're happy to answer any questions that you have."
+    },
+    {
+      "start": 3891.52,
+      "end": 3891.8799999999997,
+      "text": "Questions?"
+    },
+    {
+      "start": 3892.14,
+      "end": 3895.94,
+      "text": "At the risk of oversimplifying this,"
+    },
+    {
+      "start": 3896.3199999999997,
+      "end": 3898.7599999999998,
+      "text": "is there a reason we're still accepting cash payments for these things?"
+    },
+    {
+      "start": 3899.22,
+      "end": 3900.9,
+      "text": "It seems like that would do away with the problem."
+    },
+    {
+      "start": 3901.7799999999997,
+      "end": 3904.58,
+      "text": "My understanding, y'all may be able to speak to this more than we can,"
+    },
+    {
+      "start": 3904.58,
+      "end": 3907.44,
+      "text": "but a lot of times your citizens, that's the only way that they can pay."
+    },
+    {
+      "start": 3907.72,
+      "end": 3909.98,
+      "text": "I wish we didn't have to take cash."
+    },
+    {
+      "start": 3910.4,
+      "end": 3917.2799999999997,
+      "text": "But there are people who insist on paying only with cash or who want to write checks."
+    },
+    {
+      "start": 3917.44,
+      "end": 3922.48,
+      "text": "People come into our office to write a check so they don't have to pay the 2% fee."
+    },
+    {
+      "start": 3922.48,
+      "end": 3931.16,
+      "text": "And again, if I could say no cash, only card transactions, I absolutely would."
+    },
+    {
+      "start": 3932.04,
+      "end": 3937.4,
+      "text": "But I don't know that I would be serving the public interest to say,"
+    },
+    {
+      "start": 3937.62,
+      "end": 3940.68,
+      "text": "you can't pay me in any other way except with a card,"
+    },
+    {
+      "start": 3940.68,
+      "end": 3945.54,
+      "text": "because what that entails is them having to pay an additional 2%."
+    },
+    {
+      "start": 3945.54,
+      "end": 3949.8399999999997,
+      "text": "I appreciate that."
+    },
+    {
+      "start": 3950.0,
+      "end": 3952.8199999999997,
+      "text": "It just seems like more and more of a common practice that we..."
+    },
+    {
+      "start": 3952.8199999999997,
+      "end": 3953.18,
+      "text": "I know."
+    },
+    {
+      "start": 3953.18,
+      "end": 3954.3799999999997,
+      "text": "...places are all that are in cash."
+    },
+    {
+      "start": 3954.3799999999997,
+      "end": 3955.8199999999997,
+      "text": "And since you do have the option of paying a check to avoid that..."
+    },
+    {
+      "start": 3955.8199999999997,
+      "end": 3957.72,
+      "text": "I absolutely wish I could go that way."
+    },
+    {
+      "start": 3960.22,
+      "end": 3962.46,
+      "text": "Were these proposed software changes,"
+    },
+    {
+      "start": 3963.2599999999998,
+      "end": 3965.68,
+      "text": "where they can't cross the line between the..."
+    },
+    {
+      "start": 3965.68,
+      "end": 3967.52,
+      "text": "Yes."
+    },
+    {
+      "start": 3967.52,
+      "end": 3969.56,
+      "text": "I don't know what you're trying to..."
+    },
+    {
+      "start": 3969.56,
+      "end": 3971.8999999999996,
+      "text": "Basically, you could go in and manipulate the system"
+    },
+    {
+      "start": 3971.8999999999996,
+      "end": 3973.8999999999996,
+      "text": "to turn it into a standard business license."
+    },
+    {
+      "start": 3974.52,
+      "end": 3977.16,
+      "text": "Or at least print the standard business license"
+    },
+    {
+      "start": 3977.16,
+      "end": 3979.08,
+      "text": "without the system expecting a payment."
+    },
+    {
+      "start": 3979.18,
+      "end": 3980.8599999999997,
+      "text": "Because if it's a minimal activity license,"
+    },
+    {
+      "start": 3981.08,
+      "end": 3983.94,
+      "text": "the system is expecting a payment before it's going to print anything."
+    },
+    {
+      "start": 3984.24,
+      "end": 3986.7999999999997,
+      "text": "So what will happen in a situation where"
+    },
+    {
+      "start": 3986.7999999999997,
+      "end": 3989.68,
+      "text": "the previous year they used the minimal,"
+    },
+    {
+      "start": 3989.96,
+      "end": 3993.68,
+      "text": "but they crossed the threshold to require a full..."
+    },
+    {
+      "start": 3993.68,
+      "end": 3998.12,
+      "text": "What happened is that the state changed the threshold."
+    },
+    {
+      "start": 3999.04,
+      "end": 4002.54,
+      "text": "There used to be a time when minimal activity was 3 to 10,000,"
+    },
+    {
+      "start": 4002.7999999999997,
+      "end": 4004.98,
+      "text": "and the state increased it to the 100,000."
+    },
+    {
+      "start": 4005.06,
+      "end": 4008.3799999999997,
+      "text": "So some of these people already had that standard business license"
+    },
+    {
+      "start": 4008.3799999999997,
+      "end": 4011.8999999999996,
+      "text": "because they did business over the $10,000 threshold."
+    },
+    {
+      "start": 4012.52,
+      "end": 4018.68,
+      "text": "And so it's our belief that that change kind of caused a problem..."
+    },
+    {
+      "start": 4018.68,
+      "end": 4025.7999999999997,
+      "text": "help will cause the problem because folks started looking for the business licenses on May 15th."
+    },
+    {
+      "start": 4026.04,
+      "end": 4029.6,
+      "text": "And if I had a standard business license on May 15th,"
+    },
+    {
+      "start": 4029.6,
+      "end": 4031.5,
+      "text": "I would just get one in the mail."
+    },
+    {
+      "start": 4032.74,
+      "end": 4035.3999999999996,
+      "text": "But if I didn't get mine, I'd walk into the office and get one."
+    },
+    {
+      "start": 4035.48,
+      "end": 4037.8599999999997,
+      "text": "And that was part of what happened."
+    },
+    {
+      "start": 4038.22,
+      "end": 4038.94,
+      "text": "Did I get that right, Tammy?"
+    },
+    {
+      "start": 4038.94,
+      "end": 4041.92,
+      "text": "The supervisor override."
+    },
+    {
+      "start": 4042.48,
+      "end": 4045.32,
+      "text": "Well, and then what we've asked for with the new system,"
+    },
+    {
+      "start": 4046.3,
+      "end": 4047.2000000000003,
+      "text": "for the software system,"
+    },
+    {
+      "start": 4047.2000000000003,
+      "end": 4050.46,
+      "text": "is that any time there's a change in the type of business license,"
+    },
+    {
+      "start": 4050.78,
+      "end": 4052.76,
+      "text": "that it would require supervisor approval."
+    },
+    {
+      "start": 4053.9,
+      "end": 4055.4,
+      "text": "Employee can't change anything."
+    },
+    {
+      "start": 4056.52,
+      "end": 4059.06,
+      "text": "The supervisor would have to come in and give the approval"
+    },
+    {
+      "start": 4059.06,
+      "end": 4063.86,
+      "text": "to have the business license change from a standard to a minimal or vice versa."
+    },
+    {
+      "start": 4063.86,
+      "end": 4068.6200000000003,
+      "text": "Questions for Clerk Wynn."
+    },
+    {
+      "start": 4069.0,
+      "end": 4072.48,
+      "text": "So the change that you were speaking to at this..."
+    },
+    {
+      "start": 4072.48,
+      "end": 4077.28,
+      "text": "was at the state as to what amount of business"
+    },
+    {
+      "start": 4077.28,
+      "end": 4080.78,
+      "text": "constituted the different types of licenses."
+    },
+    {
+      "start": 4081.2000000000003,
+      "end": 4082.3,
+      "text": "And it just changed, yeah."
+    },
+    {
+      "start": 4082.34,
+      "end": 4084.28,
+      "text": "When was that point of change?"
+    },
+    {
+      "start": 4084.28,
+      "end": 4086.36,
+      "text": "It was January 24th."
+    },
+    {
+      "start": 4086.44,
+      "end": 4087.78,
+      "text": "24th. January 24th."
+    },
+    {
+      "start": 4087.88,
+      "end": 4088.02,
+      "text": "Okay."
+    },
+    {
+      "start": 4088.02,
+      "end": 4095.1,
+      "text": "So, and was this employee employed at that time?"
+    },
+    {
+      "start": 4095.1,
+      "end": 4095.68,
+      "text": "They were."
+    },
+    {
+      "start": 4095.74,
+      "end": 4096.7,
+      "text": "They were."
+    },
+    {
+      "start": 4096.82,
+      "end": 4098.32,
+      "text": "Doing this task?"
+    },
+    {
+      "start": 4099.14,
+      "end": 4099.46,
+      "text": "Yes."
+    },
+    {
+      "start": 4099.64,
+      "end": 4100.24,
+      "text": "In particular."
+    },
+    {
+      "start": 4100.56,
+      "end": 4100.76,
+      "text": "Okay."
+    },
+    {
+      "start": 4100.92,
+      "end": 4103.38,
+      "text": "So while we could, from camera,"
+    },
+    {
+      "start": 4103.58,
+      "end": 4107.84,
+      "text": "deduce on October 22nd, 24th, November 1, November 12,"
+    },
+    {
+      "start": 4108.76,
+      "end": 4110.52,
+      "text": "we might, it'd be speculation,"
+    },
+    {
+      "start": 4110.9,
+      "end": 4115.44,
+      "text": "but given that kind of threshold moment in November of 2024,"
+    },
+    {
+      "start": 4115.44,
+      "end": 4119.32,
+      "text": "for the fact that the person who was formerly employed was doing this task,"
+    },
+    {
+      "start": 4119.599999999999,
+      "end": 4122.719999999999,
+      "text": "we might presume that in that intervening time,"
+    },
+    {
+      "start": 4123.179999999999,
+      "end": 4125.98,
+      "text": "this was happening or could have been happening."
+    },
+    {
+      "start": 4125.98,
+      "end": 4126.339999999999,
+      "text": "Could have been."
+    },
+    {
+      "start": 4126.5199999999995,
+      "end": 4126.759999999999,
+      "text": "Okay."
+    },
+    {
+      "start": 4127.139999999999,
+      "end": 4127.4,
+      "text": "Okay."
+    },
+    {
+      "start": 4127.759999999999,
+      "end": 4133.139999999999,
+      "text": "And I guess my last question goes a little bit more to,"
+    },
+    {
+      "start": 4134.139999999999,
+      "end": 4139.48,
+      "text": "generally when, whether for cash exchange or some of these smaller actions,"
+    },
+    {
+      "start": 4139.48,
+      "end": 4144.639999999999,
+      "text": "when a particular employee is found to have been conducting,"
+    },
+    {
+      "start": 4144.639999999999,
+      "end": 4147.959999999999,
+      "text": "you know, fraud, malfeasance, or otherwise,"
+    },
+    {
+      "start": 4148.32,
+      "end": 4150.099999999999,
+      "text": "that person resigned."
+    },
+    {
+      "start": 4150.299999999999,
+      "end": 4153.9,
+      "text": "So I know if that person moves to another county,"
+    },
+    {
+      "start": 4154.4,
+      "end": 4156.74,
+      "text": "tries to work at the county clerk or otherwise,"
+    },
+    {
+      "start": 4156.9,
+      "end": 4159.28,
+      "text": "or in that, I know what they call you clerk,"
+    },
+    {
+      "start": 4159.339999999999,
+      "end": 4161.219999999999,
+      "text": "when you're not giving them a good reference, right?"
+    },
+    {
+      "start": 4161.219999999999,
+      "end": 4162.32,
+      "text": "You're going to be real clear."
+    },
+    {
+      "start": 4162.32,
+      "end": 4169.34,
+      "text": "But I do wonder when we have folks in Metro government who resign,"
+    },
+    {
+      "start": 4170.12,
+      "end": 4174.28,
+      "text": "does their record reflect why they resign"
+    },
+    {
+      "start": 4174.28,
+      "end": 4178.62,
+      "text": "so they don't go to another municipality and perpetrate a similar fraud?"
+    },
+    {
+      "start": 4178.74,
+      "end": 4182.719999999999,
+      "text": "If they were to be fired for cause, their record would show that."
+    },
+    {
+      "start": 4183.12,
+      "end": 4187.5,
+      "text": "But can anybody speak to, from an HR perspective, what happens there?"
+    },
+    {
+      "start": 4187.5,
+      "end": 4190.7,
+      "text": "I don't know about the HR side of it."
+    },
+    {
+      "start": 4191.4,
+      "end": 4193.0,
+      "text": "We can ask about that."
+    },
+    {
+      "start": 4193.18,
+      "end": 4197.74,
+      "text": "Yeah, we could have a follow-up on that because I, yeah,"
+    },
+    {
+      "start": 4197.96,
+      "end": 4202.8,
+      "text": "I am concerned that when over recent years,"
+    },
+    {
+      "start": 4202.98,
+      "end": 4206.98,
+      "text": "as we have elevated something that we cannot substantiate"
+    },
+    {
+      "start": 4206.98,
+      "end": 4209.1,
+      "text": "beyond a specific window of time,"
+    },
+    {
+      "start": 4209.4,
+      "end": 4213.8,
+      "text": "but we have reason to believe that it happened for many and many years,"
+    },
+    {
+      "start": 4214.0,
+      "end": 4216.8,
+      "text": "and if they just go and go and work in another government,"
+    },
+    {
+      "start": 4216.8,
+      "end": 4220.08,
+      "text": "like how are we making sure that they're not going to perpetrate that"
+    },
+    {
+      "start": 4220.08,
+      "end": 4222.6,
+      "text": "or use the experience that they learned here"
+    },
+    {
+      "start": 4222.6,
+      "end": 4224.58,
+      "text": "to do that to another government."
+    },
+    {
+      "start": 4224.900000000001,
+      "end": 4226.38,
+      "text": "So I'd like to understand that, please."
+    },
+    {
+      "start": 4226.46,
+      "end": 4226.8,
+      "text": "Thank you."
+    },
+    {
+      "start": 4232.42,
+      "end": 4234.38,
+      "text": "Any other questions or comments on that issue?"
+    },
+    {
+      "start": 4234.64,
+      "end": 4234.78,
+      "text": "No."
+    },
+    {
+      "start": 4235.4800000000005,
+      "end": 4235.76,
+      "text": "Okay."
+    },
+    {
+      "start": 4236.96,
+      "end": 4237.820000000001,
+      "text": "Thank you for being here."
+    },
+    {
+      "start": 4237.92,
+      "end": 4238.360000000001,
+      "text": "Thank you."
+    },
+    {
+      "start": 4238.4800000000005,
+      "end": 4243.400000000001,
+      "text": "And just know that we take very seriously the responsibility we have"
+    },
+    {
+      "start": 4243.4,
+      "end": 4247.5599999999995,
+      "text": "to collect and preserve, protect revenue on behalf of the state"
+    },
+    {
+      "start": 4247.5599999999995,
+      "end": 4248.4,
+      "text": "and the county,"
+    },
+    {
+      "start": 4248.74,
+      "end": 4251.04,
+      "text": "and just know that we will continue to do our best"
+    },
+    {
+      "start": 4251.04,
+      "end": 4252.82,
+      "text": "to protect all the revenue we collect."
+    },
+    {
+      "start": 4253.5199999999995,
+      "end": 4254.0599999999995,
+      "text": "Thank you."
+    },
+    {
+      "start": 4254.179999999999,
+      "end": 4254.799999999999,
+      "text": "Thank you so much."
+    },
+    {
+      "start": 4255.339999999999,
+      "end": 4255.839999999999,
+      "text": "Thank you."
+    },
+    {
+      "start": 4255.84,
+      "end": 4257.26,
+      "text": "Thank you."
+    },
+    {
+      "start": 4265.62,
+      "end": 4268.24,
+      "text": "Next we have our external auditors, Crossland,"
+    },
+    {
+      "start": 4268.400000000001,
+      "end": 4271.96,
+      "text": "presenting the external audit plan for 2025."
+    },
+    {
+      "start": 4273.24,
+      "end": 4274.78,
+      "text": "This is typically done in June."
+    },
+    {
+      "start": 4274.900000000001,
+      "end": 4276.76,
+      "text": "We moved it to September since we knew there might be"
+    },
+    {
+      "start": 4276.76,
+      "end": 4278.16,
+      "text": "some turnover on the audit committee."
+    },
+    {
+      "start": 4282.7,
+      "end": 4283.46,
+      "text": "Thank you."
+    },
+    {
+      "start": 4283.46,
+      "end": 4290.6,
+      "text": "Thank you."
+    },
+    {
+      "start": 4290.6,
+      "end": 4290.6,
+      "text": ""
+    },
+    {
+      "start": 4304.92,
+      "end": 4305.76,
+      "text": "Good afternoon."
+    },
+    {
+      "start": 4307.84,
+      "end": 4309.4800000000005,
+      "text": "Again, I'm John Crossland."
+    },
+    {
+      "start": 4309.48,
+      "end": 4313.0599999999995,
+      "text": "I will go through the plan."
+    },
+    {
+      "start": 4313.179999999999,
+      "end": 4314.299999999999,
+      "text": "As Lauren just said,"
+    },
+    {
+      "start": 4314.4,
+      "end": 4316.679999999999,
+      "text": "that we normally would have done this"
+    },
+    {
+      "start": 4316.679999999999,
+      "end": 4319.919999999999,
+      "text": "in summertime, early summer or something."
+    },
+    {
+      "start": 4320.879999999999,
+      "end": 4323.4,
+      "text": "But we are underway in the audit now."
+    },
+    {
+      "start": 4323.599999999999,
+      "end": 4326.719999999999,
+      "text": "But I'm going to go through and show you what our plan is."
+    },
+    {
+      "start": 4326.78,
+      "end": 4328.44,
+      "text": "And we are executing that plan now."
+    },
+    {
+      "start": 4329.78,
+      "end": 4331.82,
+      "text": "On page one is the agenda."
+    },
+    {
+      "start": 4332.5199999999995,
+      "end": 4334.66,
+      "text": "And these are kind of the items I'm going to talk about."
+    },
+    {
+      "start": 4334.74,
+      "end": 4335.299999999999,
+      "text": "I'll go through."
+    },
+    {
+      "start": 4335.679999999999,
+      "end": 4337.7,
+      "text": "If you have any questions, please stop me."
+    },
+    {
+      "start": 4337.7,
+      "end": 4338.84,
+      "text": "I won't take very long."
+    },
+    {
+      "start": 4338.84,
+      "end": 4340.88,
+      "text": "I know we have a full agenda today."
+    },
+    {
+      "start": 4343.179999999999,
+      "end": 4346.0599999999995,
+      "text": "But any questions, stop me, ask me."
+    },
+    {
+      "start": 4346.4,
+      "end": 4347.099999999999,
+      "text": "I'd be happy to."
+    },
+    {
+      "start": 4347.36,
+      "end": 4350.04,
+      "text": "Page two is our engagement team members."
+    },
+    {
+      "start": 4350.179999999999,
+      "end": 4352.0199999999995,
+      "text": "We do have a few changes on here."
+    },
+    {
+      "start": 4352.02,
+      "end": 4353.02,
+      "text": "We do have a few changes on here."
+    },
+    {
+      "start": 4353.02,
+      "end": 4356.42,
+      "text": "But this also, Mark England, he's over here."
+    },
+    {
+      "start": 4356.52,
+      "end": 4357.9400000000005,
+      "text": "He's the overall audit manager."
+    },
+    {
+      "start": 4358.64,
+      "end": 4359.860000000001,
+      "text": "Last year we had Katie."
+    },
+    {
+      "start": 4362.160000000001,
+      "end": 4367.1,
+      "text": "Mark's been on the audit for a number of years and has moved into that role."
+    },
+    {
+      "start": 4367.3,
+      "end": 4369.0,
+      "text": "We're happy about that."
+    },
+    {
+      "start": 4369.0,
+      "end": 4373.52,
+      "text": "We do have one new audit manager on the hospital, J.D. Cage."
+    },
+    {
+      "start": 4373.52,
+      "end": 4374.24,
+      "text": "He's not here."
+    },
+    {
+      "start": 4374.56,
+      "end": 4378.6,
+      "text": "But he's the new manager on there."
+    },
+    {
+      "start": 4378.66,
+      "end": 4379.74,
+      "text": "I think everybody else."
+    },
+    {
+      "start": 4379.84,
+      "end": 4381.14,
+      "text": "We've shuffled around, myself."
+    },
+    {
+      "start": 4381.64,
+      "end": 4386.2,
+      "text": "And we've brought Erica Sager, who's been an audit partner of ours for 20 years."
+    },
+    {
+      "start": 4386.3,
+      "end": 4387.8,
+      "text": "She's on Metro Water and Sewer."
+    },
+    {
+      "start": 4387.8,
+      "end": 4397.12,
+      "text": "And Jennifer Montrenak is then, she's a concurring reviewer on a few of these areas this year."
+    },
+    {
+      "start": 4397.24,
+      "end": 4402.22,
+      "text": "So we do try to give it a fresh look as we go through year by year."
+    },
+    {
+      "start": 4402.28,
+      "end": 4407.96,
+      "text": "And we rotate around so we have enough partners and enough managers, luckily, to be able to do that."
+    },
+    {
+      "start": 4408.7,
+      "end": 4409.54,
+      "text": "And so we..."
+    },
+    {
+      "start": 4409.54,
+      "end": 4410.52,
+      "text": "Can I ask one question?"
+    },
+    {
+      "start": 4410.64,
+      "end": 4410.9800000000005,
+      "text": "Absolutely."
+    },
+    {
+      "start": 4411.22,
+      "end": 4416.8,
+      "text": "For your audit manager on the hospital, could you maybe speak a little bit to his experience?"
+    },
+    {
+      "start": 4416.8,
+      "end": 4419.96,
+      "text": "Do you play in the hospital arena?"
+    },
+    {
+      "start": 4420.46,
+      "end": 4420.84,
+      "text": "Yes."
+    },
+    {
+      "start": 4421.72,
+      "end": 4426.46,
+      "text": "He has been with us for six or seven years."
+    },
+    {
+      "start": 4427.860000000001,
+      "end": 4430.84,
+      "text": "He has not been on this hospital audit."
+    },
+    {
+      "start": 4431.34,
+      "end": 4435.38,
+      "text": "This is his first year, as it is mine, actually, the first year."
+    },
+    {
+      "start": 4435.62,
+      "end": 4438.0,
+      "text": "I'm the principal in charge of it."
+    },
+    {
+      "start": 4439.28,
+      "end": 4444.3,
+      "text": "We both have some health care experience, and we've been around this hospital audit."
+    },
+    {
+      "start": 4444.3,
+      "end": 4448.12,
+      "text": "I've probably done independent reviews on it in the past and dealt with major issues."
+    },
+    {
+      "start": 4448.7,
+      "end": 4449.72,
+      "text": "But we're both new."
+    },
+    {
+      "start": 4449.860000000001,
+      "end": 4450.88,
+      "text": "So we're getting..."
+    },
+    {
+      "start": 4450.88,
+      "end": 4455.02,
+      "text": "It's a whole new staff over there, and it's a whole new staff on our side."
+    },
+    {
+      "start": 4455.76,
+      "end": 4458.860000000001,
+      "text": "And so far, it's gone really well."
+    },
+    {
+      "start": 4459.400000000001,
+      "end": 4459.96,
+      "text": "I mean..."
+    },
+    {
+      "start": 4459.96,
+      "end": 4465.820000000001,
+      "text": "Because of their new staff, your new staff, do you see that as a higher level of risk in the audit this time?"
+    },
+    {
+      "start": 4465.82,
+      "end": 4466.82,
+      "text": "Yeah."
+    },
+    {
+      "start": 4467.0599999999995,
+      "end": 4469.639999999999,
+      "text": "I mean, we adjust our risk for that, absolutely."
+    },
+    {
+      "start": 4471.099999999999,
+      "end": 4476.299999999999,
+      "text": "But, you know, we figure out how to compensate for that through our audit procedures, and we're doing so."
+    },
+    {
+      "start": 4476.66,
+      "end": 4479.78,
+      "text": "We're actually in the third week of field work right now already."
+    },
+    {
+      "start": 4479.94,
+      "end": 4480.98,
+      "text": "So we're well..."
+    },
+    {
+      "start": 4480.98,
+      "end": 4484.679999999999,
+      "text": "We're at least halfway through the audit now, through the field work part."
+    },
+    {
+      "start": 4484.94,
+      "end": 4485.099999999999,
+      "text": "All right."
+    },
+    {
+      "start": 4485.599999999999,
+      "end": 4486.54,
+      "text": "Thank you for that job."
+    },
+    {
+      "start": 4486.639999999999,
+      "end": 4487.34,
+      "text": "Yeah, great question."
+    },
+    {
+      "start": 4487.34,
+      "end": 4492.72,
+      "text": "Page three is our responsibilities."
+    },
+    {
+      "start": 4493.360000000001,
+      "end": 4495.8,
+      "text": "We like to lay out what the auditor's responsibilities."
+    },
+    {
+      "start": 4496.12,
+      "end": 4498.42,
+      "text": "It is an external financial statement audit."
+    },
+    {
+      "start": 4499.08,
+      "end": 4505.7,
+      "text": "The word audit is loosely used for many, many things, especially today."
+    },
+    {
+      "start": 4506.06,
+      "end": 4507.58,
+      "text": "There's internal audit projects."
+    },
+    {
+      "start": 4507.8,
+      "end": 4510.7,
+      "text": "There's monitoring versus auditing."
+    },
+    {
+      "start": 4510.88,
+      "end": 4511.92,
+      "text": "There's external audit."
+    },
+    {
+      "start": 4512.02,
+      "end": 4514.46,
+      "text": "This is an external audit of the ACFER."
+    },
+    {
+      "start": 4514.46,
+      "end": 4529.44,
+      "text": "And so our responsibilities are to express opinions about whether the financial statements prepared by management under the oversight of this audit committee are fairly presented in all material respects."
+    },
+    {
+      "start": 4529.66,
+      "end": 4531.42,
+      "text": "We don't audit without exception."
+    },
+    {
+      "start": 4531.66,
+      "end": 4532.9800000000005,
+      "text": "We audit to materiality."
+    },
+    {
+      "start": 4533.56,
+      "end": 4535.9800000000005,
+      "text": "And that it's in conformity with GAAP."
+    },
+    {
+      "start": 4536.66,
+      "end": 4539.16,
+      "text": "Not only GAAP, but government auditing standards."
+    },
+    {
+      "start": 4539.54,
+      "end": 4542.32,
+      "text": "I came in here a minute ago and talked about uniform guidance."
+    },
+    {
+      "start": 4542.32,
+      "end": 4544.44,
+      "text": "There's a yellow book right there."
+    },
+    {
+      "start": 4544.5199999999995,
+      "end": 4547.48,
+      "text": "I have some funny stories of why that covers yellow for another day."
+    },
+    {
+      "start": 4548.139999999999,
+      "end": 4551.599999999999,
+      "text": "But the uniform guidance is the single audit."
+    },
+    {
+      "start": 4551.84,
+      "end": 4562.28,
+      "text": "And it is a compliance audit by the federal government that we follow those rules and regulations and have a separate contract to audit with the state for those procedures."
+    },
+    {
+      "start": 4562.28,
+      "end": 4575.5199999999995,
+      "text": "Our responsibilities are to also report back to management and this audit committee if we have any material weaknesses, if we have any significant deficiencies, and, of course, if we have any noncompliance within the single audit."
+    },
+    {
+      "start": 4575.5199999999995,
+      "end": 4578.34,
+      "text": "And, of course, if we detect or find any fraud."
+    },
+    {
+      "start": 4579.66,
+      "end": 4582.28,
+      "text": "Management, it is their report."
+    },
+    {
+      "start": 4582.28,
+      "end": 4583.219999999999,
+      "text": "It's their ACFER."
+    },
+    {
+      "start": 4583.599999999999,
+      "end": 4592.24,
+      "text": "They're in charge of drafting the report, of adopting the proper accounting policies of which we audit and making sure compliance with GAAP."
+    },
+    {
+      "start": 4592.88,
+      "end": 4598.4,
+      "text": "Establishing and maintaining internal controls, which I've heard a lot talk about internal controls here."
+    },
+    {
+      "start": 4598.9,
+      "end": 4600.44,
+      "text": "Preventing and detecting fraud."
+    },
+    {
+      "start": 4601.099999999999,
+      "end": 4604.42,
+      "text": "Disclosing to this audit committee and to us if they detect any fraud."
+    },
+    {
+      "start": 4604.42,
+      "end": 4609.16,
+      "text": "So we can adjust our audit scope when it comes to the external audit."
+    },
+    {
+      "start": 4611.5,
+      "end": 4613.28,
+      "text": "Next page is independence."
+    },
+    {
+      "start": 4614.36,
+      "end": 4622.64,
+      "text": "Rule 101, AICPA's Code of Professional Conduct requires us, and government audit standards, requires us to be independent."
+    },
+    {
+      "start": 4622.78,
+      "end": 4623.92,
+      "text": "In fact, in appearance."
+    },
+    {
+      "start": 4624.7,
+      "end": 4625.8,
+      "text": "And we are."
+    },
+    {
+      "start": 4627.64,
+      "end": 4630.06,
+      "text": "Next page five is fraud risk."
+    },
+    {
+      "start": 4630.8,
+      "end": 4632.76,
+      "text": "That's covered under SAS 99."
+    },
+    {
+      "start": 4632.76,
+      "end": 4635.4400000000005,
+      "text": "This is not a forensic audit."
+    },
+    {
+      "start": 4636.0,
+      "end": 4646.3,
+      "text": "But there are certain high-risk areas that we do audit concerning fraud risk and whether that could impact the financial statements in a material way."
+    },
+    {
+      "start": 4646.780000000001,
+      "end": 4652.360000000001,
+      "text": "There's four-pronged strategy that we basically use that's stipulated in SAS 99."
+    },
+    {
+      "start": 4653.08,
+      "end": 4654.06,
+      "text": "Gather information."
+    },
+    {
+      "start": 4654.06,
+      "end": 4656.24,
+      "text": "That is brainstorming amongst ourselves."
+    },
+    {
+      "start": 4656.68,
+      "end": 4658.96,
+      "text": "Where are these high-risk areas of fraud?"
+    },
+    {
+      "start": 4658.96,
+      "end": 4673.12,
+      "text": "A lot of that comes through our inquiries of not only the management at the finance department, but internal audit, whether it be whatever department, whether it be a constitutional office like the clerk's office."
+    },
+    {
+      "start": 4673.12,
+      "end": 4680.96,
+      "text": "We ask various people amongst all the different divisions of Metro and come up with identified risk."
+    },
+    {
+      "start": 4680.96,
+      "end": 4682.24,
+      "text": "That's one of the other prongs."
+    },
+    {
+      "start": 4682.76,
+      "end": 4684.98,
+      "text": "And then we test for management override."
+    },
+    {
+      "start": 4685.74,
+      "end": 4687.78,
+      "text": "And then we evaluate all that evidence."
+    },
+    {
+      "start": 4687.78,
+      "end": 4693.259999999999,
+      "text": "And that helps bring us to our focus on where those high-risk areas are."
+    },
+    {
+      "start": 4693.8,
+      "end": 4700.12,
+      "text": "And then we either substantially audit, substantively audit it, or audit the controls surrounding those areas."
+    },
+    {
+      "start": 4700.12,
+      "end": 4706.599999999999,
+      "text": "The next page is our methodology, overall methodology and approach."
+    },
+    {
+      "start": 4707.04,
+      "end": 4708.76,
+      "text": "We have it here in a flow chart."
+    },
+    {
+      "start": 4709.44,
+      "end": 4716.16,
+      "text": "And then on the next page, in written form, the audit, planning, and a risk assessment."
+    },
+    {
+      "start": 4716.28,
+      "end": 4717.72,
+      "text": "I kind of talked about it with fraud."
+    },
+    {
+      "start": 4717.72,
+      "end": 4726.280000000001,
+      "text": "But our goal is to find and identify where we think there are high-risk areas of material misstatement."
+    },
+    {
+      "start": 4726.46,
+      "end": 4730.320000000001,
+      "text": "And that is where our focus is during the external audit."
+    },
+    {
+      "start": 4732.92,
+      "end": 4741.92,
+      "text": "Right now, management override of controls and improper revenue recognition, those are kind of always high-risk areas, especially for government."
+    },
+    {
+      "start": 4741.92,
+      "end": 4751.6,
+      "text": "So when we look at testing, like I said before, we do certain areas where we test controls and certain areas where we do substantive testing."
+    },
+    {
+      "start": 4752.1,
+      "end": 4757.9400000000005,
+      "text": "On the bottom of page 7 here, we've kind of put some examples of what those are."
+    },
+    {
+      "start": 4757.9400000000005,
+      "end": 4771.9,
+      "text": "So controls, we're going to test cash receipts, property tax billings, employee comp, bank recs, those kind of items where we can test to see that we believe there are strong controls surrounding it."
+    },
+    {
+      "start": 4771.92,
+      "end": 4772.92,
+      "text": "And we're able to test those areas."
+    },
+    {
+      "start": 4772.92,
+      "end": 4777.24,
+      "text": "And we're able to test that those controls are intact and properly functioning."
+    },
+    {
+      "start": 4777.74,
+      "end": 4782.92,
+      "text": "And therefore, we can rely on all the work that underlies those controls."
+    },
+    {
+      "start": 4783.46,
+      "end": 4793.24,
+      "text": "Substantive testing, sometimes it just makes more sense if you have hundreds of millions of dollars of investments just to confirm it with the brokerage firm or a cash account."
+    },
+    {
+      "start": 4793.56,
+      "end": 4795.62,
+      "text": "And that's when you get into substantive testing."
+    },
+    {
+      "start": 4795.62,
+      "end": 4805.98,
+      "text": "You can see some of those areas there, especially when you get to the hospital, third-party settlements, patient accounts receivable, things like that."
+    },
+    {
+      "start": 4807.54,
+      "end": 4812.28,
+      "text": "The next page I kind of touched on earlier is the single audit."
+    },
+    {
+      "start": 4812.84,
+      "end": 4815.86,
+      "text": "I won't go through the 20% and the calculation and all that."
+    },
+    {
+      "start": 4815.86,
+      "end": 4829.38,
+      "text": "But based on last year's CIFA, which is the statement that says what all the federal expenditures are, because those major programs that we determine, it's not based on revenue."
+    },
+    {
+      "start": 4829.66,
+      "end": 4832.139999999999,
+      "text": "It's not based on the total grant awarded."
+    },
+    {
+      "start": 4832.339999999999,
+      "end": 4836.54,
+      "text": "It's based on the actual expenditures under that grant for the year."
+    },
+    {
+      "start": 4836.54,
+      "end": 4841.6,
+      "text": "And so we don't have a final CIFA yet, nor have we still don't, right?"
+    },
+    {
+      "start": 4842.3,
+      "end": 4844.08,
+      "text": "Nor would we expect to have it yet."
+    },
+    {
+      "start": 4844.46,
+      "end": 4852.08,
+      "text": "But if we did, these are the programs that we're kind of guessing that we'll test as major programs."
+    },
+    {
+      "start": 4853.1,
+      "end": 4857.4,
+      "text": "Who provides the CIFA and what does that acronym stand for?"
+    },
+    {
+      "start": 4859.9,
+      "end": 4860.46,
+      "text": "Catherine."
+    },
+    {
+      "start": 4861.0199999999995,
+      "end": 4862.0,
+      "text": "Catherine and Donna."
+    },
+    {
+      "start": 4862.34,
+      "end": 4864.88,
+      "text": "Catherine and Donna provide the CIFA for us."
+    },
+    {
+      "start": 4864.88,
+      "end": 4867.74,
+      "text": "And the statement expenditures for federal rewards."
+    },
+    {
+      "start": 4868.14,
+      "end": 4868.66,
+      "text": "I didn't know who."
+    },
+    {
+      "start": 4868.92,
+      "end": 4871.2,
+      "text": "A lot of people get it to it."
+    },
+    {
+      "start": 4871.54,
+      "end": 4872.36,
+      "text": "Management gets it."
+    },
+    {
+      "start": 4872.9800000000005,
+      "end": 4878.42,
+      "text": "But there's different departments that includes, like, you might be a better one day."
+    },
+    {
+      "start": 4878.54,
+      "end": 4890.04,
+      "text": "So finance provides them with the expenditures out of the grants and a certain threshold in the year, and then that informs."
+    },
+    {
+      "start": 4890.04,
+      "end": 4896.58,
+      "text": "They'll give us a full listing of all federal expenditures, whether it's subject to audit."
+    },
+    {
+      "start": 4896.86,
+      "end": 4898.2,
+      "text": "I mean, everything's subject to audit."
+    },
+    {
+      "start": 4898.7,
+      "end": 4899.9,
+      "text": "The full, full."
+    },
+    {
+      "start": 4902.4,
+      "end": 4903.26,
+      "text": "The departments report."
+    },
+    {
+      "start": 4903.26,
+      "end": 4905.44,
+      "text": "The different departments have to report to finance."
+    },
+    {
+      "start": 4905.56,
+      "end": 4906.84,
+      "text": "That's what I was trying to figure out."
+    },
+    {
+      "start": 4906.9,
+      "end": 4908.34,
+      "text": "I didn't know if you were asking that or not."
+    },
+    {
+      "start": 4908.34,
+      "end": 4911.6,
+      "text": "So every year, finance will do it before the audit begins."
+    },
+    {
+      "start": 4911.72,
+      "end": 4912.8,
+      "text": "We do a year-end training."
+    },
+    {
+      "start": 4912.96,
+      "end": 4917.42,
+      "text": "We also have a single audit training that we roll out to all the departments to talk about."
+    },
+    {
+      "start": 4917.52,
+      "end": 4923.900000000001,
+      "text": "Here's what you need to send in for single audit and what the single audit is, and we try and educate folks on the single audit."
+    },
+    {
+      "start": 4923.9,
+      "end": 4928.879999999999,
+      "text": "Then we receive information from the various departments."
+    },
+    {
+      "start": 4929.42,
+      "end": 4930.719999999999,
+      "text": "We also match that."
+    },
+    {
+      "start": 4930.839999999999,
+      "end": 4936.98,
+      "text": "OFA actually keeps a database of all the grant contracts that have come in."
+    },
+    {
+      "start": 4937.259999999999,
+      "end": 4942.24,
+      "text": "So we do some matching to say, did this department report to us correctly?"
+    },
+    {
+      "start": 4942.54,
+      "end": 4946.9,
+      "text": "And we say, yes, that matches with the database that OFA collects."
+    },
+    {
+      "start": 4946.9,
+      "end": 4955.86,
+      "text": "We are working to actually procure a system that will help automate some of this instead of it being in a database."
+    },
+    {
+      "start": 4955.86,
+      "end": 4956.4,
+      "text": "Access database."
+    },
+    {
+      "start": 4956.4,
+      "end": 4957.62,
+      "text": "Access database."
+    },
+    {
+      "start": 4957.62,
+      "end": 4957.66,
+      "text": "Access database."
+    },
+    {
+      "start": 4957.66,
+      "end": 4966.759999999999,
+      "text": "It will actually be in software that will help us a little bit to wrap our arms around it, and it'll make it a lot more efficient, if you will."
+    },
+    {
+      "start": 4967.219999999999,
+      "end": 4968.339999999999,
+      "text": "So that's how that works."
+    },
+    {
+      "start": 4968.46,
+      "end": 4975.179999999999,
+      "text": "And then finance, once they gather all the information from the departments, they will put it into an Excel spreadsheet and all of the information."
+    },
+    {
+      "start": 4975.18,
+      "end": 4978.88,
+      "text": "They send it to the auditors and then turn it over to them for the audit process."
+    },
+    {
+      "start": 4979.200000000001,
+      "end": 4979.6,
+      "text": "Got it."
+    },
+    {
+      "start": 4979.6,
+      "end": 4980.12,
+      "text": "Thank you."
+    },
+    {
+      "start": 4980.22,
+      "end": 4980.360000000001,
+      "text": "Okay."
+    },
+    {
+      "start": 4980.360000000001,
+      "end": 4980.52,
+      "text": "Okay."
+    },
+    {
+      "start": 4980.52,
+      "end": 4980.76,
+      "text": "Yeah."
+    },
+    {
+      "start": 4980.76,
+      "end": 4981.280000000001,
+      "text": "Okay."
+    },
+    {
+      "start": 4984.42,
+      "end": 4987.14,
+      "text": "Next page is prior year issues and recommendations."
+    },
+    {
+      "start": 4987.400000000001,
+      "end": 4993.700000000001,
+      "text": "We didn't have any material weaknesses or significant deficiencies in the prior year or compliance findings."
+    },
+    {
+      "start": 4993.860000000001,
+      "end": 5003.42,
+      "text": "So we did have some management letter comments of which we went over with the committee, but nothing that would affect this single audit threshold, which we've had in the past."
+    },
+    {
+      "start": 5003.4800000000005,
+      "end": 5003.72,
+      "text": "Congratulations."
+    },
+    {
+      "start": 5004.12,
+      "end": 5004.3,
+      "text": "Yeah."
+    },
+    {
+      "start": 5004.3,
+      "end": 5004.84,
+      "text": "That's good."
+    },
+    {
+      "start": 5005.4400000000005,
+      "end": 5008.3,
+      "text": "Here, page 11, we've issued just new statements."
+    },
+    {
+      "start": 5008.96,
+      "end": 5014.22,
+      "text": "We actually had a call today on GASB 101 compensated absences."
+    },
+    {
+      "start": 5014.56,
+      "end": 5022.9400000000005,
+      "text": "That will have an effect on this year's ACFER and management's on top of that, and it'll be properly reported."
+    },
+    {
+      "start": 5023.12,
+      "end": 5026.76,
+      "text": "So can I elaborate just a little bit on what compensated absences are?"
+    },
+    {
+      "start": 5026.76,
+      "end": 5032.42,
+      "text": "So at Metro, we accrue sick time, and so that would be a compensated absence."
+    },
+    {
+      "start": 5032.42,
+      "end": 5041.46,
+      "text": "So in the past, we have not been required under GASB to accrue those at the government-wide financial statement level."
+    },
+    {
+      "start": 5041.46,
+      "end": 5043.46,
+      "text": "But this year, we will be accruing those."
+    },
+    {
+      "start": 5043.46,
+      "end": 5049.2,
+      "text": "So, and it will result in a prior period adjustment as well."
+    },
+    {
+      "start": 5049.2,
+      "end": 5052.0,
+      "text": "So I just, we know that's coming."
+    },
+    {
+      "start": 5052.0,
+      "end": 5054.82,
+      "text": "That's not a, oh my gosh, you had a prior period adjustment."
+    },
+    {
+      "start": 5055.34,
+      "end": 5059.92,
+      "text": "It's just part of the GASB and implementing this GASB 101 this year."
+    },
+    {
+      "start": 5059.92,
+      "end": 5063.12,
+      "text": "You have vacation time as well, sick time and vacation time."
+    },
+    {
+      "start": 5063.12,
+      "end": 5065.84,
+      "text": "So we've done, we've been doing vacation time."
+    },
+    {
+      "start": 5065.9,
+      "end": 5066.28,
+      "text": "That's already been."
+    },
+    {
+      "start": 5066.28,
+      "end": 5067.4400000000005,
+      "text": "This is just for."
+    },
+    {
+      "start": 5067.52,
+      "end": 5068.06,
+      "text": "This adds."
+    },
+    {
+      "start": 5068.26,
+      "end": 5070.04,
+      "text": "This adds to that accrual."
+    },
+    {
+      "start": 5070.38,
+      "end": 5070.52,
+      "text": "Okay."
+    },
+    {
+      "start": 5070.66,
+      "end": 5074.78,
+      "text": "Sick time for, estimated sick time that it will be used."
+    },
+    {
+      "start": 5075.18,
+      "end": 5075.56,
+      "text": "Yes."
+    },
+    {
+      "start": 5075.64,
+      "end": 5077.58,
+      "text": "Which is really complicated."
+    },
+    {
+      "start": 5078.36,
+      "end": 5078.82,
+      "text": "It is."
+    },
+    {
+      "start": 5079.06,
+      "end": 5079.4800000000005,
+      "text": "It's a lot."
+    },
+    {
+      "start": 5079.48,
+      "end": 5079.599999999999,
+      "text": "Yeah."
+    },
+    {
+      "start": 5080.0599999999995,
+      "end": 5080.24,
+      "text": "Yeah."
+    },
+    {
+      "start": 5080.24,
+      "end": 5084.5599999999995,
+      "text": "And we didn't record it previously because we don't pay out our sick."
+    },
+    {
+      "start": 5084.66,
+      "end": 5084.78,
+      "text": "Right."
+    },
+    {
+      "start": 5084.78,
+      "end": 5086.339999999999,
+      "text": "When people leave, we don't pay it out."
+    },
+    {
+      "start": 5086.339999999999,
+      "end": 5086.4,
+      "text": "Right."
+    },
+    {
+      "start": 5086.4,
+      "end": 5088.58,
+      "text": "So we don't want to, didn't want to accrue it."
+    },
+    {
+      "start": 5088.879999999999,
+      "end": 5095.719999999999,
+      "text": "But now, since GASB is saying we have to, we are making a calculation to, that's determined."
+    },
+    {
+      "start": 5095.719999999999,
+      "end": 5100.66,
+      "text": "The viewing public GASB is, and myself, because I can't, I know what it is, but I can't."
+    },
+    {
+      "start": 5100.66,
+      "end": 5101.12,
+      "text": "General accounting standards."
+    },
+    {
+      "start": 5101.299999999999,
+      "end": 5102.62,
+      "text": "General accounting standards."
+    },
+    {
+      "start": 5102.62,
+      "end": 5103.139999999999,
+      "text": "Governmental."
+    },
+    {
+      "start": 5103.28,
+      "end": 5103.94,
+      "text": "Governmental."
+    },
+    {
+      "start": 5103.94,
+      "end": 5113.639999999999,
+      "text": "So the for-profit and non-profit world follows FASB, and the government's version is GASB."
+    },
+    {
+      "start": 5113.639999999999,
+      "end": 5114.12,
+      "text": "GASB."
+    },
+    {
+      "start": 5114.44,
+      "end": 5114.74,
+      "text": "Yes."
+    },
+    {
+      "start": 5115.32,
+      "end": 5115.759999999999,
+      "text": "Understood."
+    },
+    {
+      "start": 5116.0,
+      "end": 5116.36,
+      "text": "Thank you."
+    },
+    {
+      "start": 5117.04,
+      "end": 5117.24,
+      "text": "Sure."
+    },
+    {
+      "start": 5119.879999999999,
+      "end": 5123.94,
+      "text": "102 is just a reporting standard."
+    },
+    {
+      "start": 5124.419999999999,
+      "end": 5126.879999999999,
+      "text": "We'll make sure that there's nothing in there that'll affect."
+    },
+    {
+      "start": 5126.879999999999,
+      "end": 5128.44,
+      "text": "There might be one more sentence."
+    },
+    {
+      "start": 5128.44,
+      "end": 5134.54,
+      "text": "I mean, when GASB was created in, I think, 1984, it kind of cut FASB off and said, government"
+    },
+    {
+      "start": 5134.54,
+      "end": 5135.62,
+      "text": "just can't follow that anymore."
+    },
+    {
+      "start": 5136.12,
+      "end": 5139.219999999999,
+      "text": "But there are some loose ends that are finally being tied up."
+    },
+    {
+      "start": 5139.839999999999,
+      "end": 5142.0599999999995,
+      "text": "And so that's just clarification reporting."
+    },
+    {
+      "start": 5142.679999999999,
+      "end": 5145.66,
+      "text": "103 and 104 will not be applicable this year."
+    },
+    {
+      "start": 5145.759999999999,
+      "end": 5146.919999999999,
+      "text": "It'll be 26."
+    },
+    {
+      "start": 5147.74,
+      "end": 5154.86,
+      "text": "But my guess is there will be, there definitely will be, 103 will affect, I mean, it'll affect"
+    },
+    {
+      "start": 5154.86,
+      "end": 5156.94,
+      "text": "every government, but it's just reporting."
+    },
+    {
+      "start": 5157.08,
+      "end": 5159.32,
+      "text": "It's not counting, just reporting."
+    },
+    {
+      "start": 5159.98,
+      "end": 5165.62,
+      "text": "And then 104 is just enhanced disclosures on capital assets."
+    },
+    {
+      "start": 5166.54,
+      "end": 5167.04,
+      "text": "Is that like-"
+    },
+    {
+      "start": 5167.04,
+      "end": 5177.799999999999,
+      "text": "Mainly intangibles, right of use assets, new considered assets that haven't been exactly"
+    },
+    {
+      "start": 5177.799999999999,
+      "end": 5180.0199999999995,
+      "text": "covered on how to disclose."
+    },
+    {
+      "start": 5180.48,
+      "end": 5180.88,
+      "text": "Okay."
+    },
+    {
+      "start": 5180.88,
+      "end": 5181.12,
+      "text": "Okay."
+    },
+    {
+      "start": 5181.58,
+      "end": 5181.78,
+      "text": "Yeah."
+    },
+    {
+      "start": 5181.78,
+      "end": 5190.78,
+      "text": "Page 12 is our general timeline of, you know, we've been out working central government since"
+    },
+    {
+      "start": 5190.78,
+      "end": 5193.0199999999995,
+      "text": "the summer, mainly testing controls."
+    },
+    {
+      "start": 5194.139999999999,
+      "end": 5196.7,
+      "text": "Kind of our timeline of when during the year."
+    },
+    {
+      "start": 5196.94,
+      "end": 5202.24,
+      "text": "And I think we'll, right so far, right now, we're on schedule."
+    },
+    {
+      "start": 5203.08,
+      "end": 5203.08,
+      "text": ""
+    },
+    {
+      "start": 5204.7,
+      "end": 5208.74,
+      "text": "September looks to be the month when you're doing all the things for this graph."
+    },
+    {
+      "start": 5209.599999999999,
+      "end": 5211.04,
+      "text": "We're very busy right now."
+    },
+    {
+      "start": 5211.04,
+      "end": 5212.04,
+      "text": "Yes."
+    },
+    {
+      "start": 5213.04,
+      "end": 5214.94,
+      "text": "Laura, our next meeting is December."
+    },
+    {
+      "start": 5215.16,
+      "end": 5215.38,
+      "text": "Yes."
+    },
+    {
+      "start": 5216.04,
+      "end": 5219.66,
+      "text": "And that will be the meeting where we will-"
+    },
+    {
+      "start": 5219.66,
+      "end": 5221.22,
+      "text": "Have the draft and executive session."
+    },
+    {
+      "start": 5223.4,
+      "end": 5230.9,
+      "text": "12 is just the anticipated completion if everything goes as planned for all the different deliverables."
+    },
+    {
+      "start": 5230.9,
+      "end": 5236.799999999999,
+      "text": "And then we have our contacts, page 13."
+    },
+    {
+      "start": 5238.799999999999,
+      "end": 5239.9,
+      "text": "I can answer any questions."
+    },
+    {
+      "start": 5239.9,
+      "end": 5244.5,
+      "text": "I want to ask a quick follow-up question to Chair Bates' question."
+    },
+    {
+      "start": 5244.5,
+      "end": 5246.5,
+      "text": "So we will have two meetings in December."
+    },
+    {
+      "start": 5246.5,
+      "end": 5251.62,
+      "text": "One in executive session to review the act firm, right?"
+    },
+    {
+      "start": 5251.62,
+      "end": 5257.5,
+      "text": "And then we will have a second one where we actually accept, we don't approve it, accept"
+    },
+    {
+      "start": 5257.5,
+      "end": 5259.5,
+      "text": "the annual comprehensive financial report."
+    },
+    {
+      "start": 5259.5,
+      "end": 5261.5,
+      "text": "because it will be filed by 12-31."
+    },
+    {
+      "start": 5261.5,
+      "end": 5262.5,
+      "text": "We're on the same page."
+    },
+    {
+      "start": 5262.5,
+      "end": 5263.5,
+      "text": "Congratulations, Mark, by the way."
+    },
+    {
+      "start": 5263.5,
+      "end": 5264.5,
+      "text": "Thank you, John."
+    },
+    {
+      "start": 5264.5,
+      "end": 5265.5,
+      "text": "Sure."
+    },
+    {
+      "start": 5265.5,
+      "end": 5266.5,
+      "text": "Would you all kindly leave one extra copy as well for the council office?"
+    },
+    {
+      "start": 5266.5,
+      "end": 5266.5,
+      "text": ""
+    },
+    {
+      "start": 5266.5,
+      "end": 5266.5,
+      "text": ""
+    },
+    {
+      "start": 5266.5,
+      "end": 5267.5,
+      "text": "You can just put it on the edge of the table right there."
+    },
+    {
+      "start": 5267.5,
+      "end": 5268.5,
+      "text": "I'll make sure to get it when I go."
+    },
+    {
+      "start": 5268.5,
+      "end": 5269.5,
+      "text": "Thank you so much."
+    },
+    {
+      "start": 5269.5,
+      "end": 5270.5,
+      "text": "Yes."
+    },
+    {
+      "start": 5270.5,
+      "end": 5271.5,
+      "text": "You said that."
+    },
+    {
+      "start": 5271.5,
+      "end": 5272.5,
+      "text": "Annual comprehensive financial report."
+    },
+    {
+      "start": 5272.5,
+      "end": 5273.5,
+      "text": "Our next item."
+    },
+    {
+      "start": 5273.5,
+      "end": 5274.5,
+      "text": "Is it going to be accessible?"
+    },
+    {
+      "start": 5274.5,
+      "end": 5275.5,
+      "text": "Yes."
+    },
+    {
+      "start": 5275.5,
+      "end": 5277.5,
+      "text": "So annually-"
+    },
+    {
+      "start": 5277.5,
+      "end": 5283.5,
+      "text": "Internally for our office, we do a self-assessment to make sure that we're following yellow book standards."
+    },
+    {
+      "start": 5283.5,
+      "end": 5287.5,
+      "text": "And also we do an annual assessment of the audit committee to make sure that we're following"
+    },
+    {
+      "start": 5287.5,
+      "end": 5290.5,
+      "text": "working with critical feedback and health protection in our office."
+    },
+    {
+      "start": 5290.5,
+      "end": 5293.5,
+      "text": "You're doing an annual assessment of the audit committee to make sure that we're following"
+    },
+    {
+      "start": 5293.5,
+      "end": 5295.5,
+      "text": "good job of giving us an existing financial report."
+    },
+    {
+      "start": 5295.5,
+      "end": 5296.5,
+      "text": "That's right."
+    },
+    {
+      "start": 5296.5,
+      "end": 5297.5,
+      "text": "If you don't get here."
+    },
+    {
+      "start": 5297.5,
+      "end": 5298.5,
+      "text": "If you don't get out of time, do you want to call me the policy or let me get out of"
+    },
+    {
+      "start": 5298.5,
+      "end": 5299.5,
+      "text": "as much other eye contact by doing this?"
+    },
+    {
+      "start": 5299.5,
+      "end": 5300.5,
+      "text": "Okay."
+    },
+    {
+      "start": 5300.5,
+      "end": 5301.5,
+      "text": "How are you doing to call me?"
+    },
+    {
+      "start": 5301.5,
+      "end": 5302.5,
+      "text": "Okay."
+    },
+    {
+      "start": 5302.5,
+      "end": 5303.5,
+      "text": "How are you doing to call me?"
+    },
+    {
+      "start": 5303.5,
+      "end": 5304.5,
+      "text": "All right."
+    },
+    {
+      "start": 5304.5,
+      "end": 5305.5,
+      "text": "Well, this is going to be able to call me a report and get out of all of your audience."
+    },
+    {
+      "start": 5305.5,
+      "end": 5308.68,
+      "text": "assessment of the audit committee to make sure that the audit committee is"
+    },
+    {
+      "start": 5308.68,
+      "end": 5314.52,
+      "text": "meeting the bylaws that you all have set forth. This is kind of an"
+    },
+    {
+      "start": 5314.52,
+      "end": 5318.78,
+      "text": "accountability reporting since our office tends to do and manage most of"
+    },
+    {
+      "start": 5318.78,
+      "end": 5322.6,
+      "text": "these items it's accountability for you all to see that we are making sure that"
+    },
+    {
+      "start": 5322.6,
+      "end": 5328.96,
+      "text": "those bylaws are met. This year was all green again. Basically it means that you"
+    },
+    {
+      "start": 5328.96,
+      "end": 5332.54,
+      "text": "met the appropriate amount of times, you met with the external auditors the"
+    },
+    {
+      "start": 5332.54,
+      "end": 5336.96,
+      "text": "appropriate amount of times, you accepted the external document, external audit"
+    },
+    {
+      "start": 5336.96,
+      "end": 5342.08,
+      "text": "documents as required by the bylaws, you did my performance evaluation, we posted"
+    },
+    {
+      "start": 5342.08,
+      "end": 5348.42,
+      "text": "minutes, we posted agendas correctly, and we adjusted the audit plan as needed and"
+    },
+    {
+      "start": 5348.42,
+      "end": 5353.06,
+      "text": "you all heard our reporting of all of the audit reports that we did. So each of"
+    },
+    {
+      "start": 5353.06,
+      "end": 5357.64,
+      "text": "these was done appropriately. So that's..."
+    },
+    {
+      "start": 5362.54,
+      "end": 5366.16,
+      "text": "Okay, next two items. I'll go through these kind of quick since it's taken a while."
+    },
+    {
+      "start": 5366.16,
+      "end": 5370.16,
+      "text": "Recommendation implementation. We actually had 51 recommendations that were due this"
+    },
+    {
+      "start": 5370.16,
+      "end": 5374.4,
+      "text": "time. Thirty-three of them were reported as implemented. The bulk of those is Arts"
+    },
+    {
+      "start": 5374.4,
+      "end": 5378.68,
+      "text": "Commission. They have been working very hard to get all of those recommendations"
+    },
+    {
+      "start": 5378.68,
+      "end": 5383.5199999999995,
+      "text": "implemented as fast as they can. We're hoping that by 2026 audit plan we will"
+    },
+    {
+      "start": 5383.5199999999995,
+      "end": 5386.42,
+      "text": "have them back on our audit plan to do that follow-up audit with them or that"
+    },
+    {
+      "start": 5386.42,
+      "end": 5392.42,
+      "text": "full audit of them again. The one that needed a revised date, 18 of them, they were"
+    },
+    {
+      "start": 5392.42,
+      "end": 5397.04,
+      "text": "all disaster recovery business continuity report. Since that report is redacted I"
+    },
+    {
+      "start": 5397.04,
+      "end": 5400.3,
+      "text": "did not put them in the audit committee workbook since you couldn't have seen the"
+    },
+    {
+      "start": 5400.3,
+      "end": 5405.56,
+      "text": "recommendations anyway. Basically they are working towards each and every one of"
+    },
+    {
+      "start": 5405.56,
+      "end": 5409.52,
+      "text": "those but they were dependent on a consultant for the first piece of this"
+    },
+    {
+      "start": 5409.52,
+      "end": 5413.4800000000005,
+      "text": "but took a little longer than expected expected so it has pushed the"
+    },
+    {
+      "start": 5413.48,
+      "end": 5417.099999999999,
+      "text": "recommendation implementation they've asked to extend it to the end of the year"
+    },
+    {
+      "start": 5417.099999999999,
+      "end": 5421.48,
+      "text": "but those are being implemented. Any questions on that?"
+    },
+    {
+      "start": 5421.48,
+      "end": 5427.48,
+      "text": "I apologize. When you say they, so disaster recovery and business continuity that's what we're talking about?"
+    },
+    {
+      "start": 5427.48,
+      "end": 5431.48,
+      "text": "OEM, yes. OEM, okay thank you."
+    },
+    {
+      "start": 5431.48,
+      "end": 5436.759999999999,
+      "text": "Okay, next is our ongoing projects. We've got a handful of projects that are in draft"
+    },
+    {
+      "start": 5436.759999999999,
+      "end": 5440.839999999999,
+      "text": "reporting right now. We are working our way through that audit plan. It did just"
+    },
+    {
+      "start": 5440.84,
+      "end": 5446.08,
+      "text": "change a little bit but we are working our way through it. We've got staff assigned to"
+    },
+    {
+      "start": 5446.08,
+      "end": 5449.42,
+      "text": "certain projects and kind of have figured out how the end of the year is going to go"
+    },
+    {
+      "start": 5449.42,
+      "end": 5455.3,
+      "text": "as we work towards that. We also issued two investigation reports this year and"
+    },
+    {
+      "start": 5455.3,
+      "end": 5460.9400000000005,
+      "text": "we've received hotline calls and emails and other methods. One thing that we're"
+    },
+    {
+      "start": 5460.9400000000005,
+      "end": 5464.900000000001,
+      "text": "very proud of is we're working with ITS to put together that Metro-wide training on"
+    },
+    {
+      "start": 5464.9,
+      "end": 5470.9,
+      "text": "fraud, waste and abuse. They are putting together that video for us. Paul has done a great job of"
+    },
+    {
+      "start": 5470.9,
+      "end": 5475.54,
+      "text": "writing a script for it to get it put together so we're hoping that that will increase our calls to"
+    },
+    {
+      "start": 5476.339999999999,
+      "end": 5478.24,
+      "text": "a fraud, waste and abuse even more."
+    },
+    {
+      "start": 5478.24,
+      "end": 5480.139999999999,
+      "text": "That's fabulous."
+    },
+    {
+      "start": 5480.139999999999,
+      "end": 5481.139999999999,
+      "text": "Yeah, it's important."
+    },
+    {
+      "start": 5481.139999999999,
+      "end": 5482.139999999999,
+      "text": "It really is."
+    },
+    {
+      "start": 5482.14,
+      "end": 5483.14,
+      "text": "It's really proud of you."
+    },
+    {
+      "start": 5483.14,
+      "end": 5484.14,
+      "text": "Paul is doing it."
+    },
+    {
+      "start": 5484.14,
+      "end": 5485.14,
+      "text": "Paul is doing it."
+    },
+    {
+      "start": 5485.14,
+      "end": 5486.14,
+      "text": "Yes, thank you."
+    },
+    {
+      "start": 5486.14,
+      "end": 5487.14,
+      "text": "It's important."
+    },
+    {
+      "start": 5487.14,
+      "end": 5492.38,
+      "text": "The budget, we are under budget. One of the main reasons we are currently under budget is because"
+    },
+    {
+      "start": 5492.38,
+      "end": 5496.860000000001,
+      "text": "we still have that open position that we received last year for the investigator two position. We are"
+    },
+    {
+      "start": 5496.860000000001,
+      "end": 5500.46,
+      "text": "not the only department that wanted to post a position at the beginning of the fiscal year so it"
+    },
+    {
+      "start": 5500.46,
+      "end": 5505.5,
+      "text": "took a little bit longer to get it posted. It has closed. We just got the list of candidates today"
+    },
+    {
+      "start": 5505.5,
+      "end": 5512.06,
+      "text": "and so we are hoping to interview them quickly and get that position filled. That's the main reason"
+    },
+    {
+      "start": 5512.06,
+      "end": 5516.7,
+      "text": "we're under budget. It kind of looks like we're not spending our consulting budget but I will tell"
+    },
+    {
+      "start": 5516.7,
+      "end": 5521.9,
+      "text": "you that we already have almost every dollar of that assigned to a project. With the addition of"
+    },
+    {
+      "start": 5521.9,
+      "end": 5527.98,
+      "text": "changes to the audit plan, we've had to utilize those funds pretty much all of them already. So they"
+    },
+    {
+      "start": 5527.98,
+      "end": 5532.06,
+      "text": "will be fully used this year which in the past we haven't completely used them so we're really"
+    },
+    {
+      "start": 5532.06,
+      "end": 5538.22,
+      "text": "excited to actually fulfill that budget this time around. And that staffing, like I said, we have"
+    },
+    {
+      "start": 5538.22,
+      "end": 5542.620000000001,
+      "text": "that one open position. We're hoping to get it filled and onboarded because we do have a staff member"
+    },
+    {
+      "start": 5542.620000000001,
+      "end": 5548.620000000001,
+      "text": "who is retiring at the end of the year and we're hoping that we will have that position ready to be"
+    },
+    {
+      "start": 5548.620000000001,
+      "end": 5550.700000000001,
+      "text": "filled when he retires."
+    },
+    {
+      "start": 5553.34,
+      "end": 5553.740000000001,
+      "text": "That's all."
+    },
+    {
+      "start": 5553.740000000001,
+      "end": 5559.42,
+      "text": "Does that, yeah I'm sorry, will that keep the number of empties at 12?"
+    },
+    {
+      "start": 5559.42,
+      "end": 5559.820000000001,
+      "text": "Yes."
+    },
+    {
+      "start": 5562.06,
+      "end": 5566.38,
+      "text": "Any other administrative matters?"
+    },
+    {
+      "start": 5570.22,
+      "end": 5574.06,
+      "text": "Any considerations for our next meeting that we discuss?"
+    },
+    {
+      "start": 5574.06,
+      "end": 5582.46,
+      "text": "One thing I will all throw out there, since we've recently had a number of recommendations,"
+    },
+    {
+      "start": 5582.46,
+      "end": 5588.3,
+      "text": "requests to change the audit plan, our office would like to put policy around it to determine the best"
+    },
+    {
+      "start": 5588.3,
+      "end": 5594.06,
+      "text": "course of action instead of each meeting us kind of figuring out. And so we will be bringing that to"
+    },
+    {
+      "start": 5594.06,
+      "end": 5598.54,
+      "text": "y'all at one of the meetings in December. We're going to probably have to ask Metro Legal what the"
+    },
+    {
+      "start": 5598.54,
+      "end": 5604.54,
+      "text": "parameters are and kind of look at some other instances as we enjoy getting requests. It's a great"
+    },
+    {
+      "start": 5604.54,
+      "end": 5610.38,
+      "text": "opportunity for us to find impactful audits but also making sure that they're consistently applied"
+    },
+    {
+      "start": 5610.38,
+      "end": 5614.06,
+      "text": "and how we handle those."
+    },
+    {
+      "start": 5614.62,
+      "end": 5615.42,
+      "text": "We look forward to that."
+    },
+    {
+      "start": 5618.22,
+      "end": 5622.38,
+      "text": "With that, I will declare the public meeting adjourned."
+    },
+    {
+      "start": 5622.38,
+      "end": 5628.22,
+      "text": "Great."
+    },
+    {
+      "start": 5628.54,
+      "end": 5630.9400000000005,
+      "text": "Thank you."
+    },
+    {
+      "start": 5631.1,
+      "end": 5632.9400000000005,
+      "text": "impressions"
+    },
+    {
+      "start": 5634.06,
+      "end": 5635.9800000000005,
+      "text": "employees"
+    },
+    {
+      "start": 5636.54,
+      "end": 5638.38,
+      "text": "employees"
+    },
+    {
+      "start": 5638.38,
+      "end": 5640.38,
+      "text": "employees"
+    },
+    {
+      "start": 5640.38,
+      "end": 5641.9800000000005,
+      "text": "employees"
+    },
+    {
+      "start": 5641.9800000000005,
+      "end": 5642.7,
+      "text": "employees"
+    },
+    {
+      "start": 5642.7,
+      "end": 5643.9800000000005,
+      "text": "employees"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "SEPT23-MEETING-TRANSCRIPT",
+  "path": "transcripts/sept23-audit-committee.txt",
+  "sha256": "059d575c602c1b9073b1badafa7a16cd3d09c622be8c484124dff1367de5497c",
+  "bytes": 83627,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=vsGlPI9B0DE",
+  "final_url": null,
+  "retrieved_at": "2026-09-05T03:33:23+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact: MLX Whisper (large-v3-turbo) transcript of a video the user downloaded directly (not fetched by this project). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 5868,
+      "byte_length": 145,
+      "method": "exact-bytes",
+      "claim": "IMPORTANT CAVEATS: this is a machine (Whisper large-v3-turbo) transcript of the meeting video, generated locally by this project on 2026-09-05 -- it is NOT an official record, has no speaker diarization (who-said-what has to be inferred from context), and contains at least two probable name misspellings already spotted (\"Michael Lacey\" for Michael Lacy; \"John Crossland\" for external auditor Crosslin, who AUD-CTTE-SEP23-MINUTES already names correctly). Treat every quote pulled from it as needing a second listen against the original audio before being printed as verbatim. That said, the substance is a real finding: the written minutes (AUD-CTTE-SEP23-MINUTES) never mention public comment happening at all, but this recording captures a public comment period, including a speaker introduced as 'Mr. Michael Lacey' stating: 'Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light.' A later, apparently different speaker credits him further: 'I didn't know what was going on until Mike Lacey went out there and made public records request and found out what was going on.' The written record of this meeting is incomplete without this."
+    }
+  ]
+}
