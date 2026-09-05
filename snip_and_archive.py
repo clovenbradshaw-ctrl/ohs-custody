@@ -579,19 +579,25 @@ def capture_rendered_text(entry, out, logfile, rendered_path):
     cap["rendered_sha256"] = sha
     cap["rendered_path"] = str(rp)
     cap["rendered_method"] = method
+    cap["rendered_text_chars"] = len(text)
 
     if offset is None:
         log(logfile, f"{eid:24} RENDERED but anchor still missing  method={method}")
         return
 
+    cap["rendered_text_offset"] = offset
+    cap["rendered_text_length"] = length
     cap["status"] = "bytes-held"
     cap["archive_tier"] = cap.get("archive_tier") or "local-only"
-    cap["note"] = (cap.get("note", "") + " " if cap.get("note") else "") + (
+    rendered_note = (
         "Raw HTTP response is a client-side app shell with no page content in "
         "it (Municode/Angular). Anchor is located in a rendered-DOM capture "
         "instead, saved separately and hashed on its own; the raw shell "
         "bytes remain the object of record for the URL itself."
     )
+    existing_note = cap.get("note", "")
+    if rendered_note not in existing_note:
+        cap["note"] = (existing_note + " " if existing_note else "") + rendered_note
     log(logfile, f"{eid:24} RENDERED held  sha={sha[:12]}  offset {offset} via {method}")
 
     (out / "readings" / f"{eid}.json").write_text(json.dumps({

@@ -1,3 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source custody register / Office of Homeless Services</title>
+<style>
+  :root{
+    --paper:#edeff2;
+    --surface:#ffffff;
+    --ink:#15181d;
+    --muted:#59616e;
+    --faint:#8b93a1;
+    --rule:#d3d8df;
+    --rule-strong:#aab2be;
+    --oxide:#b0522c;
+    --oxide-bg:#f7ece6;
+    --green:#1e5c48;
+    --green-bg:#e6efeb;
+    --blue:#2c4780;
+    --blue-bg:#e7ebf4;
+    --slate:#4a5568;
+    --slate-bg:#eaecf0;
+    --sans: "Inter", "Helvetica Neue", Helvetica, "Segoe UI", system-ui, sans-serif;
+    --mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:15px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px 96px}
+
+  /* ---------- masthead ---------- */
+  .masthead{padding:44px 0 26px;border-bottom:2px solid var(--ink)}
+  .masthead h1{
+    font-family:var(--mono);
+    font-size:clamp(21px,3.4vw,31px);
+    font-weight:600;
+    letter-spacing:-0.02em;
+    line-height:1.2;
+    margin:0 0 14px;
+  }
+  .masthead h1 .slash{color:var(--faint);font-weight:400}
+  .standfirst{max-width:64ch;color:var(--muted);margin:0 0 22px;font-size:14.5px}
+  .standfirst strong{color:var(--ink);font-weight:600}
+
+  .tally{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule-strong);background:var(--surface)}
+  .tally div{
+    flex:1 1 auto;min-width:104px;padding:11px 14px;
+    border-right:1px solid var(--rule);
+  }
+  .tally div:last-child{border-right:0}
+  .tally b{display:block;font-family:var(--mono);font-size:22px;font-weight:600;line-height:1.1}
+  .tally span{font-size:11.5px;color:var(--muted);letter-spacing:0.01em}
+  .tally .t-open b{color:var(--oxide)}
+  .tally .t-done b{color:var(--green)}
+
+  /* ---------- controls ---------- */
+  .controls{
+    position:sticky;top:0;z-index:20;
+    background:var(--paper);
+    padding:14px 0 12px;
+    border-bottom:1px solid var(--rule-strong);
+    margin-bottom:2px;
+  }
+  .ctl-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .ctl-row + .ctl-row{margin-top:9px}
+  input[type=search]{
+    flex:1 1 220px;min-width:0;
+    font-family:var(--sans);font-size:14px;
+    padding:7px 11px;border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink);
+  }
+  .chip{
+    font-family:var(--sans);font-size:12.5px;
+    padding:6px 11px;border:1px solid var(--rule-strong);background:var(--surface);
+    color:var(--muted);cursor:pointer;
+  }
+  .chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn{
+    font-family:var(--sans);font-size:12.5px;font-weight:500;
+    padding:6px 12px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;
+  }
+  .btn.ghost{background:var(--surface);color:var(--ink)}
+  .btn:disabled{opacity:.42;cursor:not-allowed}
+  button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{
+    outline:2px solid var(--blue);outline-offset:2px;
+  }
+
+  /* ---------- register ---------- */
+  .entry{
+    background:var(--surface);
+    border-bottom:1px solid var(--rule);
+    padding:20px 18px 18px 0;
+    display:grid;
+    grid-template-columns:150px 1fr;
+    gap:0 22px;
+  }
+  .entry.at-risk{box-shadow:inset 4px 0 0 var(--oxide)}
+  .entry.captured{box-shadow:inset 4px 0 0 var(--green)}
+  .gutter{padding-left:18px}
+  .eid{font-family:var(--mono);font-size:11.5px;color:var(--ink);font-weight:600;word-break:break-all}
+  .tier{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.35}
+  .stamp{
+    display:inline-block;margin-top:9px;
+    font-family:var(--mono);font-size:10.5px;font-weight:600;
+    padding:3px 7px;border:1px solid currentColor;
+  }
+  .s-unverified{color:var(--oxide);background:var(--oxide-bg)}
+  .s-captured{color:var(--green);background:var(--green-bg)}
+  .s-missing{color:#7a2020;background:#f6e8e8}
+  .s-held{color:var(--slate);background:var(--slate-bg)}
+  .prio{display:block;margin-top:7px;font-size:10.5px;color:var(--oxide);font-weight:600}
+
+  /* archive tier: how a capture is attested, separate from whether the
+     anchor was found in it. These carry different evidentiary weight and
+     are deliberately never folded into the status stamp above. */
+  .tierbadge{
+    display:inline-block;margin:6px 0 0;margin-left:6px;
+    font-family:var(--mono);font-size:10px;font-weight:600;
+    padding:2px 6px;border:1px solid currentColor;border-radius:2px;
+  }
+  .t-independent{color:var(--green);background:var(--green-bg)}
+  .t-historical{color:var(--blue);background:var(--blue-bg)}
+  .t-local{color:var(--slate);background:var(--slate-bg)}
+  .t-none{color:var(--faint);background:transparent;border-style:dashed}
+
+  .body h3{margin:0 0 3px;font-size:16px;font-weight:600;line-height:1.35}
+  .claim{margin:0 0 11px;color:var(--muted);font-size:13.5px;max-width:66ch}
+  .anchor{
+    font-family:var(--mono);font-size:12.5px;
+    background:#f4f6f9;border-left:3px solid var(--rule-strong);
+    padding:7px 11px;margin:0 0 11px;max-width:66ch;word-break:break-word;
+  }
+  .anchor::before{content:"anchor  ";color:var(--faint)}
+
+  .machine{
+    font-family:var(--mono);font-size:11.5px;color:var(--muted);
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
+    gap:3px 16px;margin:0 0 11px;
+  }
+  .machine i{font-style:normal;color:var(--faint)}
+  .machine em{font-style:normal;color:var(--ink);word-break:break-all}
+  .url{font-family:var(--mono);font-size:11.5px;word-break:break-all;color:var(--muted);margin:0 0 10px}
+
+  /* the byte ruler: where the anchor sits inside the captured document */
+  .ruler{margin:0 0 12px;max-width:520px}
+  .ruler-track{position:relative;height:15px;background:#eef1f5;border:1px solid var(--rule)}
+  .ruler-hit{position:absolute;top:-1px;bottom:-1px;background:var(--blue);min-width:2px}
+  .ruler-hit.rendered{background:var(--slate);background-image:repeating-linear-gradient(45deg,transparent,transparent 2px,rgba(255,255,255,.35) 2px,rgba(255,255,255,.35) 4px)}
+  .ruler-cap{font-family:var(--mono);font-size:10.5px;color:var(--faint);margin-top:3px;display:flex;justify-content:space-between}
+  .ruler.empty .ruler-track{background:repeating-linear-gradient(135deg,#f2f4f7,#f2f4f7 5px,#e8ebf0 5px,#e8ebf0 10px)}
+
+  .actions{display:flex;flex-wrap:wrap;gap:6px}
+  .actions a,.actions button{
+    font-family:var(--sans);font-size:11.5px;
+    padding:4px 9px;border:1px solid var(--rule-strong);background:var(--surface);
+    color:var(--ink);text-decoration:none;cursor:pointer;white-space:nowrap;
+  }
+  .actions a:hover,.actions button:hover{border-color:var(--ink)}
+  .actions .dead{opacity:.4;pointer-events:none}
+  .actions .primary{border-color:var(--blue);color:var(--blue)}
+
+  /* ---------- panels ---------- */
+  .panel{background:var(--surface);border:1px solid var(--rule-strong);margin:30px 0;padding:20px 22px}
+  .panel h2{margin:0 0 10px;font-size:15px;font-weight:600}
+  .panel p{margin:0 0 11px;color:var(--muted);font-size:13.5px;max-width:70ch}
+  .panel p:last-child{margin-bottom:0}
+  .panel code{font-family:var(--mono);font-size:12px;background:#f4f6f9;padding:1px 4px}
+  ol.steps{margin:0;padding-left:20px;color:var(--muted);font-size:13.5px;max-width:70ch}
+  ol.steps li{margin-bottom:7px}
+  ol.steps b{color:var(--ink);font-weight:600}
+  textarea{
+    width:100%;min-height:96px;font-family:var(--mono);font-size:11.5px;
+    border:1px solid var(--rule-strong);padding:9px;background:#fbfcfd;color:var(--ink);resize:vertical;
+  }
+  .warn{border-left:4px solid var(--oxide);background:var(--oxide-bg);border-color:var(--rule-strong)}
+  .warn h2{color:var(--oxide)}
+  .warn p{color:#6d3d24}
+
+  .foot{margin-top:36px;padding-top:16px;border-top:1px solid var(--rule-strong);font-size:12px;color:var(--faint);max-width:70ch}
+  .empty-state{padding:44px 18px;text-align:center;color:var(--muted);font-size:14px;background:var(--surface);border-bottom:1px solid var(--rule)}
+
+  @media (max-width:640px){
+    .entry{grid-template-columns:1fr;gap:12px 0;padding-right:14px}
+    .gutter{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+    .tier{margin-top:0}
+    .stamp{margin-top:0}
+    .prio{margin-top:0}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <h1>Source custody register <span class="slash">/</span> Office of Homeless Services</h1>
+  <p class="standfirst">
+    One row per anchored citation in the standby overview. Each row carries the live source, a link that jumps a browser to the exact words, a Wayback capture, and once the runner has been over it, the byte offset where those words sit inside the retrieved file.
+    <strong>Every row starts unverified.</strong> A row turns green only when a machine has fetched the bytes, hashed them, and found the anchor inside them.
+  </p>
+  <div class="tally">
+    <div><b id="tTotal">0</b><span>anchored rows</span></div>
+    <div class="t-open"><b id="tOpen">0</b><span>unverified</span></div>
+    <div class="t-done"><b id="tDone">0</b><span>bytes confirmed</span></div>
+    <div><b id="tMissing">0</b><span>no URL yet</span></div>
+    <div><b id="tPrimary">0</b><span>primary records</span></div>
+  </div>
+</header>
+
+<section class="panel warn">
+  <h2>What this file could not do by itself</h2>
+  <p>
+    The container this register was built in blocks outbound traffic to every domain in it. Probing <code>web.archive.org</code>, <code>nashville.gov</code>, <code>nashville.legistar.com</code> and <code>substack.com</code> all returned <code>403</code> with the header <code>x-deny-reason: host_not_allowed</code>. So no source was fetched, no bytes were snipped, and nothing was pushed to the Wayback Machine from here.
+  </p>
+  <p>
+    The snipping and archiving therefore run on your side, from <code>snip_and_archive.py</code>, which ships alongside this file. It fetches each URL, writes the raw bytes to disk untouched, takes a SHA-256, locates the anchor and records its byte span, then submits the URL to the Wayback Machine and polls until the capture is confirmed. It writes back an enriched manifest. Paste that manifest into the box at the bottom of this page and every row here fills in.
+  </p>
+</section>
+
+<div class="controls">
+  <div class="ctl-row">
+    <input type="search" id="q" placeholder="Filter by name, anchor, claim, domain" aria-label="Filter rows">
+    <button class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="unverified" aria-pressed="false">Unverified</button>
+    <button class="chip" data-filter="captured" aria-pressed="false">Confirmed</button>
+    <button class="chip" data-filter="primary-record" aria-pressed="false">Primary</button>
+    <button class="chip" data-filter="priority" aria-pressed="false">Priority</button>
+    <button class="chip" data-filter="missing" aria-pressed="false">No URL</button>
+  </div>
+  <div class="ctl-row">
+    <button class="btn ghost" id="copySpn">Copy every capture URL</button>
+    <button class="btn ghost" id="openBatch">Open next five captures</button>
+    <button class="btn ghost" id="copyCurl">Copy curl batch</button>
+    <button class="btn ghost" id="exportJson">Download manifest</button>
+    <span id="batchNote" style="font-size:11.5px;color:var(--muted)"></span>
+  </div>
+</div>
+
+<main id="register"></main>
+
+<section class="panel">
+  <h2>Load the enriched manifest</h2>
+  <p>Paste the JSON that <code>snip_and_archive.py</code> writes to <code>sources.enriched.json</code>. The register redraws with hashes, byte spans and capture timestamps. Nothing is stored, so keep the file.</p>
+  <textarea id="importBox" placeholder="Paste sources.enriched.json here" aria-label="Enriched manifest"></textarea>
+  <div class="ctl-row" style="margin-top:9px">
+    <button class="btn" id="importBtn">Load manifest</button>
+    <span id="importNote" style="font-size:12px;color:var(--muted)"></span>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>How a row gets confirmed</h2>
+  <ol class="steps">
+    <li><b>Fetch.</b> The runner requests the URL and writes the response body to <code>bytes/&lt;id&gt;.bin</code> with no decoding, no cleanup, no reformatting. Headers go to a sidecar so the content type and server date survive.</li>
+    <li><b>Hash.</b> SHA-256 over those exact bytes. This is what makes a later claim about what the page said checkable rather than assertable.</li>
+    <li><b>Locate.</b> Three passes, and the row records which one hit. <code>exact-bytes</code> is a straight byte search and the offset is unarguable. <code>normalised-text</code> decodes with the declared charset, builds a character-to-byte index, folds whitespace runs, smart quotes and HTML entities, then maps the hit back to a real byte offset. <code>tag-stripped</code> also skips markup, which is what catches a quote broken by an <code>em</code> or a link, but it can also match across a table cell boundary, so treat those rows as needing an eye. A miss is reported as a miss.</li>
+    <li><b>Archive.</b> The URL goes to the Wayback Machine through the Save Page Now API, and the runner polls the job until it returns a timestamp. If a recent capture already exists it is reused unless you pass <code>--force</code>.</li>
+    <li><b>Write back.</b> Status, hash, length, byte span and capture timestamp land in the manifest.</li>
+  </ol>
+</section>
+
+<section class="panel">
+  <h2>Handing the bytes to eoreader7</h2>
+  <p>
+    The <code>bytes/</code> directory the runner produces is deliberately in the shape the reader wants: content-addressed raw files with a manifest carrying provenance and an offset span per anchor. That matches the pattern already in the lineage, the content-hashed binary store with an export-pointer manifest, and it keeps the anchor addressable at <code>byte_offset</code> rather than at some cleaned-up character index.
+  </p>
+  <p>
+    The runner stops at that boundary on purpose. It writes <code>readings/&lt;id&gt;.json</code> with the path, hash, media type and anchor span, and leaves a clearly marked adapter function empty. I did not have the v7 tree open, so I am not going to invent the signature for <code>createRecursiveReader</code> and have you debug a call I guessed at. Point the adapter at the real entry point in <code>native/kernel/reading.js</code> and the rest of the pipeline is already fed.
+  </p>
+</section>
+
+<section class="panel">
+  <h2>Two documents that would change the piece</h2>
+  <p>
+    The register carries two rows with no URL at all. The MHRC determination and staff investigative report exist and have been quoted, but the outlet that quoted them promised source links in its online edition and did not publish them. The September 2025 audit committee packet holds the audit request verbatim and the adopted scope. Neither is reachable from a search index, which means both are records requests rather than fetches, and neither can be archived until they are in hand.
+  </p>
+  <p>
+    Until then the piece rests on a secondary source for its central civil rights finding. That is worth naming in the copy rather than smoothing over.
+  </p>
+</section>
+
+<p class="foot">
+  Register generated 5 September 2026 for the standby overview. Anchors are short location strings, not quotations, and are sized to be distinctive enough for a machine to find and short enough to carry no expressive content of their own. Capture status is asserted only where a hash exists.
+</p>
+
+</div>
+
+<script type="application/json" id="manifest">
 {
   "manifest_version": "1",
   "case": "ohs-standby-overview",
@@ -2021,3 +2316,332 @@
   ],
   "last_run": "2026-09-05T02:44:03+00:00"
 }
+</script>
+<script>
+(function(){
+  "use strict";
+
+  var manifest = JSON.parse(document.getElementById('manifest').textContent);
+  var state = { filter:'all', query:'', batchIndex:0 };
+
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function host(u){
+    try { return new URL(u).hostname.replace(/^www\./,''); } catch(e){ return ''; }
+  }
+  function fragLink(url, anchor){
+    if(!url || !anchor) return '';
+    return url + '#:~:text=' + encodeURIComponent(anchor);
+  }
+  function spnLink(url){ return url ? 'https://web.archive.org/save/' + url : ''; }
+  function waybackLink(url){ return url ? 'https://web.archive.org/web/2/' + url : ''; }
+  function availLink(url){ return url ? 'https://archive.org/wayback/available?url=' + encodeURIComponent(url) : ''; }
+  function archivedFrag(e){
+    var ts = e.capture && e.capture.wayback_timestamp;
+    if(!ts || !e.url) return '';
+    var base = 'https://web.archive.org/web/' + ts + '/' + e.url;
+    return e.anchor ? base + '#:~:text=' + encodeURIComponent(e.anchor) : base;
+  }
+  function statusOf(e){
+    var c = e.capture || {};
+    if(c.status === 'not-located' || !e.url) return 'missing';
+    if(c.status === 'captured' && c.sha256) return 'captured';
+    return 'unverified';
+  }
+
+  // The coarse status above drives the top filter chips and counters and
+  // stays a 3-way split on purpose. Individual rows show more: a PDF that
+  // never had a text layer and a page that's flat-out paywalled are both
+  // "unverified" up there, but they are not the same finding, and the brief
+  // is explicit that this interface should not flatten them.
+  var STAMPS = {
+    'captured':       {cls:'s-captured',  text:'bytes confirmed + archived'},
+    'bytes-held':     {cls:'s-held',      text:'bytes held, not yet archived'},
+    'local-only':     {cls:'s-held',      text:'local only, no independent archive'},
+    'anchor-missing': {cls:'s-unverified',text:'anchor not found'},
+    'no-text-layer':  {cls:'s-unverified',text:'no PDF text layer'},
+    'paywalled':      {cls:'s-unverified',text:'paywalled'},
+    'fetch-failed':   {cls:'s-missing',   text:'fetch failed'},
+    'not-located':    {cls:'s-missing',   text:'no url'},
+    'unverified':     {cls:'s-unverified',text:'unverified'}
+  };
+  function stampInfo(e){
+    var c = e.capture || {};
+    if(!e.url) return STAMPS['not-located'];
+    return STAMPS[c.status] || STAMPS['unverified'];
+  }
+
+  var TIERS = {
+    'wayback-spn2':      {cls:'t-independent', text:function(c){return 'archived just now → web.archive.org';}},
+    'wayback-existing':  {cls:'t-independent', text:function(c){return 'independent capture on file (' + waybackDate(c.wayback_timestamp) + ')';}},
+    'archive-today':     {cls:'t-independent', text:function(){return 'archived → archive.today';}},
+    'wayback-historical':{cls:'t-historical',  text:function(c){return 'historical only, from ' + waybackDate(c.wayback_timestamp) + ' -- not today\'s content';}},
+    'local-only':        {cls:'t-local',       text:function(){return 'local only, no independent archive';}}
+  };
+  function waybackDate(ts){
+    if(!ts || ts.length < 8) return ts || 'unknown date';
+    return ts.slice(0,4) + '-' + ts.slice(4,6) + '-' + ts.slice(6,8);
+  }
+  function tierBadge(e){
+    var c = e.capture || {};
+    if(!e.url) return '';
+    var t = TIERS[c.archive_tier];
+    if(!t) return '<span class="tierbadge t-none">not archived yet</span>';
+    return '<span class="tierbadge ' + t.cls + '">' + esc(t.text(c)) + '</span>';
+  }
+  function tierLabel(t){
+    return ({
+      'primary-record':'primary record',
+      'secondary-quoting-primary':'secondary, quotes a record',
+      'secondary':'secondary',
+      'own-publication':'own publication'
+    })[t] || t;
+  }
+
+  function matches(e){
+    var st = statusOf(e);
+    var f = state.filter;
+    if(f === 'unverified' && st !== 'unverified') return false;
+    if(f === 'captured' && st !== 'captured') return false;
+    if(f === 'missing' && st !== 'missing') return false;
+    if(f === 'primary-record' && e.tier !== 'primary-record') return false;
+    if(f === 'priority' && !e.priority) return false;
+    if(state.query){
+      var hay = [e.id,e.label,e.anchor,e.claim,e.url,e.used_for].join(' ').toLowerCase();
+      if(hay.indexOf(state.query) === -1) return false;
+    }
+    return true;
+  }
+
+  function ruler(e){
+    var c = e.capture || {};
+
+    // A PDF's anchor lives in extracted text, on a page -- never in the raw
+    // (compressed) bytes. Drawing that against c.bytes would put the dot in
+    // a meaningless place and, worse, dress a text offset up as a byte
+    // offset. Task 2 is explicit that the interface must not let that
+    // happen, so a PDF gets its own ruler, ticked in pages, with the text
+    // offset given only as a plain number alongside it.
+    if(c.anchor_page != null){
+      var pages = c.page_count || c.anchor_page;
+      var pleft = pages > 1 ? Math.max(0, Math.min(100, ((c.anchor_page - 1) / pages) * 100)) : 0;
+      var pwidth = Math.max(2, 100 / Math.max(pages, 1));
+      return '<div class="ruler"><div class="ruler-track">' +
+             '<div class="ruler-hit" style="left:' + pleft.toFixed(3) + '%;width:' + pwidth.toFixed(3) + '%"></div>' +
+             '</div><div class="ruler-cap"><span>page 1</span><span>page ' + c.anchor_page +
+             ' of ' + pages + ' &middot; text offset ' + (c.anchor_text_offset != null ? c.anchor_text_offset.toLocaleString() : '?') +
+             ' in extracted text (' + esc(c.extractor || 'pdfminer') + ')</span></div></div>';
+    }
+
+    // A page whose raw HTTP response is a JS app shell (Municode) has no
+    // byte or page position for the anchor at all -- it was located in a
+    // browser-rendered text capture instead, hashed as its own artifact.
+    // That is a materially weaker claim than a byte offset into what the
+    // server actually sent, so it gets its own visibly distinct marker
+    // rather than borrowing the byte ruler's look.
+    if(c.rendered_text_offset != null){
+      var rchars = c.rendered_text_chars || c.rendered_text_offset;
+      var rleft = Math.max(0, Math.min(100, (c.rendered_text_offset / rchars) * 100));
+      var rwidth = Math.max(0.6, Math.min(100 - rleft, ((c.rendered_text_length || 1) / rchars) * 100));
+      return '<div class="ruler"><div class="ruler-track">' +
+             '<div class="ruler-hit rendered" style="left:' + rleft.toFixed(3) + '%;width:' + rwidth.toFixed(3) + '%"></div>' +
+             '</div><div class="ruler-cap"><span>0</span><span>rendered-DOM text offset ' + c.rendered_text_offset.toLocaleString() +
+             ' of ' + rchars.toLocaleString() + ' chars &middot; not a raw byte offset</span></div></div>';
+    }
+
+    if(!c.bytes || c.anchor_offset == null){
+      return '<div class="ruler empty"><div class="ruler-track"></div>' +
+             '<div class="ruler-cap"><span>byte span unknown</span><span>run the snipper</span></div></div>';
+    }
+    var left = Math.max(0, Math.min(100, (c.anchor_offset / c.bytes) * 100));
+    var width = Math.max(0.6, Math.min(100 - left, ((c.anchor_length || 1) / c.bytes) * 100));
+    return '<div class="ruler"><div class="ruler-track">' +
+           '<div class="ruler-hit" style="left:' + left.toFixed(3) + '%;width:' + width.toFixed(3) + '%"></div>' +
+           '</div><div class="ruler-cap"><span>0</span><span>offset ' + c.anchor_offset.toLocaleString() +
+           ' of ' + c.bytes.toLocaleString() + ' bytes</span></div></div>';
+  }
+
+  function row(e){
+    var st = statusOf(e);
+    var c = e.capture || {};
+    var cls = st === 'captured' ? 'captured' : (st === 'missing' ? '' : 'at-risk');
+    var stamp = stampInfo(e);
+
+    var acts = [];
+    if(e.url){
+      acts.push('<a href="' + esc(e.url) + '" target="_blank" rel="noopener">Live source</a>');
+      if(e.anchor) acts.push('<a class="primary" href="' + esc(fragLink(e.url, e.anchor)) + '" target="_blank" rel="noopener">Jump to anchor</a>');
+      acts.push('<a href="' + esc(spnLink(e.url)) + '" target="_blank" rel="noopener">Capture now</a>');
+      acts.push('<a href="' + esc(waybackLink(e.url)) + '" target="_blank" rel="noopener">Wayback</a>');
+      acts.push('<a href="' + esc(availLink(e.url)) + '" target="_blank" rel="noopener">Capture status</a>');
+      var af = archivedFrag(e);
+      if(af) acts.push('<a class="primary" href="' + esc(af) + '" target="_blank" rel="noopener">Archived anchor</a>');
+      acts.push('<button data-curl="' + esc(e.id) + '">Copy curl</button>');
+    } else {
+      acts.push('<span class="dead">No URL to fetch</span>');
+    }
+
+    return '<article class="entry ' + cls + '" data-id="' + esc(e.id) + '">' +
+      '<div class="gutter">' +
+        '<div class="eid">' + esc(e.id) + (e.added ? ' <span title="' + esc(e.added) + '" style="color:var(--blue);cursor:help">&#9733;</span>' : '') + '</div>' +
+        '<div class="tier">' + esc(tierLabel(e.tier)) + (host(e.url) ? '<br>' + esc(host(e.url)) : '') + '</div>' +
+        '<span class="stamp ' + stamp.cls + '">' + esc(stamp.text) + '</span>' +
+        tierBadge(e) +
+        (e.priority ? '<span class="prio">' + esc(e.priority) + '</span>' : '') +
+      '</div>' +
+      '<div class="body">' +
+        '<h3>' + esc(e.label) + '</h3>' +
+        '<p class="claim">' + esc(e.claim) + '</p>' +
+        (e.anchor ? '<div class="anchor">' + esc(e.anchor) + '</div>' : '') +
+        (e.url ? '<div class="url">' + esc(e.url) + '</div>' : '') +
+        ruler(e) +
+        '<div class="machine">' +
+          '<div><i>sha256</i> <em>' + esc(c.sha256 ? c.sha256.slice(0,20) + '\u2026' : 'not taken') + '</em></div>' +
+          '<div><i>length</i> <em>' + (c.bytes ? c.bytes.toLocaleString() + ' B' : 'unknown') + '</em></div>' +
+          '<div><i>captured</i> <em>' + esc(c.wayback_timestamp || 'no snapshot') + '</em></div>' +
+          '<div><i>fetched</i> <em>' + esc(c.fetched_at || 'never') + '</em></div>' +
+          '<div><i>used in</i> <em>' + esc(e.used_for || '') + '</em></div>' +
+          '<div><i>type</i> <em>' + esc(c.content_type || e.doctype || '') + '</em></div>' +
+        '</div>' +
+        '<div class="actions">' + acts.join('') + '</div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function render(){
+    var list = manifest.entries.filter(matches);
+    var reg = document.getElementById('register');
+    reg.innerHTML = list.length
+      ? list.map(row).join('')
+      : '<div class="empty-state">No rows match that filter. Clear the search or pick All.</div>';
+
+    var all = manifest.entries;
+    document.getElementById('tTotal').textContent   = all.length;
+    document.getElementById('tOpen').textContent    = all.filter(function(e){return statusOf(e)==='unverified';}).length;
+    document.getElementById('tDone').textContent    = all.filter(function(e){return statusOf(e)==='captured';}).length;
+    document.getElementById('tMissing').textContent = all.filter(function(e){return statusOf(e)==='missing';}).length;
+    document.getElementById('tPrimary').textContent = all.filter(function(e){return e.tier==='primary-record';}).length;
+  }
+
+  function withUrls(){
+    return manifest.entries.filter(function(e){ return !!e.url; });
+  }
+
+  function copy(text, note){
+    var done = function(ok){
+      var el = document.getElementById('batchNote');
+      el.textContent = ok ? note : 'Clipboard blocked. Use Download manifest instead.';
+      setTimeout(function(){ el.textContent = ''; }, 4000);
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){done(true);}, function(){done(false);});
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      var ok = false; try{ ok = document.execCommand('copy'); }catch(e){}
+      document.body.removeChild(ta); done(ok);
+    }
+  }
+
+  document.getElementById('copySpn').addEventListener('click', function(){
+    var urls = withUrls().map(function(e){ return spnLink(e.url); });
+    copy(urls.join('\n'), urls.length + ' capture URLs copied');
+  });
+
+  document.getElementById('copyCurl').addEventListener('click', function(){
+    var lines = withUrls().map(function(e){
+      return 'curl -sL --compressed -A "custody-register/1" -o "bytes/' + e.id + '.bin" "' + e.url + '"';
+    });
+    copy(lines.join('\n'), lines.length + ' curl lines copied');
+  });
+
+  document.getElementById('openBatch').addEventListener('click', function(){
+    var list = withUrls();
+    var slice = list.slice(state.batchIndex, state.batchIndex + 5);
+    if(!slice.length){
+      state.batchIndex = 0;
+      document.getElementById('batchNote').textContent = 'Reached the end. Press again to start over.';
+      return;
+    }
+    slice.forEach(function(e){ window.open(spnLink(e.url), '_blank', 'noopener'); });
+    state.batchIndex += 5;
+    document.getElementById('batchNote').textContent =
+      'Opened ' + Math.min(state.batchIndex, list.length) + ' of ' + list.length + '. Browsers throttle bulk tabs, so go five at a time.';
+  });
+
+  document.getElementById('exportJson').addEventListener('click', function(){
+    var blob = new Blob([JSON.stringify(manifest, null, 2)], {type:'application/json'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'sources.json';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1500);
+  });
+
+  document.getElementById('importBtn').addEventListener('click', function(){
+    var note = document.getElementById('importNote');
+    var raw = document.getElementById('importBox').value.trim();
+    if(!raw){ note.textContent = 'Nothing pasted.'; return; }
+    try {
+      var next = JSON.parse(raw);
+      if(!next.entries || !Array.isArray(next.entries)) throw new Error('no entries array');
+      var known = {};
+      manifest.entries.forEach(function(e){ known[e.id] = e; });
+      var merged = 0, added = 0;
+      next.entries.forEach(function(incoming){
+        var e = known[incoming.id];
+        if(e){
+          if(incoming.capture){ e.capture = incoming.capture; merged++; }
+          if(incoming.url && !e.url){ e.url = incoming.url; }
+        } else {
+          // A capture run can discover and add sources the original
+          // manifest never had -- a corrected URL that got its own id, a
+          // successor page, a Legistar sub-page the summary view hides.
+          // Those still belong on the register, not just in the JSON file.
+          manifest.entries.push(incoming);
+          known[incoming.id] = incoming;
+          added++;
+        }
+      });
+      render();
+      note.textContent = 'Merged capture data for ' + merged + ' row(s)' +
+        (added ? ', added ' + added + ' new entry(ies) not in the original manifest' : '') + '.';
+    } catch(err){
+      note.textContent = 'Could not read that. ' + err.message;
+    }
+  });
+
+  document.getElementById('q').addEventListener('input', function(ev){
+    state.query = ev.target.value.trim().toLowerCase();
+    render();
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.chip'), function(btn){
+    btn.addEventListener('click', function(){
+      Array.prototype.forEach.call(document.querySelectorAll('.chip'), function(b){
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      state.filter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  document.getElementById('register').addEventListener('click', function(ev){
+    var b = ev.target.closest('button[data-curl]');
+    if(!b) return;
+    var e = manifest.entries.filter(function(x){ return x.id === b.dataset.curl; })[0];
+    if(!e || !e.url) return;
+    var cmd = 'mkdir -p bytes && curl -sL --compressed -A "custody-register/1" \\\n' +
+              '  -D "bytes/' + e.id + '.headers" -o "bytes/' + e.id + '.bin" \\\n' +
+              '  "' + e.url + '" && shasum -a 256 "bytes/' + e.id + '.bin"';
+    copy(cmd, 'curl for ' + e.id + ' copied');
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

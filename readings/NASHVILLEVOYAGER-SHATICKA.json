@@ -1,0 +1,20 @@
+{
+  "id": "NASHVILLEVOYAGER-SHATICKA",
+  "path": "bytes/NASHVILLEVOYAGER-SHATICKA.bin",
+  "sha256": "2f8766d20cf3fbfec1c06ca7022c9f20663f5577a39838968af92aa7866a6f15",
+  "bytes": 242781,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://nashvillevoyager.com/interview/community-highlights-meet-shaticka-robinson-of-coleys-jook-junt-food-truck-bougie-barbecue-brand/",
+  "final_url": "https://nashvillevoyager.com/interview/community-highlights-meet-shaticka-robinson-of-coleys-jook-junt-food-truck-bougie-barbecue-brand/",
+  "retrieved_at": "2026-09-05T02:42:02+00:00",
+  "wayback_timestamp": "20250812140157",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 109843,
+      "byte_length": 26,
+      "method": "exact-bytes",
+      "claim": "UNSUBSTANTIATED CONTEXT ONLY, same caveat as COLEYS-JOOK-JUNT. This profile is a straightforward career bio and contains no mention of April Calvin or any family relationship -- its absence here is itself part of why the claim is unsubstantiated."
+    }
+  ]
+}

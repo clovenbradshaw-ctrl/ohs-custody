@@ -152,6 +152,7 @@
   .ruler{margin:0 0 12px;max-width:520px}
   .ruler-track{position:relative;height:15px;background:#eef1f5;border:1px solid var(--rule)}
   .ruler-hit{position:absolute;top:-1px;bottom:-1px;background:var(--blue);min-width:2px}
+  .ruler-hit.rendered{background:var(--slate);background-image:repeating-linear-gradient(45deg,transparent,transparent 2px,rgba(255,255,255,.35) 2px,rgba(255,255,255,.35) 4px)}
   .ruler-cap{font-family:var(--mono);font-size:10.5px;color:var(--faint);margin-top:3px;display:flex;justify-content:space-between}
   .ruler.empty .ruler-track{background:repeating-linear-gradient(135deg,#f2f4f7,#f2f4f7 5px,#e8ebf0 5px,#e8ebf0 10px)}
 
@@ -932,6 +933,22 @@
              '</div><div class="ruler-cap"><span>page 1</span><span>page ' + c.anchor_page +
              ' of ' + pages + ' &middot; text offset ' + (c.anchor_text_offset != null ? c.anchor_text_offset.toLocaleString() : '?') +
              ' in extracted text (' + esc(c.extractor || 'pdfminer') + ')</span></div></div>';
+    }
+
+    // A page whose raw HTTP response is a JS app shell (Municode) has no
+    // byte or page position for the anchor at all -- it was located in a
+    // browser-rendered text capture instead, hashed as its own artifact.
+    // That is a materially weaker claim than a byte offset into what the
+    // server actually sent, so it gets its own visibly distinct marker
+    // rather than borrowing the byte ruler's look.
+    if(c.rendered_text_offset != null){
+      var rchars = c.rendered_text_chars || c.rendered_text_offset;
+      var rleft = Math.max(0, Math.min(100, (c.rendered_text_offset / rchars) * 100));
+      var rwidth = Math.max(0.6, Math.min(100 - rleft, ((c.rendered_text_length || 1) / rchars) * 100));
+      return '<div class="ruler"><div class="ruler-track">' +
+             '<div class="ruler-hit rendered" style="left:' + rleft.toFixed(3) + '%;width:' + rwidth.toFixed(3) + '%"></div>' +
+             '</div><div class="ruler-cap"><span>0</span><span>rendered-DOM text offset ' + c.rendered_text_offset.toLocaleString() +
+             ' of ' + rchars.toLocaleString() + ' chars &middot; not a raw byte offset</span></div></div>';
     }
 
     if(!c.bytes || c.anchor_offset == null){

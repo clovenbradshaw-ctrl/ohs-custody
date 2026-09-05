@@ -1,0 +1,20 @@
+{
+  "id": "AUD-BY-DEPT",
+  "path": "bytes/AUD-BY-DEPT.bin",
+  "sha256": "2e89ae4eaf42b3cdd904def8e2ae542b38f6d9c7c70ad2742a719941f7099b4b",
+  "bytes": 145647,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-department",
+  "final_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-department",
+  "retrieved_at": "2026-09-05T02:40:56+00:00",
+  "wayback_timestamp": "20250320211842",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 105037,
+      "byte_length": 49,
+      "method": "exact-bytes",
+      "claim": "Index confirming the July 18, 2025 follow-up audit exists and linking it -- this is how AUD-HID-FOLLOWUP-2025 was found. Also the department-level index a reader can use to check whether the new Financial Processes audit has posted."
+    }
+  ]
+}

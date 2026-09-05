@@ -1,0 +1,20 @@
+{
+  "id": "GOV-OHS-DIRECTORS",
+  "path": "bytes/GOV-OHS-DIRECTORS.bin",
+  "sha256": "2560c149b6a4d46bd1491e24044d80860117440d708313c93fb810ab18aa1767",
+  "bytes": 89527,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services/director-and-assistant-directors",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services/director-and-assistant-directors",
+  "retrieved_at": "2026-09-05T02:41:01+00:00",
+  "wayback_timestamp": "20260105165339",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 52984,
+      "byte_length": 12,
+      "method": "exact-bytes",
+      "claim": "Confirms April Calvin was still listed as OHS Director as of capture. Re-check at publication -- this is exactly the kind of page that can change without notice, per GOV-MAYOR-DIR's own drift found earlier in this project."
+    }
+  ]
+}

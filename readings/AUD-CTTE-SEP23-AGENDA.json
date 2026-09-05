@@ -1,0 +1,22 @@
+{
+  "id": "AUD-CTTE-SEP23-AGENDA",
+  "path": "bytes/AUD-CTTE-SEP23-AGENDA.bin",
+  "sha256": "a35fda5298762d9bf074a80ab302ab34ce878f395f1ecd5045fb48d2acf0780a",
+  "bytes": 145071,
+  "media_type": "application/pdf",
+  "source_url": "https://www.nashville.gov/sites/default/files/2025-09/Audit-Committee-250923a.pdf?ct=1788551282",
+  "final_url": "https://www.nashville.gov/sites/default/files/2025-09/Audit-Committee-250923a.pdf?ct=1788551282",
+  "retrieved_at": "2026-09-05T02:40:33+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 1,
+      "text_offset": 1354,
+      "text_length": 73,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "a35fda5298762d9bf074a80ab302ab34ce878f395f1ecd5045fb48d2acf0780a",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

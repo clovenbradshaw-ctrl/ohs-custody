@@ -1,0 +1,20 @@
+{
+  "id": "BNR-STROBEL-OPENING-2024",
+  "path": "bytes/BNR-STROBEL-OPENING-2024.bin",
+  "sha256": "f0948be2cacb224e8844fbee4b8a5a3f486f2e9acbe1b53dd2c86f16aa8235f0",
+  "bytes": 408046,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://nashvillebanner.com/2024/07/19/strobel-house-housing-homeless/",
+  "final_url": "https://nashvillebanner.com/2024/07/19/strobel-house-housing-homeless/",
+  "retrieved_at": "2026-09-05T02:41:13+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 104504,
+      "byte_length": 20,
+      "method": "exact-bytes",
+      "claim": "Independent confirmation of Strobel House's cost and opening."
+    }
+  ]
+}

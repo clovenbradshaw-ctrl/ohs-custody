@@ -1,0 +1,20 @@
+{
+  "id": "RT-JOIN-INVESTIGATION",
+  "path": "bytes/RT-JOIN-INVESTIGATION.bin",
+  "sha256": "bf60e27e79b352f7a8afeae0554a4bf904c855a7293b5abeee31fee6be47170e",
+  "bytes": 241115,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://readrichtext.substack.com/p/join-the-investigation",
+  "final_url": "https://readrichtext.substack.com/p/join-the-investigation",
+  "retrieved_at": "2026-09-05T02:41:35+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 32501,
+      "byte_length": 60,
+      "method": "exact-bytes",
+      "claim": "Alleges OHS paid an apartment complex $90K in rent while it evicted 30+ residents, some of whom OHS was paying to house there. Distinct from RT-WAYFAIR's $86,103.61 Wallace Studios furniture figure -- do not conflate the two dollar amounts."
+    }
+  ]
+}

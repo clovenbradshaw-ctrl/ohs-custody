@@ -1,0 +1,22 @@
+{
+  "id": "AUD-HID-FOLLOWUP-2025",
+  "path": "bytes/AUD-HID-FOLLOWUP-2025.bin",
+  "sha256": "519906124259a5b80204f1127d3226630921af10073a4a88bf76411cf57b2fc9",
+  "bytes": 866206,
+  "media_type": "application/pdf",
+  "source_url": "https://www.nashville.gov/sites/default/files/2025-07/Recommendations_Follow_Up_Audit_of_Homeless_Impact_Division_Final_07182025_WEBSITE.pdf?ct=1752862157",
+  "final_url": "https://www.nashville.gov/sites/default/files/2025-07/Recommendations_Follow_Up_Audit_of_Homeless_Impact_Division_Final_07182025_WEBSITE.pdf?ct=1752862157",
+  "retrieved_at": "2026-09-05T02:40:41+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 2,
+      "text_offset": 1351,
+      "text_length": 61,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "519906124259a5b80204f1127d3226630921af10073a4a88bf76411cf57b2fc9",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

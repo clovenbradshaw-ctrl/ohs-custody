@@ -1,0 +1,20 @@
+{
+  "id": "RT-2025-INDEX",
+  "path": "bytes/RT-2025-INDEX.bin",
+  "sha256": "871a643dc5fedc441deb27425fe25d5317f9473f19cf672c1a8e5f0f5d2b05ee",
+  "bytes": 326755,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
+  "final_url": "https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
+  "retrieved_at": "2026-09-05T02:41:43+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 929,
+      "byte_length": 29,
+      "method": "exact-bytes",
+      "claim": "Index/navigation post for the outlet's full 2025 OHS coverage -- useful as a source map, not itself a factual claim."
+    }
+  ]
+}

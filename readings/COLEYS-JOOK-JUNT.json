@@ -1,0 +1,20 @@
+{
+  "id": "COLEYS-JOOK-JUNT",
+  "path": "bytes/COLEYS-JOOK-JUNT.bin",
+  "sha256": "ceca8782028a936d395cae8b76d97df02cdfe87adf8d0473e6c4a7afd0c7b8c7",
+  "bytes": 111533,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://coleysjj.com/",
+  "final_url": "https://coleysjj.com/",
+  "retrieved_at": "2026-09-05T02:41:56+00:00",
+  "wayback_timestamp": "20250830043140",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 48421,
+      "byte_length": 17,
+      "method": "normalised-text",
+      "claim": "UNSUBSTANTIATED CONTEXT ONLY. Captured because a $1,800 OHS payment to this restaurant, and a claimed family relationship between owner Shaticka Robinson and Director April Calvin, appear in reporting circulating around this story. No source found (here or elsewhere) confirms a familial relationship or the transaction. Do not cite this entry, or NASHVILLEVOYAGER-SHATICKA, as evidence for either claim -- they exist in the manifest only to document what these public pages do and do not say. See findings/capture-report.md."
+    }
+  ]
+}

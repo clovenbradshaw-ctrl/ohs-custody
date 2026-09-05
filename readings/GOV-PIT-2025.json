@@ -1,0 +1,20 @@
+{
+  "id": "GOV-PIT-2025",
+  "path": "bytes/GOV-PIT-2025.bin",
+  "sha256": "3d63af010d02adb9dff1fb9bffae4cc0de6fe998d832fd7db9aa0a7ec418e1f6",
+  "bytes": 100058,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services/news/2025-point-time-count",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services/news/2025-point-time-count",
+  "retrieved_at": "2026-09-05T02:41:04+00:00",
+  "wayback_timestamp": "20251204072128",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 38988,
+      "byte_length": 23,
+      "method": "exact-bytes",
+      "claim": "Confirms OHS spokesperson Demetris Chaney's full name and title (Public Information Coordinator), and gives the 2025 PIT count for comparison against the certified 2026 figure already in this manifest (GOV-PIT-2026)."
+    }
+  ]
+}

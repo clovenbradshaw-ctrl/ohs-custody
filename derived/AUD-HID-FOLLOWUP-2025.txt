@@ -1,0 +1,353 @@
+METROPOLITAN NASHVILLE GOVERNMENT 
+OFFICE OF INTERNAL AUDIT 
+Audit Recommendations Follow-Up – Audit of 
+Metro Nashville Homeless Impact Division  
+July 18, 2025 
+Burkley Allen    Tom Bates 
+  Angie Henderson 
+ Courtney Johnston     Jenneen Reed      Matthew Scanlan 
+Metropolitan Nashville Audit Committee Members 
+ 
+ 
+ 
+EXECUTIVE SUMMARY 
+Purpose 
+On March 30, 2023, the Office of Internal Audit issued the Audit of the 
+Metropolitan Nashville Homeless Impact Division. The audit report included 
+seven recommendations. All seven recommendations were accepted by 
+management for implementation. The Office of Internal Audit guidelines 
+require monitoring and follow-up to ensure that the recommendations 
+assessed as high or medium risk are appropriately considered, effectively 
+implemented, and yield intended results.  
+Audit Objectives and Scope  
+The objectives of this follow-up audit were to determine if the recommended 
+actions or an acceptable alternative were implemented as of June 30, 2025.  
+The scope of the follow-up audit included seven accepted recommenda-
+tions that management reported as implemented. 
+Note: The Homeless Impact Division was formerly a part of Social Services. 
+Since the audit, the Office of Homeless Services was created and is the 
+owner of the recommendations. 
+What We Found  
+Of the seven recommendations, six were fully implemented and one 
+was partially implemented.  
+Recommendation 
+Status 
+A.1 
+B.1 
+C.1 
+D.1 
+D.2 
+E.1 
+F.1 
+Implemented 
+Partially Implemented 
+Implemented 
+Implemented 
+Implemented 
+Implemented 
+Implemented 
+What We Recommend  
+Management should continue efforts to implement the one remaining 
+partially implemented recommendation.  
+ 
+ 
+ 
+Contents 
+Background and Methodology.………………….………….….3 
+Scope …………………..………………………………...………4 
+Follow-Up Results…………………………………………….….4 
+Appendix A – Management Response Letter……...….……...9 
+Background 
+Methodology 
+The initial audit report encompassed governance and oversight 
+of the Homelessness Planning Council, Homeless Management 
+Information System usage, and internal controls over access to 
+homelessness data between January 1, 2020, and December 
+31, 2021. The audit report included seven recommendations. All 
+seven recommendations were accepted by management for 
+implementation.     
+Note: The Homeless Impact Division was formerly a part of 
+Social Services. Since the audit, the Office of Homeless 
+Services was created and is the owner of the recommendations. 
+The Office of Internal Audit will close a recommendation only for 
+one of the following reasons: 
+•  The recommendation was effectively implemented.  
+•  An alternative action was taken that achieved the intended 
+results. 
+•  Circumstances have so changed that the recommendation is 
+no longer valid. 
+•  The recommendation was not implemented despite the use 
+of all feasible strategies or due to lack of resources. When a 
+recommendation is closed for these reasons, a judgment is 
+made on whether the objectives are significant enough to be 
+pursued later in another assignment. 
+To achieve the audit objectives, auditors performed the following 
+steps:  
+Interviewed management regarding implementation efforts. 
+• 
+•  Reviewed relevant SOC 2 Type 2 documentation. 
+•  Reviewed Homeless Management Information System users 
+and end-user license agreements. 
+•  Reviewed Homelessness Planning Council and Executive 
+Planning meeting minutes. 
+•  Reviewed newly established policies, procedures, and plans. 
+•  Evaluated internal controls currently in place.  
+•  Considered risk of fraud, waste, and abuse. 
+•  Considered information technology risks. 
+Follow-Up – Audit of Metro Nashville Homeless Impact Division 
+3
+ 
+ 
+Scope 
+The scope of the follow-up audit included the seven 
+recommendations that management reported as implemented. 
+Implementation was reviewed as of June 30, 2025. 
+Implementation 
+Status Definitions  
+The following table shows the guidelines followed to determine 
+the status of implementation. 
+Recommendation Implementation Status 
+Implemented 
+The department or agency provided sufficient 
+and appropriate evidence to support the 
+implementation of all elements of the 
+recommendation and the recommendation’s 
+implementation caused or significantly 
+influenced the benefits achieved. 
+Partially  
+Implemented 
+The department or agency provided some 
+evidence to support implementation progress 
+but not all elements of the recommendation 
+were implemented. 
+Not  
+Implemented 
+Or 
+No Longer  
+Applicable 
+The department or agency did not implement 
+a recommendation because: a) of lack of 
+resources; b) an alternative action was taken 
+that achieved the intended results; c) 
+circumstances have so changed that the 
+recommendation is no longer valid. 
+Follow-Up 
+Results 
+The following are the audit recommendations made in the original 
+investigation report dated March 30, 2023, and the current 
+implementation status of each recommendation based on our 
+review of information and documents provided by Homeless 
+Services.  
+Follow-Up – Audit of Metro Nashville Homeless Impact Division 
+4
+ 
+ 
+ 
+A.1  
+Recommendation  
+Implementation Actions 
+Status 
+B.1 
+Recommendation  
+Coordinate with the Homelessness Planning Council to ensure 
+that the plan continues to be relevant through periodic reviews of 
+goals, benchmarks, and monitoring activities. Ensure that 
+appropriate information about implementation status is 
+maintained for internal and external stakeholders.   
+Risk Level: High 
+The strategic plan refresh was completed for July 2023 - June 
+2026. The Strategic Plan Tracker is reviewed and updated in the 
+All Chair Subcommittee meeting that occurs monthly. The 
+Strategic Plan Tracker includes activities, tasks, status, groups 
+responsible by task, notes, and a proposed timeline for 
+completion.  
+IMPLEMENTED 
+Update the policies and procedures manual to include all 
+required Housing and Urban Development policies and 
+procedures or document the reason for the exclusion.   
+Risk Level: High 
+Implementation Actions 
+The Coordinated Entry policies and procedures were updated. 
+However, 5 of the 11 (45%) originally identified required policies 
+and procedures remain exceptions. The Office of Homeless 
+Services is currently working on another update to address the 
+remaining exceptions.   
+Status 
+PARTIALLY IMPLEMENTED 
+Outstanding Actions 
+Continue the update process for the Coordinated Entry policy 
+and procedure manual to incorporate all required Housing and 
+Urban Development policies and procedures.  
+Revised Implementation Date: September 2, 2025 
+Follow-Up – Audit of Metro Nashville Homeless Impact Division 
+5
+ 
+C.1  
+Recommendation  
+Establish an encampment management team comprising of 
+Metropolitan Nashville departments, community organizations, 
+and community leaders involved in addressing homelessness. 
+The encampment management team should be responsible for 
+creating an encampment management plan that includes 
+strategies and policy directions to address the physical 
+management of homeless encampments and establish criteria 
+for determining and coordinating the types of interventions to 
+undertake at encampments.    
+Risk Level: High 
+Implementation Actions 
+MHID completed a community Encampment Outdoor Housing 
+Plan. This plan included input from Community partners, multiple 
+Metro departments, committee leaders, and people with lived 
+experience.   
+Status 
+IMPLEMENTED 
+D.1 
+Recommendation  
+Implementation Actions 
+Ensure that access to the Homeless Management Information 
+System is granted only after new users have completed all 
+necessary steps and an end-user license agreement is properly 
+executed. Retain copies of all end-user license agreements for 
+review.    
+Risk Level: High 
+A random sample of users was selected from a list of all users 
+granted access for the period from 10/01/2022 - 11/30/2024 and 
+supporting end-user license agreements were reviewed. Results 
+of the sample may be projected to the population.    
+Status 
+IMPLEMENTED 
+Follow-Up – Audit of Metro Nashville Homeless Impact Division 
+6
+ 
+D.2  
+Recommendation  
+Annually request a SOC 2 Type 2 report from WellSky to ensure 
+data is secure and always available.     
+Risk Level: High 
+Implementation Actions 
+SOC 2 Type 2 reports were obtained. Supporting documentation 
+was reviewed to confirm.  
+Status 
+E.1 
+IMPLEMENTED 
+Recommendation  
+Establish a process for periodic completion and review of the 
+Housing and Urban Development resources that improve both 
+system administration and software vendor oversight.     
+Risk Level: Medium 
+Implementation Actions 
+Procedures were developed and implemented. Supporting 
+documentation was reviewed. 
+Status 
+IMPLEMENTED 
+F.1 
+Recommendation  
+Document and retain meeting minutes for all Homelessness 
+Planning Council and Executive Planning meetings.      
+Risk Level: Medium 
+Implementation Actions 
+Procedures were developed and implemented. A random 
+sample of meetings was selected for review of associated 
+meeting minutes. Results of the sample can be projected to the 
+population.  
+Status 
+IMPLEMENTED 
+Follow-Up – Audit of Metro Nashville Homeless Impact Division 
+7
+ 
+Government 
+Auditing 
+Standards 
+Compliance 
+We conducted this performance audit in accordance with 
+generally accepted government auditing standards. Those 
+standards require that we plan and perform the audit to obtain 
+sufficient, appropriate evidence to provide a reasonable basis for 
+our findings and conclusions based on our audit objectives. We 
+believe that the evidence obtained provides a reasonable basis 
+for our findings and conclusions based on our audit objectives  
+Audit Team 
+Jeremy Waldorf, In-Charge Auditor 
+Lauren Riley, CPA, CIA, ACDA, CFE, CMFO, Metropolitan Auditor  
+Follow-Up – Audit of Metro Nashville Homeless Impact Division 
+8
+ 
+Appendix A: Management Acknowledgement Letter 
+FREDDIE O’CONNELL 
+            MAYOR 
+APRIL CALVIN 
+    DIRECTOR 
+METROPOLITAN GOVERNMENT OF NASHVILLE AND DAVIDSON COUNTY 
+OFFICE OF HOMELESS SERVICES 
+PO BOX 196300 
+NASHVILLE, TENNESSEE 37219-6300 
+July 16, 2025 
+Ms. Lauren Riley 
+Metropolitan Auditor 
+Office of Internal Audit 
+404 James Robertson Parkway, Suite 190 
+Nashville, TN 37219 
+RE: Follow-up Audit – Metro Nashville Homeless Impact Division 
+Newly created stand-alone office titled: Office of Homeless Services 
+Dear Ms. Riley: 
+This letter acknowledges receipt of the initial draft report for the follow-up audit of the Metro Nashville Homeless 
+Impact Division.  The Homeless Impact Division was formerly a part of Metro Social Services, which is now the 
+newly created stand-alone office titled the Office of Homeless Services. Metro Homeless Impact Division 
+completed the initial audit on March 30, 2023. From the initial audit we reviewed the recommendations and made 
+the necessary programmatic implementations. During this follow-up we were in the process of revising our Policy 
+and Procedures for our Coordinated Entry Process discussed in B.1.  The Coordinated Entry Program recently 
+closed the 30-day public comment period for the annually revised Policy and Procedures. All changes will be 
+reviewed and revised by the Coordinated Entry Oversight Sub-Committee, Office of Homeless Services, and the 
+Homelessness Planning Council.  Currently, B.1 is listed as partially implemented until we have a final revised 
+copy of the Policy and Procedures.  
+We agree to fully implement the changes and review annually for any federal mandates or required modifications.  
+Thank you for the recommendations and patience during this time. 
+Sincerely, 
+April Calvin, Director 
+Office of Homeless Services 
+Metro Government of Nashville and Davidson County 
+Follow-Up – Audit of Metro Nashville Homeless Impact Division 
+9 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                       
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                                                                                    
+ 
+ 
+                                                                                               
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,20 @@
+{
+  "id": "NC5-STROBEL-OPENING",
+  "path": "bytes/NC5-STROBEL-OPENING.bin",
+  "sha256": "caa9c8e139b4074a994bbefa3e633e346b618f7bb23dca8d3bd7237a2890666d",
+  "bytes": 106511,
+  "media_type": "text/html;charset=UTF-8",
+  "source_url": "https://www.newschannel5.com/news/nashville-opens-first-permanent-supportive-housing-facility-for-the-homeless",
+  "final_url": "https://www.newschannel5.com/news/nashville-opens-first-permanent-supportive-housing-facility-for-the-homeless",
+  "retrieved_at": "2026-09-05T02:41:10+00:00",
+  "wayback_timestamp": "20251217091338",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 4321,
+      "byte_length": 68,
+      "method": "exact-bytes",
+      "claim": "Independent confirmation of Strobel House's opening and 90-unit size."
+    }
+  ]
+}

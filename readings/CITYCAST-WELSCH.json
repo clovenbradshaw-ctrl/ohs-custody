@@ -1,0 +1,20 @@
+{
+  "id": "CITYCAST-WELSCH",
+  "path": "bytes/CITYCAST-WELSCH.bin",
+  "sha256": "48f9402957a66785dc9556a3315b6597bc39605b55e4cbf3c7d2b159b3fd371c",
+  "bytes": 200143,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://nashville.citycast.fm/podcasts/why-this-councilmember-wants-to-audit-the-office-of-homeless-services",
+  "final_url": "https://nashville.citycast.fm/podcasts/why-this-councilmember-wants-to-audit-the-office-of-homeless-services",
+  "retrieved_at": "2026-09-05T02:41:29+00:00",
+  "wayback_timestamp": "20251122023046",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 68111,
+      "byte_length": 118,
+      "method": "normalised-text",
+      "claim": "Welsch discusses her audit request in her own words, in audio. Not transcribed here per the brief's instruction not to transcribe video/audio -- page text only."
+    }
+  ]
+}

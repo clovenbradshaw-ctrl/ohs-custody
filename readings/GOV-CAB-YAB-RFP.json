@@ -1,0 +1,20 @@
+{
+  "id": "GOV-CAB-YAB-RFP",
+  "path": "bytes/GOV-CAB-YAB-RFP.bin",
+  "sha256": "f0d8b20d5ab23a7f9b0ea11474fc2257b403e1f4d1683364f18e842aaef219fb",
+  "bytes": 98704,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services/continuum-care/current-rfp/administration-and-support-request-proposal",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services/continuum-care/current-rfp/administration-and-support-request-proposal",
+  "retrieved_at": "2026-09-05T02:41:07+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 55180,
+      "byte_length": 49,
+      "method": "exact-bytes",
+      "claim": "Background reference on OHS's community-advisory-board structure."
+    }
+  ]
+}

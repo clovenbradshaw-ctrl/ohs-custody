@@ -1,0 +1,20 @@
+{
+  "id": "GOV-OHS-HOME",
+  "path": "bytes/GOV-OHS-HOME.bin",
+  "sha256": "272ef87ef8b94f03627830a2176f527e635b0bafb20fed57b7626ee568700521",
+  "bytes": 113170,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services",
+  "retrieved_at": "2026-09-05T02:40:59+00:00",
+  "wayback_timestamp": "20251016220621",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 51972,
+      "byte_length": 80,
+      "method": "exact-bytes",
+      "claim": "Department home page, background reference."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "WKRN-2023-AUDIT",
+  "path": "bytes/WKRN-2023-AUDIT.historical-20231003053345.bin",
+  "sha256": "f00b54042db52ec46428de2f327c0e0829d4b1c613f7fb372bbe8ebed9e721ee",
+  "bytes": 761692,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.wkrn.com/news/local-news/nashville/internal-audit-reveals-past-future-of-homelessness-in-metro-nashville/",
+  "final_url": "https://www.wkrn.com/news/local-news/nashville/internal-audit-reveals-past-future-of-homelessness-in-metro-nashville/",
+  "retrieved_at": "2026-09-05T02:43:13+00:00",
+  "wayback_timestamp": "20231003053345",
+  "historical": true,
+  "live_url_status_at_recovery": 403,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 407873,
+      "byte_length": 72,
+      "method": "exact-bytes",
+      "claim": "OHS's own on-record statement responding to the 2023 audit: 'The audit showed that, for some time, the measures enacted under the previous MHID Leadership were not effective in reducing homelessness, thus, quick and immediate changes were made.' Also quotes Calvin calling the audit welcome and clarifying: '21-page audit,' '16 encampment locations,' rated 'high risk' for lacking an encampment plan. Original anchor (this project's own placeholder guess, not from the user's research doc) did not appear verbatim; corrected to this actual quote after reading the recovered content."
+    }
+  ]
+}

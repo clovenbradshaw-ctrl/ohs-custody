@@ -1,0 +1,20 @@
+{
+  "id": "DEPAUL-USA-NASHVILLE",
+  "path": "bytes/DEPAUL-USA-NASHVILLE.bin",
+  "sha256": "0a557bddd8f0689b2e1dafa8af35f988bd9577f12acd19d15faeb69dd6587bb6",
+  "bytes": 101097,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://depaulusa.org/locations/nashville/",
+  "final_url": "https://depaulusa.org/locations/nashville/",
+  "retrieved_at": "2026-09-05T02:41:49+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 48691,
+      "byte_length": 43,
+      "method": "exact-bytes",
+      "claim": "DePaul's own description of its role operating Strobel House -- the operator's own account, for comparison against Metro's characterization of the contract lapse."
+    }
+  ]
+}

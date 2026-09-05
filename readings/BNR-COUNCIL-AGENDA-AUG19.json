@@ -1,0 +1,20 @@
+{
+  "id": "BNR-COUNCIL-AGENDA-AUG19",
+  "path": "bytes/BNR-COUNCIL-AGENDA-AUG19.bin",
+  "sha256": "c88fe62b6db5ca0dfe076b587102789fad773a5927b65d04589171da1c65a07a",
+  "bytes": 393336,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://nashvillebanner.com/2025/08/19/metro-council-meeting-agenda-the-nations/",
+  "final_url": "https://nashvillebanner.com/2025/08/19/metro-council-meeting-agenda-the-nations/",
+  "retrieved_at": "2026-09-05T02:41:18+00:00",
+  "wayback_timestamp": "20250826155922",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 120197,
+      "byte_length": 107,
+      "method": "tag-stripped",
+      "claim": "Independent, pre-vote confirmation of RS2025-1436's $3.5M/through-June-2026 terms, one day before the Banner's vote-coverage piece already in this manifest (BNR-COUNCIL-DEPAUL)."
+    }
+  ]
+}

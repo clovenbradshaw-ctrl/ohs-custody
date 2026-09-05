@@ -1,0 +1,20 @@
+{
+  "id": "AUD-ABOUT",
+  "path": "bytes/AUD-ABOUT.bin",
+  "sha256": "05d9e28181952649837f8ad9cd1b5d703e18c917bfc88f9fbe258c36a46142d3",
+  "bytes": 71875,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/internal-audit/about-us",
+  "final_url": "https://www.nashville.gov/departments/internal-audit/about-us",
+  "retrieved_at": "2026-09-05T02:40:54+00:00",
+  "wayback_timestamp": "20250324215225",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 458,
+      "byte_length": 73,
+      "method": "exact-bytes",
+      "claim": "Background reference on Internal Audit's mandate and vision."
+    }
+  ]
+}

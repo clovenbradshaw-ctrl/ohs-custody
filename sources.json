@@ -14,7 +14,16 @@
       "anchor": "Only 12 out of 23 (52 percent)",
       "claim": "The 52 percent HUD non-compliance figure and its HIGH risk rating originate here, for the predecessor division rather than OHS.",
       "used_for": "Rebuttal to the no-major-issues claim",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "MUNI-263040",
@@ -25,7 +34,16 @@
       "anchor": "shall be appointed by the mayor",
       "claim": "The enacted code vests appointment in the mayor, leaving the planning council only a seat in the interview process.",
       "used_for": "Section V, the ordinance",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "MUNI-263040-HR",
@@ -36,7 +54,16 @@
       "anchor": "at least one representative of the Nashville Davidson County",
       "claim": "The residual council role is participation in interviewing, not nomination and not removal.",
       "used_for": "Section V, the ordinance",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-BL2021-971",
@@ -48,7 +75,16 @@
       "claim": "The third-reading amendment came in under suspended rules. The action text credits O'Connell with offering Amendment No. 2.",
       "used_for": "Section V, the hinge of the piece",
       "note": "The action-text sentence in this entry's own anchor is NOT on this LegislationDetail.aspx page -- it lives on the linked HistoryDetail.aspx sub-page for the third-reading row, which the site renders as a JS popup rather than a plain link. Captured separately and correctly anchored as LEG-BL2021-971-HIST-3RD (and the second-reading counterpart, LEG-BL2021-971-HIST-2ND). This entry is left anchor-missing deliberately rather than repointed, per the brief's rule against loosening an anchor to make it pass -- it is honestly describing this specific URL's content, which is the bill summary, not the action log.",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-BL2021-971-HIST-2ND",
@@ -60,7 +96,16 @@
       "claim": "Official action text for second reading: O'Connell offered and moved Amendment No. 1, matching that amendment PDF's own sponsor line.",
       "used_for": "Section V, the hinge of the piece",
       "added": "Not in the original manifest. Added 2026-09-05: found via the meeting-detail page for the 6/7/2022 Metropolitan Council meeting (MeetingDetail.aspx?ID=965721&GUID=C4ED5A72-7FAC-4B02-BB2A-CE72C8400C2C), which Legistar links from LEG-BL2021-971's history grid as a per-row JS popup, not a plain href.",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-BL2021-971-HIST-3RD",
@@ -72,7 +117,16 @@
       "claim": "Official action text for third reading: O'Connell moved to suspend the rules and offered Amendment No. 2 -- this is the specific sentence LEG-BL2021-971's manifest anchor was written for, and it disagrees with Amendment No. 2's own PDF, which is sponsored by Erin Evans. Video of this reading: https://nashville.legistar.com/Video.aspx?Mode=Granicus&ID1=2173&ID2=100192&Mode2=Video (not transcribed).",
       "used_for": "Section V, the hinge of the piece",
       "added": "Not in the original manifest. Added 2026-09-05, same discovery path as LEG-BL2021-971-HIST-2ND but for the 6/21/2022 meeting (MeetingDetail.aspx?ID=965745&GUID=6F19C43A-678F-41DF-993A-9D1AD19A7720).",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-AMD1",
@@ -83,7 +137,16 @@
       "anchor": "list of three names",
       "claim": "Sponsor attribution on this document is unresolved and decides who removed council nomination power.",
       "used_for": "Correction 4, unresolved",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-AMD2",
@@ -94,7 +157,16 @@
       "anchor": "SPONSORED BY",
       "claim": "Sponsor attribution on this document is unresolved and decides who removed council nomination power.",
       "used_for": "Correction 4, unresolved",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-RS2025-1436",
@@ -105,7 +177,16 @@
       "anchor": "Depaul USA",
       "claim": "The replacement contract and its attachments carry the gag clause that needs verifying at section D.8.",
       "used_for": "Section VI, the ledger",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-RS2025-1711",
@@ -116,7 +197,16 @@
       "anchor": "Office of Homeless Services",
       "claim": "Council asked for a spending methodology and got a non-answer.",
       "used_for": "Section VI, the ledger",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-RS2024-490",
@@ -127,7 +217,16 @@
       "anchor": "American Rescue Plan",
       "claim": "Authorized purpose here decides whether direct rent payments were within authority. Reconcile against the resolution numbers cited on invoices.",
       "used_for": "Federal grant compliance leg",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "LEG-RS2022-1860",
@@ -138,7 +237,16 @@
       "anchor": "American Rescue Plan",
       "claim": "Origin of the money later reallocated to homeless services. Needed to settle the R22-1699 versus RS2022-1860 discrepancy.",
       "used_for": "Federal grant compliance leg",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "AUD-CTTE-INDEX",
@@ -149,7 +257,16 @@
       "anchor": "Audit Committee",
       "claim": "Index page from which the 23 Sep 2025 packet and every later agenda hangs. Capture repeatedly, since it changes.",
       "used_for": "Trigger monitoring",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "AUD-CTTE-DEC9",
@@ -160,7 +277,16 @@
       "anchor": "Audit Committee",
       "claim": "Contains no OHS status item, which is the evidentiary basis for saying the audit was still open at that date.",
       "used_for": "The eleven months of silence",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "AUD-FY2027",
@@ -171,7 +297,16 @@
       "anchor": "Fiscal Year 2027",
       "claim": "Negative evidence. Capture on a schedule so the absence of an OHS report is provable on specific dates.",
       "used_for": "Trigger monitoring",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "AUD-FY2026",
@@ -182,7 +317,16 @@
       "anchor": "Fiscal Year 2026",
       "claim": "Negative evidence for the fiscal year in which the audit was approved.",
       "used_for": "Trigger monitoring",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "AUD-INVEST",
@@ -193,7 +337,16 @@
       "anchor": "Investigation",
       "claim": "Where the landlord engagement investigation would surface if it concluded.",
       "used_for": "Trigger monitoring",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "GOV-HPC-HIST",
@@ -204,7 +357,16 @@
       "anchor": "During the summer of 2017",
       "claim": "The 2018 consolidation was recommended by a HUD-facilitated working group, which is the fair version of that history.",
       "used_for": "Section III, told fairly",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "GOV-MDHA-CA",
@@ -216,7 +378,16 @@
       "claim": "Documents the prior state before the role migrated into OHS. This page is legacy and at risk of removal, so archive it first.",
       "used_for": "Section II, the four pillars",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "GOV-OHS-CA-2023",
@@ -229,7 +400,16 @@
       "used_for": "Section II, the four pillars",
       "priority": "high",
       "added": "Not in the original manifest. Added 2026-09-05 by the capture agent after GOV-MDHA-CA's live URL began returning 403 (see its capture.note) -- this is the current live page carrying the successor fact, dated to the transition itself rather than merely replacing a dead link.",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "GOV-PIT-2026",
@@ -240,7 +420,16 @@
       "anchor": "2,298 people",
       "claim": "Certified 2026 count, up 5.4 percent. Note the unsheltered figure differs from one news account.",
       "used_for": "Outcomes against spending",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "GOV-CALVIN",
@@ -252,7 +441,16 @@
       "claim": "Establishes tenure at a given date. Capture on a schedule so a departure is timestamped against a live prior capture.",
       "used_for": "Trigger monitoring",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "GOV-MAYOR-DIR",
@@ -264,7 +462,16 @@
       "claim": "Carries the OEM notation in Wilson's title and will change as her seat is refilled. Archive before it turns over.",
       "used_for": "Correction 5, reporting line",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "CTB-TACKETT-AUG26",
@@ -276,7 +483,16 @@
       "claim": "Only located text of the MHRC determination. The underlying letter is not yet in hand, so this is a quoting source and not the record itself.",
       "used_for": "Section VIII, MHRC",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "CTB-HPC-POWER",
@@ -287,7 +503,16 @@
       "anchor": "absolutely no power over Metro resources",
       "claim": "The governance board's own description of its powerlessness, from the former division director.",
       "used_for": "Section VII, the board's own account",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "CTB-SHELBY",
@@ -298,7 +523,16 @@
       "anchor": "reallocated through Metro's approved process",
       "claim": "OHS on the record about where the returned allocation went. Watch for double counting against the Holladay figure.",
       "used_for": "Returned allocations",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "CTB-2018",
@@ -309,7 +543,16 @@
       "anchor": "BL2018-1199",
       "claim": "Dates the elimination of the Metropolitan Homelessness Commission and the creation of the planning council.",
       "used_for": "Section III",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "BNR-WILSON",
@@ -321,7 +564,16 @@
       "claim": "Resignation letter language and the 28 Aug final day.",
       "used_for": "Section I, the peg",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "AX-WILSON",
@@ -332,7 +584,16 @@
       "anchor": "fourth top aide to leave the mayor's office",
       "claim": "Places the departure in a run of four senior exits since July 2025.",
       "used_for": "Section I, the peg",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "BNR-MARTINI-LEAVE",
@@ -344,7 +605,16 @@
       "claim": "The sentence that breaks the unchecked-appointee framing and forces the stronger version of the argument.",
       "used_for": "Correction 5",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "SCN-MARTINI-FIRED",
@@ -355,7 +625,16 @@
       "anchor": "pervasive culture of fear",
       "claim": "Outside counsel's finding and the 2 Feb 2026 termination date.",
       "used_for": "Section IX, the pattern",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "SCN-AUDIT-APPROVED",
@@ -367,7 +646,16 @@
       "claim": "Establishes the 23 Sep 2025 approval, the scope role of the vice mayor, and the auditor present.",
       "used_for": "Section VI",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "SCN-WELSCH-FILING",
@@ -379,7 +667,16 @@
       "claim": "Carries the request document as an attachment. Archive the attachment separately once its direct URL is known.",
       "used_for": "Audit scope reconstruction",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "SCN-NONTRAD",
@@ -391,7 +688,16 @@
       "claim": "The August 2024 texts, the coordinated entry bypass, and the ARPA figure.",
       "used_for": "Section II, the harms",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "SCN-PATTERSON",
@@ -403,7 +709,16 @@
       "claim": "The board chair describing the director as running the board. Strongest single line for the governance section.",
       "used_for": "Section VII",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "SCN-COVER-PIT",
@@ -414,7 +729,16 @@
       "anchor": "citizen effort to publicly audit",
       "claim": "Outside characterisation of the community audit effort. Relevant to disclosure of your own role.",
       "used_for": "Disclosure paragraph",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "FOX-OPENBOOK",
@@ -426,7 +750,16 @@
       "claim": "The on-record rebuttal the piece has to carry, and the claim the 2023 audit tests.",
       "used_for": "Right of reply",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "FOX-LAPSE",
@@ -439,7 +772,16 @@
       "used_for": "Section VI, the ledger",
       "url_status": "confirmed",
       "url_correction": "Original manifest URL had an extra '-behind-' segment ('...contract-lapse-at-behind-homeless-housing-facility') and 307-redirected to /error (404). Correct slug found 2026-09-05 via web search for the Strobel House/DePaul USA contract-lapse coverage and confirmed live with the anchor present verbatim: '...contract-lapse-at-homeless-housing-facility'.",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "NC5-WELSCH",
@@ -450,7 +792,16 @@
       "anchor": "we have not improved our numbers by any measure",
       "claim": "The 3.2 million figure, its component categories, and Calvin's denial.",
       "used_for": "Audit scope reconstruction",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "BNR-COUNCIL-DEPAUL",
@@ -461,7 +812,16 @@
       "anchor": "not an ideal process",
       "claim": "Calvin conceding the procurement failure on the record.",
       "used_for": "Section VI, the ledger",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "RT-BULLSHITTERY",
@@ -473,7 +833,16 @@
       "claim": "Your published record of the Calvin email, the Koch contracts, and the Clutch model. Archive your own work so the priority of publication is fixed.",
       "used_for": "Prior publication, do not repeat",
       "priority": "high",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "RT-15M",
@@ -484,7 +853,16 @@
       "anchor": "outside of any procurement process",
       "claim": "Your record of the off-contract rent payments and the business unit ledger.",
       "used_for": "Section VI, the ledger",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "RT-WAYFAIR",
@@ -495,7 +873,16 @@
       "anchor": "86,103.61",
       "claim": "The furniture spend, its date, and the absence of a vendor contract.",
       "used_for": "Section VI, the ledger",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "RT-OHS-EMAIL",
@@ -506,7 +893,16 @@
       "anchor": "OHS Community Audit",
       "claim": "OHS characterising your published data as misleading. Their words, preserved.",
       "used_for": "Right of reply",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "PRO-DEPAUL-CEO",
@@ -517,7 +913,16 @@
       "anchor": "did not have a valid contract",
       "claim": "Your record of the resignation following publication.",
       "used_for": "Section VI, the ledger",
-      "capture": {"status": "unverified", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "MHRC-DETERMINATION",
@@ -530,7 +935,16 @@
       "used_for": "Section VIII, MHRC",
       "priority": "critical",
       "url_status": "missing",
-      "capture": {"status": "not-located", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "not-located",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "AUD-PACKET-SEP23",
@@ -539,11 +953,20 @@
       "doctype": "not-yet-located",
       "url": "",
       "anchor": "Office of Homeless Services",
-      "claim": "Contains the Welsch request verbatim and the adopted scope. Not yet located at a direct URL. Reach it from the meetings index.",
-      "used_for": "Audit scope reconstruction",
+      "claim": "RESOLVED as two separate captured entries, not one packet: AUD-CTTE-SEP23-AGENDA (the agenda PDF) and AUD-CTTE-SEP23-MINUTES (the approved minutes PDF), both found 2026-09-05 via the individual meeting page linked from the meetings index. The minutes confirm the audit's official title ('Audit of Office of Homeless Services Financial Processes') and document a disclosed conflict of interest (Finance Director Jenneen Reed, self-described 'Strobel family' member and donor), but do NOT contain Welsch's verbatim dollar-itemized request -- that document was 'provided' to the Committee per the minutes but not transcribed into them, and its own direct URL is still not located. This stub is left in place, retitled, so a search for AUD-PACKET-SEP23 lands on where the real answer actually is rather than a dead end.",
+      "used_for": "Audit scope reconstruction -- see AUD-CTTE-SEP23-AGENDA / AUD-CTTE-SEP23-MINUTES",
       "priority": "critical",
-      "url_status": "missing",
-      "capture": {"status": "not-located", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "url_status": "superseded",
+      "capture": {
+        "status": "not-located",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     },
     {
       "id": "TRUTHOUT-NDP",
@@ -555,7 +978,478 @@
       "claim": "Source for the O'Connell privacy record. Cited in research without a retrievable URL, so it is unconfirmed.",
       "used_for": "Section VII, the record against the record",
       "url_status": "missing",
-      "capture": {"status": "not-located", "wayback_timestamp": null, "sha256": null, "bytes": null, "anchor_offset": null, "anchor_length": null, "content_type": null, "fetched_at": null}
+      "capture": {
+        "status": "not-located",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "AUD-CTTE-SEP23-AGENDA",
+      "label": "Audit Committee agenda, 23 Sep 2025",
+      "tier": "primary-record",
+      "doctype": "agenda-pdf",
+      "url": "https://www.nashville.gov/sites/default/files/2025-09/Audit-Committee-250923a.pdf?ct=1788551282",
+      "anchor": "Discussion on the request for an audit of the Office of Homeless Services",
+      "claim": "Confirms the OHS audit request was formally on the Sept 23, 2025 agenda. Also lists two other pending items not previously in this manifest: a follow-up on the July 18, 2025 Homeless Impact Division audit (added separately as AUD-HID-FOLLOWUP-2025) and an Investigation of Metro Social Services Contracts issued July 8, 2025 (not yet located).",
+      "used_for": "Task 4b, the Sept 23 packet",
+      "added": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "AUD-CTTE-SEP23-MINUTES",
+      "label": "Audit Committee minutes, 23 Sep 2025 -- OHS audit approved",
+      "tier": "primary-record",
+      "doctype": "minutes-pdf",
+      "url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
+      "anchor": "Audit of Office of Homeless Services Financial Processes to the 2025 annual audit plan",
+      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them, so the $3.2M line-item breakdown is not sourced to this document and remains not-located.",
+      "used_for": "Task 4b, the hinge of the audit's origin",
+      "added": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "AUD-HID-FOLLOWUP-2025",
+      "label": "Audit recommendations follow-up, Homeless Impact Division, 18 Jul 2025",
+      "tier": "primary-record",
+      "doctype": "audit-pdf",
+      "url": "https://www.nashville.gov/sites/default/files/2025-07/Recommendations_Follow_Up_Audit_of_Homeless_Impact_Division_Final_07182025_WEBSITE.pdf?ct=1752862157",
+      "anchor": "six were fully implemented and one was partially implemented",
+      "claim": "Follow-up on the March 2023 audit's seven recommendations: as of June 30, 2025, six were fully implemented, one partially. Cuts both ways on the 'no major issues' rebuttal -- it shows real remediation, but only of the 2023 predecessor-division audit, not the new financial-processes audit approved two months later.",
+      "used_for": "Rebuttal nuance to the no-major-issues claim",
+      "added": "Found via the Audit Reports by Department index (AUD-BY-DEPT); not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "AUD-CTTE-BYLAWS",
+      "label": "Audit Committee rules and bylaws",
+      "tier": "primary-record",
+      "doctype": "bylaws-pdf",
+      "url": "https://www.nashville.gov/sites/default/files/2021-03/AuditCommitteeRules.pdf",
+      "anchor": "Audit Committee",
+      "claim": "Governance reference for how the Committee is constituted and how it may add items to the annual audit plan.",
+      "used_for": "Background, governance context",
+      "added": "Reference source from the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "AUD-ABOUT",
+      "label": "Nashville.gov, About the Office of Internal Audit",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/internal-audit/about-us",
+      "anchor": "valued resource by Council, Metro Management, staff and our audit clients",
+      "claim": "Background reference on Internal Audit's mandate and vision.",
+      "used_for": "Background, governance context",
+      "added": "Reference source from the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "AUD-BY-DEPT",
+      "label": "Nashville.gov, Audit Reports by Department (2007-present)",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/internal-audit/audit-reports-department",
+      "anchor": "Homeless Impact Division Follow-Up, July 18, 2025",
+      "claim": "Index confirming the July 18, 2025 follow-up audit exists and linking it -- this is how AUD-HID-FOLLOWUP-2025 was found. Also the department-level index a reader can use to check whether the new Financial Processes audit has posted.",
+      "used_for": "Task 4b/Task 7, tracking whether the audit has posted",
+      "added": "Reference source from the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "GOV-OHS-HOME",
+      "label": "Nashville.gov, Office of Homeless Services home page",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/office-homeless-services",
+      "anchor": "The Office of Homeless Services leads Nashville's efforts to tackle homelessness",
+      "claim": "Department home page, background reference.",
+      "used_for": "Background",
+      "added": "Reference source from the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "GOV-OHS-DIRECTORS",
+      "label": "Nashville.gov, OHS Director and Assistant Directors",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/office-homeless-services/director-and-assistant-directors",
+      "anchor": "April Calvin",
+      "claim": "Confirms April Calvin was still listed as OHS Director as of capture. Re-check at publication -- this is exactly the kind of page that can change without notice, per GOV-MAYOR-DIR's own drift found earlier in this project.",
+      "used_for": "Status item: is April Calvin still director",
+      "added": "Reference source from the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "GOV-PIT-2025",
+      "label": "Nashville.gov, 2025 Point-in-Time Count",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/office-homeless-services/news/2025-point-time-count",
+      "anchor": "Demetris Chaney Perkins",
+      "claim": "Confirms OHS spokesperson Demetris Chaney's full name and title (Public Information Coordinator), and gives the 2025 PIT count for comparison against the certified 2026 figure already in this manifest (GOV-PIT-2026).",
+      "used_for": "Outcomes against spending; spokesperson identification",
+      "added": "Reference source from the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "GOV-CAB-YAB-RFP",
+      "label": "Nashville.gov, CAB/YAB lived-experience RFP",
+      "tier": "primary-record",
+      "doctype": "gov-page",
+      "url": "https://www.nashville.gov/departments/office-homeless-services/continuum-care/current-rfp/administration-and-support-request-proposal",
+      "anchor": "individuals with lived experience of homelessness",
+      "claim": "Background reference on OHS's community-advisory-board structure.",
+      "used_for": "Background",
+      "added": "Reference source from the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "NC5-STROBEL-OPENING",
+      "label": "NewsChannel 5, Strobel House opening",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.newschannel5.com/news/nashville-opens-first-permanent-supportive-housing-facility-for-the-homeless",
+      "anchor": "features 90 homes for Nashvillians experiencing chronic homelessness",
+      "claim": "Independent confirmation of Strobel House's opening and 90-unit size.",
+      "used_for": "Background, Strobel House",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "BNR-STROBEL-OPENING-2024",
+      "label": "Nashville Banner, Strobel House opening (2024)",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://nashvillebanner.com/2024/07/19/strobel-house-housing-homeless/",
+      "anchor": "$35 million building",
+      "claim": "Independent confirmation of Strobel House's cost and opening.",
+      "used_for": "Background, Strobel House",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "BNR-COUNCIL-AGENDA-AUG19",
+      "label": "Nashville Banner, Council agenda preview, 19 Aug 2025",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://nashvillebanner.com/2025/08/19/metro-council-meeting-agenda-the-nations/",
+      "anchor": "provides $3.5 million through the Office of Homeless Services to Depaul USA",
+      "claim": "Independent, pre-vote confirmation of RS2025-1436's $3.5M/through-June-2026 terms, one day before the Banner's vote-coverage piece already in this manifest (BNR-COUNCIL-DEPAUL).",
+      "used_for": "The DePaul/Strobel contract replacement",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "WKRN-2023-AUDIT",
+      "label": "WKRN, 2023 audit coverage",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.wkrn.com/news/local-news/nashville/internal-audit-reveals-past-future-of-homelessness-in-metro-nashville/",
+      "anchor": "the previous MHID Leadership were not effective in reducing homelessness",
+      "claim": "OHS's own on-record statement responding to the 2023 audit: 'The audit showed that, for some time, the measures enacted under the previous MHID Leadership were not effective in reducing homelessness, thus, quick and immediate changes were made.' Also quotes Calvin calling the audit welcome and clarifying: '21-page audit,' '16 encampment locations,' rated 'high risk' for lacking an encampment plan. Original anchor (this project's own placeholder guess, not from the user's research doc) did not appear verbatim; corrected to this actual quote after reading the recovered content.",
+      "used_for": "Corroborating the 2023 audit; Calvin's own response to it",
+      "added": "From the user's research doc; not in the original manifest. Live URL blocked (403); recovered via a pre-existing Wayback snapshot -- see capture.note.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "FORBES-STROBEL",
+      "label": "Forbes, Strobel/affordable-housing context",
+      "tier": "secondary",
+      "doctype": "news",
+      "url": "https://www.forbes.com/sites/jeffsteele/2024/12/12/aiming-to-break-cycle-of-homelessness-in-nashville/",
+      "anchor": "Strobel",
+      "claim": "Context on Strobel House and the Holladay/Shelby House developments, per the user's research doc. Blocked at capture (see note).",
+      "used_for": "Background, possible Holladay/Shelby double-count check",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "CITYCAST-WELSCH",
+      "label": "City Cast Nashville, Welsch interview (podcast)",
+      "tier": "secondary",
+      "doctype": "podcast",
+      "url": "https://nashville.citycast.fm/podcasts/why-this-councilmember-wants-to-audit-the-office-of-homeless-services",
+      "anchor": "why she's pursuing her recent request to audit Metro's Office of Homeless Services due to financial irregularities",
+      "claim": "Welsch discusses her audit request in her own words, in audio. Not transcribed here per the brief's instruction not to transcribe video/audio -- page text only.",
+      "used_for": "Welsch's own account of the request",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "RT-TEXT-MESSAGES",
+      "label": "{Rich Text}, Calvin text messages on family selection",
+      "tier": "secondary",
+      "doctype": "blog",
+      "url": "https://readrichtext.substack.com/p/null_results-text-messages-reveal",
+      "anchor": "removing families from consideration based on their size",
+      "claim": "Reports Director Calvin personally selected families for the Non-Traditional/MRRF program via text, outside Coordinated Entry. The article is metered (Substack 'claim your free post' gate) -- the lede and summary are publicly served and captured; the actual text-message images are behind the gate and were not retrieved.",
+      "used_for": "The Non-Traditional/MRRF program",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "RT-JOIN-INVESTIGATION",
+      "label": "{Rich Text}, Join the Investigation ($90K/evictions)",
+      "tier": "secondary",
+      "doctype": "blog",
+      "url": "https://readrichtext.substack.com/p/join-the-investigation",
+      "anchor": "Pay An Apartment Complex $90K While It Evicted 30+ Residents",
+      "claim": "Alleges OHS paid an apartment complex $90K in rent while it evicted 30+ residents, some of whom OHS was paying to house there. Distinct from RT-WAYFAIR's $86,103.61 Wallace Studios furniture figure -- do not conflate the two dollar amounts.",
+      "used_for": "The Non-Traditional/MRRF program, landlord-engagement spending",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "RT-2025-INDEX",
+      "label": "{Rich Text}, 2025 index of OHS coverage",
+      "tier": "secondary",
+      "doctype": "blog",
+      "url": "https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
+      "anchor": "186,261 words across 94 posts",
+      "claim": "Index/navigation post for the outlet's full 2025 OHS coverage -- useful as a source map, not itself a factual claim.",
+      "used_for": "Source navigation",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "DEPAUL-USA-NASHVILLE",
+      "label": "DePaul USA, Nashville/Strobel House page",
+      "tier": "own-publication",
+      "doctype": "org-page",
+      "url": "https://depaulusa.org/locations/nashville/",
+      "anchor": "Depaul USA Nashville operates Strobel House",
+      "claim": "DePaul's own description of its role operating Strobel House -- the operator's own account, for comparison against Metro's characterization of the contract lapse.",
+      "used_for": "The DePaul/Strobel contract lapse",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "COLEYS-JOOK-JUNT",
+      "label": "Coley's Jook Junt (restaurant), own site",
+      "tier": "own-publication",
+      "doctype": "org-page",
+      "url": "https://coleysjj.com/",
+      "anchor": "Winner of Netflix",
+      "claim": "UNSUBSTANTIATED CONTEXT ONLY. Captured because a $1,800 OHS payment to this restaurant, and a claimed family relationship between owner Shaticka Robinson and Director April Calvin, appear in reporting circulating around this story. No source found (here or elsewhere) confirms a familial relationship or the transaction. Do not cite this entry, or NASHVILLEVOYAGER-SHATICKA, as evidence for either claim -- they exist in the manifest only to document what these public pages do and do not say. See findings/capture-report.md.",
+      "used_for": "Unsubstantiated claim, flagged not to publish without documentation",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "NASHVILLEVOYAGER-SHATICKA",
+      "label": "NashvilleVoyager profile, Shaticka Robinson",
+      "tier": "secondary",
+      "doctype": "blog",
+      "url": "https://nashvillevoyager.com/interview/community-highlights-meet-shaticka-robinson-of-coleys-jook-junt-food-truck-bougie-barbecue-brand/",
+      "anchor": "Season 3 Winner of Netflix",
+      "claim": "UNSUBSTANTIATED CONTEXT ONLY, same caveat as COLEYS-JOOK-JUNT. This profile is a straightforward career bio and contains no mention of April Calvin or any family relationship -- its absence here is itself part of why the claim is unsubstantiated.",
+      "used_for": "Unsubstantiated claim, flagged not to publish without documentation",
+      "added": "From the user's research doc; not in the original manifest.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     }
   ]
 }

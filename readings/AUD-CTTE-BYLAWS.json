@@ -1,0 +1,22 @@
+{
+  "id": "AUD-CTTE-BYLAWS",
+  "path": "bytes/AUD-CTTE-BYLAWS.bin",
+  "sha256": "770342461679ab85a53a1865fa9366817a6044f6f98d2229e534830ff4b7dde5",
+  "bytes": 106259,
+  "media_type": "application/pdf",
+  "source_url": "https://www.nashville.gov/sites/default/files/2021-03/AuditCommitteeRules.pdf",
+  "final_url": "https://www.nashville.gov/sites/default/files/2021-03/AuditCommitteeRules.pdf",
+  "retrieved_at": "2026-09-05T02:40:46+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 1,
+      "text_offset": 144,
+      "text_length": 15,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "770342461679ab85a53a1865fa9366817a6044f6f98d2229e534830ff4b7dde5",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

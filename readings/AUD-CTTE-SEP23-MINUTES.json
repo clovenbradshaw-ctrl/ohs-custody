@@ -1,0 +1,22 @@
+{
+  "id": "AUD-CTTE-SEP23-MINUTES",
+  "path": "bytes/AUD-CTTE-SEP23-MINUTES.bin",
+  "sha256": "015a3537266f64e366a1b3cc6baf922fef1a17c999f3c4cfe1e72466641081b8",
+  "bytes": 203863,
+  "media_type": "application/pdf",
+  "source_url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
+  "final_url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
+  "retrieved_at": "2026-09-05T02:40:37+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 3,
+      "text_offset": 6633,
+      "text_length": 87,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "015a3537266f64e366a1b3cc6baf922fef1a17c999f3c4cfe1e72466641081b8",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

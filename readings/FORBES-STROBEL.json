@@ -1,0 +1,22 @@
+{
+  "id": "FORBES-STROBEL",
+  "path": "bytes/FORBES-STROBEL.historical-20251012022837.bin",
+  "sha256": "b91c5a078112da97ea215fc3c65f3de9c1f0f3e769b3d184488c8b99adf86bee",
+  "bytes": 1119118,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://www.forbes.com/sites/jeffsteele/2024/12/12/aiming-to-break-cycle-of-homelessness-in-nashville/",
+  "final_url": "https://www.forbes.com/sites/jeffsteele/2024/12/12/aiming-to-break-cycle-of-homelessness-in-nashville/",
+  "retrieved_at": "2026-09-05T02:42:25+00:00",
+  "wayback_timestamp": "20251012022837",
+  "historical": true,
+  "live_url_status_at_recovery": 403,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 1281,
+      "byte_length": 7,
+      "method": "exact-bytes",
+      "claim": "Context on Strobel House and the Holladay/Shelby House developments, per the user's research doc. Blocked at capture (see note)."
+    }
+  ]
+}
