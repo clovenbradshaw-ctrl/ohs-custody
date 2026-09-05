@@ -1,0 +1,1327 @@
+METROPOLITAN NASHVILLE GOVERNMENT 
+
+OFFICE OF INTERNAL AUDIT 
+
+Audit of the Metropolitan Nashville Government 
+Opioid Settlement Funds 
+
+June 10, 2026 
+
+ Tom Bates 
+
+ Angie Henderson 
+
+Delishia Porterfield      Jenneen Reed      Matthew Scanlan      Jason Spain 
+
+Metropolitan Nashville Audit Committee Members 
+
+ 
+ 
+ 
+  
+EXECUTIVE SUMMARY 
+
+Why This Audit Matters 
+The Metropolitan Nashville Government began receiving opioid 
+settlement funds as part of the national legal settlements intended to 
+address the harm caused by opioid misuse and addiction. Proper 
+governance, utilization, and oversight of settlement funds are imperative 
+to ensure impactful steps are taken to reduce the devastating effects of 
+the opioid crisis within Nashville and Davidson County. 
+
+Audit Objectives and Scope 
+The objectives of this audit are to determine if: 
+
+•  Processes and controls are in place to ensure expended opioid 
+settlement funds met uses outlined in the Tennessee-State 
+Subdivision Opioid Abatement Agreement and applicable 
+contracts and grant agreements. 
+
+•  Opioid settlement funds were expended in accordance with the 
+
+Metropolitan Nashville Opioid Steering Committee proposal for the 
+approved use of the funds. 
+
+•  Comprehensive performance measures and oversight were 
+
+established to assess the impact of opioid settlement spending 
+and gauge the success of the program. 
+
+The scope of this audit included all Opioid Settlement Fund activities and 
+transactions from March 1, 2022, through May 31, 2025. 
+
+What We Found 
+The Health Department’s opioid settlement program delivers services 
+aligned with treatment and harm reduction efforts. The program primarily 
+follows recommendations from the Opioid Steering Committee. 
+A scope limitation was identified due to management interference. 
+Employee time spent on opioid-related programs could not be 
+determined due to the limitation.  
+Additionally, a governance or oversight structure, similar to those used in 
+other jurisdictions, has not been established. Internal controls related to 
+invoice review and reporting accuracy were lacking which limited 
+transparency over the use of settlement funds. Additionally, performance 
+monitoring and oversight could be improved. 
+
+ 
+ 
+ 
+ 
+What We Recommend 
+Management should ensure consistent program-level review of 
+contractor invoices prior to approval. Processes to document and support 
+the percentage of employee time charged to opioid settlement business 
+units should be established. Grant reports should be completed and 
+retained, and financial data should be reconciled to supporting reports 
+prior to submission. 
+
+Health Department management should work with the Mayor’s Office to 
+establish a formal oversight structure and governance process for the 
+opioid settlement fund program. The oversight should include regular 
+reporting on fund allocations and program outcomes. 
+
+ 
+ 
+ 
+Contents 
+
+Background 
+
+Background                                                                               
+
+Objectives and Conclusions                                             
+
+Observations, Recommendations, Response         
+
+Page 4 
+
+Page 8 
+
+Page 9 
+
+Scope and Methodology                                                     
+
+Page 23 
+
+Appendix A – Management Response Letter             
+
+Page 24 
+
+Appendix B – Assessed Risk Rating                               
+
+Page 25 
+
+National Opioid Settlement 
+The Metropolitan Nashville Government entered into the 
+Tennessee State-Subdivision Opioid Abatement Agreement 
+following national settlements with pharmaceutical 
+manufacturers, distributors, and other entities accused of 
+contributing to the opioid crisis through deceptive marketing 
+and distribution practices. The settlements provide funding to 
+state and local governments to address opioid misuse through 
+prevention, treatment, recovery, and harm reduction initiatives.  
+
+In Tennessee, settlement funds are distributed through three 
+channels. The distribution structure is summarized in Exhibit A 
+below. 
+
+Exhibit A: Tennessee Opioid Settlement Distribution  
+Percentage 
+
+Allocation 
+Category 
+
+Description 
+
+Opioid Abatement 
+Fund 
+
+Subdivision Fund 
+(Local 
+Governments) 
+
+70% 
+
+15% 
+
+Funds dedicated to opioid abatement strategies. Of this amount, 35% is 
+distributed to counties based on population and impact, and 65% is 
+awarded through a competitive grant process. 
+
+Distributed directly to counties and eligible municipalities. Funds may 
+be used for forward-looking abatement activities or reimbursement of 
+eligible past expenses. 
+
+State General Fund 
+
+15% 
+
+Used by the State of Tennessee for administration and oversight of 
+opioid settlement funds. 
+
+Source: Tennessee Attorney General’s Office, Guide for Local Governments on Opioid Settlement Funds 
+
+The Tennessee Opioid Abatement Council (OAC) is 
+responsible for administering the Opioid Abatement Fund in 
+Tennessee. The OAC establishes policies and reporting 
+requirements for grant recipients and monitors compliance 
+with approved opioid abatement strategies.  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The Metropolitan Nashville Government receives Subdivision 
+Fund direct payments and allocations from the Opioid 
+Abatement Fund, including both the county share and 
+competitive grant awards.  
+
+Funds from the Opioid Abatement Fund must be used for 
+forward-looking opioid remediation activities and align with 
+approved abatement strategies outlined in the national 
+settlement agreements, as incorporated into the Tennessee 
+State-Subdivision Opioid Abatement Agreement. Strategies 
+include expanding access to treatment and recovery services, 
+supporting prevention initiatives, and implementing harm 
+reduction programs.  
+
+Local Planning and Steering Committee 
+In November 2021, the Metropolitan Nashville Council 
+approved Resolution RS2021-1235 authorizing participation in 
+Tennessee State-Subdivision Opioid Abatement Agreement 
+and related settlements. In March 2022, the Metropolitan 
+Nashville Government was notified it would receive 
+approximately $23 million in opioid settlement funds over an 
+18-year period. The mayor requested the Behavioral Health 
+and Wellness Advisory Council develop recommendations for 
+using the funds. The committee’s chair subsequently 
+recommended forming a steering committee composed of 
+subject matter experts to develop a more detailed 
+implementation plan. The Opioid Steering Committee 
+ultimately recommended implementing a 15-month pilot 
+program designed to connect individuals experiencing opioid 
+use disorder with treatment and recovery services. 
+
+In 2022, the Public Health Department was identified as the 
+department to oversee the receipt and expenditure of 
+settlement funds. The department would be responsible for 
+expending the funding on related programing costs and 
+reporting usage to required entities. 
+
+Opioid Care Process Pilot Program 
+To implement the pilot program, the Health Department issued 
+a request for qualifications in 2024 for an Opioid Care Process 
+Pilot Project intended to address high opioid prescription rates, 
+rising fentanyl-related deaths, and increasing nonfatal 
+overdoses in Davidson County. The pilot was designed to 
+improve coordination between emergency response systems 
+
+ 
+and treatment providers and increase access to prevention, 
+treatment, and recovery services.  
+
+Two organizations were selected to provide services under the 
+pilot program: Mental Health Cooperative and Samaritan 
+Recovery Community. Mental Health Cooperative provides 
+services such as rapid engagement following overdose 
+referrals, medication-assisted treatment, clinical 
+assessments, detoxification and stabilization services, 
+transportation, and case management. Samaritan Recovery 
+Community provides respite care, medication-assisted 
+treatment, transportation, and recovery support services 
+designed to connect individuals with treatment and long-term 
+recovery resources.  
+
+In addition to contracted services, opioid settlement funds are 
+also used to pay salaried positions within the Health 
+Department’s Behavioral Health and Wellness division. These 
+positions contribute to opioid-related initiatives through clinical 
+services, community outreach and prevention and harm 
+reduction efforts, data analysis, and stakeholder coordination. 
+Opioid settlement fund expenditures by fiscal year are 
+summarized below in Exhibit B. These expenditures include 
+amounts from multiple opioid funding streams, including 
+allocations from the Opioid Abatement Fund, competitively 
+awarded grant funds, and Subdivision Fund payments received 
+directly from settlement agreements. Exhibit C presents opioid 
+settlement funds received by funding source and fiscal year. 
+
+Exhibit B: Opioid Settlement Expenditures by Category and Fiscal Year 
+FY24 
+
+Expense Category 
+Salaries and Benefits 
+
+Opioid Abatement Contractors 
+Medical and Program Supplies 
+Medical Services 
+Program Support Costs 
+Information Technology 
+Repairs and Maintenance 
+Project Management 
+Administration and Operating Expenses 
+Total 
+
+Source: Oracle E-Business Suite R-12 
+
+$5,955 
+
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+$5,955 
+
+FY25 
+$1,498,091 
+
+973,858 
+169,717 
+70,575 
+59,207 
+51,478 
+50,788 
+38,541 
+24,973 
+$2,937,227 
+
+ 
+ 
+ 
+Exhibit C: Opioid Settlement Funds Received by Category and Fiscal Year 
+FY24 
+$3,386,977 
+
+Settlement fund Category 
+Opioid Abatement  
+
+FY23 
+$3,436,808 
+
+Opioid Abatement Fund Competitive Grant* 
+Subdivision fund 
+Total 
+
+0 
+  1,737,809 
+$5,174,617 
+
+0 
+  2,010,555 
+$5,397,535 
+
+Source: Oracle E-Business Suite R-12 
+
+FY25 
+   $2,695,953 
+
+0 
+      1,219,382 
+$3,915,335 
+
+Exhibit D below illustrates the Health Department’s opioid 
+treatment process supported by opioid settlement funds. 
+Exhibit D: Opioid Treatment Process 
+
+Source: Behavioral Health and Wellness Services, Metro Public Health Department 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Objectives & 
+Conclusions 
+
+Were processes and controls in place to ensure expended 
+opioid settlement funds met uses outlined in the Tennessee-
+State Subdivision Opioid Abatement Agreement and 
+applicable contracts and grant agreements? 
+
+Scope Limitation – Unable to Determine. Opioid Settlement 
+Fund expenditures were consistent with allowable uses outlined 
+in Exhibit E of the Tennessee State-Subdivision Opioid Abatement 
+Agreement and the grant contract with the OAC. However, control 
+weaknesses were identified, including a lack of program-level 
+invoice review, inaccuracies in financial reporting to the OAC, lack 
+of required grant reporting, and insufficient documentation and 
+oversight of payroll charged to the opioid settlement funds. 
+
+Were opioid settlement funds expended in accordance with 
+the Metropolitan Nashville Opioid Steering Committee 
+proposal? 
+
+Yes. Opioid settlement fund spending was in accordance with the 
+Metropolitan Nashville Opioid Steering Committee proposal for 
+the use of funds. A review of the proposal and current 
+programming noted most recommended initiatives were 
+implemented or partially implemented. Certain elements, such as 
+a centralized intake system, transportation infrastructure, a 
+formal Crisis Stabilization Unit, and independent governance 
+structure, are yet to be fully implemented.  
+
+Were comprehensive performance measures and oversight 
+established to assess the impact of opioid settlement 
+spending to gauge the success of the program? 
+
+Generally, no. While performance measures, goals, and opioid 
+outcome data were established and tracked, sufficient evidence 
+was not available to demonstrate that performance information 
+was consistently analyzed and used to evaluate the effectiveness 
+of opioid settlement funded activities or assess program goals. In 
+addition, a governance or oversight structure similar to those in 
+other jurisdictions was not established, and ongoing monitoring 
+and governance were limited which reduced transparency and the 
+ability to fully assess program effectiveness. 
+
+ 
+ 
+ 
+ 
+Observations & 
+Recommendations 
+
+Observation A 
+
+Payroll Allocations 
+to Opioid 
+Settlement Funds 
+
+Risk Level: High 
+
+Internal controls help ensure entities achieve important 
+objectives to sustain and improve performance. The 
+Committee of Sponsoring Organizations of the Treadway 
+Commission (COSO), Internal Control – Integrated 
+Framework, enables organizations to effectively and 
+efficiently develop systems of internal control that adapt to 
+changing business and operating environments, mitigate 
+risks to acceptable levels, and support sound decision-
+making and governance of the organization. See Appendix B 
+for a description of the observation Assessed Risk Rating. 
+
+Responses obtained from employees to verify payroll 
+charges to opioid settlement fund business units were 
+interfered with by program management. Emails reviewed 
+during the audit showed the Behavioral Health and Wellness 
+Division - Program Manager directed and edited employee 
+responses prior to submission.  
+
+Payroll-related charges accounted for approximately $1.5M 
+of settlement funds expended in fiscal year 2025. The Office 
+of Management and Budget Position Status Report identified 
+employees with salaries charged to the opioid settlement 
+business units. The Health Department’s program director 
+also provided a listing of positions charged to the grant 
+business unit. However, the listing could not be reconciled 
+with the Position Status Report. The program director’s 
+listing included positions not on the Position Status report, 
+and the requested listing for the unrestricted business unit 
+was not provided.  
+
+Emails were sent directly to 34 employees listed on the 
+Position Status Report requesting confirmation of their 
+position title, primary responsibilities, connection to opioid-
+related initiatives, and an estimate of the percentage of time 
+spent on opioid-related services. Employee responses were 
+compiled and reviewed. Several responses were written in a 
+similar format. Additionally, some initial responses were 
+later updated with higher percentage estimates. 
+
+Due to the unusual nature of responses, emails between the 
+program manager and employees related to the inquiry were 
+pulled and reviewed. Emails obtained showed that the 
+program manager reviewed, edited, and provided directions 
+to employees regarding their responses prior to submission. 
+In some cases, employees were instructed to revise their 
+
+ 
+ 
+ 
+ 
+ 
+descriptions of duties or estimates of time spent on opioid-
+related work before sending their responses. Employees 
+were also instructed to share written responses with the 
+program manager prior to sending them to the auditors.  
+
+Per Metropolitan Code Section 2.24.300 (H), the Office of 
+Internal Audit is allowed unimpeded access to personnel for 
+audits. When employee confirmations are directed or edited 
+by management, they do not provide independent 
+confirmation of the work performed. As such, the email 
+responses could not be relied upon and salary compliance 
+with spending requirements could not be determined. 
+
+In addition, a significant portion of opioid settlement funds 
+has been allocated to payroll expenditures. During the audit 
+period, payroll expenditures totaled approximately $1.5M, 
+representing 51% of total expenditures. Settlement funding 
+is finite and may not represent a consistent long-term 
+funding source. Additionally, the funding is not sent in 
+consistent, reliable amounts.  Thus, predicting year over year 
+receipts is not possible. A contingency plan to fund these 
+positions in case sufficient funds are not received annually 
+was not identified. 
+
+Salaries charged to funds requiring specific job 
+responsibilities for compliance should have documented job 
+descriptions, time allocations, and justifications for using 
+the funding source. Without documented support for 
+employee time allocation to opioid settlement funded 
+business units, the risk of non-opioid related time being 
+charged to settlement funding increases. Additionally, 
+without contingency planning for reliable annual funding, 
+there is a risk that positions supported by settlement funds 
+may not be sufficiently covered each year. 
+
+  COSO Principle 10: The organization selects and 
+develops control activities that contribute to the 
+mitigation of risks. 
+
+  COSO Principle 13: The organization obtains and uses 
+relevant quality information to support internal control. 
+
+  Tennessee State-Subdivision Opioid Abatement 
+
+Agreement 
+
+  National Opioid Settlement Agreements, Exhibit E 
+
+(Opioid Remediation Uses) 
+
+  Opioid Abatement Council Community Grant 25-27 
+
+Criteria 
+
+ 
+Recommendation 
+
+  Metropolitan Code Section 2.24.300 (H) – Access to 
+
+Records and Personnel  
+
+1.  Health Department management should document and 
+support the percentage of employee time charged to 
+opioid settlement business units. Job responsibilities 
+should be clearly defined to ensure that only the portion of 
+employee time spent on opioid abatement activities is 
+charged to those business units.  
+
+2.  Additionally, management should evaluate the long-term 
+funding of positions supported by opioid settlement funds 
+and develop a plan to transition these positions to 
+alternative funding sources or adjust staffing levels as 
+settlement funds are reduced or depleted. 
+
+Management 
+Response 
+
+1.  The program started at MPHD in 2024. It was still in a 
+development stage where staff were being hired and 
+trained while the many public health activities were 
+ongoing. 
+
+MPHD accepts this recommendation. MPHD will conduct 
+a full assessment of staff charged to opioid settlement 
+funds either fully or partially. For staff working partially on 
+other tasks within the BHW division, MPHD will develop a 
+plan to ensure charges are made to business units that 
+reflect the scope of each employee’s work. 
+After fully assessing the scope of each position fully or 
+partially funded by opioid settlement dollars, we will 
+ensure that employee time is charged to the business 
+units that best reflect each employee’s tasks. 
+Additionally, MPHD will address the issues interference in 
+Metro audit processes through internal administrative 
+processes. 
+
+Estimated Implementation: June 1, 2026 
+
+2.  Concern for sustainability plan and long-term funding is a 
+
+universal concern for all grant-funded positions. 
+
+MPHD is already adjusting staffing levels as individuals 
+vacate positions and changing focus away from provision 
+of direct clinical care. 
+
+MPHD accepts this recommendation. 
+
+Estimated Implementation: July 1, 2026 
+
+ 
+ 
+Observation B 
+
+Governance and 
+Oversight of 
+Opioid Settlement 
+Funds 
+
+Risk Level: High 
+
+A formal oversight structure for the opioid settlement 
+program has not been established. Settlement funds are 
+included in the Health Department’s budget, and ongoing 
+decisions regarding the allocation and use of settlement 
+funds are made internally. Additionally, reporting program 
+activities to the Board of Health has been limited. 
+
+When opioid settlement funding became available, a 
+steering committee composed of community stakeholders 
+was convened to evaluate local needs and recommend 
+strategies for the use of the funds. The committee developed 
+and submitted a proposal to the mayor outlining 
+recommended priorities. The mayor directed the Health 
+Department to administer the program, and a program 
+director within the department oversaw program 
+implementation. Since the initial proposal, program 
+updates, changes, and other decisions regarding the 
+allocation and use of opioid settlement funds have been 
+made within the Health Department. While the initial 
+steering committee identified key priorities for the use of 
+funds, the proposal was developed in the early stages of 
+funding. As the program has progressed, certain proposed 
+initiatives were not implemented or may no longer align with 
+current priorities. This highlights the need for a formal 
+governance structure to reassess priorities, set and track 
+program goals, guide program direction, and allow for timely 
+adjustments or pivots as program needs change.  
+
+Best practices reviewed include establishing a formal 
+commission or oversight body responsible for reviewing 
+funding priorities, approving expenditures, and monitoring 
+program outcomes. Benchmarking with other Tennessee 
+counties revealed that four of the five responding counties 
+established some form of oversight or governance 
+committee related to opioid settlement funds. The oversight 
+structures typically include representatives from 
+government agencies, healthcare providers, and community 
+stakeholders and provide an additional layer of transparency 
+and accountability.  
+
+Guidance related to opioid settlement spending also 
+recommends establishing transparent decision-making 
+processes and monitoring activities to ensure funds are 
+allocated effectively and programs are evaluated. For 
+example, RAND Health, a research based organization to 
+improve state and local government societal health, 
+
+ 
+ 
+ 
+ 
+ 
+recommends jurisdictions develop a fair and transparent 
+process for deciding where to spend settlement funds and 
+avoid spending without evaluation and monitoring.  
+
+A review of meeting minutes and agendas for the Board of 
+Health and the Behavioral Health and Wellness Advisory 
+Council was performed to determine whether opioid 
+settlement activities were reported through established 
+governance structures. The Metropolitan Public Health 
+Board met 45 times during the audit period, and opioid 
+settlement activities were mentioned once in March 2022. 
+The Behavioral Health and Wellness Advisory Council met 26 
+times during the audit period, and 7 meetings included 
+discussions related to opioid settlement funds, primarily 
+regarding the request for proposals process for contractors. 
+The Health Department Director noted that the Behavioral 
+Health and Wellness Advisory Council would not be 
+appropriate to provide oversight for settlement funds, as 
+some of the members may also be potential recipients of the 
+funding.   
+
+Based on interviews and documentation reviewed, no 
+committees or external bodies currently provide formal 
+oversight of Metropolitan Nashville Government opioid 
+settlement fund spending. When formal governance and 
+oversight structures are not established, there is an 
+increased risk that decisions lack transparency and program 
+outcomes lack independent review. 
+
+  COSO Principle 5: The organization holds individuals 
+accountable for internal control responsibilities.   
+
+  COSO Principle 16: The organization performs 
+evaluations to determine whether controls are 
+present and functioning.   
+
+  RAND, Strategies for Effectively Allocating Opioid 
+
+Settlement Funds 
+
+Criteria 
+
+ 
+ 
+ 
+ 
+ 
+Recommendation 
+
+Management of the Health Department should work with the 
+Mayor’s Office to establish a formal oversight structure and 
+governance process for the opioid settlement program. 
+Ensure regular reporting on settlement fund allocations and 
+program outcomes are provided to the oversight body. 
+
+Management 
+Response 
+
+MPHD is amenable to working with the mayor’s office on 
+establishing an advisory (not oversight) body for settlement 
+funds. We will need to ensure that members of a community 
+advisory body do not have conflicts of interests. 
+
+The Board of Health provides oversight to MPHD. And 
+implementation of opioids mitigation and prevention 
+measures is best done using a public health approach. 
+
+The steering committee was charged with establishing 
+recommendations for an opioid system of care. These 
+recommendations strongly informed MPHD’s RFP for county 
+settlement funds as well as our application for a competitive 
+OAC community grant. Both RFPs were published 
+transparently, and applications were requested for this work 
+following the recommendations of the steering committee. 
+Awards were made that aligned with these 
+recommendations. Metro’s Board of Health also approved 
+any grant funds and contracts associated with county or 
+competitive opioid dollars. 
+
+MPHD also shared information and had contractors present 
+on their work to the Mayor’s Behavioral Health and Wellness 
+Advisory Council. 
+
+Estimated Implementation: Tentatively September 2026 -  
+dependent upon Mayor’s Office 
+
+ 
+ 
+ 
+ 
+ 
+Observation C 
+
+Reviews of contractor invoices funded by opioid settlement 
+funds were not sufficiently performed at the program level. 
+
+Contractor Invoice 
+Review and 
+Approval 
+
+Risk Level: Medium 
+
+Contractor invoices are initially reviewed by a finance 
+specialist in the Health Department’s Behavioral Health and 
+Wellness Division, approved by the Director of Behavioral 
+Health and Wellness, and then submitted to the 
+departmental finance office for payment. The review process 
+is intended to ensure charges comply with contract terms, 
+are allowable and accurate, and are properly supported prior 
+to payment. 
+
+All 11 invoices from Mental Health Cooperative and 
+Samaritan Recovery Community during the audit period 
+were tested. All invoices were consistent with the contract 
+scope, allowable costs, and approved budgets. However, for 
+all 11 invoices tested, charges were not sufficiently reviewed 
+and compared to contract requirements at the program 
+level. Invoices were not consistently traced to supporting 
+documentation prior to approval, and questions regarding 
+charges were often resolved only after audit inquiry.  
+
+Salary charges appeared on every invoice. Billed positions 
+and amounts were not reviewed or traced to contract 
+budgeted positions during the approval process. In several 
+instances, vendor position titles differed from those in the 
+contract and had to be reconciled during audit testing. 
+Supporting documentation was not requested during the 
+original review and had to be obtained during the audit.  
+
+One invoice included a $29,314 capital charge for a vehicle. 
+Although allowable under the contract, supporting 
+documentation was not submitted with the invoice or 
+requested during the Health Department’s review. A 
+payment of $104,066 for March 2025 services was 
+incorrectly paid to Mental Health Cooperative instead of 
+Samaritan Recovery Community. The error was identified by 
+the vendor and later corrected. Additionally, a November 
+2024 invoice was paid twice for different amounts due to a 
+revised invoice submission. Although corrections were later 
+made to result in a net accurate payment, the duplicate 
+payment occurred without detection during the program 
+level review. 
+
+When invoice charges are not consistently reviewed and 
+traced to supporting documentation prior to payment, the 
+
+ 
+ 
+ 
+ 
+ 
+Criteria 
+
+risk of improper payments, duplicate payments, and non-
+compliant charges increases. 
+
+  COSO Principle 10: The organization selects and 
+develops control activities that contribute to the 
+mitigation of risks. 
+
+  COSO Principle 12: The organization deploys control 
+activities through policies that establish what is 
+expected and procedures that put policies into 
+action. 
+
+Recommendation 
+
+Management of the Health Department should ensure 
+program-level review of contractor invoices is performed 
+prior to approval, including verification of charges to 
+contract terms, budgets, and supporting documentation. 
+
+Management 
+Response 
+
+MPHD accepts that in some cases review of invoices and 
+backup documentation by the Behavioral Health and 
+Wellness Program Director could be improved. We have, and 
+will, institute additional controls with oversight from the 
+Bureau of Population Health and the Director’s Office going 
+forward. 
+
+Estimated Implementation: June 1, 2026 
+
+ 
+ 
+ 
+ 
+ 
+Observation D 
+
+Opioid Settlement 
+Fund Reporting 
+Accuracy and 
+Compliance 
+
+Risk Level: Medium 
+
+Reports submitted to the Tennessee Opioid Abatement 
+Council (OAC) were inaccurate, and grant reports required 
+were not provided by the Health Department. 
+
+Counties receiving opioid settlement funds are required to 
+submit semi-annual reports to the OAC to provide 
+accountability and transparency regarding allocation and 
+expenditure of funds and to demonstrate alignment with 
+approved remediation strategies. The reports support state-
+level oversight and public reporting of opioid settlement fund 
+usage.  
+
+Four semi-annual reports submitted during the audit period 
+were obtained and reviewed. All reports were submitted 
+timely. However, three of the four reports contained financial 
+data that was inconsistent with actual spending reflected in 
+the Oracle R-12 financial system. 
+
+The first semi-annual report submitted listed $4,000,000 as 
+received when only $3,425,337 had been received to date. 
+Additionally, $3,993,732 was reported as allocated for the 
+period of February 1, 2023, though August 31, 2023. 
+However, this amount was not allocated until the FY25 
+budget was approved by the Metropolitan Council in June 
+2024. In another semi-annual report, total expenditures to 
+date were reported as $586,574. However, amounts spent 
+reported by category totaled significantly more, including 
+$2,400,060 for primary prevention and $1,593,732 for 
+recovery support.  
+
+The Metropolitan Nashville Government received $6,353,570 
+in grant funding to be used between July 1, 2024, and June 
+30, 2027. Actual spending under the grant began in 
+November 2024. The grant contract with the OAC was 
+reviewed to determine required reporting. Two quarterly 
+reports and one semi-annual report were required to be 
+submitted during the audit period. Multiple requests were 
+made to the program director for the reports. The required 
+grant semi-annual report was ultimately provided. However, 
+the required quarterly grant disbursement reports were not 
+provided.  
+
+When reports submitted to the OAC contain inaccurate 
+financial information and required grant reports are not 
+prepared or maintained, the risk that oversight bodies and 
+the public receive incomplete or incorrect information 
+increases. Reporting deficiencies also limits transparency 
+
+ 
+ 
+ 
+ 
+ 
+Criteria 
+
+and increases the risk of noncompliance with grant 
+requirements. 
+
+  COSO Principle 10: The organization selects and 
+develops control activities to mitigate risks. 
+
+  COSO Principle 12: The organization deploys control 
+activities through policies that establish what is 
+expected and procedures that put policies into 
+action. 
+
+Recommendation 
+
+Management of the Health Department should establish 
+quality assurance reporting procedures to require 
+independent reconciliation of reporting amounts to financial 
+reports before submission. Additionally, procedures should 
+ensure all reports are submitted and retained.  
+
+Management 
+Response 
+
+Accept. 
+
+The audit period was from March 1, 2022-May 31, 2025. 
+MPHD received Council approval to spend the funds on July 
+1, 2024, at which point an RFP was issued and actual 
+spending began in November 2024.  
+
+MPHD has had full oversight of this program for 1 year when 
+the audit began and less than 2 years now, and significant 
+efforts in start-up, hiring, contracting and oversight have 
+been established.  
+
+We will review processes and controls between the 
+Behavioral Health and Wellness Division and MPHD’s 
+Finance and Administration Bureau and institute additional 
+oversight from the Bureau of Population Health and the 
+Director’s Office. 
+
+MPHD submitted reports to the OAC during the audit period 
+but acknowledge the errors and that information may not 
+have been provided to auditors on time.  
+
+We also note that the receipt of abatement dollars is very 
+dynamic and involves multiple levels of review and approval 
+(BOH, Council, Mayor’s Office) and allocation to MPHD and 
+subsequent spending was delayed by Metro. In addition, 
+OAC reporting requirements took some time to be 
+established and evolved overtime. And that there might have 
+
+ 
+ 
+ 
+been some prior confusion as to the definition of spending 
+(allocation, contracted, paid, etc).  
+
+However, consistent with the Health Department’s 
+commitment to continuous quality improvement, we will 
+work to improve quality assurance reporting procedures to 
+require independent reconciliation of reporting amounts to 
+financial reports before submission. And ensure that all 
+reports are submitted. 
+
+Estimated Implementation: June 1, 2026 
+
+ 
+ 
+Observation E 
+
+Performance 
+Indicators 
+
+Risk Level: Medium 
+
+Performance measures for the opioid settlement fund 
+program could be improved. Performance measures need to 
+be consistently tracked, evaluated, and reported to 
+demonstrate progress toward program goals and outcomes. 
+
+Health Department management has identified 
+performance measures, including reductions in overdose 
+incidents and fatalities, the number of individuals served 
+through care coordination and treatment services, referrals 
+to prevention programs, retention in behavioral health 
+services, and community outreach efforts. Each measure 
+included documented, quantified targets. Additionally, the 
+Health Department regularly publishes overdose 
+surveillance reports containing overdose fatality trends, 
+emergency department visit data, EMS overdoes response 
+data, demographic information, and substance-related trend 
+data. 
+
+However, sufficient evidence was not available to 
+demonstrate that opioid settlement program performance 
+information was analyzed and used to evaluate program 
+effectiveness. While overdose trend data was publicly 
+reported and contractors are required to report performance 
+data, limited documentation was provided demonstrating a 
+formalized process for regularly reviewing contractor and 
+program-level performance information across the opioid 
+settlement program or evaluating progress toward program 
+goals. 
+
+Health Department management noted that long-term 
+outcomes, such as reductions in overdose rates, will take 
+time to materialize and are influenced by external factors. 
+However, performance frameworks can include both short-
+term output indicators and longer-term outcome measures 
+to assess progress over time. 
+
+Best practices emphasize establishing measurable 
+indicators, collecting and analyzing data, and using results 
+to inform decision-making. The National Association of 
+Counties notes that jurisdictions should monitor both 
+outputs and outcomes and should regularly review this 
+information to guide program adjustments. Additionally, 
+RAND guidance highlights the importance of defining 
+success and evaluating whether funded programs achieve 
+intended results.  
+
+ 
+ 
+ 
+ 
+ 
+When performance measures are not consistently tracked, 
+evaluated, and used to inform decision-making, the risk that 
+program effectiveness cannot be fully assessed increases. 
+Additionally, opportunities to improve outcomes and 
+maximize the impact of opioid settlement funds may be 
+missed. 
+
+Criteria 
+
+  COSO Principle 13: The organization obtains and uses 
+
+Recommendation 
+
+Management 
+Response 
+
+relevant quality information to support internal 
+control. 
+
+  COSO Principle 16: The organization performs 
+evaluations to determine whether controls are 
+present and functioning.   
+
+  National Association of Counties, The Principles 
+Quick Guide to Monitoring Opioid Settlement 
+Spending 
+
+  RAND, Strategies for Effectively Allocating Opioid 
+
+Settlement Funds 
+
+Health Department management should develop and 
+implement a process to consistently track, analyze, and 
+report performance measures for the opioid settlement 
+program. Metrics should include both short-term output 
+indicators and longer-term outcome measures. 
+Management should utilize available data from contractors 
+and internal sources to evaluate progress and inform 
+decision-making. 
+
+Rejected  
+
+There are multiple ways in which jurisdictions track 
+performance measures for opioid settlement programs. 
+MPHD has performance indicators in place to track progress 
+in addressing the opioid crisis through deployment of opioid 
+settlement funds. While we will continue to improve ways in 
+which this is done, we believe we are in compliance with 
+OAC reporting requirements. 
+
+There are performance metrics in all of the contracts issued 
+in the settlement funds in the state abatement grant. 
+
+We are consistently tracking and publicly producing regular 
+data on trends in opioids overdose measures. 
+
+MPHD will look into additional oversight over reporting from 
+the Bureau of Population Health and the Director’s Office to 
+
+ 
+ 
+ 
+allow for measurement, refinement and evaluation of 
+progress. 
+
+Public Health outcomes are more difficult to track. There are 
+many factors that contribute to changes in the outcomes, 
+many of which are outside the purview of any grant or 
+settlement funds. And public health outcomes take time. 
+Again, we produce opioids related outcome trends on a 
+regular basis. 
+
+ 
+ 
+Government 
+Auditing 
+Standards 
+Compliance 
+
+We conducted this performance audit in accordance with 
+generally accepted government auditing standards. Those 
+standards require that we plan and perform the audit to obtain 
+sufficient, appropriate evidence to provide a reasonable basis for 
+our findings and conclusions based on our audit objectives. We 
+believe that the evidence obtained provides a reasonable basis for 
+our findings and conclusions based on our audit objectives. 
+
+Scope 
+
+The scope of this audit included all Opioid Settlement Fund 
+activities and transactions from March 1, 2022, through May 31, 
+2025. 
+
+Methodology 
+
+To accomplish our audit objectives, we performed the following 
+steps: 
+
+•  Obtained and reviewed the Metropolitan Nashville Steering 
+Committee proposal and related planning documents. 
+
+•  Reviewed contracts, invoices, and supporting 
+
+documentation for expenditures funded by opioid 
+settlement funds. 
+
+•  Conducted interviews with Health Department personnel, 
+contractors, and external stakeholders to understand 
+program operations and performance measures.  
+
+•  Performed site visits and facility tours of contracted service 
+
+providers to observe program implementation.  
+•  Assessed compliance with the Tennessee State-
+
+Subdivision Opioid Abatement Agreement, Exhibit E, 
+applicable contracts and grant requirements. 
+
+•  Conducted benchmarking with other counties to evaluate 
+
+oversight structures, performance measurement practices, 
+and use of funds.  
+
+•  Evaluated internal controls currently in place.  
+•  Considered risk of fraud, waste, and abuse. 
+
+Audit Team 
+
+Mary Cole, CPA, CISA, CGFM, CFE, In-Charge Auditor 
+Seth Hatfield, CPA, CIA, CFE, CCFO, Quality Assurance 
+Lauren Riley, CPA, CIA, CFE, ACDA, CMFO, Metropolitan Auditor 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Appendix A: Management Acknowledgement Letter 
+
+ May 28, 2026  
+
+To: 
+
+Lauren Riley, Metropolitan Auditor  
+Office of Internal Audit  
+From:  Sanmi Areola, Director  
+
+Metro Public Health Department  
+
+Re: Audit of the Metropolitan Nashville Government Opioid Settlement Funds  
+
+On behalf of Metro Public Health Department, I am formally acknowledging receipt of the draft 
+audit report, Audit of the Metropolitan Nashville Government Opioid Settlement Funds, covering 
+the period March 1, 2022 to May 31, 2025. We have carefully reviewed the report in its entirety. I 
+acknowledge the effort and time your team invested in conducting this assessment of our Opioid 
+Settlement Funds operations.  
+
+The program was moved to the Metro Public Health Department (MPHD) in 2024. MPHD received 
+Council approval to spend the funds on July 1, 2024, at which point an RFP was issued and actual 
+spending began in November 2024. In the first year, the program got out two major grants, 
+developed program objectives and hired personnel.  
+
+I note that the report concluded that the use of the settlement funds was, and is, in accordance 
+with what the Steering Committee recommended which are, for the most part, consistent with 
+the spectrum of intervention approaches used in opioids mitigation across the country.  
+
+The program is still in its infancy. However, the findings provide some valuable information that 
+should support some programmatic quality improvement efforts moving forward.  
+
+Appropriate internal administrative actions will be taken regarding interference by the program 
+manager and inadequacy of program oversight.  
+
+In the attached Response Matrix, we have accepted most of the recommendations. Our 
+leadership team is fully committed to addressing relevant recommendations and has already 
+identified solid corrective action plans in the form of new and updated procedures and staff 
+training. We view quality improvement processes as an opportunity to strengthen our internal 
+controls, improve our processes, and better serve our stakeholders.  
+
+Please do not hesitate to contact us should you require any additional information or clarification.  
+
+Thank you. 
+
+ 
+ 
+ 
+Appendix B: Assessed Risk Ranking 
+
+Observations identified during the course of the audit are assigned a risk rating, as 
+outlined in the table below. The risk rating is based on the financial, operational, 
+compliance or reputational impact the issue identified has on the Metropolitan 
+Nashville Government.  
+
+Rating 
+
+Financial 
+
+Internal Controls 
+
+Compliance 
+
+Public 
+
+HIGH 
+
+Large financial 
+impact 
+
+Remiss in 
+responsibilities of 
+being a custodian of 
+the public trust 
+
+MEDIUM 
+
+Moderate financial  
+impact 
+
+LOW/ 
+Emerging 
+Issues 
+
+Low financial impact 
+<$10,000 
+
+Missing, or 
+inadequate key 
+internal controls 
+
+Partial controls 
+
+Not adequate to 
+identify 
+noncompliance or 
+misappropriation 
+timely 
+Internal controls in 
+place but not 
+consistently efficient 
+or effective 
+
+Implementing / 
+enhancing controls 
+could prevent future 
+problems 
+
+Noncompliance with 
+applicable Federal, 
+state, and local laws, 
+or Metro Nashville 
+Government policies 
+
+Inconsistent 
+compliance with 
+Federal, state, and 
+local laws, or Metro 
+Nashville 
+Government policies 
+
+Generally complies 
+with Federal, state, 
+and local laws, or 
+Metro Nashville 
+Government policies, 
+but some minor 
+discrepancies exist 
+
+High probability for 
+negative public trust 
+perception 
+
+The potential for 
+negative public trust 
+perception 
+
+Low probability for 
+negative public trust 
+perception 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+
