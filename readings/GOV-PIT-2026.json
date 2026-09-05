@@ -1,0 +1,20 @@
+{
+  "id": "GOV-PIT-2026",
+  "path": "bytes/GOV-PIT-2026.bin",
+  "sha256": "78d3863d9325ce7880f8b356e6a95b2a4b8fa4ad4201c1549b7fabaf34cca65b",
+  "bytes": 101179,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services/news/2026-pit-count",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services/news/2026-pit-count",
+  "retrieved_at": "2026-09-05T02:24:31+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 57526,
+      "byte_length": 12,
+      "method": "exact-bytes",
+      "claim": "Certified 2026 count, up 5.4 percent. Note the unsheltered figure differs from one news account."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "BNR-COUNCIL-DEPAUL",
+  "path": "bytes/BNR-COUNCIL-DEPAUL.bin",
+  "sha256": "1c9e7b8f93a07c168f41893bd071ccc3367fc80e990213de15cb2b12770060fb",
+  "bytes": 390798,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://nashvillebanner.com/2025/08/20/metro-council-rezoning-vote-the-nations/",
+  "final_url": "https://nashvillebanner.com/2025/08/20/metro-council-rezoning-vote-the-nations/",
+  "retrieved_at": "2026-09-05T02:25:05+00:00",
+  "wayback_timestamp": "20250820134131",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 122011,
+      "byte_length": 20,
+      "method": "exact-bytes",
+      "claim": "Calvin conceding the procurement failure on the record."
+    }
+  ]
+}

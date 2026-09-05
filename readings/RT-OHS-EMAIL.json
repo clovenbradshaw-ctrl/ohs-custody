@@ -1,0 +1,20 @@
+{
+  "id": "RT-OHS-EMAIL",
+  "path": "bytes/RT-OHS-EMAIL.bin",
+  "sha256": "13d24201e298ba884efc5bf3f4c17aa07d006283ec1c3a21d4485103d5161a62",
+  "bytes": 146357,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://readrichtext.substack.com/p/read-office-of-homeless-services",
+  "final_url": "https://readrichtext.substack.com/p/read-office-of-homeless-services",
+  "retrieved_at": "2026-09-05T02:25:17+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 44819,
+      "byte_length": 19,
+      "method": "exact-bytes",
+      "claim": "OHS characterising your published data as misleading. Their words, preserved."
+    }
+  ]
+}

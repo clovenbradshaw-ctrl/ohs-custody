@@ -1,0 +1,20 @@
+{
+  "id": "AUD-CTTE-INDEX",
+  "path": "bytes/AUD-CTTE-INDEX.bin",
+  "sha256": "730acf61fcc9cf1f8709bc9240468bf2dda3e7db385dcac516526f58e37c7c51",
+  "bytes": 68813,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/internal-audit/boards/audit-committee/meetings",
+  "final_url": "https://www.nashville.gov/departments/internal-audit/boards/audit-committee/meetings",
+  "retrieved_at": "2026-09-05T02:24:14+00:00",
+  "wayback_timestamp": "20260828103935",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 1945,
+      "byte_length": 15,
+      "method": "exact-bytes",
+      "claim": "Index page from which the 23 Sep 2025 packet and every later agenda hangs. Capture repeatedly, since it changes."
+    }
+  ]
+}

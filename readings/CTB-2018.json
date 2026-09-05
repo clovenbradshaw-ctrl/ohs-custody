@@ -1,0 +1,20 @@
+{
+  "id": "CTB-2018",
+  "path": "bytes/CTB-2018.bin",
+  "sha256": "10ed3ac6bf0a155c93203b40903c719c84c6a3bced37f78c720034b5ab6b6312",
+  "bytes": 198251,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://thecontributor.org/learn-more-about-the-history-that-led-to-the-office-of-homeless-services/",
+  "final_url": "https://thecontributor.org/learn-more-about-the-history-that-led-to-the-office-of-homeless-services/",
+  "retrieved_at": "2026-09-05T02:24:46+00:00",
+  "wayback_timestamp": "20250724193742",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 164491,
+      "byte_length": 11,
+      "method": "exact-bytes",
+      "claim": "Dates the elimination of the Metropolitan Homelessness Commission and the creation of the planning council."
+    }
+  ]
+}

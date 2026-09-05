@@ -1,0 +1,20 @@
+{
+  "id": "NC5-WELSCH",
+  "path": "bytes/NC5-WELSCH.bin",
+  "sha256": "2be1afed70cd5f7b8e431dd1387d4bbd94ae9f6be288c6b89eb19410c9606adb",
+  "bytes": 105086,
+  "media_type": "text/html;charset=UTF-8",
+  "source_url": "https://www.newschannel5.com/news/financial-irregularities-a-metro-council-member-wants-ohs-investigated",
+  "final_url": "https://www.newschannel5.com/news/financial-irregularities-a-metro-council-member-wants-ohs-investigated",
+  "retrieved_at": "2026-09-05T02:25:02+00:00",
+  "wayback_timestamp": "20251013063556",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 9789,
+      "byte_length": 47,
+      "method": "exact-bytes",
+      "claim": "The 3.2 million figure, its component categories, and Calvin's denial."
+    }
+  ]
+}

@@ -550,6 +550,72 @@ def recover_dead_source(entry, out, logfile, timestamp, proxy=None):
     }, indent=2), encoding="utf-8")
 
 
+def capture_rendered_text(entry, out, logfile, rendered_path):
+    """
+    For the rare page whose raw HTTP response is a client-side app shell
+    with no content in it at all -- Municode's Angular library is the case
+    this project hit -- rather than a page whose content merely needs
+    normalising. The raw bytes captured by the ordinary path stay the
+    object of record for that URL (the shell really is what the server
+    sends); this adds the actual displayed text as a distinctly-labelled
+    derived artifact, gotten by rendering the page in a real browser and
+    reading its DOM, because there is no plain HTTP request that returns
+    this content without the session token the app's own JS attaches to
+    its API calls in memory. The anchor's span kind says "anchor-rendered",
+    never "anchor", so it is never confused for a position in raw bytes.
+
+    `rendered_path` is a text file already saved to disk (the page's
+    rendered text, gotten by hand -- there is no browser automation inside
+    this script) for THIS entry's URL. Multiple entries that share one URL
+    (as MUNI-263040 and MUNI-263040-HR do) can each point at the same file.
+    """
+    eid = entry["id"]
+    cap = entry.setdefault("capture", {})
+    rp = pathlib.Path(rendered_path)
+    text = rp.read_text(encoding="utf-8")
+    sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+    offset, length, method = find_in_text(text, entry.get("anchor"))
+    cap["rendered_sha256"] = sha
+    cap["rendered_path"] = str(rp)
+    cap["rendered_method"] = method
+
+    if offset is None:
+        log(logfile, f"{eid:24} RENDERED but anchor still missing  method={method}")
+        return
+
+    cap["status"] = "bytes-held"
+    cap["archive_tier"] = cap.get("archive_tier") or "local-only"
+    cap["note"] = (cap.get("note", "") + " " if cap.get("note") else "") + (
+        "Raw HTTP response is a client-side app shell with no page content in "
+        "it (Municode/Angular). Anchor is located in a rendered-DOM capture "
+        "instead, saved separately and hashed on its own; the raw shell "
+        "bytes remain the object of record for the URL itself."
+    )
+    log(logfile, f"{eid:24} RENDERED held  sha={sha[:12]}  offset {offset} via {method}")
+
+    (out / "readings" / f"{eid}.json").write_text(json.dumps({
+        "id": eid,
+        "path": cap.get("local_path"),
+        "sha256": cap.get("sha256"),
+        "bytes": cap.get("bytes"),
+        "media_type": cap.get("content_type"),
+        "source_url": entry.get("url"),
+        "final_url": cap.get("final_url"),
+        "retrieved_at": cap.get("fetched_at"),
+        "rendered_path": str(rp),
+        "rendered_sha256": sha,
+        "spans": [{
+            "kind": "anchor-rendered",
+            "text_offset": offset,
+            "text_length": length,
+            "method": method,
+            "rendered_from": str(rp),
+            "claim": entry.get("claim", ""),
+        }],
+    }, indent=2), encoding="utf-8")
+
+
 # ------------------------------------------------------------- archiving
 
 def existing_snapshot(url, session):
@@ -658,6 +724,10 @@ def main():
                          "snapshot as the object of record because the live URL "
                          "is confirmed dead. Repeatable. Runs after the normal "
                          "fetch loop and overlays that entry's capture block.")
+    ap.add_argument("--render-capture", action="append", default=[],
+                    help="ID:path/to/rendered.txt -- locate the anchor in a "
+                         "browser-rendered text capture for a page whose raw "
+                         "HTTP response is a JS app shell (Municode). Repeatable.")
     args = ap.parse_args()
 
     out = pathlib.Path(args.out)
@@ -871,6 +941,14 @@ def main():
             continue
         recover_dead_source(entry, out, logfile, ts, proxy)
         time.sleep(args.delay)
+
+    for spec in args.render_capture:
+        eid, _, rpath = spec.partition(":")
+        entry = by_id.get(eid)
+        if not entry:
+            log(logfile, f"{'render':24} unknown id {eid!r}, skipping")
+            continue
+        capture_rendered_text(entry, out, logfile, rpath)
 
     enriched = out / "sources.enriched.json"
     manifest["last_run"] = now_iso()

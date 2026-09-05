@@ -1,0 +1,20 @@
+{
+  "id": "RT-15M",
+  "path": "bytes/RT-15M.bin",
+  "sha256": "f4f66102d341ef410c65de84c33aa343c03d0e6b81361919e422d55f52787e9d",
+  "bytes": 261390,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://readrichtext.substack.com/p/another-15m-without-accounting-for",
+  "final_url": "https://readrichtext.substack.com/p/another-15m-without-accounting-for",
+  "retrieved_at": "2026-09-05T02:25:07+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 57410,
+      "byte_length": 34,
+      "method": "exact-bytes",
+      "claim": "Your record of the off-contract rent payments and the business unit ledger."
+    }
+  ]
+}

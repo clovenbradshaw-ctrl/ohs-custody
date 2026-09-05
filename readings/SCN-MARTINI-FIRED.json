@@ -1,0 +1,20 @@
+{
+  "id": "SCN-MARTINI-FIRED",
+  "path": "bytes/SCN-MARTINI-FIRED.bin",
+  "sha256": "a289dedd17b5cc8159b62a70bd62cb2704eb21cd457c705c0db8564d67bbdc0e",
+  "bytes": 260201,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashvillescene.com/news/pithinthewind/emergency-communications-steve-martini-fired/article_253e665e-a881-5971-a96f-0e78e0e950c2.html",
+  "final_url": "https://www.nashvillescene.com/news/pithinthewind/emergency-communications-steve-martini-fired/article_253e665e-a881-5971-a96f-0e78e0e950c2.html",
+  "retrieved_at": "2026-09-05T02:24:52+00:00",
+  "wayback_timestamp": "20260217210027",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 179476,
+      "byte_length": 25,
+      "method": "exact-bytes",
+      "claim": "Outside counsel's finding and the 2 Feb 2026 termination date."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "RT-WAYFAIR",
+  "path": "bytes/RT-WAYFAIR.bin",
+  "sha256": "6e3f938d70cb793b9ff66591bd3c17e06dbd4610bc917fa7493f10cff302c0fe",
+  "bytes": 164308,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://readrichtext.substack.com/p/null_results-apparent-86k-procurement",
+  "final_url": "https://readrichtext.substack.com/p/null_results-apparent-86k-procurement",
+  "retrieved_at": "2026-09-05T02:25:11+00:00",
+  "wayback_timestamp": "20260609221926",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 52351,
+      "byte_length": 9,
+      "method": "exact-bytes",
+      "claim": "The furniture spend, its date, and the absence of a vendor contract."
+    }
+  ]
+}

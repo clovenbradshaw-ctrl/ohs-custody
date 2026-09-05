@@ -1,0 +1,20 @@
+{
+  "id": "LEG-RS2025-1711",
+  "path": "bytes/LEG-RS2025-1711.bin",
+  "sha256": "b76528221a84707d91f5e154492e621da788d4f141ed5fe1887560e712ea90de",
+  "bytes": 108587,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=7778274&GUID=3F3BCDD9-3D97-4817-BB93-11D613D6EBA9",
+  "final_url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=7778274&GUID=3F3BCDD9-3D97-4817-BB93-11D613D6EBA9",
+  "retrieved_at": "2026-09-05T02:23:43+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 4030,
+      "byte_length": 27,
+      "method": "exact-bytes",
+      "claim": "Council asked for a spending methodology and got a non-answer."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "CTB-HPC-POWER",
+  "path": "bytes/CTB-HPC-POWER.bin",
+  "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
+  "bytes": 203334,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+  "final_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+  "retrieved_at": "2026-09-05T02:24:39+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 169616,
+      "byte_length": 40,
+      "method": "exact-bytes",
+      "claim": "The governance board's own description of its powerlessness, from the former division director."
+    }
+  ]
+}

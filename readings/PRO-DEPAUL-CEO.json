@@ -1,0 +1,20 @@
+{
+  "id": "PRO-DEPAUL-CEO",
+  "path": "bytes/PRO-DEPAUL-CEO.bin",
+  "sha256": "6d6d1b33888f85412b34fb919b5a742817fe6b5ba092502c36266ef4e2788d77",
+  "bytes": 150829,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://prometheoid.substack.com/p/exec-director-of-depaul-usa-strobel",
+  "final_url": "https://readrichtext.substack.com/p/exec-director-of-depaul-usa-strobel",
+  "retrieved_at": "2026-09-05T02:25:20+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 41446,
+      "byte_length": 29,
+      "method": "exact-bytes",
+      "claim": "Your record of the resignation following publication."
+    }
+  ]
+}

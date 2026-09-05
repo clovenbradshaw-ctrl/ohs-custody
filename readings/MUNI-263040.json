@@ -1,0 +1,22 @@
+{
+  "id": "MUNI-263040",
+  "path": "bytes/MUNI-263040.bin",
+  "sha256": "51f8a8411a6ee99b7eff3cd9ec1df26c9102699e2359e57cbf87f97b3ef6eecf",
+  "bytes": 6095,
+  "media_type": "text/html; charset=utf-8",
+  "source_url": "https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
+  "final_url": "https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
+  "retrieved_at": "2026-09-05T02:28:14+00:00",
+  "rendered_path": "derived/MUNI-263040.rendered.txt",
+  "rendered_sha256": "4d12915d7d79bdc190b2ed0ab1e408789af2d753cbb08523fb30fc7c75fbca6f",
+  "spans": [
+    {
+      "kind": "anchor-rendered",
+      "text_offset": 2056,
+      "text_length": 31,
+      "method": "exact-text",
+      "rendered_from": "derived/MUNI-263040.rendered.txt",
+      "claim": "The enacted code vests appointment in the mayor, leaving the planning council only a seat in the interview process."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "AUD-FY2027",
+  "path": "bytes/AUD-FY2027.bin",
+  "sha256": "e0f5daa7a0a2cf33e740488a43aff9e2c3a416b2397d7ce8a0c49f62f202e696",
+  "bytes": 63484,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
+  "final_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
+  "retrieved_at": "2026-09-05T02:24:17+00:00",
+  "wayback_timestamp": null,
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 949,
+      "byte_length": 16,
+      "method": "exact-bytes",
+      "claim": "Negative evidence. Capture on a schedule so the absence of an OHS report is provable on specific dates."
+    }
+  ]
+}

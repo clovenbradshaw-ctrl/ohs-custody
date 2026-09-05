@@ -180,3 +180,63 @@
 2026-09-05T01:30:10+00:00  RT-BULLSHITTERY          not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
 2026-09-05T01:30:13+00:00  GOV-MDHA-CA              RECOVERED from snapshot 20230510220542  sha=c40f8f654057  anchor@62040 via exact-bytes  (live=403)
 2026-09-05T01:30:15+00:00  run end  captured=12  anchor-missing=3  fetch-failed=0  skipped=0
+2026-09-05T02:23:33+00:00  run start  entries=48  archive=True  proxy=False
+2026-09-05T02:23:33+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T02:23:33+00:00  MUNI-263040              ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T02:23:35+00:00  MUNI-263040              not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:23:37+00:00  MUNI-263040-HR           ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T02:23:38+00:00  MUNI-263040-HR           not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:23:40+00:00  LEG-RS2025-1436          held  sha=3fb3599f0cf2  108751B  anchor@4180 via exact-bytes
+2026-09-05T02:23:41+00:00  LEG-RS2025-1436          archived 20250820015835 (reused-existing)
+2026-09-05T02:23:43+00:00  LEG-RS2025-1711          held  sha=b76528221a84  108587B  anchor@4030 via exact-bytes
+2026-09-05T02:23:49+00:00  LEG-RS2025-1711          not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:24:04+00:00  LEG-RS2024-490           held  sha=de951f469c87  108817B  anchor@92048 via exact-bytes
+2026-09-05T02:24:05+00:00  LEG-RS2024-490           archived 20240530020107 (reused-existing)
+2026-09-05T02:24:08+00:00  LEG-RS2022-1860          held  sha=0850c10f5ab7  109751B  anchor@4048 via exact-bytes
+2026-09-05T02:24:11+00:00  LEG-RS2022-1860          archived 20221109192020 (reused-existing)
+2026-09-05T02:24:14+00:00  AUD-CTTE-INDEX           held  sha=730acf61fcc9  68813B  anchor@1945 via exact-bytes
+2026-09-05T02:24:14+00:00  AUD-CTTE-INDEX           archived 20260828103935 (reused-existing)
+2026-09-05T02:24:17+00:00  AUD-FY2027               held  sha=e0f5daa7a0a2  63484B  anchor@949 via exact-bytes
+2026-09-05T02:24:19+00:00  AUD-FY2027               not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:24:21+00:00  AUD-FY2026               held  sha=ecf2e6005a71  66664B  anchor@1063 via exact-bytes
+2026-09-05T02:24:21+00:00  AUD-FY2026               not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:24:24+00:00  AUD-INVEST               held  sha=a4d7c9042380  65949B  anchor@1007 via exact-bytes
+2026-09-05T02:24:24+00:00  AUD-INVEST               archived 20251123134939 (reused-existing)
+2026-09-05T02:24:26+00:00  GOV-HPC-HIST             held  sha=93c416ec8817  90321B  anchor@55463 via exact-bytes
+2026-09-05T02:24:29+00:00  GOV-HPC-HIST             archived 20251011232506 (reused-existing)
+2026-09-05T02:24:31+00:00  GOV-PIT-2026             held  sha=78d3863d9325  101179B  anchor@57526 via exact-bytes
+2026-09-05T02:24:37+00:00  GOV-PIT-2026             not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:24:39+00:00  CTB-HPC-POWER            held  sha=1d55cfbb103b  203334B  anchor@169616 via exact-bytes
+2026-09-05T02:24:41+00:00  CTB-HPC-POWER            not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:24:43+00:00  CTB-SHELBY               held  sha=1d55cfbb103b  203334B  anchor@160366 via normalised-text
+2026-09-05T02:24:44+00:00  CTB-SHELBY               not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:24:46+00:00  CTB-2018                 held  sha=10ed3ac6bf0a  198251B  anchor@164491 via exact-bytes
+2026-09-05T02:24:46+00:00  CTB-2018                 archived 20250724193742 (reused-existing)
+2026-09-05T02:24:49+00:00  AX-WILSON                held  sha=946d55fb4546  147055B  anchor@122440 via exact-bytes
+2026-09-05T02:24:49+00:00  AX-WILSON                archived 20260827192923 (reused-existing)
+2026-09-05T02:24:52+00:00  SCN-MARTINI-FIRED        held  sha=a289dedd17b5  260201B  anchor@179476 via exact-bytes
+2026-09-05T02:24:52+00:00  SCN-MARTINI-FIRED        archived 20260217210027 (reused-existing)
+2026-09-05T02:24:55+00:00  SCN-COVER-PIT            held  sha=23bfa91be41a  283962B  anchor@175276 via exact-bytes
+2026-09-05T02:25:00+00:00  SCN-COVER-PIT            not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:25:02+00:00  NC5-WELSCH               held  sha=2be1afed70cd  105086B  anchor@9789 via exact-bytes
+2026-09-05T02:25:03+00:00  NC5-WELSCH               archived 20251013063556 (reused-existing)
+2026-09-05T02:25:05+00:00  BNR-COUNCIL-DEPAUL       held  sha=1c9e7b8f93a0  390798B  anchor@122011 via exact-bytes
+2026-09-05T02:25:05+00:00  BNR-COUNCIL-DEPAUL       archived 20250820134131 (reused-existing)
+2026-09-05T02:25:07+00:00  RT-15M                   held  sha=f4f66102d341  261390B  anchor@57410 via exact-bytes
+2026-09-05T02:25:09+00:00  RT-15M                   not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:25:11+00:00  RT-WAYFAIR               held  sha=6e3f938d70cb  164308B  anchor@52351 via exact-bytes
+2026-09-05T02:25:15+00:00  RT-WAYFAIR               archived 20260609221926 (reused-existing)
+2026-09-05T02:25:17+00:00  RT-OHS-EMAIL             held  sha=13d24201e298  146357B  anchor@44819 via exact-bytes
+2026-09-05T02:25:18+00:00  RT-OHS-EMAIL             not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:25:20+00:00  PRO-DEPAUL-CEO           held  sha=6d6d1b33888f  150829B  anchor@41446 via exact-bytes
+2026-09-05T02:25:21+00:00  PRO-DEPAUL-CEO           not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:25:23+00:00  run end  captured=12  anchor-missing=2  fetch-failed=0  skipped=0
+2026-09-05T02:28:14+00:00  run start  entries=48  archive=True  proxy=False
+2026-09-05T02:28:14+00:00  warning: IA_ACCESS_KEY/IA_SECRET_KEY unset, archiving will be skipped
+2026-09-05T02:28:14+00:00  MUNI-263040              ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T02:28:15+00:00  MUNI-263040              not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:28:17+00:00  MUNI-263040-HR           ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T02:28:18+00:00  MUNI-263040-HR           not archived, local-only: wayback=no-ia-credentials  archive.today=blocked:captcha-gate
+2026-09-05T02:28:20+00:00  MUNI-263040              RENDERED held  sha=4d12915d7d79  offset 2056 via exact-text
+2026-09-05T02:28:20+00:00  MUNI-263040-HR           RENDERED held  sha=4d12915d7d79  offset 2214 via exact-text
+2026-09-05T02:28:20+00:00  run end  captured=0  anchor-missing=2  fetch-failed=0  skipped=0

@@ -1,0 +1,20 @@
+{
+  "id": "AUD-INVEST",
+  "path": "bytes/AUD-INVEST.bin",
+  "sha256": "a4d7c9042380ecd4e407b086014d9809928eff845a42c509da9f90cd3489ef28",
+  "bytes": 65949,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/internal-audit/investigation-reports",
+  "final_url": "https://www.nashville.gov/departments/internal-audit/investigation-reports",
+  "retrieved_at": "2026-09-05T02:24:24+00:00",
+  "wayback_timestamp": "20251123134939",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 1007,
+      "byte_length": 13,
+      "method": "exact-bytes",
+      "claim": "Where the landlord engagement investigation would surface if it concluded."
+    }
+  ]
+}

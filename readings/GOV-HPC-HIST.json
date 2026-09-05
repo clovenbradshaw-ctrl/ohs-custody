@@ -1,0 +1,20 @@
+{
+  "id": "GOV-HPC-HIST",
+  "path": "bytes/GOV-HPC-HIST.bin",
+  "sha256": "93c416ec8817914ef81feea45b0668261e531c5ee07a6381dedf4e68b0520d82",
+  "bytes": 90321,
+  "media_type": "text/html; charset=UTF-8",
+  "source_url": "https://www.nashville.gov/departments/office-homeless-services/boards/homelessness",
+  "final_url": "https://www.nashville.gov/departments/office-homeless-services/boards/homelessness",
+  "retrieved_at": "2026-09-05T02:24:26+00:00",
+  "wayback_timestamp": "20251011232506",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 55463,
+      "byte_length": 25,
+      "method": "exact-bytes",
+      "claim": "The 2018 consolidation was recommended by a HUD-facilitated working group, which is the fair version of that history."
+    }
+  ]
+}
