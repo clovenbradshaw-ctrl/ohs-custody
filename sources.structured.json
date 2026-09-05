@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-05T03:33:29+00:00",
+  "generated_at": "2026-09-05T04:24:36+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -57,19 +57,24 @@
       "claim": "The enacted code vests appointment in the mayor, leaving the planning council only a seat in the interview process.",
       "anchor": "shall be appointed by the mayor",
       "used_for": "Section V, the ordinance",
-      "status": "bytes-held",
-      "status_meaning": "The anchor text was confirmed present in the fetched/hashed bytes, but no independent archive of this capture exists yet.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "51f8a8411a6ee99b7eff3cd9ec1df26c9102699e2359e57cbf87f97b3ef6eecf",
         "bytes": 6095,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:43:56+00:00",
+        "fetched_at": "2026-09-05T04:24:23+00:00",
         "location": {
           "kind": "rendered-dom-text",
           "offset": 2056,
           "length": 31
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-existing",
+          "url": "https://web.archive.org/web/20260905040148/https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
+          "timestamp": "20260905040148",
+          "as_of_today": true
+        }
       },
       "note": "Raw HTTP response is a client-side app shell with no page content in it (Municode/Angular). Anchor is located in a rendered-DOM capture instead, saved separately and hashed on its own; the raw shell bytes remain the object of record for the URL itself."
     },
@@ -81,19 +86,24 @@
       "claim": "The residual council role is participation in interviewing, not nomination and not removal.",
       "anchor": "at least one representative of the Nashville Davidson County",
       "used_for": "Section V, the ordinance",
-      "status": "bytes-held",
-      "status_meaning": "The anchor text was confirmed present in the fetched/hashed bytes, but no independent archive of this capture exists yet.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "51f8a8411a6ee99b7eff3cd9ec1df26c9102699e2359e57cbf87f97b3ef6eecf",
         "bytes": 6095,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:44:01+00:00",
+        "fetched_at": "2026-09-05T04:24:25+00:00",
         "location": {
           "kind": "rendered-dom-text",
           "offset": 2214,
           "length": 60
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-existing",
+          "url": "https://web.archive.org/web/20260905040148/https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
+          "timestamp": "20260905040148",
+          "as_of_today": true
+        }
       },
       "note": "Raw HTTP response is a client-side app shell with no page content in it (Municode/Angular). Anchor is located in a rendered-DOM capture instead, saved separately and hashed on its own; the raw shell bytes remain the object of record for the URL itself."
     },
@@ -129,19 +139,24 @@
       "claim": "Official action text for second reading: O'Connell offered and moved Amendment No. 1, matching that amendment PDF's own sponsor line.",
       "anchor": "Council Member O'Connell offered Amendment No. 1",
       "used_for": "Section V, the hinge of the piece",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "443790375fb8380e8e33a367f99098a3a46363228c603223b0777d3f53973fb7",
+        "sha256": "89b1eba90e64137338b2a560516b95c3a00b30837c2a231ebc58c7efef804319",
         "bytes": 47040,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T01:29:00+00:00",
+        "fetched_at": "2026-09-05T04:02:11+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 36678,
           "length": 48
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040544/https://nashville.legistar.com/HistoryDetail.aspx?ID=25536701&GUID=571AD86D-26F0-4983-A5A5-B6A7F8A7AAE1",
+          "timestamp": "20260905040544",
+          "as_of_today": true
+        }
       },
       "provenance_note": "Not in the original manifest. Added 2026-09-05: found via the meeting-detail page for the 6/7/2022 Metropolitan Council meeting (MeetingDetail.aspx?ID=965721&GUID=C4ED5A72-7FAC-4B02-BB2A-CE72C8400C2C), which Legistar links from LEG-BL2021-971's history grid as a per-row JS popup, not a plain href."
     },
@@ -153,19 +168,24 @@
       "claim": "Official action text for third reading: O'Connell moved to suspend the rules and offered Amendment No. 2 -- this is the specific sentence LEG-BL2021-971's manifest anchor was written for, and it disagrees with Amendment No. 2's own PDF, which is sponsored by Erin Evans. Video of this reading: https://nashville.legistar.com/Video.aspx?Mode=Granicus&ID1=2173&ID2=100192&Mode2=Video (not transcribed).",
       "anchor": "Without objection, Council Member O'Connell offered Amendment No. 2",
       "used_for": "Section V, the hinge of the piece",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "ba8c572261eb73545bbcf28c7b370e0813d44cf8e543133887923462637d702d",
+        "sha256": "3bede18c23cb9a3af158da514987ceba81d75510acba7fc82fb38098524bc276",
         "bytes": 48075,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T01:29:05+00:00",
+        "fetched_at": "2026-09-05T04:06:02+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 37369,
           "length": 67
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040635/https://nashville.legistar.com/HistoryDetail.aspx?ID=25668715&GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7",
+          "timestamp": "20260905040635",
+          "as_of_today": true
+        }
       },
       "provenance_note": "Not in the original manifest. Added 2026-09-05, same discovery path as LEG-BL2021-971-HIST-2ND but for the 6/21/2022 meeting (MeetingDetail.aspx?ID=965745&GUID=6F19C43A-678F-41DF-993A-9D1AD19A7720)."
     },
@@ -263,19 +283,24 @@
       "claim": "Council asked for a spending methodology and got a non-answer.",
       "anchor": "Office of Homeless Services",
       "used_for": "Section VI, the ledger",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "b76528221a84707d91f5e154492e621da788d4f141ed5fe1887560e712ea90de",
+        "sha256": "cfe25d1b9e263828323deb2a404b9ffed839e46d23d657bd7275619935c3c768",
         "bytes": 108587,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:23:43+00:00",
+        "fetched_at": "2026-09-05T04:06:55+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 4030,
           "length": 27
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040702/https://nashville.legistar.com/LegislationDetail.aspx?ID=7778274&GUID=3F3BCDD9-3D97-4817-BB93-11D613D6EBA9",
+          "timestamp": "20260905040702",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -370,20 +395,25 @@
       "claim": "Contains no OHS status item, which is the evidentiary basis for saying the audit was still open at that date.",
       "anchor": "Audit Committee",
       "used_for": "The eleven months of silence",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "b5c44ffde381115084595952ecd351d35304556211ea0f78ffe7fe57e8059023",
         "bytes": 181769,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T01:29:15+00:00",
+        "fetched_at": "2026-09-05T04:07:19+00:00",
         "location": {
           "kind": "pdf-page-text",
           "page": 1,
           "offset": 180,
           "length": 15
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040721/https://www.nashville.gov/sites/default/files/2025-12/12092025_AuditCommitteeMintues_APPROVED.pdf?ct=1767366514",
+          "timestamp": "20260905040721",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -394,19 +424,24 @@
       "claim": "Negative evidence. Capture on a schedule so the absence of an OHS report is provable on specific dates.",
       "anchor": "Fiscal Year 2027",
       "used_for": "Trigger monitoring",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "e0f5daa7a0a2cf33e740488a43aff9e2c3a416b2397d7ce8a0c49f62f202e696",
+        "sha256": "04954250c0a0eee7dc671cef6a128688f08d0a0ede3175e1c500e62c09e55f47",
         "bytes": 63484,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:17+00:00",
+        "fetched_at": "2026-09-05T04:07:29+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 949,
           "length": 16
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040809/https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
+          "timestamp": "20260905040809",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -420,10 +455,10 @@
       "status": "local-only",
       "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
       "evidence": {
-        "sha256": "ecf2e6005a7158364ff66463249c123afab44a06c8c59f2a8949bdf095307284",
+        "sha256": "3d2074e7d0f7d81098a7bc0de0a105261ab6a14f01af0352264b23922b1ee525",
         "bytes": 66664,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:21+00:00",
+        "fetched_at": "2026-09-05T04:21:11+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 1063,
@@ -554,19 +589,24 @@
       "claim": "Certified 2026 count, up 5.4 percent. Note the unsheltered figure differs from one news account.",
       "anchor": "2,298 people",
       "used_for": "Outcomes against spending",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "78d3863d9325ce7880f8b356e6a95b2a4b8fa4ad4201c1549b7fabaf34cca65b",
+        "sha256": "2c29da2c20e6fcec1e89fb9e6a668eafc474e93253a13a749389f7bd9523fd57",
         "bytes": 101179,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:31+00:00",
+        "fetched_at": "2026-09-05T04:08:37+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 57526,
           "length": 12
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040841/https://www.nashville.gov/departments/office-homeless-services/news/2026-pit-count",
+          "timestamp": "20260905040841",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -629,19 +669,24 @@
       "claim": "Only located text of the MHRC determination. The underlying letter is not yet in hand, so this is a quoting source and not the record itself.",
       "anchor": "disproportionate adverse effect on Black women and women of color",
       "used_for": "Section VIII, MHRC",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
         "bytes": 203334,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T01:29:33+00:00",
+        "fetched_at": "2026-09-05T04:08:59+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 165810,
           "length": 65
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+          "timestamp": "20260905040908",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -652,19 +697,24 @@
       "claim": "The governance board's own description of its powerlessness, from the former division director.",
       "anchor": "absolutely no power over Metro resources",
       "used_for": "Section VII, the board's own account",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
         "bytes": 203334,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:39+00:00",
+        "fetched_at": "2026-09-05T04:09:26+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 169616,
           "length": 40
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+          "timestamp": "20260905040908",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -675,19 +725,24 @@
       "claim": "OHS on the record about where the returned allocation went. Watch for double counting against the Holladay figure.",
       "anchor": "reallocated through Metro's approved process",
       "used_for": "Returned allocations",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
         "bytes": 203334,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:43+00:00",
+        "fetched_at": "2026-09-05T04:09:35+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 160366,
           "length": 46
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+          "timestamp": "20260905040908",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -866,19 +921,24 @@
       "claim": "Carries the request document as an attachment. Archive the attachment separately once its direct URL is known.",
       "anchor": "audit request",
       "used_for": "Audit scope reconstruction",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "802cd366a1a7270cfb6683fe34fb5786bb09480b353def8b668bacf79d22e347",
+        "sha256": "485d35cd352f556f0be17c04567a270dfee0f67e26d1331d6f0379fc1e9b3678",
         "bytes": 262245,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T01:29:45+00:00",
+        "fetched_at": "2026-09-05T04:09:44+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 172721,
           "length": 13
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-existing",
+          "url": "https://web.archive.org/web/20260625172930/https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
+          "timestamp": "20260625172930",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -945,19 +1005,24 @@
       "claim": "Outside characterisation of the community audit effort. Relevant to disclosure of your own role.",
       "anchor": "citizen effort to publicly audit",
       "used_for": "Disclosure paragraph",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "23bfa91be41a2defa1bf6e8aa669b7b0b07437e84065d28ca49aaf867c55eead",
+        "sha256": "7d33a0cee1f8f88c8ca6b78b75bc088783994a85daeaaa5ad5ed118042892267",
         "bytes": 283962,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:55+00:00",
+        "fetched_at": "2026-09-05T04:09:48+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 175276,
           "length": 32
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-existing",
+          "url": "https://web.archive.org/web/20251214213723/https://www.nashvillescene.com/news/coverstory/office-of-homeless-services-point-in-time-count/article_b63fa2f9-df20-432b-b858-750780680bc8.html",
+          "timestamp": "20251214213723",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -1081,19 +1146,24 @@
       "claim": "Your published record of the Calvin email, the Koch contracts, and the Clutch model. Archive your own work so the priority of publication is fixed.",
       "anchor": "should not be posted publicly",
       "used_for": "Prior publication, do not repeat",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "fcbd292437b0e5c0813f98ff1c09ce9d1b12515a08ee23b253a91ba0382b1298",
-        "bytes": 323062,
+        "sha256": "e812c43328f3dd7e2d629080ceeac7c27c07a5a3ec21624a40f60484dcf793d3",
+        "bytes": 323010,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T01:30:04+00:00",
+        "fetched_at": "2026-09-05T04:19:11+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 109598,
           "length": 29
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041920/https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of",
+          "timestamp": "20260905041920",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -1104,19 +1174,24 @@
       "claim": "Your record of the off-contract rent payments and the business unit ledger.",
       "anchor": "outside of any procurement process",
       "used_for": "Section VI, the ledger",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "f4f66102d341ef410c65de84c33aa343c03d0e6b81361919e422d55f52787e9d",
+        "sha256": "4e506baf679c3ec3dbeca847656872e6876e71479f598d509fa506913e5ed0f7",
         "bytes": 261390,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:25:07+00:00",
+        "fetched_at": "2026-09-05T04:10:01+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 57410,
           "length": 34
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041030/https://readrichtext.substack.com/p/another-15m-without-accounting-for",
+          "timestamp": "20260905041030",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -1155,19 +1230,24 @@
       "claim": "OHS characterising your published data as misleading. Their words, preserved.",
       "anchor": "OHS Community Audit",
       "used_for": "Right of reply",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "13d24201e298ba884efc5bf3f4c17aa07d006283ec1c3a21d4485103d5161a62",
-        "bytes": 146357,
+        "sha256": "2d3679875963a432596b4fc9b0fe19a9aec69692424dd74f2459fbbc8b8ca651",
+        "bytes": 146414,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:25:17+00:00",
+        "fetched_at": "2026-09-05T04:10:47+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 44819,
           "length": 19
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041051/https://readrichtext.substack.com/p/read-office-of-homeless-services",
+          "timestamp": "20260905041051",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -1178,19 +1258,24 @@
       "claim": "Your record of the resignation following publication.",
       "anchor": "did not have a valid contract",
       "used_for": "Section VI, the ledger",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "6d6d1b33888f85412b34fb919b5a742817fe6b5ba092502c36266ef4e2788d77",
+        "sha256": "6c4e856a807da06a1f806555c4ad4fa792bfb60bd8d41eaa15b3513cadf820c4",
         "bytes": 150829,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:25:20+00:00",
+        "fetched_at": "2026-09-05T04:11:09+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 41446,
           "length": 29
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041117/https://prometheoid.substack.com/p/exec-director-of-depaul-usa-strobel",
+          "timestamp": "20260905041117",
+          "as_of_today": true
+        }
       }
     },
     {
@@ -1289,20 +1374,25 @@
       "claim": "Confirms the OHS audit request was formally on the Sept 23, 2025 agenda. Also lists two other pending items not previously in this manifest: a follow-up on the July 18, 2025 Homeless Impact Division audit (added separately as AUD-HID-FOLLOWUP-2025) and an Investigation of Metro Social Services Contracts issued July 8, 2025 (not yet located).",
       "anchor": "Discussion on the request for an audit of the Office of Homeless Services",
       "used_for": "Task 4b, the Sept 23 packet",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "a35fda5298762d9bf074a80ab302ab34ce878f395f1ecd5045fb48d2acf0780a",
         "bytes": 145071,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:33+00:00",
+        "fetched_at": "2026-09-05T04:11:37+00:00",
         "location": {
           "kind": "pdf-page-text",
           "page": 1,
           "offset": 1354,
           "length": 73
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041143/https://www.nashville.gov/sites/default/files/2025-09/Audit-Committee-250923a.pdf?ct=1788551282",
+          "timestamp": "20260905041143",
+          "as_of_today": true
+        }
       },
       "provenance_note": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest."
     },
@@ -1311,23 +1401,28 @@
       "label": "Audit Committee minutes, 23 Sep 2025 -- OHS audit approved",
       "url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
       "tier": "primary-record",
-      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them. That request letter itself was located separately and directly -- see WELSCH-AUDIT-REQUEST-LETTER -- but its identity as the exact document 'provided' at this meeting is not yet independently confirmed (its own provenance is a local file supplied to this project, not a fetch from a public URL). Video of the full meeting: https://www.youtube.com/watch?v=vsGlPI9B0DE (not transcribed -- no transcription tool available, and downloading video from YouTube is against its terms of service; noted per the same rule the original brief set for the Legistar reading videos). If someone reviews it directly, it may show whether Welsch's dollar figures were read into the record even though the written minutes don't contain them.",
+      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them. That request letter itself was located separately and directly -- see WELSCH-AUDIT-REQUEST-LETTER -- but its identity as the exact document 'provided' at this meeting is not yet independently confirmed. IMPORTANT GAP: these written minutes never mention public comment happened at all, but a since-obtained recording of the meeting (see SEPT23-MEETING-TRANSCRIPT) captures substantial public comment, including Michael Lacy himself speaking. The written minutes are not the full record of what was said at this meeting.",
       "anchor": "Audit of Office of Homeless Services Financial Processes to the 2025 annual audit plan",
       "used_for": "Task 4b, the hinge of the audit's origin",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "015a3537266f64e366a1b3cc6baf922fef1a17c999f3c4cfe1e72466641081b8",
         "bytes": 203863,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:37+00:00",
+        "fetched_at": "2026-09-05T04:11:51+00:00",
         "location": {
           "kind": "pdf-page-text",
           "page": 3,
           "offset": 6633,
           "length": 87
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041157/https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
+          "timestamp": "20260905041157",
+          "as_of_today": true
+        }
       },
       "provenance_note": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest."
     },
@@ -1358,6 +1453,31 @@
       "provenance_note": "Supplied directly to this project as a local file (not fetched from a URL) on 2026-09-05. Original public source/URL not yet confirmed -- provenance needs to be established: is this the exact document referenced as 'provided' to the Sept 23, 2025 Audit Committee meeting, or a copy circulated separately? See capture.note."
     },
     {
+      "id": "SEPT23-MEETING-TRANSCRIPT",
+      "label": "Sept 23, 2025 Audit Committee meeting, local Whisper transcript",
+      "url": "https://www.youtube.com/watch?v=vsGlPI9B0DE",
+      "tier": "secondary",
+      "claim": "IMPORTANT CAVEATS: this is a machine (Whisper large-v3-turbo) transcript of the meeting video, generated locally by this project on 2026-09-05 -- it is NOT an official record, has no speaker diarization (who-said-what has to be inferred from context), and contains at least two probable name misspellings already spotted (\"Michael Lacey\" for Michael Lacy; \"John Crossland\" for external auditor Crosslin, who AUD-CTTE-SEP23-MINUTES already names correctly). Treat every quote pulled from it as needing a second listen against the original audio before being printed as verbatim. That said, the substance is a real finding: the written minutes (AUD-CTTE-SEP23-MINUTES) never mention public comment happening at all, but this recording captures a public comment period, including a speaker introduced as 'Mr. Michael Lacey' stating: 'Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light.' A later, apparently different speaker credits him further: 'I didn't know what was going on until Mike Lacey went out there and made public records request and found out what was going on.' The written record of this meeting is incomplete without this.",
+      "anchor": "Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light",
+      "used_for": "Task 4b, showing the written minutes omit public comment entirely",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "059d575c602c1b9073b1badafa7a16cd3d09c622be8c484124dff1367de5497c",
+        "bytes": 83627,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-05T03:33:23+00:00",
+        "location": {
+          "kind": "byte-offset",
+          "offset": 5868,
+          "length": 145
+        },
+        "archive": null
+      },
+      "note": "Derived artifact: MLX Whisper (large-v3-turbo) transcript of a video the user downloaded directly (not fetched by this project). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
+      "provenance_note": "Not in the original manifest. Generated 2026-09-05 by this project: audio downloaded by the user directly (not by this project, per YouTube's terms), transcribed locally via MLX Whisper (no cloud), then passed through a second local pass (eoreader7's referent-discovery engine, organs/cast.js) for named-entity extraction. All versions preserved: transcripts/sept23-audit-committee.txt (plain text), .segments.json (timestamped), .entities.json (the eoreader7 pass, 45 referents auto-discovered, 45 disclosed as having unresolved pronoun/descriptor coreference -- see that file's own gaps array rather than trusting any referent list as complete)."
+    },
+    {
       "id": "AUD-HID-FOLLOWUP-2025",
       "label": "Audit recommendations follow-up, Homeless Impact Division, 18 Jul 2025",
       "url": "https://www.nashville.gov/sites/default/files/2025-07/Recommendations_Follow_Up_Audit_of_Homeless_Impact_Division_Final_07182025_WEBSITE.pdf?ct=1752862157",
@@ -1365,20 +1485,25 @@
       "claim": "Follow-up on the March 2023 audit's seven recommendations: as of June 30, 2025, six were fully implemented, one partially. Cuts both ways on the 'no major issues' rebuttal -- it shows real remediation, but only of the 2023 predecessor-division audit, not the new financial-processes audit approved two months later.",
       "anchor": "six were fully implemented and one was partially implemented",
       "used_for": "Rebuttal nuance to the no-major-issues claim",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "519906124259a5b80204f1127d3226630921af10073a4a88bf76411cf57b2fc9",
         "bytes": 866206,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:41+00:00",
+        "fetched_at": "2026-09-05T04:12:06+00:00",
         "location": {
           "kind": "pdf-page-text",
           "page": 2,
           "offset": 1351,
           "length": 61
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041255/https://www.nashville.gov/sites/default/files/2025-07/Recommendations_Follow_Up_Audit_of_Homeless_Impact_Division_Final_07182025_WEBSITE.pdf?ct=1752862157",
+          "timestamp": "20260905041255",
+          "as_of_today": true
+        }
       },
       "provenance_note": "Found via the Audit Reports by Department index (AUD-BY-DEPT); not in the original manifest."
     },
@@ -1390,20 +1515,25 @@
       "claim": "Governance reference for how the Committee is constituted and how it may add items to the annual audit plan.",
       "anchor": "Audit Committee",
       "used_for": "Background, governance context",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "770342461679ab85a53a1865fa9366817a6044f6f98d2229e534830ff4b7dde5",
         "bytes": 106259,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:46+00:00",
+        "fetched_at": "2026-09-05T04:19:47+00:00",
         "location": {
           "kind": "pdf-page-text",
           "page": 1,
           "offset": 144,
           "length": 15
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041950/https://www.nashville.gov/sites/default/files/2021-03/AuditCommitteeRules.pdf",
+          "timestamp": "20260905041950",
+          "as_of_today": true
+        }
       },
       "provenance_note": "Reference source from the user's research doc; not in the original manifest."
     },
@@ -1560,19 +1690,24 @@
       "claim": "Background reference on OHS's community-advisory-board structure.",
       "anchor": "individuals with lived experience of homelessness",
       "used_for": "Background",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "f0d8b20d5ab23a7f9b0ea11474fc2257b403e1f4d1683364f18e842aaef219fb",
+        "sha256": "8ad3d78835c9ca56943a4f85e26c38c19c6491ae76ec26169199e064ca4679d6",
         "bytes": 98704,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:41:07+00:00",
+        "fetched_at": "2026-09-05T03:59:03+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 55180,
           "length": 49
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905040025/https://www.nashville.gov/departments/office-homeless-services/continuum-care/current-rfp/administration-and-support-request-proposal",
+          "timestamp": "20260905040025",
+          "as_of_today": true
+        }
       },
       "provenance_note": "Reference source from the user's research doc; not in the original manifest."
     },
@@ -1613,19 +1748,24 @@
       "claim": "Independent confirmation of Strobel House's cost and opening.",
       "anchor": "$35 million building",
       "used_for": "Background, Strobel House",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "f0948be2cacb224e8844fbee4b8a5a3f486f2e9acbe1b53dd2c86f16aa8235f0",
         "bytes": 408046,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:41:13+00:00",
+        "fetched_at": "2026-09-05T04:13:11+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 104504,
           "length": 20
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041410/https://nashvillebanner.com/2024/07/19/strobel-house-housing-homeless/",
+          "timestamp": "20260905041410",
+          "as_of_today": true
+        }
       },
       "provenance_note": "From the user's research doc; not in the original manifest."
     },
@@ -1755,19 +1895,24 @@
       "claim": "Reports Director Calvin personally selected families for the Non-Traditional/MRRF program via text, outside Coordinated Entry. The article is metered (Substack 'claim your free post' gate) -- the lede and summary are publicly served and captured; the actual text-message images are behind the gate and were not retrieved.",
       "anchor": "removing families from consideration based on their size",
       "used_for": "The Non-Traditional/MRRF program",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "18f2facaa49168acbc4c222de71633540bd4fb5c96c06e9314cef4954a0c058d",
+        "sha256": "ba96c02301e52028cb4578ac9f248eb9ba14e845da08344f1b452e65a794769e",
         "bytes": 192233,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:41:31+00:00",
+        "fetched_at": "2026-09-05T04:14:30+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 51033,
           "length": 56
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041533/https://readrichtext.substack.com/p/null_results-text-messages-reveal",
+          "timestamp": "20260905041533",
+          "as_of_today": true
+        }
       },
       "provenance_note": "From the user's research doc; not in the original manifest."
     },
@@ -1779,19 +1924,24 @@
       "claim": "Alleges OHS paid an apartment complex $90K in rent while it evicted 30+ residents, some of whom OHS was paying to house there. Distinct from RT-WAYFAIR's $86,103.61 Wallace Studios furniture figure -- do not conflate the two dollar amounts.",
       "anchor": "Pay An Apartment Complex $90K While It Evicted 30+ Residents",
       "used_for": "The Non-Traditional/MRRF program, landlord-engagement spending",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "bf60e27e79b352f7a8afeae0554a4bf904c855a7293b5abeee31fee6be47170e",
+        "sha256": "76485f22c5681885f7e34b166dd612824806dca7b563c819a907163ef531f674",
         "bytes": 241115,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:41:35+00:00",
+        "fetched_at": "2026-09-05T04:15:54+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 32501,
           "length": 60
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-existing",
+          "url": "https://web.archive.org/web/20251105041933/https://readrichtext.substack.com/p/join-the-investigation",
+          "timestamp": "20251105041933",
+          "as_of_today": true
+        }
       },
       "provenance_note": "From the user's research doc; not in the original manifest."
     },
@@ -1803,19 +1953,24 @@
       "claim": "Index/navigation post for the outlet's full 2025 OHS coverage -- useful as a source map, not itself a factual claim.",
       "anchor": "186,261 words across 94 posts",
       "used_for": "Source navigation",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
-        "sha256": "871a643dc5fedc441deb27425fe25d5317f9473f19cf672c1a8e5f0f5d2b05ee",
+        "sha256": "834c52358bf461be0018a36f761e32fab39be80b980ad261530bed0ff1d01c1c",
         "bytes": 326755,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:41:43+00:00",
+        "fetched_at": "2026-09-05T04:15:59+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 929,
           "length": 29
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041702/https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
+          "timestamp": "20260905041702",
+          "as_of_today": true
+        }
       },
       "provenance_note": "From the user's research doc; not in the original manifest."
     },
@@ -1827,19 +1982,24 @@
       "claim": "DePaul's own description of its role operating Strobel House -- the operator's own account, for comparison against Metro's characterization of the contract lapse.",
       "anchor": "Depaul USA Nashville operates Strobel House",
       "used_for": "The DePaul/Strobel contract lapse",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "status": "captured",
+      "status_meaning": "The anchor text was confirmed present in the fetched bytes, and this exact capture is independently archived (Wayback Machine or archive.today). The strongest state a row reaches.",
       "evidence": {
         "sha256": "0a557bddd8f0689b2e1dafa8af35f988bd9577f12acd19d15faeb69dd6587bb6",
         "bytes": 101097,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:41:49+00:00",
+        "fetched_at": "2026-09-05T04:17:25+00:00",
         "location": {
           "kind": "byte-offset",
           "offset": 48691,
           "length": 43
         },
-        "archive": null
+        "archive": {
+          "tier": "wayback-spn2",
+          "url": "https://web.archive.org/web/20260905041838/https://depaulusa.org/locations/nashville/",
+          "timestamp": "20260905041838",
+          "as_of_today": true
+        }
       },
       "provenance_note": "From the user's research doc; not in the original manifest."
     },
@@ -1900,31 +2060,6 @@
         }
       },
       "provenance_note": "From the user's research doc; not in the original manifest."
-    },
-    {
-      "id": "SEPT23-MEETING-TRANSCRIPT",
-      "label": "Sept 23, 2025 Audit Committee meeting, local Whisper transcript",
-      "url": "https://www.youtube.com/watch?v=vsGlPI9B0DE",
-      "tier": "secondary",
-      "claim": "IMPORTANT CAVEATS: this is a machine (Whisper large-v3-turbo) transcript of the meeting video, generated locally by this project on 2026-09-05 -- it is NOT an official record, has no speaker diarization (who-said-what has to be inferred from context), and contains at least two probable name misspellings already spotted (\"Michael Lacey\" for Michael Lacy; \"John Crossland\" for external auditor Crosslin, who AUD-CTTE-SEP23-MINUTES already names correctly). Treat every quote pulled from it as needing a second listen against the original audio before being printed as verbatim. That said, the substance is a real finding: the written minutes (AUD-CTTE-SEP23-MINUTES) never mention public comment happening at all, but this recording captures a public comment period, including a speaker introduced as 'Mr. Michael Lacey' stating: 'Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light.' A later, apparently different speaker credits him further: 'I didn't know what was going on until Mike Lacey went out there and made public records request and found out what was going on.' The written record of this meeting is incomplete without this.",
-      "anchor": "Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light",
-      "used_for": "Task 4b, showing the written minutes omit public comment entirely",
-      "status": "local-only",
-      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
-      "evidence": {
-        "sha256": "059d575c602c1b9073b1badafa7a16cd3d09c622be8c484124dff1367de5497c",
-        "bytes": 83627,
-        "content_type": "text/plain",
-        "fetched_at": "2026-09-05T03:33:23+00:00",
-        "location": {
-          "kind": "byte-offset",
-          "offset": 5868,
-          "length": 145
-        },
-        "archive": null
-      },
-      "note": "Derived artifact: MLX Whisper (large-v3-turbo) transcript of a video the user downloaded directly (not fetched by this project). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
-      "provenance_note": "Not in the original manifest. Generated 2026-09-05 by this project: audio downloaded by the user directly (not by this project, per YouTube's terms), transcribed locally via MLX Whisper (no cloud), then passed through a second local pass (eoreader7's referent-discovery engine, organs/cast.js) for named-entity extraction. All versions preserved: transcripts/sept23-audit-committee.txt (plain text), .segments.json (timestamped), .entities.json (the eoreader7 pass, 45 referents auto-discovered, 45 disclosed as having unresolved pronoun/descriptor coreference -- see that file's own gaps array rather than trusting any referent list as complete)."
     }
   ]
 }

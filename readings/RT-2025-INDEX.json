@@ -1,13 +1,13 @@
 {
   "id": "RT-2025-INDEX",
   "path": "bytes/RT-2025-INDEX.bin",
-  "sha256": "871a643dc5fedc441deb27425fe25d5317f9473f19cf672c1a8e5f0f5d2b05ee",
+  "sha256": "834c52358bf461be0018a36f761e32fab39be80b980ad261530bed0ff1d01c1c",
   "bytes": 326755,
   "media_type": "text/html; charset=utf-8",
   "source_url": "https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
   "final_url": "https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
-  "retrieved_at": "2026-09-05T02:41:43+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:15:59+00:00",
+  "wayback_timestamp": "20260905041702",
   "spans": [
     {
       "kind": "anchor",

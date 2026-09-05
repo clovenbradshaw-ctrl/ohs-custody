@@ -217,10 +217,10 @@
 <section class="panel warn">
   <h2>What this file could not do by itself</h2>
   <p>
-    The data baked into this register was captured by <code>snip_and_archive.py</code> running with real outbound access -- every URL below was actually fetched, hashed, and anchor-located from live bytes, not simulated. Two things still could not be done automatically: Wayback Machine (SPN2) submission needs <code>IA_ACCESS_KEY</code>/<code>IA_SECRET_KEY</code> credentials that were not available, and archive.today's submit endpoint puts a reCAPTCHA in front of anything that reads as scripted, which this project does not attempt to solve or bypass. Rows without an independent archive are marked <strong>local-only</strong> -- the bytes and hash are real and on disk, just not yet attested to by a third party.
+    The data baked into this register was captured by <code>snip_and_archive.py</code> running with real outbound access -- every URL below was actually fetched, hashed, and anchor-located from live bytes, not simulated. Wayback Machine (SPN2) archiving is now live too, once IA credentials were supplied -- most rows carry a fresh or pre-existing independent capture. archive.today's submit endpoint still puts a reCAPTCHA in front of anything that reads as scripted, which this project does not attempt to solve or bypass, and a small number of rows are local-only because they are documents supplied directly to this project rather than fetched from a URL (nothing to hand SPN2 for those), or because Internet Archive's own crawler could not reach a specific nashville.gov URL after two tries. Local-only rows carry a real hash on disk -- just not yet attested to by a third party.
   </p>
   <p>
-    Re-running <code>snip_and_archive.py</code> (which ships alongside this file) with those credentials set will fill in the missing archive tier for any row still marked local-only, and will not touch or re-verify rows that are already independently archived. It writes back an enriched manifest -- paste that into the box at the bottom of this page and every row here updates.
+    Re-running <code>snip_and_archive.py</code> (which ships alongside this file) will not touch or re-verify rows that are already independently archived. It writes back an enriched manifest -- paste that into the box at the bottom of this page and every row here updates.
   </p>
 </section>
 
@@ -343,28 +343,29 @@
       "claim": "The enacted code vests appointment in the mayor, leaving the planning council only a seat in the interview process.",
       "used_for": "Section V, the ordinance",
       "capture": {
-        "status": "bytes-held",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905040148",
         "sha256": "51f8a8411a6ee99b7eff3cd9ec1df26c9102699e2359e57cbf87f97b3ef6eecf",
         "bytes": 6095,
         "anchor_offset": null,
         "anchor_length": null,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:43:56+00:00",
+        "fetched_at": "2026-09-05T04:24:23+00:00",
         "http_status": 200,
         "final_url": "https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
         "anchor_method": "anchor-not-found",
         "local_path": "bytes/MUNI-263040.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "reused-existing",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only",
+        "archive_tier": "wayback-existing",
         "rendered_sha256": "4d12915d7d79bdc190b2ed0ab1e408789af2d753cbb08523fb30fc7c75fbca6f",
         "rendered_path": "derived/MUNI-263040.rendered.txt",
         "rendered_method": "exact-text",
         "note": "Raw HTTP response is a client-side app shell with no page content in it (Municode/Angular). Anchor is located in a rendered-DOM capture instead, saved separately and hashed on its own; the raw shell bytes remain the object of record for the URL itself.",
         "rendered_text_chars": 2605,
         "rendered_text_offset": 2056,
-        "rendered_text_length": 31
+        "rendered_text_length": 31,
+        "wayback_url": "https://web.archive.org/web/20260905040148/https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE"
       }
     },
     {
@@ -377,28 +378,29 @@
       "claim": "The residual council role is participation in interviewing, not nomination and not removal.",
       "used_for": "Section V, the ordinance",
       "capture": {
-        "status": "bytes-held",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905040148",
         "sha256": "51f8a8411a6ee99b7eff3cd9ec1df26c9102699e2359e57cbf87f97b3ef6eecf",
         "bytes": 6095,
         "anchor_offset": null,
         "anchor_length": null,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:44:01+00:00",
+        "fetched_at": "2026-09-05T04:24:25+00:00",
         "http_status": 200,
         "final_url": "https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE",
         "anchor_method": "anchor-not-found",
         "local_path": "bytes/MUNI-263040-HR.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "reused-existing",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only",
+        "archive_tier": "wayback-existing",
         "rendered_sha256": "4d12915d7d79bdc190b2ed0ab1e408789af2d753cbb08523fb30fc7c75fbca6f",
         "rendered_path": "derived/MUNI-263040.rendered.txt",
         "rendered_method": "exact-text",
         "note": "Raw HTTP response is a client-side app shell with no page content in it (Municode/Angular). Anchor is located in a rendered-DOM capture instead, saved separately and hashed on its own; the raw shell bytes remain the object of record for the URL itself.",
         "rendered_text_chars": 2605,
         "rendered_text_offset": 2214,
-        "rendered_text_length": 60
+        "rendered_text_length": 60,
+        "wayback_url": "https://web.archive.org/web/20260905040148/https://library.municode.com/tn/metro_government_of_nashville_and_davidson_county/codes/code_of_ordinances?nodeId=CD_TIT2AD_DIVICOOFOFDE_CH2.63OFHOSE"
       }
     },
     {
@@ -440,21 +442,23 @@
       "used_for": "Section V, the hinge of the piece",
       "added": "Not in the original manifest. Added 2026-09-05: found via the meeting-detail page for the 6/7/2022 Metropolitan Council meeting (MeetingDetail.aspx?ID=965721&GUID=C4ED5A72-7FAC-4B02-BB2A-CE72C8400C2C), which Legistar links from LEG-BL2021-971's history grid as a per-row JS popup, not a plain href.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "443790375fb8380e8e33a367f99098a3a46363228c603223b0777d3f53973fb7",
+        "status": "captured",
+        "wayback_timestamp": "20260905040544",
+        "sha256": "89b1eba90e64137338b2a560516b95c3a00b30837c2a231ebc58c7efef804319",
         "bytes": 47040,
         "anchor_offset": 36678,
         "anchor_length": 48,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T01:29:00+00:00",
+        "fetched_at": "2026-09-05T04:02:11+00:00",
         "http_status": 200,
         "final_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25536701&GUID=571AD86D-26F0-4983-A5A5-B6A7F8A7AAE1",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/LEG-BL2021-971-HIST-2ND.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040544/https://nashville.legistar.com/HistoryDetail.aspx?ID=25536701&GUID=571AD86D-26F0-4983-A5A5-B6A7F8A7AAE1",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040544/https://nashville.legistar.com/HistoryDetail.aspx?ID=25536701&GUID=571AD86D-26F0-4983-A5A5-B6A7F8A7AAE1#:~:text=Council%20Member%20O%27Connell%20offered%20Amendment%20No.%201"
       }
     },
     {
@@ -468,21 +472,23 @@
       "used_for": "Section V, the hinge of the piece",
       "added": "Not in the original manifest. Added 2026-09-05, same discovery path as LEG-BL2021-971-HIST-2ND but for the 6/21/2022 meeting (MeetingDetail.aspx?ID=965745&GUID=6F19C43A-678F-41DF-993A-9D1AD19A7720).",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "ba8c572261eb73545bbcf28c7b370e0813d44cf8e543133887923462637d702d",
+        "status": "captured",
+        "wayback_timestamp": "20260905040635",
+        "sha256": "3bede18c23cb9a3af158da514987ceba81d75510acba7fc82fb38098524bc276",
         "bytes": 48075,
         "anchor_offset": 37369,
         "anchor_length": 67,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T01:29:05+00:00",
+        "fetched_at": "2026-09-05T04:06:02+00:00",
         "http_status": 200,
         "final_url": "https://nashville.legistar.com/HistoryDetail.aspx?ID=25668715&GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/LEG-BL2021-971-HIST-3RD.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040635/https://nashville.legistar.com/HistoryDetail.aspx?ID=25668715&GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040635/https://nashville.legistar.com/HistoryDetail.aspx?ID=25668715&GUID=7D5EE377-79B8-44C2-ABF6-337B2EA27AA7#:~:text=Without%20objection%2C%20Council%20Member%20O%27Connell%20offered%20Amendment%20No.%202"
       }
     },
     {
@@ -587,21 +593,23 @@
       "claim": "Council asked for a spending methodology and got a non-answer.",
       "used_for": "Section VI, the ledger",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "b76528221a84707d91f5e154492e621da788d4f141ed5fe1887560e712ea90de",
+        "status": "captured",
+        "wayback_timestamp": "20260905040702",
+        "sha256": "cfe25d1b9e263828323deb2a404b9ffed839e46d23d657bd7275619935c3c768",
         "bytes": 108587,
         "anchor_offset": 4030,
         "anchor_length": 27,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:23:43+00:00",
+        "fetched_at": "2026-09-05T04:06:55+00:00",
         "http_status": 200,
         "final_url": "https://nashville.legistar.com/LegislationDetail.aspx?ID=7778274&GUID=3F3BCDD9-3D97-4817-BB93-11D613D6EBA9",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/LEG-RS2025-1711.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040702/https://nashville.legistar.com/LegislationDetail.aspx?ID=7778274&GUID=3F3BCDD9-3D97-4817-BB93-11D613D6EBA9",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040702/https://nashville.legistar.com/LegislationDetail.aspx?ID=7778274&GUID=3F3BCDD9-3D97-4817-BB93-11D613D6EBA9#:~:text=Office%20of%20Homeless%20Services"
       }
     },
     {
@@ -698,14 +706,14 @@
       "claim": "Contains no OHS status item, which is the evidentiary basis for saying the audit was still open at that date.",
       "used_for": "The eleven months of silence",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905040721",
         "sha256": "b5c44ffde381115084595952ecd351d35304556211ea0f78ffe7fe57e8059023",
         "bytes": 181769,
         "anchor_offset": null,
         "anchor_length": null,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T01:29:15+00:00",
+        "fetched_at": "2026-09-05T04:07:19+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/sites/default/files/2025-12/12092025_AuditCommitteeMintues_APPROVED.pdf?ct=1767366514",
         "local_path": "bytes/AUD-CTTE-DEC9.bin",
@@ -715,9 +723,10 @@
         "anchor_page": 1,
         "anchor_text_offset": 180,
         "anchor_text_length": 15,
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040721/https://www.nashville.gov/sites/default/files/2025-12/12092025_AuditCommitteeMintues_APPROVED.pdf?ct=1767366514"
       }
     },
     {
@@ -730,21 +739,23 @@
       "claim": "Negative evidence. Capture on a schedule so the absence of an OHS report is provable on specific dates.",
       "used_for": "Trigger monitoring",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "e0f5daa7a0a2cf33e740488a43aff9e2c3a416b2397d7ce8a0c49f62f202e696",
+        "status": "captured",
+        "wayback_timestamp": "20260905040809",
+        "sha256": "04954250c0a0eee7dc671cef6a128688f08d0a0ede3175e1c500e62c09e55f47",
         "bytes": 63484,
         "anchor_offset": 949,
         "anchor_length": 16,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:17+00:00",
+        "fetched_at": "2026-09-05T04:07:29+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/AUD-FY2027.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040809/https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040809/https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027#:~:text=Fiscal%20Year%202027"
       }
     },
     {
@@ -759,17 +770,17 @@
       "capture": {
         "status": "local-only",
         "wayback_timestamp": null,
-        "sha256": "ecf2e6005a7158364ff66463249c123afab44a06c8c59f2a8949bdf095307284",
+        "sha256": "3d2074e7d0f7d81098a7bc0de0a105261ab6a14f01af0352264b23922b1ee525",
         "bytes": 66664,
         "anchor_offset": 1063,
         "anchor_length": 16,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:21+00:00",
+        "fetched_at": "2026-09-05T04:21:11+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2026",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/AUD-FY2026.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "spn-error:Save Page Now could not capture this URL because it was unreachable. If the site is online, it may be blocking access from our service.",
         "archive_today_note": "blocked:captcha-gate",
         "archive_tier": "local-only"
       }
@@ -903,21 +914,23 @@
       "claim": "Certified 2026 count, up 5.4 percent. Note the unsheltered figure differs from one news account.",
       "used_for": "Outcomes against spending",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "78d3863d9325ce7880f8b356e6a95b2a4b8fa4ad4201c1549b7fabaf34cca65b",
+        "status": "captured",
+        "wayback_timestamp": "20260905040841",
+        "sha256": "2c29da2c20e6fcec1e89fb9e6a668eafc474e93253a13a749389f7bd9523fd57",
         "bytes": 101179,
         "anchor_offset": 57526,
         "anchor_length": 12,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:31+00:00",
+        "fetched_at": "2026-09-05T04:08:37+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/departments/office-homeless-services/news/2026-pit-count",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/GOV-PIT-2026.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040841/https://www.nashville.gov/departments/office-homeless-services/news/2026-pit-count",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040841/https://www.nashville.gov/departments/office-homeless-services/news/2026-pit-count#:~:text=2%2C298%20people"
       }
     },
     {
@@ -988,21 +1001,23 @@
       "used_for": "Section VIII, MHRC",
       "priority": "high",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905040908",
         "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
         "bytes": 203334,
         "anchor_offset": 165810,
         "anchor_length": 65,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T01:29:33+00:00",
+        "fetched_at": "2026-09-05T04:08:59+00:00",
         "http_status": 200,
         "final_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/CTB-TACKETT-AUG26.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/#:~:text=disproportionate%20adverse%20effect%20on%20Black%20women%20and%20women%20of%20color"
       }
     },
     {
@@ -1015,21 +1030,23 @@
       "claim": "The governance board's own description of its powerlessness, from the former division director.",
       "used_for": "Section VII, the board's own account",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905040908",
         "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
         "bytes": 203334,
         "anchor_offset": 169616,
         "anchor_length": 40,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:39+00:00",
+        "fetched_at": "2026-09-05T04:09:26+00:00",
         "http_status": 200,
         "final_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/CTB-HPC-POWER.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/#:~:text=absolutely%20no%20power%20over%20Metro%20resources"
       }
     },
     {
@@ -1042,21 +1059,23 @@
       "claim": "OHS on the record about where the returned allocation went. Watch for double counting against the Holladay figure.",
       "used_for": "Returned allocations",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905040908",
         "sha256": "1d55cfbb103bd45ec8431d695adbb6c1455afe3b6dda3b2a3fe39aa8d53a11a0",
         "bytes": 203334,
         "anchor_offset": 160366,
         "anchor_length": 46,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:43+00:00",
+        "fetched_at": "2026-09-05T04:09:35+00:00",
         "http_status": 200,
         "final_url": "https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
         "anchor_method": "normalised-text",
         "local_path": "bytes/CTB-SHELBY.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040908/https://thecontributor.org/learn-more-about-recent-homelessness-updates-out-of-nashville/#:~:text=reallocated%20through%20Metro%27s%20approved%20process"
       }
     },
     {
@@ -1241,21 +1260,23 @@
       "used_for": "Audit scope reconstruction",
       "priority": "high",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "802cd366a1a7270cfb6683fe34fb5786bb09480b353def8b668bacf79d22e347",
+        "status": "captured",
+        "wayback_timestamp": "20260625172930",
+        "sha256": "485d35cd352f556f0be17c04567a270dfee0f67e26d1331d6f0379fc1e9b3678",
         "bytes": 262245,
         "anchor_offset": 172721,
         "anchor_length": 13,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T01:29:45+00:00",
+        "fetched_at": "2026-09-05T04:09:44+00:00",
         "http_status": 200,
         "final_url": "https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/SCN-WELSCH-FILING.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "reused-existing",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-existing",
+        "wayback_url": "https://web.archive.org/web/20260625172930/https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
+        "wayback_anchor_url": "https://web.archive.org/web/20260625172930/https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html#:~:text=audit%20request"
       }
     },
     {
@@ -1326,21 +1347,23 @@
       "claim": "Outside characterisation of the community audit effort. Relevant to disclosure of your own role.",
       "used_for": "Disclosure paragraph",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "23bfa91be41a2defa1bf6e8aa669b7b0b07437e84065d28ca49aaf867c55eead",
+        "status": "captured",
+        "wayback_timestamp": "20251214213723",
+        "sha256": "7d33a0cee1f8f88c8ca6b78b75bc088783994a85daeaaa5ad5ed118042892267",
         "bytes": 283962,
         "anchor_offset": 175276,
         "anchor_length": 32,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:24:55+00:00",
+        "fetched_at": "2026-09-05T04:09:48+00:00",
         "http_status": 200,
         "final_url": "https://www.nashvillescene.com/news/coverstory/office-of-homeless-services-point-in-time-count/article_b63fa2f9-df20-432b-b858-750780680bc8.html",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/SCN-COVER-PIT.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "reused-existing",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-existing",
+        "wayback_url": "https://web.archive.org/web/20251214213723/https://www.nashvillescene.com/news/coverstory/office-of-homeless-services-point-in-time-count/article_b63fa2f9-df20-432b-b858-750780680bc8.html",
+        "wayback_anchor_url": "https://web.archive.org/web/20251214213723/https://www.nashvillescene.com/news/coverstory/office-of-homeless-services-point-in-time-count/article_b63fa2f9-df20-432b-b858-750780680bc8.html#:~:text=citizen%20effort%20to%20publicly%20audit"
       }
     },
     {
@@ -1469,21 +1492,23 @@
       "used_for": "Prior publication, do not repeat",
       "priority": "high",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "fcbd292437b0e5c0813f98ff1c09ce9d1b12515a08ee23b253a91ba0382b1298",
-        "bytes": 323062,
+        "status": "captured",
+        "wayback_timestamp": "20260905041920",
+        "sha256": "e812c43328f3dd7e2d629080ceeac7c27c07a5a3ec21624a40f60484dcf793d3",
+        "bytes": 323010,
         "anchor_offset": 109598,
         "anchor_length": 29,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T01:30:04+00:00",
+        "fetched_at": "2026-09-05T04:19:11+00:00",
         "http_status": 200,
         "final_url": "https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/RT-BULLSHITTERY.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041920/https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041920/https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of#:~:text=should%20not%20be%20posted%20publicly"
       }
     },
     {
@@ -1496,21 +1521,23 @@
       "claim": "Your record of the off-contract rent payments and the business unit ledger.",
       "used_for": "Section VI, the ledger",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "f4f66102d341ef410c65de84c33aa343c03d0e6b81361919e422d55f52787e9d",
+        "status": "captured",
+        "wayback_timestamp": "20260905041030",
+        "sha256": "4e506baf679c3ec3dbeca847656872e6876e71479f598d509fa506913e5ed0f7",
         "bytes": 261390,
         "anchor_offset": 57410,
         "anchor_length": 34,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:25:07+00:00",
+        "fetched_at": "2026-09-05T04:10:01+00:00",
         "http_status": 200,
         "final_url": "https://readrichtext.substack.com/p/another-15m-without-accounting-for",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/RT-15M.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041030/https://readrichtext.substack.com/p/another-15m-without-accounting-for",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041030/https://readrichtext.substack.com/p/another-15m-without-accounting-for#:~:text=outside%20of%20any%20procurement%20process"
       }
     },
     {
@@ -1551,21 +1578,23 @@
       "claim": "OHS characterising your published data as misleading. Their words, preserved.",
       "used_for": "Right of reply",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "13d24201e298ba884efc5bf3f4c17aa07d006283ec1c3a21d4485103d5161a62",
-        "bytes": 146357,
+        "status": "captured",
+        "wayback_timestamp": "20260905041051",
+        "sha256": "2d3679875963a432596b4fc9b0fe19a9aec69692424dd74f2459fbbc8b8ca651",
+        "bytes": 146414,
         "anchor_offset": 44819,
         "anchor_length": 19,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:25:17+00:00",
+        "fetched_at": "2026-09-05T04:10:47+00:00",
         "http_status": 200,
         "final_url": "https://readrichtext.substack.com/p/read-office-of-homeless-services",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/RT-OHS-EMAIL.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041051/https://readrichtext.substack.com/p/read-office-of-homeless-services",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041051/https://readrichtext.substack.com/p/read-office-of-homeless-services#:~:text=OHS%20Community%20Audit"
       }
     },
     {
@@ -1578,21 +1607,23 @@
       "claim": "Your record of the resignation following publication.",
       "used_for": "Section VI, the ledger",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "6d6d1b33888f85412b34fb919b5a742817fe6b5ba092502c36266ef4e2788d77",
+        "status": "captured",
+        "wayback_timestamp": "20260905041117",
+        "sha256": "6c4e856a807da06a1f806555c4ad4fa792bfb60bd8d41eaa15b3513cadf820c4",
         "bytes": 150829,
         "anchor_offset": 41446,
         "anchor_length": 29,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:25:20+00:00",
+        "fetched_at": "2026-09-05T04:11:09+00:00",
         "http_status": 200,
         "final_url": "https://readrichtext.substack.com/p/exec-director-of-depaul-usa-strobel",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/PRO-DEPAUL-CEO.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041117/https://prometheoid.substack.com/p/exec-director-of-depaul-usa-strobel",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041117/https://prometheoid.substack.com/p/exec-director-of-depaul-usa-strobel#:~:text=did%20not%20have%20a%20valid%20contract"
       }
     },
     {
@@ -1731,14 +1762,14 @@
       "used_for": "Task 4b, the Sept 23 packet",
       "added": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905041143",
         "sha256": "a35fda5298762d9bf074a80ab302ab34ce878f395f1ecd5045fb48d2acf0780a",
         "bytes": 145071,
         "anchor_offset": null,
         "anchor_length": null,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:33+00:00",
+        "fetched_at": "2026-09-05T04:11:37+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/sites/default/files/2025-09/Audit-Committee-250923a.pdf?ct=1788551282",
         "local_path": "bytes/AUD-CTTE-SEP23-AGENDA.bin",
@@ -1748,9 +1779,10 @@
         "anchor_page": 1,
         "anchor_text_offset": 1354,
         "anchor_text_length": 73,
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041143/https://www.nashville.gov/sites/default/files/2025-09/Audit-Committee-250923a.pdf?ct=1788551282"
       }
     },
     {
@@ -1760,18 +1792,18 @@
       "doctype": "minutes-pdf",
       "url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
       "anchor": "Audit of Office of Homeless Services Financial Processes to the 2025 annual audit plan",
-      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them. That request letter itself was located separately and directly -- see WELSCH-AUDIT-REQUEST-LETTER -- but its identity as the exact document 'provided' at this meeting is not yet independently confirmed (its own provenance is a local file supplied to this project, not a fetch from a public URL). Video of the full meeting: https://www.youtube.com/watch?v=vsGlPI9B0DE (not transcribed -- no transcription tool available, and downloading video from YouTube is against its terms of service; noted per the same rule the original brief set for the Legistar reading videos). If someone reviews it directly, it may show whether Welsch's dollar figures were read into the record even though the written minutes don't contain them.",
+      "claim": "The exact, official audit title/scope as adopted: 'Audit of Office of Homeless Services Financial Processes.' Also documents Finance Director Jenneen Reed's disclosed conflict of interest (self-described as part of the 'Strobel family' and a donor) and the Committee finding no conflict. Does NOT itemize Welsch's dollar figures verbatim -- her written request was 'provided' to the committee per these minutes but not transcribed into them. That request letter itself was located separately and directly -- see WELSCH-AUDIT-REQUEST-LETTER -- but its identity as the exact document 'provided' at this meeting is not yet independently confirmed. IMPORTANT GAP: these written minutes never mention public comment happened at all, but a since-obtained recording of the meeting (see SEPT23-MEETING-TRANSCRIPT) captures substantial public comment, including Michael Lacy himself speaking. The written minutes are not the full record of what was said at this meeting.",
       "used_for": "Task 4b, the hinge of the audit's origin",
       "added": "Found via the meeting page linked from the Audit Committee meetings index; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905041157",
         "sha256": "015a3537266f64e366a1b3cc6baf922fef1a17c999f3c4cfe1e72466641081b8",
         "bytes": 203863,
         "anchor_offset": null,
         "anchor_length": null,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:37+00:00",
+        "fetched_at": "2026-09-05T04:11:51+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282",
         "local_path": "bytes/AUD-CTTE-SEP23-MINUTES.bin",
@@ -1781,9 +1813,10 @@
         "anchor_page": 3,
         "anchor_text_offset": 6633,
         "anchor_text_length": 87,
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041157/https://www.nashville.gov/sites/default/files/2025-12/AuditCommitteeMintues-09232025.pdf?ct=1788551282"
       }
     },
     {
@@ -1817,6 +1850,33 @@
       }
     },
     {
+      "id": "SEPT23-MEETING-TRANSCRIPT",
+      "label": "Sept 23, 2025 Audit Committee meeting, local Whisper transcript",
+      "tier": "secondary",
+      "doctype": "transcript-derived",
+      "url": "https://www.youtube.com/watch?v=vsGlPI9B0DE",
+      "anchor": "Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light",
+      "claim": "IMPORTANT CAVEATS: this is a machine (Whisper large-v3-turbo) transcript of the meeting video, generated locally by this project on 2026-09-05 -- it is NOT an official record, has no speaker diarization (who-said-what has to be inferred from context), and contains at least two probable name misspellings already spotted (\"Michael Lacey\" for Michael Lacy; \"John Crossland\" for external auditor Crosslin, who AUD-CTTE-SEP23-MINUTES already names correctly). Treat every quote pulled from it as needing a second listen against the original audio before being printed as verbatim. That said, the substance is a real finding: the written minutes (AUD-CTTE-SEP23-MINUTES) never mention public comment happening at all, but this recording captures a public comment period, including a speaker introduced as 'Mr. Michael Lacey' stating: 'Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light.' A later, apparently different speaker credits him further: 'I didn't know what was going on until Mike Lacey went out there and made public records request and found out what was going on.' The written record of this meeting is incomplete without this.",
+      "used_for": "Task 4b, showing the written minutes omit public comment entirely",
+      "added": "Not in the original manifest. Generated 2026-09-05 by this project: audio downloaded by the user directly (not by this project, per YouTube's terms), transcribed locally via MLX Whisper (no cloud), then passed through a second local pass (eoreader7's referent-discovery engine, organs/cast.js) for named-entity extraction. All versions preserved: transcripts/sept23-audit-committee.txt (plain text), .segments.json (timestamped), .entities.json (the eoreader7 pass, 45 referents auto-discovered, 45 disclosed as having unresolved pronoun/descriptor coreference -- see that file's own gaps array rather than trusting any referent list as complete).",
+      "capture": {
+        "status": "local-only",
+        "sha256": "059d575c602c1b9073b1badafa7a16cd3d09c622be8c484124dff1367de5497c",
+        "bytes": 83627,
+        "anchor_offset": 5868,
+        "anchor_length": 145,
+        "anchor_method": "exact-bytes",
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-05T03:33:23+00:00",
+        "local_path": "transcripts/sept23-audit-committee.txt",
+        "archive_tier": "local-only",
+        "note": "Derived artifact: MLX Whisper (large-v3-turbo) transcript of a video the user downloaded directly (not fetched by this project). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
+        "video_wayback_timestamp": "20250927205612",
+        "video_wayback_url": "https://web.archive.org/web/20250927205612/https://www.youtube.com/watch?v=vsGlPI9B0DE",
+        "video_archive_note": "This archives the YouTube WATCH PAGE at this timestamp -- independent, dated proof the video existed at this URL. It does NOT attest to the transcript's accuracy, which remains purely local (Whisper output, unverified against the original audio). archive_tier stays local-only because that describes the anchor's own evidentiary backing, not the source video's."
+      }
+    },
+    {
       "id": "AUD-HID-FOLLOWUP-2025",
       "label": "Audit recommendations follow-up, Homeless Impact Division, 18 Jul 2025",
       "tier": "primary-record",
@@ -1827,14 +1887,14 @@
       "used_for": "Rebuttal nuance to the no-major-issues claim",
       "added": "Found via the Audit Reports by Department index (AUD-BY-DEPT); not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905041255",
         "sha256": "519906124259a5b80204f1127d3226630921af10073a4a88bf76411cf57b2fc9",
         "bytes": 866206,
         "anchor_offset": null,
         "anchor_length": null,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:41+00:00",
+        "fetched_at": "2026-09-05T04:12:06+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/sites/default/files/2025-07/Recommendations_Follow_Up_Audit_of_Homeless_Impact_Division_Final_07182025_WEBSITE.pdf?ct=1752862157",
         "local_path": "bytes/AUD-HID-FOLLOWUP-2025.bin",
@@ -1844,9 +1904,10 @@
         "anchor_page": 2,
         "anchor_text_offset": 1351,
         "anchor_text_length": 61,
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041255/https://www.nashville.gov/sites/default/files/2025-07/Recommendations_Follow_Up_Audit_of_Homeless_Impact_Division_Final_07182025_WEBSITE.pdf?ct=1752862157"
       }
     },
     {
@@ -1860,14 +1921,14 @@
       "used_for": "Background, governance context",
       "added": "Reference source from the user's research doc; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905041950",
         "sha256": "770342461679ab85a53a1865fa9366817a6044f6f98d2229e534830ff4b7dde5",
         "bytes": 106259,
         "anchor_offset": null,
         "anchor_length": null,
         "content_type": "application/pdf",
-        "fetched_at": "2026-09-05T02:40:46+00:00",
+        "fetched_at": "2026-09-05T04:19:47+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/sites/default/files/2021-03/AuditCommitteeRules.pdf",
         "local_path": "bytes/AUD-CTTE-BYLAWS.bin",
@@ -1877,9 +1938,10 @@
         "anchor_page": 1,
         "anchor_text_offset": 144,
         "anchor_text_length": 15,
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041950/https://www.nashville.gov/sites/default/files/2021-03/AuditCommitteeRules.pdf"
       }
     },
     {
@@ -2038,21 +2100,23 @@
       "used_for": "Background",
       "added": "Reference source from the user's research doc; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "f0d8b20d5ab23a7f9b0ea11474fc2257b403e1f4d1683364f18e842aaef219fb",
+        "status": "captured",
+        "wayback_timestamp": "20260905040025",
+        "sha256": "8ad3d78835c9ca56943a4f85e26c38c19c6491ae76ec26169199e064ca4679d6",
         "bytes": 98704,
         "anchor_offset": 55180,
         "anchor_length": 49,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:41:07+00:00",
+        "fetched_at": "2026-09-05T03:59:03+00:00",
         "http_status": 200,
         "final_url": "https://www.nashville.gov/departments/office-homeless-services/continuum-care/current-rfp/administration-and-support-request-proposal",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/GOV-CAB-YAB-RFP.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905040025/https://www.nashville.gov/departments/office-homeless-services/continuum-care/current-rfp/administration-and-support-request-proposal",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905040025/https://www.nashville.gov/departments/office-homeless-services/continuum-care/current-rfp/administration-and-support-request-proposal#:~:text=individuals%20with%20lived%20experience%20of%20homelessness"
       }
     },
     {
@@ -2095,21 +2159,23 @@
       "used_for": "Background, Strobel House",
       "added": "From the user's research doc; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905041410",
         "sha256": "f0948be2cacb224e8844fbee4b8a5a3f486f2e9acbe1b53dd2c86f16aa8235f0",
         "bytes": 408046,
         "anchor_offset": 104504,
         "anchor_length": 20,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:41:13+00:00",
+        "fetched_at": "2026-09-05T04:13:11+00:00",
         "http_status": 200,
         "final_url": "https://nashvillebanner.com/2024/07/19/strobel-house-housing-homeless/",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/BNR-STROBEL-OPENING-2024.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041410/https://nashvillebanner.com/2024/07/19/strobel-house-housing-homeless/",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041410/https://nashvillebanner.com/2024/07/19/strobel-house-housing-homeless/#:~:text=%2435%20million%20building"
       }
     },
     {
@@ -2245,21 +2311,23 @@
       "used_for": "The Non-Traditional/MRRF program",
       "added": "From the user's research doc; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "18f2facaa49168acbc4c222de71633540bd4fb5c96c06e9314cef4954a0c058d",
+        "status": "captured",
+        "wayback_timestamp": "20260905041533",
+        "sha256": "ba96c02301e52028cb4578ac9f248eb9ba14e845da08344f1b452e65a794769e",
         "bytes": 192233,
         "anchor_offset": 51033,
         "anchor_length": 56,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:41:31+00:00",
+        "fetched_at": "2026-09-05T04:14:30+00:00",
         "http_status": 200,
         "final_url": "https://readrichtext.substack.com/p/null_results-text-messages-reveal",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/RT-TEXT-MESSAGES.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041533/https://readrichtext.substack.com/p/null_results-text-messages-reveal",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041533/https://readrichtext.substack.com/p/null_results-text-messages-reveal#:~:text=removing%20families%20from%20consideration%20based%20on%20their%20size"
       }
     },
     {
@@ -2273,21 +2341,23 @@
       "used_for": "The Non-Traditional/MRRF program, landlord-engagement spending",
       "added": "From the user's research doc; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "bf60e27e79b352f7a8afeae0554a4bf904c855a7293b5abeee31fee6be47170e",
+        "status": "captured",
+        "wayback_timestamp": "20251105041933",
+        "sha256": "76485f22c5681885f7e34b166dd612824806dca7b563c819a907163ef531f674",
         "bytes": 241115,
         "anchor_offset": 32501,
         "anchor_length": 60,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:41:35+00:00",
+        "fetched_at": "2026-09-05T04:15:54+00:00",
         "http_status": 200,
         "final_url": "https://readrichtext.substack.com/p/join-the-investigation",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/RT-JOIN-INVESTIGATION.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "reused-existing",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-existing",
+        "wayback_url": "https://web.archive.org/web/20251105041933/https://readrichtext.substack.com/p/join-the-investigation",
+        "wayback_anchor_url": "https://web.archive.org/web/20251105041933/https://readrichtext.substack.com/p/join-the-investigation#:~:text=Pay%20An%20Apartment%20Complex%20%2490K%20While%20It%20Evicted%2030%2B%20Residents"
       }
     },
     {
@@ -2301,21 +2371,23 @@
       "used_for": "Source navigation",
       "added": "From the user's research doc; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
-        "sha256": "871a643dc5fedc441deb27425fe25d5317f9473f19cf672c1a8e5f0f5d2b05ee",
+        "status": "captured",
+        "wayback_timestamp": "20260905041702",
+        "sha256": "834c52358bf461be0018a36f761e32fab39be80b980ad261530bed0ff1d01c1c",
         "bytes": 326755,
         "anchor_offset": 929,
         "anchor_length": 29,
         "content_type": "text/html; charset=utf-8",
-        "fetched_at": "2026-09-05T02:41:43+00:00",
+        "fetched_at": "2026-09-05T04:15:59+00:00",
         "http_status": 200,
         "final_url": "https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/RT-2025-INDEX.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041702/https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041702/https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all#:~:text=186%2C261%20words%20across%2094%20posts"
       }
     },
     {
@@ -2329,21 +2401,23 @@
       "used_for": "The DePaul/Strobel contract lapse",
       "added": "From the user's research doc; not in the original manifest.",
       "capture": {
-        "status": "local-only",
-        "wayback_timestamp": null,
+        "status": "captured",
+        "wayback_timestamp": "20260905041838",
         "sha256": "0a557bddd8f0689b2e1dafa8af35f988bd9577f12acd19d15faeb69dd6587bb6",
         "bytes": 101097,
         "anchor_offset": 48691,
         "anchor_length": 43,
         "content_type": "text/html; charset=UTF-8",
-        "fetched_at": "2026-09-05T02:41:49+00:00",
+        "fetched_at": "2026-09-05T04:17:25+00:00",
         "http_status": 200,
         "final_url": "https://depaulusa.org/locations/nashville/",
         "anchor_method": "exact-bytes",
         "local_path": "bytes/DEPAUL-USA-NASHVILLE.bin",
-        "archive_note": "no-ia-credentials",
+        "archive_note": "captured",
         "archive_today_note": "blocked:captcha-gate",
-        "archive_tier": "local-only"
+        "archive_tier": "wayback-spn2",
+        "wayback_url": "https://web.archive.org/web/20260905041838/https://depaulusa.org/locations/nashville/",
+        "wayback_anchor_url": "https://web.archive.org/web/20260905041838/https://depaulusa.org/locations/nashville/#:~:text=Depaul%20USA%20Nashville%20operates%20Strobel%20House"
       }
     },
     {
@@ -2403,33 +2477,9 @@
         "wayback_url": "https://web.archive.org/web/20250812140157/https://nashvillevoyager.com/interview/community-highlights-meet-shaticka-robinson-of-coleys-jook-junt-food-truck-bougie-barbecue-brand/",
         "wayback_anchor_url": "https://web.archive.org/web/20250812140157/https://nashvillevoyager.com/interview/community-highlights-meet-shaticka-robinson-of-coleys-jook-junt-food-truck-bougie-barbecue-brand/#:~:text=Season%203%20Winner%20of%20Netflix"
       }
-    },
-    {
-      "id": "SEPT23-MEETING-TRANSCRIPT",
-      "label": "Sept 23, 2025 Audit Committee meeting, local Whisper transcript",
-      "tier": "secondary",
-      "doctype": "transcript-derived",
-      "url": "https://www.youtube.com/watch?v=vsGlPI9B0DE",
-      "anchor": "Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light",
-      "claim": "IMPORTANT CAVEATS: this is a machine (Whisper large-v3-turbo) transcript of the meeting video, generated locally by this project on 2026-09-05 -- it is NOT an official record, has no speaker diarization (who-said-what has to be inferred from context), and contains at least two probable name misspellings already spotted (\"Michael Lacey\" for Michael Lacy; \"John Crossland\" for external auditor Crosslin, who AUD-CTTE-SEP23-MINUTES already names correctly). Treat every quote pulled from it as needing a second listen against the original audio before being printed as verbatim. That said, the substance is a real finding: the written minutes (AUD-CTTE-SEP23-MINUTES) never mention public comment happening at all, but this recording captures a public comment period, including a speaker introduced as 'Mr. Michael Lacey' stating: 'Much of the documentary evidence cited in this audit request of OHS exists because I and other citizens fought to bring this information to light.' A later, apparently different speaker credits him further: 'I didn't know what was going on until Mike Lacey went out there and made public records request and found out what was going on.' The written record of this meeting is incomplete without this.",
-      "used_for": "Task 4b, showing the written minutes omit public comment entirely",
-      "added": "Not in the original manifest. Generated 2026-09-05 by this project: audio downloaded by the user directly (not by this project, per YouTube's terms), transcribed locally via MLX Whisper (no cloud), then passed through a second local pass (eoreader7's referent-discovery engine, organs/cast.js) for named-entity extraction. All versions preserved: transcripts/sept23-audit-committee.txt (plain text), .segments.json (timestamped), .entities.json (the eoreader7 pass, 45 referents auto-discovered, 45 disclosed as having unresolved pronoun/descriptor coreference -- see that file's own gaps array rather than trusting any referent list as complete).",
-      "capture": {
-        "status": "local-only",
-        "sha256": "059d575c602c1b9073b1badafa7a16cd3d09c622be8c484124dff1367de5497c",
-        "bytes": 83627,
-        "anchor_offset": 5868,
-        "anchor_length": 145,
-        "anchor_method": "exact-bytes",
-        "content_type": "text/plain",
-        "fetched_at": "2026-09-05T03:33:23+00:00",
-        "local_path": "transcripts/sept23-audit-committee.txt",
-        "archive_tier": "local-only",
-        "note": "Derived artifact: MLX Whisper (large-v3-turbo) transcript of a video the user downloaded directly (not fetched by this project). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text."
-      }
     }
   ],
-  "last_run": "2026-09-05T03:05:50+00:00"
+  "last_run": "2026-09-05T04:24:27+00:00"
 }
 </script>
 <script>

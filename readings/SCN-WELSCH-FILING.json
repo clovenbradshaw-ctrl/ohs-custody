@@ -1,13 +1,13 @@
 {
   "id": "SCN-WELSCH-FILING",
   "path": "bytes/SCN-WELSCH-FILING.bin",
-  "sha256": "802cd366a1a7270cfb6683fe34fb5786bb09480b353def8b668bacf79d22e347",
+  "sha256": "485d35cd352f556f0be17c04567a270dfee0f67e26d1331d6f0379fc1e9b3678",
   "bytes": 262245,
   "media_type": "text/html; charset=UTF-8",
   "source_url": "https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
   "final_url": "https://www.nashvillescene.com/news/pithinthewind/ginny-welsch-ohs-edit-request/article_f691b3b0-36a9-45f1-bc96-daac333f40cf.html",
-  "retrieved_at": "2026-09-05T01:29:45+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:09:44+00:00",
+  "wayback_timestamp": "20260625172930",
   "spans": [
     {
       "kind": "anchor",

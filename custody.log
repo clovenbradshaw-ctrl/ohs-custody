@@ -323,3 +323,89 @@
 2026-09-05T03:05:50+00:00  MHRC-STAFF-INVESTIGATIVE-REPORT LOCAL INGEST held  sha=9525c5b23110  page 9  text_offset 21477 via normalised-text
 2026-09-05T03:05:50+00:00  MHRC-ED-DETERMINATION    LOCAL INGEST held  sha=2f270d7bb48a  page 4  text_offset 8649 via normalised-text
 2026-09-05T03:05:50+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=2
+2026-09-05T03:59:03+00:00  run start  entries=74  archive=True  proxy=False
+2026-09-05T03:59:03+00:00  GOV-CAB-YAB-RFP          held  sha=8ad3d78835c9  98704B  anchor@55180 via exact-bytes
+2026-09-05T04:00:43+00:00  GOV-CAB-YAB-RFP          archived 20260905040025 (captured)
+2026-09-05T04:00:45+00:00  run end  captured=1  anchor-missing=0  fetch-failed=0  skipped=0
+2026-09-05T04:01:16+00:00  run start  entries=74  archive=True  proxy=False
+2026-09-05T04:01:16+00:00  MUNI-263040              ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T04:02:00+00:00  MUNI-263040              archived 20260905040148 (captured)
+2026-09-05T04:02:02+00:00  MUNI-263040-HR           ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T04:02:09+00:00  MUNI-263040-HR           archived 20260905040148 (captured)
+2026-09-05T04:02:11+00:00  LEG-BL2021-971-HIST-2ND  held  sha=89b1eba90e64  47040B  anchor@36678 via exact-bytes
+2026-09-05T04:06:00+00:00  LEG-BL2021-971-HIST-2ND  archived 20260905040544 (captured)
+2026-09-05T04:06:02+00:00  LEG-BL2021-971-HIST-3RD  held  sha=3bede18c23cb  48075B  anchor@37369 via exact-bytes
+2026-09-05T04:06:53+00:00  LEG-BL2021-971-HIST-3RD  archived 20260905040635 (captured)
+2026-09-05T04:06:55+00:00  LEG-RS2025-1711          held  sha=cfe25d1b9e26  108587B  anchor@4030 via exact-bytes
+2026-09-05T04:07:17+00:00  LEG-RS2025-1711          archived 20260905040702 (captured)
+2026-09-05T04:07:19+00:00  AUD-CTTE-DEC9            PDF held  sha=b5c44ffde381  page 1  text_offset 180 via exact-text
+2026-09-05T04:07:26+00:00  AUD-CTTE-DEC9            archived 20260905040721 (captured)
+2026-09-05T04:07:29+00:00  AUD-FY2027               held  sha=04954250c0a0  63484B  anchor@949 via exact-bytes
+2026-09-05T04:08:23+00:00  AUD-FY2027               archived 20260905040809 (captured)
+2026-09-05T04:08:26+00:00  AUD-FY2026               held  sha=550ab67c2e83  66664B  anchor@1063 via exact-bytes
+2026-09-05T04:08:35+00:00  AUD-FY2026               not archived, local-only: wayback=spn-error:Save Page Now could not capture this URL because it was unreachable. If the site is online, it may be blocking access from our service.  archive.today=blocked:captcha-gate
+2026-09-05T04:08:37+00:00  GOV-PIT-2026             held  sha=2c29da2c20e6  101179B  anchor@57526 via exact-bytes
+2026-09-05T04:08:57+00:00  GOV-PIT-2026             archived 20260905040841 (captured)
+2026-09-05T04:08:59+00:00  CTB-TACKETT-AUG26        held  sha=1d55cfbb103b  203334B  anchor@165810 via exact-bytes
+2026-09-05T04:09:23+00:00  CTB-TACKETT-AUG26        archived 20260905040908 (captured)
+2026-09-05T04:09:26+00:00  CTB-HPC-POWER            held  sha=1d55cfbb103b  203334B  anchor@169616 via exact-bytes
+2026-09-05T04:09:32+00:00  CTB-HPC-POWER            archived 20260905040908 (captured)
+2026-09-05T04:09:35+00:00  CTB-SHELBY               held  sha=1d55cfbb103b  203334B  anchor@160366 via normalised-text
+2026-09-05T04:09:41+00:00  CTB-SHELBY               archived 20260905040908 (captured)
+2026-09-05T04:09:44+00:00  SCN-WELSCH-FILING        held  sha=485d35cd352f  262245B  anchor@172721 via exact-bytes
+2026-09-05T04:09:45+00:00  SCN-WELSCH-FILING        archived 20260625172930 (reused-existing)
+2026-09-05T04:09:48+00:00  SCN-COVER-PIT            held  sha=7d33a0cee1f8  283962B  anchor@175276 via exact-bytes
+2026-09-05T04:09:50+00:00  SCN-COVER-PIT            archived 20251214213723 (reused-existing)
+2026-09-05T04:09:53+00:00  RT-BULLSHITTERY          held  sha=e930c20a5e6f  323010B  anchor@109598 via exact-bytes
+2026-09-05T04:09:59+00:00  RT-BULLSHITTERY          not archived, local-only: wayback=submit-rejected:{"status": "error", "status_ext": "error:user-session-limit", "message": "You have already reached the limit of active Save Page Now sessions. Please wait for a minute and then try  archive.today=blocked:captcha-gate
+2026-09-05T04:10:01+00:00  RT-15M                   held  sha=4e506baf679c  261390B  anchor@57410 via exact-bytes
+2026-09-05T04:10:45+00:00  RT-15M                   archived 20260905041030 (captured)
+2026-09-05T04:10:47+00:00  RT-OHS-EMAIL             held  sha=2d3679875963  146414B  anchor@44819 via exact-bytes
+2026-09-05T04:11:07+00:00  RT-OHS-EMAIL             archived 20260905041051 (captured)
+2026-09-05T04:11:09+00:00  PRO-DEPAUL-CEO           held  sha=6c4e856a807d  150829B  anchor@41446 via exact-bytes
+2026-09-05T04:11:34+00:00  PRO-DEPAUL-CEO           archived 20260905041117 (captured)
+2026-09-05T04:11:37+00:00  AUD-CTTE-SEP23-AGENDA    PDF held  sha=a35fda529876  page 1  text_offset 1354 via exact-text
+2026-09-05T04:11:49+00:00  AUD-CTTE-SEP23-AGENDA    archived 20260905041143 (captured)
+2026-09-05T04:11:51+00:00  AUD-CTTE-SEP23-MINUTES   PDF held  sha=015a3537266f  page 3  text_offset 6633 via normalised-text
+2026-09-05T04:12:03+00:00  AUD-CTTE-SEP23-MINUTES   archived 20260905041157 (captured)
+2026-09-05T04:12:06+00:00  AUD-HID-FOLLOWUP-2025    PDF held  sha=519906124259  page 2  text_offset 1351 via normalised-text
+2026-09-05T04:12:57+00:00  AUD-HID-FOLLOWUP-2025    archived 20260905041255 (captured)
+2026-09-05T04:12:59+00:00  AUD-CTTE-BYLAWS          PDF held  sha=770342461679  page 1  text_offset 144 via exact-text
+2026-09-05T04:13:09+00:00  AUD-CTTE-BYLAWS          not archived, local-only: wayback=spn-error:The target server didn't respond in time for https://www.nashville.gov/sites/default/files/2021-03/AuditCommitteeRules.pdf. Please try again later. (HTTP status=504)  archive.today=blocked:captcha-gate
+2026-09-05T04:13:11+00:00  BNR-STROBEL-OPENING-2024 held  sha=f0948be2cacb  408046B  anchor@104504 via exact-bytes
+2026-09-05T04:14:28+00:00  BNR-STROBEL-OPENING-2024 archived 20260905041410 (captured)
+2026-09-05T04:14:30+00:00  RT-TEXT-MESSAGES         held  sha=ba96c02301e5  192233B  anchor@51033 via exact-bytes
+2026-09-05T04:15:52+00:00  RT-TEXT-MESSAGES         archived 20260905041533 (captured)
+2026-09-05T04:15:54+00:00  RT-JOIN-INVESTIGATION    held  sha=76485f22c568  241115B  anchor@32501 via exact-bytes
+2026-09-05T04:15:57+00:00  RT-JOIN-INVESTIGATION    archived 20251105041933 (reused-existing)
+2026-09-05T04:15:59+00:00  RT-2025-INDEX            held  sha=834c52358bf4  326755B  anchor@929 via exact-bytes
+2026-09-05T04:17:22+00:00  RT-2025-INDEX            archived 20260905041702 (captured)
+2026-09-05T04:17:25+00:00  DEPAUL-USA-NASHVILLE     held  sha=0a557bddd8f0  101097B  anchor@48691 via exact-bytes
+2026-09-05T04:18:50+00:00  DEPAUL-USA-NASHVILLE     archived 20260905041838 (captured)
+2026-09-05T04:18:52+00:00  run end  captured=22  anchor-missing=2  fetch-failed=0  skipped=0
+2026-09-05T04:19:11+00:00  run start  entries=74  archive=True  proxy=False
+2026-09-05T04:19:11+00:00  RT-BULLSHITTERY          held  sha=e812c43328f3  323010B  anchor@109598 via exact-bytes
+2026-09-05T04:19:42+00:00  RT-BULLSHITTERY          archived 20260905041920 (captured)
+2026-09-05T04:19:47+00:00  AUD-CTTE-BYLAWS          PDF held  sha=770342461679  page 1  text_offset 144 via exact-text
+2026-09-05T04:19:55+00:00  AUD-CTTE-BYLAWS          archived 20260905041950 (captured)
+2026-09-05T04:20:00+00:00  run end  captured=2  anchor-missing=0  fetch-failed=0  skipped=0
+2026-09-05T04:20:47+00:00  run start  entries=74  archive=True  proxy=False
+2026-09-05T04:20:48+00:00  MUNI-263040              ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T04:20:51+00:00  MUNI-263040              archived 20260905040148 (reused-existing)
+2026-09-05T04:20:53+00:00  MUNI-263040-HR           ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T04:20:54+00:00  MUNI-263040-HR           archived 20260905040148 (reused-existing)
+2026-09-05T04:20:56+00:00  MUNI-263040              RENDERED held  sha=4d12915d7d79  offset 2056 via exact-text
+2026-09-05T04:20:56+00:00  MUNI-263040-HR           RENDERED held  sha=4d12915d7d79  offset 2214 via exact-text
+2026-09-05T04:20:56+00:00  run end  captured=0  anchor-missing=2  fetch-failed=0  skipped=0
+2026-09-05T04:21:11+00:00  run start  entries=74  archive=True  proxy=False
+2026-09-05T04:21:11+00:00  AUD-FY2026               held  sha=3d2074e7d0f7  66664B  anchor@1063 via exact-bytes
+2026-09-05T04:21:25+00:00  AUD-FY2026               not archived, local-only: wayback=spn-error:Save Page Now could not capture this URL because it was unreachable. If the site is online, it may be blocking access from our service.  archive.today=blocked:captcha-gate
+2026-09-05T04:21:27+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=0
+2026-09-05T04:24:23+00:00  run start  entries=74  archive=True  proxy=False
+2026-09-05T04:24:23+00:00  MUNI-263040              ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T04:24:23+00:00  MUNI-263040              archived 20260905040148 (reused-existing)
+2026-09-05T04:24:25+00:00  MUNI-263040-HR           ANCHOR MISSING  anchor-not-found  sha=51f8a8411a6e  6095B
+2026-09-05T04:24:25+00:00  MUNI-263040-HR           archived 20260905040148 (reused-existing)
+2026-09-05T04:24:27+00:00  MUNI-263040              RENDERED held  sha=4d12915d7d79  offset 2056 via exact-text
+2026-09-05T04:24:27+00:00  MUNI-263040-HR           RENDERED held  sha=4d12915d7d79  offset 2214 via exact-text
+2026-09-05T04:24:27+00:00  run end  captured=0  anchor-missing=2  fetch-failed=0  skipped=0

@@ -1,13 +1,13 @@
 {
   "id": "RT-JOIN-INVESTIGATION",
   "path": "bytes/RT-JOIN-INVESTIGATION.bin",
-  "sha256": "bf60e27e79b352f7a8afeae0554a4bf904c855a7293b5abeee31fee6be47170e",
+  "sha256": "76485f22c5681885f7e34b166dd612824806dca7b563c819a907163ef531f674",
   "bytes": 241115,
   "media_type": "text/html; charset=utf-8",
   "source_url": "https://readrichtext.substack.com/p/join-the-investigation",
   "final_url": "https://readrichtext.substack.com/p/join-the-investigation",
-  "retrieved_at": "2026-09-05T02:41:35+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:15:54+00:00",
+  "wayback_timestamp": "20251105041933",
   "spans": [
     {
       "kind": "anchor",

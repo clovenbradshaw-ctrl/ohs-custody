@@ -1,13 +1,13 @@
 {
   "id": "RT-OHS-EMAIL",
   "path": "bytes/RT-OHS-EMAIL.bin",
-  "sha256": "13d24201e298ba884efc5bf3f4c17aa07d006283ec1c3a21d4485103d5161a62",
-  "bytes": 146357,
+  "sha256": "2d3679875963a432596b4fc9b0fe19a9aec69692424dd74f2459fbbc8b8ca651",
+  "bytes": 146414,
   "media_type": "text/html; charset=utf-8",
   "source_url": "https://readrichtext.substack.com/p/read-office-of-homeless-services",
   "final_url": "https://readrichtext.substack.com/p/read-office-of-homeless-services",
-  "retrieved_at": "2026-09-05T02:25:17+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:10:47+00:00",
+  "wayback_timestamp": "20260905041051",
   "spans": [
     {
       "kind": "anchor",

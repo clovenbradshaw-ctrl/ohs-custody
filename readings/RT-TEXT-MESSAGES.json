@@ -1,13 +1,13 @@
 {
   "id": "RT-TEXT-MESSAGES",
   "path": "bytes/RT-TEXT-MESSAGES.bin",
-  "sha256": "18f2facaa49168acbc4c222de71633540bd4fb5c96c06e9314cef4954a0c058d",
+  "sha256": "ba96c02301e52028cb4578ac9f248eb9ba14e845da08344f1b452e65a794769e",
   "bytes": 192233,
   "media_type": "text/html; charset=utf-8",
   "source_url": "https://readrichtext.substack.com/p/null_results-text-messages-reveal",
   "final_url": "https://readrichtext.substack.com/p/null_results-text-messages-reveal",
-  "retrieved_at": "2026-09-05T02:41:31+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:14:30+00:00",
+  "wayback_timestamp": "20260905041533",
   "spans": [
     {
       "kind": "anchor",

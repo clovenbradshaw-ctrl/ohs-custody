@@ -1,13 +1,13 @@
 {
   "id": "AUD-FY2027",
   "path": "bytes/AUD-FY2027.bin",
-  "sha256": "e0f5daa7a0a2cf33e740488a43aff9e2c3a416b2397d7ce8a0c49f62f202e696",
+  "sha256": "04954250c0a0eee7dc671cef6a128688f08d0a0ede3175e1c500e62c09e55f47",
   "bytes": 63484,
   "media_type": "text/html; charset=UTF-8",
   "source_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
   "final_url": "https://www.nashville.gov/departments/internal-audit/audit-reports-fiscal-year/fiscal-year-2027",
-  "retrieved_at": "2026-09-05T02:24:17+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:07:29+00:00",
+  "wayback_timestamp": "20260905040809",
   "spans": [
     {
       "kind": "anchor",

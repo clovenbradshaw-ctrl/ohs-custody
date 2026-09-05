@@ -1,13 +1,13 @@
 {
   "id": "SCN-COVER-PIT",
   "path": "bytes/SCN-COVER-PIT.bin",
-  "sha256": "23bfa91be41a2defa1bf6e8aa669b7b0b07437e84065d28ca49aaf867c55eead",
+  "sha256": "7d33a0cee1f8f88c8ca6b78b75bc088783994a85daeaaa5ad5ed118042892267",
   "bytes": 283962,
   "media_type": "text/html; charset=UTF-8",
   "source_url": "https://www.nashvillescene.com/news/coverstory/office-of-homeless-services-point-in-time-count/article_b63fa2f9-df20-432b-b858-750780680bc8.html",
   "final_url": "https://www.nashvillescene.com/news/coverstory/office-of-homeless-services-point-in-time-count/article_b63fa2f9-df20-432b-b858-750780680bc8.html",
-  "retrieved_at": "2026-09-05T02:24:55+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:09:48+00:00",
+  "wayback_timestamp": "20251214213723",
   "spans": [
     {
       "kind": "anchor",

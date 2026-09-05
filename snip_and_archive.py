@@ -415,6 +415,12 @@ def fetch_and_locate_pdf(entry, out, logfile, proxy=None):
     return True, span
 
 
+# Tiers that mean a third party (Internet Archive or archive.today) actually
+# attests to a capture, as opposed to only this project's own local hash.
+# Mirrored in build_structured_json.py and the register's own JS -- keep
+# all three in sync if this set ever changes.
+ARCHIVE_TIERS_INDEPENDENT = {"wayback-existing", "wayback-spn2", "archive-today", "wayback-historical"}
+
 WAYBACK_REPLAY = "https://web.archive.org/web/{ts}id_/{url}"
 
 
@@ -587,8 +593,13 @@ def capture_rendered_text(entry, out, logfile, rendered_path):
 
     cap["rendered_text_offset"] = offset
     cap["rendered_text_length"] = length
-    cap["status"] = "bytes-held"
     cap["archive_tier"] = cap.get("archive_tier") or "local-only"
+    # The anchor was only just found (via the rendered-DOM overlay, which
+    # runs after the archive block), so a prior independent capture never
+    # got the chance to promote status the way the main loop does. Do that
+    # promotion here instead of leaving a real archive under a status label
+    # that still says "not yet archived".
+    cap["status"] = "captured" if cap["archive_tier"] in ARCHIVE_TIERS_INDEPENDENT else "bytes-held"
     rendered_note = (
         "Raw HTTP response is a client-side app shell with no page content in "
         "it (Municode/Angular). Anchor is located in a rendered-DOM capture "

@@ -1,13 +1,13 @@
 {
   "id": "PRO-DEPAUL-CEO",
   "path": "bytes/PRO-DEPAUL-CEO.bin",
-  "sha256": "6d6d1b33888f85412b34fb919b5a742817fe6b5ba092502c36266ef4e2788d77",
+  "sha256": "6c4e856a807da06a1f806555c4ad4fa792bfb60bd8d41eaa15b3513cadf820c4",
   "bytes": 150829,
   "media_type": "text/html; charset=utf-8",
   "source_url": "https://prometheoid.substack.com/p/exec-director-of-depaul-usa-strobel",
   "final_url": "https://readrichtext.substack.com/p/exec-director-of-depaul-usa-strobel",
-  "retrieved_at": "2026-09-05T02:25:20+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:11:09+00:00",
+  "wayback_timestamp": "20260905041117",
   "spans": [
     {
       "kind": "anchor",

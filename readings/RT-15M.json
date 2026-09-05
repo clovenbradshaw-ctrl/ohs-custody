@@ -1,13 +1,13 @@
 {
   "id": "RT-15M",
   "path": "bytes/RT-15M.bin",
-  "sha256": "f4f66102d341ef410c65de84c33aa343c03d0e6b81361919e422d55f52787e9d",
+  "sha256": "4e506baf679c3ec3dbeca847656872e6876e71479f598d509fa506913e5ed0f7",
   "bytes": 261390,
   "media_type": "text/html; charset=utf-8",
   "source_url": "https://readrichtext.substack.com/p/another-15m-without-accounting-for",
   "final_url": "https://readrichtext.substack.com/p/another-15m-without-accounting-for",
-  "retrieved_at": "2026-09-05T02:25:07+00:00",
-  "wayback_timestamp": null,
+  "retrieved_at": "2026-09-05T04:10:01+00:00",
+  "wayback_timestamp": "20260905041030",
   "spans": [
     {
       "kind": "anchor",
