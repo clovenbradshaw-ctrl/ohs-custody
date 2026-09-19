@@ -1,0 +1,21 @@
+{
+  "id": "COC-DEIGNAN-RANKING-2026",
+  "path": "bytes/COC-DEIGNAN-RANKING-2026.bin",
+  "sha256": "c52da83e7e6ac838234099c93f7e20ada2e6a43a860c0be5f9cf57aa89ab5688",
+  "bytes": 253045,
+  "media_type": "application/pdf",
+  "source_url": null,
+  "provenance": "Supplied directly by the user (Michael Lacy) via local file from 3.0 root on 2026-09-19; Gmail forward from Shanley Deignan (Park Center Nashville, CoC Charter Committee / HMIS Oversight chair) to Mike Lacy; original filename preserved in headers. Re-ingest 2026-09-19 to carry the private texted correction recorded in the claim field (no bytes exist for the text itself).",
+  "retrieved_at": "2026-09-19T20:12:50+00:00",
+  "spans": [
+    {
+      "kind": "anchor-pdf",
+      "page": 1,
+      "text_offset": 1690,
+      "text_length": 39,
+      "extractor": "pdfminer.six 20260107",
+      "derived_from_sha256": "c52da83e7e6ac838234099c93f7e20ada2e6a43a860c0be5f9cf57aa89ab5688",
+      "method": "pdf-text-layer"
+    }
+  ]
+}

@@ -1534,6 +1534,27 @@
         "content_type": null,
         "fetched_at": null
       }
+    },
+    {
+      "id": "COC-DEIGNAN-RANKING-2026",
+      "label": "Shanley Deignan email on CoC ranking decision, 6 Aug 2026 (forwarded 19 Sep 2026)",
+      "tier": "primary-record",
+      "doctype": "email-pdf",
+      "url": "",
+      "anchor": "decision that was made not to fund HMIS",
+      "claim": "Shanley Deignan, chair of the Continuum of Care Charter Committee and HMIS Oversight committee (Park Center Nashville), writes to HPC members objecting to the decision not to submit HMIS and Coordinated Entry renewal projects in the 2026 CoC competition. Key substance: (1) the decision was placed before the HPC at the last minute without community input; (2) this year the General Membership was due to elect/re-elect the HMIS and CE Lead roles per the charter, and removing the dollars bypasses that charter process -- notes the 2023 working group deferred the HMIS/CE lead selection 2-3 years after making OHS the Collaborative Applicant, which brings the question due now; OHS is named as the current designated lead agency holding these dollars; (3) warns from TA experience with another Middle Tennessee CoC that losing HMIS/CE dollars collapsed the CoC into emergency HUD support and volunteer operation for over a year; (4) Metro backfill is acknowledged but flagged as fragile across budget cycles, leadership change, and fiscal priorities; (5) asks HPC to keep the topic on the monthly agenda, hold a transparent General Membership conversation on lead-selection authority, and create contracts between each Lead role and the community. Includes a second embedded message (29 Jul 2026 to the Executive Committee/PEC) with five documented questions: one-year vs permanent strategy, written Metro commitment and duration, lead-election mechanics without money, accountability without CoC dollars, and Metro-budget-change risk. CAVEATS: forwarded Gmail export (Deignan to Mike Lacy, 19 Sep 2026, forwarding Deignan's 6 Aug 2026 HPC message); authenticity rests on provenance, not on an independently fetched URL. References an attached 'Collaborative Applicant Application' / 'CAA Final Draft.docx (31K)' that is named in the PDF but not included with it. The Park Center confidentiality/HIPAA footer is boilerplate on the forwarded mail, not a classification of the CoC content. CORRECTION 2026-09-19 (private, via journalist relay -- not a captured document, no bytes held): Deignan corrected the term timeline as stated in the email -- HMIS is in year 3 of a 5-year term, and CE is in year 8 of a 5-year term (\"Literally 8\"), i.e. CE is about 3 years overdue and, per Deignan, no one had ever raised it. Asked whether that meant a re-election should have happened, the relayed answer was yes; CE and HMIS oversight are going to host shared meetings soon to develop that process. Treat as an on-background source correction pending on-record confirmation; do not publish the relayed wording as a verbatim quote without Deignan's permission. (Relay reads \"shard meetings\"; taken as \"shared meetings\", sic preserved.)",
+      "used_for": "OHS governance -- CoC lead roles (HMIS/CE), HPC authority, charter process",
+      "added": "Supplied directly to this project as a local file (not fetched from a URL) on 2026-09-19. Original filename 'Gmail - Fw_ CoC Ranking concerns and questions for moving forward.pdf', 4 pages. Private texted correction relayed by the journalist on 2026-09-19 recorded in the claim field; no raw bytes exist for the text itself so nothing was hashed for the correction.",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     }
   ]
 }

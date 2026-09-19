@@ -409,3 +409,11 @@
 2026-09-05T04:24:27+00:00  MUNI-263040              RENDERED held  sha=4d12915d7d79  offset 2056 via exact-text
 2026-09-05T04:24:27+00:00  MUNI-263040-HR           RENDERED held  sha=4d12915d7d79  offset 2214 via exact-text
 2026-09-05T04:24:27+00:00  run end  captured=0  anchor-missing=2  fetch-failed=0  skipped=0
+2026-09-19T20:07:13+00:00  run start  entries=75  archive=False  proxy=False
+2026-09-19T20:07:13+00:00  COC-DEIGNAN-RANKING-2026 skipped, no url
+2026-09-19T20:07:14+00:00  COC-DEIGNAN-RANKING-2026 LOCAL INGEST held  sha=c52da83e7e6a  page 1  text_offset 1690 via exact-text
+2026-09-19T20:07:14+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=1
+2026-09-19T20:12:50+00:00  run start  entries=75  archive=False  proxy=False
+2026-09-19T20:12:50+00:00  COC-DEIGNAN-RANKING-2026 skipped, no url
+2026-09-19T20:12:51+00:00  COC-DEIGNAN-RANKING-2026 LOCAL INGEST held  sha=c52da83e7e6a  page 1  text_offset 1690 via exact-text
+2026-09-19T20:12:51+00:00  run end  captured=0  anchor-missing=0  fetch-failed=0  skipped=1
