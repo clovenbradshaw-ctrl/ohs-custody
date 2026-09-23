@@ -1,0 +1,15 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2024-06-12-hpc-meeting.txt",
+  "boundary_count": 1,
+  "named_boundary_count": 1,
+  "sections": [
+    {
+      "start": 20220,
+      "end": 60987,
+      "speaker": "Susie Tomy",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}

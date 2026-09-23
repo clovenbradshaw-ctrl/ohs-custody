@@ -1,0 +1,13 @@
+{
+  "id": "2024-06-12-HPC-MEETING-TRANSCRIPT",
+  "path": "transcripts/2024-06-12-hpc-meeting.txt",
+  "sha256": "58c93779fffc25226ce2454adefe33c6a7127f2630b1af65e634e1ee0715eeca",
+  "bytes": 60990,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=cUmHOW0nR5A",
+  "final_url": null,
+  "retrieved_at": "2026-09-23T19:46:40+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+  "spans": []
+}
