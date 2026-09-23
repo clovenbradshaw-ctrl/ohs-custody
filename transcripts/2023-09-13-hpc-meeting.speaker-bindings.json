@@ -1,0 +1,36 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2023-09-13-hpc-meeting.txt",
+  "boundary_count": 4,
+  "named_boundary_count": 4,
+  "sections": [
+    {
+      "start": 664,
+      "end": 27636,
+      "speaker": "Shaha Martin I",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 27636,
+      "end": 45728,
+      "speaker": "Susie Tallman",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 45728,
+      "end": 63854,
+      "speaker": "Carrie Dietz",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 63854,
+      "end": 83268,
+      "speaker": "Sergeant I",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
