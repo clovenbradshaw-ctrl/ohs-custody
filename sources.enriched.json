@@ -3246,10 +3246,10 @@
     },
     {
       "id": "2021-04-29-HPC-MEETING-TRANSCRIPT",
-      "label": "2021-04-29 Continuum of Care: HMIS Oversight Committee Meeting, transcript",
+      "label": "2021-04-29 Continuum of Care HMIS Oversight Committee, transcript",
       "tier": "secondary",
       "doctype": "transcript-derived",
-      "url": "https://www.youtube.com/watch?v=3O_4iJAOYVk",
+      "url": "https://www.youtube.com/watch?v=oxv0CWMM0nQ",
       "anchor": null,
       "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
       "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
@@ -3265,7 +3265,7 @@
         "fetched_at": "2026-09-23T20:28:43+00:00",
         "local_path": "transcripts/2021-04-29-hpc-meeting.txt",
         "archive_tier": "local-only",
-        "note": "Derived artifact via local-whisper-mlx-large-v3-turbo; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
+        "note": "Derived artifact via youtube-caption-track (pre-existing); video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
       }
     }
   ],
