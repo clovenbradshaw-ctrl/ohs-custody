@@ -1,0 +1,993 @@
+{
+  "schema": "eoreader7-entity-pass@1",
+  "source_transcript": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2026-05-13-hpc-meeting.txt",
+  "generated_at": "2026-09-23T19:46:11.564Z",
+  "sentence_count": 793,
+  "referent_count": 37,
+  "gap_count": 38,
+  "referents": [
+    {
+      "id": "ref:auto:homeless_services_planning_council",
+      "surfaces": [
+        "Homeless Services Planning Council",
+        "Homeless Services Planning",
+        "Homeless Services"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Homeless Services Planning Council",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Homeless Services Planning",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Homeless Services",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:community_solutions",
+      "surfaces": [
+        "Community Solutions"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Community Solutions",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:performance_evaluation",
+      "surfaces": [
+        "Performance Evaluation",
+        "Performance Evaluation Committee"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Performance Evaluation",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Performance Evaluation Committee",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:clutch_consulting",
+      "surfaces": [
+        "Clutch Consulting",
+        "Clutch"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Clutch Consulting",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Clutch",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:director_calvin",
+      "surfaces": [
+        "Director Calvin",
+        "Director"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Director Calvin",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Director",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:home_together",
+      "surfaces": [
+        "Home Together",
+        "Home Together Nashville"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Home Together",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Home Together Nashville",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:national_community_connections",
+      "surfaces": [
+        "National Community Connections"
+      ],
+      "admittedBy": [
+        {
+          "surface": "National Community Connections",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:metro_nashville_network",
+      "surfaces": [
+        "Metro Nashville Network",
+        "Metro Nashville"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Metro Nashville Network",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Metro Nashville",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:catherine_knowles",
+      "surfaces": [
+        "Catherine Knowles",
+        "Catherine"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Catherine Knowles",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Catherine",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:davidson_county",
+      "surfaces": [
+        "Davidson County",
+        "Davidson"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Davidson County",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Davidson",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:funding_opportunity",
+      "surfaces": [
+        "Funding Opportunity"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Funding Opportunity",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:nofo",
+      "surfaces": [
+        "NOFO"
+      ],
+      "admittedBy": [
+        {
+          "surface": "NOFO",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hud",
+      "surfaces": [
+        "HUD"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HUD",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:houston",
+      "surfaces": [
+        "Houston"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Houston",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:ohs",
+      "surfaces": [
+        "OHS"
+      ],
+      "admittedBy": [
+        {
+          "surface": "OHS",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:june",
+      "surfaces": [
+        "June"
+      ],
+      "admittedBy": [
+        {
+          "surface": "June",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:pec",
+      "surfaces": [
+        "PEC"
+      ],
+      "admittedBy": [
+        {
+          "surface": "PEC",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:arpa",
+      "surfaces": [
+        "ARPA"
+      ],
+      "admittedBy": [
+        {
+          "surface": "ARPA",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:april",
+      "surfaces": [
+        "April"
+      ],
+      "admittedBy": [
+        {
+          "surface": "April",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hmis",
+      "surfaces": [
+        "HMIS"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HMIS",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:mnps",
+      "surfaces": [
+        "MNPS"
+      ],
+      "admittedBy": [
+        {
+          "surface": "MNPS",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:raquel",
+      "surfaces": [
+        "Raquel"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Raquel",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:cooper",
+      "surfaces": [
+        "Cooper"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Cooper",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:dallas",
+      "surfaces": [
+        "Dallas"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Dallas",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:monday",
+      "surfaces": [
+        "Monday"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Monday",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:allen",
+      "surfaces": [
+        "Allen"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Allen",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:ccf",
+      "surfaces": [
+        "CCF"
+      ],
+      "admittedBy": [
+        {
+          "surface": "CCF",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:coc",
+      "surfaces": [
+        "COC"
+      ],
+      "admittedBy": [
+        {
+          "surface": "COC",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:congress",
+      "surfaces": [
+        "Congress"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Congress",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:evans",
+      "surfaces": [
+        "Evans"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Evans",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:mandy",
+      "surfaces": [
+        "Mandy"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Mandy",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:mr_chair",
+      "surfaces": [
+        "Mr Chair"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Mr Chair",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:national_alliance",
+      "surfaces": [
+        "National Alliance"
+      ],
+      "admittedBy": [
+        {
+          "surface": "National Alliance",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:november",
+      "surfaces": [
+        "November"
+      ],
+      "admittedBy": [
+        {
+          "surface": "November",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:nashville",
+      "surfaces": [
+        "Nashville"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Nashville",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:mr",
+      "surfaces": [
+        "Mr"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Mr",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:ms",
+      "surfaces": [
+        "Ms"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Ms",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    }
+  ],
+  "gaps": [
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:homeless_services_planning_council",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:community_solutions",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:performance_evaluation",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:clutch_consulting",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:director_calvin",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:home_together",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:national_community_connections",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:metro_nashville_network",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:catherine_knowles",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:davidson_county",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:funding_opportunity",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:nofo",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hud",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:houston",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:ohs",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:june",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:pec",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:arpa",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:april",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hmis",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:mnps",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:raquel",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:cooper",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:dallas",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:monday",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:allen",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:ccf",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:coc",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:congress",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:evans",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:mandy",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:mr_chair",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:national_alliance",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:november",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:nashville",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:mr",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:ms",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "ambiguous_surface",
+      "surface": "National Community",
+      "candidates": [
+        "ref:auto:community_solutions",
+        "ref:auto:national_community_connections"
+      ],
+      "conflictsWith": null,
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "this form corefers with more than one established referent, so the type level withholds admission; each of its mentions is an occurrence-level question — resolve by activation recall against the candidates (the perceiver's pronouns/roles machinery), or close with a per-text prior."
+    }
+  ]
+}
