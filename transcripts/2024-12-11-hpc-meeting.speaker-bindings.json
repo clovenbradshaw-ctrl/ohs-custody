@@ -1,0 +1,15 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2024-12-11-hpc-meeting.txt",
+  "boundary_count": 1,
+  "named_boundary_count": 1,
+  "sections": [
+    {
+      "start": 39820,
+      "end": 79609,
+      "speaker": "Ryan Lampa",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
