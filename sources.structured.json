@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-23T18:48:01+00:00",
+  "generated_at": "2026-09-23T19:45:29+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -2111,6 +2111,27 @@
       },
       "note": "Derived artifact: YouTube's own auto-generated caption track for a video the user identified (not downloaded -- only the caption/timedtext data was fetched, per user direction to avoid downloading videos). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
       "provenance_note": "Generated 2026-09-23 by this project, following the SEPT23-MEETING-TRANSCRIPT precedent but with a different provenance chain, stated precisely: the video itself was never downloaded (per user direction, avoiding video downloads entirely). The transcript is YouTube's own auto-generated caption track (av-pipeline/fetch_captions.py, via youtube-transcript-api's public timedtext endpoint -- no video file touched, no local transcription run; spot-checked for quality at three points across the meeting and found to correctly render specific terminology (e.g. \"VI-SPDAT score\") and names). Speaker attribution uses a new text-activation pass (eoreader7 organs/speaker.js's meetingSections, extended this session with three declared-boundary kinds -- self-introduction, chair recognition, and the \">>\" auto-caption speaker-change marker -- via cli/resolve-speakers.mjs), preserved at transcripts/2026-09-09-hpc-meeting.speaker-bindings.json: 261 total boundaries, 6 with a bound name (measured false-positive rate on bare interjections was 8/19 before a word-count floor fix closed it; see organs/speaker.js's own header). A separate audio-only voice-print approach (av-pipeline/fetch_audio.py + audio_profile.py, resemblyzer embeddings clustered per caption-segment utterance) was developed and validated on a 5-minute sample -- strong for continuous speakers (68% of utterances correctly grouped as one voice for the meeting's facilitator), honestly uncertain during rapid roll-call responses -- but was not run to completion or added to the encrypted gallery as part of this entry; that remains a follow-up the user runs themselves via profile_store.py, since it is the one step in this pipeline that touches a password. Entity-recognition pass (run-entity-recognition.mjs, eoreader7's referent-discovery organ) preserved at transcripts/2026-09-09-hpc-meeting.entities.json: 51 referents, 51 disclosed as having unresolved pronoun/descriptor coreference."
+    },
+    {
+      "id": "2026-08-05-SPECIAL-CALLED-TRANSCRIPT",
+      "label": "2026-08-05 Special Called Continuum of Care Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=AJL1BSnNcSE",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "34ccfde10b20536d13ca70b5c6d8029c50e614e8f4dc1f488236926eb0fdfe30",
+        "bytes": 61108,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:45:29+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
     }
   ]
 }
