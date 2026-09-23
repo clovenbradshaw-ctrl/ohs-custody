@@ -1,0 +1,15 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2020-09-09-hpc-meeting.txt",
+  "boundary_count": 1,
+  "named_boundary_count": 1,
+  "sections": [
+    {
+      "start": 21284,
+      "end": 75045,
+      "speaker": "Sally",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
