@@ -1,0 +1,22 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2025-06-11-hpc-meeting.txt",
+  "boundary_count": 2,
+  "named_boundary_count": 2,
+  "sections": [
+    {
+      "start": 60791,
+      "end": 60979,
+      "speaker": "Kenna Hassler",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 60979,
+      "end": 77643,
+      "speaker": "Ingred's",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
