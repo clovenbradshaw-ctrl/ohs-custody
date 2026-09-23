@@ -1,0 +1,22 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2024-10-09-hpc-meeting.txt",
+  "boundary_count": 2,
+  "named_boundary_count": 2,
+  "sections": [
+    {
+      "start": 820,
+      "end": 12171,
+      "speaker": "Kena Patterson",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 12171,
+      "end": 64541,
+      "speaker": "Alison",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
