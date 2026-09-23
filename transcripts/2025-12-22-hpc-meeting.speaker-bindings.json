@@ -1,0 +1,673 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2025-12-22-hpc-meeting.txt",
+  "boundary_count": 95,
+  "named_boundary_count": 5,
+  "sections": [
+    {
+      "start": 284,
+      "end": 292,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 292,
+      "end": 317,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 317,
+      "end": 345,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 345,
+      "end": 358,
+      "speaker": "Alexandria Eninsley",
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 358,
+      "end": 374,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 374,
+      "end": 413,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 413,
+      "end": 430,
+      "speaker": "Drew Freeman",
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 430,
+      "end": 443,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 443,
+      "end": 459,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 459,
+      "end": 608,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 608,
+      "end": 651,
+      "speaker": "Katherine Nolles",
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 651,
+      "end": 677,
+      "speaker": "Alyssa Fernandez",
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 677,
+      "end": 741,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 741,
+      "end": 766,
+      "speaker": "Lizzie Goddard",
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 766,
+      "end": 783,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 783,
+      "end": 808,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 808,
+      "end": 844,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 844,
+      "end": 869,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 869,
+      "end": 1724,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 1724,
+      "end": 1807,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 1807,
+      "end": 1829,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 1829,
+      "end": 2137,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 2137,
+      "end": 3172,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 3172,
+      "end": 3214,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 3214,
+      "end": 4836,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 4836,
+      "end": 4860,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 4860,
+      "end": 5363,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 5363,
+      "end": 7018,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 7018,
+      "end": 7075,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 7075,
+      "end": 8105,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 8105,
+      "end": 8125,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 8125,
+      "end": 8168,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 8168,
+      "end": 8419,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 8419,
+      "end": 9119,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9119,
+      "end": 9196,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9196,
+      "end": 9361,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9361,
+      "end": 9378,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9378,
+      "end": 9439,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9439,
+      "end": 9445,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9445,
+      "end": 9642,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9642,
+      "end": 9668,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9668,
+      "end": 9883,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 9883,
+      "end": 23273,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 23273,
+      "end": 25253,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 25253,
+      "end": 25267,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 25267,
+      "end": 25421,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 25421,
+      "end": 25439,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 25439,
+      "end": 25445,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 25445,
+      "end": 30730,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 30730,
+      "end": 31775,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 31775,
+      "end": 31927,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 31927,
+      "end": 31941,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 31941,
+      "end": 32022,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 32022,
+      "end": 36917,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 36917,
+      "end": 37029,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 37029,
+      "end": 37286,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 37286,
+      "end": 37295,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 37295,
+      "end": 37730,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 37730,
+      "end": 38401,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 38401,
+      "end": 38473,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 38473,
+      "end": 44219,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 44219,
+      "end": 44235,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 44235,
+      "end": 45402,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 45402,
+      "end": 45798,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 45798,
+      "end": 45806,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 45806,
+      "end": 45856,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 45856,
+      "end": 45896,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 45896,
+      "end": 46091,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 46091,
+      "end": 46514,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 46514,
+      "end": 46984,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 46984,
+      "end": 47155,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 47155,
+      "end": 47255,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 47255,
+      "end": 47461,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 47461,
+      "end": 48038,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 48038,
+      "end": 48219,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 48219,
+      "end": 48685,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 48685,
+      "end": 49149,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 49149,
+      "end": 49501,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 49501,
+      "end": 49530,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 49530,
+      "end": 49688,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 49688,
+      "end": 50316,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 50316,
+      "end": 50330,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 50330,
+      "end": 50340,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 50340,
+      "end": 52368,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 52368,
+      "end": 53901,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 53901,
+      "end": 55263,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 55263,
+      "end": 56228,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 56228,
+      "end": 56527,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 56527,
+      "end": 56885,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 56885,
+      "end": 56970,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 56970,
+      "end": 57427,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 57427,
+      "end": 58670,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 58670,
+      "end": 58687,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 58687,
+      "end": 60439,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 60439,
+      "end": 61993,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    }
+  ]
+}
