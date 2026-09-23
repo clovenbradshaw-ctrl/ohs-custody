@@ -1,0 +1,13 @@
+{
+  "id": "2025-03-12-HPC-MEETING-TRANSCRIPT",
+  "path": "transcripts/2025-03-12-hpc-meeting.txt",
+  "sha256": "46fb133f5d21d4498299a6546af6b1e9652aac3f114dec427e4bc150ace7ec5c",
+  "bytes": 64719,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=5MVn96594sg",
+  "final_url": null,
+  "retrieved_at": "2026-09-23T19:46:30+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+  "spans": []
+}

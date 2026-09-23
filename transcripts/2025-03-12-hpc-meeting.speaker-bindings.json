@@ -1,0 +1,57 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2025-03-12-hpc-meeting.txt",
+  "boundary_count": 7,
+  "named_boundary_count": 7,
+  "sections": [
+    {
+      "start": 24781,
+      "end": 30192,
+      "speaker": "Shanley",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 30192,
+      "end": 30505,
+      "speaker": "F",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 30505,
+      "end": 38004,
+      "speaker": "GNA",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 38004,
+      "end": 38534,
+      "speaker": "I've",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 38534,
+      "end": 53689,
+      "speaker": "Alysa Fernandez I",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 53689,
+      "end": 60972,
+      "speaker": "G",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 60972,
+      "end": 64719,
+      "speaker": "I'm I'm",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
