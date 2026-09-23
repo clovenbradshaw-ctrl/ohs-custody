@@ -1,0 +1,15 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2023-12-13-hpc-meeting.txt",
+  "boundary_count": 1,
+  "named_boundary_count": 1,
+  "sections": [
+    {
+      "start": 53297,
+      "end": 62373,
+      "speaker": "Nathan Scarlet I'm",
+      "org": "Mental Health Cooperative so I wanted to give the um shared experience of working with Robert batty goes by batty and his um",
+      "how": "self-introduction"
+    }
+  ]
+}
