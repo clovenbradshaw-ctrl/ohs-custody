@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-19T20:12:53+00:00",
+  "generated_at": "2026-09-23T18:48:01+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -2086,6 +2086,31 @@
       },
       "note": "Provided directly, not fetched from a URL. Provenance: Supplied directly by the user (Michael Lacy) via local file from 3.0 root on 2026-09-19; Gmail forward from Shanley Deignan (Park Center Nashville, CoC Charter Committee / HMIS Oversight chair) to Mike Lacy; original filename preserved in headers. Re-ingest 2026-09-19 to carry the private texted correction recorded in the claim field (no bytes exist for the text itself).",
       "provenance_note": "Supplied directly to this project as a local file (not fetched from a URL) on 2026-09-19. Original filename 'Gmail - Fw_ CoC Ranking concerns and questions for moving forward.pdf', 4 pages. Private texted correction relayed by the journalist on 2026-09-19 recorded in the claim field; no raw bytes exist for the text itself so nothing was hashed for the correction."
+    },
+    {
+      "id": "2026-09-09-HPC-MEETING-TRANSCRIPT",
+      "label": "Sept 9, 2026 Continuum of Care: Homelessness Planning Council meeting, YouTube auto-caption transcript",
+      "url": "https://www.youtube.com/watch?v=Sk2usBjAGLM",
+      "tier": "secondary",
+      "claim": "Public comment from a speaker identified in the caption track as Dr. John Rizo: \"Nashville currently has no active Continuum of Care strategic plan. The previous plan has expired and no successor has been adopted. That is not a minor administrative delay. That is gross negligence.\" This is a machine (YouTube auto-caption) transcript -- treat every quote as needing a second listen against the original audio before being printed as verbatim, the same caveat every transcript-derived entry in this corpus already carries. Corroborating context already in this manifest: COC-DEIGNAN-RANKING-2026's own relayed correction states CE (Coordinated Entry) leadership is roughly three years overdue for a charter-mandated re-election with no community input -- an expired, unrenewed strategic plan is the same governance-lapse pattern one register over, at the full Homelessness Planning Council level rather than the CE subcommittee. The meeting's own roll call separately named Ed Smith as a new HPC member; the substantive discussion after roll call was not the subject of this entry's own read-through and is left for a follow-up pass, disclosed rather than silently claimed as covered.",
+      "anchor": "That is not a minor administrative delay. That is gross negligence.",
+      "used_for": "OHS/CE governance -- a second, independent instance of the same expired-mandate/no-community-input pattern COC-DEIGNAN-RANKING-2026 already documents for CE leadership, here at the full HPC level (an expired Continuum of Care strategic plan)",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "d3eda79b9fe20f1152570111b5c9a5b01416b503c21de1b447a8b932d8523c27",
+        "bytes": 74356,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T00:00:00+00:00",
+        "location": {
+          "kind": "byte-offset",
+          "offset": 2634,
+          "length": 67
+        },
+        "archive": null
+      },
+      "note": "Derived artifact: YouTube's own auto-generated caption track for a video the user identified (not downloaded -- only the caption/timedtext data was fetched, per user direction to avoid downloading videos). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
+      "provenance_note": "Generated 2026-09-23 by this project, following the SEPT23-MEETING-TRANSCRIPT precedent but with a different provenance chain, stated precisely: the video itself was never downloaded (per user direction, avoiding video downloads entirely). The transcript is YouTube's own auto-generated caption track (av-pipeline/fetch_captions.py, via youtube-transcript-api's public timedtext endpoint -- no video file touched, no local transcription run; spot-checked for quality at three points across the meeting and found to correctly render specific terminology (e.g. \"VI-SPDAT score\") and names). Speaker attribution uses a new text-activation pass (eoreader7 organs/speaker.js's meetingSections, extended this session with three declared-boundary kinds -- self-introduction, chair recognition, and the \">>\" auto-caption speaker-change marker -- via cli/resolve-speakers.mjs), preserved at transcripts/2026-09-09-hpc-meeting.speaker-bindings.json: 261 total boundaries, 6 with a bound name (measured false-positive rate on bare interjections was 8/19 before a word-count floor fix closed it; see organs/speaker.js's own header). A separate audio-only voice-print approach (av-pipeline/fetch_audio.py + audio_profile.py, resemblyzer embeddings clustered per caption-segment utterance) was developed and validated on a 5-minute sample -- strong for continuous speakers (68% of utterances correctly grouped as one voice for the meeting's facilitator), honestly uncertain during rapid roll-call responses -- but was not run to completion or added to the encrypted gallery as part of this entry; that remains a follow-up the user runs themselves via profile_store.py, since it is the one step in this pipeline that touches a password. Entity-recognition pass (run-entity-recognition.mjs, eoreader7's referent-discovery organ) preserved at transcripts/2026-09-09-hpc-meeting.entities.json: 51 referents, 51 disclosed as having unresolved pronoun/descriptor coreference."
     }
   ]
 }

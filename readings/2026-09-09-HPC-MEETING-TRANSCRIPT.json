@@ -1,0 +1,21 @@
+{
+  "id": "2026-09-09-HPC-MEETING-TRANSCRIPT",
+  "path": "transcripts/2026-09-09-hpc-meeting.txt",
+  "sha256": "d3eda79b9fe20f1152570111b5c9a5b01416b503c21de1b447a8b932d8523c27",
+  "bytes": 74356,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=Sk2usBjAGLM",
+  "final_url": null,
+  "retrieved_at": "2026-09-23T00:00:00+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact: YouTube's own auto-generated caption track, fetched directly (no video download). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text.",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 2634,
+      "byte_length": 67,
+      "method": "exact-bytes",
+      "claim": "Public comment from a speaker identified in the caption track as Dr. John Rizo: \"Nashville currently has no active Continuum of Care strategic plan. The previous plan has expired and no successor has been adopted. That is not a minor administrative delay. That is gross negligence.\" This is a machine (YouTube auto-caption) transcript -- treat every quote as needing a second listen against the original audio before being printed as verbatim, the same caveat every transcript-derived entry in this corpus already carries. Corroborating context already in this manifest: COC-DEIGNAN-RANKING-2026's own relayed correction states CE (Coordinated Entry) leadership is roughly three years overdue for a charter-mandated re-election with no community input -- an expired, unrenewed strategic plan is the same governance-lapse pattern one register over, at the full Homelessness Planning Council level rather than the CE subcommittee. The meeting's own roll call separately named Ed Smith as a new HPC member; the substantive discussion after roll call was not the subject of this entry's own read-through and is left for a follow-up pass, disclosed rather than silently claimed as covered."
+    }
+  ]
+}

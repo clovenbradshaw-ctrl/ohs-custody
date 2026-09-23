@@ -2507,9 +2507,33 @@
         "anchor_text_offset": 1690,
         "anchor_text_length": 39
       }
+    },
+    {
+      "id": "2026-09-09-HPC-MEETING-TRANSCRIPT",
+      "label": "Sept 9, 2026 Continuum of Care: Homelessness Planning Council meeting, YouTube auto-caption transcript",
+      "tier": "secondary",
+      "doctype": "transcript-derived",
+      "url": "https://www.youtube.com/watch?v=Sk2usBjAGLM",
+      "anchor": "That is not a minor administrative delay. That is gross negligence.",
+      "claim": "Public comment from a speaker identified in the caption track as Dr. John Rizo: \"Nashville currently has no active Continuum of Care strategic plan. The previous plan has expired and no successor has been adopted. That is not a minor administrative delay. That is gross negligence.\" This is a machine (YouTube auto-caption) transcript -- treat every quote as needing a second listen against the original audio before being printed as verbatim, the same caveat every transcript-derived entry in this corpus already carries. Corroborating context already in this manifest: COC-DEIGNAN-RANKING-2026's own relayed correction states CE (Coordinated Entry) leadership is roughly three years overdue for a charter-mandated re-election with no community input -- an expired, unrenewed strategic plan is the same governance-lapse pattern one register over, at the full Homelessness Planning Council level rather than the CE subcommittee. The meeting's own roll call separately named Ed Smith as a new HPC member; the substantive discussion after roll call was not the subject of this entry's own read-through and is left for a follow-up pass, disclosed rather than silently claimed as covered.",
+      "used_for": "OHS/CE governance -- a second, independent instance of the same expired-mandate/no-community-input pattern COC-DEIGNAN-RANKING-2026 already documents for CE leadership, here at the full HPC level (an expired Continuum of Care strategic plan)",
+      "added": "Generated 2026-09-23 by this project, following the SEPT23-MEETING-TRANSCRIPT precedent but with a different provenance chain, stated precisely: the video itself was never downloaded (per user direction, avoiding video downloads entirely). The transcript is YouTube's own auto-generated caption track (av-pipeline/fetch_captions.py, via youtube-transcript-api's public timedtext endpoint -- no video file touched, no local transcription run; spot-checked for quality at three points across the meeting and found to correctly render specific terminology (e.g. \"VI-SPDAT score\") and names). Speaker attribution uses a new text-activation pass (eoreader7 organs/speaker.js's meetingSections, extended this session with three declared-boundary kinds -- self-introduction, chair recognition, and the \">>\" auto-caption speaker-change marker -- via cli/resolve-speakers.mjs), preserved at transcripts/2026-09-09-hpc-meeting.speaker-bindings.json: 261 total boundaries, 6 with a bound name (measured false-positive rate on bare interjections was 8/19 before a word-count floor fix closed it; see organs/speaker.js's own header). A separate audio-only voice-print approach (av-pipeline/fetch_audio.py + audio_profile.py, resemblyzer embeddings clustered per caption-segment utterance) was developed and validated on a 5-minute sample -- strong for continuous speakers (68% of utterances correctly grouped as one voice for the meeting's facilitator), honestly uncertain during rapid roll-call responses -- but was not run to completion or added to the encrypted gallery as part of this entry; that remains a follow-up the user runs themselves via profile_store.py, since it is the one step in this pipeline that touches a password. Entity-recognition pass (run-entity-recognition.mjs, eoreader7's referent-discovery organ) preserved at transcripts/2026-09-09-hpc-meeting.entities.json: 51 referents, 51 disclosed as having unresolved pronoun/descriptor coreference.",
+      "capture": {
+        "status": "local-only",
+        "sha256": "d3eda79b9fe20f1152570111b5c9a5b01416b503c21de1b447a8b932d8523c27",
+        "bytes": 74356,
+        "anchor_offset": 2634,
+        "anchor_length": 67,
+        "anchor_method": "exact-bytes",
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T00:00:00+00:00",
+        "local_path": "transcripts/2026-09-09-hpc-meeting.txt",
+        "archive_tier": "local-only",
+        "note": "Derived artifact: YouTube's own auto-generated caption track for a video the user identified (not downloaded -- only the caption/timedtext data was fetched, per user direction to avoid downloading videos). No independent archive possible for a derived transcript -- the object of record for the underlying event is the video itself (url field), not this text."
+      }
     }
   ],
-  "last_run": "2026-09-19T20:12:51+00:00"
+  "last_run": "2026-09-23T00:00:00+00:00"
 }
 </script>
 <script>
