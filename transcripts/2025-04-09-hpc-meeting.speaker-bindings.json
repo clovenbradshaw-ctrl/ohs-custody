@@ -1,0 +1,22 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2025-04-09-hpc-meeting.txt",
+  "boundary_count": 2,
+  "named_boundary_count": 2,
+  "sections": [
+    {
+      "start": 27727,
+      "end": 49740,
+      "speaker": "Allison Canway. Um",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 49740,
+      "end": 89488,
+      "speaker": "Bina. I'm",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
