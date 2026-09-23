@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-23T19:45:29+00:00",
+  "generated_at": "2026-09-23T19:46:19+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -2126,7 +2126,196 @@
         "sha256": "34ccfde10b20536d13ca70b5c6d8029c50e614e8f4dc1f488236926eb0fdfe30",
         "bytes": 61108,
         "content_type": "text/plain",
-        "fetched_at": "2026-09-23T19:45:29+00:00",
+        "fetched_at": "2026-09-23T19:46:06+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track (pre-existing); video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-07-08-HPC-MEETING-TRANSCRIPT",
+      "label": "2026-07-08 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=VbYebSeXDnM",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "db3c0abcb557b9274dbbb3cfb0c8e7fc4b9e096246ca0298b0a748e22b68f78b",
+        "bytes": 84107,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:07+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-06-23-SYMPOSIUM-TRANSCRIPT",
+      "label": "2026-06-23 2026 State of Homelessness Symposium, transcript",
+      "url": "https://www.youtube.com/watch?v=eZhsEtCXZw0",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "3ec68c8932ee1a2c40082535e430453aa9c2ff1e10af80fe1e4993299ee93160",
+        "bytes": 126728,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:09+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-06-10-HPC-MEETING-TRANSCRIPT",
+      "label": "2026-06-10 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=g7Gwd4YQsRQ",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "400334e786d8d856122cfdc87785c209f62f9340836e75649920d08370659300",
+        "bytes": 78507,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:10+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-05-13-HPC-MEETING-TRANSCRIPT",
+      "label": "2026-05-13 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=qXSVwqaaDSE",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "1ee5d8c483c4c220e6ce0683398161bdc98f2d874882a0086302a369904426fa",
+        "bytes": 91516,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:11+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-04-08-HPC-MEETING-TRANSCRIPT",
+      "label": "2026-04-08 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=KW7V9hFv-Gk",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "10290d6ba260102ba46325c20d32c0828a972026b5ebefb8bf5d3f820318fa12",
+        "bytes": 77844,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:12+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-03-11-HPC-MEETING-TRANSCRIPT",
+      "label": "2026-03-11 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=mnfpFAGxpH8",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "23cd3be0d66bd9d0dec836ef314b09123d876fbdc60a9e8a00d6732a22078c04",
+        "bytes": 72077,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:14+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-02-11-HPC-MEETING-TRANSCRIPT",
+      "label": "2026-02-11 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=XSQOXyohODo",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "b9efc2431db6c80cf5d52784ac999138bb27dc27178057c90dbf80049dc6ccb0",
+        "bytes": 83273,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:16+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2026-01-14-HPC-MEETING-TRANSCRIPT",
+      "label": "2026-01-14 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=7BuDafZavNw",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "b98fa12198d47faa0c2e47f3983047b8b6600aad7b25a1827bdaec91a8ad6c4e",
+        "bytes": 56603,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:17+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2025-12-22-HPC-MEETING-TRANSCRIPT",
+      "label": "2025-12-22 Continuum of Care: Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=NcqtqFnnRos",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "06a499f7dc114b28a60596a0eab5f7f2d9e7742f0a706a20c65d2e0caa6bef39",
+        "bytes": 61993,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:19+00:00",
         "location": null,
         "archive": null
       },
