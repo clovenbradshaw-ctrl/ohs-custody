@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-23T20:47:07+00:00",
+  "generated_at": "2026-09-23T20:58:03+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -3051,6 +3051,27 @@
         "bytes": 71110,
         "content_type": "text/plain",
         "fetched_at": "2026-09-23T20:46:37+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via local-whisper-mlx-large-v3-turbo; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog."
+    },
+    {
+      "id": "2020-09-09-HPC-MEETING-TRANSCRIPT",
+      "label": "2020-09-09 CoC Homelessness Planning Council, transcript",
+      "url": "https://www.youtube.com/watch?v=_DmwZSvubeI",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "d241ca60744002ce6aeca4876503808452bdf7980a2e258e3c3324503c89e7bc",
+        "bytes": 75045,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T20:57:57+00:00",
         "location": null,
         "archive": null
       },
