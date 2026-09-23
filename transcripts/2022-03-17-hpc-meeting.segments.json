@@ -1,0 +1,3937 @@
+{
+  "audio_path": "/Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2022-03-17-hpc-meeting.webm",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.02,
+      "text": "All right, good morning, everybody."
+    },
+    {
+      "start": 2.24,
+      "end": 6.76,
+      "text": "Welcome to the Homelessness Planning Counselor Shelter Committee meeting for today."
+    },
+    {
+      "start": 7.2,
+      "end": 10.6,
+      "text": "I'm Jesse, filling in for Kathy Jennings, who's the chair of the committee."
+    },
+    {
+      "start": 11.040000000000001,
+      "end": 13.98,
+      "text": "She wasn't able to be here today because of a family emergency."
+    },
+    {
+      "start": 14.92,
+      "end": 19.46,
+      "text": "We do have copies of the agenda in minutes back where Amanda is right now on the lectern,"
+    },
+    {
+      "start": 19.580000000000002,
+      "end": 24.1,
+      "text": "so if anybody needs any copies of that, that's where they can grab them."
+    },
+    {
+      "start": 26.86,
+      "end": 28.1,
+      "text": "Yeah, I think that's it."
+    },
+    {
+      "start": 28.1,
+      "end": 30.12,
+      "text": "Does everybody know everybody in the room?"
+    },
+    {
+      "start": 30.18,
+      "end": 30.98,
+      "text": "Do we need to do introductions?"
+    },
+    {
+      "start": 32.02,
+      "end": 33.96,
+      "text": "Okay, we can do, we know everybody?"
+    },
+    {
+      "start": 34.9,
+      "end": 36.96,
+      "text": "Yeah, okay, let's do introductions then."
+    },
+    {
+      "start": 37.5,
+      "end": 39.620000000000005,
+      "text": "And so I guess we'll start over here since it's your birthday."
+    },
+    {
+      "start": 40.52,
+      "end": 44.760000000000005,
+      "text": "Miriam Lebowitz, Community Outreach and Engagement Specialist with WeGo Public Transit."
+    },
+    {
+      "start": 44.980000000000004,
+      "end": 46.58,
+      "text": "Ma'am, you'll have to pick up the microphone."
+    },
+    {
+      "start": 47.400000000000006,
+      "end": 49.14,
+      "text": "Pretend like you're an actual council member today."
+    },
+    {
+      "start": 50.78,
+      "end": 51.900000000000006,
+      "text": "Do I need to push a button?"
+    },
+    {
+      "start": 52.68000000000001,
+      "end": 57.08,
+      "text": "Hi, I'm Miriam Lebowitz, Community Outreach and Engagement Specialist with WeGo Public Transit."
+    },
+    {
+      "start": 57.08,
+      "end": 62.32,
+      "text": "Ryan Lampa, People Loving Nashville."
+    },
+    {
+      "start": 66.32,
+      "end": 69.92,
+      "text": "Edward Kehoe, He, Him, Open Table Nashville."
+    },
+    {
+      "start": 70.28,
+      "end": 72.44,
+      "text": "I'm the Outreach Program Coordinator."
+    },
+    {
+      "start": 77.03999999999999,
+      "end": 79.7,
+      "text": "Amanda Fernandez from Rumanian."
+    },
+    {
+      "start": 79.7,
+      "end": 88.04,
+      "text": "Michael Messmer, I'm the new VA HCHV Outreach Coordinator."
+    },
+    {
+      "start": 93.48,
+      "end": 96.86,
+      "text": "Whitney Riddell, the Nashville VA Homeless Program."
+    },
+    {
+      "start": 99.98,
+      "end": 103.34,
+      "text": "Jay Voorhees, I'm the Pastor of City Red Chapel, United Methodist Church."
+    },
+    {
+      "start": 103.34,
+      "end": 104.34,
+      "text": "Jesse Call, I'm the Salvation Army."
+    },
+    {
+      "start": 104.34,
+      "end": 108.34,
+      "text": "And he's our newest member to the committee, so welcome."
+    },
+    {
+      "start": 108.68,
+      "end": 109.46000000000001,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 110.3,
+      "end": 112.10000000000001,
+      "text": "I'm Jesse Call, I'm with the Salvation Army."
+    },
+    {
+      "start": 113.56,
+      "end": 118.5,
+      "text": "So I think the first thing that we had on the agenda was to talk about the winter sheltering"
+    },
+    {
+      "start": 118.5,
+      "end": 120.74000000000001,
+      "text": "process since we're nearing the end of the season."
+    },
+    {
+      "start": 121.42,
+      "end": 121.80000000000001,
+      "text": "Hey, Carrie."
+    },
+    {
+      "start": 121.8,
+      "end": 129.0,
+      "text": "And so I wanted to give people an opportunity to share some of the successes and some of"
+    },
+    {
+      "start": 129.0,
+      "end": 133.68,
+      "text": "the challenges that we face this season and things we need to be thinking about as we look"
+    },
+    {
+      "start": 133.68,
+      "end": 134.68,
+      "text": "into next season."
+    },
+    {
+      "start": 135.68,
+      "end": 138.48,
+      "text": "There's copies of the agenda and stuff on the podium if you want them, Carrie."
+    },
+    {
+      "start": 141.07999999999998,
+      "end": 144.78,
+      "text": "And so I don't know if anybody feels free to go first."
+    },
+    {
+      "start": 144.85999999999999,
+      "end": 148.16,
+      "text": "I guess, Amanda, could you maybe go first to talk about room in the end since you're more"
+    },
+    {
+      "start": 148.16,
+      "end": 148.74,
+      "text": "ready than Carrie?"
+    },
+    {
+      "start": 148.74,
+      "end": 149.24,
+      "text": "Carrie."
+    },
+    {
+      "start": 149.24,
+      "end": 149.24,
+      "text": ""
+    },
+    {
+      "start": 149.24,
+      "end": 149.24,
+      "text": ""
+    },
+    {
+      "start": 149.24,
+      "end": 149.74,
+      "text": "Oh, I have to."
+    },
+    {
+      "start": 149.74,
+      "end": 149.74,
+      "text": ""
+    },
+    {
+      "start": 149.74,
+      "end": 149.74,
+      "text": ""
+    },
+    {
+      "start": 149.74,
+      "end": 150.74,
+      "text": "I'm sorry."
+    },
+    {
+      "start": 150.74,
+      "end": 150.74,
+      "text": ""
+    },
+    {
+      "start": 150.74,
+      "end": 151.74,
+      "text": "Totally fine."
+    },
+    {
+      "start": 151.74,
+      "end": 151.74,
+      "text": ""
+    },
+    {
+      "start": 155.74,
+      "end": 160.56,
+      "text": "So with room in the end, one of our greatest challenges, of course, coming through the"
+    },
+    {
+      "start": 160.56,
+      "end": 167.78,
+      "text": "restrictions of a pandemic are that we are not at full capacity as far as congregations"
+    },
+    {
+      "start": 167.78,
+      "end": 168.78,
+      "text": "go."
+    },
+    {
+      "start": 168.78,
+      "end": 170.86,
+      "text": "Historically, we have closer to 200."
+    },
+    {
+      "start": 170.86,
+      "end": 177.70000000000002,
+      "text": "This year we are at 91, which is about a 64% increase over last season, which is incredible."
+    },
+    {
+      "start": 177.7,
+      "end": 182.39999999999998,
+      "text": "But with the way that our numbers fluctuate, I think you see and I'm sure that Carrie sees"
+    },
+    {
+      "start": 182.39999999999998,
+      "end": 187.04,
+      "text": "certain nights, we have much lower numbers."
+    },
+    {
+      "start": 187.04,
+      "end": 193.57999999999998,
+      "text": "And that has left some people in very dire straits, right, in terrible conditions."
+    },
+    {
+      "start": 193.58,
+      "end": 204.92000000000002,
+      "text": "So our main concern going into next season that we are already there is no off season anymore in regards to coordinating"
+    },
+    {
+      "start": 204.92000000000002,
+      "end": 206.92000000000002,
+      "text": "room in the end shelter efforts anyway."
+    },
+    {
+      "start": 206.92000000000002,
+      "end": 223.20000000000002,
+      "text": "And I don't think any of us have an off season, but already working with local congregations in the congregations that were preexisting and bringing them back on and trying to work with them to ensure safety, but also, you know, help them to understand what the current"
+    },
+    {
+      "start": 223.2,
+      "end": 224.95999999999998,
+      "text": "needs are, really the current needs are."
+    },
+    {
+      "start": 224.95999999999998,
+      "end": 225.95999999999998,
+      "text": "You know, Jay knows this."
+    },
+    {
+      "start": 225.95999999999998,
+      "end": 226.89999999999998,
+      "text": "He's been doing it forever."
+    },
+    {
+      "start": 226.89999999999998,
+      "end": 230.54,
+      "text": "But some congregations have been doing it since the beginning."
+    },
+    {
+      "start": 230.54,
+      "end": 231.94,
+      "text": "They have their routine."
+    },
+    {
+      "start": 231.94,
+      "end": 238.82,
+      "text": "So helping them to kind of step outside of that routine and think more creatively in how we serve"
+    },
+    {
+      "start": 238.82,
+      "end": 239.82,
+      "text": "the guests."
+    },
+    {
+      "start": 239.82,
+      "end": 251.44,
+      "text": "But I would say that's our biggest is trying to even out our numbers so that people have more of a guarantee, trying to level the playing field for most people."
+    },
+    {
+      "start": 251.44,
+      "end": 254.44,
+      "text": "It's been really difficult, but hopefully we'll get back there."
+    },
+    {
+      "start": 254.44,
+      "end": 256.44,
+      "text": "But what do you want?"
+    },
+    {
+      "start": 256.44,
+      "end": 257.44,
+      "text": "Yeah."
+    },
+    {
+      "start": 257.44,
+      "end": 258.44,
+      "text": "How are things going with the guest house side?"
+    },
+    {
+      "start": 258.44,
+      "end": 260.44,
+      "text": "Oh, so the guest house side."
+    },
+    {
+      "start": 260.44,
+      "end": 264.84,
+      "text": "So we are slowly returning to capacity."
+    },
+    {
+      "start": 264.84,
+      "end": 268.08,
+      "text": "Thank you for asking that question, Jesse."
+    },
+    {
+      "start": 268.08,
+      "end": 280.56,
+      "text": "We actually have just started bringing in the intoxicated individuals once again, which for those of you who know, it's the heart and soul of what we do besides the winter shelter program."
+    },
+    {
+      "start": 280.56,
+      "end": 297.24,
+      "text": "We are starting with people who are in our services because we have many new staff members who are not accustomed to interfacing with people who are in active addiction, you know, who are rather than we've been very transactional."
+    },
+    {
+      "start": 297.24,
+      "end": 298.78000000000003,
+      "text": "Let me just be very transparent."
+    },
+    {
+      "start": 298.78000000000003,
+      "end": 301.98,
+      "text": "We've been rather transactional this year."
+    },
+    {
+      "start": 301.98,
+      "end": 307.18,
+      "text": "For the first time in our history, we gave out tents because we were told people are safer outdoors."
+    },
+    {
+      "start": 307.18,
+      "end": 314.92,
+      "text": "And so a lot of our newer staff are not accustomed to, oh, he's intoxicated."
+    },
+    {
+      "start": 314.92,
+      "end": 317.22,
+      "text": "Now I took him over there, but he left."
+    },
+    {
+      "start": 317.22,
+      "end": 319.06,
+      "text": "But we're going to bring him back now."
+    },
+    {
+      "start": 319.06,
+      "end": 324.8,
+      "text": "We're not accustomed to that sort of revolving door, so to speak."
+    },
+    {
+      "start": 324.8,
+      "end": 329.2,
+      "text": "And so we are working with our teams, though, to get them up to speed with that."
+    },
+    {
+      "start": 329.2,
+      "end": 335.74,
+      "text": "And then hopefully we'll be opening up to the police in the greater national area once again very soon."
+    },
+    {
+      "start": 335.74,
+      "end": 336.74,
+      "text": "That's our hope."
+    },
+    {
+      "start": 336.74,
+      "end": 342.82,
+      "text": "So yes, we're working on returning to capacity, which is a dream come through the past two years."
+    },
+    {
+      "start": 342.82,
+      "end": 344.68,
+      "text": "It gives me hope."
+    },
+    {
+      "start": 344.68,
+      "end": 348.28000000000003,
+      "text": "Yeah, it's really awesome, the flexibility that you guys have had in making things work as much as you can."
+    },
+    {
+      "start": 348.28000000000003,
+      "end": 350.22,
+      "text": "Done a great job this season."
+    },
+    {
+      "start": 350.22,
+      "end": 354.72,
+      "text": "I don't know, Carrie, if you have an opportunity to talk about some of the missions work this season"
+    },
+    {
+      "start": 354.72,
+      "end": 357.62,
+      "text": "and any challenges, successes that you've been having."
+    },
+    {
+      "start": 357.62,
+      "end": 359.52,
+      "text": "Good morning."
+    },
+    {
+      "start": 359.52,
+      "end": 361.26,
+      "text": "This is a different."
+    },
+    {
+      "start": 361.26,
+      "end": 362.14,
+      "text": "Hi, Jim."
+    },
+    {
+      "start": 362.14,
+      "end": 365.2,
+      "text": "I can see you behind this shield here."
+    },
+    {
+      "start": 365.2,
+      "end": 371.2,
+      "text": "I don't know why I chose the only chair with the face shield, but..."
+    },
+    {
+      "start": 371.2,
+      "end": 376.78,
+      "text": "So winter shelter has been a bit of a challenge for us this year."
+    },
+    {
+      "start": 376.78,
+      "end": 382.71999999999997,
+      "text": "We've been at close to our occupancy."
+    },
+    {
+      "start": 382.71999999999997,
+      "end": 390.15999999999997,
+      "text": "I should qualify that, though, always, especially if this is being recorded today."
+    },
+    {
+      "start": 390.16,
+      "end": 396.6,
+      "text": "Capacity at the mission varies greatly from..."
+    },
+    {
+      "start": 396.6,
+      "end": 402.64000000000004,
+      "text": "During winter shelter program and all year long, because we will never say that we're full."
+    },
+    {
+      "start": 402.64000000000004,
+      "end": 408.04,
+      "text": "We'll add mats on the floor in the cafeteria if we need to."
+    },
+    {
+      "start": 408.04,
+      "end": 413.18,
+      "text": "But I will tell you that we're running about 80%, which is really high for us."
+    },
+    {
+      "start": 413.18,
+      "end": 419.62,
+      "text": "Last year, during the regular season, we..."
+    },
+    {
+      "start": 419.62,
+      "end": 427.62,
+      "text": "Our occupancy rates were probably about 65% on average, and that's men and women."
+    },
+    {
+      "start": 427.62,
+      "end": 431.06,
+      "text": "So 80% is pretty high for us."
+    },
+    {
+      "start": 431.06,
+      "end": 438.28000000000003,
+      "text": "That means that we're using upper bunks, and people are not able to get a lower bunk if they need one,"
+    },
+    {
+      "start": 438.28,
+      "end": 444.71999999999997,
+      "text": "and so we'll have to put another mat on the floor in the chapel, which is fine for some people."
+    },
+    {
+      "start": 444.71999999999997,
+      "end": 448.35999999999996,
+      "text": "Or we'll ask more people to stay in the day room."
+    },
+    {
+      "start": 448.35999999999996,
+      "end": 451.71999999999997,
+      "text": "Our day room is full right now."
+    },
+    {
+      "start": 451.71999999999997,
+      "end": 453.35999999999996,
+      "text": "Not full, but it's..."
+    },
+    {
+      "start": 453.35999999999996,
+      "end": 457.03999999999996,
+      "text": "There's very few empty chairs at night."
+    },
+    {
+      "start": 457.03999999999996,
+      "end": 462.7,
+      "text": "And as you know, some people prefer the chairs in the day room."
+    },
+    {
+      "start": 462.7,
+      "end": 465.53999999999996,
+      "text": "They want to sit up at night."
+    },
+    {
+      "start": 465.54,
+      "end": 471.72,
+      "text": "I'm not sure I understand that, but that's the choice for some people."
+    },
+    {
+      "start": 471.72,
+      "end": 473.92,
+      "text": "So, we..."
+    },
+    {
+      "start": 473.92,
+      "end": 488.02000000000004,
+      "text": "With that high occupancy comes the heightened tempers and people fussing because they can't get the bed they want,"
+    },
+    {
+      "start": 488.02000000000004,
+      "end": 491.6,
+      "text": "or they can't get a lower bunk, or whatever."
+    },
+    {
+      "start": 491.6,
+      "end": 493.6,
+      "text": "So, we've dealt with..."
+    },
+    {
+      "start": 493.6,
+      "end": 502.98,
+      "text": "Our staff have been really challenged to deal with the needs and the requests and the wants this season."
+    },
+    {
+      "start": 502.98,
+      "end": 511.56,
+      "text": "And as you know, we're dealing with staffing challenges, which has not gotten better for us on the guest services side."
+    },
+    {
+      "start": 511.56,
+      "end": 514.26,
+      "text": "We're still really struggling."
+    },
+    {
+      "start": 514.26,
+      "end": 525.64,
+      "text": "We're at about 50% of our normal staffing pattern on the men's guest services side and about 80% on the women's side."
+    },
+    {
+      "start": 525.64,
+      "end": 527.4399999999999,
+      "text": "80 to 85."
+    },
+    {
+      "start": 527.4399999999999,
+      "end": 530.4399999999999,
+      "text": "We're almost fully staffed there, which is great."
+    },
+    {
+      "start": 530.44,
+      "end": 535.62,
+      "text": "So, just a lot of challenges."
+    },
+    {
+      "start": 535.62,
+      "end": 541.82,
+      "text": "One thing that you guys are going to hear me talk about once we get past the winter shelter season..."
+    },
+    {
+      "start": 541.82,
+      "end": 544.08,
+      "text": "And I may have mentioned..."
+    },
+    {
+      "start": 544.08,
+      "end": 549.12,
+      "text": "I think I mentioned this once before in the shelter committee meeting, but..."
+    },
+    {
+      "start": 549.12,
+      "end": 556.8,
+      "text": "We are going to do a symposium for the community, for some of the other practitioners and partners that we work with..."
+    },
+    {
+      "start": 556.8,
+      "end": 564.46,
+      "text": "To talk about the drugs that are in our community right now and the toxicity of those drugs."
+    },
+    {
+      "start": 564.46,
+      "end": 571.64,
+      "text": "We have a partner here in Nashville that used to be an LA journalist."
+    },
+    {
+      "start": 571.64,
+      "end": 577.3000000000001,
+      "text": "And you might have seen a big article that came out this week about him."
+    },
+    {
+      "start": 577.3000000000001,
+      "end": 579.8000000000001,
+      "text": "He wrote a book called Dreamland."
+    },
+    {
+      "start": 579.8000000000001,
+      "end": 582.24,
+      "text": "His name is Sam Quinones."
+    },
+    {
+      "start": 582.24,
+      "end": 588.76,
+      "text": "And he also just wrote another book that came out about meth and fentanyl."
+    },
+    {
+      "start": 588.76,
+      "end": 600.6,
+      "text": "And we've been talking quite a bit about the challenges that we're facing with people in decomp mentally."
+    },
+    {
+      "start": 600.6,
+      "end": 608.72,
+      "text": "The psychosis that we're dealing with in the shelter system is like nothing I've ever seen before in my 30-year career."
+    },
+    {
+      "start": 608.72,
+      "end": 613.68,
+      "text": "And it just seems to be getting worse by the day."
+    },
+    {
+      "start": 613.68,
+      "end": 618.46,
+      "text": "And I don't know if other partners are experiencing that too, but..."
+    },
+    {
+      "start": 618.46,
+      "end": 630.3000000000001,
+      "text": "The level of mental health needs and psychosis is incredibly challenging for our staff right now."
+    },
+    {
+      "start": 630.3000000000001,
+      "end": 632.3000000000001,
+      "text": "And it's a daily thing."
+    },
+    {
+      "start": 632.3000000000001,
+      "end": 643.1800000000001,
+      "text": "And our calls to Metro PD for assistance, for staff safety, are on the rise."
+    },
+    {
+      "start": 643.18,
+      "end": 649.02,
+      "text": "So that's just one of our...that's our biggest challenge right now."
+    },
+    {
+      "start": 649.02,
+      "end": 651.02,
+      "text": "Anything else?"
+    },
+    {
+      "start": 651.02,
+      "end": 655.02,
+      "text": "Any questions for me about the mission?"
+    },
+    {
+      "start": 655.02,
+      "end": 662.4399999999999,
+      "text": "So you saw like a 20% increase in people staying at night, but you have half the staff?"
+    },
+    {
+      "start": 662.4399999999999,
+      "end": 663.9,
+      "text": "Is that basically a good summary?"
+    },
+    {
+      "start": 663.9,
+      "end": 664.9,
+      "text": "That's..."
+    },
+    {
+      "start": 664.9,
+      "end": 667.54,
+      "text": "That's real close, Jessie."
+    },
+    {
+      "start": 667.54,
+      "end": 668.4399999999999,
+      "text": "Thank you."
+    },
+    {
+      "start": 668.44,
+      "end": 669.44,
+      "text": "All right."
+    },
+    {
+      "start": 669.44,
+      "end": 672.2800000000001,
+      "text": "So yeah, we definitely see some challenges there."
+    },
+    {
+      "start": 672.2800000000001,
+      "end": 675.2800000000001,
+      "text": "I don't know if you...I know you literally just walked in the building."
+    },
+    {
+      "start": 675.2800000000001,
+      "end": 678.7800000000001,
+      "text": "I don't know if anyone...no one else is here from Metro Homeless Impact Division."
+    },
+    {
+      "start": 678.7800000000001,
+      "end": 683.2800000000001,
+      "text": "Do you have anything you can share about how the emergency cold weather sheltering has happened?"
+    },
+    {
+      "start": 683.2800000000001,
+      "end": 685.2800000000001,
+      "text": "I don't know if you even work there at all."
+    },
+    {
+      "start": 685.2800000000001,
+      "end": 686.2800000000001,
+      "text": "Okay."
+    },
+    {
+      "start": 686.2800000000001,
+      "end": 687.2800000000001,
+      "text": "No problem."
+    },
+    {
+      "start": 687.2800000000001,
+      "end": 691.44,
+      "text": "I know that they have done more nights this season than they did last season."
+    },
+    {
+      "start": 691.44,
+      "end": 694.98,
+      "text": "For some reason, a lot of those nights have been on weekends and on holidays."
+    },
+    {
+      "start": 694.98,
+      "end": 699.08,
+      "text": "So I know that the staff at Metro Social Services and the Sheriff's Office and all the people"
+    },
+    {
+      "start": 699.08,
+      "end": 704.62,
+      "text": "that have to be called in, we go during those times, are working really hard."
+    },
+    {
+      "start": 704.62,
+      "end": 709.6800000000001,
+      "text": "Have worked really hard and had to do it at times when most of us have time off."
+    },
+    {
+      "start": 709.6800000000001,
+      "end": 710.9000000000001,
+      "text": "So it's really important to thank them."
+    },
+    {
+      "start": 710.9000000000001,
+      "end": 717.08,
+      "text": "This was also the first time just recently we had some flooding again in one of the encampments."
+    },
+    {
+      "start": 717.08,
+      "end": 722.32,
+      "text": "near a river when we had the really bad rain earlier this month, I think."
+    },
+    {
+      "start": 722.32,
+      "end": 726.44,
+      "text": "And for the first time ever, they opened the shelter for something besides cold weather."
+    },
+    {
+      "start": 726.44,
+      "end": 730.5600000000001,
+      "text": "They opened it for people that were displaced and weren't able to stay where they were staying"
+    },
+    {
+      "start": 730.5600000000001,
+      "end": 732.32,
+      "text": "that night because of the flooding."
+    },
+    {
+      "start": 732.32,
+      "end": 737.0400000000001,
+      "text": "And so that's a pretty major improvement and good progress."
+    },
+    {
+      "start": 737.0400000000001,
+      "end": 740.36,
+      "text": "So we wanted to make sure to shout that out."
+    },
+    {
+      "start": 740.36,
+      "end": 743.86,
+      "text": "And then is there any other concerns or anything or anybody wants to give updates about their"
+    },
+    {
+      "start": 743.86,
+      "end": 745.2800000000001,
+      "text": "experience with the cold weather shelter?"
+    },
+    {
+      "start": 745.2800000000001,
+      "end": 746.2800000000001,
+      "text": "Sure, Mary."
+    },
+    {
+      "start": 747.08,
+      "end": 748.08,
+      "text": "Okay."
+    },
+    {
+      "start": 748.08,
+      "end": 752.7,
+      "text": "So I just wanted to give a quick update on the use of the cold weather cards, which are"
+    },
+    {
+      "start": 752.7,
+      "end": 762.46,
+      "text": "the seasonal cards that are given to their 350 cards that are usable between November 1st"
+    },
+    {
+      "start": 762.46,
+      "end": 763.46,
+      "text": "and March 31st."
+    },
+    {
+      "start": 763.46,
+      "end": 766.32,
+      "text": "We give those to the homeless impact division."
+    },
+    {
+      "start": 766.32,
+      "end": 773.0,
+      "text": "They distribute those to service providers to give out to folks primarily for use outside"
+    },
+    {
+      "start": 773.0,
+      "end": 780.52,
+      "text": "of the downtown area so that folks who are living farther from shelter can get to shelter, whatever"
+    },
+    {
+      "start": 780.52,
+      "end": 782.62,
+      "text": "shelter means to them."
+    },
+    {
+      "start": 782.62,
+      "end": 786.24,
+      "text": "So I've been working with this program for about five years now."
+    },
+    {
+      "start": 786.24,
+      "end": 794.24,
+      "text": "And this is the most usage that we've seen with the cold weather cards in that entire time."
+    },
+    {
+      "start": 794.24,
+      "end": 801.86,
+      "text": "I don't know why that is partly might be because of the long stretch of cold weather we had in February."
+    },
+    {
+      "start": 801.86,
+      "end": 813.48,
+      "text": "But the numbers of people actually using the cards themselves has increased pretty dramatically, as well as the number of times people are using them."
+    },
+    {
+      "start": 813.48,
+      "end": 822.1,
+      "text": "One of the things that has changed this year is that it doesn't say extreme cold weather card on it."
+    },
+    {
+      "start": 822.1,
+      "end": 825.78,
+      "text": "It looks like our reloadable quick ticket cards."
+    },
+    {
+      "start": 825.78,
+      "end": 827.86,
+      "text": "It is a reloadable quick ticket card."
+    },
+    {
+      "start": 827.86,
+      "end": 840.86,
+      "text": "So at the end of March, when those cards get turned off from use for this this program, individuals can reload the cards with either money or passes."
+    },
+    {
+      "start": 840.86,
+      "end": 851.6800000000001,
+      "text": "And we do encourage that, which I think actually speaks to some of what we've heard about individuals not being able to hold on to"
+    },
+    {
+      "start": 851.68,
+      "end": 855.0999999999999,
+      "text": "physical cards and losing those."
+    },
+    {
+      "start": 855.0999999999999,
+      "end": 869.3199999999999,
+      "text": "This winter has proved that that is not necessarily the case because we have seen, as I said, a dramatic increase in the number of the cardholders actually using these cards and using them on a regular basis and multiple times."
+    },
+    {
+      "start": 869.3199999999999,
+      "end": 880.42,
+      "text": "One of the things that we have also seen is an increase in health and safety issues at WeGo Central."
+    },
+    {
+      "start": 880.42,
+      "end": 888.76,
+      "text": "Both overcrowding in our waiting rooms early in the mornings, sometimes before the shelters, the emergency shelter closes."
+    },
+    {
+      "start": 888.76,
+      "end": 893.92,
+      "text": "We have been in talks with the Homeless Impact Division about that."
+    },
+    {
+      "start": 893.92,
+      "end": 911.92,
+      "text": "There have there's been some serious health and safety issues, including threats of violence, feces and urine in the in the waiting rooms and around WeGo Central locks being kicked off the bathroom doors."
+    },
+    {
+      "start": 911.92,
+      "end": 924.92,
+      "text": "And a variety of other incidents that are truly concerning, not only for the safety of our regular passengers, but for anyone who is traveling through WeGo Central."
+    },
+    {
+      "start": 924.92,
+      "end": 937.92,
+      "text": "Just wanted to make sure that y'all are aware that we are looking to resolve that and hopefully as the winter weather comes to an end, that will reduce in scope."
+    },
+    {
+      "start": 937.92,
+      "end": 944.92,
+      "text": "But I think it's important that you all know that it has become much more serious than just overcrowding in the waiting rooms."
+    },
+    {
+      "start": 944.92,
+      "end": 945.92,
+      "text": "in the waiting rooms."
+    },
+    {
+      "start": 945.92,
+      "end": 946.92,
+      "text": "Hey, Miriam."
+    },
+    {
+      "start": 946.92,
+      "end": 947.92,
+      "text": "Hey, Miriam."
+    },
+    {
+      "start": 947.92,
+      "end": 956.92,
+      "text": "Was there, is there any, could you all identify any pattern to the health and safety concerns?"
+    },
+    {
+      "start": 956.92,
+      "end": 959.92,
+      "text": "Was it particularly cold nights?"
+    },
+    {
+      "start": 959.92,
+      "end": 964.92,
+      "text": "Is it after a long string of cold nights?"
+    },
+    {
+      "start": 964.92,
+      "end": 970.92,
+      "text": "Is there, is there something that would indicate maybe more significant or why the, why this is a problem?"
+    },
+    {
+      "start": 970.92,
+      "end": 972.92,
+      "text": "That's a, that's a good question."
+    },
+    {
+      "start": 972.92,
+      "end": 995.92,
+      "text": "I think that from what, from what I've heard, is that, and, and from the reports that I've, that I've seen, it seems like there is a gap between when maybe breakfast programs begin, when after dinner programs end, we're having some pretty serious problems late at night."
+    },
+    {
+      "start": 995.92,
+      "end": 1008.92,
+      "text": "Um, and so that's, you know, in the evenings after, after the shelter may be open, but it's not just on emergency cold weather nights at this point."
+    },
+    {
+      "start": 1008.92,
+      "end": 1024.92,
+      "text": "And I think part of that is because, and this is just me thinking this out loud, part of it may be because of the, um, the new free rides that we provided on, um, Metro overflow shelter nights."
+    },
+    {
+      "start": 1024.92,
+      "end": 1034.92,
+      "text": "That, that we go central has been seen as the place to go, but it is, it is a place of business and we do have a code customer code of conduct."
+    },
+    {
+      "start": 1034.92,
+      "end": 1039.92,
+      "text": "People can't wait more than the time that their next available bus arrives."
+    },
+    {
+      "start": 1039.92,
+      "end": 1046.92,
+      "text": "Um, but we do have folks that we've had to remind that they can't stay for hours at, at the bus station as well."
+    },
+    {
+      "start": 1046.92,
+      "end": 1061.92,
+      "text": "Well, we definitely appreciate how we go has stepped up and as they always do every season and, and come very creative and welcoming of our guests and, uh, coming to quick solutions."
+    },
+    {
+      "start": 1061.92,
+      "end": 1066.92,
+      "text": "Um, and hopefully that continues to be funded and that continues to, um, happen."
+    },
+    {
+      "start": 1066.92,
+      "end": 1069.92,
+      "text": "Um, any other updates about shelters?"
+    },
+    {
+      "start": 1069.92,
+      "end": 1070.92,
+      "text": "Shelter processes."
+    },
+    {
+      "start": 1070.92,
+      "end": 1075.92,
+      "text": "The Salvation Army also chipped in a little bit, um, this season."
+    },
+    {
+      "start": 1075.92,
+      "end": 1080.92,
+      "text": "Um, we were asked some nights when it got very, very cold and, um, the shelters reached capacity."
+    },
+    {
+      "start": 1080.92,
+      "end": 1085.92,
+      "text": "Uh, the overflow shelter reached, um, its capacity, which is about 200 when they start getting nervous."
+    },
+    {
+      "start": 1085.92,
+      "end": 1087.92,
+      "text": "Um, they call on us to do that."
+    },
+    {
+      "start": 1087.92,
+      "end": 1089.92,
+      "text": "I think we did that five nights this season."
+    },
+    {
+      "start": 1089.92,
+      "end": 1092.92,
+      "text": "Um, we're still available to do that for the rest of the season."
+    },
+    {
+      "start": 1092.92,
+      "end": 1096.92,
+      "text": "Hopefully we're done with cold weather, but, uh, just in case."
+    },
+    {
+      "start": 1096.92,
+      "end": 1101.92,
+      "text": "Um, and so, um, that has been something that was different for us, something that we've never done before."
+    },
+    {
+      "start": 1101.92,
+      "end": 1106.92,
+      "text": "Um, we were happy to do it, but it did come with some challenges, um, in terms of our staffing."
+    },
+    {
+      "start": 1106.92,
+      "end": 1108.92,
+      "text": "Just like anywhere else, we hadn't planned for that."
+    },
+    {
+      "start": 1108.92,
+      "end": 1113.92,
+      "text": "Um, we were also called in on some weekends and, uh, times that we weren't normally working."
+    },
+    {
+      "start": 1113.92,
+      "end": 1117.92,
+      "text": "Um, and so I want to thank the Salvation Army staff for that as well."
+    },
+    {
+      "start": 1117.92,
+      "end": 1119.92,
+      "text": "Um, and for making things possible."
+    },
+    {
+      "start": 1119.92,
+      "end": 1123.92,
+      "text": "We also made use of volunteers and a lot of your organizations helped us to recruit some volunteers."
+    },
+    {
+      "start": 1123.92,
+      "end": 1124.92,
+      "text": "So I appreciate that."
+    },
+    {
+      "start": 1124.92,
+      "end": 1125.92,
+      "text": "That was very essential."
+    },
+    {
+      "start": 1125.92,
+      "end": 1134.92,
+      "text": "Um, and so, I know one of the discussions going forward is whether or not the cold weather sheltering should be, um, um, service provided by Metro."
+    },
+    {
+      "start": 1134.92,
+      "end": 1138.92,
+      "text": "Or a service just funded by Metro and provided by another organization."
+    },
+    {
+      "start": 1138.92,
+      "end": 1141.92,
+      "text": "So that's just something to be thinking about."
+    },
+    {
+      "start": 1141.92,
+      "end": 1144.92,
+      "text": "And I think that'll move us on to the next agenda item."
+    },
+    {
+      "start": 1144.92,
+      "end": 1146.92,
+      "text": "If no one has any, yeah, go ahead."
+    },
+    {
+      "start": 1146.92,
+      "end": 1149.92,
+      "text": "I turned off."
+    },
+    {
+      "start": 1149.92,
+      "end": 1151.92,
+      "text": "You turned me off Jim?"
+    },
+    {
+      "start": 1151.92,
+      "end": 1152.92,
+      "text": "I didn't turn you off."
+    },
+    {
+      "start": 1152.92,
+      "end": 1155.92,
+      "text": "I, I, I, I have complete control over your microphone."
+    },
+    {
+      "start": 1155.92,
+      "end": 1157.92,
+      "text": "Oh my goodness."
+    },
+    {
+      "start": 1157.92,
+      "end": 1164.92,
+      "text": "Jesse, but before we move on, I just really want to thank Salvation Army for stepping up during that time."
+    },
+    {
+      "start": 1164.92,
+      "end": 1175.92,
+      "text": "Because it's not lost on us the difference that that makes for those of us that are nearing capacity."
+    },
+    {
+      "start": 1175.92,
+      "end": 1184.92,
+      "text": "Um, when you decompress our numbers like that and give people options, it really makes a huge difference."
+    },
+    {
+      "start": 1184.92,
+      "end": 1189.92,
+      "text": "And so I hope that you will consider doing that in the future."
+    },
+    {
+      "start": 1189.92,
+      "end": 1204.92,
+      "text": "And I think it really speaks to the need that we've talked about before to scatter shelter sites around both geographically and with different options for people."
+    },
+    {
+      "start": 1204.92,
+      "end": 1215.92,
+      "text": "Um, because frankly, and this doesn't hurt my feelings at all, but people get tired of the mission and the crowds and they want other options."
+    },
+    {
+      "start": 1215.92,
+      "end": 1221.92,
+      "text": "And so when you do that, even on those few nights, it makes a huge difference to us."
+    },
+    {
+      "start": 1221.92,
+      "end": 1223.92,
+      "text": "And so we really appreciate it."
+    },
+    {
+      "start": 1223.92,
+      "end": 1227.92,
+      "text": "I wanted to thank Salvation Army for stepping up."
+    },
+    {
+      "start": 1227.92,
+      "end": 1228.92,
+      "text": "Thank you."
+    },
+    {
+      "start": 1228.92,
+      "end": 1232.92,
+      "text": "Um, I know, uh, one other organization, uh, to call out."
+    },
+    {
+      "start": 1232.92,
+      "end": 1233.92,
+      "text": "They're not, he's not here today either."
+    },
+    {
+      "start": 1233.92,
+      "end": 1234.92,
+      "text": "It was Launchpad."
+    },
+    {
+      "start": 1234.92,
+      "end": 1244.92,
+      "text": "Um, I know they weren't able to take a lot of people and they weren't able to take them so much on an emergency basis like they used to, but they were able to provide for some of those people that feel uncomfortable in shelters, um, an alternative."
+    },
+    {
+      "start": 1244.92,
+      "end": 1246.92,
+      "text": "And that's been really essential this season."
+    },
+    {
+      "start": 1246.92,
+      "end": 1248.92,
+      "text": "Um, do you have your hand raised?"
+    },
+    {
+      "start": 1248.92,
+      "end": 1249.92,
+      "text": "Yeah, go ahead."
+    },
+    {
+      "start": 1249.92,
+      "end": 1250.92,
+      "text": "Can I ask one question?"
+    },
+    {
+      "start": 1250.92,
+      "end": 1258.92,
+      "text": "Or Amanda, which is in terms of room in the inn, what were your sort of average numbers this season in terms of the number of folks you all were sheltering?"
+    },
+    {
+      "start": 1258.92,
+      "end": 1259.92,
+      "text": "Yeah, sure."
+    },
+    {
+      "start": 1259.92,
+      "end": 1270.92,
+      "text": "Um, so on an average night, about 80 individuals, um, that is very much just Amanda looking in her head at our forecast of numbers."
+    },
+    {
+      "start": 1270.92,
+      "end": 1280.92,
+      "text": "And so not, not definite, but I will tell you, Jay, there were some evenings when we had 54, the space for 54 individuals."
+    },
+    {
+      "start": 1280.92,
+      "end": 1284.92,
+      "text": "And then on a Monday and space for 154 on a Friday."
+    },
+    {
+      "start": 1284.92,
+      "end": 1289.92,
+      "text": "That variation was, it was too extreme for our participants."
+    },
+    {
+      "start": 1289.92,
+      "end": 1297.92,
+      "text": "And so throughout the year, we have had to adjust how people enter into the system, which is also difficult to navigate."
+    },
+    {
+      "start": 1297.92,
+      "end": 1305.92,
+      "text": "Uh, when a system changes one, you've done a system, some of these gentlemen for 30 years and it changes on you because of a pandemic."
+    },
+    {
+      "start": 1305.92,
+      "end": 1312.92,
+      "text": "But the fact that we've had to shift throughout the season and we've had to come up with more creative ways to get people back into the system."
+    },
+    {
+      "start": 1312.92,
+      "end": 1320.92,
+      "text": "Um, because to make people feel safe, we also had to truly turn this into a program."
+    },
+    {
+      "start": 1320.92,
+      "end": 1321.92,
+      "text": "Right."
+    },
+    {
+      "start": 1321.92,
+      "end": 1326.92,
+      "text": "Um, which is difficult for us because it is meant to be kind of, we've always referred to it kind of as a release valve for the mission."
+    },
+    {
+      "start": 1326.92,
+      "end": 1328.92,
+      "text": "I mean, always during cold and flu season, right?"
+    },
+    {
+      "start": 1328.92,
+      "end": 1334.92,
+      "text": "Um, difficult to open the floodgates when you don't have that capacity."
+    },
+    {
+      "start": 1334.92,
+      "end": 1349.92,
+      "text": "So what I'm hearing, I just want to make sure I'm clear on this is, is that in terms of emergency cold weather sheltering on any given night, we're looking at probably sheltering certainly on the ones where the emergency weather shelter opens up sales salvation army."
+    },
+    {
+      "start": 1349.92,
+      "end": 1354.92,
+      "text": "A thousand plus people that we're trying to provide shelter for."
+    },
+    {
+      "start": 1354.92,
+      "end": 1358.92,
+      "text": "Yeah, there were some nights I think that it even got up to about 1200."
+    },
+    {
+      "start": 1358.92,
+      "end": 1359.92,
+      "text": "Okay."
+    },
+    {
+      "start": 1359.92,
+      "end": 1360.92,
+      "text": "Thanks."
+    },
+    {
+      "start": 1360.92,
+      "end": 1361.92,
+      "text": "Yeah."
+    },
+    {
+      "start": 1361.92,
+      "end": 1366.92,
+      "text": "Um, I know you're just got walked in the room and, but you're probably used to being on the spot in this room."
+    },
+    {
+      "start": 1366.92,
+      "end": 1370.92,
+      "text": "Um, do you want to give an update on, um, exactly."
+    },
+    {
+      "start": 1370.92,
+      "end": 1373.92,
+      "text": "Do you want to give an update on the cold weather shelter?"
+    },
+    {
+      "start": 1373.92,
+      "end": 1375.92,
+      "text": "How the season went?"
+    },
+    {
+      "start": 1375.92,
+      "end": 1382.92,
+      "text": "Got me."
+    },
+    {
+      "start": 1382.92,
+      "end": 1383.92,
+      "text": "Okay."
+    },
+    {
+      "start": 1383.92,
+      "end": 1386.92,
+      "text": "Uh, this year went fantastically well."
+    },
+    {
+      "start": 1386.92,
+      "end": 1395.92,
+      "text": "Uh, we reached out to salvation army, as you all know, and developed a partnership there in an emergency type situation."
+    },
+    {
+      "start": 1395.92,
+      "end": 1403.92,
+      "text": "And what we found on that, and I think Jesse would agree with me on that is when the shelter,"
+    },
+    {
+      "start": 1403.92,
+      "end": 1413.92,
+      "text": "when we had multiple nights of almost 20 degrees or below is when we were really getting taxed that 28 degree."
+    },
+    {
+      "start": 1413.92,
+      "end": 1419.92,
+      "text": "Mark was where Metro overflow shelter could handle the numbers quite well."
+    },
+    {
+      "start": 1419.92,
+      "end": 1424.92,
+      "text": "Uh, but it was those consistent nights in a row that, uh, where we would need help."
+    },
+    {
+      "start": 1424.92,
+      "end": 1431.92,
+      "text": "We also, uh, discovered that within that facility that we have, which was different than, you know, the fairgrounds,"
+    },
+    {
+      "start": 1431.92,
+      "end": 1438.92,
+      "text": "that the number, uh, there was about 250 is where we reached our staffing capacity."
+    },
+    {
+      "start": 1438.92,
+      "end": 1441.92,
+      "text": "Maybe not the number capacity, but the staffing capacity."
+    },
+    {
+      "start": 1441.92,
+      "end": 1447.92,
+      "text": "Uh, cause I didn't want it to become too convoluted, uh, to where people were not getting served."
+    },
+    {
+      "start": 1447.92,
+      "end": 1457.92,
+      "text": "So, 250 and that's where we started reaching out to, uh, uh, Jesse and the Salvation Army to allow us to use their gymnasium as a partnership."
+    },
+    {
+      "start": 1457.92,
+      "end": 1458.92,
+      "text": "And it worked out pretty good."
+    },
+    {
+      "start": 1458.92,
+      "end": 1464.92,
+      "text": "So, um, I think the 1,000 to 1,200 number is a good one to base things on for the future."
+    },
+    {
+      "start": 1464.92,
+      "end": 1470.92,
+      "text": "When we're looking at those consistent nights of cold weather, we averaged, you know, 200."
+    },
+    {
+      "start": 1470.92,
+      "end": 1477.92,
+      "text": "I think the number is, but here on the last spurt that we had, we were only, I think our top night was 140."
+    },
+    {
+      "start": 1477.92,
+      "end": 1480.92,
+      "text": "And that's why we didn't have to expand out."
+    },
+    {
+      "start": 1480.92,
+      "end": 1482.92,
+      "text": "So I feel like it went really well."
+    },
+    {
+      "start": 1482.92,
+      "end": 1496.92,
+      "text": "Um, we did, um, some studies with this committee or listened to that and realized that, um, an on-call mental health was essential."
+    },
+    {
+      "start": 1496.92,
+      "end": 1507.92,
+      "text": "Uh, we were seeing a younger crowd this year and, um, substance abuse and things of that nature were more rampant for us this year."
+    },
+    {
+      "start": 1507.92,
+      "end": 1512.92,
+      "text": "So de-escalation methods and trainings were re, you know, uh, reissued out to staff."
+    },
+    {
+      "start": 1512.92,
+      "end": 1522.92,
+      "text": "And then also looking at the, um, um, the fact that we needed an on-call or even an on-site, uh, representation for mental health."
+    },
+    {
+      "start": 1522.92,
+      "end": 1527.92,
+      "text": "So I think that was one of the learning, uh, one of the big learning of this, of this season."
+    },
+    {
+      "start": 1527.92,
+      "end": 1529.92,
+      "text": "Uh, what else did we touch on?"
+    },
+    {
+      "start": 1529.92,
+      "end": 1530.92,
+      "text": "Jesse, anything else there?"
+    },
+    {
+      "start": 1530.92,
+      "end": 1531.92,
+      "text": "Um, I don't think so."
+    },
+    {
+      "start": 1531.92,
+      "end": 1535.92,
+      "text": "I know we talked a little bit last meeting and I didn't know if people still wanted to talk about it."
+    },
+    {
+      "start": 1535.92,
+      "end": 1542.92,
+      "text": "Um, the, um, what happens when somebody is acting out of character and may not be appropriate to stay in the cold weather shelter?"
+    },
+    {
+      "start": 1542.92,
+      "end": 1545.92,
+      "text": "How do you make that determination and how has that gone this year?"
+    },
+    {
+      "start": 1545.92,
+      "end": 1557.92,
+      "text": "Right. So, uh, the other, uh, piece of that, Jesse, is that we also implemented, uh, more of a, um, a room to be able to de-escalate somebody"
+    },
+    {
+      "start": 1557.92,
+      "end": 1560.92,
+      "text": "instead of trying to de-escalate someone in a crowd, right?"
+    },
+    {
+      "start": 1560.92,
+      "end": 1567.92,
+      "text": "Which, you know, even me as a person, if somebody's confronting me in a crowd, you know, it's just different than doing a one-on-one."
+    },
+    {
+      "start": 1567.92,
+      "end": 1570.92,
+      "text": "So we, we realized that we needed a, a room for that."
+    },
+    {
+      "start": 1570.92,
+      "end": 1579.92,
+      "text": "And then, uh, Renee and staff, um, receiving, uh, mental health de-escalation exercises."
+    },
+    {
+      "start": 1579.92,
+      "end": 1583.92,
+      "text": "So we realized that, that this year that was more prevalent and then we needed to do, revisit that."
+    },
+    {
+      "start": 1583.92,
+      "end": 1586.92,
+      "text": "So that is, uh, in our operational process now."
+    },
+    {
+      "start": 1586.92,
+      "end": 1590.92,
+      "text": "Um, I can't go any further details because it's still being developed."
+    },
+    {
+      "start": 1590.92,
+      "end": 1591.92,
+      "text": "Gotcha."
+    },
+    {
+      "start": 1591.92,
+      "end": 1595.92,
+      "text": "Yeah, I know that's something, I didn't know if anybody wanted to, to continue that conversation or say anything."
+    },
+    {
+      "start": 1595.92,
+      "end": 1609.92,
+      "text": "I know that the, um, Standards of Care Committee did get our recommendations about, um, some changes to, um, what would be the decision point on whether somebody would be banned or asked not to return to the cold weather shelter."
+    },
+    {
+      "start": 1609.92,
+      "end": 1614.92,
+      "text": "And so they're going to be looking at that and, and maybe developing that into the emergency shelter standards of care."
+    },
+    {
+      "start": 1614.92,
+      "end": 1620.92,
+      "text": "So that there's a standard practice, um, for funded agencies including the Metro Overflow Shelter, um, going forward."
+    },
+    {
+      "start": 1620.92,
+      "end": 1622.92,
+      "text": "I don't know if anybody had anything they wanted to say on that."
+    },
+    {
+      "start": 1622.92,
+      "end": 1623.92,
+      "text": "I do."
+    },
+    {
+      "start": 1623.92,
+      "end": 1624.92,
+      "text": "Okay, go ahead."
+    },
+    {
+      "start": 1624.92,
+      "end": 1628.92,
+      "text": "I'd like to talk about that de-escalation program for just a second."
+    },
+    {
+      "start": 1628.92,
+      "end": 1641.92,
+      "text": "Um, you might remember a conversation we had a year or more ago about, uh, in, in the shelter committee, maybe even longer than that, about de-escalation programs."
+    },
+    {
+      "start": 1641.92,
+      "end": 1654.92,
+      "text": "And at the mission we used to use a, a format called, uh, Handle with Care, which is typically used mostly, I mean,"
+    },
+    {
+      "start": 1654.92,
+      "end": 1658.92,
+      "text": "I, I should say used by law enforcement correctional facilities."
+    },
+    {
+      "start": 1658.92,
+      "end": 1669.92,
+      "text": "People with, um, a little higher acuity usually and, um, more need to restrain than we do at the shelter."
+    },
+    {
+      "start": 1669.92,
+      "end": 1676.92,
+      "text": "And we, we were really trying to get away from ever having to restrain anybody."
+    },
+    {
+      "start": 1676.92,
+      "end": 1681.92,
+      "text": "I don't think that our shelter staff should ever have to pin somebody to the ground."
+    },
+    {
+      "start": 1681.92,
+      "end": 1696.92,
+      "text": "Although, I will say that sometimes it happens because of the volatility of people and if they're really out of control. Um, we have had situations where we have had to restrain."
+    },
+    {
+      "start": 1696.92,
+      "end": 1705.92,
+      "text": "So we moved away from Handle with Care and to a program called CPI, Crisis Prevention Intervention."
+    },
+    {
+      "start": 1705.92,
+      "end": 1715.92,
+      "text": "I highly recommend it for your team. Um, and in fact we have two, we trained, did a train the trainer program."
+    },
+    {
+      "start": 1715.92,
+      "end": 1726.92,
+      "text": "Um, and we have two staff that teach that on a consistent rotation, um, bi-monthly to our new team members."
+    },
+    {
+      "start": 1726.92,
+      "end": 1737.92,
+      "text": "Um, but if you can implement something and, you know, I think it's good for your staff even not during winter shelter season."
+    },
+    {
+      "start": 1737.92,
+      "end": 1751.92,
+      "text": "Uh, especially, you missed the conversation that I was having earlier about, um, the, kind of the toxic drug culture that we're experiencing right now."
+    },
+    {
+      "start": 1751.92,
+      "end": 1759.92,
+      "text": "And how people are in psychosis in a, in a way that we haven't seen before."
+    },
+    {
+      "start": 1759.92,
+      "end": 1777.92,
+      "text": "Um, so, and, you know, talking somebody who's in a psychotic episode down is very, very different than talking somebody down if they're just angry at you because you didn't give them what they wanted."
+    },
+    {
+      "start": 1777.92,
+      "end": 1784.92,
+      "text": "Right? Um, so we're, we're kind of always refining that process for us."
+    },
+    {
+      "start": 1784.92,
+      "end": 1790.92,
+      "text": "But I do highly recommend that you do that off season with your staff."
+    },
+    {
+      "start": 1790.92,
+      "end": 1803.92,
+      "text": "And if you want any information or if anybody wants any information on CPI and how that's worked for us, it's been a really wonderful program for our staff."
+    },
+    {
+      "start": 1803.92,
+      "end": 1804.92,
+      "text": "Thank you."
+    },
+    {
+      "start": 1804.92,
+      "end": 1805.92,
+      "text": "CPI?"
+    },
+    {
+      "start": 1805.92,
+      "end": 1809.92,
+      "text": "Crisis Prevention Intervention."
+    },
+    {
+      "start": 1809.92,
+      "end": 1810.92,
+      "text": "Thank you."
+    },
+    {
+      "start": 1810.92,
+      "end": 1813.92,
+      "text": "Hey, um, Jay, I got a quick question."
+    },
+    {
+      "start": 1813.92,
+      "end": 1819.92,
+      "text": "Um, you were going over, um, I think some of the numbers and things like that."
+    },
+    {
+      "start": 1819.92,
+      "end": 1827.92,
+      "text": "Do you have, um, at some point, are you going to be able to put together kind of the overall numbers?"
+    },
+    {
+      "start": 1827.92,
+      "end": 1831.92,
+      "text": "I know you have the numbers of people who were coming into the overflow shelter."
+    },
+    {
+      "start": 1831.92,
+      "end": 1840.92,
+      "text": "Um, do you, are, is Metro Social Services going to be able to come up with kind of an overall, uh, assessment of how much it cost?"
+    },
+    {
+      "start": 1840.92,
+      "end": 1850.92,
+      "text": "You know, the, the nightly cost, daily cost, overall cost for purposes of trying to determine if we, what we need in the budget."
+    },
+    {
+      "start": 1850.92,
+      "end": 1860.92,
+      "text": "Correct. Yes. And they, they will. They're tallying those numbers. We were waiting until the end of the month. That's when the co-wether shelter actually, officially, the season closes at the end of the month."
+    },
+    {
+      "start": 1860.92,
+      "end": 1866.92,
+      "text": "And we were going to tally that up, uh, and probably be able to have that for you by the next, uh, shelter committee meeting."
+    },
+    {
+      "start": 1866.92,
+      "end": 1870.92,
+      "text": "Okay. If that's okay. Uh, I couldn't give you a ballpark on it right now. I'd be guessing."
+    },
+    {
+      "start": 1870.92,
+      "end": 1878.92,
+      "text": "So I know we were well above 4,500 beds and, uh, you know, man hours and thing or staff hours and all that."
+    },
+    {
+      "start": 1878.92,
+      "end": 1899.92,
+      "text": "Um, the other thing is, um, the RFP should be out. Um, and I will double check that for everybody to take over, uh, to contract out the emergency shelter piece of this, not just the co-weather shelter, but the whole entitled, uh, category of emergency sheltering."
+    },
+    {
+      "start": 1899.92,
+      "end": 1905.92,
+      "text": "So that RFP is out and out for bid from what I understand, if I need to correct that, I will."
+    },
+    {
+      "start": 1905.92,
+      "end": 1913.92,
+      "text": "But it is, if it's not out yet, it's getting out this week because we sent it to finance to send out, to get the bids on, to do this year round for us."
+    },
+    {
+      "start": 1913.92,
+      "end": 1922.92,
+      "text": "So we can explore and open into those times of, you know, tornadoes, floods, all the emergencies that we face here in Nashville."
+    },
+    {
+      "start": 1922.92,
+      "end": 1934.92,
+      "text": "And, um, we realized that, uh, to be able to operate that, it has to be contracted out. Staffing, Metro staffing alone cannot, cannot handle the load."
+    },
+    {
+      "start": 1934.92,
+      "end": 1940.92,
+      "text": "So if you don't have the final budget numbers yet, what did y'all base that on a per night?"
+    },
+    {
+      "start": 1940.92,
+      "end": 1942.92,
+      "text": "Yeah. Per person."
+    },
+    {
+      "start": 1942.92,
+      "end": 1944.92,
+      "text": "That's what we did. A per night."
+    },
+    {
+      "start": 1944.92,
+      "end": 1952.92,
+      "text": "What, what it costs us per night around, um, $3,500, 28 to $3,500 a night is what it costs."
+    },
+    {
+      "start": 1952.92,
+      "end": 1955.92,
+      "text": "Food, staff, all of it."
+    },
+    {
+      "start": 1955.92,
+      "end": 1960.92,
+      "text": "Um, for what number of people?"
+    },
+    {
+      "start": 1960.92,
+      "end": 1962.92,
+      "text": "Well, that's up to $250."
+    },
+    {
+      "start": 1962.92,
+      "end": 1963.92,
+      "text": "Wow."
+    },
+    {
+      "start": 1963.92,
+      "end": 1964.92,
+      "text": "Okay."
+    },
+    {
+      "start": 1964.92,
+      "end": 1965.92,
+      "text": "What was the cost?"
+    },
+    {
+      "start": 1965.92,
+      "end": 1968.92,
+      "text": "Good luck getting somebody to respond to that RFP."
+    },
+    {
+      "start": 1968.92,
+      "end": 1969.92,
+      "text": "Right."
+    },
+    {
+      "start": 1969.92,
+      "end": 1970.92,
+      "text": "But."
+    },
+    {
+      "start": 1970.92,
+      "end": 1974.92,
+      "text": "Right. Well, I know, we know it's going to be more, uh, than that, but that's what our average costs were."
+    },
+    {
+      "start": 1974.92,
+      "end": 1976.92,
+      "text": "Jay, can you repeat the cost?"
+    },
+    {
+      "start": 1976.92,
+      "end": 1977.92,
+      "text": "What, what are you, what are you?"
+    },
+    {
+      "start": 1977.92,
+      "end": 1980.92,
+      "text": "Around $28 to $3,500 a night."
+    },
+    {
+      "start": 1980.92,
+      "end": 1985.92,
+      "text": "Is that including the, the shelter itself?"
+    },
+    {
+      "start": 1985.92,
+      "end": 1986.92,
+      "text": "Is there a cost to that?"
+    },
+    {
+      "start": 1986.92,
+      "end": 1990.92,
+      "text": "No, we don't have a, we don't have a cost of that because it's a Metro building."
+    },
+    {
+      "start": 1990.92,
+      "end": 1996.92,
+      "text": "So we know it's going to be, if a company comes in with, and they have to have their own building, we know that it's going to be exponentially higher."
+    },
+    {
+      "start": 1996.92,
+      "end": 1997.92,
+      "text": "Okay."
+    },
+    {
+      "start": 1997.92,
+      "end": 1999.92,
+      "text": "Than that, cause they're going to have, they're going to have the building costs."
+    },
+    {
+      "start": 1999.92,
+      "end": 2000.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2000.92,
+      "end": 2001.92,
+      "text": "Right."
+    },
+    {
+      "start": 2001.92,
+      "end": 2004.92,
+      "text": "So for me to answer fully, I can't."
+    },
+    {
+      "start": 2004.92,
+      "end": 2005.92,
+      "text": "Yeah."
+    },
+    {
+      "start": 2005.92,
+      "end": 2009.92,
+      "text": "Because I'll have all those numbers for you for next month."
+    },
+    {
+      "start": 2009.92,
+      "end": 2012.92,
+      "text": "But, um, uh, right now that's what we were basing it on."
+    },
+    {
+      "start": 2012.92,
+      "end": 2013.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2013.92,
+      "end": 2018.92,
+      "text": "Are you going to be bringing us to the, um, on the 14th of the 7th?"
+    },
+    {
+      "start": 2018.92,
+      "end": 2020.92,
+      "text": "Yeah, I'm, that, I'm, yes, that's what I'm shooting for."
+    },
+    {
+      "start": 2020.92,
+      "end": 2021.92,
+      "text": "Yep."
+    },
+    {
+      "start": 2021.92,
+      "end": 2023.92,
+      "text": "For, for the year."
+    },
+    {
+      "start": 2023.92,
+      "end": 2024.92,
+      "text": "Right."
+    },
+    {
+      "start": 2024.92,
+      "end": 2031.92,
+      "text": "Cause we shut down the last day of this month and then we'll tally those records and try to have that produced, uh, for you here."
+    },
+    {
+      "start": 2031.92,
+      "end": 2034.92,
+      "text": "So we can review them and talk about exactly that."
+    },
+    {
+      "start": 2034.92,
+      "end": 2037.92,
+      "text": "So, but the RFP should be out there."
+    },
+    {
+      "start": 2037.92,
+      "end": 2040.92,
+      "text": "And, uh, director Pratt will have more specific numbers."
+    },
+    {
+      "start": 2040.92,
+      "end": 2047.92,
+      "text": "And it should be considered that, you know, we changed the threshold temperature, you know, fairly late season too."
+    },
+    {
+      "start": 2047.92,
+      "end": 2050.92,
+      "text": "So it's all that carry on to all that will be a part of that."
+    },
+    {
+      "start": 2050.92,
+      "end": 2057.92,
+      "text": "So part of the recommendations of the charrette, this committee and the open meetings that we've had, we've, you know, taken those in consideration."
+    },
+    {
+      "start": 2057.92,
+      "end": 2061.92,
+      "text": "That's why I'm saying here on this floor recorded, right?"
+    },
+    {
+      "start": 2061.92,
+      "end": 2065.92,
+      "text": "Is the 32 degree threshold for Metro."
+    },
+    {
+      "start": 2065.92,
+      "end": 2067.92,
+      "text": "It's almost for Metro to staff."
+    },
+    {
+      "start": 2067.92,
+      "end": 2070.92,
+      "text": "It is almost impossible because we're taking away from other services, right?"
+    },
+    {
+      "start": 2070.92,
+      "end": 2076.92,
+      "text": "Critical services because social services staffs, uh, the co weather shelter."
+    },
+    {
+      "start": 2076.92,
+      "end": 2086.92,
+      "text": "And when you do the numbers, when I call the national weather service and get those average numbers for that cold weather season, you know, you're looking at 28 degrees."
+    },
+    {
+      "start": 2086.92,
+      "end": 2089.92,
+      "text": "We're only open an average of 25 nights."
+    },
+    {
+      "start": 2089.92,
+      "end": 2092.92,
+      "text": "When you go to 32 degrees, it's 51 nights."
+    },
+    {
+      "start": 2092.92,
+      "end": 2093.92,
+      "text": "Yeah."
+    },
+    {
+      "start": 2093.92,
+      "end": 2096.92,
+      "text": "So the staffing doubles and that demand."
+    },
+    {
+      "start": 2096.92,
+      "end": 2107.92,
+      "text": "So we found through that, that we would have to contract out to meet those needs that the, that we're wanting as a community to 32 degrees emergency sheltering."
+    },
+    {
+      "start": 2107.92,
+      "end": 2109.92,
+      "text": "We were have to contract that out."
+    },
+    {
+      "start": 2109.92,
+      "end": 2110.92,
+      "text": "Yeah."
+    },
+    {
+      "start": 2110.92,
+      "end": 2112.92,
+      "text": "So, uh, go back for just a second."
+    },
+    {
+      "start": 2112.92,
+      "end": 2113.92,
+      "text": "Let me make sure I'm clear."
+    },
+    {
+      "start": 2113.92,
+      "end": 2116.92,
+      "text": "So in the RFP that's gone out."
+    },
+    {
+      "start": 2116.92,
+      "end": 2117.92,
+      "text": "Yeah."
+    },
+    {
+      "start": 2117.92,
+      "end": 2121.92,
+      "text": "Um, do we put a temperature in there?"
+    },
+    {
+      "start": 2121.92,
+      "end": 2122.92,
+      "text": "Do we?"
+    },
+    {
+      "start": 2122.92,
+      "end": 2123.92,
+      "text": "And what is it right now?"
+    },
+    {
+      "start": 2123.92,
+      "end": 2124.92,
+      "text": "32."
+    },
+    {
+      "start": 2124.92,
+      "end": 2125.92,
+      "text": "It is 32."
+    },
+    {
+      "start": 2125.92,
+      "end": 2126.92,
+      "text": "Right."
+    },
+    {
+      "start": 2126.92,
+      "end": 2127.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2127.92,
+      "end": 2133.92,
+      "text": "So if we do it based upon, if we can find somebody to, to, to do this, the idea is that we will open at 32 degrees."
+    },
+    {
+      "start": 2133.92,
+      "end": 2134.92,
+      "text": "Right."
+    },
+    {
+      "start": 2134.92,
+      "end": 2136.92,
+      "text": "And if I'm wrong about that, I will come back and humbly apologize."
+    },
+    {
+      "start": 2136.92,
+      "end": 2141.92,
+      "text": "But that's what I was told that the RFP was going to consist of was that 32 degrees and below."
+    },
+    {
+      "start": 2141.92,
+      "end": 2142.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2142.92,
+      "end": 2144.92,
+      "text": "And we, we, uh, if it's issued, we should be able to see it."
+    },
+    {
+      "start": 2144.92,
+      "end": 2145.92,
+      "text": "Absolutely."
+    },
+    {
+      "start": 2145.92,
+      "end": 2146.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2146.92,
+      "end": 2147.92,
+      "text": "And I, um, but I'm not sure."
+    },
+    {
+      "start": 2147.92,
+      "end": 2150.92,
+      "text": "I was told, I was off last week and I was told the week before that it was going out."
+    },
+    {
+      "start": 2150.92,
+      "end": 2154.92,
+      "text": "So I haven't had a chance to check on that, but it's supposed to be out."
+    },
+    {
+      "start": 2154.92,
+      "end": 2155.92,
+      "text": "And who said you could have a vacation?"
+    },
+    {
+      "start": 2155.92,
+      "end": 2156.92,
+      "text": "I don't know."
+    },
+    {
+      "start": 2156.92,
+      "end": 2157.92,
+      "text": "I just snuck it in."
+    },
+    {
+      "start": 2157.92,
+      "end": 2158.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2158.92,
+      "end": 2162.92,
+      "text": "And then I got one more question for you and then I'll get, uh, then I'll let Jesse go to Miriam."
+    },
+    {
+      "start": 2162.92,
+      "end": 2164.92,
+      "text": "Um, Brick Church Pike?"
+    },
+    {
+      "start": 2164.92,
+      "end": 2165.92,
+      "text": "Yes."
+    },
+    {
+      "start": 2165.92,
+      "end": 2166.92,
+      "text": "The shelter?"
+    },
+    {
+      "start": 2166.92,
+      "end": 2170.92,
+      "text": "Are we still, the plan is to continue to use that?"
+    },
+    {
+      "start": 2170.92,
+      "end": 2176.92,
+      "text": "That is my plan, but I, um, yes, that's up to Metro, right?"
+    },
+    {
+      "start": 2176.92,
+      "end": 2181.92,
+      "text": "So I, uh, we still have to fight that battle to, to land it for permanently."
+    },
+    {
+      "start": 2181.92,
+      "end": 2182.92,
+      "text": "That makes sense."
+    },
+    {
+      "start": 2182.92,
+      "end": 2186.92,
+      "text": "So we just, we only had an, we only had an agreement to use it for a year."
+    },
+    {
+      "start": 2186.92,
+      "end": 2191.92,
+      "text": "Um, and so I don't want to go into all the processes, but that was the initial agreement"
+    },
+    {
+      "start": 2191.92,
+      "end": 2193.92,
+      "text": "and to get us through the co weather season."
+    },
+    {
+      "start": 2193.92,
+      "end": 2198.92,
+      "text": "And then, uh, through some of this, uh, we're in the storm season now starting this week."
+    },
+    {
+      "start": 2198.92,
+      "end": 2200.92,
+      "text": "So, yeah."
+    },
+    {
+      "start": 2200.92,
+      "end": 2206.92,
+      "text": "Uh, I can't, I can't answer that one."
+    },
+    {
+      "start": 2206.92,
+      "end": 2208.92,
+      "text": "I mean, I don't have the knowledge to answer that one."
+    },
+    {
+      "start": 2208.92,
+      "end": 2209.92,
+      "text": "So I'm trying to say,"
+    },
+    {
+      "start": 2209.92,
+      "end": 2211.92,
+      "text": "Theoretically, that's what we're talking about."
+    },
+    {
+      "start": 2211.92,
+      "end": 2212.92,
+      "text": "Yes."
+    },
+    {
+      "start": 2212.92,
+      "end": 2217.92,
+      "text": "Um, Jesse deferred to me first."
+    },
+    {
+      "start": 2217.92,
+      "end": 2222.92,
+      "text": "Oh, Jesse, is it okay if Miriam talks?"
+    },
+    {
+      "start": 2222.92,
+      "end": 2223.92,
+      "text": "Yes, of course."
+    },
+    {
+      "start": 2223.92,
+      "end": 2224.92,
+      "text": "Thank you."
+    },
+    {
+      "start": 2224.92,
+      "end": 2225.92,
+      "text": "Thank you, Jesse."
+    },
+    {
+      "start": 2225.92,
+      "end": 2235.92,
+      "text": "Um, uh, I just want to make sure I, I don't believe that, um, uh, public transit was included"
+    },
+    {
+      "start": 2235.92,
+      "end": 2236.92,
+      "text": "in the RFP."
+    },
+    {
+      "start": 2236.92,
+      "end": 2237.92,
+      "text": "Is that correct?"
+    },
+    {
+      "start": 2237.92,
+      "end": 2239.92,
+      "text": "I haven't seen the RFP."
+    },
+    {
+      "start": 2239.92,
+      "end": 2240.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2240.92,
+      "end": 2241.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2241.92,
+      "end": 2246.92,
+      "text": "Um, when we started talking about this last spring, last summer, I think we're"
+    },
+    {
+      "start": 2246.92,
+      "end": 2257.92,
+      "text": "doing last summer, I believe I'm remembering that 50, um, shelter nights was what we had talked"
+    },
+    {
+      "start": 2257.92,
+      "end": 2268.92,
+      "text": "about initially in terms of, um, having the 28 degrees below open plus whatever other emergency"
+    },
+    {
+      "start": 2268.92,
+      "end": 2271.92,
+      "text": "needs, whether it's heat, flooding, tornado."
+    },
+    {
+      "start": 2271.92,
+      "end": 2281.92,
+      "text": "Um, so that was, um, budgeting 25 cold weather shelter nights plus 25 additional shelter nights."
+    },
+    {
+      "start": 2281.92,
+      "end": 2286.92,
+      "text": "So you said 51 average shelter nights at 32 degrees."
+    },
+    {
+      "start": 2286.92,
+      "end": 2297.92,
+      "text": "So does that mean that we, we being we go need to budget for, um, what is that 76 shelter nights?"
+    },
+    {
+      "start": 2297.92,
+      "end": 2298.92,
+      "text": "Right."
+    },
+    {
+      "start": 2298.92,
+      "end": 2303.92,
+      "text": "Um, if we could defer, if we could defer that until the next meeting, I'm not, uh, I don't"
+    },
+    {
+      "start": 2303.92,
+      "end": 2304.92,
+      "text": "have it with me today."
+    },
+    {
+      "start": 2304.92,
+      "end": 2310.92,
+      "text": "So I would, uh, think that we would make transportation part of the RFP, but I need to go visit that."
+    },
+    {
+      "start": 2310.92,
+      "end": 2311.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2311.92,
+      "end": 2316.92,
+      "text": "So, and, and the reason I'm asking is because I need to put together our budget to give to"
+    },
+    {
+      "start": 2316.92,
+      "end": 2321.92,
+      "text": "y'all and to make sure that Metro has that and, and what, what their needs are."
+    },
+    {
+      "start": 2321.92,
+      "end": 2330.92,
+      "text": "Um, because I believe that would put us over a million dollars of, of what we would be putting"
+    },
+    {
+      "start": 2330.92,
+      "end": 2331.92,
+      "text": "towards that."
+    },
+    {
+      "start": 2331.92,
+      "end": 2332.92,
+      "text": "Yeah."
+    },
+    {
+      "start": 2332.92,
+      "end": 2336.92,
+      "text": "Yeah, I think one of the things that's on the agenda is for us to set up, um, or she's"
+    },
+    {
+      "start": 2336.92,
+      "end": 2340.92,
+      "text": "called it a retreat, Kathy, a chance for us all to kind of come together and talk and hash"
+    },
+    {
+      "start": 2340.92,
+      "end": 2341.92,
+      "text": "out these kinds of details."
+    },
+    {
+      "start": 2341.92,
+      "end": 2345.92,
+      "text": "Um, so that, and some of the challenges that we're facing, we obviously don't want to all"
+    },
+    {
+      "start": 2345.92,
+      "end": 2349.92,
+      "text": "of a sudden throw, we go through a loop where they don't have the money to do what we're asking"
+    },
+    {
+      "start": 2349.92,
+      "end": 2350.92,
+      "text": "them to do."
+    },
+    {
+      "start": 2350.92,
+      "end": 2352.92,
+      "text": "Um, so yeah, absolutely."
+    },
+    {
+      "start": 2352.92,
+      "end": 2355.92,
+      "text": "So, um, I think that's something that we're planning."
+    },
+    {
+      "start": 2355.92,
+      "end": 2361.92,
+      "text": "Um, she said we could potentially do it at our next meeting at that same time, or if y'all"
+    },
+    {
+      "start": 2361.92,
+      "end": 2365.92,
+      "text": "wanted to, we could do two meeting or separate meeting at a different time to kind of just"
+    },
+    {
+      "start": 2365.92,
+      "end": 2370.92,
+      "text": "focus in directly on that and then kind of have the more formal follow up like this, um,"
+    },
+    {
+      "start": 2370.92,
+      "end": 2371.92,
+      "text": "after that."
+    },
+    {
+      "start": 2371.92,
+      "end": 2375.92,
+      "text": "And so she wanted to kind of pitch the idea and get something scheduled for April from"
+    },
+    {
+      "start": 2375.92,
+      "end": 2378.92,
+      "text": "when we want to do that, whether that's during this meeting time or some other time."
+    },
+    {
+      "start": 2378.92,
+      "end": 2381.92,
+      "text": "So I don't know if anybody has any suggestions for that."
+    },
+    {
+      "start": 2381.92,
+      "end": 2386.92,
+      "text": "I don't think I can hear that."
+    },
+    {
+      "start": 2386.92,
+      "end": 2391.92,
+      "text": "I like the idea of being able to hash out some stuff in more than an hour of that for sure."
+    },
+    {
+      "start": 2391.92,
+      "end": 2396.92,
+      "text": "And I love that we're putting a lot of energy into this in March."
+    },
+    {
+      "start": 2396.92,
+      "end": 2400.92,
+      "text": "Want to, you know, celebrate that."
+    },
+    {
+      "start": 2400.92,
+      "end": 2405.92,
+      "text": "So she suggested maybe a half day or even a full day."
+    },
+    {
+      "start": 2405.92,
+      "end": 2406.92,
+      "text": "I don't know."
+    },
+    {
+      "start": 2406.92,
+      "end": 2408.92,
+      "text": "I know all of us are very extremely busy."
+    },
+    {
+      "start": 2408.92,
+      "end": 2411.92,
+      "text": "Um, so I don't know what your ideas for that are."
+    },
+    {
+      "start": 2411.92,
+      "end": 2415.92,
+      "text": "Is our next meeting April 14th, right?"
+    },
+    {
+      "start": 2415.92,
+      "end": 2416.92,
+      "text": "Yes, correct."
+    },
+    {
+      "start": 2416.92,
+      "end": 2431.92,
+      "text": "So if we did do, uh, maybe a three hour meeting instead of a one hour meeting, I would not be opposed to doing it on that day."
+    },
+    {
+      "start": 2431.92,
+      "end": 2436.92,
+      "text": "Um, I, I'd rather not give up another weekend."
+    },
+    {
+      "start": 2436.92,
+      "end": 2444.92,
+      "text": "I've also been committed to the strategic planning for the COC, which is now taking place on Saturdays."
+    },
+    {
+      "start": 2444.92,
+      "end": 2449.92,
+      "text": "And my dogs don't like it when I give up my weekends."
+    },
+    {
+      "start": 2449.92,
+      "end": 2456.92,
+      "text": "So I would rather do that on a Thursday morning, maybe nine to 12 on that day."
+    },
+    {
+      "start": 2456.92,
+      "end": 2462.92,
+      "text": "But if it's any later in April, just so you know, I'm gone for almost two weeks."
+    },
+    {
+      "start": 2462.92,
+      "end": 2463.92,
+      "text": "Not allowed."
+    },
+    {
+      "start": 2463.92,
+      "end": 2465.92,
+      "text": "Yeah, it's happening."
+    },
+    {
+      "start": 2465.92,
+      "end": 2468.92,
+      "text": "I'm taking a European trip and I'll see y'all later."
+    },
+    {
+      "start": 2468.92,
+      "end": 2470.92,
+      "text": "Very do it, Carrie."
+    },
+    {
+      "start": 2470.92,
+      "end": 2473.92,
+      "text": "So I know, yeah, a lot of people already have this time blocked off."
+    },
+    {
+      "start": 2473.92,
+      "end": 2482.92,
+      "text": "Would that be the easiest thing to maybe extend this and make it a little less formal of a, an agreement or a meeting where we can hash things out and get some more of the details?"
+    },
+    {
+      "start": 2482.92,
+      "end": 2483.92,
+      "text": "I know the RFP is new."
+    },
+    {
+      "start": 2483.92,
+      "end": 2485.92,
+      "text": "We're not even 100% sure that it's out yet."
+    },
+    {
+      "start": 2485.92,
+      "end": 2492.92,
+      "text": "Um, and some of the factors, obviously we may not need WeGo as much if, um, a nonprofit is going to provide a space that's closer to outtown."
+    },
+    {
+      "start": 2492.92,
+      "end": 2494.92,
+      "text": "So, um, there's different factors."
+    },
+    {
+      "start": 2494.92,
+      "end": 2497.92,
+      "text": "No, we need WeGo, Miriam, please be there."
+    },
+    {
+      "start": 2497.92,
+      "end": 2498.92,
+      "text": "Yeah, for sure."
+    },
+    {
+      "start": 2498.92,
+      "end": 2502.92,
+      "text": "And that's urgent that you be at that meeting."
+    },
+    {
+      "start": 2502.92,
+      "end": 2503.92,
+      "text": "Definitely."
+    },
+    {
+      "start": 2503.92,
+      "end": 2505.92,
+      "text": "So do WeGo."
+    },
+    {
+      "start": 2505.92,
+      "end": 2507.92,
+      "text": "You guys have been a game changer."
+    },
+    {
+      "start": 2507.92,
+      "end": 2509.92,
+      "text": "So thank you."
+    },
+    {
+      "start": 2509.92,
+      "end": 2511.92,
+      "text": "Agreed and grateful for you guys."
+    },
+    {
+      "start": 2511.92,
+      "end": 2515.92,
+      "text": "Is there any objection to that three hour period on the 14th?"
+    },
+    {
+      "start": 2515.92,
+      "end": 2520.92,
+      "text": "I would love to."
+    },
+    {
+      "start": 2522.92,
+      "end": 2525.92,
+      "text": "Can we go to two meetings?"
+    },
+    {
+      "start": 2525.92,
+      "end": 2526.92,
+      "text": "Yeah."
+    },
+    {
+      "start": 2526.92,
+      "end": 2528.92,
+      "text": "I asked for a whole day is no hard."
+    },
+    {
+      "start": 2528.92,
+      "end": 2529.92,
+      "text": "I'm sorry."
+    },
+    {
+      "start": 2529.92,
+      "end": 2531.92,
+      "text": "I don't mean to yell."
+    },
+    {
+      "start": 2531.92,
+      "end": 2533.92,
+      "text": "So I'll do it this way."
+    },
+    {
+      "start": 2533.92,
+      "end": 2540.92,
+      "text": "Um, we could look at maybe two consecutive meetings instead of, um, an all day or everybody in here has got, you know, other meetings."
+    },
+    {
+      "start": 2540.92,
+      "end": 2541.92,
+      "text": "I know you do too, right?"
+    },
+    {
+      "start": 2541.92,
+      "end": 2546.92,
+      "text": "Uh, so if we could do if, if, if needed, right, if needed."
+    },
+    {
+      "start": 2546.92,
+      "end": 2553.92,
+      "text": "If everybody comes with their recommendations."
+    },
+    {
+      "start": 2553.92,
+      "end": 2554.92,
+      "text": "Is that fine?"
+    },
+    {
+      "start": 2554.92,
+      "end": 2555.92,
+      "text": "Eight to 12?"
+    },
+    {
+      "start": 2555.92,
+      "end": 2556.92,
+      "text": "That's a true half day."
+    },
+    {
+      "start": 2556.92,
+      "end": 2557.92,
+      "text": "Who's bringing snacks?"
+    },
+    {
+      "start": 2557.92,
+      "end": 2558.92,
+      "text": "We can have snacks."
+    },
+    {
+      "start": 2558.92,
+      "end": 2559.92,
+      "text": "I can make sure we have snacks."
+    },
+    {
+      "start": 2559.92,
+      "end": 2560.92,
+      "text": "The Salvation Army has lots of snacks."
+    },
+    {
+      "start": 2560.92,
+      "end": 2561.92,
+      "text": "Perhaps."
+    },
+    {
+      "start": 2561.92,
+      "end": 2562.92,
+      "text": "I'm not going to make them so they should be okay."
+    },
+    {
+      "start": 2562.92,
+      "end": 2563.92,
+      "text": "I'd be happy to host that."
+    },
+    {
+      "start": 2563.92,
+      "end": 2564.92,
+      "text": "Okay."
+    },
+    {
+      "start": 2564.92,
+      "end": 2565.92,
+      "text": "Awesome."
+    },
+    {
+      "start": 2565.92,
+      "end": 2566.92,
+      "text": "So are these meetings needing to be recorded from here on out?"
+    },
+    {
+      "start": 2566.92,
+      "end": 2567.92,
+      "text": "Is that the?"
+    },
+    {
+      "start": 2567.92,
+      "end": 2572.92,
+      "text": "Yeah, I think the shelter committee meetings in general are going to be recorded just to have greater open transparency."
+    },
+    {
+      "start": 2572.92,
+      "end": 2574.92,
+      "text": "That was requested by one of the members."
+    },
+    {
+      "start": 2574.92,
+      "end": 2576.92,
+      "text": "Um, and you know, probably just a good idea."
+    },
+    {
+      "start": 2576.92,
+      "end": 2577.92,
+      "text": "Um, and you know, probably just a good idea."
+    },
+    {
+      "start": 2577.92,
+      "end": 2586.92,
+      "text": "I don't know that this hashing out necessarily is going to take place in a space that needs to be recorded."
+    },
+    {
+      "start": 2586.92,
+      "end": 2590.92,
+      "text": "Um, but that's up to you guys, I suppose."
+    },
+    {
+      "start": 2590.92,
+      "end": 2593.92,
+      "text": "That's off to anybody that would want to watch that."
+    },
+    {
+      "start": 2593.92,
+      "end": 2597.92,
+      "text": "Um, so are these meetings needing to be recorded from here on out?"
+    },
+    {
+      "start": 2597.92,
+      "end": 2598.92,
+      "text": "Is that the?"
+    },
+    {
+      "start": 2598.92,
+      "end": 2604.92,
+      "text": "Yeah, I think the shelter committee meetings in general are going to be recorded just to have greater open transparency."
+    },
+    {
+      "start": 2604.92,
+      "end": 2606.9,
+      "text": "That's off to anybody that would want to watch that."
+    },
+    {
+      "start": 2608.46,
+      "end": 2609.16,
+      "text": "Three hours."
+    },
+    {
+      "start": 2611.2200000000003,
+      "end": 2618.4,
+      "text": "So just so you know, we do have new AV equipment in our boardroom at the mission."
+    },
+    {
+      "start": 2619.86,
+      "end": 2630.48,
+      "text": "If we wanted to set it up on a Zoom call so that anybody could Zoom in to watch it, that's possible, right?"
+    },
+    {
+      "start": 2630.52,
+      "end": 2631.26,
+      "text": "Yeah, we may be able to do that."
+    },
+    {
+      "start": 2631.28,
+      "end": 2633.0,
+      "text": "And we have an owl that I can bring, too."
+    },
+    {
+      "start": 2633.28,
+      "end": 2634.2400000000002,
+      "text": "I don't know if you guys have that."
+    },
+    {
+      "start": 2634.24,
+      "end": 2636.7999999999997,
+      "text": "That might work so that we can record it on Zoom."
+    },
+    {
+      "start": 2637.1,
+      "end": 2637.24,
+      "text": "Yeah."
+    },
+    {
+      "start": 2637.56,
+      "end": 2637.8399999999997,
+      "text": "Yeah."
+    },
+    {
+      "start": 2638.1,
+      "end": 2640.3199999999997,
+      "text": "We can try to make something happen in a different space."
+    },
+    {
+      "start": 2641.18,
+      "end": 2642.9799999999996,
+      "text": "I don't think that's too challenging."
+    },
+    {
+      "start": 2643.4399999999996,
+      "end": 2647.22,
+      "text": "Yeah, that's a comfy space for planning like that."
+    },
+    {
+      "start": 2648.4799999999996,
+      "end": 2657.0,
+      "text": "So I'm hearing, and let me know if this is wrong, we'll stick with probably the three-hour, nine to 12, potentially at the mission on the 14th."
+    },
+    {
+      "start": 2657.7599999999998,
+      "end": 2663.4199999999996,
+      "text": "And if we need more time, then we would allow for that to schedule a follow-up."
+    },
+    {
+      "start": 2664.24,
+      "end": 2665.4199999999996,
+      "text": "If that works."
+    },
+    {
+      "start": 2666.3599999999997,
+      "end": 2667.12,
+      "text": "Does that sound good?"
+    },
+    {
+      "start": 2669.4599999999996,
+      "end": 2669.8599999999997,
+      "text": "Awesome."
+    },
+    {
+      "start": 2672.3799999999997,
+      "end": 2673.72,
+      "text": "Say nine or 8.30."
+    },
+    {
+      "start": 2675.2799999999997,
+      "end": 2676.0,
+      "text": "It doesn't matter."
+    },
+    {
+      "start": 2676.14,
+      "end": 2676.62,
+      "text": "What do you all want?"
+    },
+    {
+      "start": 2676.62,
+      "end": 2681.8399999999997,
+      "text": "I like sleeping in, but you want to do 8.30?"
+    },
+    {
+      "start": 2682.18,
+      "end": 2683.38,
+      "text": "Yeah, since we already scheduled for that."
+    },
+    {
+      "start": 2683.62,
+      "end": 2683.74,
+      "text": "Okay."
+    },
+    {
+      "start": 2684.2599999999998,
+      "end": 2685.2,
+      "text": "8.30 to..."
+    },
+    {
+      "start": 2685.2,
+      "end": 2696.22,
+      "text": "I mean, is it safe to say that if the RFP is out right now that we could possibly have some agencies that have already applied and started that conversation by the next shelter meeting or no?"
+    },
+    {
+      "start": 2696.22,
+      "end": 2698.24,
+      "text": "I don't know when that RFP is due."
+    },
+    {
+      "start": 2698.72,
+      "end": 2702.54,
+      "text": "I would love for anyone to recommend a company also."
+    },
+    {
+      "start": 2702.8399999999997,
+      "end": 2706.1,
+      "text": "I just wonder if there's anybody that's already interested or started that conversation."
+    },
+    {
+      "start": 2706.1,
+      "end": 2709.8399999999997,
+      "text": "Well, we talked to Park City and the Salvation Army."
+    },
+    {
+      "start": 2710.06,
+      "end": 2711.98,
+      "text": "There hadn't been any other..."
+    },
+    {
+      "start": 2711.98,
+      "end": 2715.54,
+      "text": "You know, we put out a feeler, you know, kind of, right?"
+    },
+    {
+      "start": 2715.88,
+      "end": 2716.08,
+      "text": "Right."
+    },
+    {
+      "start": 2716.08,
+      "end": 2718.9,
+      "text": "Really not getting a response, a bigger response."
+    },
+    {
+      "start": 2718.9,
+      "end": 2723.4,
+      "text": "Now that the RFP is out, then we always see some more, and I'm going to..."
+    },
+    {
+      "start": 2723.4,
+      "end": 2729.14,
+      "text": "I think we're going to, like, leave it out there for a month or something like that and then see what kind of feedback we'll get."
+    },
+    {
+      "start": 2729.2200000000003,
+      "end": 2739.6600000000003,
+      "text": "So if anybody in this room or anybody watching has a suggestion on a company that would like to be involved with that or look at bidding that, we would be highly interested."
+    },
+    {
+      "start": 2740.46,
+      "end": 2745.5,
+      "text": "Can you send us a copy of the RFP so that we can review it before the next meeting?"
+    },
+    {
+      "start": 2746.62,
+      "end": 2748.06,
+      "text": "Yes, I'll make note of that."
+    },
+    {
+      "start": 2748.1600000000003,
+      "end": 2748.6800000000003,
+      "text": "Okay, thank you."
+    },
+    {
+      "start": 2748.68,
+      "end": 2752.12,
+      "text": "Yes, and once again, Social Services is in charge of putting that RFP."
+    },
+    {
+      "start": 2752.2,
+      "end": 2754.98,
+      "text": "That's why I feel a little dumb on the microphone right now."
+    },
+    {
+      "start": 2755.08,
+      "end": 2755.96,
+      "text": "That's okay, so."
+    },
+    {
+      "start": 2756.8399999999997,
+      "end": 2766.72,
+      "text": "Well, Jay, I think that the Brick Church Pike location might be a game changer on that."
+    },
+    {
+      "start": 2766.72,
+      "end": 2777.24,
+      "text": "Like, I know there's probably some organizations that don't have the building capacity or space to host that,"
+    },
+    {
+      "start": 2777.24,
+      "end": 2791.7999999999997,
+      "text": "but if Brick Church Pike were a viable option for the space year-round, then you might be more likely to get a response from somebody like,"
+    },
+    {
+      "start": 2792.2,
+      "end": 2795.4399999999996,
+      "text": "I'm nominating room in the inn or somebody like that."
+    },
+    {
+      "start": 2795.44,
+      "end": 2802.88,
+      "text": "But, you know, so many of us are limited on our existing space."
+    },
+    {
+      "start": 2802.88,
+      "end": 2805.78,
+      "text": "We're already utilizing every inch of it."
+    },
+    {
+      "start": 2805.78,
+      "end": 2813.6400000000003,
+      "text": "And so to have to go out and find a space to operate has always been the challenge, right?"
+    },
+    {
+      "start": 2813.64,
+      "end": 2817.72,
+      "text": "So that's, I think, a game changer."
+    },
+    {
+      "start": 2817.72,
+      "end": 2821.62,
+      "text": "I think that will be an important question to have."
+    },
+    {
+      "start": 2822.02,
+      "end": 2825.14,
+      "text": "I mean, I think, you know, the bidding process is always somewhat confidential."
+    },
+    {
+      "start": 2825.68,
+      "end": 2832.02,
+      "text": "But I think if any of your organizations or if you know of organizations that are interested in potentially bidding for that"
+    },
+    {
+      "start": 2832.02,
+      "end": 2835.24,
+      "text": "and may want to put, this is what we would need or this is what we would want,"
+    },
+    {
+      "start": 2835.32,
+      "end": 2838.88,
+      "text": "or we want to just hear what's going to happen, that they would be invited to this."
+    },
+    {
+      "start": 2838.98,
+      "end": 2841.14,
+      "text": "I don't think, you know, anybody who's interested can come."
+    },
+    {
+      "start": 2841.44,
+      "end": 2845.04,
+      "text": "But I do think that, you know, we may not always know who's going to be interested in bidding."
+    },
+    {
+      "start": 2849.14,
+      "end": 2849.96,
+      "text": "Don't see it yet."
+    },
+    {
+      "start": 2850.24,
+      "end": 2851.06,
+      "text": "I'll text them."
+    },
+    {
+      "start": 2851.28,
+      "end": 2852.08,
+      "text": "I'll get another call."
+    },
+    {
+      "start": 2852.08,
+      "end": 2854.08,
+      "text": "Okay."
+    },
+    {
+      "start": 2862.02,
+      "end": 2862.42,
+      "text": "Okay."
+    },
+    {
+      "start": 2863.2599999999998,
+      "end": 2865.02,
+      "text": "So hopefully we'll get it out soon either way."
+    },
+    {
+      "start": 2865.14,
+      "end": 2869.32,
+      "text": "It's good news that it moved up to 32 and that it's going out there and we'll see how it goes."
+    },
+    {
+      "start": 2869.78,
+      "end": 2872.98,
+      "text": "So if your organizations might be interested, check it out."
+    },
+    {
+      "start": 2873.74,
+      "end": 2879.32,
+      "text": "I know the Salvation Army is not especially interested, but, yeah."
+    },
+    {
+      "start": 2880.2599999999998,
+      "end": 2882.74,
+      "text": "We're not not interested, but we're not especially interested."
+    },
+    {
+      "start": 2884.54,
+      "end": 2888.62,
+      "text": "So speaking of funding and things like that, the next agenda item is our ESG funding."
+    },
+    {
+      "start": 2888.62,
+      "end": 2900.96,
+      "text": "Kathy just wanted me to talk about the fact that there may be opportunities if we're looking for ways to fund more of the resources that we need for cold weather sheltering or extreme weather sheltering or sheltering in general,"
+    },
+    {
+      "start": 2901.22,
+      "end": 2910.7599999999998,
+      "text": "that there is the ability to use more of the ESG budget as the emergency solutions grant for emergency shelters."
+    },
+    {
+      "start": 2910.98,
+      "end": 2915.54,
+      "text": "It is capped at 60% of the total allocation that the city receives."
+    },
+    {
+      "start": 2915.54,
+      "end": 2927.64,
+      "text": "I don't think we get anywhere near that right now because HUD prioritizes and the city's consolidated plan have prioritized using that for rapid rehousing and for permanent housing."
+    },
+    {
+      "start": 2928.2599999999998,
+      "end": 2936.08,
+      "text": "The HUD technical assistance, Kathy asked with, have also continued to advocate that the funds be prioritized for those purposes and not for emergency shelter."
+    },
+    {
+      "start": 2936.08,
+      "end": 2941.36,
+      "text": "But we as a community do get to decide how the money in our community is spent."
+    },
+    {
+      "start": 2941.9,
+      "end": 2948.96,
+      "text": "So if that is something that organizations are interested in when that ESG process proposal drops and comes out,"
+    },
+    {
+      "start": 2949.42,
+      "end": 2954.4,
+      "text": "definitely you are able to ask for that and put in the best case."
+    },
+    {
+      "start": 2954.4,
+      "end": 2962.5,
+      "text": "And I think a lot of other organizations would support you in that, asking for an additional allocation for the operation for shelter,"
+    },
+    {
+      "start": 2962.62,
+      "end": 2972.34,
+      "text": "especially if you're stepping into a space where you're taking on additional nights or additional services or providing transportation or different things like that."
+    },
+    {
+      "start": 2972.34,
+      "end": 2978.78,
+      "text": "That may be a process that you guys want to get involved in and see if maybe the city wants to reallocate some money towards emergency shelter."
+    },
+    {
+      "start": 2978.78,
+      "end": 2981.6800000000003,
+      "text": "And now that we're seeing this kind of unprecedented demand."
+    },
+    {
+      "start": 2982.28,
+      "end": 2982.82,
+      "text": "Yeah, Carrie."
+    },
+    {
+      "start": 2983.76,
+      "end": 2989.78,
+      "text": "So that's a good push for you for this RFP,"
+    },
+    {
+      "start": 2989.78,
+      "end": 2999.2200000000003,
+      "text": "because if you have brick church pike and if you have 28 to $3,000 a night,"
+    },
+    {
+      "start": 2999.22,
+      "end": 3006.18,
+      "text": "plus you can apply for ESG funding and I assume it's discretionary somewhat,"
+    },
+    {
+      "start": 3006.3999999999996,
+      "end": 3012.8999999999996,
+      "text": "there's not specific categories to supplant existing funding, right?"
+    },
+    {
+      "start": 3013.56,
+      "end": 3017.3799999999997,
+      "text": "So if you marry all three of those things together,"
+    },
+    {
+      "start": 3017.3799999999997,
+      "end": 3024.62,
+      "text": "that's a much more appealing RFP for a provider."
+    },
+    {
+      "start": 3024.62,
+      "end": 3030.0,
+      "text": "So I think that she sent an email to Shelly with MDHA."
+    },
+    {
+      "start": 3030.14,
+      "end": 3032.7799999999997,
+      "text": "So that goes through MDHA, that proposal process."
+    },
+    {
+      "start": 3033.3599999999997,
+      "end": 3041.7799999999997,
+      "text": "It would be probably a maximum if they went to the 60% of about $400,000 to $450,000 that could be allocated to emergency shelters."
+    },
+    {
+      "start": 3041.92,
+      "end": 3043.42,
+      "text": "Now that's all the way across the board."
+    },
+    {
+      "start": 3043.62,
+      "end": 3047.24,
+      "text": "That's not just for an addition to what's already out there."
+    },
+    {
+      "start": 3047.3199999999997,
+      "end": 3050.74,
+      "text": "So there are a lot of organizations that do receive emergency shelter funding already,"
+    },
+    {
+      "start": 3050.74,
+      "end": 3052.96,
+      "text": "and so they would be competing for that same fund."
+    },
+    {
+      "start": 3052.96,
+      "end": 3059.2,
+      "text": "So it is still a small pool of funds, but maybe there's a way that we can maximize that resource to use more of it,"
+    },
+    {
+      "start": 3059.2400000000002,
+      "end": 3060.7,
+      "text": "or that we could reallocate some."
+    },
+    {
+      "start": 3061.4,
+      "end": 3074.48,
+      "text": "Yeah, but if you're only talking about maybe 75 to 100 nights per year maximum for an emergency shelter program,"
+    },
+    {
+      "start": 3074.48,
+      "end": 3082.84,
+      "text": "and you've got this RFP from Metro Social Services, and you couple that together,"
+    },
+    {
+      "start": 3082.84,
+      "end": 3092.22,
+      "text": "you may only need gap funding of $25,000 or so to fill the gap on staffing, right?"
+    },
+    {
+      "start": 3092.5,
+      "end": 3092.72,
+      "text": "Right."
+    },
+    {
+      "start": 3092.72,
+      "end": 3098.7999999999997,
+      "text": "So I just think if we can talk about that in the larger context,"
+    },
+    {
+      "start": 3098.7999999999997,
+      "end": 3109.06,
+      "text": "then we make that RFP process more appealing to non-traditional funder, shelter operators."
+    },
+    {
+      "start": 3110.06,
+      "end": 3112.2,
+      "text": "That looking at you, Ryan."
+    },
+    {
+      "start": 3112.2,
+      "end": 3121.7599999999998,
+      "text": "People that might normally not go after something like that now all of a sudden have a site to do it."
+    },
+    {
+      "start": 3121.98,
+      "end": 3131.0,
+      "text": "They have funding through the RFP, and they have this gap funding, right?"
+    },
+    {
+      "start": 3131.7799999999997,
+      "end": 3132.1,
+      "text": "Right."
+    },
+    {
+      "start": 3132.1,
+      "end": 3137.56,
+      "text": "So I think we need to talk about that at our strategic planning retreat."
+    },
+    {
+      "start": 3138.46,
+      "end": 3140.9,
+      "text": "I agree, because I think it could be, like you said, a game changer."
+    },
+    {
+      "start": 3141.38,
+      "end": 3144.7,
+      "text": "One thing that's also important to remember, and this is just Jesse Call talking,"
+    },
+    {
+      "start": 3145.16,
+      "end": 3149.68,
+      "text": "is that they do have a preference for organizations that have already been funded."
+    },
+    {
+      "start": 3150.6,
+      "end": 3155.02,
+      "text": "But one way that you can kind of strengthen your case is to partner with organizations that have already been funded."
+    },
+    {
+      "start": 3155.02,
+      "end": 3159.16,
+      "text": "And so if there's a new player in the game, I think that would be welcomed."
+    },
+    {
+      "start": 3159.48,
+      "end": 3164.2,
+      "text": "But that's another way that you can make sure that MDHA doesn't like change."
+    },
+    {
+      "start": 3164.32,
+      "end": 3166.88,
+      "text": "It's easy to just say, we're going to do what we did last year, check."
+    },
+    {
+      "start": 3167.6,
+      "end": 3169.16,
+      "text": "But that doesn't mean that change can't happen."
+    },
+    {
+      "start": 3169.6,
+      "end": 3173.74,
+      "text": "So, again, that was a Jesse Call comment, not a Salvation Army comment."
+    },
+    {
+      "start": 3174.6,
+      "end": 3174.78,
+      "text": "Yeah."
+    },
+    {
+      "start": 3176.48,
+      "end": 3179.6,
+      "text": "I want to go on record because we're being recorded."
+    },
+    {
+      "start": 3180.1,
+      "end": 3181.66,
+      "text": "Brick Church Pike is not landed."
+    },
+    {
+      "start": 3181.66,
+      "end": 3187.2999999999997,
+      "text": "There are several other agencies fighting for that property."
+    },
+    {
+      "start": 3187.68,
+      "end": 3191.54,
+      "text": "So we are still in the process of trying to get that."
+    },
+    {
+      "start": 3191.66,
+      "end": 3193.7999999999997,
+      "text": "So I want to be clear on that."
+    },
+    {
+      "start": 3193.92,
+      "end": 3195.7,
+      "text": "So we just had it temporarily."
+    },
+    {
+      "start": 3196.22,
+      "end": 3200.2799999999997,
+      "text": "And it was a good find from that task force that we had."
+    },
+    {
+      "start": 3200.62,
+      "end": 3204.5,
+      "text": "And so it's being talked about, and we are fighting for it."
+    },
+    {
+      "start": 3204.54,
+      "end": 3206.96,
+      "text": "But there are other agencies also wanting that property."
+    },
+    {
+      "start": 3206.96,
+      "end": 3208.1,
+      "text": "So just know that."
+    },
+    {
+      "start": 3208.3799999999997,
+      "end": 3211.0,
+      "text": "It's clear, agencies meaning outside of working?"
+    },
+    {
+      "start": 3211.2,
+      "end": 3211.52,
+      "text": "Metro."
+    },
+    {
+      "start": 3211.66,
+      "end": 3212.14,
+      "text": "Yeah."
+    },
+    {
+      "start": 3212.3599999999997,
+      "end": 3213.2599999999998,
+      "text": "Metro agencies."
+    },
+    {
+      "start": 3213.7999999999997,
+      "end": 3213.94,
+      "text": "Yeah."
+    },
+    {
+      "start": 3214.1,
+      "end": 3216.2799999999997,
+      "text": "Because, you know, it's a school property, right?"
+    },
+    {
+      "start": 3216.6,
+      "end": 3217.8799999999997,
+      "text": "And it's coming up for surplus."
+    },
+    {
+      "start": 3218.2799999999997,
+      "end": 3222.02,
+      "text": "And then all the calls come out because everybody's needing property."
+    },
+    {
+      "start": 3222.16,
+      "end": 3227.2,
+      "text": "Everybody's needing new office space, new libraries, new lots of things, right?"
+    },
+    {
+      "start": 3227.48,
+      "end": 3232.8399999999997,
+      "text": "So we are putting our chips on the board, too, and trying to land it."
+    },
+    {
+      "start": 3232.84,
+      "end": 3234.96,
+      "text": "But it has not been landed as of yet."
+    },
+    {
+      "start": 3234.96,
+      "end": 3235.38,
+      "text": "Yeah."
+    },
+    {
+      "start": 3235.38,
+      "end": 3235.9,
+      "text": "Yeah."
+    },
+    {
+      "start": 3235.9,
+      "end": 3239.04,
+      "text": "A lot of media attention here recently."
+    },
+    {
+      "start": 3239.46,
+      "end": 3241.2000000000003,
+      "text": "Totally."
+    },
+    {
+      "start": 3241.2,
+      "end": 3249.56,
+      "text": "Jim, can you speak to who approves, you know, how that gets allocated?"
+    },
+    {
+      "start": 3251.68,
+      "end": 3252.7999999999997,
+      "text": "Metro properties like that?"
+    },
+    {
+      "start": 3252.7999999999997,
+      "end": 3253.8599999999997,
+      "text": "So it's surplus."
+    },
+    {
+      "start": 3253.86,
+      "end": 3257.46,
+      "text": "It's declared surplus by Metro schools."
+    },
+    {
+      "start": 3257.46,
+      "end": 3259.28,
+      "text": "And then it's my understanding."
+    },
+    {
+      "start": 3259.28,
+      "end": 3262.3,
+      "text": "I'm looking at Jay, because I don't know if you fully understand the process either."
+    },
+    {
+      "start": 3262.46,
+      "end": 3268.4,
+      "text": "I think other agencies, I mean, ultimately, if Metro wants to dispose of the property, they"
+    },
+    {
+      "start": 3268.4,
+      "end": 3273.48,
+      "text": "check with all the other agencies within Metropolitan Government and say, does anybody want this?"
+    },
+    {
+      "start": 3273.48,
+      "end": 3276.6800000000003,
+      "text": "And typically what happens is nobody wanted it."
+    },
+    {
+      "start": 3277.2200000000003,
+      "end": 3281.48,
+      "text": "And so then they decide that they can convey it and sell it."
+    },
+    {
+      "start": 3281.96,
+      "end": 3283.86,
+      "text": "In this case, that's what they're going through."
+    },
+    {
+      "start": 3283.94,
+      "end": 3289.28,
+      "text": "They're going through this part of declaring a surplus and then checking before they do anything else to see if"
+    },
+    {
+      "start": 3289.28,
+      "end": 3293.26,
+      "text": "anybody, any other departments or agencies want that piece of property."
+    },
+    {
+      "start": 3293.26,
+      "end": 3300.78,
+      "text": "And what the chief seems to be saying is that there are other agencies that may have said, yeah,"
+    },
+    {
+      "start": 3300.84,
+      "end": 3301.92,
+      "text": "we're interested in that."
+    },
+    {
+      "start": 3302.84,
+      "end": 3307.88,
+      "text": "How we determine, how it's determined who gets it, I don't know."
+    },
+    {
+      "start": 3308.0200000000004,
+      "end": 3309.0800000000004,
+      "text": "But we can find out."
+    },
+    {
+      "start": 3311.84,
+      "end": 3313.0800000000004,
+      "text": "May I take some advocacy?"
+    },
+    {
+      "start": 3313.46,
+      "end": 3316.38,
+      "text": "Just as an update, we did have some advocacy on Tuesday night."
+    },
+    {
+      "start": 3316.48,
+      "end": 3318.46,
+      "text": "There was a pre-budget hearing right here in this room."
+    },
+    {
+      "start": 3318.46,
+      "end": 3324.6,
+      "text": "And we were able to represent the need to move that 32 degree up and make sure that that is adequately funded."
+    },
+    {
+      "start": 3324.9,
+      "end": 3326.18,
+      "text": "Glad to hear that's in the RFP."
+    },
+    {
+      "start": 3326.62,
+      "end": 3331.9,
+      "text": "But also so the council can hear it and potentially the mayor's office can hear that that is something that they may want to"
+    },
+    {
+      "start": 3331.9,
+      "end": 3334.86,
+      "text": "consider investing in, that we're asking them to consider investing in."
+    },
+    {
+      "start": 3336.16,
+      "end": 3337.98,
+      "text": "Is there any other business or next steps?"
+    },
+    {
+      "start": 3338.04,
+      "end": 3340.94,
+      "text": "I know we're wrapping up on time and we're televised, so I think we're getting cut off soon."
+    },
+    {
+      "start": 3341.16,
+      "end": 3344.7400000000002,
+      "text": "So any other business or anything anybody else wants to bring up?"
+    },
+    {
+      "start": 3344.74,
+      "end": 3348.9399999999996,
+      "text": "This is your chance to be on television."
+    },
+    {
+      "start": 3350.68,
+      "end": 3352.7599999999998,
+      "text": "Normally I don't want to be in this room."
+    },
+    {
+      "start": 3354.4199999999996,
+      "end": 3355.02,
+      "text": "Let's see."
+    },
+    {
+      "start": 3355.18,
+      "end": 3364.7,
+      "text": "So I just got by saying it has gone to procurement and the Metro Social Service Finance will provide an update and will send it out."
+    },
+    {
+      "start": 3365.22,
+      "end": 3366.5,
+      "text": "So it has gone to procurement."
+    },
+    {
+      "start": 3366.62,
+      "end": 3369.3199999999997,
+      "text": "So that's why it's not posted yet, but it's in the process."
+    },
+    {
+      "start": 3372.2799999999997,
+      "end": 3373.3799999999997,
+      "text": "That's the RFP, sorry."
+    },
+    {
+      "start": 3373.38,
+      "end": 3375.02,
+      "text": "Yeah, RFP process."
+    },
+    {
+      "start": 3375.62,
+      "end": 3376.5,
+      "text": "So it's almost there."
+    },
+    {
+      "start": 3376.92,
+      "end": 3377.7200000000003,
+      "text": "That's great news."
+    },
+    {
+      "start": 3378.6400000000003,
+      "end": 3383.86,
+      "text": "Yeah, so we'll go ahead and have the next scheduled meeting on the 14th at 830 to noon for the longer hashing out."
+    },
+    {
+      "start": 3384.02,
+      "end": 3389.7000000000003,
+      "text": "Kathy already sent an email asking about you guys to give feedback on how this space worked and how comfortable you felt."
+    },
+    {
+      "start": 3389.8,
+      "end": 3392.6400000000003,
+      "text": "So feel free to send that to her either individually or to the group."
+    },
+    {
+      "start": 3393.94,
+      "end": 3396.5,
+      "text": "And otherwise we'll look at how that worked."
+    },
+    {
+      "start": 3396.84,
+      "end": 3398.54,
+      "text": "She is watching, so everyone say hi to Kathy."
+    },
+    {
+      "start": 3398.54,
+      "end": 3398.7400000000002,
+      "text": "Yeah."
+    },
+    {
+      "start": 3399.06,
+      "end": 3399.6,
+      "text": "Thank you, Kathy."
+    },
+    {
+      "start": 3399.6,
+      "end": 3401.7,
+      "text": "And so we're glad to have you."
+    },
+    {
+      "start": 3401.7599999999998,
+      "end": 3403.08,
+      "text": "I think that'll pretty much do it."
+    },
+    {
+      "start": 3403.12,
+      "end": 3404.2,
+      "text": "I do want to again say thank you."
+    },
+    {
+      "start": 3404.2599999999998,
+      "end": 3408.94,
+      "text": "I know you weren't here earlier, but we did call out that Metro Social Services really stepped up this season."
+    },
+    {
+      "start": 3409.14,
+      "end": 3411.7999999999997,
+      "text": "We know they had to work long nights on holidays, on weekends."
+    },
+    {
+      "start": 3411.7999999999997,
+      "end": 3413.58,
+      "text": "For some reason all the cold weather seemed to happen."
+    },
+    {
+      "start": 3413.58,
+      "end": 3419.16,
+      "text": "So please convey that to the people that were there that we do appreciate their hard work and we recognize it."
+    },
+    {
+      "start": 3419.62,
+      "end": 3425.4,
+      "text": "And that goes for all the agencies that have been providing emergency shelter this season, the mission room in the end, launch pad."
+    },
+    {
+      "start": 3426.18,
+      "end": 3427.38,
+      "text": "So, yeah."
+    },
+    {
+      "start": 3427.94,
+      "end": 3428.7999999999997,
+      "text": "Thank you all so much."
+    },
+    {
+      "start": 3429.84,
+      "end": 3430.1,
+      "text": "All right."
+    },
+    {
+      "start": 3430.62,
+      "end": 3432.2999999999997,
+      "text": "Without objection, I guess we can end."
+    },
+    {
+      "start": 3433.36,
+      "end": 3433.72,
+      "text": "Cool."
+    },
+    {
+      "start": 3433.72,
+      "end": 3450.3599999999997,
+      "text": "This has been a service of the Metro Nashville Network."
+    },
+    {
+      "start": 3450.3599999999997,
+      "end": 3458.9399999999996,
+      "text": "If you would like to see this presentation again or for more information on this and other programs, visit Nashville.gov."
+    },
+    {
+      "start": 3463.72,
+      "end": 3493.7,
+      "text": "Thank you."
+    }
+  ]
+}
