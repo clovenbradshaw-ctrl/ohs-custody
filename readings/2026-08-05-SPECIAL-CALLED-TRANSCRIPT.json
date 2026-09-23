@@ -1,0 +1,13 @@
+{
+  "id": "2026-08-05-SPECIAL-CALLED-TRANSCRIPT",
+  "path": "transcripts/2026-08-05-special-called.txt",
+  "sha256": "34ccfde10b20536d13ca70b5c6d8029c50e614e8f4dc1f488236926eb0fdfe30",
+  "bytes": 61108,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=AJL1BSnNcSE",
+  "final_url": null,
+  "retrieved_at": "2026-09-23T19:45:29+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+  "spans": []
+}
