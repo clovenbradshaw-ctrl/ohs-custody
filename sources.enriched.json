@@ -3267,7 +3267,31 @@
         "archive_tier": "local-only",
         "note": "Derived artifact via youtube-caption-track (pre-existing); video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
       }
+    },
+    {
+      "id": "2021-04-16-HPC-MEETING-TRANSCRIPT",
+      "label": "2021-04-16 Continuum of Care: Data Committee, transcript",
+      "tier": "secondary",
+      "doctype": "transcript-derived",
+      "url": "https://www.youtube.com/watch?v=zQQ8BYZ4Ipc",
+      "anchor": null,
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "added": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog.",
+      "capture": {
+        "status": "local-only",
+        "sha256": "136833fb9d7288e33c918aa104d3b6a39ad458b0d88ad20b9164a2fb2f00d228",
+        "bytes": 50831,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "anchor_method": "not-yet-picked",
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T20:35:57+00:00",
+        "local_path": "transcripts/2021-04-16-hpc-meeting.txt",
+        "archive_tier": "local-only",
+        "note": "Derived artifact via local-whisper-mlx-large-v3-turbo; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
+      }
     }
   ],
-  "last_run": "2026-09-23T20:28:43+00:00"
+  "last_run": "2026-09-23T20:35:57+00:00"
 }
