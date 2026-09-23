@@ -2254,12 +2254,12 @@
         "anchor_length": null,
         "anchor_method": "not-yet-picked",
         "content_type": "text/plain",
-        "fetched_at": "2026-09-23T19:45:29+00:00",
+        "fetched_at": "2026-09-23T19:46:06+00:00",
         "local_path": "transcripts/2026-08-05-special-called.txt",
         "archive_tier": "local-only",
-        "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
+        "note": "Derived artifact via youtube-caption-track (pre-existing); video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
       }
     }
   ],
-  "last_run": "2026-09-23T19:45:29+00:00"
+  "last_run": "2026-09-23T19:46:06+00:00"
 }
