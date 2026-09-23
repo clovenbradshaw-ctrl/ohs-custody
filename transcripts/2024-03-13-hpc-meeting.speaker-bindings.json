@@ -1,0 +1,43 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2024-03-13-hpc-meeting.txt",
+  "boundary_count": 5,
+  "named_boundary_count": 5,
+  "sections": [
+    {
+      "start": 37682,
+      "end": 42575,
+      "speaker": "Allison",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 42575,
+      "end": 45435,
+      "speaker": "Alison",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 45435,
+      "end": 45926,
+      "speaker": "G",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 45926,
+      "end": 52025,
+      "speaker": "Jonathan Rizzo",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 52025,
+      "end": 67637,
+      "speaker": "I'm I",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
