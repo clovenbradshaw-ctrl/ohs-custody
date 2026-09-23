@@ -1,0 +1,267 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2026-06-23-symposium.txt",
+  "boundary_count": 37,
+  "named_boundary_count": 4,
+  "sections": [
+    {
+      "start": 391,
+      "end": 30735,
+      "speaker": "Demetrius Cheney. I'm",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 30735,
+      "end": 30768,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 30768,
+      "end": 31497,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 31497,
+      "end": 33047,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 33047,
+      "end": 33414,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 33414,
+      "end": 33417,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 33417,
+      "end": 34690,
+      "speaker": "I'm I'm",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 34690,
+      "end": 35895,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 35895,
+      "end": 35905,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 35905,
+      "end": 38829,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 38829,
+      "end": 38838,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 38838,
+      "end": 39172,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 39172,
+      "end": 39960,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 39960,
+      "end": 41102,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 41102,
+      "end": 41119,
+      "speaker": "Richard Cho",
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 41119,
+      "end": 70192,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 70192,
+      "end": 70241,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 70241,
+      "end": 70704,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 70704,
+      "end": 73145,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 73145,
+      "end": 74617,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 74617,
+      "end": 79343,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 79343,
+      "end": 81581,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 81581,
+      "end": 82130,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 82130,
+      "end": 84714,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 84714,
+      "end": 84750,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 84750,
+      "end": 84772,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 84772,
+      "end": 84805,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 84805,
+      "end": 86012,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 86012,
+      "end": 86083,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 86083,
+      "end": 117438,
+      "speaker": "John",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 117438,
+      "end": 119215,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 119215,
+      "end": 119456,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 119456,
+      "end": 123162,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 123162,
+      "end": 126114,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 126114,
+      "end": 126159,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 126159,
+      "end": 126170,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    },
+    {
+      "start": 126170,
+      "end": 126726,
+      "speaker": null,
+      "org": null,
+      "how": "turn-marker"
+    }
+  ]
+}

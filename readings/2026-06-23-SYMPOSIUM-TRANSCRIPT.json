@@ -1,0 +1,13 @@
+{
+  "id": "2026-06-23-SYMPOSIUM-TRANSCRIPT",
+  "path": "transcripts/2026-06-23-symposium.txt",
+  "sha256": "3ec68c8932ee1a2c40082535e430453aa9c2ff1e10af80fe1e4993299ee93160",
+  "bytes": 126728,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=eZhsEtCXZw0",
+  "final_url": null,
+  "retrieved_at": "2026-09-23T19:46:09+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+  "spans": []
+}
