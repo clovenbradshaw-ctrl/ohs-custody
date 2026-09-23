@@ -1,0 +1,57 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2024-08-14-hpc-meeting.txt",
+  "boundary_count": 7,
+  "named_boundary_count": 7,
+  "sections": [
+    {
+      "start": 998,
+      "end": 1517,
+      "speaker": "Andrea Hancock I'm",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 1517,
+      "end": 2154,
+      "speaker": "Meredith McLoud",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 2154,
+      "end": 2754,
+      "speaker": "Lizzie",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 2754,
+      "end": 4704,
+      "speaker": "Michelle SED I",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 4704,
+      "end": 39331,
+      "speaker": "Allison I'm",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 39331,
+      "end": 70347,
+      "speaker": "Allison",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 70347,
+      "end": 75712,
+      "speaker": "Laura Alvarez I'm",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
