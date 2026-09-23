@@ -1,0 +1,15 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2025-02-12-hpc-meeting.txt",
+  "boundary_count": 1,
+  "named_boundary_count": 1,
+  "sections": [
+    {
+      "start": 75014,
+      "end": 83739,
+      "speaker": "Kiana",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
