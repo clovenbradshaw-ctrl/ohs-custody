@@ -2763,7 +2763,31 @@
         "archive_tier": "local-only",
         "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
       }
+    },
+    {
+      "id": "2024-11-13-HPC-MEETING-TRANSCRIPT",
+      "label": "2024-11-13 Homelessness Planning Council, transcript",
+      "tier": "secondary",
+      "doctype": "transcript-derived",
+      "url": "https://www.youtube.com/watch?v=cCRef1V5tiA",
+      "anchor": null,
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "used_for": "Bulk-preserved CoC/HPC meeting backlog; source for future specific claims",
+      "added": "Generated 2026-09-23 by build_meeting_batch.py, generalizing the 2026-09-09 entry's pattern across the full playlist backlog.",
+      "capture": {
+        "status": "local-only",
+        "sha256": "d6d151c7c5ce4a86020a5e183849c9db22e5d1684e3c02da6e004c638f798a34",
+        "bytes": 54708,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "anchor_method": "not-yet-picked",
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T19:46:35+00:00",
+        "local_path": "transcripts/2024-11-13-hpc-meeting.txt",
+        "archive_tier": "local-only",
+        "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field."
+      }
     }
   ],
-  "last_run": "2026-09-23T19:46:34+00:00"
+  "last_run": "2026-09-23T19:46:35+00:00"
 }

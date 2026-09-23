@@ -1,0 +1,29 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2024-11-13-hpc-meeting.txt",
+  "boundary_count": 3,
+  "named_boundary_count": 3,
+  "sections": [
+    {
+      "start": 13013,
+      "end": 20616,
+      "speaker": "Allison",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 20616,
+      "end": 25672,
+      "speaker": "Megan I'm",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 25672,
+      "end": 54708,
+      "speaker": "Shan I'm",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
