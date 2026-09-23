@@ -1,0 +1,226 @@
+2026-09-23T19:45:28+00:00  === batch run start: 1 meetings ===
+2026-09-23T19:45:28+00:00  [2026-08-05] 08/05/26 Special Called Continuum of Care Homelessness Planning Council  (AJL1BSnNcSE)
+2026-09-23T19:45:29+00:00    registered as 2026-08-05-SPECIAL-CALLED-TRANSCRIPT + committed
+2026-09-23T19:45:29+00:00  === batch run end: {'ok': 1} ===
+2026-09-23T19:46:06+00:00  === batch run start: 75 meetings ===
+2026-09-23T19:46:06+00:00  [2026-08-05] 08/05/26 Special Called Continuum of Care Homelessness Planning Council  (AJL1BSnNcSE)
+2026-09-23T19:46:06+00:00    transcript already exists, skipping fetch
+2026-09-23T19:46:06+00:00    registered as 2026-08-05-SPECIAL-CALLED-TRANSCRIPT + committed
+2026-09-23T19:46:06+00:00  [2026-07-08] 07/08/26 Continuum of Care: Homelessness Planning Council  (VbYebSeXDnM)
+2026-09-23T19:46:08+00:00    registered as 2026-07-08-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:08+00:00  [2026-06-23] 06/23/26 2026 State of Homelessness Symposium  (eZhsEtCXZw0)
+2026-09-23T19:46:09+00:00    registered as 2026-06-23-SYMPOSIUM-TRANSCRIPT + committed
+2026-09-23T19:46:09+00:00  [2026-06-10] 06/10/26 Continuum of Care: Homelessness Planning Council  (g7Gwd4YQsRQ)
+2026-09-23T19:46:10+00:00    registered as 2026-06-10-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:10+00:00  [2026-05-13] 05/13/26 Continuum of Care: Homelessness Planning Council  (qXSVwqaaDSE)
+2026-09-23T19:46:11+00:00    registered as 2026-05-13-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:11+00:00  [2026-04-08] 04/08/26 Continuum of Care: Homelessness Planning Council  (KW7V9hFv-Gk)
+2026-09-23T19:46:12+00:00    registered as 2026-04-08-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:12+00:00  [2026-03-11] 03/11/26 Continuum of Care: Homelessness Planning Council  (mnfpFAGxpH8)
+2026-09-23T19:46:14+00:00    registered as 2026-03-11-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:14+00:00  [2026-02-11] 02/11/26 Continuum of Care: Homelessness Planning Council  (XSQOXyohODo)
+2026-09-23T19:46:16+00:00    registered as 2026-02-11-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:16+00:00  [2026-01-14] 01/14/26 Continuum of Care: Homelessness Planning Council  (7BuDafZavNw)
+2026-09-23T19:46:17+00:00    registered as 2026-01-14-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:17+00:00  [2025-12-22] 12/22/25 Continuum of Care: Homelessness Planning Council  (NcqtqFnnRos)
+2026-09-23T19:46:19+00:00    registered as 2025-12-22-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:19+00:00  [2025-11-12] 11/12/25 Continuum of Care: Homelessness Planning Council  (K5mcuwVkt5c)
+2026-09-23T19:46:20+00:00    registered as 2025-11-12-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:20+00:00  [2025-10-08] 10/08/25 Continuum of Care: Homelessness Planning Council  (BH2Tf4kzt4A)
+2026-09-23T19:46:21+00:00    registered as 2025-10-08-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:21+00:00  [2025-09-10] 09/10/25 Continuum of Care: Homelessness Planning Council  (XKg-yOx-7Tw)
+2026-09-23T19:46:22+00:00    registered as 2025-09-10-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:22+00:00  [2025-08-13] 08/13/25 Continuum of Care: Homelessness Planning Council  (0e0APV7Y9wE)
+2026-09-23T19:46:24+00:00    registered as 2025-08-13-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:24+00:00  [2025-07-09] 07/09/25 Continuum of Care: Homelessness Planning Council  (RbPYHIPg5zs)
+2026-09-23T19:46:25+00:00    registered as 2025-07-09-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:25+00:00  [2025-06-11] 06/11/25 Continuum of Care: Homelessness Planning Council  (tJb8x-xxWsM)
+2026-09-23T19:46:26+00:00    registered as 2025-06-11-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:26+00:00  [2025-05-14] 05/14/25 Continuum of Care: Homelessness Planning Council  (e2n7UqSWJ34)
+2026-09-23T19:46:28+00:00    registered as 2025-05-14-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:28+00:00  [2025-04-09] 04/09/25 Continuum of Care: Homelessness Planning Council  (jTQ5d3RMuuc)
+2026-09-23T19:46:29+00:00    registered as 2025-04-09-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:29+00:00  [2025-03-12] 03/12/25 Continuum of Care: Homelessness Planning Council  (5MVn96594sg)
+2026-09-23T19:46:30+00:00    registered as 2025-03-12-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:30+00:00  [2025-02-12] 02/12/25 Continuum of Care: Homelessness Planning Council  (rqZKqcokXa0)
+2026-09-23T19:46:31+00:00    registered as 2025-02-12-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:31+00:00  [2025-01-08] 01/08/25 Homelessness Planning Council  (HEWNj2WR3LM)
+2026-09-23T19:46:33+00:00    registered as 2025-01-08-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:33+00:00  [2024-12-11] 12/11/24 Homelessness Planning Council  (qqI2tK8emgE)
+2026-09-23T19:46:34+00:00    registered as 2024-12-11-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:34+00:00  [2024-11-13] 11/13/24 Homelessness Planning Council  (cCRef1V5tiA)
+2026-09-23T19:46:35+00:00    registered as 2024-11-13-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:35+00:00  [2024-10-09] 10/09/24 Homelessness Planning Council  (DHiNYxW935Y)
+2026-09-23T19:46:36+00:00    registered as 2024-10-09-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:36+00:00  [2024-09-11] 09/11/24 Homelessness Planning Council  (MA0VSD0WNUE)
+2026-09-23T19:46:38+00:00    registered as 2024-09-11-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:38+00:00  [2024-08-14] 08/14/24 Homelessness Planning Council  (UaSw2EajP0I)
+2026-09-23T19:46:39+00:00    registered as 2024-08-14-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:39+00:00  [2024-06-12] 06/12/24 Homelessness Planning Council  (cUmHOW0nR5A)
+2026-09-23T19:46:40+00:00    registered as 2024-06-12-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:40+00:00  [2024-04-10] 04/10/24 Homelessness Planning Council  (elrEPwpcGSA)
+2026-09-23T19:46:41+00:00    registered as 2024-04-10-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:41+00:00  [2024-03-13] 03/13/24 Homelessness Planning Council  (PT35lNMJi-E)
+2026-09-23T19:46:43+00:00    registered as 2024-03-13-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:43+00:00  [2024-02-14] 02/14/24 Homelessness Planning Council  (97kuHnFDbfo)
+2026-09-23T19:46:45+00:00    registered as 2024-02-14-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:45+00:00  [2023-12-13] 12/13/23 Metro Homelessness Planning Council  (6rYMzlIwugE)
+2026-09-23T19:46:47+00:00    registered as 2023-12-13-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:47+00:00  [2023-10-11] 10/11/23 Homelessness Planning Council  (3vv9WLCgxGI)
+2026-09-23T19:46:48+00:00    registered as 2023-10-11-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:48+00:00  [2023-09-13] 09/13/23 Homelessness Planning Council  (JLYN6JsNvzs)
+2026-09-23T19:46:50+00:00    registered as 2023-09-13-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:50+00:00  [2023-08-09] 08/09/23 Metro Homelessness Planning Council  (mwJyHIVZn6U)
+2026-09-23T19:46:51+00:00    registered as 2023-08-09-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:51+00:00  [2023-07-12] 07/12/23 Homelessness Planning Council  (CGw0nwmgsYk)
+2026-09-23T19:46:52+00:00    registered as 2023-07-12-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:52+00:00  [2023-06-14] 06/14/23 Homelessness Planning Council  (aLJPj6C5GzM)
+2026-09-23T19:46:54+00:00    registered as 2023-06-14-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:54+00:00  [2023-05-10] 05/10/23 Homelessness Planning Council  (Yp8e9LXSt9U)
+2026-09-23T19:46:55+00:00    registered as 2023-05-10-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:55+00:00  [2023-04-12] 04/12/23 Homelessness Planning Council  (ZN8S8IFTdP4)
+2026-09-23T19:46:56+00:00    registered as 2023-04-12-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:56+00:00  [2023-03-08] 03/08/23 Metro Homelessness Planning Council  (RZvbiq8IjNI)
+2026-09-23T19:46:58+00:00    registered as 2023-03-08-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:58+00:00  [2023-02-08] 02/08/23 Metro Homelessness Planning Council  (bWDjdGh4tqU)
+2026-09-23T19:46:59+00:00    registered as 2023-02-08-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T19:46:59+00:00  [2022-06-08] 06/08/22 Homelessness Planning Council  (BZ8MDfHL8rc)
+2026-09-23T19:47:02+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:12:52+00:00    whisper transcribed (115MB audio fetched then deleted)
+2026-09-23T20:12:53+00:00    registered as 2022-06-08-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T20:12:53+00:00  [2022-03-17] 03/17/22 Homeless Planning Council Shelter Committee  (MA_g7PgmDJs)
+2026-09-23T20:12:54+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:20:12+00:00    whisper transcribed (51MB audio fetched then deleted)
+2026-09-23T20:20:13+00:00    registered as 2022-03-17-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T20:20:13+00:00  [2021-04-29] 04/29/21  Continuum of Care: HMIS Oversight Committee Meeting  (3O_4iJAOYVk)
+2026-09-23T20:20:14+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:28:43+00:00    whisper transcribed (42MB audio fetched then deleted)
+2026-09-23T20:28:43+00:00    registered as 2021-04-29-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T20:28:43+00:00  [2021-04-29] 04/29/21  Continuum of Care HMIS Oversight Committee  (oxv0CWMM0nQ)
+2026-09-23T20:28:43+00:00    transcript already exists, skipping fetch
+2026-09-23T20:28:43+00:00    registered as 2021-04-29-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T20:28:43+00:00  [2021-04-16] 04/16/21  Continuum of Care: Data Committee  (zQQ8BYZ4Ipc)
+2026-09-23T20:28:44+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:35:56+00:00    whisper transcribed (50MB audio fetched then deleted)
+2026-09-23T20:35:57+00:00    registered as 2021-04-16-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T20:35:57+00:00  [2021-04-14] 04/14/21 CoC Homelessness Planning Council  (wY0tIK4FbIg)
+2026-09-23T20:35:58+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:37+00:00    whisper transcribed (70MB audio fetched then deleted)
+2026-09-23T20:46:37+00:00    registered as 2021-04-14-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T20:46:37+00:00  [2021-04-05] 4/05/21  Continuum of Care: Charter Committee  (sM9v3lV6YT0)
+2026-09-23T20:46:38+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:39+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-04-05-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=sM9v3lV6YT0 -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:39+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:39+00:00  [2021-04-05] 04/05/21  Continuum of Care: Executive Committee  (HMfBbbePE6E)
+2026-09-23T20:46:40+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:42+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-04-05-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=HMfBbbePE6E -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:42+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:42+00:00  [2021-03-25] 03/25/21  Continuum of Care HMIS Oversight Committee  (PdlzvOwZ2as)
+2026-09-23T20:46:43+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:44+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-03-25-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=PdlzvOwZ2as -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:44+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:44+00:00  [2021-03-19] 03/19/21 Continuum of Care: Data Committee  (8MgKFfGzzY4)
+2026-09-23T20:46:45+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:46+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-03-19-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=8MgKFfGzzY4 -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:46+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:46+00:00  [2021-03-10] 03/10/21 CoC Homelessness Planning Council  (2HZoHIcyOis)
+2026-09-23T20:46:47+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:48+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-03-10-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=2HZoHIcyOis -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:48+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:48+00:00  [2021-03-01] 03/01/21  Continuum of Care Executive Committee  (FPfYVLh67Qs)
+2026-09-23T20:46:49+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:50+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-03-01-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=FPfYVLh67Qs -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:50+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:50+00:00  [2021-02-25] 02/25/21  Continuum of Care HMIS Oversight Committee  (7W7hoBPjhes)
+2026-09-23T20:46:51+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:52+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-02-25-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=7W7hoBPjhes -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:52+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:52+00:00  [2021-02-19] 02/19/21  Continuum of Care Data Committee  (v87_ScEAEB8)
+2026-09-23T20:46:53+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:54+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-02-19-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=v87_ScEAEB8 -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:54+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:54+00:00  [2021-02-01] 02/01/21  Continuum of Care Charter Committee  (U8bbYo60HfU)
+2026-09-23T20:46:55+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:56+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-02-01-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=U8bbYo60HfU -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:56+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:56+00:00  [2021-02-01] 02/01/21 Continuum of Care Executive Committee  (-nV6rf0jphE)
+2026-09-23T20:46:57+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:46:58+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-02-01-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=-nV6rf0jphE -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:46:58+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:46:58+00:00  [2021-01-21] 01/21/21  Continuum of Care General Membership  (2ygkgV0aPYQ)
+2026-09-23T20:46:59+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:00+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-01-21-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=2ygkgV0aPYQ -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:00+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:00+00:00  [2021-01-15] 01/15/21  Continuum of Care Data Committee  (D2C8qYB5HiM)
+2026-09-23T20:47:01+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:03+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-01-15-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=D2C8qYB5HiM -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:03+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:03+00:00  [2021-01-13] 01/13/21  Continuum of Care Homelessness Planning Council Meeting  (y8heKtfR_Y8)
+2026-09-23T20:47:04+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:05+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-01-13-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=y8heKtfR_Y8 -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:05+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:05+00:00  [2021-01-04] 01/04/21  Continuum of Care Charter Committee Meeting  (D0_-MY5DLcc)
+2026-09-23T20:47:06+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:07+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-01-04-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=D0_-MY5DLcc -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:07+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:07+00:00  [2020-12-17] 12/17/20  Continuum of Care General Membership Meeting  (RMu911hsWls)
+2026-09-23T20:47:08+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:10+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-12-17-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=RMu911hsWls -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:10+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:10+00:00  [2020-12-09] 12/09/20  Continuum of Care: Homelessness Planning Council  (_q0TsJzyyGU)
+2026-09-23T20:47:10+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:12+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-12-09-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=_q0TsJzyyGU -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:12+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:12+00:00  [2020-11-23] 11/23/20 Nashville Davidson County Continuum of Care: Youth and Young Adult Committee  (QP_ELbZqUro)
+2026-09-23T20:47:13+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:14+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-11-23-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=QP_ELbZqUro -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:14+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:14+00:00  [2020-11-19] 11/19/20  Continuum of Care HMIS Oversight Committee  (wJ-19OsDNP4)
+2026-09-23T20:47:15+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:16+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-11-19-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=wJ-19OsDNP4 -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:16+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:16+00:00  [2020-11-02] 11/02/20  Continuum of Care Executive Committee Meeting  (8l-FumT-LYo)
+2026-09-23T20:47:17+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:18+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-11-02-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=8l-FumT-LYo -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:18+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:18+00:00  [2020-10-14] 10/14/20 Continuum of Care Homelessness Planning Council Meeting  (48odvJJyV_o)
+2026-09-23T20:47:19+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:47:20+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-10-14-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=48odvJJyV_o -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:47:20+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:47:20+00:00  [2020-09-09] 09/09/20 CoC Homelessness Planning Council  (_DmwZSvubeI)
+2026-09-23T20:47:20+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:57:57+00:00    whisper transcribed (73MB audio fetched then deleted)
+2026-09-23T20:57:57+00:00    registered as 2020-09-09-HPC-MEETING-TRANSCRIPT + committed
+2026-09-23T20:57:57+00:00  [2020-06-30] 06/30/20 Continuum of Care: General Membership Meeting  (Eh_VANgjGvw)
+2026-09-23T20:57:58+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:57:59+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-06-30-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=Eh_VANgjGvw -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:57:59+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:57:59+00:00  [2020-06-29] 06/29/20 Continuum of Care: Executive Committee  (qgCPoJFa6xA)
+2026-09-23T20:58:00+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:58:01+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-06-29-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=qgCPoJFa6xA -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:58:01+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:58:01+00:00  [2020-06-24] 06/24/20 Continuum of Care: Equity and Diversity Committee  (4bCPZUDYXp4)
+2026-09-23T20:58:02+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:58:03+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-06-24-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=4bCPZUDYXp4 -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:58:03+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:58:03+00:00  [2020-06-22] 06/22/20  Homelessness Continuum of Care Nominations Committee  (5IVmiroSNJw)
+2026-09-23T20:58:04+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:58:06+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-06-22-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=5IVmiroSNJw -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:58:06+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:58:06+00:00  [2020-06-15] 06/15/20 Homelessness Planning Council Continuum of Care Nomination Committee  (wLom9DUyP0Y)
+2026-09-23T20:58:07+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:58:08+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-06-15-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=wLom9DUyP0Y -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:58:08+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:58:08+00:00  [2020-06-10] 06/10/20 Homelessness Planning Council Continuum of Care  (6ysXM7KPkgc)
+2026-09-23T20:58:09+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:58:10+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-06-10-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=6ysXM7KPkgc -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:58:10+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:58:10+00:00  [2020-06-04] 06/04/20 Homelessness Planning Council Continuum of Care Nominating Committee  (UdPi6zlANwk)
+2026-09-23T20:58:12+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:58:13+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-06-04-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=UdPi6zlANwk -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:58:13+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:58:13+00:00  [2020-05-13] 05/13/20 Homelessness Planning Council  (Gp9GNtp_0v8)
+2026-09-23T20:58:14+00:00    captions unavailable (e add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!) -- falling back to audio+whisper
+2026-09-23T20:58:15+00:00    fetch_audio failed: running: yt-dlp --no-warnings -f bestaudio -o /Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2020-05-13-hpc-meeting.%(ext)s https://www.youtube.com/watch?v=Gp9GNtp_0v8 -from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+2026-09-23T20:58:15+00:00    SKIPPED: no transcript could be produced (captions and whisper fallback both failed)
+2026-09-23T20:58:15+00:00  === batch run end: {'ok': 47, 'no-transcript': 28} ===
