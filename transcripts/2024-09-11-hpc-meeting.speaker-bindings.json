@@ -1,0 +1,29 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2024-09-11-hpc-meeting.txt",
+  "boundary_count": 3,
+  "named_boundary_count": 3,
+  "sections": [
+    {
+      "start": 6157,
+      "end": 11634,
+      "speaker": "Casey",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 11634,
+      "end": 33553,
+      "speaker": "GNA",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 33553,
+      "end": 90129,
+      "speaker": "GNA I'm",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
