@@ -1,0 +1,36 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2022-06-08-hpc-meeting.txt",
+  "boundary_count": 4,
+  "named_boundary_count": 4,
+  "sections": [
+    {
+      "start": 8886,
+      "end": 22302,
+      "speaker": "Hannah. Last",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 22302,
+      "end": 69090,
+      "speaker": "Andronica Morris. Executive Director",
+      "org": "Housing NOLA",
+      "how": "self-introduction"
+    },
+    {
+      "start": 69090,
+      "end": 87077,
+      "speaker": "Beth Shin. We",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 87077,
+      "end": 92845,
+      "speaker": "Ingrid McIntyre. I'm",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}

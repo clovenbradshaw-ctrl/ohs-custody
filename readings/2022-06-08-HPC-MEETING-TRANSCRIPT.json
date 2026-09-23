@@ -1,0 +1,13 @@
+{
+  "id": "2022-06-08-HPC-MEETING-TRANSCRIPT",
+  "path": "transcripts/2022-06-08-hpc-meeting.txt",
+  "sha256": "497297661a5a0714a38c60a0142d511214177a2d54d1c4a5b2d3c25543b03d9f",
+  "bytes": 92845,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=BZ8MDfHL8rc",
+  "final_url": null,
+  "retrieved_at": "2026-09-23T20:12:53+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact via local-whisper-mlx-large-v3-turbo; video itself was never downloaded (captions/audio only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+  "spans": []
+}
