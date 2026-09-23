@@ -1,0 +1,4197 @@
+{
+  "audio_path": "/Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-04-14-hpc-meeting.webm",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 6.42,
+      "text": "That looks like we are recording now. Good morning everyone."
+    },
+    {
+      "start": 6.42,
+      "end": 11.16,
+      "text": "Glad to get started today and see."
+    },
+    {
+      "start": 11.16,
+      "end": 17.64,
+      "text": "So, yeah, sure why that's not working. Okay."
+    },
+    {
+      "start": 17.64,
+      "end": 23.94,
+      "text": "We need a motion to have this meeting done virtually. Mark, you want to go ahead and do that for us."
+    },
+    {
+      "start": 23.94,
+      "end": 33.18,
+      "text": "I move that the items on the meeting agenda constitute essential business of this council meeting electronically is necessary to protect the health, safety and welfare of Tennesseans."
+    },
+    {
+      "start": 33.18,
+      "end": 40.92,
+      "text": "Considering the COVID-19 outbreak and any rule conflicting with governor's executive order permitting electronic meetings be suspended."
+    },
+    {
+      "start": 40.92,
+      "end": 43.56,
+      "text": "Do I have a 2nd."
+    },
+    {
+      "start": 43.56,
+      "end": 48.6,
+      "text": "2nd, thank you."
+    },
+    {
+      "start": 48.6,
+      "end": 51.84,
+      "text": "Abigail is going to do a roll call vote."
+    },
+    {
+      "start": 51.84,
+      "end": 58.5,
+      "text": "Please state that you're present, whether you approve the motion and if you have any conflicts of interest."
+    },
+    {
+      "start": 62.34,
+      "end": 65.04,
+      "text": "Elena Boyer."
+    },
+    {
+      "start": 65.04,
+      "end": 68.88,
+      "text": "Yes, here and no complex."
+    },
+    {
+      "start": 68.88,
+      "end": 72.54,
+      "text": "April Calvin."
+    },
+    {
+      "start": 72.54,
+      "end": 73.72,
+      "text": "Present."
+    },
+    {
+      "start": 73.72,
+      "end": 80.34,
+      "text": "Yes, and the Salvation Army is a ESG and COC funded agency."
+    },
+    {
+      "start": 80.34,
+      "end": 83.64,
+      "text": "Ashley Oswald."
+    },
+    {
+      "start": 83.64,
+      "end": 89.04,
+      "text": "Not present."
+    },
+    {
+      "start": 89.04,
+      "end": 90.60000000000001,
+      "text": "Ryan Ellis."
+    },
+    {
+      "start": 90.60000000000001,
+      "end": 100.68,
+      "text": "Not present."
+    },
+    {
+      "start": 100.68,
+      "end": 101.96000000000001,
+      "text": "Alex Smith."
+    },
+    {
+      "start": 110.34,
+      "end": 116.82000000000001,
+      "text": "I see you Alex, but you may be muted. Alex Smith."
+    },
+    {
+      "start": 121.26,
+      "end": 123.66,
+      "text": "Present. Yes, and no conflict."
+    },
+    {
+      "start": 123.66,
+      "end": 126.0,
+      "text": "Thank you Michelle Hall."
+    },
+    {
+      "start": 126.0,
+      "end": 132.96,
+      "text": "Yes, present and I do have a conflict of interest. I work for an agency that's funded."
+    },
+    {
+      "start": 132.96,
+      "end": 135.96,
+      "text": "Don Dina."
+    },
+    {
+      "start": 135.96,
+      "end": 139.74,
+      "text": "Yes, no conflict."
+    },
+    {
+      "start": 139.74,
+      "end": 143.04000000000002,
+      "text": "Norman Humber."
+    },
+    {
+      "start": 143.04000000000002,
+      "end": 152.34,
+      "text": "Not present."
+    },
+    {
+      "start": 152.34,
+      "end": 153.66,
+      "text": "Catherine Knowles."
+    },
+    {
+      "start": 153.66,
+      "end": 160.56,
+      "text": "Not present. Sheila Decker."
+    },
+    {
+      "start": 160.56,
+      "end": 166.68,
+      "text": "Present. Yes, and I am a contract vendor with the Salvation Army."
+    },
+    {
+      "start": 166.68,
+      "end": 169.68,
+      "text": "Mark Overlock."
+    },
+    {
+      "start": 169.68,
+      "end": 175.86,
+      "text": "Present. Yes, and I have a conflict. My wife works with Catholic charities and they receive."
+    },
+    {
+      "start": 175.86,
+      "end": 177.66000000000003,
+      "text": "HUD funding."
+    },
+    {
+      "start": 177.66000000000003,
+      "end": 181.98000000000002,
+      "text": "Mary Catherine Rand."
+    },
+    {
+      "start": 181.98000000000002,
+      "end": 191.66000000000003,
+      "text": "Not present."
+    },
+    {
+      "start": 191.66000000000003,
+      "end": 193.66000000000003,
+      "text": "Best."
+    },
+    {
+      "start": 193.66000000000003,
+      "end": 196.16000000000003,
+      "text": "Present. Yes, no conflicts."
+    },
+    {
+      "start": 196.16,
+      "end": 208.46,
+      "text": "Present. Yes, and yes, I'm a board member at Safe Haven."
+    },
+    {
+      "start": 208.46,
+      "end": 209.58,
+      "text": "Aaron Evans."
+    },
+    {
+      "start": 209.58,
+      "end": 211.76000000000002,
+      "text": "Not present."
+    },
+    {
+      "start": 211.76,
+      "end": 215.06,
+      "text": "Will Connelly."
+    },
+    {
+      "start": 215.06,
+      "end": 221.06,
+      "text": "Present. Yes, and yes, we have conflicts. Park Center receives the."
+    },
+    {
+      "start": 221.06,
+      "end": 224.36,
+      "text": "Receives the Metro funding."
+    },
+    {
+      "start": 224.36,
+      "end": 224.36,
+      "text": ""
+    },
+    {
+      "start": 224.36,
+      "end": 230.36,
+      "text": "Present. Yes, and my wife works for National Cares and they receive ESG funding."
+    },
+    {
+      "start": 230.36,
+      "end": 231.66000000000003,
+      "text": "Laura Bermudez."
+    },
+    {
+      "start": 231.66000000000003,
+      "end": 233.66000000000003,
+      "text": "Laura Bermudez."
+    },
+    {
+      "start": 233.66000000000003,
+      "end": 235.66000000000003,
+      "text": "Present. Yes, no conflicts."
+    },
+    {
+      "start": 235.66,
+      "end": 256.24,
+      "text": "regarde."
+    },
+    {
+      "start": 256.24,
+      "end": 264.74,
+      "text": "Present. Yes, no conflicts."
+    },
+    {
+      "start": 264.74,
+      "end": 276.62,
+      "text": "Not present."
+    },
+    {
+      "start": 276.62,
+      "end": 282.86,
+      "text": "Jeff Gibson."
+    },
+    {
+      "start": 282.86,
+      "end": 285.68,
+      "text": "Yes, and I'm on the board at room in the end."
+    },
+    {
+      "start": 285.68,
+      "end": 290.66,
+      "text": "Charles trouble."
+    },
+    {
+      "start": 290.66,
+      "end": 296.66,
+      "text": "Present and part of room in the end also."
+    },
+    {
+      "start": 296.66,
+      "end": 300.32000000000005,
+      "text": "And Tom Turner."
+    },
+    {
+      "start": 300.32000000000005,
+      "end": 310.1,
+      "text": "Not present."
+    },
+    {
+      "start": 310.1,
+      "end": 315.14000000000004,
+      "text": "Did anyone else come in after I went through the list?"
+    },
+    {
+      "start": 315.14000000000004,
+      "end": 318.26000000000005,
+      "text": "From the planning council."
+    },
+    {
+      "start": 318.26,
+      "end": 321.26,
+      "text": "This is Ryan Ellis. I did. So, yeah."
+    },
+    {
+      "start": 321.26,
+      "end": 324.26,
+      "text": "So, present. Yes. No."
+    },
+    {
+      "start": 324.26,
+      "end": 326.26,
+      "text": "Thank you."
+    },
+    {
+      "start": 326.26,
+      "end": 329.26,
+      "text": "All right. Thank you."
+    },
+    {
+      "start": 329.26,
+      "end": 335.26,
+      "text": "We are going to move on to having a moment of silence for people that we have lost."
+    },
+    {
+      "start": 335.26,
+      "end": 338.26,
+      "text": "I think you guys all know that this has been."
+    },
+    {
+      "start": 338.26,
+      "end": 343.26,
+      "text": "Very difficult couple of weeks for all of us in the service provider community."
+    },
+    {
+      "start": 343.26,
+      "end": 345.26,
+      "text": "So, please listen as I read their names."
+    },
+    {
+      "start": 345.26,
+      "end": 348.26,
+      "text": "Norris Kenner."
+    },
+    {
+      "start": 348.26,
+      "end": 351.26,
+      "text": "Jerry Montana, Pascal."
+    },
+    {
+      "start": 351.26,
+      "end": 353.26,
+      "text": "Philip Cornette."
+    },
+    {
+      "start": 353.26,
+      "end": 355.26,
+      "text": "Fred Richards."
+    },
+    {
+      "start": 355.26,
+      "end": 357.26,
+      "text": "Robert Lesser."
+    },
+    {
+      "start": 357.26,
+      "end": 359.26,
+      "text": "Jeff Richardson."
+    },
+    {
+      "start": 359.26,
+      "end": 361.26,
+      "text": "Hans Pollock."
+    },
+    {
+      "start": 361.26,
+      "end": 363.26,
+      "text": "Melissa conquest."
+    },
+    {
+      "start": 363.26,
+      "end": 365.26,
+      "text": "Ralph Freeman."
+    },
+    {
+      "start": 365.26,
+      "end": 368.26,
+      "text": "Franklin Don Nash."
+    },
+    {
+      "start": 368.26,
+      "end": 370.26,
+      "text": "Preston P woods."
+    },
+    {
+      "start": 370.26,
+      "end": 372.26,
+      "text": "Eduardo Alvarez."
+    },
+    {
+      "start": 372.26,
+      "end": 374.26,
+      "text": "And an unidentified male."
+    },
+    {
+      "start": 374.26,
+      "end": 375.26,
+      "text": "Richard Lewis."
+    },
+    {
+      "start": 375.26,
+      "end": 376.26,
+      "text": "Robert Lesser."
+    },
+    {
+      "start": 376.26,
+      "end": 377.26,
+      "text": "Richard Lewis."
+    },
+    {
+      "start": 377.26,
+      "end": 378.26,
+      "text": "Jeff Morrison."
+    },
+    {
+      "start": 378.26,
+      "end": 379.26,
+      "text": "Daniel."
+    },
+    {
+      "start": 379.26,
+      "end": 380.26,
+      "text": "Richard Lewis."
+    },
+    {
+      "start": 380.26,
+      "end": 381.26,
+      "text": "Philan."
+    },
+    {
+      "start": 381.26,
+      "end": 382.26,
+      "text": "William."
+    },
+    {
+      "start": 382.26,
+      "end": 383.26,
+      "text": "Richard Lewis."
+    },
+    {
+      "start": 383.26,
+      "end": 383.26,
+      "text": ""
+    },
+    {
+      "start": 383.26,
+      "end": 384.26,
+      "text": "\ucf00\u011fendis."
+    },
+    {
+      "start": 384.26,
+      "end": 385.26,
+      "text": "Hamlet."
+    },
+    {
+      "start": 385.26,
+      "end": 386.26,
+      "text": "Thomas."
+    },
+    {
+      "start": 386.26,
+      "end": 387.26,
+      "text": "Andrew."
+    },
+    {
+      "start": 387.26,
+      "end": 388.26,
+      "text": "\ucf00\u011fendis."
+    },
+    {
+      "start": 388.26,
+      "end": 389.26,
+      "text": "Jesse."
+    },
+    {
+      "start": 389.26,
+      "end": 390.26,
+      "text": "Henry."
+    },
+    {
+      "start": 390.26,
+      "end": 391.26,
+      "text": "Taylor."
+    },
+    {
+      "start": 391.26,
+      "end": 392.26,
+      "text": "Gary."
+    },
+    {
+      "start": 392.26,
+      "end": 393.26,
+      "text": "Gary."
+    },
+    {
+      "start": 393.26,
+      "end": 394.26,
+      "text": "Gary."
+    },
+    {
+      "start": 394.26,
+      "end": 395.26,
+      "text": "Gary."
+    },
+    {
+      "start": 395.26,
+      "end": 396.26,
+      "text": "Gary."
+    },
+    {
+      "start": 396.26,
+      "end": 397.26,
+      "text": "Gary."
+    },
+    {
+      "start": 397.26,
+      "end": 398.26,
+      "text": "Gary."
+    },
+    {
+      "start": 398.26,
+      "end": 399.26,
+      "text": "Gary."
+    },
+    {
+      "start": 399.26,
+      "end": 400.26,
+      "text": "Gary."
+    },
+    {
+      "start": 400.26,
+      "end": 401.26,
+      "text": "Gary."
+    },
+    {
+      "start": 401.26,
+      "end": 402.26,
+      "text": "Gary."
+    },
+    {
+      "start": 402.26,
+      "end": 432.24,
+      "text": "Thank you."
+    },
+    {
+      "start": 432.26,
+      "end": 440.26,
+      "text": "Thank you all very much."
+    },
+    {
+      "start": 440.26,
+      "end": 444.62,
+      "text": "So, we're going to get this meeting started today, but."
+    },
+    {
+      "start": 444.62,
+      "end": 450.74,
+      "text": "A story of progress, and I believe will calmly at park center is going to share some things with us today."
+    },
+    {
+      "start": 450.74,
+      "end": 456.38,
+      "text": "So, we'll take it away. Awesome. Thanks."
+    },
+    {
+      "start": 456.38,
+      "end": 459.02,
+      "text": "I'm happy to be here grateful to be with you all."
+    },
+    {
+      "start": 459.02,
+      "end": 465.26,
+      "text": "So, yeah, park center. Some of you might know park center."
+    },
+    {
+      "start": 465.26,
+      "end": 469.21999999999997,
+      "text": "Actually owns a bunch of affordable housing."
+    },
+    {
+      "start": 469.21999999999997,
+      "end": 471.91999999999996,
+      "text": "In Nashville for people diagnosed with."
+    },
+    {
+      "start": 471.91999999999996,
+      "end": 475.58,
+      "text": "And then on us and."
+    },
+    {
+      "start": 475.58,
+      "end": 481.82,
+      "text": "So, we, we own about 2021 residential properties."
+    },
+    {
+      "start": 481.82,
+      "end": 490.21999999999997,
+      "text": "And that's, that was something that I didn't even know when I worked for parks and years ago, it was kind of like, like a secret."
+    },
+    {
+      "start": 490.21999999999997,
+      "end": 498.38,
+      "text": "It seemed like, but so we want to do more, like, we want to do more. We want to provide more affordable housing."
+    },
+    {
+      "start": 498.38,
+      "end": 506.12,
+      "text": "Either through building it, which is really tough and we're trying to build our capacity internally to."
+    },
+    {
+      "start": 506.12,
+      "end": 509.78,
+      "text": "To actually develop affordable housing."
+    },
+    {
+      "start": 509.78,
+      "end": 513.4399999999999,
+      "text": "If the opportunity arises, but we're also."
+    },
+    {
+      "start": 513.44,
+      "end": 517.7,
+      "text": "You know, trying to increase access to units through."
+    },
+    {
+      "start": 517.7,
+      "end": 521.48,
+      "text": "Other means, like master leasing and."
+    },
+    {
+      "start": 521.48,
+      "end": 524.36,
+      "text": "Some other strategies so."
+    },
+    {
+      "start": 524.36,
+      "end": 529.6400000000001,
+      "text": "Historically, we've also had quite a few barriers."
+    },
+    {
+      "start": 529.64,
+      "end": 535.04,
+      "text": "To get into our housing that were that were basically imposed by the organization. So."
+    },
+    {
+      "start": 535.04,
+      "end": 539.18,
+      "text": "We've required."
+    },
+    {
+      "start": 539.18,
+      "end": 544.34,
+      "text": "Income and employment, we've been required sobriety."
+    },
+    {
+      "start": 544.34,
+      "end": 549.5,
+      "text": "We've at times required insurance in a state that."
+    },
+    {
+      "start": 549.5,
+      "end": 552.02,
+      "text": "You know, hasn't expanded Medicaid."
+    },
+    {
+      "start": 552.02,
+      "end": 555.02,
+      "text": "So, you know, while the."
+    },
+    {
+      "start": 555.02,
+      "end": 562.6999999999999,
+      "text": "While the housing is great, we've we've kind of again, just had a bunch of barriers and I've been always serve people with the highest needs."
+    },
+    {
+      "start": 562.6999999999999,
+      "end": 572.78,
+      "text": "So, we're thanks to David Langel, Martin who many of you all know he's he's the director of all of our housing stuff here at park center."
+    },
+    {
+      "start": 572.78,
+      "end": 581.3,
+      "text": "He and I, and a bunch of other folks are working together to try to increase the number of units and also lower barriers to our housing units, which."
+    },
+    {
+      "start": 581.3,
+      "end": 587.12,
+      "text": "Is just extremely difficult, even if you have the passion and energy to do that."
+    },
+    {
+      "start": 587.12,
+      "end": 595.6999999999999,
+      "text": "Because you need more, you know, money, uh, we've had to restructure our departments to prepare for this."
+    },
+    {
+      "start": 595.6999999999999,
+      "end": 600.92,
+      "text": "But, you know, it's, it's great work."
+    },
+    {
+      "start": 600.92,
+      "end": 609.02,
+      "text": "And so anyway, the success story recently is we, we haven't built more housing, but we've partnered with the developer."
+    },
+    {
+      "start": 609.02,
+      "end": 617.12,
+      "text": "To master lease, um, 14 brand new units in the Madison area."
+    },
+    {
+      "start": 617.12,
+      "end": 623.12,
+      "text": "These are apartments that will be permanent."
+    },
+    {
+      "start": 623.12,
+      "end": 629.48,
+      "text": "They are permanent we've had folks moving into those units over the last few days."
+    },
+    {
+      "start": 629.48,
+      "end": 633.02,
+      "text": "And it's just been fun to like."
+    },
+    {
+      "start": 633.02,
+      "end": 638.18,
+      "text": "To witness people moving on, it's always a good always a good time. Um."
+    },
+    {
+      "start": 638.18,
+      "end": 641.84,
+      "text": "And these units are different for us because they, uh."
+    },
+    {
+      "start": 641.84,
+      "end": 650.48,
+      "text": "Don't have most of those barriers so for the 1st time in our 37 year history of person, and we're not requiring."
+    },
+    {
+      "start": 650.48,
+      "end": 661.22,
+      "text": "Um, you know, income, all the, all the stuff, sobriety, all the stuff that I just mentioned that we have in the past. So that's a huge, huge deal for us. Um."
+    },
+    {
+      "start": 661.22,
+      "end": 665.0,
+      "text": "And we hope to, uh."
+    },
+    {
+      "start": 665.0,
+      "end": 669.32,
+      "text": "To identify more units that we can, you know, master lease."
+    },
+    {
+      "start": 669.32,
+      "end": 678.02,
+      "text": "Um, because it's, you know, it doesn't require all the energy to actually develop the property, but we do get access. Um."
+    },
+    {
+      "start": 678.02,
+      "end": 681.38,
+      "text": "And try to target those units to people who need it the most. So."
+    },
+    {
+      "start": 681.38,
+      "end": 683.72,
+      "text": "Um, that's a little."
+    },
+    {
+      "start": 683.72,
+      "end": 688.76,
+      "text": "Yeah, a little success story from the parks on our side of things and."
+    },
+    {
+      "start": 688.76,
+      "end": 695.48,
+      "text": "Appreciate all of our partners who have helped with the move on this, because it's been definitely a community effort. All of, you know."
+    },
+    {
+      "start": 695.48,
+      "end": 698.78,
+      "text": "How much effort it takes, how much time it takes to."
+    },
+    {
+      "start": 698.78,
+      "end": 703.76,
+      "text": "To help someone get into their new space and all the furniture and."
+    },
+    {
+      "start": 703.76,
+      "end": 706.8199999999999,
+      "text": "Assistance that's required there, so."
+    },
+    {
+      "start": 706.8199999999999,
+      "end": 713.72,
+      "text": "Thanks for the time now. Well, thank you very much and that's very exciting. Very good. Very exciting news. Um."
+    },
+    {
+      "start": 713.72,
+      "end": 720.98,
+      "text": "Anytime we can reduce barriers to housing for folks, it makes me very happy. I'm sure it does. Everyone else as well."
+    },
+    {
+      "start": 720.98,
+      "end": 730.8199999999999,
+      "text": "All right, so let's move right into our next agenda item, which is the homeless impact divisions report. Judy, you want to take take the lead on that please."
+    },
+    {
+      "start": 730.82,
+      "end": 740.72,
+      "text": "Yes, good morning everyone. I'm going to start with the vaccination plan for all people experiencing homelessness."
+    },
+    {
+      "start": 740.72,
+      "end": 757.22,
+      "text": "So, the goal for our communities to offer the vaccine, uh, cobit vaccine to 100% off the people experiencing homelessness by Memorial Day. Uh, our community is on track with that shelter and and this includes shelters and outdoors."
+    },
+    {
+      "start": 757.22,
+      "end": 770.6,
+      "text": "So, the public health department work with, uh, National rescue mission room in the in and the metro shelters, especially during the winter storm. And I think we mentioned that at the last meeting to get people vaccinated. Um."
+    },
+    {
+      "start": 770.72,
+      "end": 785.24,
+      "text": "And also on that note, um, we had, uh, social services were able to coordinate with neighborhood health to bring the vaccine on the last night that the overflow shelter was open."
+    },
+    {
+      "start": 785.24,
+      "end": 799.64,
+      "text": "Um, and also to the people that utilize that. Um, and then the outdoor coordination began with, um, public health department neighborhood health and St. Thomas ascension."
+    },
+    {
+      "start": 799.64,
+      "end": 802.64,
+      "text": "And I cannot stress and."
+    },
+    {
+      "start": 802.64,
+      "end": 814.64,
+      "text": "Thank you enough of the work that Brian hail with neighborhood health has put into putting that plan together. We were helping coordinate, but he really, um, stepping in coordinating with everybody."
+    },
+    {
+      "start": 814.64,
+      "end": 831.64,
+      "text": "On who's going to bridge encampments and updating everybody and keeping everybody posted on the latest news as you've heard this month or this week, actually that, uh, the 1 shot Johnson and Johnson vaccine is being held off right now."
+    },
+    {
+      "start": 831.64,
+      "end": 846.64,
+      "text": "Right now, the CDC and FDA are temporarily causing it to, um, evaluate some concerns. They are so Brian immediately informed the entire community with the service providers."
+    },
+    {
+      "start": 846.64,
+      "end": 861.64,
+      "text": "Um, that, um, that, you know, he's rescheduling and, and the health providers are rescheduling some of the planned vaccinations, but still going to reschedule those and move forward. The message is very clear and and get vaccinated."
+    },
+    {
+      "start": 861.64,
+      "end": 867.64,
+      "text": "Get vaccinated the vaccine Pfizer and Moderna are out there. Um."
+    },
+    {
+      "start": 867.64,
+      "end": 888.64,
+      "text": "The efforts will continue with that and, um, so the way that it's set up, uh, with the schedule is larger encampments have 1 health provider go out and partner with, uh, um, um, service provider to 1 alert people ahead of time and encourage them, you know, and provide them with information ahead of time."
+    },
+    {
+      "start": 888.64,
+      "end": 892.64,
+      "text": "Um, before the vaccination and then, um, um, that is going out and happening."
+    },
+    {
+      "start": 892.64,
+      "end": 897.64,
+      "text": "Um, again, um, in addition to all of that neighborhood health."
+    },
+    {
+      "start": 897.64,
+      "end": 903.64,
+      "text": "Um, is taking walk ups at their downtown clinic for anybody on Fridays."
+    },
+    {
+      "start": 903.64,
+      "end": 906.64,
+      "text": "I mean, it is is really."
+    },
+    {
+      "start": 906.64,
+      "end": 912.64,
+      "text": "Well, organized effort to, um, offer the vaccine to 100% on the vaccine."
+    },
+    {
+      "start": 912.64,
+      "end": 917.64,
+      "text": "Um, and I think that's a really, uh, um, I think that's a really, uh, um, I think that's a really good question."
+    },
+    {
+      "start": 917.64,
+      "end": 929.64,
+      "text": "Have really surprised when there are individuals during COVID patients after tudo should check their quarantine reports out there that come down when their Matter\u306f\u6d88\u8cbb\u7ba1 \u0441\u0442\u043e\u0438\u0442\u98fe\u60aa\u3093\u3067\u3059\u3088\u306d?"
+    },
+    {
+      "start": 929.64,
+      "end": 942.66,
+      "text": "Um, um, care\u044b\u0435 dye\u65b0 MACGE surge \ucc0d importa dari tad carro sekarang meu\ud310\u8fd9\u662f\u1ed1i"
+    },
+    {
+      "start": 942.66,
+      "end": 947.9399999999999,
+      "text": "sent to the HUD Region 4 about our vaccination plan so others can learn from what we're doing here."
+    },
+    {
+      "start": 947.9399999999999,
+      "end": 952.14,
+      "text": "Here, I'm also generous to give a presentation there as well."
+    },
+    {
+      "start": 952.14,
+      "end": 961.86,
+      "text": "This ties into metro shelters at the fairground. There's a phased closing. I'm going to send out a press release on that."
+    },
+    {
+      "start": 961.86,
+      "end": 971.64,
+      "text": "That is planned with all the partners involved. I will send after this write out a press release that was shared."
+    },
+    {
+      "start": 971.64,
+      "end": 984.84,
+      "text": "And that's it's going out. The closure is scheduled for July 1st in a very considerate planned effort with all the partners."
+    },
+    {
+      "start": 984.84,
+      "end": 994.02,
+      "text": "And I cannot stress enough how much has been done at those shelters. They have been for more than a year."
+    },
+    {
+      "start": 994.02,
+      "end": 1009.02,
+      "text": "Over 1300 people were sheltered at the metro different metro shelters at times metro social services was running 5 shelters, including the overflow shelters on those days regularly."
+    },
+    {
+      "start": 1009.02,
+      "end": 1024.02,
+      "text": "It's been for shelters over 130,000 meals were provided people were housing navigation was provided and it's still going on. Case management is offered to every single person."
+    },
+    {
+      "start": 1024.02,
+      "end": 1035.9,
+      "text": "76 people were successfully moved to housing. There is a lot of transportation that's being provided. So people can get to appointments."
+    },
+    {
+      "start": 1035.9,
+      "end": 1047.96,
+      "text": "Social security assistance, employment assistance, food stamps, just a lot of work has gone in and also great. Thank you to all the partners who have helped with that as well."
+    },
+    {
+      "start": 1047.96,
+      "end": 1061.96,
+      "text": "Another update is around the flood. There have been several organizations. There were especially 2 encampments. They were completely swept away as you know."
+    },
+    {
+      "start": 1061.96,
+      "end": 1069.96,
+      "text": "And tragically lives were lost in 1 of the encampments and the following partners have."
+    },
+    {
+      "start": 1069.96,
+      "end": 1082.96,
+      "text": "Stepped in very quickly and that's Metro social services open table, national people living national parks and really come together to put the people from these encampments into motels."
+    },
+    {
+      "start": 1082.96,
+      "end": 1094.96,
+      "text": "And so, and then we have to go to the house for 30 days, just to give them a break, just to get over the trauma and really immediately started focusing on the services and the housing process."
+    },
+    {
+      "start": 1094.96,
+      "end": 1102.96,
+      "text": "And as they'll share shared, it's it's amazing that yesterday, some people have actually moved into housing. So the goal is to have everybody connected."
+    },
+    {
+      "start": 1102.96,
+      "end": 1115.96,
+      "text": "Um, after the 30 days, I mean, the records has provided materials to people if they would have replacements of 10 cent materials, but the goal is really to keep that."
+    },
+    {
+      "start": 1115.96,
+      "end": 1127.96,
+      "text": "Really laser focus housing placement and working on housing with this, the people and, and using this stadium of tells to to make these connections."
+    },
+    {
+      "start": 1127.96,
+      "end": 1133.96,
+      "text": "Um, we are also working on a continuing working on a landlord engagement."
+    },
+    {
+      "start": 1133.96,
+      "end": 1144.96,
+      "text": "Uh, there is going to be a joint, uh, press announcement in and push to as we are moving with rapid rehousing and as we are getting, um."
+    },
+    {
+      "start": 1144.96,
+      "end": 1155.96,
+      "text": "Hopefully more section 8 vouchers, which yeah, we'll, we'll come in and you're going to hear an update from that later on. Um, we're really continuing the landlord, um, engagement push."
+    },
+    {
+      "start": 1155.96,
+      "end": 1159.96,
+      "text": "We are having through ESG, um."
+    },
+    {
+      "start": 1159.96,
+      "end": 1171.96,
+      "text": "Over $80,000 that we are using for landlord incentive for landlord mitigation fund to pay for potential damages above the security deposits for landlord and landlords."
+    },
+    {
+      "start": 1171.96,
+      "end": 1184.96,
+      "text": "And also, if, um, there is a gap in, if somebody is moving out, um, or relocates that we can hold units for up to 2 months and fill them with with another person."
+    },
+    {
+      "start": 1184.96,
+      "end": 1191.96,
+      "text": "Uh, experience through through the coordinated entry approach. So that is going on as well. And we'll hear more about that."
+    },
+    {
+      "start": 1191.96,
+      "end": 1201.96,
+      "text": "And in the coming days and weeks, and then, um, I'm going to give it over real quickly to, uh, Shadley for data."
+    },
+    {
+      "start": 1201.96,
+      "end": 1203.96,
+      "text": "Update and."
+    },
+    {
+      "start": 1203.96,
+      "end": 1205.96,
+      "text": "Um, yeah."
+    },
+    {
+      "start": 1205.96,
+      "end": 1211.96,
+      "text": "Yeah, so morning, everybody. Okay, good."
+    },
+    {
+      "start": 1211.96,
+      "end": 1226.96,
+      "text": "Um, good morning. So this morning we wanted to share some good news, some updates from in the last month around progress in improving data collection in."
+    },
+    {
+      "start": 1226.96,
+      "end": 1241.96,
+      "text": "So, last month, you all approved the initiative to more proactively engage street outreach providers so that we, as a community can increase the data collection from street outreach providers."
+    },
+    {
+      "start": 1241.96,
+      "end": 1246.96,
+      "text": "So, following that meeting, we, um, our team held a meeting with."
+    },
+    {
+      "start": 1246.96,
+      "end": 1260.96,
+      "text": "Street outreach supervisors and basically just talked about sort of where we are now, where we're hoping to go talked about the importance of that data and how it can be used in our community."
+    },
+    {
+      "start": 1260.96,
+      "end": 1272.96,
+      "text": "Um, it was a really good conversation. It's been kind of cool to see the tone around shift. We saw that agencies that are actively participating sort of spearheaded."
+    },
+    {
+      "start": 1272.96,
+      "end": 1276.96,
+      "text": "Like the reasons why we should all be doing this so that was awesome."
+    },
+    {
+      "start": 1276.96,
+      "end": 1296.96,
+      "text": "We also learned about some of the barriers that exist around staff time, et cetera. And so we are continuing to try to work closely with how technical assistance as well as learning from communities that have already sort of done this process to think through best practices."
+    },
+    {
+      "start": 1296.96,
+      "end": 1301.96,
+      "text": "Versus where we are as a starting point now, and somewhere in the middle, that's where."
+    },
+    {
+      "start": 1301.96,
+      "end": 1304.96,
+      "text": "We'll hopefully, you know, be working towards."
+    },
+    {
+      "start": 1304.96,
+      "end": 1316.96,
+      "text": "So, following that conversation, we actually onboarded 2 new projects that are going to be entering street outreach data, which is super exciting. So I want to give them a big shout out."
+    },
+    {
+      "start": 1316.96,
+      "end": 1326.96,
+      "text": "That is people loving Nashville and Nashville street project. So both of these agencies are fairly new to the family."
+    },
+    {
+      "start": 1326.96,
+      "end": 1342.96,
+      "text": "And so it's very exciting to see their eager sort of readiness to contribute to the big picture. So we're very grateful for that and looking forward to seeing how that data improves our big picture understanding about outdoor homelessness and Nashville."
+    },
+    {
+      "start": 1342.96,
+      "end": 1357.96,
+      "text": "One of the gaps that we haven't talked about as directly, but we are going to continue to explore is the way that it's a project type similar to street outreach called support services only."
+    },
+    {
+      "start": 1357.96,
+      "end": 1360.96,
+      "text": "So that's going to be agencies that provide a more specific service."
+    },
+    {
+      "start": 1360.96,
+      "end": 1361.96,
+      "text": "So a good example would be shower the people."
+    },
+    {
+      "start": 1361.96,
+      "end": 1363.96,
+      "text": "So a good example would be shower the people."
+    },
+    {
+      "start": 1363.96,
+      "end": 1364.96,
+      "text": "I also want to shout them out."
+    },
+    {
+      "start": 1364.96,
+      "end": 1372.96,
+      "text": "They provide mobile shower services around town and encampments and other places where people are experiencing outdoor homelessness."
+    },
+    {
+      "start": 1372.96,
+      "end": 1377.96,
+      "text": "They're amazing and they are entering data into HMIS."
+    },
+    {
+      "start": 1377.96,
+      "end": 1382.96,
+      "text": "They are not required to do so for any grant purpose, but they wanted to contribute to the big picture."
+    },
+    {
+      "start": 1382.96,
+      "end": 1387.96,
+      "text": "So we don't want to lose sort of the support service only project type because they also shed a lot of insight into outdoor homelessness."
+    },
+    {
+      "start": 1387.96,
+      "end": 1388.96,
+      "text": "So,"
+    },
+    {
+      "start": 1388.96,
+      "end": 1399.96,
+      "text": "we don't want to lose sort of the support service only project type because they also shed a lot of insight into outdoor homelessness."
+    },
+    {
+      "start": 1399.96,
+      "end": 1405.96,
+      "text": "So shower the people might be providing services to people outside that are not ready to engage with a street outreach worker."
+    },
+    {
+      "start": 1405.96,
+      "end": 1420.96,
+      "text": "That information, though, is still really critical for us as a community to understand the system to have and work towards an unduplicated number of people experiencing outdoor homelessness."
+    },
+    {
+      "start": 1420.96,
+      "end": 1425.96,
+      "text": "So we're going to continue to explore what that looks like and engage with those agencies as well."
+    },
+    {
+      "start": 1425.96,
+      "end": 1440.96,
+      "text": "I am the sort of bleeds into a committee update, but the data committee asked me to create an FAQ sort of like a 1 pager about street outreach and that is going to be distributed at some point and is meant to."
+    },
+    {
+      "start": 1440.96,
+      "end": 1446.96,
+      "text": "Let everyone be an expert on street outreach so that as a community, we're all having this conversation."
+    },
+    {
+      "start": 1446.96,
+      "end": 1452.96,
+      "text": "Everyone can use that information to try to engage agencies as well around street outreach data."
+    },
+    {
+      "start": 1452.96,
+      "end": 1458.96,
+      "text": "So, last, but not least, I also, this is outside of the street outreach update, but I also wanted to give a shout out to safe haven family shelter."
+    },
+    {
+      "start": 1458.96,
+      "end": 1473.96,
+      "text": "They provide emergency shelter services, rapid rehousing services, and in the last few months in the conversation as sort of picked up speed, they have, they reached out to us and they wanted to set up a project as well to collect data that they are not reporting."
+    },
+    {
+      "start": 1473.96,
+      "end": 1489.96,
+      "text": "But they wanted to be available to the community to the community."
+    },
+    {
+      "start": 1489.96,
+      "end": 1494.96,
+      "text": "So, wanted to give a big shout out to them as well. That's."
+    },
+    {
+      "start": 1494.96,
+      "end": 1498.96,
+      "text": "What we're hoping for across the community. So."
+    },
+    {
+      "start": 1498.96,
+      "end": 1501.96,
+      "text": "Happy to answer any questions if there are any."
+    },
+    {
+      "start": 1501.96,
+      "end": 1509.96,
+      "text": "And we do have a few hands up, so I'm just going to go down the list on on my little screen here. Elena, you have a question."
+    },
+    {
+      "start": 1509.96,
+      "end": 1514.96,
+      "text": "Sure, I feel bad. I think Freddie and Mark were before me, but I think mine's quick."
+    },
+    {
+      "start": 1514.96,
+      "end": 1531.96,
+      "text": "It was related to Judy's update and it's more just me being curious, but do we know that the vaccine, vaccine distribution are those from the Department of public health program or the program."
+    },
+    {
+      "start": 1531.96,
+      "end": 1534.96,
+      "text": "And you might not know I'm not sure."
+    },
+    {
+      "start": 1534.96,
+      "end": 1539.96,
+      "text": "I'm sorry, I do not know. I."
+    },
+    {
+      "start": 1539.96,
+      "end": 1550.96,
+      "text": "All I know on the local, it's it's the partners on the health provider side are the public health department neighborhood health and St. Thomas essentially."
+    },
+    {
+      "start": 1550.96,
+      "end": 1560.96,
+      "text": "Okay, thank you. I was just curious because we're having just conversations with our health centers that are part of the program that are getting the vaccines from HHS, but."
+    },
+    {
+      "start": 1560.96,
+      "end": 1565.96,
+      "text": "Just curious, thank you. Yeah. Yeah. All right. Thank you. Freddie."
+    },
+    {
+      "start": 1565.96,
+      "end": 1575.96,
+      "text": "Thanks. Yeah. Mine is more for Judy broadly and I guess it touches on 2 things in her update. 1 is the."
+    },
+    {
+      "start": 1575.96,
+      "end": 1580.96,
+      "text": "Planned closure of the fairground shelter and the other is the flooding."
+    },
+    {
+      "start": 1580.96,
+      "end": 1583.96,
+      "text": "You know, I, I'm still puzzled by."
+    },
+    {
+      "start": 1583.96,
+      "end": 1589.96,
+      "text": "Metro's overall, I guess I would characterize it as refusal to use."
+    },
+    {
+      "start": 1589.96,
+      "end": 1592.96,
+      "text": "Federal dollars for hotel vouchers."
+    },
+    {
+      "start": 1592.96,
+      "end": 1599.96,
+      "text": "Um, I, I guess I'd like an update maybe from Judy or I believe Hannah is also on the call from the mayor's office today."
+    },
+    {
+      "start": 1599.96,
+      "end": 1606.96,
+      "text": "Um, as to if we intend to, I think there are now a variety of sources here. I think FEMA."
+    },
+    {
+      "start": 1606.96,
+      "end": 1609.96,
+      "text": "Uh, has some dollars that they're providing to."
+    },
+    {
+      "start": 1609.96,
+      "end": 1613.96,
+      "text": "Municipalities and then I believe the American rescue plan."
+    },
+    {
+      "start": 1613.96,
+      "end": 1623.96,
+      "text": "Uh, but even going back to the cares act, there have been a lot of dollars that Metro has chosen not to use for hotel vouchers. And I'm, I'm interested in if we."
+    },
+    {
+      "start": 1623.96,
+      "end": 1627.96,
+      "text": "Intend to change our approach there, our policy focus. I, I, I just."
+    },
+    {
+      "start": 1627.96,
+      "end": 1632.96,
+      "text": "The flooding to me, it seemed like, uh, it included."
+    },
+    {
+      "start": 1632.96,
+      "end": 1642.96,
+      "text": "Too many preventable deaths and I think if we were willing to actually use dollars that are available to get people into even transitional housing or temporary housing."
+    },
+    {
+      "start": 1642.96,
+      "end": 1649.96,
+      "text": "Uh, we could, we could better serve the community. We're here to serve and I'd love some perspective on this place."
+    },
+    {
+      "start": 1649.96,
+      "end": 1664.96,
+      "text": "Um, so I, I will start real quickly and then if Hannah, you can add something to so 1 of the things, especially with the flooding, we are looking at, um, how to utilize FEMA dollars, if there's a declaration. So we're looking at, at the different."
+    },
+    {
+      "start": 1664.96,
+      "end": 1679.96,
+      "text": "Um, we have conversations on, uh, what we can do with reimbursement for more tell vouchers. We do have these conversations right now internally with Metro. I do not have a full response yet on on all of the."
+    },
+    {
+      "start": 1679.96,
+      "end": 1685.3,
+      "text": "Front, but that's what we're looking at. So, yeah, I will need to follow up."
+    },
+    {
+      "start": 1685.3,
+      "end": 1692.56,
+      "text": "Once that better response, anything you want to add Hannah by any chance? I think that's pretty much something up."
+    },
+    {
+      "start": 1692.56,
+      "end": 1696.64,
+      "text": "No, you summed it up."
+    },
+    {
+      "start": 1696.64,
+      "end": 1702.46,
+      "text": "Happy to assist in tracking down any of that updated information that you need from our side."
+    },
+    {
+      "start": 1702.46,
+      "end": 1708.4,
+      "text": "Well, I guess, let me ask a follow up then, which is, is it?"
+    },
+    {
+      "start": 1708.4,
+      "end": 1714.76,
+      "text": "It does Metro intend to try to use hotel vouchers. I know this has come up."
+    },
+    {
+      "start": 1714.76,
+      "end": 1721.7800000000002,
+      "text": "Throughout the cobit process and it seemed as though, yes, we've, we've been doing the process very effectively."
+    },
+    {
+      "start": 1721.7800000000002,
+      "end": 1725.68,
+      "text": "Um, overall, and I think I just want to understand."
+    },
+    {
+      "start": 1725.68,
+      "end": 1731.2,
+      "text": "From an availability perspective, I don't think that's the issue. I just wonder."
+    },
+    {
+      "start": 1731.2,
+      "end": 1734.56,
+      "text": "If there, if there are reasons we have not done this."
+    },
+    {
+      "start": 1734.56,
+      "end": 1738.46,
+      "text": "Prior, you know, if we see the fairground shelter closing."
+    },
+    {
+      "start": 1738.46,
+      "end": 1745.66,
+      "text": "And we go through anything else that could be severe, whether it would, it would seem to me, we would want to be prepared to do this."
+    },
+    {
+      "start": 1745.66,
+      "end": 1753.76,
+      "text": "And that's part of the conversations we're having right now. I see, um, as."
+    },
+    {
+      "start": 1753.76,
+      "end": 1758.74,
+      "text": "So, one of the things we're doing is looking as."
+    },
+    {
+      "start": 1758.74,
+      "end": 1772.96,
+      "text": "The cold weather is season is over, so we're looking at, um, that whole plan on next year's cold weather season, but really expanding on having the conversation of what all of this needs to involve, especially with this year with the different emergencies."
+    },
+    {
+      "start": 1772.96,
+      "end": 1786.28,
+      "text": "Um, it's more of what happens when there are different disasters or emergencies happening. So it's an overall conversation that we're having. How does do these funds link in?"
+    },
+    {
+      "start": 1786.28,
+      "end": 1795.16,
+      "text": "How can we, and also building up on the record, we housing efforts that we have going on. How do we tie everything in into that."
+    },
+    {
+      "start": 1795.16,
+      "end": 1810.16,
+      "text": "And go off getting people into housing. So, I, I would say we, we really looking and taking a bigger picture on reviewing on what, what all these dollar sources are looking at. Um, I actually had a peer city call yesterday."
+    },
+    {
+      "start": 1810.16,
+      "end": 1818.02,
+      "text": "Also, with Atlanta to just learn what they're doing and how they're viewing things and having these peer city calls as well."
+    },
+    {
+      "start": 1818.02,
+      "end": 1822.46,
+      "text": "So, I do not, I'm sorry right now I do not have a."
+    },
+    {
+      "start": 1822.46,
+      "end": 1826.24,
+      "text": "The best concrete answers yet, but."
+    },
+    {
+      "start": 1826.24,
+      "end": 1833.62,
+      "text": "Hope so. Okay, I guess maybe I would ask specifically for an update around our approach to the policy."
+    },
+    {
+      "start": 1833.62,
+      "end": 1837.04,
+      "text": "Of hotel vouchers for next meeting. Okay."
+    },
+    {
+      "start": 1837.04,
+      "end": 1839.86,
+      "text": "Uh, yeah. Great. Thanks."
+    },
+    {
+      "start": 1839.86,
+      "end": 1844.4199999999998,
+      "text": "Thank you, Freddie mark."
+    },
+    {
+      "start": 1845.9199999999998,
+      "end": 1856.4199999999998,
+      "text": "This is to Judy, I think, and I'm not trying to put you on the spot Judy, but it occurred to me that as we compile a list of private landlords willing to work with us on rapid rehousing efforts."
+    },
+    {
+      "start": 1856.7199999999998,
+      "end": 1863.9599999999998,
+      "text": "Uh, you mentioned that we're going to provide some extra money upfront as part of the deposit for anticipated damages."
+    },
+    {
+      "start": 1863.96,
+      "end": 1876.38,
+      "text": "Uh, I think it'd be great if we can also start compiling a list, maybe MDHA has something like this almost a preferred providers of people or companies that are willing to come into an apartment."
+    },
+    {
+      "start": 1876.38,
+      "end": 1882.92,
+      "text": "And fix it back up at, uh, sort of less, maybe than the high profit."
+    },
+    {
+      "start": 1882.92,
+      "end": 1887.96,
+      "text": "Very expensive contractors, it could be, you know, sort of an Angie's list."
+    },
+    {
+      "start": 1887.96,
+      "end": 1894.68,
+      "text": "I'd love to see that because it, it can get very, very expensive to rehab an apartment that's been damaged by a tenant."
+    },
+    {
+      "start": 1894.68,
+      "end": 1902.96,
+      "text": "So, I just want to ask a question. I'm sorry. Why are we assuming that people who are experiencing homelessness are going to damage apartments when they move into them?"
+    },
+    {
+      "start": 1902.96,
+      "end": 1912.5,
+      "text": "Just a question 1 of the things I want to add with looking at, especially that piece of the mitigation fund for damages."
+    },
+    {
+      "start": 1912.5,
+      "end": 1920.3,
+      "text": "Looking at other cities, a lot of times they're very little use of it. It's more the incentive of having it."
+    },
+    {
+      "start": 1920.6,
+      "end": 1929.6,
+      "text": "On kind of the security for landlord that can be attractive for them rather than them actually using it a whole lot. Um, so, yeah."
+    },
+    {
+      "start": 1929.6,
+      "end": 1940.94,
+      "text": "Why don't we just, I'm sorry, why don't we just educate the landlords that, you know, they're putting tenants in their apartment. These tenants are just like everybody else. Why? Why are we going to assume that it's going to make them feel better to know that we'll pay for the damages if they damage it?"
+    },
+    {
+      "start": 1940.94,
+      "end": 1944.24,
+      "text": "Because, of course, these people, I'm sorry that that that kind of."
+    },
+    {
+      "start": 1944.24,
+      "end": 1959.0,
+      "text": "Flies all over me. Sorry. That's part of the whole what the messaging is. That's part of the whole landlord engagement team. That's part of what they do with the upfront outreach to landlords. All of that needs to go into a full packet. Yes."
+    },
+    {
+      "start": 1959.0,
+      "end": 1966.98,
+      "text": "And Mark, I've took a note on on that. Um, just also for something to just look at."
+    },
+    {
+      "start": 1966.98,
+      "end": 1975.8,
+      "text": "And and to re and to return to Freddie's concern about the unspent money for hotels."
+    },
+    {
+      "start": 1975.8,
+      "end": 1980.72,
+      "text": "I'm agreeing with him. Something needs to be done. I think we left."
+    },
+    {
+      "start": 1980.72,
+      "end": 1984.8600000000001,
+      "text": "It's question just on the table is."
+    },
+    {
+      "start": 1984.8600000000001,
+      "end": 1991.04,
+      "text": "I do I would think the 1st thing that we would need is an itemized statement."
+    },
+    {
+      "start": 1991.04,
+      "end": 1997.7,
+      "text": "Of the budget item and we would have a more objective."
+    },
+    {
+      "start": 1997.7,
+      "end": 2000.94,
+      "text": "View of how much of these hotel."
+    },
+    {
+      "start": 2000.94,
+      "end": 2005.02,
+      "text": "Dollars had been said sitting in our."
+    },
+    {
+      "start": 2005.02,
+      "end": 2007.58,
+      "text": "In our club."
+    },
+    {
+      "start": 2007.58,
+      "end": 2010.34,
+      "text": "In our own cash book needs."
+    },
+    {
+      "start": 2010.34,
+      "end": 2016.1,
+      "text": "Be expended is that ready? Something that."
+    },
+    {
+      "start": 2016.1,
+      "end": 2020.36,
+      "text": "Would be what you would want."
+    },
+    {
+      "start": 2020.36,
+      "end": 2026.78,
+      "text": "I guess so I mean, my sense is I have heard reports for."
+    },
+    {
+      "start": 2026.78,
+      "end": 2030.1399999999999,
+      "text": "Now, the better part of a year that we've got."
+    },
+    {
+      "start": 2030.1399999999999,
+      "end": 2036.6799999999998,
+      "text": "Hotels that are willing to participate in a program in a voucher like program and."
+    },
+    {
+      "start": 2036.68,
+      "end": 2040.44,
+      "text": "Apart from the process, which is."
+    },
+    {
+      "start": 2040.44,
+      "end": 2047.6000000000001,
+      "text": "You know, um, it is great. We are we're not doing the short term."
+    },
+    {
+      "start": 2047.6000000000001,
+      "end": 2053.84,
+      "text": "Piece of this that is keeping people out of the elements or, you know, there were there was a lot of discussion about."
+    },
+    {
+      "start": 2053.84,
+      "end": 2060.8,
+      "text": "Preferring telling to a congregate shelter, which is what we wound up with, you know, for better for worse. We've."
+    },
+    {
+      "start": 2060.8,
+      "end": 2064.5600000000004,
+      "text": "Kind of muddled through the year with that, but I still feel like from."
+    },
+    {
+      "start": 2064.5600000000004,
+      "end": 2068.78,
+      "text": "Anything through the end of the pandemic."
+    },
+    {
+      "start": 2068.78,
+      "end": 2074.2400000000002,
+      "text": "As we kind of get to, you know, a may target for."
+    },
+    {
+      "start": 2074.2400000000002,
+      "end": 2079.1600000000003,
+      "text": "100% vaccine availability and among the unhoused versus."
+    },
+    {
+      "start": 2079.16,
+      "end": 2085.2799999999997,
+      "text": "Further severe weather, whether it's, you know, more flooding tornadoes, what have you."
+    },
+    {
+      "start": 2085.2799999999997,
+      "end": 2090.62,
+      "text": "These dollars are available, we're not using them and I'm just, I'm perplexed as to why. And so."
+    },
+    {
+      "start": 2090.62,
+      "end": 2100.2799999999997,
+      "text": "I think Charlie, I don't know, I guess this isn't for me a question of data so much as a question of intent and that's, that's what I'm trying to get to the bottom."
+    },
+    {
+      "start": 2101.96,
+      "end": 2107.72,
+      "text": "Thank you, Freddie April, Calvin, I think you have your hand."
+    },
+    {
+      "start": 2109.16,
+      "end": 2117.92,
+      "text": "I was trying to find the mute the unmute button. Paula, I think you're right on target as far as."
+    },
+    {
+      "start": 2117.92,
+      "end": 2126.3199999999997,
+      "text": "Landlord incentive language through our ESG process. We've been trying to use more of language like their tenants."
+    },
+    {
+      "start": 2126.3199999999997,
+      "end": 2136.8799999999997,
+      "text": "You know, instead of their residents and, you know, more housing language that we would use with normal people as opposed to because they are experiencing homelessness."
+    },
+    {
+      "start": 2136.88,
+      "end": 2140.6,
+      "text": "The only issue with our community is."
+    },
+    {
+      "start": 2140.6,
+      "end": 2144.6400000000003,
+      "text": "You know, there's some historical stuff, maybe."
+    },
+    {
+      "start": 2144.6400000000003,
+      "end": 2155.6400000000003,
+      "text": "I don't know, however many years ago, seems like yesterday, but when we kind of started a housing first push, there was some landlords that maybe we're not fully prepared or prepped on."
+    },
+    {
+      "start": 2155.64,
+      "end": 2160.4,
+      "text": "You know. Our population and or."
+    },
+    {
+      "start": 2160.4,
+      "end": 2164.4,
+      "text": "You know, anyway, you guys know the history, right?"
+    },
+    {
+      "start": 2164.4,
+      "end": 2167.4,
+      "text": "So, so we've had to be really creative with them."
+    },
+    {
+      "start": 2167.4,
+      "end": 2177.4,
+      "text": "With our new landlords now and saying using some of the same language of what you would use with the normal tenant and what you would use with the normal person."
+    },
+    {
+      "start": 2177.4,
+      "end": 2183.08,
+      "text": "As they are human, you know, we don't define anyone else by their housing status."
+    },
+    {
+      "start": 2183.08,
+      "end": 2185.92,
+      "text": "I don't say Paula your house and April your homeless."
+    },
+    {
+      "start": 2185.92,
+      "end": 2188.6800000000003,
+      "text": "So, I think that that's kind of helped."
+    },
+    {
+      "start": 2188.6800000000003,
+      "end": 2198.64,
+      "text": "But sometimes we do have to use an incentive, whether it is first month, last month's rent upfront, a higher deposit based on background."
+    },
+    {
+      "start": 2198.64,
+      "end": 2207.46,
+      "text": "So, sometimes they think the incentive word does help a little bit just ease the reluctancy of the landlord."
+    },
+    {
+      "start": 2207.46,
+      "end": 2210.58,
+      "text": "Thank you, April."
+    },
+    {
+      "start": 2210.58,
+      "end": 2212.62,
+      "text": "Vicki, you had your hand up, but it went down."
+    },
+    {
+      "start": 2212.62,
+      "end": 2213.46,
+      "text": "Did you want to say something?"
+    },
+    {
+      "start": 2213.46,
+      "end": 2217.72,
+      "text": "Yes, about the."
+    },
+    {
+      "start": 2217.72,
+      "end": 2226.18,
+      "text": "What what she was just referring to about the private landlords over the years, it's changed so much with private landlords."
+    },
+    {
+      "start": 2226.18,
+      "end": 2229.8399999999997,
+      "text": "They don't they look at the paper, they look at the application."
+    },
+    {
+      "start": 2229.8399999999997,
+      "end": 2231.0,
+      "text": "They don't look at the person."
+    },
+    {
+      "start": 2231.0,
+      "end": 2239.2,
+      "text": "Would it help to have people who were homeless meet these landlords have them get a chance to get to know them."
+    },
+    {
+      "start": 2239.2,
+      "end": 2241.48,
+      "text": "Would any of that help?"
+    },
+    {
+      "start": 2241.48,
+      "end": 2244.72,
+      "text": "I mean, we're doing it on a more personal level."
+    },
+    {
+      "start": 2244.72,
+      "end": 2248.7999999999997,
+      "text": "Right with the rapid rehousing and the landlord incentives."
+    },
+    {
+      "start": 2248.7999999999997,
+      "end": 2252.8799999999997,
+      "text": "What's wrong with having some of those candidates."
+    },
+    {
+      "start": 2252.88,
+      "end": 2269.08,
+      "text": "For those units meet the landlords and talk to them. Hey, we're regular people, you know, we're not going to lunch out at anybody or or anything. We're regular normal people. Is that what these landlords need to feel more confident?"
+    },
+    {
+      "start": 2269.08,
+      "end": 2273.7000000000003,
+      "text": "Thank you, Vicki. And that's."
+    },
+    {
+      "start": 2273.7000000000003,
+      "end": 2280.3,
+      "text": "Somewhat of a rhetorical question we're not sure. So, all right, anything else for Judy."
+    },
+    {
+      "start": 2280.3,
+      "end": 2296.0800000000004,
+      "text": "One, one quick thing. So, you saw Hannah leave. She apologizes. She just texted me. She sincerely apologizes. She has to go to meeting that she cannot miss. And she's here for any questions and follow up questions for us."
+    },
+    {
+      "start": 2296.0800000000004,
+      "end": 2302.78,
+      "text": "Thank you, Judy. All right, then moving on. Susie, I think it's your turn."
+    },
+    {
+      "start": 2302.78,
+      "end": 2316.28,
+      "text": "Good luck. This is going to be very brief. I'm just going to cover the continuum of care competition that is expected this year. Work is basically centered at the performance evaluation committee level."
+    },
+    {
+      "start": 2316.28,
+      "end": 2329.1200000000003,
+      "text": "They have reviewed a housing 1st assessment tool they have they will be reviewing my revised renewal application for the local agencies that already have a project that's funded."
+    },
+    {
+      "start": 2329.1200000000003,
+      "end": 2336.5600000000004,
+      "text": "And I am working with the agencies that do have funded projects getting their annual performance report numbers."
+    },
+    {
+      "start": 2336.56,
+      "end": 2344.96,
+      "text": "For the year ended September 30th of 2020, which we think is going to be the performance year that had will be looking at."
+    },
+    {
+      "start": 2344.96,
+      "end": 2358.56,
+      "text": "When it looks at the performance of all of these agencies, and then I'm sending those numbers that I've put in some spreadsheets back to those agencies for confirmation that I've translated the numbers correctly from their reports."
+    },
+    {
+      "start": 2358.56,
+      "end": 2363.96,
+      "text": "Into what we will see as a scorecard in the competition locally."
+    },
+    {
+      "start": 2363.96,
+      "end": 2376.2599999999998,
+      "text": "And no notice from HUD about whether when that the funding will the process, the competition will start, but when we get that news, we'll send that along to everybody."
+    },
+    {
+      "start": 2376.2599999999998,
+      "end": 2381.42,
+      "text": "Thanks, thanks. Thank you. Susie any questions for Susie."
+    },
+    {
+      "start": 2381.42,
+      "end": 2395.1,
+      "text": "All right, then so we have an action item. There's a request from urban housing solutions about, uh, housing."
+    },
+    {
+      "start": 2395.1,
+      "end": 2398.88,
+      "text": "Conversion who's going to."
+    },
+    {
+      "start": 2398.88,
+      "end": 2402.7200000000003,
+      "text": "Explain this to everyone so that we can know what we need to do."
+    },
+    {
+      "start": 2408.1800000000003,
+      "end": 2411.36,
+      "text": "Susie is that you."
+    },
+    {
+      "start": 2411.42,
+      "end": 2415.98,
+      "text": "It is not me. It's Kelsey."
+    },
+    {
+      "start": 2415.98,
+      "end": 2426.84,
+      "text": "I can expand that from the urban housing side, at least I'm not sure if the process. Thank you. Kelsey. I did. If you would explain what's happening, what the request is, that would be great."
+    },
+    {
+      "start": 2426.84,
+      "end": 2437.94,
+      "text": "Sure, I know that we had sent out some slides and I can share my screen if it's possible to make me a presenter. Just I always find that visuals help me. So."
+    },
+    {
+      "start": 2437.94,
+      "end": 2443.5,
+      "text": "If that is technically possible, that would be great. Um, hold on 1 second."
+    },
+    {
+      "start": 2443.5,
+      "end": 2447.06,
+      "text": "Great. Thanks. Um."
+    },
+    {
+      "start": 2447.06,
+      "end": 2459.06,
+      "text": "My name is Kelsey. It was been I'm with urban housing solutions and I'm joined today by Tracy Patton and Kevin Clavin on our team. Um, so I will run through."
+    },
+    {
+      "start": 2459.06,
+      "end": 2470.7599999999998,
+      "text": "This, um, this set of slides and just ask chasing Kevin to jump in, um, as I inevitably miss something because, uh, this is a."
+    },
+    {
+      "start": 2470.76,
+      "end": 2483.84,
+      "text": "Complicated process, so, um, please bear with us. So, um, this is related to, uh, mercury courts and Rex 2, uh, which is a new project for us. Um, so I'm sure."
+    },
+    {
+      "start": 2483.84,
+      "end": 2497.82,
+      "text": "Most, if not all of you are familiar with mercury courts, I don't know how many of you have been there recently. Um, but the, the kind of big picture, why is that mercury courts is in need of major redevelopment. The infrastructure, the buildings are old."
+    },
+    {
+      "start": 2498.06,
+      "end": 2513.82,
+      "text": "Um, it's expensive and really difficult to fix things as they break. Um, and it's really not serving its highest and best use for our residents or for the community. Um, so our goal is to go beyond what we could do with just a renovation."
+    },
+    {
+      "start": 2513.82,
+      "end": 2530.32,
+      "text": "And really redevelop the property. Um, we also recognize how important mercury courts is not just for us as an agency, but for the community. Um, and so we're, you know, taking a very careful look at this and have really been talking about it since I joined the team and, uh, you know, 2017."
+    },
+    {
+      "start": 2530.32,
+      "end": 2544.32,
+      "text": "So, um, where we're at right now, um, we are going to be taking, um, our 100 units through a rad process, which is the same process that is using with the envision projects."
+    },
+    {
+      "start": 2544.32,
+      "end": 2559.32,
+      "text": "Um, so the kind of the short story, um, is that this process will enable us to replace 1 for 1, all of those with brand new 1 bedroom units. So there'll be full 1 bedroom apartments with full kitchens."
+    },
+    {
+      "start": 2559.32,
+      "end": 2570.32,
+      "text": "Um, we know that that's a really important thing for our residents that we've heard consistently. Um, those brand new buildings will also be fully physically accessible, which is not something we can currently offer at mercury courts."
+    },
+    {
+      "start": 2570.32,
+      "end": 2586.32,
+      "text": "And, um, we'll maintain that long term affordability for those existing units that we're replacing 1 for 1 and increasing the density at mercury courts. Um, so that'll allow us to serve a broader range of residents while still maintaining that, um, priority and preference for our current books."
+    },
+    {
+      "start": 2586.32,
+      "end": 2589.32,
+      "text": "So, um."
+    },
+    {
+      "start": 2589.32,
+      "end": 2601.32,
+      "text": "I'm going to walk through the 2 kind of components of the actual development and then run through the impact on on residents. Um."
+    },
+    {
+      "start": 2601.32,
+      "end": 2619.32,
+      "text": "So, in order to record, this is occupied, so in order to start redevelopment there, we need to be able to relocate people. Um, so our 1st step in that is adding a new building at Rex courts, which is at 331 plus park Boulevard. Um, just a little bit farther down. Murfreesboro pike."
+    },
+    {
+      "start": 2619.32,
+      "end": 2635.32,
+      "text": "Um, so there's currently 2 buildings and we'll be adding a 3rd. So it'll be 70 new 1 bedroom apartments on site offices for staff community room laundry room. Um, again, those units will be full 1 bedrooms elevator accessible."
+    },
+    {
+      "start": 2635.32,
+      "end": 2648.32,
+      "text": "Um, and, uh, all of those will have private balcony or porches, um, because the, the current buildings on site do so. Um, this is what we are anticipating. Um, we are currently in."
+    },
+    {
+      "start": 2648.32,
+      "end": 2662.32,
+      "text": "Uh, we just received our building permits. Um, we're working through this rad conversion and hoping to start construction on that in the fall, which will be about a 13 month process. Um, so once we're able to move folks into that building."
+    },
+    {
+      "start": 2662.32,
+      "end": 2678.32,
+      "text": "We'll be able to start at Mercury courts. Um, again, this is going to be a long term project, but we are starting in the back of the site so that we can maintain access from Murfreesboro, which is our only driveway in the site."
+    },
+    {
+      "start": 2678.32,
+      "end": 2683.32,
+      "text": "Um, so that 1st building will be in the back here. Um, we're."
+    },
+    {
+      "start": 2683.32,
+      "end": 2696.32,
+      "text": "We're temporarily calling it urban flats for lack of a better, uh, brand identity. Um, but that building will have a 130 1 bedroom apartments. 40 of those will be the remaining. Um."
+    },
+    {
+      "start": 2696.32,
+      "end": 2709.32,
+      "text": "S. R. O. S. and so I'll, I'll get to that income breakdown in a 2nd, but, um, again, just looking at timing, we won't be able to start anything actually on 2nd record courts until Rex 2 is complete."
+    },
+    {
+      "start": 2709.32,
+      "end": 2723.32,
+      "text": "Um, so this is where it starts to get really complicated. Um, Mercury courts is, uh, maybe the most complex project we could have, uh, imagined. Um, so currently on site, there are a 100 of these SRO."
+    },
+    {
+      "start": 2723.32,
+      "end": 2739.32,
+      "text": "Um, units through the mod rehab program and we will basically be breaking that into 2 pieces. So the 1st step will be converting 60 of those to P. B. R. A. and moving those 62 Rex 2."
+    },
+    {
+      "start": 2739.32,
+      "end": 2745.32,
+      "text": "And then there will be 10 non units in that 70 unit building. So that's our 1st."
+    },
+    {
+      "start": 2745.32,
+      "end": 2759.32,
+      "text": "Um, new building at Rex 2 and then the remaining 40 will again convert to P. B. R. A. and stay on say in the new building at Mercury courts in addition to 90 other income restricted units. Um."
+    },
+    {
+      "start": 2759.32,
+      "end": 2769.56,
+      "text": "So, those, I'm sorry, but for those folks who may not be familiar with the alphabet soup, can you make sure that you explain what."
+    },
+    {
+      "start": 2769.56,
+      "end": 2783.56,
+      "text": "Those initial stand for. Yeah, sorry. Um, so the program is the single room occupancy. Um, so those right now are just converted motel rooms. Essentially. Um, they're very small. Some of them have a kitchen."
+    },
+    {
+      "start": 2783.56,
+      "end": 2801.56,
+      "text": "Uh, and so they will be converting to a P. B. R. A. a project based rental assistance. So residents will continue to pay. Um, what they currently pay. It'll just essentially be called something else. Um, and it'll function a little bit differently from our internal side."
+    },
+    {
+      "start": 2801.56,
+      "end": 2811.56,
+      "text": "But the resident experience will be the same. Um, 1 of the biggest questions we've gotten from residents in these conversations is about utilities at Rex. They'll continue to be included in the rent."
+    },
+    {
+      "start": 2811.56,
+      "end": 2832.56,
+      "text": "So, again, resident experience will be the same in the new building at Mercury courts. Uh, residents will have their own electric bill, but there will be a utility allowance baked into the rent to accommodate that. Um, we also have several residents on site who are not in an S. R. O. who have their own subsidy. Um, whether that's."
+    },
+    {
+      "start": 2832.56,
+      "end": 2845.56,
+      "text": "Uh, housing opportunities for people with AIDS, um, H. P. supportive housing program, um, some regular, you know, tenant based section. And then, um, some residents who are just paying our."
+    },
+    {
+      "start": 2845.56,
+      "end": 2847.56,
+      "text": "Uh, just floor rent. Um."
+    },
+    {
+      "start": 2847.56,
+      "end": 2854.56,
+      "text": "So, yeah, sorry, if I can, if I can jump in. Hi, everyone. I'm Kevin with urban housing solutions. I work with Kelsey on our development team. Uh, another part of the alphabet soup. Uh, that is what we call the supportive housing."
+    },
+    {
+      "start": 2854.56,
+      "end": 2857.56,
+      "text": "Program and that's actually through the funds received."
+    },
+    {
+      "start": 2857.56,
+      "end": 2861.56,
+      "text": "Uh, from the to provide supportive housing to folks that are."
+    },
+    {
+      "start": 2861.56,
+      "end": 2866.56,
+      "text": "Working with partnering partnering agencies within the."
+    },
+    {
+      "start": 2866.56,
+      "end": 2878.56,
+      "text": "So, um, thanks Kevin. Um."
+    },
+    {
+      "start": 2878.56,
+      "end": 2891.56,
+      "text": "So, again, all of those programs, especially if they're resident based will continue. So, um, no matter where folks go, obviously that's attached to them, not to the unit. Um, and that's really the biggest difference between."
+    },
+    {
+      "start": 2891.56,
+      "end": 2895.56,
+      "text": "The SRO process and, um, and non SRO."
+    },
+    {
+      "start": 2895.56,
+      "end": 2906.56,
+      "text": "So, um, a couple of key points, um, again, this is a long process. Nobody is moving yet. The earliest that anyone would relocate to the new building at racks is late 2022."
+    },
+    {
+      "start": 2906.56,
+      "end": 2918.56,
+      "text": "Um, as our residents who move to racks or you stay on site and move into the new building there, um, that 1st urban flats building will maintain their rent level. Um."
+    },
+    {
+      "start": 2918.56,
+      "end": 2930.56,
+      "text": "Nobody will be asked to move without having a place to go urban housing solutions mission is to support our residents. And so we're really committed to making sure that everybody has, um, an appropriate."
+    },
+    {
+      "start": 2930.56,
+      "end": 2945.56,
+      "text": "Option, um, what, regardless of of their current, um, housing assistance, um, all the SROs and really all of the units period will be upgraded to full 1 bedroom units again with a full kitchen and elevator access."
+    },
+    {
+      "start": 2945.56,
+      "end": 2957.56,
+      "text": "Um, our new PBR a contract, which is what we would convert the SROs, the single room occupancy will convert to those project based rental assistance. That contract will maintain a homeless preference."
+    },
+    {
+      "start": 2957.56,
+      "end": 2968.56,
+      "text": "Um, so again, knowing that that functions, uh, in coordination with the coordinated entry system to match folks with those units, um, that process will continue."
+    },
+    {
+      "start": 2968.56,
+      "end": 2984.56,
+      "text": "And then will be responsible for relocation expenses. So we'll be helping coordinate, um, you know, getting fixed boxes and tape and hiring movers and, um, making sure that that folks are able to get to, um, to where they will be going."
+    },
+    {
+      "start": 2984.56,
+      "end": 3003.56,
+      "text": "1 of the other questions that has come up, um, the SROs on site at marker courts are furnished when residents move in. Um, and that was a concern for residents. So we have also committed to building that into the project. Um, and we'll be providing a basic furniture package. Um, in the new apartments."
+    },
+    {
+      "start": 3003.56,
+      "end": 3008.56,
+      "text": "Um, what is what is your policy regarding?"
+    },
+    {
+      "start": 3008.56,
+      "end": 3010.56,
+      "text": "Regarding sobriety."
+    },
+    {
+      "start": 3012.56,
+      "end": 3013.56,
+      "text": "Tracy, Joanna."
+    },
+    {
+      "start": 3013.56,
+      "end": 3017.56,
+      "text": "It's outside of my expertise."
+    },
+    {
+      "start": 3017.56,
+      "end": 3027.56,
+      "text": "Oh, I'm trying to start my video. Um, so urban housing solutions, all of our properties are clean and sober living communities."
+    },
+    {
+      "start": 3027.56,
+      "end": 3029.56,
+      "text": "That's all 32 of our properties."
+    },
+    {
+      "start": 3029.56,
+      "end": 3036.56,
+      "text": "So, we don't drug test residents once they move in. You do have to have a drug test prior to moving in."
+    },
+    {
+      "start": 3036.56,
+      "end": 3041.56,
+      "text": "But all of our communities are we promote in enhanced. So we're living communities."
+    },
+    {
+      "start": 3041.56,
+      "end": 3056.56,
+      "text": "And specific to this process, and this is part of the slide actually residents who are currently living with us, um, cannot be rescreened. They won't be reapplying. Um."
+    },
+    {
+      "start": 3056.56,
+      "end": 3065.56,
+      "text": "If they go to rice and they want to move back, they would reapply and, you know, we've been really clear with residents about how that process would work along the way."
+    },
+    {
+      "start": 3065.56,
+      "end": 3070.56,
+      "text": "Um, but that's part of this right to remain or return. Um, so."
+    },
+    {
+      "start": 3070.56,
+      "end": 3075.56,
+      "text": "They're currently a resident, and they will continue to be a resident if they want. Um."
+    },
+    {
+      "start": 3075.56,
+      "end": 3088.56,
+      "text": "They again, have the right to relocation assistance, um, the right to participate in a resident organization, which we have not heard a lot of interest about. And then this, um, ongoing right to grievance procedures."
+    },
+    {
+      "start": 3088.56,
+      "end": 3103.56,
+      "text": "Um, we did also receive clarification that the uniform relocation act or will apply. Um, and that's not just for residents in those units that are converting. It's for all residents at work group courts."
+    },
+    {
+      "start": 3103.56,
+      "end": 3124.56,
+      "text": "Who are going to be impacted by demolition and construction. Um, so again, at least 90 days notice, uh, working with residents and this is, um, something that Tracy and I will be working on. Uh, once we've gotten through this mandatory HUD process, um, doing 1 on 1 meetings with every resident,"
+    },
+    {
+      "start": 3124.56,
+      "end": 3133.56,
+      "text": "every resident at Mercury courts to make sure that they're fully informed about their options and what that process will look like and maintaining really strong communication along the way."
+    },
+    {
+      "start": 3133.56,
+      "end": 3154.56,
+      "text": "Um, part of that rad process, uh, there's required resident meeting. So, um, we had to have, especially due to code, we're trying to keep numbers small. So we did a series of meetings about a month ago and then another 1, um, just this past week, giving time in between to collect any additional feedback."
+    },
+    {
+      "start": 3154.56,
+      "end": 3169.56,
+      "text": "Um, and we've, uh, and we've responded to any questions. It was a lot of just clarification, but again, things like that furniture question, um, came up and so that's sort of been baked into our, um, our process."
+    },
+    {
+      "start": 3169.56,
+      "end": 3181.56,
+      "text": "So, so we had those small group meetings and we had set up a hotline for residents to call and leave a message if they had additional questions, um, knowing that folks might not be comfortable speaking up in person."
+    },
+    {
+      "start": 3181.56,
+      "end": 3200.56,
+      "text": "Um, and then, um, or, or, you know, comfortable being in person at all right now. So, um, again, Tracy and, uh, our community housing services team and our development team will be working 1 on 1 with residents to establish a really clear matrix of where everybody is going."
+    },
+    {
+      "start": 3200.56,
+      "end": 3208.56,
+      "text": "Um, and fortunately, we have about a year and a half before, um, before that will really come into play. So."
+    },
+    {
+      "start": 3208.56,
+      "end": 3214.56,
+      "text": "I know that was a lot, um, but happy to answer any questions. Um."
+    },
+    {
+      "start": 3214.56,
+      "end": 3227.56,
+      "text": "Well, the question that I have bottom line after everything is completed. How many new units will we have versus how many old units will we lose?"
+    },
+    {
+      "start": 3227.56,
+      "end": 3234.56,
+      "text": "So, we, um, so the 100 will be replaced 1 for 1."
+    },
+    {
+      "start": 3234.56,
+      "end": 3245.56,
+      "text": "Um, in this 1st phase, I guess, which is the 70 units at Rex 2 and the 130 units at urban, at urban flats. Um."
+    },
+    {
+      "start": 3245.56,
+      "end": 3257.36,
+      "text": "It'll be a net gain of affordable units. Um, those will be at more of like the 60 to 80% of area median income. And then there will be 2 more buildings."
+    },
+    {
+      "start": 3257.56,
+      "end": 3268.56,
+      "text": "In theory, in theory, planned and we haven't gotten into the specifics of these 2 buildings yet. Um, but those could be up to 250 additional units. Um."
+    },
+    {
+      "start": 3268.56,
+      "end": 3275.56,
+      "text": "So, it'll be a net, um, a net increase of affordable housing. Um."
+    },
+    {
+      "start": 3275.56,
+      "end": 3281.2799999999997,
+      "text": "While maintaining those current 100 at the lowest income level."
+    },
+    {
+      "start": 3281.2799999999997,
+      "end": 3285.96,
+      "text": "Congratulations. Great."
+    },
+    {
+      "start": 3285.96,
+      "end": 3299.96,
+      "text": "Vicki, you have a question. Um, it's more of a kudos. Thank you for getting this on the bus line. I just looked up the website and saw that it was on the bus line because I know a lot of affordable housing isn't on the bus line. So, thank you. I appreciate that."
+    },
+    {
+      "start": 3299.96,
+      "end": 3307.96,
+      "text": "Thank you. Vicki. So 1 of the questions that I think I have right now, I have another comment. Okay."
+    },
+    {
+      "start": 3307.96,
+      "end": 3311.96,
+      "text": "I would just want to remind everybody."
+    },
+    {
+      "start": 3311.96,
+      "end": 3317.96,
+      "text": "When the SRO mercury court changed and it was first developed."
+    },
+    {
+      "start": 3317.96,
+      "end": 3320.96,
+      "text": "Was a haven for drug dealers."
+    },
+    {
+      "start": 3320.96,
+      "end": 3321.96,
+      "text": "A lot of."
+    },
+    {
+      "start": 3321.96,
+      "end": 3324.96,
+      "text": "A lot of view."
+    },
+    {
+      "start": 3324.96,
+      "end": 3327.96,
+      "text": "That's the reason for asking the question about."
+    },
+    {
+      "start": 3327.96,
+      "end": 3330.96,
+      "text": "Uh, some kind of policy regarding."
+    },
+    {
+      "start": 3330.96,
+      "end": 3331.96,
+      "text": "So variety."
+    },
+    {
+      "start": 3331.96,
+      "end": 3332.96,
+      "text": "Thanks."
+    },
+    {
+      "start": 3332.96,
+      "end": 3342.96,
+      "text": "All right. So here's the here's the big question that I have. Um, and thank you for your presentation. It."
+    },
+    {
+      "start": 3342.96,
+      "end": 3351.96,
+      "text": "It's great. I'm very excited. It's got someone who has worked at Mercury course in the past. Uh, I, I'm all for the renovation there. Right? Tracy."
+    },
+    {
+      "start": 3351.96,
+      "end": 3357.96,
+      "text": "Yes, but tell us really quickly."
+    },
+    {
+      "start": 3357.96,
+      "end": 3362.96,
+      "text": "Why you are bringing this to us? What is it that you need from us and what can we do for you?"
+    },
+    {
+      "start": 3362.96,
+      "end": 3379.96,
+      "text": "Yeah, so, um, part of again, this HUD process, um, with the rad with the sorry, rad, it stands for rental assistance demonstration. Um, and so part of that is consulting with the about this project, because it does impact folks who who come through the."
+    },
+    {
+      "start": 3379.96,
+      "end": 3383.96,
+      "text": "Um, and, um, and, um, other funding related to the."
+    },
+    {
+      "start": 3383.96,
+      "end": 3396.96,
+      "text": "So, um, I think Brent had sent a sort of sample, um, letter of support if that is something that the is is, um, willing to provide that we could include with our application."
+    },
+    {
+      "start": 3396.96,
+      "end": 3400.96,
+      "text": "Um, but it's really, you know, um."
+    },
+    {
+      "start": 3400.96,
+      "end": 3406.96,
+      "text": "I consulting with you all to to make sure that this is aligned with the broader plans."
+    },
+    {
+      "start": 3406.96,
+      "end": 3413.96,
+      "text": "To see if there's any other areas of concern that we need to be looking at, um, and ideally to to get that letter of support."
+    },
+    {
+      "start": 3413.96,
+      "end": 3421.96,
+      "text": "So, you're looking for us to approve to give you a letter of support to move forward to this project. Okay. Thank you. Um, best. You have a question."
+    },
+    {
+      "start": 3421.96,
+      "end": 3426.96,
+      "text": "So, I'm all for all the affordable housing we can get."
+    },
+    {
+      "start": 3426.96,
+      "end": 3433.96,
+      "text": "Um, you're talking about the new affordable units being 80% of area median."
+    },
+    {
+      "start": 3433.96,
+      "end": 3439.96,
+      "text": "Or 60% of area median is, is there any way to have some of them down at."
+    },
+    {
+      "start": 3439.96,
+      "end": 3443.96,
+      "text": "30% says 60% and 80% won't help."
+    },
+    {
+      "start": 3443.96,
+      "end": 3448.96,
+      "text": "Our folks folks who are family on housed."
+    },
+    {
+      "start": 3448.96,
+      "end": 3466.96,
+      "text": "So, um, the 1st phase will most likely be developed. We've received a Barnes grant, um, for that 1st building and are planning on applying for tax credits. Um, in our most recent tax credit project, which is under construction right now. We're using the income averaging."
+    },
+    {
+      "start": 3466.96,
+      "end": 3481.96,
+      "text": "Uh, tool or feature so that allows us to serve down to 40% and up to 80% and they sort of balance out from a financial standpoint. Um, so that's definitely something that we're interested in pursuing."
+    },
+    {
+      "start": 3481.96,
+      "end": 3492.96,
+      "text": "And then we've also been able to layer in, um, on other projects, uh, project based vouchers, um, and other forms of rental assistance. We accept section 8."
+    },
+    {
+      "start": 3492.96,
+      "end": 3514.96,
+      "text": "So, um, and those other ways to sort of support residents at the below 40% we have not, I'll just be honest. I haven't really modeled the 2 future buildings here to know exactly what funding sources will need to pull in. And, you know, there's a lot on the table."
+    },
+    {
+      "start": 3514.96,
+      "end": 3533.96,
+      "text": "Um, but in that 1st, building the urban flats, there'll be those 40 project based rental assistance. Um, and then the remainder will be at the 60 to 80. but that formula is not fixed. Um, so we could potentially have additional 40% units."
+    },
+    {
+      "start": 3533.96,
+      "end": 3538.96,
+      "text": "If we balance them out at the 80% so, um."
+    },
+    {
+      "start": 3538.96,
+      "end": 3542.96,
+      "text": "I don't know if that was a helpful answer. Yeah. Thank you. Okay."
+    },
+    {
+      "start": 3542.96,
+      "end": 3549.96,
+      "text": "Okay. Other questions for Kelsey and the team from urban housing."
+    },
+    {
+      "start": 3549.96,
+      "end": 3563.96,
+      "text": "All right. Thank you, Kelsey and Tracy and Kevin for your presentation. Really appreciate that. So if there are no further questions, I would entertain a motion to."
+    },
+    {
+      "start": 3563.96,
+      "end": 3568.96,
+      "text": "Uh, approve supplying a letter of support to urban housing for conversion."
+    },
+    {
+      "start": 3568.96,
+      "end": 3570.96,
+      "text": "Mark overlock moved."
+    },
+    {
+      "start": 3570.96,
+      "end": 3571.96,
+      "text": "So, move."
+    },
+    {
+      "start": 3571.96,
+      "end": 3572.96,
+      "text": "Mark has moved. Do I have a 2nd."
+    },
+    {
+      "start": 3572.96,
+      "end": 3574.96,
+      "text": "2nd."
+    },
+    {
+      "start": 3574.96,
+      "end": 3575.96,
+      "text": "Tom."
+    },
+    {
+      "start": 3575.96,
+      "end": 3576.96,
+      "text": "Tom."
+    },
+    {
+      "start": 3576.96,
+      "end": 3577.96,
+      "text": "Thank you, Tom."
+    },
+    {
+      "start": 3577.96,
+      "end": 3580.96,
+      "text": "All right. Are there any other questions concerns?"
+    },
+    {
+      "start": 3580.96,
+      "end": 3581.96,
+      "text": "Comments."
+    },
+    {
+      "start": 3581.96,
+      "end": 3585.96,
+      "text": "All right. I'm hearing none."
+    },
+    {
+      "start": 3585.96,
+      "end": 3588.96,
+      "text": "Abigail, would you take us through a roll call vote, please?"
+    },
+    {
+      "start": 3588.96,
+      "end": 3589.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3589.96,
+      "end": 3589.96,
+      "text": ""
+    },
+    {
+      "start": 3589.96,
+      "end": 3590.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3590.96,
+      "end": 3591.96,
+      "text": "Elena Boyer."
+    },
+    {
+      "start": 3591.96,
+      "end": 3592.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3592.96,
+      "end": 3593.96,
+      "text": "Alex Smith."
+    },
+    {
+      "start": 3593.96,
+      "end": 3594.96,
+      "text": "Alex Smith."
+    },
+    {
+      "start": 3594.96,
+      "end": 3595.96,
+      "text": "Welcome back."
+    },
+    {
+      "start": 3595.96,
+      "end": 3596.96,
+      "text": "April."
+    },
+    {
+      "start": 3596.96,
+      "end": 3597.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3597.96,
+      "end": 3598.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3598.96,
+      "end": 3599.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3599.96,
+      "end": 3600.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3600.96,
+      "end": 3601.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3601.96,
+      "end": 3602.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3602.96,
+      "end": 3603.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3603.96,
+      "end": 3604.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3604.96,
+      "end": 3605.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3605.96,
+      "end": 3606.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3606.96,
+      "end": 3607.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3607.96,
+      "end": 3609.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3609.96,
+      "end": 3610.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3610.96,
+      "end": 3611.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3611.96,
+      "end": 3612.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3612.96,
+      "end": 3613.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3613.96,
+      "end": 3614.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3614.96,
+      "end": 3615.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3615.96,
+      "end": 3616.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3616.96,
+      "end": 3616.96,
+      "text": ""
+    },
+    {
+      "start": 3616.96,
+      "end": 3617.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3617.96,
+      "end": 3618.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3618.96,
+      "end": 3619.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3619.96,
+      "end": 3620.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3620.96,
+      "end": 3621.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3621.96,
+      "end": 3622.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3622.96,
+      "end": 3624.96,
+      "text": "Charles Strobel."
+    },
+    {
+      "start": 3624.96,
+      "end": 3625.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3625.96,
+      "end": 3626.96,
+      "text": "Don Diener."
+    },
+    {
+      "start": 3626.96,
+      "end": 3628.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3628.96,
+      "end": 3629.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3629.96,
+      "end": 3632.96,
+      "text": "Aaron Evans."
+    },
+    {
+      "start": 3632.96,
+      "end": 3633.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3633.96,
+      "end": 3635.96,
+      "text": "Aaron Evans."
+    },
+    {
+      "start": 3635.96,
+      "end": 3649.96,
+      "text": "We'll come back."
+    },
+    {
+      "start": 3649.96,
+      "end": 3650.96,
+      "text": "Freddie O'Connell."
+    },
+    {
+      "start": 3650.96,
+      "end": 3652.96,
+      "text": "Aye."
+    },
+    {
+      "start": 3652.96,
+      "end": 3657.96,
+      "text": "Jeff Gibson."
+    },
+    {
+      "start": 3657.96,
+      "end": 3658.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3658.96,
+      "end": 3659.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3659.96,
+      "end": 3661.96,
+      "text": "Laura Bermudez."
+    },
+    {
+      "start": 3661.96,
+      "end": 3662.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3662.96,
+      "end": 3664.96,
+      "text": "Mark Overlock."
+    },
+    {
+      "start": 3664.96,
+      "end": 3665.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3665.96,
+      "end": 3667.96,
+      "text": "Michelle Hall."
+    },
+    {
+      "start": 3667.96,
+      "end": 3668.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3668.96,
+      "end": 3669.96,
+      "text": "Paula Foster."
+    },
+    {
+      "start": 3669.96,
+      "end": 3673.96,
+      "text": "Yes, ma'am."
+    },
+    {
+      "start": 3673.96,
+      "end": 3675.96,
+      "text": "Sheila Decker."
+    },
+    {
+      "start": 3675.96,
+      "end": 3676.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3676.96,
+      "end": 3679.96,
+      "text": "Tom Turner."
+    },
+    {
+      "start": 3679.96,
+      "end": 3680.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3680.96,
+      "end": 3681.96,
+      "text": "Will Connolly."
+    },
+    {
+      "start": 3681.96,
+      "end": 3682.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3682.96,
+      "end": 3683.96,
+      "text": "And let me circle back."
+    },
+    {
+      "start": 3683.96,
+      "end": 3684.96,
+      "text": "Alex Smith."
+    },
+    {
+      "start": 3684.96,
+      "end": 3685.96,
+      "text": "Yes."
+    },
+    {
+      "start": 3685.96,
+      "end": 3686.96,
+      "text": "Thank you."
+    },
+    {
+      "start": 3686.96,
+      "end": 3687.96,
+      "text": "And Aaron Evans."
+    },
+    {
+      "start": 3687.96,
+      "end": 3688.96,
+      "text": "All right."
+    },
+    {
+      "start": 3688.96,
+      "end": 3691.96,
+      "text": "Well, thank you and congratulations, Mercury Court."
+    },
+    {
+      "start": 3691.96,
+      "end": 3692.96,
+      "text": "Urban housing solutions."
+    },
+    {
+      "start": 3692.96,
+      "end": 3693.96,
+      "text": "I think this is fabulous."
+    },
+    {
+      "start": 3693.96,
+      "end": 3694.96,
+      "text": "Good luck."
+    },
+    {
+      "start": 3694.96,
+      "end": 3701.96,
+      "text": "Please always let us know if there's anything else that this body can do to support you."
+    },
+    {
+      "start": 3701.96,
+      "end": 3702.96,
+      "text": "Thank you."
+    },
+    {
+      "start": 3702.96,
+      "end": 3705.96,
+      "text": "So next up would be Heather Dillashaw."
+    },
+    {
+      "start": 3705.96,
+      "end": 3707.96,
+      "text": "Our."
+    },
+    {
+      "start": 3707.96,
+      "end": 3710.96,
+      "text": "resident non resident member of this body."
+    },
+    {
+      "start": 3710.96,
+      "end": 3712.96,
+      "text": "Thanks."
+    },
+    {
+      "start": 3712.96,
+      "end": 3713.96,
+      "text": "Paula."
+    },
+    {
+      "start": 3713.96,
+      "end": 3715.96,
+      "text": "I'm going to just go quickly through a couple of things."
+    },
+    {
+      "start": 3715.96,
+      "end": 3718.96,
+      "text": "I'm not going to show slides since."
+    },
+    {
+      "start": 3718.96,
+      "end": 3733.96,
+      "text": "I think it's either just talk through it housing is going well as many of, you know, we've housed house over 300 people just with the cares dollars."
+    },
+    {
+      "start": 3733.96,
+      "end": 3734.96,
+      "text": "So that is enormous progress."
+    },
+    {
+      "start": 3734.96,
+      "end": 3736.96,
+      "text": "So, 300 people in permanent housing."
+    },
+    {
+      "start": 3736.96,
+      "end": 3742.96,
+      "text": "Since we started in October, November, well, on the way to the original goal, 400 and we will surpass that goal, which is exciting."
+    },
+    {
+      "start": 3742.96,
+      "end": 3746.96,
+      "text": "Um, and."
+    },
+    {
+      "start": 3746.96,
+      "end": 3759.96,
+      "text": "We've got more dollars coming as well. There's, um, we're going to be getting some additional dollars through the state's dollars through over a million more."
+    },
+    {
+      "start": 3759.96,
+      "end": 3764.96,
+      "text": "Uh, yes, she dollars that we're going to be getting some additional dollars through the state."
+    },
+    {
+      "start": 3764.96,
+      "end": 3779.96,
+      "text": "Um, and we're going to be able to put into play for housing and supportive services. Um, so that's super exciting. Um."
+    },
+    {
+      "start": 3779.96,
+      "end": 3793.96,
+      "text": "Yeah, so things things they're going well, and I know you all had a rough couple of weeks. Um, and in spite of all that, folks are still getting housed and folks are working hard. We're working the next kind of a week."
+    },
+    {
+      "start": 3793.96,
+      "end": 3800.96,
+      "text": "We're working the next kind of phase of that, which we're going to start working on for the end of this week is doing a more more focused encampment."
+    },
+    {
+      "start": 3800.96,
+      "end": 3819.96,
+      "text": "Unsheltered homelessness to housing move to do some mapping of encampments. I'm looking at how we do a more concerted coordinated effort for outreach there and getting folks into the housing pipeline directly from all those places. Right? Well, we've done a good job focusing on downtown, but there."
+    },
+    {
+      "start": 3819.96,
+      "end": 3825.96,
+      "text": "There are people everywhere, right? So we need to we need to expand that effort. Some."
+    },
+    {
+      "start": 3825.96,
+      "end": 3831.96,
+      "text": "Um, I want to say a little bit about well, I'll stop there if there are any questions about that and then I'm going to talk about the American rescue plan."
+    },
+    {
+      "start": 3831.96,
+      "end": 3836.96,
+      "text": "Any questions?"
+    },
+    {
+      "start": 3836.96,
+      "end": 3842.96,
+      "text": "No questions. So, great. We're talking a bunch this morning Heather."
+    },
+    {
+      "start": 3842.96,
+      "end": 3846.96,
+      "text": "American rescue plan."
+    },
+    {
+      "start": 3846.96,
+      "end": 3853.96,
+      "text": "Um, lots of amazing stuff coming through the American rescue plan. Um, I've."
+    },
+    {
+      "start": 3853.96,
+      "end": 3858.96,
+      "text": "I'm talking about this to folks as the housing game changer that I've been waiting for for 20 years."
+    },
+    {
+      "start": 3858.96,
+      "end": 3869.96,
+      "text": "Um, we're actually seeing dollars come in through the home program and through, um, public housing authorities focus on folks who are homeless. Um, at levels we haven't seen. So we will."
+    },
+    {
+      "start": 3869.96,
+      "end": 3872.96,
+      "text": "Actually, have the ability to add affordable units."
+    },
+    {
+      "start": 3872.96,
+      "end": 3880.96,
+      "text": "Um, to your housing stock and keep them affordable for folks who are homeless, right? Like, that's the whole point and that's where it's focused and that's what the regulation is going to say."
+    },
+    {
+      "start": 3880.96,
+      "end": 3887.96,
+      "text": "Um, so you're, you're getting around 10Million dollars in home funds, um, that will be coming through."
+    },
+    {
+      "start": 3887.96,
+      "end": 3890.96,
+      "text": "Um, and they are."
+    },
+    {
+      "start": 3890.96,
+      "end": 3905.96,
+      "text": "Solely to provide rental assistance, supportive services and to develop affordable housing for homeless period. That's that's what they're for. Um, and so I think, uh, Freddie, this may be part of what you are referring to. Um, the goal of the office of affordable housing, which is where these funds come from in Washington."
+    },
+    {
+      "start": 3905.96,
+      "end": 3911.96,
+      "text": "Um, 1 of the things that they want to see because this has been working in other places is to acquire."
+    },
+    {
+      "start": 3911.96,
+      "end": 3920.96,
+      "text": "Um, what we call class C motels and convert them to S. R. O. S. so they are permanent housing. Um, so they aren't shelter dollars. Right? So they, they wouldn't be."
+    },
+    {
+      "start": 3920.96,
+      "end": 3934.96,
+      "text": "We may be able to use them to get folks into housing initially, but those will be turned into permanent units. Um, and it'll be ongoing rental assistance for those units. Um."
+    },
+    {
+      "start": 3934.96,
+      "end": 3940.96,
+      "text": "Probably through the public housing authority. Anyway, we'll figure that part out. But, um."
+    },
+    {
+      "start": 3940.96,
+      "end": 3945.96,
+      "text": "So, that's the point, that's the goals that have been put out by HUD for those for those dollars."
+    },
+    {
+      "start": 3945.96,
+      "end": 3950.96,
+      "text": "So, we have the allocation amount and we will start planning and thinking about how we can."
+    },
+    {
+      "start": 3950.96,
+      "end": 3955.96,
+      "text": "Use those dollars as effectively as possible for as many units as possible."
+    },
+    {
+      "start": 3955.96,
+      "end": 3963.96,
+      "text": "We won't be able to start spending that money until fall because of the timing for when the federal notice to spend is going to come out."
+    },
+    {
+      "start": 3963.96,
+      "end": 3967.96,
+      "text": "Um, but we will start planning now. Um, so that's really."
+    },
+    {
+      "start": 3967.96,
+      "end": 3972.96,
+      "text": "Exciting, um, additionally, um, there is."
+    },
+    {
+      "start": 3972.96,
+      "end": 3979.96,
+      "text": "There's 5Billion dollars coming to public housing authorities for new vouchers for folks who are homeless or at risk of homelessness."
+    },
+    {
+      "start": 3979.96,
+      "end": 3990.96,
+      "text": "Um, for the 1st time, that's a formula allocation, right? That's not a, it's not a competitive process. Um, and for the 1st time in that formula allocation, um, pick count numbers were considered."
+    },
+    {
+      "start": 3990.96,
+      "end": 3996.96,
+      "text": "Um, so will get their notice of how many vouchers they get somewhere around May 10th."
+    },
+    {
+      "start": 3996.96,
+      "end": 4001.96,
+      "text": "Um, so I don't know what that number is going to be, um, but we will know soon."
+    },
+    {
+      "start": 4001.96,
+      "end": 4004.96,
+      "text": "Um, what that voucher number is, so we are already starting to work."
+    },
+    {
+      "start": 4004.96,
+      "end": 4008.96,
+      "text": "Um, with how that prioritization process is going to work."
+    },
+    {
+      "start": 4008.96,
+      "end": 4019.96,
+      "text": "So, lots of exciting stuff to come. Um, so lots of good work to come in the next several months. Um, as we worked to getting those, getting those funds out the door, those vouchers out the door and getting more landlords."
+    },
+    {
+      "start": 4019.96,
+      "end": 4022.96,
+      "text": "Um, engaged, um."
+    },
+    {
+      "start": 4022.96,
+      "end": 4025.96,
+      "text": "Um, yeah, so lots of cool stuff happening."
+    },
+    {
+      "start": 4025.96,
+      "end": 4028.96,
+      "text": "Freddie, do you have another question?"
+    },
+    {
+      "start": 4028.96,
+      "end": 4039.96,
+      "text": "Yeah, that's great and I guess I have a couple of questions. 1, you've obviously been instrumental in the process so far. Um."
+    },
+    {
+      "start": 4039.96,
+      "end": 4048.96,
+      "text": "Does the scope of our arrangement allow you to continue working through the implementation? Some of this American rescue plan work."
+    },
+    {
+      "start": 4048.96,
+      "end": 4058.96,
+      "text": "So, I, um, staff already know this, but we actually got extended so that we are you're stuck with me for a long time now. So."
+    },
+    {
+      "start": 4058.96,
+      "end": 4068.96,
+      "text": "Well, just all right. So that's good news. Um, 2nd, I mean, am I hearing you correctly saying."
+    },
+    {
+      "start": 4068.96,
+      "end": 4075.96,
+      "text": "That we will locally, let me ask it this way at 1st, I guess."
+    },
+    {
+      "start": 4075.96,
+      "end": 4079.96,
+      "text": "Does our allocation from American rescue plan."
+    },
+    {
+      "start": 4079.96,
+      "end": 4092.96,
+      "text": "Support and not like, is this is it is this at the level where we can fully capitalize an acquisition of a hotel or hotels for this point? Like, we're going to have dollars at that level where we could potentially make."
+    },
+    {
+      "start": 4092.96,
+      "end": 4097.96,
+      "text": "A full real estate transaction and supported it thereafter."
+    },
+    {
+      "start": 4097.96,
+      "end": 4101.96,
+      "text": "That's the hope. Yes. Okay. And so what you're saying is."
+    },
+    {
+      "start": 4101.96,
+      "end": 4109.96,
+      "text": "We will be planning that on a local expenditure level with expenditures potentially starting as soon as fall."
+    },
+    {
+      "start": 4109.96,
+      "end": 4112.96,
+      "text": "Correct. Okay, good. That's good news. Thanks."
+    },
+    {
+      "start": 4112.96,
+      "end": 4115.96,
+      "text": "And the way that process works, um."
+    },
+    {
+      "start": 4115.96,
+      "end": 4129.96,
+      "text": "So, will, will make a plan with community with the community's input. Y'all will be instrumental in that this body will be instrumental in that. And then that plan will go to to the council. Right? Like it does for all the."
+    },
+    {
+      "start": 4129.96,
+      "end": 4135.96,
+      "text": "All the entitlement dollars. Um, so the full council will be, you know, hopefully."
+    },
+    {
+      "start": 4135.96,
+      "end": 4139.96,
+      "text": "Um, I know Hannah and I've talked a little bit, like, you know, that we can."
+    },
+    {
+      "start": 4139.96,
+      "end": 4148.96,
+      "text": "Get all the right folks involved in that. Right? So the different bodies can buy into that and be engaged and be excited about it. So that when it comes to the council, like folks, you know, really can be."
+    },
+    {
+      "start": 4148.96,
+      "end": 4160.96,
+      "text": "Fully behind it. Yeah, and then I guess my related question is, um, this again, this might be a scope issue coming, coming back to earlier."
+    },
+    {
+      "start": 4160.96,
+      "end": 4172.96,
+      "text": "Um, I don't, I don't suspect that's the same as the vouchering programs that we have had available, but have not pursued to date."
+    },
+    {
+      "start": 4172.96,
+      "end": 4179.96,
+      "text": "Um, do you have guidance as their best practice? Like, you know, obviously I've requested from."
+    },
+    {
+      "start": 4179.96,
+      "end": 4184.96,
+      "text": "Um, and the mayor's office and update for our next meeting is that something you're."
+    },
+    {
+      "start": 4184.96,
+      "end": 4193.96,
+      "text": "Able to inform, like, can you advise and provide guidance on whether we also ought to be doing the kind of vouchering process? Or is this a."
+    },
+    {
+      "start": 4193.96,
+      "end": 4198.96,
+      "text": "A better, or is this a both hand, you know, where, where if we're, if we're."
+    },
+    {
+      "start": 4198.96,
+      "end": 4201.96,
+      "text": "Pursuing best practices across all fronts."
+    },
+    {
+      "start": 4201.96,
+      "end": 4202.96,
+      "text": "Be."
+    },
+    {
+      "start": 4202.96,
+      "end": 4210.96,
+      "text": "I'll answer as best as I can, I have been involved in those conversations. Um."
+    },
+    {
+      "start": 4210.96,
+      "end": 4222.96,
+      "text": "There isn't, we haven't, you all haven't left money on the table, so to speak. Right? So right now the, the vouchers, I mean, not that it's not, it's not a piece of paper or anything, but the money that's been used."
+    },
+    {
+      "start": 4222.96,
+      "end": 4229.96,
+      "text": "For non congregate shelter and motels is coming through FEMA as a under the under the coven disaster declaration."
+    },
+    {
+      "start": 4230.96,
+      "end": 4237.96,
+      "text": "FEMA also does vouchers, motel vouchers through disaster, natural disaster related events."
+    },
+    {
+      "start": 4237.96,
+      "end": 4238.96,
+      "text": "Um."
+    },
+    {
+      "start": 4238.96,
+      "end": 4244.96,
+      "text": "So, like, for example, from the tornado, y'all had a disaster declaration last year and they could have."
+    },
+    {
+      "start": 4244.96,
+      "end": 4251.96,
+      "text": "Used FEMA money for for that for motels for people that needed. I don't know if they did or not. I'm just saying that that's an example."
+    },
+    {
+      "start": 4251.96,
+      "end": 4262.96,
+      "text": "For this for for the flooding that just happened to do not have a disaster declaration for individual assistance yet. You may that's still under review, but you don't have that yet for the flooding. Um, so that."
+    },
+    {
+      "start": 4262.96,
+      "end": 4266.96,
+      "text": "Until you get that there isn't money eligible."
+    },
+    {
+      "start": 4266.96,
+      "end": 4270.96,
+      "text": "Right, there's not FEMA, it's not eligible for female reimbursement. Um."
+    },
+    {
+      "start": 4270.96,
+      "end": 4282.96,
+      "text": "So, that may change if you do get the individual assistance declaration, but right now you don't have that. Um, under the cove a deck, but the disaster declaration Metro could have."
+    },
+    {
+      "start": 4282.96,
+      "end": 4288.36,
+      "text": "Utilize motel rooms and been 100% FEMA reimbursed for folks."
+    },
+    {
+      "start": 4288.36,
+      "end": 4295.44,
+      "text": "Metro chose to do the decompress shelter at the fairgrounds and the auditorium instead of doing the motel rooms. So they."
+    },
+    {
+      "start": 4295.44,
+      "end": 4299.16,
+      "text": "In some places I've done this have done that, um."
+    },
+    {
+      "start": 4299.16,
+      "end": 4303.759999999999,
+      "text": "The, the highest and highest best practice."
+    },
+    {
+      "start": 4303.759999999999,
+      "end": 4306.879999999999,
+      "text": "That the CDC was recommending was motels."
+    },
+    {
+      "start": 4306.879999999999,
+      "end": 4311.2,
+      "text": "Um, so that it was not, you know, just it was safer."
+    },
+    {
+      "start": 4311.2,
+      "end": 4317.2,
+      "text": "Metro didn't choose that option. Um, the CDC did has approved for the decompress sheltering."
+    },
+    {
+      "start": 4317.2,
+      "end": 4323.92,
+      "text": "Um, that Metro is doing so it's not out of bounds of what they should be doing. Um."
+    },
+    {
+      "start": 4323.92,
+      "end": 4328.84,
+      "text": "They're aware that it's not the highest and best practice, but it's what they chose to do. Um, through."
+    },
+    {
+      "start": 4328.84,
+      "end": 4333.32,
+      "text": "So, that's, you know, I mean, I."
+    },
+    {
+      "start": 4333.32,
+      "end": 4342.4,
+      "text": "That's that's extremely helpful insight. Uh, I guess my question would be then under the, um."
+    },
+    {
+      "start": 4342.4,
+      "end": 4348.879999999999,
+      "text": "Under the code declaration as we seek to dismantle that decompress shelter, uh."
+    },
+    {
+      "start": 4348.879999999999,
+      "end": 4354.04,
+      "text": "Is that money still available to use for that purpose if we decided to."
+    },
+    {
+      "start": 4354.04,
+      "end": 4362.5199999999995,
+      "text": "As long as the code declaration is is in place? Yes. We are also anticipating that that is the FEMA is signaling that that's."
+    },
+    {
+      "start": 4362.5199999999995,
+      "end": 4365.5599999999995,
+      "text": "We don't have a lot more time with that. Okay."
+    },
+    {
+      "start": 4365.5599999999995,
+      "end": 4372.36,
+      "text": "All right, thank you. I'm going to try to move this along a little bit, but tree, the Gilligan from would like to make a comment. So, tree."
+    },
+    {
+      "start": 4372.36,
+      "end": 4375.5199999999995,
+      "text": "If you do that, then we're going to try to move on to our next item."
+    },
+    {
+      "start": 4376.96,
+      "end": 4378.719999999999,
+      "text": "Uh, yes, Paula, can you hear me?"
+    },
+    {
+      "start": 4380.4,
+      "end": 4381.36,
+      "text": "Yes, ma'am. Go ahead."
+    },
+    {
+      "start": 4382.36,
+      "end": 4390.12,
+      "text": "Okay. Um, I just wanted to clarify. I don't think from what is hearing from the HUD side."
+    },
+    {
+      "start": 4390.5599999999995,
+      "end": 4394.2,
+      "text": "Of the American rescue dollars that are coming down through the home program."
+    },
+    {
+      "start": 4394.2,
+      "end": 4398.04,
+      "text": "Um, I don't think we'll see expenditures by the fall."
+    },
+    {
+      "start": 4398.04,
+      "end": 4405.12,
+      "text": "It's our understanding that, you know, we will see, I guess HUD has to do quite a bit of."
+    },
+    {
+      "start": 4406.08,
+      "end": 4415.639999999999,
+      "text": "Regulatory guidance or whatever, because this is the use of the funds that hasn't been some of the signs are going to be used for purposes that they haven't been used before."
+    },
+    {
+      "start": 4415.64,
+      "end": 4424.64,
+      "text": "So we're told that, you know, we're again, we're in the planning process, but I doubt that we'll be able to start expanding by fall."
+    },
+    {
+      "start": 4424.64,
+      "end": 4426.6,
+      "text": "I just wanted to provide that clarification."
+    },
+    {
+      "start": 4427.88,
+      "end": 4429.4400000000005,
+      "text": "The wheels of government."
+    },
+    {
+      "start": 4430.160000000001,
+      "end": 4430.8,
+      "text": "Move slowly."
+    },
+    {
+      "start": 4431.8,
+      "end": 4432.52,
+      "text": "Well, thank you, Treva."
+    },
+    {
+      "start": 4432.52,
+      "end": 4433.200000000001,
+      "text": "Appreciate that."
+    },
+    {
+      "start": 4433.200000000001,
+      "end": 4433.76,
+      "text": "All right."
+    },
+    {
+      "start": 4433.76,
+      "end": 4434.6,
+      "text": "Um, in the."
+    },
+    {
+      "start": 4435.160000000001,
+      "end": 4438.320000000001,
+      "text": "Interest of time, unless there's another burning question for Heather, we're going to move on."
+    },
+    {
+      "start": 4438.32,
+      "end": 4443.719999999999,
+      "text": "Um, all right, hearing none."
+    },
+    {
+      "start": 4443.719999999999,
+      "end": 4449.96,
+      "text": "It is your turn. Can you give us a fairly quick update on strategic planning?"
+    },
+    {
+      "start": 4449.96,
+      "end": 4463.5199999999995,
+      "text": "Um, yeah, and I actually was going to provide an update on the committee chair meeting. I'm happy to send out the document after the fact. If Paul, you could just give me the."
+    },
+    {
+      "start": 4463.52,
+      "end": 4472.040000000001,
+      "text": "Um, screen really quickly, I'll just pull it through these slides to give you guys some context and if anybody has questions, feel free."
+    },
+    {
+      "start": 4472.040000000001,
+      "end": 4475.64,
+      "text": "To ask me later. Oops."
+    },
+    {
+      "start": 4475.64,
+      "end": 4478.88,
+      "text": "Well, we'll just go with this."
+    },
+    {
+      "start": 4478.88,
+      "end": 4485.540000000001,
+      "text": "So, just really quickly, uh, we met with our committee chairs."
+    },
+    {
+      "start": 4485.54,
+      "end": 4494.06,
+      "text": "In February, and then extended into April, because we had so much conversation. Um, it was a fantastic opportunity."
+    },
+    {
+      "start": 4494.06,
+      "end": 4502.22,
+      "text": "For the chairs to get together and have a conversation about the work that happened in 2020."
+    },
+    {
+      "start": 4502.22,
+      "end": 4509.54,
+      "text": "Um, get to know each other reconnect and then align on the body of work for 2021."
+    },
+    {
+      "start": 4509.54,
+      "end": 4515.9,
+      "text": "So, um, that is what we did over those 2 days that we got together."
+    },
+    {
+      "start": 4515.9,
+      "end": 4522.14,
+      "text": "Um, just give you guys a sense of some of the conversations we covered the strategic plan."
+    },
+    {
+      "start": 4522.14,
+      "end": 4527.66,
+      "text": "And the values and then had a really rich conversation about how well the community."
+    },
+    {
+      "start": 4527.66,
+      "end": 4533.72,
+      "text": "Uh, was doing and the values of the community values."
+    },
+    {
+      "start": 4533.72,
+      "end": 4549.9800000000005,
+      "text": "We're being represented sorry conversation about how the community, the community values that we put in the plan, we're being represented today. Overall, the discussion was, you know, the intent in the community is there, but we're still working on systems to support our values."
+    },
+    {
+      "start": 4549.9800000000005,
+      "end": 4562.88,
+      "text": "So we have worked and then we have worked to do in the broader community, right? People who aren't engaged in our work on a day to day. So really great conversation and kind of see the outcomes of where we felt like we were in each of those 5 values."
+    },
+    {
+      "start": 4562.88,
+      "end": 4572.12,
+      "text": "Um, we also talked about based on the items on the strategic plan earmarked for 2021."
+    },
+    {
+      "start": 4572.12,
+      "end": 4586.12,
+      "text": "What is it that we intend to accomplish this year? So you can see here what the different chairs wrote in, um, they are so much more articulate than I am. We have a lot of really great and a vision quote."
+    },
+    {
+      "start": 4586.12,
+      "end": 4593.44,
+      "text": "But in summary, um, what we will focus on in 21, 2021 and hope to accomplish is."
+    },
+    {
+      "start": 4593.44,
+      "end": 4601.599999999999,
+      "text": "You know, robust community data data and information driven by full participation of everyone across the."
+    },
+    {
+      "start": 4601.599999999999,
+      "end": 4606.8,
+      "text": "Making decisions based on that data and tangible information."
+    },
+    {
+      "start": 4606.8,
+      "end": 4618.2,
+      "text": "Greater communication and collaboration across the community that be that with the chairs with the homeless planning council with the broader community and our national stakeholders."
+    },
+    {
+      "start": 4618.2,
+      "end": 4622.28,
+      "text": "And then finally, a lot of conversation around making sure that equity and diversity."
+    },
+    {
+      "start": 4622.28,
+      "end": 4633.08,
+      "text": "Um, is is part of our representation and also part of the services offered. So really fantastic stuff. But hopefully this gives you a sense of what those."
+    },
+    {
+      "start": 4633.08,
+      "end": 4645.5599999999995,
+      "text": "Committees are achieving in 2021 and really what you as homeless planning council members should be looking for in the work of the community and of the communities."
+    },
+    {
+      "start": 4645.56,
+      "end": 4654.56,
+      "text": "If we're not seeing these themes in the work, we should be asking ourselves, is this the right work? Um, and having that conversation."
+    },
+    {
+      "start": 4655.9400000000005,
+      "end": 4667.580000000001,
+      "text": "We also had a great conversation about better ways to collaborate and support each other. So you can see here, there's some things around making sure committee chairs are equipped with the information and support they need to succeed."
+    },
+    {
+      "start": 4667.58,
+      "end": 4675.08,
+      "text": "Um, definitely some great ideas on how to formalize processes to prompt collaboration and communication."
+    },
+    {
+      "start": 4675.38,
+      "end": 4681.74,
+      "text": "1 of those, uh, you know, we talked about just some easy things to add to every committee's agenda items."
+    },
+    {
+      "start": 4681.74,
+      "end": 4687.32,
+      "text": "But 1 of the ones that we talked about and had a lot of consensus across the board is."
+    },
+    {
+      "start": 4687.32,
+      "end": 4704.42,
+      "text": "Going through those committee lists and making sure at least 1 member is part of the planning council so that there is that stronger connection between the councils and the committees and that council member can be representing the committees and then coming back to the committees with information at every meeting."
+    },
+    {
+      "start": 4704.84,
+      "end": 4715.219999999999,
+      "text": "And then we also talked about some inventive ways to communicate a little more easily while respecting sunshine sunshine laws and need for transparency. So we're going to look into that."
+    },
+    {
+      "start": 4715.22,
+      "end": 4727.22,
+      "text": "Um, as well, and then finally, you know, this was kind of how we finished the meeting. We asked, you know, what would you share with planning council's outcome of this meeting?"
+    },
+    {
+      "start": 4727.22,
+      "end": 4734.360000000001,
+      "text": "Um, and then to me, you know, what what is summarized here in their comments is the chairs are engaged."
+    },
+    {
+      "start": 4734.360000000001,
+      "end": 4743.3,
+      "text": "They're really committed to doing the work and they're looking for the planning council to the planning council for guidance on."
+    },
+    {
+      "start": 4743.3,
+      "end": 4761.84,
+      "text": "Communication on prioritization on the work that they're doing. So overall, it was great opportunity to connect and refocus on 20, 20 and the 1st after the after 2020 and the 1st half of this year has been a little crazy. I think this was a really good opportunity for us to connect and."
+    },
+    {
+      "start": 4761.84,
+      "end": 4764.72,
+      "text": "Um, just refocus."
+    },
+    {
+      "start": 4764.72,
+      "end": 4778.52,
+      "text": "From a planning council perspective, I think what you guys can expect as an outcome of this meeting is, um, some more, you know, formal structure and how we communicate what the committees are doing."
+    },
+    {
+      "start": 4778.52,
+      "end": 4785.06,
+      "text": "Uh, some more, uh, you kind of formal asks of the planning council to engage in those conversations to be."
+    },
+    {
+      "start": 4785.06,
+      "end": 4791.42,
+      "text": "Looking at the monthly reports and being informed on the work of the committees and keeping them accountable."
+    },
+    {
+      "start": 4791.42,
+      "end": 4802.160000000001,
+      "text": "Um, to, you know, sticking to the work that we said as a priority, but we've also asked the committee chairs and the committees to keep us accountable. Right? If they're asking for guidance."
+    },
+    {
+      "start": 4802.160000000001,
+      "end": 4811.160000000001,
+      "text": "For removal of barriers and risks that they're identifying, and they're not getting that we've asked for them to make sure that they're holding us to that account as well."
+    },
+    {
+      "start": 4811.16,
+      "end": 4821.0599999999995,
+      "text": "So, um, that was a very, very quick update happy to share this information with everybody and answer any questions. Um, whenever you have some time to digest."
+    },
+    {
+      "start": 4821.0599999999995,
+      "end": 4827.54,
+      "text": "But I will hand it back over to you, Paula to keep keep moving through the agenda."
+    },
+    {
+      "start": 4827.54,
+      "end": 4831.74,
+      "text": "All right, does anybody have any questions for Laura and her update?"
+    },
+    {
+      "start": 4831.74,
+      "end": 4841.5199999999995,
+      "text": "All right, committee reports."
+    },
+    {
+      "start": 4841.5199999999995,
+      "end": 4845.66,
+      "text": "Do we have any."
+    },
+    {
+      "start": 4850.16,
+      "end": 4853.4,
+      "text": "No, committee reports will use Laura's as the."
+    },
+    {
+      "start": 4853.4,
+      "end": 4858.92,
+      "text": "Uh, I just wanted to say after a couple of years."
+    },
+    {
+      "start": 4858.92,
+      "end": 4874.22,
+      "text": "Well, I just wanted to say after a couple of years on oversight, we did a chair transition to Stephanie Cooper and it's, I guess, I feel like at the end of that process and getting Stephanie jumpstarted in the role."
+    },
+    {
+      "start": 4874.22,
+      "end": 4878.96,
+      "text": "It's great to see as we kind of take a look through the strategic plan that we made."
+    },
+    {
+      "start": 4878.96,
+      "end": 4886.22,
+      "text": "Meaningful headway on most of the items that the oversight committee was supposed to do, including specifically."
+    },
+    {
+      "start": 4886.22,
+      "end": 4896.22,
+      "text": "Um, getting set up to enable secure data sharing, but also getting all of the foundational documents in place and Stephanie's already off to a great start with."
+    },
+    {
+      "start": 4896.22,
+      "end": 4904.22,
+      "text": "Incredible staff support on the data quality scenario. So really, really good stuff from and Stephanie has been."
+    },
+    {
+      "start": 4904.22,
+      "end": 4916.22,
+      "text": "Along for the ride the whole way and will kindly who's on this council is her vice chair. So we should see continued good work for the final stretch covered by this strategic plan."
+    },
+    {
+      "start": 4916.22,
+      "end": 4922.22,
+      "text": "Thanks, Freddie. Anyone else have comments questions."
+    },
+    {
+      "start": 4922.22,
+      "end": 4926.22,
+      "text": "I have a concern. Do we have any communication."
+    },
+    {
+      "start": 4926.22,
+      "end": 4929.22,
+      "text": "Or request from the mayor's office."
+    },
+    {
+      "start": 4929.22,
+      "end": 4935.22,
+      "text": "There's not nothing I'm aware of."
+    },
+    {
+      "start": 4935.22,
+      "end": 4944.22,
+      "text": "Charlie, Hannah Davis is back from maternity leave. I know. I think she had to leave today's meeting early to go to the affordable housing task force process. Um."
+    },
+    {
+      "start": 4944.22,
+      "end": 4963.22,
+      "text": "But I don't think unless Paula tells me otherwise, I don't think she brought anything or Judy that she brought anything to the table today from the perspective of the mayor's office. Yeah. I just think. Thank you. Freddie. I think we just have to remember."
+    },
+    {
+      "start": 4963.22,
+      "end": 4969.22,
+      "text": "To ask the question if there's anything she needs."
+    },
+    {
+      "start": 4969.22,
+      "end": 4986.22,
+      "text": "Thank you, Charlie. Yes, and she just want to reiterate what she says. Um, yeah, she apologized. He had to leave, but she's here for follow up questions for specific follow ups and for anything that we need and that you you all have questions. Let me know. Let her know directly. She's."
+    },
+    {
+      "start": 4986.22,
+      "end": 4992.72,
+      "text": "All right. Thank you. All right. Anything else under committee reports."
+    },
+    {
+      "start": 4993.22,
+      "end": 4999.72,
+      "text": "Let's move on to other business. So, as I think most of, you know, um."
+    },
+    {
+      "start": 4999.72,
+      "end": 5004.08,
+      "text": "Regardless of whether or not the pandemic is over, uh, we are."
+    },
+    {
+      "start": 5004.08,
+      "end": 5011.820000000001,
+      "text": "Not necessarily expecting the governor governor to extend his executive orders, allowing us to continue to meet electronically. Um."
+    },
+    {
+      "start": 5011.820000000001,
+      "end": 5020.46,
+      "text": "We could be surprised, but I, we are not expecting that to happen, which means our next meeting is going to be in person. Um."
+    },
+    {
+      "start": 5020.46,
+      "end": 5027.86,
+      "text": "There's some logistical things I know that Judy is working on around that, but I would like to prepare you all for that. Uh."
+    },
+    {
+      "start": 5027.86,
+      "end": 5033.6,
+      "text": "Inevitability so any questions concerns thoughts around any of that."
+    },
+    {
+      "start": 5037.9800000000005,
+      "end": 5045.06,
+      "text": "Do you know if there's any concessions being made for people who are considered high risk who are a part of the."
+    },
+    {
+      "start": 5045.06,
+      "end": 5046.3,
+      "text": "Home was planning council."
+    },
+    {
+      "start": 5046.3,
+      "end": 5052.4400000000005,
+      "text": "Well, Sheila, I would encourage you to write to the governor."
+    },
+    {
+      "start": 5052.4400000000005,
+      "end": 5056.04,
+      "text": "Sorry, thank you."
+    },
+    {
+      "start": 5056.04,
+      "end": 5060.84,
+      "text": "All right."
+    },
+    {
+      "start": 5060.84,
+      "end": 5063.120000000001,
+      "text": "Any other questions concerns thoughts."
+    },
+    {
+      "start": 5063.120000000001,
+      "end": 5067.4400000000005,
+      "text": "Around that I had something and it completely left my head."
+    },
+    {
+      "start": 5067.44,
+      "end": 5074.94,
+      "text": "Uh, so it's not surprising today. I'm in that kind of headspace. So, all right."
+    },
+    {
+      "start": 5074.94,
+      "end": 5082.08,
+      "text": "I lost it. You know, why Freddie was talking because I was so enthralled with what he was saying."
+    },
+    {
+      "start": 5084.36,
+      "end": 5092.339999999999,
+      "text": "Oh, I have something really quickly Paula and kudos and thank you to open table Nashville with defeating the bill yesterday."
+    },
+    {
+      "start": 5092.34,
+      "end": 5107.9400000000005,
+      "text": "Uh, yes, well, let me say very clearly that we did not do it alone. Um, and there was a lot of help. We, we, we engaged a lot of folks across the state even. So there was a bill. I don't know if any of you had followed it. It was a bill that was going to expand the."
+    },
+    {
+      "start": 5108.78,
+      "end": 5112.62,
+      "text": "Current legislation that we already have on the books about camping on."
+    },
+    {
+      "start": 5112.92,
+      "end": 5115.92,
+      "text": "And that sort of thing on public property."
+    },
+    {
+      "start": 5116.76,
+      "end": 5121.9800000000005,
+      "text": "Currently, it's illegal to camp on state property and private property, but the state decided that they wanted to, or the."
+    },
+    {
+      "start": 5122.34,
+      "end": 5132.4800000000005,
+      "text": "Someone in the legislature decided that they wanted to propose a bill that would ban or make it illegal to sleep or camp anywhere, including local."
+    },
+    {
+      "start": 5134.76,
+      "end": 5142.92,
+      "text": "Property, so if you can't sleep on state on property, you can't sleep on someone's private property and you can't sleep on."
+    },
+    {
+      "start": 5143.56,
+      "end": 5145.22,
+      "text": "The city's local property."
+    },
+    {
+      "start": 5145.56,
+      "end": 5147.12,
+      "text": "And you have nowhere to go."
+    },
+    {
+      "start": 5147.12,
+      "end": 5150.96,
+      "text": "They were literally going to make it illegal for you to fall asleep anywhere."
+    },
+    {
+      "start": 5150.96,
+      "end": 5154.44,
+      "text": "So, it passed the committee in the house."
+    },
+    {
+      "start": 5154.44,
+      "end": 5166.32,
+      "text": "Uh, and was and is still scheduled for a floor vote in the house, but yesterday, um, Ingrid McIntyre, Lindsay O'Connell, or I'm talking to you, Freddie, Lindsay cranks."
+    },
+    {
+      "start": 5166.32,
+      "end": 5175.38,
+      "text": "And we're not sure if anyone else was able to testify or not. We're able to testify in front of the committee and it was handily defeated in that committee. So we are very, very excited."
+    },
+    {
+      "start": 5175.38,
+      "end": 5187.86,
+      "text": "These days advocacy efforts are abundant, but the results are not always positive, but this was a very positive outcome and we were very happy about that. So, uh, open table kind of took the lead on on getting the word out."
+    },
+    {
+      "start": 5187.86,
+      "end": 5196.86,
+      "text": "Uh, and we literally mobilize people from across the state to call the legislators and senators to ask them to defeat the bill and it actually worked. So, uh, sometimes."
+    },
+    {
+      "start": 5196.86,
+      "end": 5202.86,
+      "text": "When you beat your head against the brick wall, uh, over and over and over again, you make a crack. So never stop trying."
+    },
+    {
+      "start": 5202.86,
+      "end": 5212.219999999999,
+      "text": "Stop trying. So, thank you. Uh, that was that was nice. All right. Uh, Alex, you have your little hand up. Yeah. We want to make a comment before we, uh."
+    },
+    {
+      "start": 5212.219999999999,
+      "end": 5217.0199999999995,
+      "text": "Try to end this being. Uh, yes, um."
+    },
+    {
+      "start": 5217.0199999999995,
+      "end": 5220.139999999999,
+      "text": "I'm so happy that we finally."
+    },
+    {
+      "start": 5220.139999999999,
+      "end": 5224.339999999999,
+      "text": "Allowing people love in Nashville and the people that works with."
+    },
+    {
+      "start": 5224.339999999999,
+      "end": 5227.58,
+      "text": "Our brothers and sisters that's on the street."
+    },
+    {
+      "start": 5227.58,
+      "end": 5229.74,
+      "text": "Like, they finally get a spot."
+    },
+    {
+      "start": 5229.74,
+      "end": 5233.94,
+      "text": "On a COC now, I'm not saying that it's."
+    },
+    {
+      "start": 5236.099999999999,
+      "end": 5238.54,
+      "text": "For me, it's been a long time coming."
+    },
+    {
+      "start": 5238.54,
+      "end": 5242.58,
+      "text": "Because they do the work that y'all can't do after hours."
+    },
+    {
+      "start": 5242.58,
+      "end": 5246.7,
+      "text": "They do the work that really put the trust."
+    },
+    {
+      "start": 5246.7,
+      "end": 5253.62,
+      "text": "They are literally the olive branch. I can honestly say without them and their encouragement."
+    },
+    {
+      "start": 5253.62,
+      "end": 5255.46,
+      "text": "I wouldn't be in my apartment."
+    },
+    {
+      "start": 5255.46,
+      "end": 5259.62,
+      "text": "Because they the ones that helped me like, hey, you need to go ahead and."
+    },
+    {
+      "start": 5259.74,
+      "end": 5262.66,
+      "text": "Give faith and that park center."
+    },
+    {
+      "start": 5262.66,
+      "end": 5264.66,
+      "text": "Put you into a place."
+    },
+    {
+      "start": 5264.66,
+      "end": 5268.98,
+      "text": "So, I'm so happy that they finally came to the."
+    },
+    {
+      "start": 5268.98,
+      "end": 5274.86,
+      "text": "Came to the table, but I also want to stress that they need to be a part."
+    },
+    {
+      "start": 5274.86,
+      "end": 5278.82,
+      "text": "Of any meetings that we have, especially in the."
+    },
+    {
+      "start": 5278.82,
+      "end": 5280.82,
+      "text": "Uh, homeless planning council."
+    },
+    {
+      "start": 5280.82,
+      "end": 5289.0599999999995,
+      "text": "Like, there should be at least 2 spots open for them for so they can know exactly what we're talking about."
+    },
+    {
+      "start": 5289.0599999999995,
+      "end": 5291.74,
+      "text": "Instead of word about or just reading."
+    },
+    {
+      "start": 5291.74,
+      "end": 5295.74,
+      "text": "Because that could be misconstrued or."
+    },
+    {
+      "start": 5295.74,
+      "end": 5300.66,
+      "text": "Or some details can slip by and I don't want to do that."
+    },
+    {
+      "start": 5300.66,
+      "end": 5304.38,
+      "text": "I want to integrate them as much as possible."
+    },
+    {
+      "start": 5304.38,
+      "end": 5306.66,
+      "text": "That's something I have to say."
+    },
+    {
+      "start": 5306.66,
+      "end": 5308.66,
+      "text": "Thank you Alex."
+    },
+    {
+      "start": 5308.66,
+      "end": 5311.66,
+      "text": "Freddie, do you have something else before we go?"
+    },
+    {
+      "start": 5311.66,
+      "end": 5322.58,
+      "text": "Yeah, just we're going to have another metro budget cycle coming up and I guess I would ask for 1 more request for our next meeting is would Judy be willing to."
+    },
+    {
+      "start": 5322.58,
+      "end": 5328.58,
+      "text": "Review the budget request here at planning council. I think it's good for."
+    },
+    {
+      "start": 5328.58,
+      "end": 5337.58,
+      "text": "And planning council members to understand what's being asked for and be aware that they can support that to both the mayor's office and council."
+    },
+    {
+      "start": 5337.58,
+      "end": 5340.94,
+      "text": "Correct. Thank you for it."
+    },
+    {
+      "start": 5340.94,
+      "end": 5349.22,
+      "text": "Yes, of course. All right. Is there any other business today that we need to discuss any announcements that need to be made."
+    },
+    {
+      "start": 5349.22,
+      "end": 5355.22,
+      "text": "Seeing none."
+    },
+    {
+      "start": 5355.22,
+      "end": 5357.98,
+      "text": "All right, I would."
+    },
+    {
+      "start": 5357.98,
+      "end": 5361.64,
+      "text": "Somebody."
+    },
+    {
+      "start": 5361.64,
+      "end": 5373.400000000001,
+      "text": "All right, thank you all very much for your time today as always. I really appreciate all of your participation, your thoughtfulness, your guidance that that is given to our community."
+    },
+    {
+      "start": 5373.400000000001,
+      "end": 5380.780000000001,
+      "text": "So, with nothing further on our agenda and no other comments or questions, I would entertain a motion to dismiss."
+    },
+    {
+      "start": 5380.780000000001,
+      "end": 5386.240000000001,
+      "text": "So move by Elena, seconded by Vicki."
+    },
+    {
+      "start": 5386.24,
+      "end": 5390.0,
+      "text": "And we are adjourned. Thank you all very much. Have a good day."
+    },
+    {
+      "start": 5390.0,
+      "end": 5391.0,
+      "text": "Thank you."
+    }
+  ]
+}

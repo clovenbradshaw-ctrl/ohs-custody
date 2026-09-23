@@ -1,0 +1,15 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2021-04-14-hpc-meeting.txt",
+  "boundary_count": 1,
+  "named_boundary_count": 1,
+  "sections": [
+    {
+      "start": 36132,
+      "end": 71063,
+      "speaker": "Kevin",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}
