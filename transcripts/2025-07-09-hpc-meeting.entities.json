@@ -1,0 +1,1095 @@
+{
+  "schema": "eoreader7-entity-pass@1",
+  "source_transcript": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2025-07-09-hpc-meeting.txt",
+  "generated_at": "2026-09-23T19:46:25.378Z",
+  "sentence_count": 930,
+  "referent_count": 44,
+  "gap_count": 44,
+  "referents": [
+    {
+      "id": "ref:auto:alyssa_fernandez",
+      "surfaces": [
+        "Alyssa Fernandez",
+        "Alyssa"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Alyssa Fernandez",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Alyssa",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:katherine_nolles",
+      "surfaces": [
+        "Katherine Nolles",
+        "Katherine"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Katherine Nolles",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Katherine",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:coc",
+      "surfaces": [
+        "COC"
+      ],
+      "admittedBy": [
+        {
+          "surface": "COC",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:june",
+      "surfaces": [
+        "June"
+      ],
+      "admittedBy": [
+        {
+          "surface": "June",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hud",
+      "surfaces": [
+        "HUD"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HUD",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hmis",
+      "surfaces": [
+        "HMIS"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HMIS",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:rico",
+      "surfaces": [
+        "Rico"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Rico",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:nofo",
+      "surfaces": [
+        "NOFO"
+      ],
+      "admittedBy": [
+        {
+          "surface": "NOFO",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:kenna",
+      "surfaces": [
+        "Kenna"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Kenna",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:nashville",
+      "surfaces": [
+        "Nashville"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Nashville",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:raquel",
+      "surfaces": [
+        "Raquel"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Raquel",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:drew",
+      "surfaces": [
+        "Drew"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Drew",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:mdha",
+      "surfaces": [
+        "MDHA"
+      ],
+      "admittedBy": [
+        {
+          "surface": "MDHA",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hpc",
+      "surfaces": [
+        "HPC"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HPC",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:rfp",
+      "surfaces": [
+        "RFP"
+      ],
+      "admittedBy": [
+        {
+          "surface": "RFP",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:susie",
+      "surfaces": [
+        "Susie"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Susie",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:clc",
+      "surfaces": [
+        "CLC"
+      ],
+      "admittedBy": [
+        {
+          "surface": "CLC",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hbc",
+      "surfaces": [
+        "HBC"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HBC",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hg_stoval",
+      "surfaces": [
+        "HG Stoval"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HG Stoval",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:jamie",
+      "surfaces": [
+        "Jamie"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Jamie",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:july",
+      "surfaces": [
+        "July"
+      ],
+      "admittedBy": [
+        {
+          "surface": "July",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:michelle",
+      "surfaces": [
+        "Michelle"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Michelle",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:music",
+      "surfaces": [
+        "Music"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Music",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:naeh",
+      "surfaces": [
+        "NAEH"
+      ],
+      "admittedBy": [
+        {
+          "surface": "NAEH",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:nah",
+      "surfaces": [
+        "NAH"
+      ],
+      "admittedBy": [
+        {
+          "surface": "NAH",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:arpa",
+      "surfaces": [
+        "ARPA"
+      ],
+      "admittedBy": [
+        {
+          "surface": "ARPA",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:angie",
+      "surfaces": [
+        "Angie"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Angie",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:april",
+      "surfaces": [
+        "April"
+      ],
+      "admittedBy": [
+        {
+          "surface": "April",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:cdbg",
+      "surfaces": [
+        "CDBG"
+      ],
+      "admittedBy": [
+        {
+          "surface": "CDBG",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:courtney",
+      "surfaces": [
+        "Courtney"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Courtney",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:daryl",
+      "surfaces": [
+        "Daryl"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Daryl",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:dee",
+      "surfaces": [
+        "Dee"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Dee",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hispanic",
+      "surfaces": [
+        "Hispanic"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Hispanic",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:lampa",
+      "surfaces": [
+        "Lampa"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Lampa",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:latino",
+      "surfaces": [
+        "Latino"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Latino",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:liz_mard",
+      "surfaces": [
+        "Liz Mard",
+        "Liz"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Liz Mard",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        },
+        {
+          "surface": "Liz",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:oem",
+      "surfaces": [
+        "OEM"
+      ],
+      "admittedBy": [
+        {
+          "surface": "OEM",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:ryan",
+      "surfaces": [
+        "Ryan"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Ryan",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:tca",
+      "surfaces": [
+        "TCA"
+      ],
+      "admittedBy": [
+        {
+          "surface": "TCA",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:os",
+      "surfaces": [
+        "OS"
+      ],
+      "admittedBy": [
+        {
+          "surface": "OS",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:ce",
+      "surfaces": [
+        "CE"
+      ],
+      "admittedBy": [
+        {
+          "surface": "CE",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:hg",
+      "surfaces": [
+        "HG"
+      ],
+      "admittedBy": [
+        {
+          "surface": "HG",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:dr",
+      "surfaces": [
+        "Dr"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Dr",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    },
+    {
+      "id": "ref:auto:vice_chair",
+      "surfaces": [
+        "Vice Chair"
+      ],
+      "admittedBy": [
+        {
+          "surface": "Vice Chair",
+          "provenance": {
+            "giver": "surfaces/discoverReferents",
+            "tier": "engine",
+            "basis": "name-variant coreference"
+          }
+        }
+      ],
+      "mergedInto": null
+    }
+  ],
+  "gaps": [
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:alyssa_fernandez",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:katherine_nolles",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:coc",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:june",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hud",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hmis",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:rico",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:nofo",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:kenna",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:nashville",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:raquel",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:drew",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:mdha",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hpc",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:rfp",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:susie",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:clc",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hbc",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hg_stoval",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:jamie",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:july",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:michelle",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:music",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:naeh",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:nah",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:arpa",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:angie",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:april",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:cdbg",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:courtney",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:daryl",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:dee",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hispanic",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:lampa",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:latino",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:liz_mard",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:oem",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:ryan",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:tca",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:os",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:ce",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:hg",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:dr",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    },
+    {
+      "reason": "pronoun_and_descriptor_mentions_unresolved",
+      "referent": "ref:auto:vice_chair",
+      "tier": "model",
+      "needsWitness": true,
+      "detail": "name-variant coreference is engine-tier and complete; binding pronouns and definite descriptions to this referent is not derivable (eoreader5 measured distributional coref failing twice). Supply a per-text prior to close this gap."
+    }
+  ]
+}
