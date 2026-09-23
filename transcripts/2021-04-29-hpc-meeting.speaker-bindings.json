@@ -1,0 +1,29 @@
+{
+  "schema": "EOMeetingSpeakerBindings@1",
+  "transcript_path": "/Users/mlacy/Documents/3.0/ohs-custody/transcripts/2021-04-29-hpc-meeting.txt",
+  "boundary_count": 3,
+  "named_boundary_count": 3,
+  "sections": [
+    {
+      "start": 148,
+      "end": 258,
+      "speaker": "Darrell Wells",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 258,
+      "end": 337,
+      "speaker": "April Calvin",
+      "org": null,
+      "how": "self-introduction"
+    },
+    {
+      "start": 337,
+      "end": 42166,
+      "speaker": "Susie",
+      "org": null,
+      "how": "self-introduction"
+    }
+  ]
+}

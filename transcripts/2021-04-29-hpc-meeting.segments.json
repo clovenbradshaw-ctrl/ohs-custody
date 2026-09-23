@@ -1,0 +1,2847 @@
+{
+  "audio_path": "/Users/mlacy/Documents/3.0/ohs-custody/av-pipeline/audio/2021-04-29-hpc-meeting.webm",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "language": "en",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 10.56,
+      "text": "All right, let's go ahead and we can start with introductions. I am second Cooper. I work for center sound and I am the chair."
+    },
+    {
+      "start": 14.280000000000001,
+      "end": 23.16,
+      "text": "Yes, you can go next I'm Darrell Wells and I'm over at emphasis house and I'm the coordinator over here and admin for the company."
+    },
+    {
+      "start": 23.16,
+      "end": 34.08,
+      "text": "I am April Calvin and I'm the director of programs here at the salvation army."
+    },
+    {
+      "start": 45.6,
+      "end": 48.6,
+      "text": "I am Susie told me I'm the homeless coordinator at."
+    },
+    {
+      "start": 48.6,
+      "end": 56.46,
+      "text": "Hey, I'm a little pretty database administrator at the national resolution."
+    },
+    {
+      "start": 56.46,
+      "end": 60.78,
+      "text": "Hey, Ben, I'm will kindly I work at."
+    },
+    {
+      "start": 60.78,
+      "end": 72.66,
+      "text": "Morning everybody, Freddie O'Connell Metro council district 19 also on homelessness point commission or council."
+    },
+    {
+      "start": 72.66,
+      "end": 81.36,
+      "text": "Good morning, Rachel cook, administrator."
+    },
+    {
+      "start": 81.36,
+      "end": 89.28,
+      "text": "Emily Degman, I am the data quality and security coordinator at the homeless impact division."
+    },
+    {
+      "start": 89.64,
+      "end": 101.16,
+      "text": "And behind me or in front of you below is TJ Swanson, who just started with us as our new coordinator. So we are so thrilled to have him here with us."
+    },
+    {
+      "start": 101.16,
+      "end": 106.25999999999999,
+      "text": "Hey guys, welcome."
+    },
+    {
+      "start": 106.25999999999999,
+      "end": 107.88,
+      "text": "TJ congratulations."
+    },
+    {
+      "start": 107.88,
+      "end": 112.62,
+      "text": "Okay, so now for the."
+    },
+    {
+      "start": 112.62,
+      "end": 117.66,
+      "text": "Announcement section, the governor's order, I believe, has."
+    },
+    {
+      "start": 117.66,
+      "end": 121.62,
+      "text": "Allowing for virtual meetings has expired."
+    },
+    {
+      "start": 121.62,
+      "end": 126.6,
+      "text": "So, technically expired yesterday. I don't know why."
+    },
+    {
+      "start": 126.6,
+      "end": 131.22,
+      "text": "They expired not at the end of the month, but I guess that's on par."
+    },
+    {
+      "start": 131.22,
+      "end": 133.74,
+      "text": "Uh, this is all gone down."
+    },
+    {
+      "start": 133.74,
+      "end": 137.94,
+      "text": "So, our next meeting, we're going to have to meet in person."
+    },
+    {
+      "start": 137.94,
+      "end": 144.84,
+      "text": "Um, I know, Stanley, Rachel and I have been talking about it a little bit, trying to find a space."
+    },
+    {
+      "start": 144.84,
+      "end": 151.5,
+      "text": "Where people would feel comfortable, um, we can social distance all of that."
+    },
+    {
+      "start": 153.66,
+      "end": 156.48000000000002,
+      "text": "I don't know what else to say on that right now."
+    },
+    {
+      "start": 156.48000000000002,
+      "end": 161.82,
+      "text": "Yeah, it'll be Thursday, May 27th and there are about."
+    },
+    {
+      "start": 161.82,
+      "end": 175.14,
+      "text": "Uh, like, 12 or 13 of us, including staff. So, if anyone knows a meeting room available, um, that would allow for a distancing. Um."
+    },
+    {
+      "start": 175.14,
+      "end": 185.04,
+      "text": "Please let us know that I know we are previous meetings that was in a large conference room at MSS and I don't think that's quite big enough anymore. So."
+    },
+    {
+      "start": 185.04,
+      "end": 190.92,
+      "text": "Open to suggestions and we will keep looking as well and let you all know."
+    },
+    {
+      "start": 190.92,
+      "end": 195.48,
+      "text": "Hey, Susie is the big room at available."
+    },
+    {
+      "start": 195.48,
+      "end": 208.56,
+      "text": "And let me check and see if the, um, the collaboration center is available. Um, the only problem with that, sorry about the noise here, but the only problem with that is that if something comes up with the executive director needs, we have."
+    },
+    {
+      "start": 208.56,
+      "end": 214.56,
+      "text": "In the past been bumped and then you're kind of stranded. Yeah, but let me check on that and I'll get back with Rachel."
+    },
+    {
+      "start": 214.56,
+      "end": 219.24,
+      "text": "It looks like the, uh, the boardroom, our boardroom is currently open."
+    },
+    {
+      "start": 219.24,
+      "end": 224.34,
+      "text": "Um, and that would allow easily for 12 or 13 people to be."
+    },
+    {
+      "start": 224.34,
+      "end": 236.64000000000001,
+      "text": "At a good distance from another 1 another that's where the meetings usually happens. Yeah, that would be great. Ben. So, uh, if you want to, I can look in and see if if we could use that. You want me to go ahead and do that."
+    },
+    {
+      "start": 238.56,
+      "end": 241.62,
+      "text": "So, yeah, thank you. That would be great. Okay."
+    },
+    {
+      "start": 241.62,
+      "end": 245.16,
+      "text": "Thanks, Ben. You're welcome."
+    },
+    {
+      "start": 245.16,
+      "end": 252.54,
+      "text": "Perfect. Um, all right next on the agenda is, um."
+    },
+    {
+      "start": 252.54,
+      "end": 257.76,
+      "text": "We've got some new participating agencies that are interested in."
+    },
+    {
+      "start": 257.76,
+      "end": 260.28,
+      "text": "Participating in HMIS."
+    },
+    {
+      "start": 260.28,
+      "end": 264.0,
+      "text": "So, talking about them. Yes."
+    },
+    {
+      "start": 264.0,
+      "end": 279.48,
+      "text": "Thank you. So, earlier this month, um, we heard from 2, um, agencies who are in, who are interested in entering, um, street outreach data, which we're really excited about because that's our current big push to capture more."
+    },
+    {
+      "start": 280.48,
+      "end": 281.64,
+      "text": "Of that information."
+    },
+    {
+      "start": 282.52,
+      "end": 286.56,
+      "text": "About people who are staying outside. Um, so the."
+    },
+    {
+      "start": 286.56,
+      "end": 303.12,
+      "text": "Um, 2 organizations are very well known to many of us, um, bridge ministry and green street church. Um, so a little bit about them, um, bridge ministry provides, um, meals, um, and other services and resources. Um."
+    },
+    {
+      "start": 303.12,
+      "end": 307.92,
+      "text": "To people experiencing homelessness at the Jefferson street bridge. Um."
+    },
+    {
+      "start": 307.92,
+      "end": 320.94,
+      "text": "Also, they see it pulled up here. So they're interested in entering their street outreach contacts as well as participating in coordinated entry. Um, and they've been talking with Judy and followed up with us."
+    },
+    {
+      "start": 320.94,
+      "end": 326.58,
+      "text": "Um, and we're very familiar with that group and I think a lot of outreach workers are too."
+    },
+    {
+      "start": 326.58,
+      "end": 332.28,
+      "text": "Um, the other, um, green street church is."
+    },
+    {
+      "start": 332.28,
+      "end": 341.7,
+      "text": "Um, basically, um, the way they just, it would also be classified as street outreach project and HMIS. Um, the way they describe it is basically."
+    },
+    {
+      "start": 341.7,
+      "end": 347.7,
+      "text": "Uh, uh, and sanctioned encampment on their property, um, allowing people to camp there."
+    },
+    {
+      "start": 347.7,
+      "end": 358.02,
+      "text": "Um, and they are interested in tracking the services that they provide, um, and accessing resources for those folks as well. Um, so for both of these."
+    },
+    {
+      "start": 358.02,
+      "end": 363.06,
+      "text": "Um, we feel great about excited to potentially have them on board."
+    },
+    {
+      "start": 363.06,
+      "end": 365.94,
+      "text": "Um, and maybe fill some of those."
+    },
+    {
+      "start": 365.94,
+      "end": 370.5,
+      "text": "Gap of and capture those services that are being provided."
+    },
+    {
+      "start": 370.5,
+      "end": 373.38,
+      "text": "Um, are there any questions or comments."
+    },
+    {
+      "start": 373.38,
+      "end": 376.74,
+      "text": "Um, about these 2 projects."
+    },
+    {
+      "start": 376.74,
+      "end": 390.90000000000003,
+      "text": "Um, I'll just say, um, I've worked with green street on and off through the years because they are located in district 19 and it's."
+    },
+    {
+      "start": 390.90000000000003,
+      "end": 398.34000000000003,
+      "text": "You know, it's 1 of the 1st places that offered tiny housing specifically as kind of a."
+    },
+    {
+      "start": 398.34000000000003,
+      "end": 403.14,
+      "text": "Um, a housing solution for homelessness. They've been."
+    },
+    {
+      "start": 403.14,
+      "end": 412.5,
+      "text": "Um, I, I know as with any scenario that tries to offer housing to a community of almost exclusively unhoused, it's not."
+    },
+    {
+      "start": 412.5,
+      "end": 419.3,
+      "text": "Uh, free of issues or complaints from, you know, kind of other area property owners, but I've, I've."
+    },
+    {
+      "start": 419.3,
+      "end": 427.3,
+      "text": "Uh, been over there several times and I think what they're doing is, uh, you know, as a key part of the overall ecosystem and they've been."
+    },
+    {
+      "start": 427.3,
+      "end": 436.5,
+      "text": "As far as I can tell pretty responsible stewards of their program. So, I'm, I'm excited to see them coming into anything with HMIS or coordinate and entry."
+    },
+    {
+      "start": 436.5,
+      "end": 439.66,
+      "text": "At the end of the list."
+    },
+    {
+      "start": 439.66,
+      "end": 441.86,
+      "text": "Okay, but I will see in the last few minutes."
+    },
+    {
+      "start": 441.86,
+      "end": 442.68,
+      "text": "Yeah, go ahead."
+    },
+    {
+      "start": 442.68,
+      "end": 443.22,
+      "text": "Okay."
+    },
+    {
+      "start": 443.22,
+      "end": 443.78,
+      "text": "Okay."
+    },
+    {
+      "start": 443.78,
+      "end": 444.86,
+      "text": "Let's just had a number of questions."
+    },
+    {
+      "start": 444.86,
+      "end": 445.22,
+      "text": "Okay."
+    },
+    {
+      "start": 445.22,
+      "end": 445.98,
+      "text": "As you can see."
+    },
+    {
+      "start": 445.98,
+      "end": 446.3,
+      "text": "Okay."
+    },
+    {
+      "start": 446.3,
+      "end": 446.82,
+      "text": "Okay."
+    },
+    {
+      "start": 446.82,
+      "end": 447.22,
+      "text": "Okay."
+    },
+    {
+      "start": 447.22,
+      "end": 447.62,
+      "text": "Okay."
+    },
+    {
+      "start": 447.62,
+      "end": 448.06,
+      "text": "Okay."
+    },
+    {
+      "start": 448.06,
+      "end": 448.7,
+      "text": "Okay."
+    },
+    {
+      "start": 448.7,
+      "end": 449.18,
+      "text": "Okay."
+    },
+    {
+      "start": 449.18,
+      "end": 449.66,
+      "text": "Okay."
+    },
+    {
+      "start": 449.66,
+      "end": 450.12,
+      "text": "Okay."
+    },
+    {
+      "start": 450.12,
+      "end": 450.58,
+      "text": "Okay."
+    },
+    {
+      "start": 450.58,
+      "end": 451.02,
+      "text": "Okay."
+    },
+    {
+      "start": 451.02,
+      "end": 451.38,
+      "text": "Okay."
+    },
+    {
+      "start": 451.38,
+      "end": 451.74,
+      "text": "Okay."
+    },
+    {
+      "start": 451.74,
+      "end": 452.2,
+      "text": "Okay."
+    },
+    {
+      "start": 452.2,
+      "end": 452.64,
+      "text": "Okay."
+    },
+    {
+      "start": 452.64,
+      "end": 453.18,
+      "text": "Okay."
+    },
+    {
+      "start": 453.18,
+      "end": 453.66,
+      "text": "Okay."
+    },
+    {
+      "start": 453.66,
+      "end": 454.1,
+      "text": "Okay."
+    },
+    {
+      "start": 454.1,
+      "end": 454.52,
+      "text": "Okay."
+    },
+    {
+      "start": 454.52,
+      "end": 455.14,
+      "text": "Okay."
+    },
+    {
+      "start": 455.14,
+      "end": 455.58,
+      "text": "Okay."
+    },
+    {
+      "start": 455.58,
+      "end": 456.1,
+      "text": "Okay."
+    },
+    {
+      "start": 456.1,
+      "end": 456.58,
+      "text": "Okay."
+    },
+    {
+      "start": 456.58,
+      "end": 457.18,
+      "text": "Okay."
+    },
+    {
+      "start": 457.18,
+      "end": 457.66,
+      "text": "Okay."
+    },
+    {
+      "start": 457.66,
+      "end": 458.18,
+      "text": "Okay."
+    },
+    {
+      "start": 458.18,
+      "end": 458.62,
+      "text": "Okay."
+    },
+    {
+      "start": 458.62,
+      "end": 459.12,
+      "text": "Okay."
+    },
+    {
+      "start": 459.12,
+      "end": 459.62,
+      "text": "Okay."
+    },
+    {
+      "start": 459.62,
+      "end": 460.12,
+      "text": "Okay."
+    },
+    {
+      "start": 460.12,
+      "end": 460.6,
+      "text": "Okay."
+    },
+    {
+      "start": 460.6,
+      "end": 461.1,
+      "text": "Okay."
+    },
+    {
+      "start": 461.1,
+      "end": 461.66,
+      "text": "Okay."
+    },
+    {
+      "start": 461.66,
+      "end": 462.16,
+      "text": "Okay."
+    },
+    {
+      "start": 462.16,
+      "end": 462.56,
+      "text": "Okay."
+    },
+    {
+      "start": 462.56,
+      "end": 466.8,
+      "text": "about the number of users that they're interested in adding, but people probably start out with"
+    },
+    {
+      "start": 466.8,
+      "end": 478.48,
+      "text": "one or two. And then we are with Abigail working on a contract, what do you call it? Update,"
+    },
+    {
+      "start": 479.2,
+      "end": 488.08,
+      "text": "contract, edit, for the Wells Guide contract to this summer, add in some more licenses. And then"
+    },
+    {
+      "start": 488.08,
+      "end": 492.88,
+      "text": "we're also continuing to work on a new license distribution policy. But for now,"
+    },
+    {
+      "start": 493.76,
+      "end": 502.4,
+      "text": "I think it'll be a good idea to distribute one or two licenses to each of these to get them on board."
+    },
+    {
+      "start": 502.4,
+      "end": 519.6,
+      "text": "Does anybody else have any questions or comments about either of them?"
+    },
+    {
+      "start": 523.84,
+      "end": 529.12,
+      "text": "Do we want to vote on them like we have in the past or are we just going to go ahead with them?"
+    },
+    {
+      "start": 529.12,
+      "end": 534.72,
+      "text": "I would make a motion, Mrs. Darrell, make a motion to accept both of them"
+    },
+    {
+      "start": 535.28,
+      "end": 539.76,
+      "text": "into our family, if you will, and go from there."
+    },
+    {
+      "start": 539.76,
+      "end": 542.08,
+      "text": "Can I get a second?"
+    },
+    {
+      "start": 542.08,
+      "end": 544.8,
+      "text": "I second."
+    },
+    {
+      "start": 547.76,
+      "end": 549.44,
+      "text": "All in favor?"
+    },
+    {
+      "start": 549.44,
+      "end": 551.84,
+      "text": "Aye."
+    },
+    {
+      "start": 551.84,
+      "end": 553.2,
+      "text": "Aye."
+    },
+    {
+      "start": 553.2,
+      "end": 557.52,
+      "text": "Any opposed?"
+    },
+    {
+      "start": 559.12,
+      "end": 563.44,
+      "text": "All right."
+    },
+    {
+      "start": 563.44,
+      "end": 565.52,
+      "text": "All right."
+    },
+    {
+      "start": 569.28,
+      "end": 573.2,
+      "text": "All right. Now I'm going to pass it over to Shanley for the data quality and monitoring."
+    },
+    {
+      "start": 576.24,
+      "end": 583.76,
+      "text": "All righty. So, hopefully you all had a chance to read the data quality plan and monitoring plan."
+    },
+    {
+      "start": 583.76,
+      "end": 589.28,
+      "text": "And if not, that's okay. You'll have another chance in the public comment."
+    },
+    {
+      "start": 589.28,
+      "end": 593.12,
+      "text": "Period. If you want to add more feedback."
+    },
+    {
+      "start": 593.92,
+      "end": 598.3199999999999,
+      "text": "So, I am hopeful that today we can get through the feedback."
+    },
+    {
+      "start": 598.3199999999999,
+      "end": 603.8399999999999,
+      "text": "So that this document can be moved to the homelessness planning council to be approved in their next meeting."
+    },
+    {
+      "start": 604.48,
+      "end": 605.6,
+      "text": "I don't want to rush that process though."
+    },
+    {
+      "start": 605.6,
+      "end": 612.4,
+      "text": "So, if we feel like that's not appropriate after this conversation, we definitely have the flexibility not to, but I'm hopeful."
+    },
+    {
+      "start": 613.76,
+      "end": 616.4,
+      "text": "I received feedback from four people."
+    },
+    {
+      "start": 617.0400000000001,
+      "end": 618.24,
+      "text": "Really good questions."
+    },
+    {
+      "start": 618.24,
+      "end": 624.48,
+      "text": "And great edits where, you know, like grammar just didn't happen for me."
+    },
+    {
+      "start": 624.48,
+      "end": 628.0,
+      "text": "So I'm going to share my screen and."
+    },
+    {
+      "start": 629.2,
+      "end": 634.88,
+      "text": "I've compiled all of the feedback into one document with track changes and then."
+    },
+    {
+      "start": 635.6800000000001,
+      "end": 639.12,
+      "text": "Rachel is going to take notes to about any conversation we have."
+    },
+    {
+      "start": 639.12,
+      "end": 648.0,
+      "text": "Okay. So there's some like."
+    },
+    {
+      "start": 650.0,
+      "end": 655.2,
+      "text": "Generally, I just need to clean up some of the layout and make things consistent with format."
+    },
+    {
+      "start": 655.2,
+      "end": 657.44,
+      "text": "So I'm not focused on that right now, but."
+    },
+    {
+      "start": 658.48,
+      "end": 659.28,
+      "text": "Specifically."
+    },
+    {
+      "start": 660.16,
+      "end": 660.88,
+      "text": "Okay."
+    },
+    {
+      "start": 660.88,
+      "end": 664.56,
+      "text": "The 1st, 1 here, there was feedback to change."
+    },
+    {
+      "start": 665.36,
+      "end": 672.96,
+      "text": "This to instead of the agency, I think I prefer that to be."
+    },
+    {
+      "start": 673.68,
+      "end": 676.8,
+      "text": "Generically the lead agency, so this document doesn't."
+    },
+    {
+      "start": 677.68,
+      "end": 684.88,
+      "text": "Get thrown out of whack if we weren't revoted as the, but does anyone have any strong feelings or thoughts about that?"
+    },
+    {
+      "start": 684.88,
+      "end": 692.88,
+      "text": "I agree with you haven't gone through these documents. I think 1 of the things we want to do."
+    },
+    {
+      "start": 693.68,
+      "end": 700.16,
+      "text": "Is make them support the overall ecosystem for the long term. And I don't want to make."
+    },
+    {
+      "start": 700.72,
+      "end": 713.12,
+      "text": "Assumptions about which metric, like, you know, if, if there were a change, either with or within Metro, such that in head was not a part of Metro social services or had a different name."
+    },
+    {
+      "start": 713.12,
+      "end": 714.8,
+      "text": "I wouldn't want to stick to that. I think."
+    },
+    {
+      "start": 714.8,
+      "end": 714.8,
+      "text": ""
+    },
+    {
+      "start": 714.8,
+      "end": 718.72,
+      "text": "Hud language is probably the best option here."
+    },
+    {
+      "start": 722.8,
+      "end": 724.96,
+      "text": "All right, any other thoughts before we move on."
+    },
+    {
+      "start": 728.96,
+      "end": 733.28,
+      "text": "Okay, so I generally just updated the grammatical."
+    },
+    {
+      "start": 734.96,
+      "end": 738.72,
+      "text": "Phrasing thing, so I don't think we need to have conversation about that. Just basically."
+    },
+    {
+      "start": 738.72,
+      "end": 742.8000000000001,
+      "text": "Made things more consistent. So, thank you for those of you who did that."
+    },
+    {
+      "start": 743.9200000000001,
+      "end": 746.5600000000001,
+      "text": "Someone wanted us to add that 1 of the."
+    },
+    {
+      "start": 746.5600000000001,
+      "end": 753.12,
+      "text": "Benefits of data and is that it's streamlined case management efforts."
+    },
+    {
+      "start": 753.12,
+      "end": 755.52,
+      "text": "You duplicate efforts and makes it consistent."
+    },
+    {
+      "start": 756.4,
+      "end": 760.64,
+      "text": "People aren't applying for the same resources multiple times. So I added that. I think that's great."
+    },
+    {
+      "start": 760.64,
+      "end": 765.36,
+      "text": "Okay, this 1 could use."
+    },
+    {
+      "start": 765.36,
+      "end": 769.84,
+      "text": "Some feedback and conversation. So the language here in question."
+    },
+    {
+      "start": 770.56,
+      "end": 775.1999999999999,
+      "text": "While the HMIS lead is responsible for a large part of the overall DQP."
+    },
+    {
+      "start": 775.1999999999999,
+      "end": 781.28,
+      "text": "The CFC will maintain a high level of involvement to ensure providers respond to data quality concerns."
+    },
+    {
+      "start": 781.28,
+      "end": 782.16,
+      "text": "Etc."
+    },
+    {
+      "start": 782.16,
+      "end": 782.88,
+      "text": "Etc."
+    },
+    {
+      "start": 782.88,
+      "end": 784.7199999999999,
+      "text": "So the feedback is that this is."
+    },
+    {
+      "start": 785.52,
+      "end": 787.36,
+      "text": "Sort of cloudy. So who."
+    },
+    {
+      "start": 788.16,
+      "end": 790.64,
+      "text": "Who specifically is responsible for this?"
+    },
+    {
+      "start": 792.4,
+      "end": 797.28,
+      "text": "My initial thoughts is I agree and I did pull this language from."
+    },
+    {
+      "start": 798.4,
+      "end": 804.24,
+      "text": "Not only the HUD example, but this is language found in several of the examples that we looked at."
+    },
+    {
+      "start": 804.24,
+      "end": 817.2,
+      "text": "In most communities, though, the designated lead, so I think in other communities that language makes more sense and ours, it does not. So I wondered what you all thought, or if you just need to update."
+    },
+    {
+      "start": 818.24,
+      "end": 828.72,
+      "text": "This phrase, or what do you all think."
+    },
+    {
+      "start": 834.24,
+      "end": 839.2,
+      "text": "Great everyone's as stumped as I am."
+    },
+    {
+      "start": 839.2,
+      "end": 847.76,
+      "text": "I think that the intent here is that this is not the responsibility solely of the HMIS lead and if it were, it would not."
+    },
+    {
+      "start": 847.76,
+      "end": 851.52,
+      "text": "Be successful this has to be a community effort."
+    },
+    {
+      "start": 851.52,
+      "end": 854.24,
+      "text": "And I do think it is, I guess."
+    },
+    {
+      "start": 854.24,
+      "end": 857.6800000000001,
+      "text": "We can keep thinking about this if no 1 has any."
+    },
+    {
+      "start": 857.6800000000001,
+      "end": 862.6,
+      "text": "Does anyone else feel concerned about this being too generic or."
+    },
+    {
+      "start": 862.6,
+      "end": 869.5600000000001,
+      "text": "It just, I guess the question is, what does it mean to maintain a high level of involvement? That's like."
+    },
+    {
+      "start": 869.5600000000001,
+      "end": 871.6,
+      "text": "Really what it comes down to you."
+    },
+    {
+      "start": 871.6,
+      "end": 876.72,
+      "text": "Yeah, like what exactly the role of the is."
+    },
+    {
+      "start": 876.72,
+      "end": 880.84,
+      "text": "And ensuring providers respond to data quality concerns."
+    },
+    {
+      "start": 880.84,
+      "end": 886.1800000000001,
+      "text": "So, I don't know if that's just."
+    },
+    {
+      "start": 886.1800000000001,
+      "end": 890.32,
+      "text": "Yeah, like assisting and communication."
+    },
+    {
+      "start": 890.32,
+      "end": 893.32,
+      "text": "And then also bringing it up and meetings."
+    },
+    {
+      "start": 893.32,
+      "end": 897.1600000000001,
+      "text": "Like addressed an ongoing iterative continual basis."
+    },
+    {
+      "start": 897.1600000000001,
+      "end": 902.9200000000001,
+      "text": "So, I don't think it would be too hard to parse out how that would happen."
+    },
+    {
+      "start": 902.9200000000001,
+      "end": 905.9200000000001,
+      "text": "But I don't know if if it's parsed out."
+    },
+    {
+      "start": 905.9200000000001,
+      "end": 909.46,
+      "text": "Later in here, I think mostly it's just the lead."
+    },
+    {
+      "start": 909.46,
+      "end": 914.32,
+      "text": "It's going to be doing most of what happens and the rest of the data quality plan. Right?"
+    },
+    {
+      "start": 914.32,
+      "end": 923.32,
+      "text": "Yeah, that's good. There are pieces throughout the document where other entities are sort of designated roles. So."
+    },
+    {
+      "start": 923.32,
+      "end": 927.1600000000001,
+      "text": "In the incentive and enforcement section, this is."
+    },
+    {
+      "start": 927.16,
+      "end": 937.0,
+      "text": "Something we hope that the is going to make a top priority and essentially all spaces. So the general meetings."
+    },
+    {
+      "start": 937.0,
+      "end": 949.16,
+      "text": "The meeting, we want this committee to stay engaged. If there are data quality concerns. We want the tech to be involved in some way around making sure that."
+    },
+    {
+      "start": 949.16,
+      "end": 961.16,
+      "text": "The baseline standards are being met so that's maybe it would be just important to say that all in 1 section here, rather than letting that be outlined later where it applies."
+    },
+    {
+      "start": 961.16,
+      "end": 972.26,
+      "text": "Yeah, and I think I'm in addition to Ben's point, the, the other question in this section is who is the, which is sort of this eternal kind of, you know."
+    },
+    {
+      "start": 972.26,
+      "end": 980.9,
+      "text": "Weary that goes on and it seems like, although the lead is responsible for a lot of that data quality, then it, it will."
+    },
+    {
+      "start": 980.9,
+      "end": 983.48,
+      "text": "Um, rely on partnerships."
+    },
+    {
+      "start": 983.48,
+      "end": 987.3199999999999,
+      "text": "In the general membership with the H."
+    },
+    {
+      "start": 987.32,
+      "end": 995.48,
+      "text": "Advisory committee, or whatever this group called, um, and the planning council to maintain that level of involvement. So you've got."
+    },
+    {
+      "start": 995.48,
+      "end": 1001.12,
+      "text": "Partners cited who you're going to rely on hand holding with to assure that that."
+    },
+    {
+      "start": 1001.12,
+      "end": 1006.4000000000001,
+      "text": "Involvement is there is just a little too floaty."
+    },
+    {
+      "start": 1006.4000000000001,
+      "end": 1013.24,
+      "text": "Yeah, I agree. Okay. Well, we can add some language there to make that more specific."
+    },
+    {
+      "start": 1013.24,
+      "end": 1017.74,
+      "text": "And concise right there so good feedback."
+    },
+    {
+      "start": 1017.74,
+      "end": 1020.14,
+      "text": "Any other thoughts before we move on."
+    },
+    {
+      "start": 1023.14,
+      "end": 1030.1,
+      "text": "Alrighty, so then we get into the components of data quality. So."
+    },
+    {
+      "start": 1030.1,
+      "end": 1038.44,
+      "text": "Timeliness on this section had a question about where these timeframes came from and."
+    },
+    {
+      "start": 1038.44,
+      "end": 1043.54,
+      "text": "This came from again, sort of multiple spots from the HUD."
+    },
+    {
+      "start": 1043.54,
+      "end": 1051.4,
+      "text": "HUD example basically has the standard as perfection real time data entry for every project type."
+    },
+    {
+      "start": 1051.4,
+      "end": 1057.52,
+      "text": "So, we took that into consideration. We also looked at examples from across the country."
+    },
+    {
+      "start": 1057.52,
+      "end": 1061.48,
+      "text": "Um, we had a lot of conversation about."
+    },
+    {
+      "start": 1061.48,
+      "end": 1065.44,
+      "text": "Where we are now as a starting point."
+    },
+    {
+      "start": 1065.44,
+      "end": 1077.68,
+      "text": "And so this is sort of what we came up with. We wanted to identify what is the best practice. We also wanted to."
+    },
+    {
+      "start": 1077.68,
+      "end": 1084.88,
+      "text": "Sort of have a starting point in mind. Sorry. I just got distracted. And can you all come here?"
+    },
+    {
+      "start": 1084.88,
+      "end": 1090.64,
+      "text": "Okay, great. So that's where it came from any questions about that."
+    },
+    {
+      "start": 1092.5,
+      "end": 1105.8200000000002,
+      "text": "Um, also a part of the working group, we wanted to make sure that there was representation from all project types. So we had folks from each of these project types chime in about whether or not they thought these these were realistic."
+    },
+    {
+      "start": 1105.8200000000002,
+      "end": 1114.8600000000001,
+      "text": "I think there's also language in here that says that this is a year for learning. And so if after 1 year, we learn that this is wildly."
+    },
+    {
+      "start": 1114.86,
+      "end": 1119.7199999999998,
+      "text": "Not right for our community, we always can adjust that."
+    },
+    {
+      "start": 1119.7199999999998,
+      "end": 1123.32,
+      "text": "Any feedback."
+    },
+    {
+      "start": 1123.32,
+      "end": 1132.9199999999998,
+      "text": "Okay, had no feedback about completeness or."
+    },
+    {
+      "start": 1132.9199999999998,
+      "end": 1137.12,
+      "text": "This 1's pretty straightforward. So that made sense."
+    },
+    {
+      "start": 1137.12,
+      "end": 1143.1799999999998,
+      "text": "Accuracy and consistency 1 of the questions that I had when I sent this."
+    },
+    {
+      "start": 1143.18,
+      "end": 1158.3600000000001,
+      "text": "Version out was the quarterly self monitoring checks that we are asking or encouraging agencies to do at least in the beginning is to correct issues that they may have found."
+    },
+    {
+      "start": 1158.3600000000001,
+      "end": 1163.22,
+      "text": "And so I asked what a reasonable timeframe for those issues to be corrected."
+    },
+    {
+      "start": 1163.22,
+      "end": 1176.9,
+      "text": "Um, was and the feedback I got was between 2 weeks and a month. So the idea was that if we catch it quickly, then there's the less error to resolve in that timeframe."
+    },
+    {
+      "start": 1176.9,
+      "end": 1185.3,
+      "text": "Or maybe we start with a month just based on this being sort of a new responsibility and work towards 2 weeks. So."
+    },
+    {
+      "start": 1185.3,
+      "end": 1190.7,
+      "text": "I see the pros and cons of both approaches and wondered what you all thought."
+    },
+    {
+      "start": 1193.22,
+      "end": 1196.58,
+      "text": "I love it when my comments make the news."
+    },
+    {
+      "start": 1196.58,
+      "end": 1214.76,
+      "text": "Um, so I recommended a shorter timeframe, because what I found is typically that case manager that had the same infraction is going to have it in 10 of their other charts, because it's probably absolutely a training model issue or something that they're notoriously forgetting to click."
+    },
+    {
+      "start": 1214.76,
+      "end": 1219.3799999999999,
+      "text": "So, having a longer time to resolve it means it's just going to happen more often."
+    },
+    {
+      "start": 1225.2,
+      "end": 1229.7,
+      "text": "It's Daryl here. I think that, uh, what she was saying when you."
+    },
+    {
+      "start": 1229.7,
+      "end": 1233.18,
+      "text": "Put it out or give longer periods of time."
+    },
+    {
+      "start": 1233.18,
+      "end": 1237.68,
+      "text": "There could be some procrastination. Well, okay, I got this amount of time to get it done."
+    },
+    {
+      "start": 1237.68,
+      "end": 1241.16,
+      "text": "Whereas if we want to stay on top of everything."
+    },
+    {
+      "start": 1241.16,
+      "end": 1244.76,
+      "text": "And get the accuracy and everything of the data, so it's not."
+    },
+    {
+      "start": 1244.76,
+      "end": 1251.0600000000002,
+      "text": "I think the 2 week would be way sufficient, you know, and if there's an exception to that."
+    },
+    {
+      "start": 1251.0600000000002,
+      "end": 1255.5,
+      "text": "Then the liking myself with things going on, we're transitioning around."
+    },
+    {
+      "start": 1255.5,
+      "end": 1260.0,
+      "text": "But, you know, a 2 week period should be well, sufficient."
+    },
+    {
+      "start": 1260.0,
+      "end": 1263.0600000000002,
+      "text": "Amount of time to get everything done and get it put in the."
+    },
+    {
+      "start": 1263.0600000000002,
+      "end": 1265.76,
+      "text": "The database."
+    },
+    {
+      "start": 1267.68,
+      "end": 1282.3200000000002,
+      "text": "And this is Susie. I, I read this thing, but I can't remember if it stayed anywhere else is Shanley. Would you be the 1 who assures that this happens on a quarterly basis and like connect with agencies saying, hey, it's the end of the quarter."
+    },
+    {
+      "start": 1282.3200000000002,
+      "end": 1284.6000000000001,
+      "text": "You know, please do this in the next week."
+    },
+    {
+      "start": 1284.6000000000001,
+      "end": 1288.14,
+      "text": "Just to make sure that this actually happens."
+    },
+    {
+      "start": 1288.14,
+      "end": 1293.66,
+      "text": "Yes, our team would be responsible for."
+    },
+    {
+      "start": 1293.66,
+      "end": 1310.28,
+      "text": "Reminding, particularly in this 1st year is like, really supporting agencies through this new process. So in conjunction with this quarterly self check, we're also going to be implementing a quarterly evaluation of and putting out lots of reports."
+    },
+    {
+      "start": 1310.28,
+      "end": 1313.8200000000002,
+      "text": "So, there'll be a lot of things that parallel."
+    },
+    {
+      "start": 1313.82,
+      "end": 1323.0,
+      "text": "Each other and so, yes, we will be responsible for making sure agencies know when to do this and what they should be doing."
+    },
+    {
+      "start": 1323.0,
+      "end": 1330.74,
+      "text": "Okay, so sounding like people feel good about 2 weeks. Are there any other."
+    },
+    {
+      "start": 1330.74,
+      "end": 1334.82,
+      "text": "Thoughts about that before we make that the role."
+    },
+    {
+      "start": 1334.82,
+      "end": 1343.32,
+      "text": "I would love to hear TJ spots now that he's the new HMIS ESG guru."
+    },
+    {
+      "start": 1343.82,
+      "end": 1353.0,
+      "text": "Yeah, I mean, to be fair, I'm still settling in. I just got an email yesterday."
+    },
+    {
+      "start": 1353.0,
+      "end": 1362.96,
+      "text": "Yeah, I mean, I, I think that we're on the right track with this and as long as the community is bought in and willing to be on board. I think that's the most important part."
+    },
+    {
+      "start": 1362.96,
+      "end": 1369.96,
+      "text": "It's trippy to see myself in two screens."
+    },
+    {
+      "start": 1369.96,
+      "end": 1375.14,
+      "text": "Thank you everybody for that feedback."
+    },
+    {
+      "start": 1375.14,
+      "end": 1379.64,
+      "text": "I'm very distracted by that. I'm so sorry. Okay."
+    },
+    {
+      "start": 1379.64,
+      "end": 1388.16,
+      "text": "Then that thanks to Jay. So the next section here is about accuracy. The question."
+    },
+    {
+      "start": 1388.16,
+      "end": 1391.3400000000001,
+      "text": "Is how do you ensure that."
+    },
+    {
+      "start": 1391.3400000000001,
+      "end": 1396.44,
+      "text": "Data is accurate and this from what we found in our."
+    },
+    {
+      "start": 1396.44,
+      "end": 1407.3400000000001,
+      "text": "Research is essentially the hardest data element to monitor because it requires basically a high level of integrity from the user."
+    },
+    {
+      "start": 1407.34,
+      "end": 1410.9399999999998,
+      "text": "The agency it ensures that training is consistent."
+    },
+    {
+      "start": 1411.3,
+      "end": 1415.02,
+      "text": "So, 1 of the ways that we've seen that."
+    },
+    {
+      "start": 1415.02,
+      "end": 1426.84,
+      "text": "You can monitor accuracy is by spot checking things through reports of various reports. So I've listed a couple as an example, but we're also."
+    },
+    {
+      "start": 1426.84,
+      "end": 1440.52,
+      "text": "Continuing to look for other ways we can include accuracy into our monitoring. So, for example, making sure that no miners listed as the veteran or that the homeless history questions make logical sense. So that if."
+    },
+    {
+      "start": 1440.52,
+      "end": 1446.04,
+      "text": "Someone says they've been homeless for a week, but the start date was 6 months ago."
+    },
+    {
+      "start": 1447.1799999999998,
+      "end": 1453.4199999999998,
+      "text": "That obviously is not accurate somewhere. So things like that are the ways that we will be looking for accuracy."
+    },
+    {
+      "start": 1453.42,
+      "end": 1456.9,
+      "text": "So, I just wanted to note that."
+    },
+    {
+      "start": 1456.9,
+      "end": 1468.3000000000002,
+      "text": "Everyone that gave feedback said basically the same thing about coverage, which I am really happy about. I think we've definitely aired on the side of."
+    },
+    {
+      "start": 1468.3000000000002,
+      "end": 1481.44,
+      "text": "Caution and being concerned to make this feel punitive or anything like that, because that's not the point of this process. So coverage we had initially just included."
+    },
+    {
+      "start": 1481.44,
+      "end": 1487.2,
+      "text": "Some very general language about the need in the community for more data to better understand."
+    },
+    {
+      "start": 1487.56,
+      "end": 1499.74,
+      "text": "Homelessness everyone that provided feedback said that this should be way more specific about what we know in terms of what data is currently in there and what we know is a gap."
+    },
+    {
+      "start": 1499.8600000000001,
+      "end": 1506.3400000000001,
+      "text": "And so essentially 2 of the people that provided feedback said that a."
+    },
+    {
+      "start": 1506.34,
+      "end": 1510.9599999999998,
+      "text": "An annual appendix that could be updated to reflect."
+    },
+    {
+      "start": 1510.9599999999998,
+      "end": 1514.74,
+      "text": "Essentially, like agencies currently participating."
+    },
+    {
+      "start": 1514.74,
+      "end": 1520.32,
+      "text": "On agencies that we know are not what projects say enter data in."
+    },
+    {
+      "start": 1520.32,
+      "end": 1525.1799999999998,
+      "text": "And then any other sort of like, no data or gaps."
+    },
+    {
+      "start": 1525.1799999999998,
+      "end": 1536.1,
+      "text": "So, I do want to allow for some conversation around that. I think the hesitancy there was that this would again, feel punitive or anything."
+    },
+    {
+      "start": 1536.1,
+      "end": 1540.6599999999999,
+      "text": "But I do also think that this is a great way for us to mark growth over time."
+    },
+    {
+      "start": 1541.62,
+      "end": 1542.3999999999999,
+      "text": "So, any thoughts."
+    },
+    {
+      "start": 1544.5,
+      "end": 1551.26,
+      "text": "I wanted to include to that something that we have that we could include is an appendix is the housing inventory account that."
+    },
+    {
+      "start": 1551.82,
+      "end": 1554.82,
+      "text": "Is submitted annually for all."
+    },
+    {
+      "start": 1556.98,
+      "end": 1563.1599999999999,
+      "text": "Emergency shelter transitional housing, rapid housing, permanent housing, et cetera."
+    },
+    {
+      "start": 1563.16,
+      "end": 1565.44,
+      "text": "And specifically for."
+    },
+    {
+      "start": 1567.3600000000001,
+      "end": 1581.5800000000002,
+      "text": "That serve only people who were experiencing literal homelessness before entering, but each of these projects, there's an element that asks whether they're they participating or not."
+    },
+    {
+      "start": 1581.58,
+      "end": 1589.3799999999999,
+      "text": "So, we can based on that the percentage of coverage for any program type."
+    },
+    {
+      "start": 1590.52,
+      "end": 1595.1399999999999,
+      "text": "Based on the number of beds that are included in those HMIS participating projects."
+    },
+    {
+      "start": 1595.74,
+      "end": 1596.82,
+      "text": "We can also."
+    },
+    {
+      "start": 1596.82,
+      "end": 1611.82,
+      "text": "For projects that are in HMIS look at that information more than just annually, because we keep that inventory information on the back end and HMIS too. But as far as an appendix goes, we could certainly include the housing inventory account with that. Yes. Or no, that they are participating in HMIS."
+    },
+    {
+      "start": 1611.82,
+      "end": 1628.08,
+      "text": "Any other thoughts or conversation about making this more specific."
+    },
+    {
+      "start": 1628.08,
+      "end": 1630.0,
+      "text": "Making this more specific."
+    },
+    {
+      "start": 1632.28,
+      "end": 1638.3999999999999,
+      "text": "Uh, on the on that from past of writing users manuals, or."
+    },
+    {
+      "start": 1638.3999999999999,
+      "end": 1640.9199999999998,
+      "text": "You know, like our monitoring plan."
+    },
+    {
+      "start": 1640.9199999999998,
+      "end": 1645.72,
+      "text": "We present this to, like, say, the oversight committee or whoever we're presenting."
+    },
+    {
+      "start": 1645.72,
+      "end": 1652.8,
+      "text": "What happens, I guess what I'm saying is that people who's not familiar with everything that we're doing."
+    },
+    {
+      "start": 1652.8,
+      "end": 1656.46,
+      "text": "Or specific of what does it mean to be home was."
+    },
+    {
+      "start": 1656.46,
+      "end": 1662.46,
+      "text": "In our quote manual of somebody's looking that do we have an appendix."
+    },
+    {
+      "start": 1662.46,
+      "end": 1666.72,
+      "text": "Shooting out what our definitions of are of all of these things."
+    },
+    {
+      "start": 1666.72,
+      "end": 1669.42,
+      "text": "Or is that something that needs to be considered."
+    },
+    {
+      "start": 1669.42,
+      "end": 1679.44,
+      "text": "Are you talking about more like a general training for the community about."
+    },
+    {
+      "start": 1679.44,
+      "end": 1682.3200000000002,
+      "text": "Like homeless services."
+    },
+    {
+      "start": 1682.3200000000002,
+      "end": 1689.3400000000001,
+      "text": "Well, I guess I'm looking at it from a point of, and maybe I'm looking at it from technical or not, but."
+    },
+    {
+      "start": 1689.3400000000001,
+      "end": 1692.04,
+      "text": "When we have this plan."
+    },
+    {
+      "start": 1692.04,
+      "end": 1695.22,
+      "text": "And we're going through this plan and adjusting to."
+    },
+    {
+      "start": 1695.22,
+      "end": 1705.06,
+      "text": "Perceive what's going to happen and let's just use this as an example, because I know Susie if we present it over to the and saying, okay, this is our plan."
+    },
+    {
+      "start": 1705.06,
+      "end": 1710.58,
+      "text": "And there that upper committee is looking at this to say, yeah, this looks good."
+    },
+    {
+      "start": 1710.58,
+      "end": 1714.42,
+      "text": "However, I don't know what this these couple of things to me."
+    },
+    {
+      "start": 1714.42,
+      "end": 1716.46,
+      "text": "Does that make sense?"
+    },
+    {
+      "start": 1716.46,
+      "end": 1724.56,
+      "text": "Yeah, definitely I'd be open to adding more information here. If we think that."
+    },
+    {
+      "start": 1724.56,
+      "end": 1732.1799999999998,
+      "text": "Important I also think that this document works in conjunction with our policies and procedures, which."
+    },
+    {
+      "start": 1732.1799999999998,
+      "end": 1737.34,
+      "text": "Does a lot more breaking down of terms and definitions and roles and responsibilities."
+    },
+    {
+      "start": 1737.34,
+      "end": 1741.12,
+      "text": "So, maybe just making sure people have access to all that."
+    },
+    {
+      "start": 1741.12,
+      "end": 1749.22,
+      "text": "When they're reviewing this as well, yeah, because if you're a new person, let's just I'm gonna pick on TJ welcome aboard anyway."
+    },
+    {
+      "start": 1749.22,
+      "end": 1754.74,
+      "text": "But if he is just coming in and he's wanting to try to get a grasp of what's going on."
+    },
+    {
+      "start": 1754.74,
+      "end": 1757.68,
+      "text": "And get a good understanding and how to proceed."
+    },
+    {
+      "start": 1757.68,
+      "end": 1760.92,
+      "text": "We need to make sure that it's detailed enough that."
+    },
+    {
+      "start": 1760.92,
+      "end": 1764.88,
+      "text": "Uh, you know, a person just coming in knows what we're talking about."
+    },
+    {
+      "start": 1764.88,
+      "end": 1770.2800000000002,
+      "text": "That makes sense for sure. Yes, it totally does. And."
+    },
+    {
+      "start": 1770.2800000000002,
+      "end": 1781.5600000000002,
+      "text": "Um, this if if there were a brand new agency, so, for example, when we onboard green street, this will become a part of formal training is making sure that people understand."
+    },
+    {
+      "start": 1781.56,
+      "end": 1793.3799999999999,
+      "text": "The expectations of being an HMRI family member. Um, yeah, so I totally agree. We'll make this really important for training purposes."
+    },
+    {
+      "start": 1793.3799999999999,
+      "end": 1803.52,
+      "text": "Okay, hey, hey, do we have a, uh, an annual, excuse me, an annual, um, family reunion."
+    },
+    {
+      "start": 1803.52,
+      "end": 1812.04,
+      "text": "Uh, I don't think we do so far we should though."
+    },
+    {
+      "start": 1812.04,
+      "end": 1817.1399999999999,
+      "text": "Sounds like a good time. Well, I don't know if it would be for data quality, but."
+    },
+    {
+      "start": 1817.1399999999999,
+      "end": 1820.62,
+      "text": "You could put that in there, but like, um."
+    },
+    {
+      "start": 1820.62,
+      "end": 1824.76,
+      "text": "I should know this, but how do we address, like."
+    },
+    {
+      "start": 1824.76,
+      "end": 1829.62,
+      "text": "Security and privacy and stuff, um, where is that document?"
+    },
+    {
+      "start": 1829.62,
+      "end": 1833.1599999999999,
+      "text": "Or like, that's not, yeah, yeah."
+    },
+    {
+      "start": 1833.1599999999999,
+      "end": 1844.26,
+      "text": "That is listed as part of the policies and procedures manual. So currently there is a video training and a quiz that's required. We're working towards."
+    },
+    {
+      "start": 1844.26,
+      "end": 1857.34,
+      "text": "So, we're waiting we're very close to being able to implement our learning management system. And at that time, we're going to create a calendar of trainings and make that an annually required training."
+    },
+    {
+      "start": 1857.34,
+      "end": 1863.3999999999999,
+      "text": "Okay, that's kind of the annual."
+    },
+    {
+      "start": 1863.3999999999999,
+      "end": 1870.06,
+      "text": "Family reunion thing that I was thinking of, like, you know, security stuff changes so much. Um, or could."
+    },
+    {
+      "start": 1870.06,
+      "end": 1876.06,
+      "text": "You know, that we would need to, we would want people to go through an annual refresher on that and we could add."
+    },
+    {
+      "start": 1876.06,
+      "end": 1879.4199999999998,
+      "text": "We could just require an annual training."
+    },
+    {
+      "start": 1879.4199999999998,
+      "end": 1882.06,
+      "text": "Um, for it for all HMS."
+    },
+    {
+      "start": 1882.06,
+      "end": 1887.34,
+      "text": "Users to go over some of the stuff."
+    },
+    {
+      "start": 1887.34,
+      "end": 1892.08,
+      "text": "Yeah, well, my only thought."
+    },
+    {
+      "start": 1892.08,
+      "end": 1899.58,
+      "text": "On that, this is Susie, I think it's in there, but is the Weebly site already kind of is there a link."
+    },
+    {
+      "start": 1899.58,
+      "end": 1903.0,
+      "text": "In this document to that, so that they can see what's."
+    },
+    {
+      "start": 1903.0,
+      "end": 1907.5,
+      "text": "Kind of current in terms of the definitions and the."
+    },
+    {
+      "start": 1907.5,
+      "end": 1911.8799999999999,
+      "text": "You know, policies and procedures, security manual when, you know, that kind of stuff."
+    },
+    {
+      "start": 1912.06,
+      "end": 1918.0,
+      "text": "Um, I did not include that, but that's a good idea and definitely can add."
+    },
+    {
+      "start": 1918.0,
+      "end": 1920.76,
+      "text": "That you are also that people."
+    },
+    {
+      "start": 1920.76,
+      "end": 1929.46,
+      "text": "Know where to go for a list of other resources and yes, all those sorts of resources are currently listed on our website. So I will link that."
+    },
+    {
+      "start": 1929.46,
+      "end": 1936.12,
+      "text": "Maybe in an appendix, so that again, if anything were to change, that that could be updated without affecting the document."
+    },
+    {
+      "start": 1936.12,
+      "end": 1937.86,
+      "text": "Um, but that's a good idea."
+    },
+    {
+      "start": 1937.86,
+      "end": 1956.76,
+      "text": "For me, I think we'll write on target that sometimes when drops the no, there are slight changes or different things that they're requiring. And I just remember for many, many years ago. We won't talk about how many years ago."
+    },
+    {
+      "start": 1956.76,
+      "end": 1959.7,
+      "text": "Um, that, um, that, um."
+    },
+    {
+      "start": 1959.7,
+      "end": 1974.22,
+      "text": "Um, I have a Mandy or the 1 before Mandy would do like an annual update. That's how many years ago. Right. Would do an annual update on some of the changes and how it relates to the NOFA. So, um."
+    },
+    {
+      "start": 1974.22,
+      "end": 1985.02,
+      "text": "You know, maybe an annual, even if it's virtual, I know the governor is reducing and releasing, but this can be like a training and we may not have to all meet in person for it."
+    },
+    {
+      "start": 1985.02,
+      "end": 1991.02,
+      "text": "I think that's definitely something."
+    },
+    {
+      "start": 1991.02,
+      "end": 2005.54,
+      "text": "Every 2 years when the new data standards manual comes out, there will be 1 this October 2021 with a couple of new data elements. So every user will have to go through new training for those 2. so that's every other year."
+    },
+    {
+      "start": 2005.54,
+      "end": 2011.96,
+      "text": "Rachel, the this is Daryl again, uh, what they were saying about the Weebly site."
+    },
+    {
+      "start": 2011.96,
+      "end": 2016.4,
+      "text": "I just want to shoot some kudos up to, uh, uh, Stanley."
+    },
+    {
+      "start": 2016.4,
+      "end": 2025.64,
+      "text": "Because we spent just a little bit and I got a different perspective and understanding when she was explaining it. So now I can go in and start working on correcting."
+    },
+    {
+      "start": 2025.64,
+      "end": 2028.52,
+      "text": "A lot of things that, you know, I didn't enter."
+    },
+    {
+      "start": 2028.52,
+      "end": 2032.54,
+      "text": "But are necessary to keep the accountability of everything."
+    },
+    {
+      "start": 2032.54,
+      "end": 2038.06,
+      "text": "So our agency doesn't use that much. However, now that I'm going through the path."
+    },
+    {
+      "start": 2038.06,
+      "end": 2042.74,
+      "text": "And, uh, you know, it seems it will pop up and force me to do the things."
+    },
+    {
+      "start": 2042.74,
+      "end": 2046.7,
+      "text": "And I didn't understand that before when I've been doing this a couple of 30 years, but."
+    },
+    {
+      "start": 2046.7,
+      "end": 2051.62,
+      "text": "I think our committee is really, you know, got a good forward direction."
+    },
+    {
+      "start": 2051.62,
+      "end": 2062.2999999999997,
+      "text": "Of what we, you know, what we're doing so and by the way, Shanley, the universal thing, I'm working better. It's it's going where it's supposed to be. So thank you all for all, you know, helping me on the."
+    },
+    {
+      "start": 2062.2999999999997,
+      "end": 2067.04,
+      "text": "When I've done training, I always said, you know, there's no such thing as a dumb question."
+    },
+    {
+      "start": 2067.04,
+      "end": 2072.5,
+      "text": "The only dumb question is the 1 that's not asked. So I think, you know, there's been a lot of, uh."
+    },
+    {
+      "start": 2072.5,
+      "end": 2075.68,
+      "text": "What do I want to say help from all sides of all members?"
+    },
+    {
+      "start": 2075.68,
+      "end": 2079.22,
+      "text": "You know, within this committee, so I want to thank everybody for that."
+    },
+    {
+      "start": 2079.22,
+      "end": 2083.0,
+      "text": "Awesome. Thanks for the feedback. Yeah, thank you."
+    },
+    {
+      "start": 2083.0,
+      "end": 2092.48,
+      "text": "Okay, so we'll have any questions about comments about coverage and then we can move on to the next."
+    },
+    {
+      "start": 2092.48,
+      "end": 2101.36,
+      "text": "Good feedback everybody."
+    },
+    {
+      "start": 2101.36,
+      "end": 2108.6800000000003,
+      "text": "This is the fall sort of outside of the data quality plan, but we've got a whole bunch of training things on the horizon."
+    },
+    {
+      "start": 2108.6800000000003,
+      "end": 2114.5,
+      "text": "The issues been a great model for ways we want to support other funding types. So."
+    },
+    {
+      "start": 2114.5,
+      "end": 2118.7000000000003,
+      "text": "We'll be announcing more of that later, but good feedback."
+    },
+    {
+      "start": 2118.7000000000003,
+      "end": 2126.38,
+      "text": "Okay, so moving on to the incentives and enforcement. So this is the section where we say why."
+    },
+    {
+      "start": 2126.38,
+      "end": 2132.56,
+      "text": "You should slash have to so that's some good extra."
+    },
+    {
+      "start": 2132.56,
+      "end": 2145.04,
+      "text": "Bullet points I added those 1 of the questions from someone's feedback is if there is a set number of infractions before license is lost."
+    },
+    {
+      "start": 2145.04,
+      "end": 2158.06,
+      "text": "Um, or maybe if there is a certain number brought up before it's brought to the oversight committee for review, um, I hadn't seen any examples where that is listed. So specifically."
+    },
+    {
+      "start": 2158.06,
+      "end": 2165.38,
+      "text": "Um, particularly because the range and depth of infractions is so varying that like."
+    },
+    {
+      "start": 2165.38,
+      "end": 2170.66,
+      "text": "I don't know you can measure it that way, but I wanted to see if anyone had any thoughts."
+    },
+    {
+      "start": 2170.66,
+      "end": 2185.66,
+      "text": "I think it would end up getting you in trouble and it would be a little bit too rigid and then not give you the flexibility that you need to embrace further trainings, bringing them back into the."
+    },
+    {
+      "start": 2185.66,
+      "end": 2197.6,
+      "text": "Lock that kind of stuff. Yeah, I mean, the idea is that we'd never want to strip a license or access from a user or an agency. I mean."
+    },
+    {
+      "start": 2197.6,
+      "end": 2202.58,
+      "text": "And I can't think of a time where we've had to do that since I've been here. So."
+    },
+    {
+      "start": 2202.58,
+      "end": 2207.5,
+      "text": "Ideally, these sorts of things are handled through training, not through that sort of."
+    },
+    {
+      "start": 2207.5,
+      "end": 2211.8199999999997,
+      "text": "Action, but we do want to make that an option if things were to get."
+    },
+    {
+      "start": 2211.82,
+      "end": 2219.02,
+      "text": "To that point. Um, okay. Yeah, this concerns me more around privacy and security. Like."
+    },
+    {
+      "start": 2219.8,
+      "end": 2222.38,
+      "text": "I feel like, and I haven't read that document, but."
+    },
+    {
+      "start": 2222.92,
+      "end": 2227.1200000000003,
+      "text": "You know, we need to spell it out more specifically in that."
+    },
+    {
+      "start": 2227.6400000000003,
+      "end": 2228.92,
+      "text": "In that document, I think."
+    },
+    {
+      "start": 2229.6600000000003,
+      "end": 2231.2000000000003,
+      "text": "That people continue to."
+    },
+    {
+      "start": 2232.0,
+      "end": 2233.6000000000004,
+      "text": "You know, do things that."
+    },
+    {
+      "start": 2234.6600000000003,
+      "end": 2241.6000000000004,
+      "text": "Yeah, in the policies and procedures, there's like minor infraction, major infraction and for each one."
+    },
+    {
+      "start": 2241.6,
+      "end": 2245.62,
+      "text": "They spell out, like what the responses. So, I think."
+    },
+    {
+      "start": 2245.62,
+      "end": 2247.06,
+      "text": "Okay, cool. Yeah."
+    },
+    {
+      "start": 2252.52,
+      "end": 2253.72,
+      "text": "Okay, great."
+    },
+    {
+      "start": 2254.62,
+      "end": 2257.2599999999998,
+      "text": "The data quality monitoring plan."
+    },
+    {
+      "start": 2258.2,
+      "end": 2264.8199999999997,
+      "text": "The 1 question that I had included was how we identify the number of files that we're looking at and I got."
+    },
+    {
+      "start": 2264.82,
+      "end": 2265.84,
+      "text": "A pretty."
+    },
+    {
+      "start": 2265.84,
+      "end": 2272.86,
+      "text": "A good range of suggestions from make it 5% across the board."
+    },
+    {
+      "start": 2273.52,
+      "end": 2274.96,
+      "text": "To, um."
+    },
+    {
+      "start": 2274.96,
+      "end": 2278.08,
+      "text": "Like a set amount, like if you were to serve."
+    },
+    {
+      "start": 2278.56,
+      "end": 2291.16,
+      "text": "More than 100 clients in a year, we'll look at X number of records. The 1 that I feel like I like the most is sort of a hybrid approach, which says that if you serve less than 100 clients in a year."
+    },
+    {
+      "start": 2291.16,
+      "end": 2299.3199999999997,
+      "text": "That we will be looking at 5, that we will be looking at 5, that we will be looking at 5, and if you serve over 100, then we're going to look at a percentage, but with a cap. So that it's reasonable."
+    },
+    {
+      "start": 2299.3199999999997,
+      "end": 2310.18,
+      "text": "For example, through their shelter plus care program has like thousands of people. So it would not be realistic for us to monitor 5% of those annually. So."
+    },
+    {
+      "start": 2310.18,
+      "end": 2314.7999999999997,
+      "text": "That would be what this is what felt."
+    },
+    {
+      "start": 2314.7999999999997,
+      "end": 2317.74,
+      "text": "Best to me wanted to see if anyone has thoughts."
+    },
+    {
+      "start": 2317.74,
+      "end": 2320.62,
+      "text": "Feedback comments."
+    },
+    {
+      "start": 2321.16,
+      "end": 2332.5,
+      "text": "People are comfortable with this hybrid."
+    },
+    {
+      "start": 2332.5,
+      "end": 2335.92,
+      "text": "Yeah, I think good."
+    },
+    {
+      "start": 2338.2,
+      "end": 2350.98,
+      "text": "Right. Okay, I'm trying to cruise along because I know we also have to talk about licenses. We're almost done. So this, I think is repetitive. Something we just talked about was the 2 weeks versus."
+    },
+    {
+      "start": 2350.98,
+      "end": 2355.9,
+      "text": "1 month and how long people have it just comes up twice in the document. So."
+    },
+    {
+      "start": 2355.9,
+      "end": 2359.68,
+      "text": "I can go ahead and mirror those here."
+    },
+    {
+      "start": 2359.68,
+      "end": 2365.68,
+      "text": "Someone recommended that we develop this section a little more thoroughly."
+    },
+    {
+      "start": 2365.68,
+      "end": 2380.68,
+      "text": "Um, I think I agree. I think I don't know exactly what else to include. And when I was talking to had technical assistance, she was like, you definitely need a corrective action plan in there, but she couldn't send me an example. So we have very little to go with."
+    },
+    {
+      "start": 2380.68,
+      "end": 2392.02,
+      "text": "For those of you that read this does anyone have specific thoughts about how we address this again. I think parts of it are already addressed."
+    },
+    {
+      "start": 2392.02,
+      "end": 2397.24,
+      "text": "In the policies and procedures manual, like you were just saying about privacy and security, but."
+    },
+    {
+      "start": 2397.24,
+      "end": 2403.6,
+      "text": "In terms of less serious, like timeliness concerns, what are we, what are we doing?"
+    },
+    {
+      "start": 2403.6,
+      "end": 2410.74,
+      "text": "Stanley this we just went through this with the on some of our."
+    },
+    {
+      "start": 2410.74,
+      "end": 2414.1,
+      "text": "Policies and procedures and what their expectation."
+    },
+    {
+      "start": 2414.1,
+      "end": 2418.12,
+      "text": "And we kind of used the, because they weren't real specific either."
+    },
+    {
+      "start": 2418.12,
+      "end": 2421.6,
+      "text": "But my boss done most of it."
+    },
+    {
+      "start": 2421.6,
+      "end": 2428.02,
+      "text": "And we conversed with each other, it's kind of looking at it as scenario as what if."
+    },
+    {
+      "start": 2428.02,
+      "end": 2436.54,
+      "text": "You know, if this comes up or this, what kind of corrective action, or if you're missing data about this or about this."
+    },
+    {
+      "start": 2436.54,
+      "end": 2440.38,
+      "text": "Then what are you going to do if they're not going to be specific."
+    },
+    {
+      "start": 2440.38,
+      "end": 2443.32,
+      "text": "Like, you know, personnel files, we had to do."
+    },
+    {
+      "start": 2443.32,
+      "end": 2447.1,
+      "text": "Some things that we had not think of, and most of our staff."
+    },
+    {
+      "start": 2447.1,
+      "end": 2449.74,
+      "text": "That's been with the somewhere between 6 and 10 years."
+    },
+    {
+      "start": 2449.74,
+      "end": 2453.22,
+      "text": "15, so we had to go back in and just."
+    },
+    {
+      "start": 2453.22,
+      "end": 2457.6,
+      "text": "But with this, I don't think that, you know, if I can't give a specific."
+    },
+    {
+      "start": 2457.6,
+      "end": 2462.4,
+      "text": "At least in our policies, we've got okay a corrective action plan."
+    },
+    {
+      "start": 2462.4,
+      "end": 2465.8199999999997,
+      "text": "Something to do with well, if HUD changes."
+    },
+    {
+      "start": 2465.8199999999997,
+      "end": 2469.96,
+      "text": "And it's more specific in things, then this would be how we would address it."
+    },
+    {
+      "start": 2472.36,
+      "end": 2473.2599999999998,
+      "text": "Makes sense."
+    },
+    {
+      "start": 2476.02,
+      "end": 2477.04,
+      "text": "It does."
+    },
+    {
+      "start": 2480.04,
+      "end": 2485.2,
+      "text": "Any other thoughts about this section."
+    },
+    {
+      "start": 2487.6,
+      "end": 2490.72,
+      "text": "I'll just, I'll send you a corrective action template."
+    },
+    {
+      "start": 2490.72,
+      "end": 2493.24,
+      "text": "Um, if you want to use it at some point, just to."
+    },
+    {
+      "start": 2493.24,
+      "end": 2498.04,
+      "text": "Just to check out, but I don't have any other comments."
+    },
+    {
+      "start": 2499.96,
+      "end": 2501.08,
+      "text": "That would be great."
+    },
+    {
+      "start": 2501.08,
+      "end": 2507.88,
+      "text": "Um, so this is kind of the only section I feel like needs more work if we all agree. This needs to be."
+    },
+    {
+      "start": 2507.88,
+      "end": 2513.52,
+      "text": "More detailed that would maybe prevent us from moving forward to."
+    },
+    {
+      "start": 2513.52,
+      "end": 2522.52,
+      "text": "Confirm this or the other way that I feel like we can keep this moving forward is that I can draft something for this section and send it."
+    },
+    {
+      "start": 2522.52,
+      "end": 2528.1600000000003,
+      "text": "For review and as long as there's no, like, serious things and we can move it on to the."
+    },
+    {
+      "start": 2528.16,
+      "end": 2546.64,
+      "text": "Planning council. Oh, and and I really liked this feedback to April said that we shouldn't end with the corrective action plan and I agree. So, I think that I'm going to scoot this up so that we aren't ending this document on a bad note."
+    },
+    {
+      "start": 2546.64,
+      "end": 2552.2799999999997,
+      "text": "That's a great idea April."
+    },
+    {
+      "start": 2552.2799999999997,
+      "end": 2556.12,
+      "text": "Great. Can we."
+    },
+    {
+      "start": 2556.12,
+      "end": 2560.68,
+      "text": "Can we include an acknowledgement of a receipt form or something like that?"
+    },
+    {
+      "start": 2560.68,
+      "end": 2565.48,
+      "text": "Um, for agencies to fill out, or is that sound burdensome and."
+    },
+    {
+      "start": 2565.48,
+      "end": 2570.64,
+      "text": "Whatever no, I think that's important."
+    },
+    {
+      "start": 2570.64,
+      "end": 2587.3799999999997,
+      "text": "We are also having a point of contact meeting that we are strongly encouraging all agency points of contact to attend in the next couple of weeks where we are going to be presenting this as well. So it's on their radar. But I, I think that's good. Some sort of."
+    },
+    {
+      "start": 2587.3799999999997,
+      "end": 2590.2599999999998,
+      "text": "Acknowledgement that everyone has seen this."
+    },
+    {
+      "start": 2590.26,
+      "end": 2598.6000000000004,
+      "text": "It kind of helps out on being using the accountability method."
+    },
+    {
+      "start": 2598.6000000000004,
+      "end": 2602.26,
+      "text": "Their account, you know, they can't come back and say, no, we didn't see this."
+    },
+    {
+      "start": 2602.26,
+      "end": 2607.0,
+      "text": "You know, and that kind of makes for accountability of each agency."
+    },
+    {
+      "start": 2607.0,
+      "end": 2608.6800000000003,
+      "text": "I think that was a great idea. We'll."
+    },
+    {
+      "start": 2611.1400000000003,
+      "end": 2615.82,
+      "text": "Cool. Hey, you all I've got to jump off, unfortunately, but."
+    },
+    {
+      "start": 2615.82,
+      "end": 2617.98,
+      "text": "It's really good to see you all."
+    },
+    {
+      "start": 2617.98,
+      "end": 2620.98,
+      "text": "Thanks for everything Rachel and."
+    },
+    {
+      "start": 2620.98,
+      "end": 2636.04,
+      "text": "Thank you for this before you leave. Can you vote? Yeah. Yeah. Yeah. Yeah. Core. I'm sorry. No, you're good. I'll hang for that."
+    },
+    {
+      "start": 2636.04,
+      "end": 2642.58,
+      "text": "Okay, all right, I would entertain a motion to vote to move this forward."
+    },
+    {
+      "start": 2642.58,
+      "end": 2645.64,
+      "text": "With the condition of family giving us."
+    },
+    {
+      "start": 2645.64,
+      "end": 2650.64,
+      "text": "Kind of a little bit more for the corrective action plan."
+    },
+    {
+      "start": 2650.64,
+      "end": 2653.56,
+      "text": "I'll get a motion for that. So moved."
+    },
+    {
+      "start": 2653.56,
+      "end": 2656.2599999999998,
+      "text": "Thank you. Right."
+    },
+    {
+      "start": 2656.2599999999998,
+      "end": 2659.02,
+      "text": "All in favor, I."
+    },
+    {
+      "start": 2659.02,
+      "end": 2662.64,
+      "text": "Hi, hi."
+    },
+    {
+      "start": 2662.64,
+      "end": 2664.52,
+      "text": "Any name."
+    },
+    {
+      "start": 2664.52,
+      "end": 2667.96,
+      "text": "Any, but I'm standing."
+    },
+    {
+      "start": 2667.96,
+      "end": 2669.96,
+      "text": "All right."
+    },
+    {
+      "start": 2669.96,
+      "end": 2671.96,
+      "text": "After that, thank you."
+    },
+    {
+      "start": 2671.96,
+      "end": 2673.96,
+      "text": "Pooch on the sofa. Is that standing?"
+    },
+    {
+      "start": 2673.96,
+      "end": 2676.96,
+      "text": "Oh, thank you. Okay. Thank you. Well."
+    },
+    {
+      "start": 2676.96,
+      "end": 2677.96,
+      "text": "Bye."
+    },
+    {
+      "start": 2677.96,
+      "end": 2677.96,
+      "text": ""
+    },
+    {
+      "start": 2677.96,
+      "end": 2683.96,
+      "text": "Okay. Thanks everybody for all your feedback and conversation."
+    },
+    {
+      "start": 2683.96,
+      "end": 2691.96,
+      "text": "The last thing we want to touch on is our license."
+    },
+    {
+      "start": 2691.96,
+      "end": 2698.96,
+      "text": "Distribution policy that we've been talking a little bit about over the past couple meetings."
+    },
+    {
+      "start": 2698.96,
+      "end": 2700.96,
+      "text": "Like I mentioned earlier there."
+    },
+    {
+      "start": 2700.96,
+      "end": 2715.96,
+      "text": "We have a semi plan to add another small number of contingency license to have on hand, but also continuing to think through the best way to present to agencies."
+    },
+    {
+      "start": 2715.96,
+      "end": 2733.96,
+      "text": "What our plan is for the future without kind of like making a sudden change where we have to take away licenses or have people change their current model."
+    },
+    {
+      "start": 2733.96,
+      "end": 2748.96,
+      "text": "So, kind of where we are with that is talking about drafting a policy, presenting it to participating agencies now, and then having agencies that receive those."
+    },
+    {
+      "start": 2748.96,
+      "end": 2765.96,
+      "text": "Those had dollars that require them to use to incorporate some of that administrative funding into their grant request to use that funding for at least some of those licenses."
+    },
+    {
+      "start": 2765.96,
+      "end": 2772.96,
+      "text": "So, that we would still be able to potentially subsidize some of the licenses for agencies that are not required to use and then."
+    },
+    {
+      "start": 2772.96,
+      "end": 2775.96,
+      "text": "Additional users for those other agencies."
+    },
+    {
+      "start": 2775.96,
+      "end": 2778.96,
+      "text": "That's kind of where we're starting out."
+    },
+    {
+      "start": 2778.96,
+      "end": 2779.96,
+      "text": "Do you want to talk any more about that?"
+    },
+    {
+      "start": 2779.96,
+      "end": 2784.96,
+      "text": "Yes, basically."
+    },
+    {
+      "start": 2784.96,
+      "end": 2795.96,
+      "text": "It's unfortunate at any point to have to get to where we're charging for licenses, but it's just a reality of where we are and it's a good thing."
+    },
+    {
+      "start": 2795.96,
+      "end": 2801.96,
+      "text": "With all the growth that we've had, so we're still brainstorming and very much open to feedback."
+    },
+    {
+      "start": 2801.96,
+      "end": 2810.96,
+      "text": "But because we are trying to encourage people that aren't required to use the system and because there are HUD dollars on the table available for this expense."
+    },
+    {
+      "start": 2810.96,
+      "end": 2816.96,
+      "text": "We felt like with what we have in the budget for licenses and what's there through HUD."
+    },
+    {
+      "start": 2816.96,
+      "end": 2818.96,
+      "text": "That that's a good starting point."
+    },
+    {
+      "start": 2818.96,
+      "end": 2827.96,
+      "text": "So, we talked about maybe ensuring that we can pay for X number for each agency and that."
+    },
+    {
+      "start": 2827.96,
+      "end": 2832.96,
+      "text": "HUD funded agencies, anything above that would need to just write that into their grant request."
+    },
+    {
+      "start": 2832.96,
+      "end": 2833.96,
+      "text": "Not."
+    },
+    {
+      "start": 2833.96,
+      "end": 2839.96,
+      "text": "Yeah, not sure. Still thinking through it. There's a lot of pieces."
+    },
+    {
+      "start": 2839.96,
+      "end": 2849.96,
+      "text": "Moving pieces to I'm just trying to think about the action item."
+    },
+    {
+      "start": 2849.96,
+      "end": 2853.96,
+      "text": "I was just going to say, we don't have an action item on this today, but."
+    },
+    {
+      "start": 2853.96,
+      "end": 2856.96,
+      "text": "Ask that everyone continue to bring your thoughts."
+    },
+    {
+      "start": 2856.96,
+      "end": 2863.96,
+      "text": "And ideas about this moving forward. Yeah, it just seems like a nightmare to bill 25."
+    },
+    {
+      "start": 2863.96,
+      "end": 2873.96,
+      "text": "40 different agencies out there and thinking about the financial burden on Metro social services. These little generally small amounts are coming in."
+    },
+    {
+      "start": 2873.96,
+      "end": 2879.96,
+      "text": "And then I'm also wondering if we have any negotiating power with well sky."
+    },
+    {
+      "start": 2879.96,
+      "end": 2881.96,
+      "text": "To reduce the cost."
+    },
+    {
+      "start": 2881.96,
+      "end": 2888.96,
+      "text": "So, the cost is not that well, I don't want to."
+    },
+    {
+      "start": 2888.96,
+      "end": 2893.96,
+      "text": "Say that, but the cost is a lot less than I thought. So annually, it's."
+    },
+    {
+      "start": 2893.96,
+      "end": 2897.96,
+      "text": "217 dollars for a license."
+    },
+    {
+      "start": 2897.96,
+      "end": 2905.96,
+      "text": "So, when you're looking at the grand total of licenses, it really adds up. But when you're talking about an agency paying for 2 or 3, I feel like that."
+    },
+    {
+      "start": 2905.96,
+      "end": 2911.96,
+      "text": "Maybe it gets more reasonable. I don't want to speak to all agencies budgets. I know that."
+    },
+    {
+      "start": 2911.96,
+      "end": 2914.96,
+      "text": "Very different across the board, but."
+    },
+    {
+      "start": 2914.96,
+      "end": 2921.96,
+      "text": "But yes, the billing thing would be a big deal too. We have to create a new path for that too. It's going to be hard no matter what we do."
+    },
+    {
+      "start": 2921.96,
+      "end": 2925.96,
+      "text": "I, I'm curious is this."
+    },
+    {
+      "start": 2925.96,
+      "end": 2928.96,
+      "text": "Is this topic something that."
+    },
+    {
+      "start": 2928.96,
+      "end": 2932.96,
+      "text": "I could weigh in on or Susie have we."
+    },
+    {
+      "start": 2932.96,
+      "end": 2942.96,
+      "text": "Through the years, I mean, is there is there sort of a best practice that other use here that we're not using or does everybody just kind of have enough."
+    },
+    {
+      "start": 2942.96,
+      "end": 2950.96,
+      "text": "Differences in the landscape of participating agencies, et cetera, that there's not really kind of a standard."
+    },
+    {
+      "start": 2950.96,
+      "end": 2960.96,
+      "text": "I'm not, I'm not really sure that there is a best practice, nor am I sure, like what communities across the country have sort of adopted as their own sort of plan."
+    },
+    {
+      "start": 2960.96,
+      "end": 2972.96,
+      "text": "I don't know of any communities off the top of my head that like have never charged and then are trying to get into charge charging for something that is frankly seen as a headache."
+    },
+    {
+      "start": 2972.96,
+      "end": 2978.96,
+      "text": "And just wondering, I know you guys are struggling about sort of how to make that as appetizing as possible."
+    },
+    {
+      "start": 2978.96,
+      "end": 2990.96,
+      "text": "But the models I'm familiar with either have charged from the get go. So agencies are just used to, you know, having their arm twisted even further or."
+    },
+    {
+      "start": 2990.96,
+      "end": 2995.96,
+      "text": "That's really the model I'm most familiar with most communities haven't sort of."
+    },
+    {
+      "start": 2995.96,
+      "end": 3005.96,
+      "text": "You know, paid the bill for this and paid the freight for this all along the way, like we have as far as I know, but you guys would know more, especially Rachel Rachel."
+    },
+    {
+      "start": 3005.96,
+      "end": 3017.96,
+      "text": "Yeah, I guess Rachel and Shanley, it may be worth just if it's in scope or as a friendly conversation, even if not in scope checking in with Heather to see what."
+    },
+    {
+      "start": 3017.96,
+      "end": 3028.96,
+      "text": "Like, if there's guidance, I mean, shoot, if there's even a, I don't know if even under new stuff, right? Like, might there be a federal funding stream."
+    },
+    {
+      "start": 3028.96,
+      "end": 3039.96,
+      "text": "You know, that that could at least temporarily support this so that we could advise of a transition or, you know, find some way to ease into a different model or figure out."
+    },
+    {
+      "start": 3039.96,
+      "end": 3045.96,
+      "text": "An approach here, I might, I might recommend just seeing if Heather could brief on that or something."
+    },
+    {
+      "start": 3045.96,
+      "end": 3058.96,
+      "text": "I know you guys have probably already thought about it, but I'm, I mean, with the huge, huge, huge amount, it."
+    },
+    {
+      "start": 3058.96,
+      "end": 3070.96,
+      "text": "They could always say no to it, but within their admin and within their do they, I don't know whether they have an specific line item that they have kept in addition to giving you guys from HMIS dollars."
+    },
+    {
+      "start": 3070.96,
+      "end": 3081.96,
+      "text": "But there's a lot of money that must be spent in a fairly short period of time and I can see even perhaps struggling to spend that all down and."
+    },
+    {
+      "start": 3081.96,
+      "end": 3085.96,
+      "text": "You know, again, I think it would have to be have a connection to ESG."
+    },
+    {
+      "start": 3085.96,
+      "end": 3093.96,
+      "text": "But it's worth asking. So, yeah, that is actually something that the new licenses that will hit."
+    },
+    {
+      "start": 3093.96,
+      "end": 3097.96,
+      "text": "On June 1 are being paid for through ESG so."
+    },
+    {
+      "start": 3097.96,
+      "end": 3111.96,
+      "text": "The issue there, though, so we were going to create some flexibility when we get the extra 25 or whatever it is, but then we basically lose 45 licenses at the end of next May."
+    },
+    {
+      "start": 3111.96,
+      "end": 3117.96,
+      "text": "So that's why this is important now is that we're considering what's going to happen when he is not real anymore."
+    },
+    {
+      "start": 3117.96,
+      "end": 3126.96,
+      "text": "That might be the thing Shanley is maybe even go ahead and create and so we're doing this actually to some extent in some other parts of Metro."
+    },
+    {
+      "start": 3126.96,
+      "end": 3133.96,
+      "text": "Like, we've been modernizing our ballet fee, right? And so we've advised a bunch of people and we kind of gave people a pass during COVID."
+    },
+    {
+      "start": 3133.96,
+      "end": 3141.96,
+      "text": "Etcetera, but it's through like, hey, here's a new rate structure. It's going to have an effective date in the future. Sort of be aware of this. And so maybe."
+    },
+    {
+      "start": 3141.96,
+      "end": 3150.96,
+      "text": "Maybe this is an opportunity to say, look, we're going to sort of establish a forward looking policy. ESG funds are going to cover it in the near term."
+    },
+    {
+      "start": 3150.96,
+      "end": 3161.96,
+      "text": "But then when that runs out, we still want to keep participation high, but go ahead and start working into future budgets that you're going to need to cover some some portion of this and maybe there's cost sharing. I don't know."
+    },
+    {
+      "start": 3161.96,
+      "end": 3174.96,
+      "text": "And we can talk also about how much does MSS need to cover for this in a budget if it's a cost sharing versus agency only model, but I'd still love to get Heather's take on that."
+    },
+    {
+      "start": 3174.96,
+      "end": 3176.96,
+      "text": "And I apologize I got to run."
+    },
+    {
+      "start": 3176.96,
+      "end": 3180.96,
+      "text": "Yeah, I agree with Freddie on this."
+    },
+    {
+      "start": 3180.96,
+      "end": 3186.96,
+      "text": "I think that that, you know, providing a lot of notice kind of."
+    },
+    {
+      "start": 3186.96,
+      "end": 3191.96,
+      "text": "Kind of and saying, hey, you know, we're going to cover it for this period of time."
+    },
+    {
+      "start": 3191.96,
+      "end": 3195.96,
+      "text": "And then, um, we all need to cover it."
+    },
+    {
+      "start": 3195.96,
+      "end": 3199.96,
+      "text": "And at the same time, letting them know it's like 200 dollars a year."
+    },
+    {
+      "start": 3199.96,
+      "end": 3206.96,
+      "text": "So that's, that's pretty doable on, but then I would say, maybe there's a loophole where if you do have."
+    },
+    {
+      "start": 3206.96,
+      "end": 3211.96,
+      "text": "Hardship or something, or just a small budget that can't accommodate it."
+    },
+    {
+      "start": 3211.96,
+      "end": 3217.96,
+      "text": "That maybe the city can help out with with certain individuals on needs basis."
+    },
+    {
+      "start": 3217.96,
+      "end": 3224.32,
+      "text": "That would be my 2 cents, you know, provide a lot of time because then also the time."
+    },
+    {
+      "start": 3224.32,
+      "end": 3231.82,
+      "text": "Makes it look like, like, we're continuing to cover this for you. So it almost gives you a little bit of goodwill. Like, we're going to keep paying for this for you for a while."
+    },
+    {
+      "start": 3231.82,
+      "end": 3235.12,
+      "text": "But then you're going to have to include that."
+    },
+    {
+      "start": 3238.9,
+      "end": 3241.78,
+      "text": "Well, I agree. I like that approach and it gives."
+    },
+    {
+      "start": 3241.96,
+      "end": 3247.96,
+      "text": "People like my grant, it gives us time to factor it in if we need to start paying for it."
+    },
+    {
+      "start": 3247.96,
+      "end": 3253.42,
+      "text": "Which I barely get any money from Samson even I could spring."
+    },
+    {
+      "start": 3253.42,
+      "end": 3257.98,
+      "text": "Or the 600 dollars that I would need for licenses. So."
+    },
+    {
+      "start": 3257.98,
+      "end": 3262.48,
+      "text": "I think it is very doable, especially if we give people time and just kind of."
+    },
+    {
+      "start": 3262.48,
+      "end": 3267.52,
+      "text": "He's done into it and almost don't really give them a choice."
+    },
+    {
+      "start": 3267.52,
+      "end": 3269.52,
+      "text": "It's happening. So."
+    },
+    {
+      "start": 3269.52,
+      "end": 3271.52,
+      "text": "Get on board."
+    },
+    {
+      "start": 3271.52,
+      "end": 3273.52,
+      "text": "I do like that."
+    },
+    {
+      "start": 3273.52,
+      "end": 3276.52,
+      "text": "That really is. I mean, I agree with."
+    },
+    {
+      "start": 3276.52,
+      "end": 3280.52,
+      "text": "I know it's 10 o'clock now, but I also haven't heard of any communities who like."
+    },
+    {
+      "start": 3280.52,
+      "end": 3287.52,
+      "text": "Didn't charge and then started charging, but the ones who have charged from the start, it's just like understood. That's part of the HUD."
+    },
+    {
+      "start": 3287.52,
+      "end": 3296.52,
+      "text": "Universe and it's part of what they are required to do. So we'll talk to Heather about it. We have lots of calls with her all the time. So."
+    },
+    {
+      "start": 3296.52,
+      "end": 3302.52,
+      "text": "We'll ask her that and bring that back next time. And then please."
+    },
+    {
+      "start": 3302.52,
+      "end": 3307.52,
+      "text": "Then let us know about the conference room and."
+    },
+    {
+      "start": 3307.52,
+      "end": 3313.52,
+      "text": "Yeah, I think that's it. Okay. Yeah, I'll let you do as soon as I hear back and send out an email."
+    },
+    {
+      "start": 3313.52,
+      "end": 3319.92,
+      "text": "Thank you so much. Then that's super helpful. I tried to ask center stone and they act like I was insane."
+    },
+    {
+      "start": 3319.92,
+      "end": 3323.1,
+      "text": "You want to bring outside people in."
+    },
+    {
+      "start": 3323.1,
+      "end": 3326.64,
+      "text": "It's a pandemic. Okay. I got."
+    },
+    {
+      "start": 3326.64,
+      "end": 3329.52,
+      "text": "Withdraw my request."
+    },
+    {
+      "start": 3329.52,
+      "end": 3338.52,
+      "text": "But all right, well, thank you everyone. We're at time. Thanks for a great meeting. And I will see you all in person."
+    },
+    {
+      "start": 3338.52,
+      "end": 3340.52,
+      "text": "And that."
+    },
+    {
+      "start": 3340.52,
+      "end": 3342.52,
+      "text": "Thanks."
+    }
+  ]
+}
