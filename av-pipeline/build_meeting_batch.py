@@ -48,6 +48,7 @@ import pathlib
 import re
 import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 
 ROOT = pathlib.Path("/Users/mlacy/Documents/3.0/ohs-custody")
@@ -123,7 +124,10 @@ def get_captions(video_id, out_base):
     return False, None
 
 
-def get_whisper_fallback(video_id, out_base):
+def get_whisper_fallback(video_id, out_base, predelay=0):
+    if predelay:
+        log(f"  waiting {predelay}s before the audio request, to avoid re-triggering yt-dlp's bot-detection block")
+        time.sleep(predelay)
     audio_base = ROOT / "av-pipeline" / "audio" / out_base.name
     audio_base.parent.mkdir(parents=True, exist_ok=True)
     r = run([sys.executable, "av-pipeline/fetch_audio.py", video_id, str(audio_base)])
@@ -232,7 +236,7 @@ def regen_structured_and_html():
     return True
 
 
-def process_one(meeting, dry_run):
+def process_one(meeting, dry_run, whisper_predelay=0):
     slug = slug_for(meeting)
     out_base = ROOT / "transcripts" / slug
     video_id = meeting["video_id"]
@@ -248,7 +252,7 @@ def process_one(meeting, dry_run):
     else:
         ok, kind = get_captions(video_id, out_base)
         if not ok:
-            ok, kind = get_whisper_fallback(video_id, out_base)
+            ok, kind = get_whisper_fallback(video_id, out_base, predelay=whisper_predelay)
     if not ok:
         log("  SKIPPED: no transcript could be produced (captions and whisper fallback both failed)")
         return "no-transcript"
@@ -280,18 +284,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", help="comma-separated video ids -- process just these, ignoring --limit")
+    ap.add_argument("--whisper-predelay", type=int, default=0,
+                    help="seconds to wait before each yt-dlp audio request, to avoid re-triggering rate-limiting")
     args = ap.parse_args()
 
     backlog = json.loads((ROOT / "av-pipeline" / "hpc-meeting-backlog.json").read_text())
     meetings = backlog["remaining"]
-    if args.limit:
+    if args.only:
+        wanted = set(args.only.split(","))
+        meetings = [m for m in meetings if m["video_id"] in wanted]
+    elif args.limit:
         meetings = meetings[: args.limit]
 
-    log(f"=== batch run start: {len(meetings)} meetings ===")
+    log(f"=== batch run start: {len(meetings)} meetings (whisper_predelay={args.whisper_predelay}) ===")
     counts = {}
     for i, meeting in enumerate(meetings, 1):
         try:
-            result = process_one(meeting, args.dry_run)
+            result = process_one(meeting, args.dry_run, whisper_predelay=args.whisper_predelay)
         except Exception as exc:
             log(f"  EXCEPTION: {type(exc).__name__}: {exc}")
             result = "exception"

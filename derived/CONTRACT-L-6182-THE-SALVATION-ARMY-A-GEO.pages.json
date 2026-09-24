@@ -1,0 +1,52 @@
+[
+  {
+    "page": 1,
+    "start": 0,
+    "end": 8
+  },
+  {
+    "page": 2,
+    "start": 8,
+    "end": 16
+  },
+  {
+    "page": 3,
+    "start": 16,
+    "end": 24
+  },
+  {
+    "page": 4,
+    "start": 24,
+    "end": 32
+  },
+  {
+    "page": 5,
+    "start": 32,
+    "end": 40
+  },
+  {
+    "page": 6,
+    "start": 40,
+    "end": 48
+  },
+  {
+    "page": 7,
+    "start": 48,
+    "end": 56
+  },
+  {
+    "page": 8,
+    "start": 56,
+    "end": 64
+  },
+  {
+    "page": 9,
+    "start": 64,
+    "end": 72
+  },
+  {
+    "page": 10,
+    "start": 72,
+    "end": 80
+  }
+]
