@@ -23,7 +23,7 @@ function ensure(referents, id) {
   return referents.get(id);
 }
 
-function fold(lines) {
+export function fold(lines) {
   const referents = new Map();
   for (const line of lines) {
     if (!line.trim()) continue;
@@ -128,4 +128,4 @@ function main() {
   else printText(referents, filter);
 }
 
-main();
+if (import.meta.url === `file://${process.argv[1]}`) main();

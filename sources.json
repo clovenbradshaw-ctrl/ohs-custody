@@ -4138,6 +4138,132 @@
         "content_type": null,
         "fetched_at": null
       }
+    },
+    {
+      "id": "RT-24-DRONES",
+      "label": "Rich Text: 24 playgrounds/churches/schools MNPD flew drones over, no contract",
+      "tier": "primary-record",
+      "doctype": "own-article",
+      "url": "https://readrichtext.substack.com/p/here-are-the-24-playgrounds-churches",
+      "claim": "MNPD confirmed to council 'no contract, no MOU, and no written agreement of any kind' governed the Skydio drone trial; 24 sensitive locations and 10,240 addresses flown over.",
+      "used_for": "cross-domain governance-violation shape (MNPD)",
+      "added": "2026-09-24, this session",
+      "capture": {
+        "status": "attempted-failed",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "note": "web.archive.org/save returned HTTP 500 on two spaced attempts; no IA_ACCESS_KEY/IA_SECRET_KEY configured"
+      }
+    },
+    {
+      "id": "RT-ARTS-CRUMBO",
+      "label": "Rich Text: Metro Arts funding withheld by Finance Director Kevin Crumbo",
+      "tier": "primary-record",
+      "doctype": "own-article",
+      "url": "https://readrichtext.substack.com/p/crumboling-numbers-unraveling-the",
+      "claim": "$2M in arts funding withheld over a disputed ~$300K 'deficit' that Metro Arts' own ED called a bookkeeping bucket-crossing issue, not a true deficit.",
+      "used_for": "cross-domain governance-violation shape (Metro Arts); NOT part of the OHS investigation, a different 2024 thread",
+      "added": "2026-09-24, this session",
+      "capture": {
+        "status": "attempted-failed",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "note": "web.archive.org/save returned HTTP 500 on two spaced attempts; no IA credentials configured"
+      }
+    },
+    {
+      "id": "RT-ARTS-3M-QUESTION",
+      "label": "Rich Text: correction + the $3M question (Metro Arts funding reversal tied to MHRC Title VI finding)",
+      "tier": "primary-record",
+      "doctype": "own-article",
+      "url": "https://readrichtext.substack.com/p/a-correction-and-a-3m-question",
+      "claim": "$3M from Metro surplus funded the arts gap; article explicitly questions whether this addresses the Title VI civil-rights violations the Metro Human Relations Commission identified, or merely masks them.",
+      "used_for": "cross-domain governance-violation shape (Metro Arts); shows the same MHRC Title VI mechanism recurring outside OHS",
+      "added": "2026-09-24, this session",
+      "capture": {
+        "status": "attempted-failed",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "note": "web.archive.org/save returned HTTP 500 on two spaced attempts; no IA credentials configured"
+      }
+    },
+    {
+      "id": "TRUTHOUT-NDP-SURVEILLANCE",
+      "label": "Truthout: Nashville proposal could outsource surveillance and policing to a nonprofit (NDP)",
+      "tier": "primary-record",
+      "doctype": "own-article",
+      "url": "https://truthout.org/articles/a-nashville-proposal-could-outsource-surveillance-and-policing-to-a-nonprofit/",
+      "claim": "Mayor O'Connell's resolution would redirect $15M in state surveillance funds through NDP rather than direct municipal application; NDP budgets 'abruptly stopped arriving for council approval in 2004,' payments continuing ~21 years without it.",
+      "used_for": "cross-domain governance-violation shape (NDP); largest dollar-value entries in the whole ledger",
+      "added": "2026-09-24, this session",
+      "capture": {
+        "status": "attempted-failed",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "note": "web.archive.org/save returned HTTP 429 then HTTP 500; no IA credentials configured"
+      }
+    },
+    {
+      "id": "CONTRIB-PROMISED-APARTMENTS",
+      "label": "The Contributor: They Were Promised Apartments, They Got Evictions",
+      "tier": "primary-record",
+      "doctype": "third-party-article",
+      "url": "https://thecontributor.org/they-were-promised-apartments-they-got-evictions/",
+      "claim": "Names The Avenue, Hillside Flats, Hillside Crossing, Wallace Studios, and Burning Tree together as OHS placement properties with broken promises; Wallace Studios alone had 33 eviction suits in its first year; $53,299 paid to Greenview Studios without required contract approval.",
+      "used_for": "bridges the MHRC-complainant thread and the financial-irregularity thread -- the dark link flagged earlier this session as unresolved",
+      "added": "2026-09-24, this session",
+      "capture": {
+        "status": "verified",
+        "wayback_timestamp": "20260423175819",
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "note": "confirmed via Wayback Availability API this session; sha256/anchor not yet computed"
+      }
+    },
+    {
+      "id": "CONTRIB-NOTHING-ABOUT-US",
+      "label": "The Contributor: Nothing About Us Without Paying Us",
+      "tier": "primary-record",
+      "doctype": "third-party-article",
+      "url": "https://thecontributor.org/nothing-about-us-without-paying-us/",
+      "claim": "Metro Legal/Finance told lived-experience advocates (Kennetha Patterson, Synergy Cooperative) that compensating them would violate procurement rules -- the same procurement framework not applied to $350K+ in off-contract landlord rent payments.",
+      "used_for": "the sharpest single instance of the governance-violation shape found this session (a rule cited as a barrier for the poor, bypassed for landlords)",
+      "added": "2026-09-24, this session",
+      "capture": {
+        "status": "verified",
+        "wayback_timestamp": "20260301011655",
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "note": "confirmed via Wayback Availability API this session; sha256/anchor not yet computed"
+      }
+    },
+    {
+      "id": "SCENE-NON-TRADITIONAL-HOUSING",
+      "label": "Nashville Scene (Eli Motycka): OHS's Non-Traditional Rapid Rehousing program",
+      "tier": "primary-record",
+      "doctype": "third-party-article",
+      "url": "https://www.nashvillescene.com/news/citylimits/ohs-non-traditional-housing-program/article_a359ddae-8c2f-4fe5-9efb-6c6d4321e474.html",
+      "claim": "Independent confirmation naming Kirsney Cunningham (already logged as an MHRC Title VI complainant) as a participant placed at The Avenue/Hillside Crossing; $2.4M FY2026 expansion to 100 families approved by Mayor O'Connell, bypassing Coordinated Entry and the 25-member Homelessness Planning Council.",
+      "used_for": "independent third-party corroboration closing the MHRC-complainant/financial-irregularity link",
+      "added": "2026-09-24, this session",
+      "capture": {
+        "status": "verified",
+        "wayback_timestamp": "20260829234814",
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "note": "confirmed via Wayback Availability API this session; sha256/anchor not yet computed"
+      }
     }
   ]
 }

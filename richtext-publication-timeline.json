@@ -1,0 +1,43 @@
+{
+  "purpose": "Cursor-ordered index of {Rich Text}'s own OHS/homelessness-related posts, for scoring what was new information AT THE TIME each piece published (prequentially), not with hindsight. Built from the live sitemap (https://readrichtext.substack.com/sitemap.xml, fetched via browser 2026-09-24) plus direct per-article byline checks where noted.",
+  "date_confidence_levels": {
+    "byline-verified": "fetched the live article directly this session and read the exact date shown under the byline",
+    "sitemap": "sitemap <lastmod> value, plausible as an original-publish date because it is not part of the suspect batch and no closer check has been done",
+    "suspect-batch-lastmod": "sitemap <lastmod> is shared identically by a cluster of otherwise-unrelated-topic posts, indicating a platform-level event (very likely the Prometheoid -> {Rich Text} rebrand/migration) touched the timestamp -- NOT trustworthy as an original publish date until checked individually"
+  },
+  "known_gap": "This investigation predates this file's coverage: 'read-office-of-homeless-services' (2025-07-13) is already OHS pushing back on 'published data' -- meaning real original reporting exists before that date. The 5 suspect-batch entries below are the leading candidates for that earlier material and have not yet been individually verified.",
+  "entries": [
+    {"slug":"housing-last-preface","url":"https://readrichtext.substack.com/p/housing-last-preface","date":"2025-04-17","date_confidence":"sitemap"},
+    {"slug":"housing-last-a-reality-check-is-it","url":"https://readrichtext.substack.com/p/housing-last-a-reality-check-is-it","date":"2025-04-17","date_confidence":"sitemap"},
+    {"slug":"housing-last-what-problem-are-they","url":"https://readrichtext.substack.com/p/housing-last-what-problem-are-they","date":"2025-05-21","date_confidence":"sitemap"},
+    {"slug":"i-talked-about-the-office-of-homeless","url":"https://readrichtext.substack.com/p/i-talked-about-the-office-of-homeless","date":"2025-05-29","date_confidence":"sitemap"},
+    {"slug":"any-coordinated-process-for-serving","url":"https://readrichtext.substack.com/p/any-coordinated-process-for-serving","date":"2025-07-02","date_confidence":"sitemap"},
+    {"slug":"ohs-data-dump-fy24-and-fy25-financial","url":"https://readrichtext.substack.com/p/ohs-data-dump-fy24-and-fy25-financial","date":"2025-07-09","date_confidence":"sitemap"},
+    {"slug":"read-office-of-homeless-services","url":"https://readrichtext.substack.com/p/read-office-of-homeless-services","date":"2025-07-13","date_confidence":"byline-verified","note":"Calvin email to Council calling published data 'misleading'; already logged in referents.eot.jsonl as an observe on april-calvin"},
+    {"slug":"they-only-discovered-the-problem","url":"https://readrichtext.substack.com/p/they-only-discovered-the-problem","date":"2025-08-24","date_confidence":"sitemap"},
+    {"slug":"prelude-the-dialectics-of-homelessness","url":"https://readrichtext.substack.com/p/prelude-the-dialectics-of-homelessness","date":"2025-08-28","date_confidence":"sitemap"},
+    {"slug":"exec-director-of-depaul-usa-strobel","url":"https://readrichtext.substack.com/p/exec-director-of-depaul-usa-strobel","date":"2025-08-28","date_confidence":"byline-verified","note":"Chuck Levesque (DePaul USA ED, 15yr) steps down ~1wk after publication; logged as chuck-levesque in referents.eot.jsonl"},
+    {"slug":"nashvilles-homeless-services-faces","url":"https://readrichtext.substack.com/p/nashvilles-homeless-services-faces","date":"2025-09-04","date_confidence":"sitemap"},
+    {"slug":"metro-will-audit-the-office-of-homeless","url":"https://readrichtext.substack.com/p/metro-will-audit-the-office-of-homeless","date":"2025-09-24","date_confidence":"sitemap"},
+    {"slug":"uncovered-nashvilles-secret-homelessness","url":"https://readrichtext.substack.com/p/uncovered-nashvilles-secret-homelessness","date":"2025-10-28","date_confidence":"sitemap"},
+    {"slug":"join-the-investigation","url":"https://readrichtext.substack.com/p/join-the-investigation","date":"2025-11-04","date_confidence":"byline-verified","note":"methodology/funding piece; names Eli Motycka/Nashville Scene collaboration"},
+    {"slug":"null_results-apparent-86k-procurement","url":"https://readrichtext.substack.com/p/null_results-apparent-86k-procurement","date":"2025-11-06","date_confidence":"byline-verified","note":"Wayfair $86,103.61, Wallace Studios, Adam Rosenberg; logged in referents.eot.jsonl"},
+    {"slug":"null_results-text-messages-reveal","url":"https://readrichtext.substack.com/p/null_results-text-messages-reveal","date":"2025-11-10","date_confidence":"byline-verified","note":"Calvin's own texts (Aug 3 2024) personally selecting families by household size, bypassing Coordinated Entry -- NOT YET logged as its own referents.eot.jsonl entry"},
+    {"slug":"my-open-letter-to-homeless-services","url":"https://readrichtext.substack.com/p/my-open-letter-to-homeless-services","date":"2025-11-12","date_confidence":"sitemap"},
+    {"slug":"null_results-she-says-she-talked","url":"https://readrichtext.substack.com/p/null_results-she-says-she-talked","date":"2025-11-21","date_confidence":"sitemap"},
+    {"slug":"rich-text-2025-by-the-numbers-all","url":"https://readrichtext.substack.com/p/rich-text-2025-by-the-numbers-all","date":"2025-12-19","date_confidence":"byline-verified","note":"year-end index; names the {Null_Results} investigation and its rough date ranges"},
+    {"slug":"another-15m-without-accounting-for","url":"https://readrichtext.substack.com/p/another-15m-without-accounting-for","date":"2026-03-04","date_confidence":"byline-verified","note":"off-contract rent >$350K; Rodeway at 97 Wallace Road -- same street as Wallace Studios; Kristin Wilson background; logged in referents.eot.jsonl"},
+    {"slug":"liberal-bullshittery-an-autopsy-of","url":"https://readrichtext.substack.com/p/liberal-bullshittery-an-autopsy-of","date":"2026-05-13","date_confidence":"byline-verified","note":"Koch/Housing NOLA contracts, Kristin Wilson, PEAT secret meetings, unanswered records request, 13% YoY placement decline; logged in referents.eot.jsonl"}
+  ],
+  "suspect_batch_lastmod_2025-09-10": [],
+  "resolved_not_ohs": {
+    "note": "All 5 originally-flagged suspect-batch-lastmod entries were individually verified this session and are a DIFFERENT investigation entirely (Metro Arts funding, Mar-Dec 2024), not OHS. Removed from the OHS timeline. Kept here because they are a genuine independent instance of the same structural shape (concentrated financial control + weak oversight + an MHRC Title VI finding + FOIA resistance) recurring in a different Metro department -- real evidence for the shape-characterization work, filed separately rather than conflated with the OHS timeline.",
+    "entries": [
+      {"slug":"crumboling-numbers-unraveling-the","url":"https://readrichtext.substack.com/p/crumboling-numbers-unraveling-the","date":"2024-03-07","topic":"Metro Arts funding withheld by Finance Director Kevin Crumbo ($2M held, ~$300K disputed 'deficit')"},
+      {"slug":"metro-finance-and-legal-decide-who","url":"https://readrichtext.substack.com/p/metro-finance-and-legal-decide-who","date":"2024-03-22","topic":"Metro Finance/Legal resolve the arts-funding dispute by funding all orgs at 100%"},
+      {"slug":"a-correction-and-a-3m-question","url":"https://readrichtext.substack.com/p/a-correction-and-a-3m-question","date":"2024-03-28","topic":"$3M from Metro surplus covers the arts gap; explicitly ties the reversal to the MHRC Title VI civil-rights finding on arts-funding equity"},
+      {"slug":"i-kept-waiting-for-the-city-to-release","url":"https://readrichtext.substack.com/p/i-kept-waiting-for-the-city-to-release","date":"2024-05-06","topic":"FOIA for Metro Arts expense data answered with 1,276 unsorted PDFs; author built own database"},
+      {"slug":"how-should-metro-spend-the-money","url":"https://readrichtext.substack.com/p/how-should-metro-spend-the-money","date":"2024-12-04","topic":"FUSUS surveillance contract rejected; unrelated to both arts and OHS -- a third thread"}
+    ]
+  }
+}
