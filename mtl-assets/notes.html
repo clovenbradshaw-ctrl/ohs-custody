@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mtl notes</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f5f2;
+    --fg: #1c1c1a;
+    --muted: #6b6a66;
+    --panel: #ffffff;
+    --border: #ddd9d1;
+    --accent: #3a5a40;
+    --accent-fg: #ffffff;
+    --danger: #a6402f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181a;
+      --fg: #e9e7e1;
+      --muted: #9a988f;
+      --panel: #212226;
+      --border: #34353a;
+      --accent: #6b9080;
+      --accent-fg: #10120f;
+      --danger: #d97c68;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .wrap {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+  }
+  .card h1 {
+    font-size: 17px;
+    margin: 0 0 4px;
+  }
+  .card p.hint {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  label {
+    display: block;
+    font-size: 12px;
+    color: var(--muted);
+    margin: 14px 0 6px;
+  }
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 14px;
+  }
+  input[type="password"]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-fg);
+    width: 100%;
+    margin-top: 18px;
+  }
+  .btn-primary:disabled { opacity: .5; cursor: default; }
+  .error {
+    color: var(--danger);
+    font-size: 13px;
+    margin-top: 10px;
+    min-height: 1em;
+  }
+  /* notes view */
+  .app {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+  }
+  .app.active { display: flex; }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel);
+  }
+  header h1 { font-size: 14px; margin: 0; color: var(--muted); font-weight: 600; }
+  .status { font-size: 12px; color: var(--muted); }
+  .actions { display: flex; gap: 8px; }
+  .btn-ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--fg);
+    font-weight: 500;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .btn-ghost:hover { border-color: var(--muted); }
+  main {
+    flex: 1;
+    padding: 18px;
+    overflow: auto;
+  }
+  textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 60vh;
+    resize: vertical;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--panel);
+    color: var(--fg);
+    padding: 16px;
+    font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  #importFile { display: none; }
+  .screen { display: none; }
+  .screen.active { display: block; }
+</style>
+</head>
+<body>
+
+<div class="wrap" id="gate">
+  <!-- set-password screen -->
+  <div class="card screen" id="setup-screen">
+    <h1>Set a local password</h1>
+    <p class="hint">No password exists yet for this page. Pick one — it stays only in this browser, on this file.</p>
+    <label for="setup-pw1">New password</label>
+    <input type="password" id="setup-pw1" autocomplete="new-password">
+    <label for="setup-pw2">Confirm</label>
+    <input type="password" id="setup-pw2" autocomplete="new-password">
+    <button class="btn-primary" id="setup-btn">Set password &amp; continue</button>
+    <div class="error" id="setup-error"></div>
+  </div>
+
+  <!-- unlock screen -->
+  <div class="card screen" id="unlock-screen">
+    <h1>mtl notes — locked</h1>
+    <p class="hint">Enter your password to unlock.</p>
+    <label for="unlock-pw">Password</label>
+    <input type="password" id="unlock-pw" autocomplete="current-password">
+    <button class="btn-primary" id="unlock-btn">Unlock</button>
+    <div class="error" id="unlock-error"></div>
+  </div>
+</div>
+
+<div class="app" id="app">
+  <header>
+    <h1>mtl notes</h1>
+    <div class="actions">
+      <span class="status" id="status"></span>
+      <button class="btn-ghost" id="export-btn">Export</button>
+      <button class="btn-ghost" id="import-btn">Import</button>
+      <button class="btn-ghost" id="lock-btn">Lock</button>
+    </div>
+  </header>
+  <main>
+    <textarea id="notes" placeholder="Write here. Saved automatically to this browser as you type."></textarea>
+  </main>
+  <input type="file" id="importFile" accept=".txt,.md,text/plain">
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var KEY_AUTH = "mtl-notes-auth-v1";
+  var KEY_NOTES = "mtl-notes-body-v1";
+  var KEY_UNLOCKED = "mtl-notes-unlocked-v1";
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function toHex(buf) {
+    return Array.prototype.map.call(new Uint8Array(buf), function (b) {
+      return b.toString(16).padStart(2, "0");
+    }).join("");
+  }
+
+  function randomSalt() {
+    var arr = new Uint8Array(16);
+    crypto.getRandomValues(arr);
+    return toHex(arr);
+  }
+
+  function hash(password, salt) {
+    var enc = new TextEncoder().encode(salt + ":" + password);
+    return crypto.subtle.digest("SHA-256", enc).then(toHex);
+  }
+
+  function getAuth() {
+    try { return JSON.parse(localStorage.getItem(KEY_AUTH) || "null"); }
+    catch (e) { return null; }
+  }
+
+  function showScreen(id) {
+    document.querySelectorAll(".screen").forEach(function (el) { el.classList.remove("active"); });
+    $(id).classList.add("active");
+  }
+
+  function openApp() {
+    $("gate").style.display = "none";
+    $("app").classList.add("active");
+    $("notes").value = localStorage.getItem(KEY_NOTES) || "";
+    $("notes").focus();
+  }
+
+  function closeApp() {
+    localStorage.removeItem(KEY_UNLOCKED);
+    $("app").classList.remove("active");
+    $("gate").style.display = "flex";
+    var auth = getAuth();
+    showScreen(auth ? "unlock-screen" : "setup-screen");
+    $("unlock-pw").value = "";
+  }
+
+  // ---- setup ----
+  $("setup-btn").addEventListener("click", function () {
+    var p1 = $("setup-pw1").value, p2 = $("setup-pw2").value;
+    var err = $("setup-error");
+    err.textContent = "";
+    if (p1.length < 4) { err.textContent = "Use at least 4 characters."; return; }
+    if (p1 !== p2) { err.textContent = "Passwords don't match."; return; }
+    var salt = randomSalt();
+    hash(p1, salt).then(function (h) {
+      localStorage.setItem(KEY_AUTH, JSON.stringify({ salt: salt, hash: h }));
+      localStorage.setItem(KEY_UNLOCKED, "1");
+      openApp();
+    });
+  });
+
+  // ---- unlock ----
+  function tryUnlock() {
+    var auth = getAuth();
+    var pw = $("unlock-pw").value;
+    var err = $("unlock-error");
+    err.textContent = "";
+    if (!auth) { showScreen("setup-screen"); return; }
+    hash(pw, auth.salt).then(function (h) {
+      if (h === auth.hash) {
+        localStorage.setItem(KEY_UNLOCKED, "1");
+        openApp();
+      } else {
+        err.textContent = "Wrong password.";
+        $("unlock-pw").value = "";
+        $("unlock-pw").focus();
+      }
+    });
+  }
+  $("unlock-btn").addEventListener("click", tryUnlock);
+  $("unlock-pw").addEventListener("keydown", function (e) { if (e.key === "Enter") tryUnlock(); });
+  $("setup-pw2").addEventListener("keydown", function (e) { if (e.key === "Enter") $("setup-btn").click(); });
+
+  // ---- notes autosave ----
+  var saveTimer = null;
+  $("notes").addEventListener("input", function () {
+    $("status").textContent = "saving…";
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      localStorage.setItem(KEY_NOTES, $("notes").value);
+      var t = new Date().toLocaleTimeString();
+      $("status").textContent = "saved " + t;
+    }, 300);
+  });
+
+  // ---- lock ----
+  $("lock-btn").addEventListener("click", closeApp);
+
+  // ---- export / import (belt-and-suspenders backup, independent of localStorage) ----
+  $("export-btn").addEventListener("click", function () {
+    var blob = new Blob([$("notes").value], { type: "text/plain" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "mtl-notes-" + new Date().toISOString().slice(0, 10) + ".txt";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+  $("import-btn").addEventListener("click", function () { $("importFile").click(); });
+  $("importFile").addEventListener("change", function (e) {
+    var file = e.target.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      $("notes").value = reader.result;
+      localStorage.setItem(KEY_NOTES, reader.result);
+      $("status").textContent = "imported";
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+  });
+
+  // ---- boot ----
+  var auth = getAuth();
+  if (!auth) {
+    showScreen("setup-screen");
+  } else if (localStorage.getItem(KEY_UNLOCKED) === "1") {
+    openApp();
+  } else {
+    showScreen("unlock-screen");
+  }
+})();
+</script>
+</body>
+</html>
