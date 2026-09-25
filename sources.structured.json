@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-24T03:19:37+00:00",
+  "generated_at": "2026-09-25T16:08:28+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -4599,6 +4599,31 @@
         "archive": null
       },
       "provenance_note": "Discovered via documents.nashville.gov's public Metro Clerk Contracts Search (Department='SOCIAL SERVICES'), scrape_metro_contracts.py, 2026-09-23. Contract number L-5602, internal document token 3DqR05jr."
+    },
+    {
+      "id": "2026-09-23-CE-COMMITTEE-TRANSCRIPT",
+      "label": "Sept 23, 2026 Continuum of Care: Coordinated Entry Committee meeting, local Whisper transcript",
+      "url": null,
+      "tier": "secondary",
+      "claim": "A committee member (unidentified in this transcript -- no speaker diarization was run) asks, after describing confusion over who is receiving vouchers: \"Like what I was told was that like OHS doesn't have clients so I didn't really understand what it meant that their people received more of the vouchers So who are these people if you guys don't have clients?\" A staff member (self-introduced earlier in the same meeting's roll call as Monty Tavern, Office of Homeless Services) responds by describing OHS's call-center and street-outreach role rather than directly naming who the affected clients are. This is a machine (Whisper large-v3-turbo) transcript with no speaker diarization -- who-said-what has to be inferred from context and is not asserted as fact here. It corroborates, from a second and independent committee meeting, the same 'OHS says it has no clients' accountability question COC-DEIGNAN-RANKING-2026 already raises about voucher/HMIS oversight -- worth a second listen against the original audio before printing any of this as a verbatim public record. VERIFICATION ON THE MISSING VIDEO SOURCE: unlike every other transcript entry in this manifest, no YouTube URL exists for this meeting. Checked and confirmed absent on 2026-09-25: the Metro Nashville Network channel's own chronological upload list has no video between 09/09/26 and 09/22/26 (i.e. nothing on or near 09/23/26), a channel-wide search for 'Coordinated Entry' returns zero results, and the Continuum of Care Homelessness Planning Council playlist's newest entry is still 09/09/26. The transcript's own segments.json instead records a local audio_path ('Sep 23 at 9-04 AM.m4a'), consistent with a personally recorded, not publicly posted, meeting -- most likely the Coordinated Entry subcommittee specifically, not the full Homelessness Planning Council, which is the body Metro's channel regularly posts.",
+      "anchor": "OHS doesn't have clients so I didn't really understand what it meant that their people received more of the vouchers",
+      "used_for": "OHS/CE governance -- a second, independent committee meeting in which OHS's own no-clients framing is publicly questioned in relation to who actually receives vouchers, corroborating the same accountability gap COC-DEIGNAN-RANKING-2026 raises about CE/HMIS oversight",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "a7965d63b010a85c59b894062caeb90791733586fc452fdf2e2332a29ed542ec",
+        "bytes": 80255,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-23T17:52:50+00:00",
+        "location": {
+          "kind": "byte-offset",
+          "offset": 33492,
+          "length": 116
+        },
+        "archive": null
+      },
+      "note": "Derived artifact: local MLX Whisper transcript of a personally recorded audio file (no video, no URL). Confirmed absent from Metro Nashville Network's YouTube channel this session (chronological upload list, channel search, and the CoC playlist all checked 2026-09-25) -- the object of record for this event has no public video, unlike every other transcript-derived entry in this manifest.",
+      "provenance_note": "Generated 2026-09-23 by this project via local MLX Whisper transcription (large-v3-turbo) of a local audio recording (segments.json's own audio_path: 'Sep 23 at 9-04 AM.m4a') -- no video file, no YouTube fetch. Entity-recognition pass preserved at transcripts/2026-09-23-ce-committee.entities.json. No sources.json or readings/ entry existed for this transcript until 2026-09-25, when the gap was found during an audit of every transcript's YouTube-link registration in this manifest and this entry was added: url is intentionally left empty after directly checking Metro Nashville Network's YouTube channel (chronological upload list, channel-wide search, and the CoC Homelessness Planning Council playlist) and finding no video posted for this meeting, on 09/23/26 or since. If a video surfaces later, replace url here and re-derive readings/2026-09-23-CE-COMMITTEE-TRANSCRIPT.json's source_url to match rather than leaving this entry stale."
     }
   ]
 }

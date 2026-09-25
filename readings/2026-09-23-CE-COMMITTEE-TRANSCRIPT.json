@@ -1,0 +1,21 @@
+{
+  "id": "2026-09-23-CE-COMMITTEE-TRANSCRIPT",
+  "path": "transcripts/2026-09-23-ce-committee.txt",
+  "sha256": "a7965d63b010a85c59b894062caeb90791733586fc452fdf2e2332a29ed542ec",
+  "bytes": 80255,
+  "media_type": "text/plain",
+  "source_url": null,
+  "final_url": null,
+  "retrieved_at": "2026-09-23T17:52:50+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact: local MLX Whisper (large-v3-turbo) transcript of a personally recorded audio file (segments.json's own audio_path: 'Sep 23 at 9-04 AM.m4a'). No video was downloaded and none exists to download -- checked and confirmed absent from Metro Nashville Network's YouTube channel on 2026-09-25 (chronological upload list, channel-wide search for 'Coordinated Entry', and the CoC Homelessness Planning Council playlist's newest entry, still 09/09/26). Unlike every sibling transcript entry in this corpus, the object of record for this event is this local recording itself, not a public video.",
+  "spans": [
+    {
+      "kind": "anchor",
+      "byte_offset": 33492,
+      "byte_length": 116,
+      "method": "exact-bytes",
+      "claim": "A committee member (unidentified in this transcript -- no speaker diarization was run) asks, after describing confusion over who is receiving vouchers: \"Like what I was told was that like OHS doesn't have clients so I didn't really understand what it meant that their people received more of the vouchers So who are these people if you guys don't have clients?\" A staff member (self-introduced earlier in the same meeting's roll call as Monty Tavern, Office of Homeless Services) responds by describing OHS's call-center and street-outreach role rather than directly naming who the affected clients are. This is a machine (Whisper large-v3-turbo) transcript with no speaker diarization -- who-said-what has to be inferred from context and is not asserted as fact here. It corroborates, from a second and independent committee meeting, the same 'OHS says it has no clients' accountability question COC-DEIGNAN-RANKING-2026 already raises about voucher/HMIS oversight -- worth a second listen against the original audio before printing any of this as a verbatim public record. VERIFICATION ON THE MISSING VIDEO SOURCE: unlike every other transcript entry in this manifest, no YouTube URL exists for this meeting. Checked and confirmed absent on 2026-09-25: the Metro Nashville Network channel's own chronological upload list has no video between 09/09/26 and 09/22/26 (i.e. nothing on or near 09/23/26), a channel-wide search for 'Coordinated Entry' returns zero results, and the Continuum of Care Homelessness Planning Council playlist's newest entry is still 09/09/26. The transcript's own segments.json instead records a local audio_path ('Sep 23 at 9-04 AM.m4a'), consistent with a personally recorded, not publicly posted, meeting -- most likely the Coordinated Entry subcommittee specifically, not the full Homelessness Planning Council, which is the body Metro's channel regularly posts."
+    }
+  ]
+}
