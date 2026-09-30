@@ -1,7 +1,7 @@
 {
   "case": "ohs-standby-overview",
   "case_label": "Office of Homeless Services standby overview",
-  "generated_at": "2026-09-25T16:08:28+00:00",
+  "generated_at": "2026-09-30T22:18:11+00:00",
   "derived_from": "sources.enriched.json",
   "how_to_use": "Each entry is one claim in the piece and the source that supports it. `status` and `status_meaning` tell you how strong the evidence is -- do not treat every row the same. `evidence.location` tells you exactly where in the captured bytes the anchor sits and what kind of offset that is (see location_kind_meaning below) -- never assume it is a byte offset without checking `location.kind`. `evidence.archive` is null unless an independent third party (Internet Archive or archive.today) attests to this specific capture; a null archive with status local-only means only this project's own hash backs the claim. Quotes and dollar figures inside `claim` that are attributed to a specific person's letter or statement (see any entry whose claim says something like 'this is X's own characterization') are that person's allegation, not an established fact, even when this project has independently confirmed the document exists and says what is quoted.",
   "status_meaning": {
@@ -4624,6 +4624,52 @@
       },
       "note": "Derived artifact: local MLX Whisper transcript of a personally recorded audio file (no video, no URL). Confirmed absent from Metro Nashville Network's YouTube channel this session (chronological upload list, channel search, and the CoC playlist all checked 2026-09-25) -- the object of record for this event has no public video, unlike every other transcript-derived entry in this manifest.",
       "provenance_note": "Generated 2026-09-23 by this project via local MLX Whisper transcription (large-v3-turbo) of a local audio recording (segments.json's own audio_path: 'Sep 23 at 9-04 AM.m4a') -- no video file, no YouTube fetch. Entity-recognition pass preserved at transcripts/2026-09-23-ce-committee.entities.json. No sources.json or readings/ entry existed for this transcript until 2026-09-25, when the gap was found during an audit of every transcript's YouTube-link registration in this manifest and this entry was added: url is intentionally left empty after directly checking Metro Nashville Network's YouTube channel (chronological upload list, channel-wide search, and the CoC Homelessness Planning Council playlist) and finding no video posted for this meeting, on 09/23/26 or since. If a video surfaces later, replace url here and re-derive readings/2026-09-23-CE-COMMITTEE-TRANSCRIPT.json's source_url to match rather than leaving this entry stale."
+    },
+    {
+      "id": "2026-06-30-AUDIT-COMMITTEE-TRANSCRIPT",
+      "label": "2026-06-30 Metropolitan Nashville Audit Committee, transcript",
+      "url": "https://www.youtube.com/watch?v=AXCXRsNHFD8",
+      "tier": "secondary",
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "anchor": null,
+      "used_for": "Trigger monitoring -- Audit Committee run Sep 2025 to present; absence/presence of an OHS audit result",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "e33333cb0cede5ed1ff6fcf55a75e6653f5e44dafdc1afd0f2f2acb4972701bd",
+        "bytes": 132205,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-30T22:18:08+00:00",
+        "location": null,
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-30 by direct fetch_captions.py + speaker/entity passes, generalizing the 2026-09-09 entry's pattern to the Audit Committee run (latest YouTube meetings sweep)."
+    },
+    {
+      "id": "2026-09-29-AUDIT-COMMITTEE-TRANSCRIPT",
+      "label": "2026-09-29 Metropolitan Nashville Audit Committee, YouTube auto-caption transcript",
+      "url": "https://www.youtube.com/watch?v=Ua28wqR15sE",
+      "tier": "secondary",
+      "claim": "Status evidence that the OHS audit was STILL OPEN as of Sept 29, 2026: the auditor tells the Committee the credit-card audit was paused just before 'the homeless services audit was requested last year' -- 'we took that auditor and put them on homeless services' -- and that 'in that time period that we\\'ve been working on homeless services' the office moved to a new credit-card system. Same meeting reports 13 projects currently going on, 9 audit reports and 3 investigation reports issued. This is a machine (YouTube auto-generated caption) transcript -- treat every quote as needing a second listen against the original audio before being printed as verbatim, the same caveat every transcript-derived entry in this corpus already carries. Corroborates the negative-evidence chain: no OHS Financial Processes audit report appears in the FY2026/FY2027 indexes as of this date.",
+      "anchor": "we took that auditor and put them on homeless services",
+      "used_for": "Trigger monitoring -- OHS audit still open 2026-09-29; negative evidence against a published result",
+      "status": "local-only",
+      "status_meaning": "The anchor text was confirmed present, but every independent-archiving attempt failed (no Internet Archive credentials, archive.today blocked scripted submission with a CAPTCHA). Only this project's own local hash backs it.",
+      "evidence": {
+        "sha256": "787ff8048a1066ef30603d7db09bf70536808e1a70401abfb11f4b5f342dee32",
+        "bytes": 106900,
+        "content_type": "text/plain",
+        "fetched_at": "2026-09-30T22:18:08+00:00",
+        "location": {
+          "kind": "byte-offset",
+          "offset": 98940,
+          "length": 54
+        },
+        "archive": null
+      },
+      "note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+      "provenance_note": "Generated 2026-09-30 by direct fetch_captions.py + speaker/entity passes, generalizing the 2026-09-09 entry's pattern to the Audit Committee run (latest YouTube meetings sweep)."
     }
   ]
 }

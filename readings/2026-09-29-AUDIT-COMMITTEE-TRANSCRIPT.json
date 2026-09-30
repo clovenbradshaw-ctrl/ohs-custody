@@ -1,0 +1,13 @@
+{
+  "id": "2026-09-29-AUDIT-COMMITTEE-TRANSCRIPT",
+  "path": "transcripts/2026-09-29-audit-committee.txt",
+  "sha256": "787ff8048a1066ef30603d7db09bf70536808e1a70401abfb11f4b5f342dee32",
+  "bytes": 106900,
+  "media_type": "text/plain",
+  "source_url": "https://www.youtube.com/watch?v=Ua28wqR15sE",
+  "final_url": null,
+  "retrieved_at": "2026-09-30T22:18:08+00:00",
+  "derived_artifact": true,
+  "derivation_note": "Derived artifact via youtube-caption-track; video itself was never downloaded (captions only, per project direction to avoid video downloads). Bulk-ingested -- see claim field.",
+  "spans": []
+}

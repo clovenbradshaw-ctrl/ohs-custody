@@ -4285,6 +4285,48 @@
         "content_type": null,
         "fetched_at": null
       }
+    },
+    {
+      "id": "2026-06-30-AUDIT-COMMITTEE-TRANSCRIPT",
+      "label": "2026-06-30 Metropolitan Nashville Audit Committee, transcript",
+      "tier": "secondary",
+      "doctype": "transcript-derived",
+      "url": "https://www.youtube.com/watch?v=AXCXRsNHFD8",
+      "anchor": null,
+      "claim": "Full meeting transcript preserved and hashed (YouTube caption track, or local Whisper transcription when no caption track existed -- see this entry's own capture.note). Bulk-ingested as part of the historical CoC/HPC meeting backlog sweep; not yet read for a specific citable finding. See the linked transcript for full text and its .entities.json sibling for extracted referents. Upgrade this entry with a real anchor/claim once a specific quote is needed, following the 2026-09-09 entry's pattern -- the underlying bytes and hash do not change.",
+      "used_for": "Trigger monitoring -- Audit Committee run Sep 2025 to present; absence/presence of an OHS audit result",
+      "added": "Generated 2026-09-30 by direct fetch_captions.py + speaker/entity passes, generalizing the 2026-09-09 entry's pattern to the Audit Committee run (latest YouTube meetings sweep).",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
+    },
+    {
+      "id": "2026-09-29-AUDIT-COMMITTEE-TRANSCRIPT",
+      "label": "2026-09-29 Metropolitan Nashville Audit Committee, YouTube auto-caption transcript",
+      "tier": "secondary",
+      "doctype": "transcript-derived",
+      "url": "https://www.youtube.com/watch?v=Ua28wqR15sE",
+      "anchor": "we took that auditor and put them on homeless services",
+      "claim": "Status evidence that the OHS audit was STILL OPEN as of Sept 29, 2026: the auditor tells the Committee the credit-card audit was paused just before 'the homeless services audit was requested last year' -- 'we took that auditor and put them on homeless services' -- and that 'in that time period that we\\'ve been working on homeless services' the office moved to a new credit-card system. Same meeting reports 13 projects currently going on, 9 audit reports and 3 investigation reports issued. This is a machine (YouTube auto-generated caption) transcript -- treat every quote as needing a second listen against the original audio before being printed as verbatim, the same caveat every transcript-derived entry in this corpus already carries. Corroborates the negative-evidence chain: no OHS Financial Processes audit report appears in the FY2026/FY2027 indexes as of this date.",
+      "used_for": "Trigger monitoring -- OHS audit still open 2026-09-29; negative evidence against a published result",
+      "added": "Generated 2026-09-30 by direct fetch_captions.py + speaker/entity passes, generalizing the 2026-09-09 entry's pattern to the Audit Committee run (latest YouTube meetings sweep).",
+      "capture": {
+        "status": "unverified",
+        "wayback_timestamp": null,
+        "sha256": null,
+        "bytes": null,
+        "anchor_offset": null,
+        "anchor_length": null,
+        "content_type": null,
+        "fetched_at": null
+      }
     }
   ]
 }
