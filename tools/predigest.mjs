@@ -11,9 +11,8 @@
 // whole corpus lands fast. Docs without a digest still live-read (today's
 // safe fallback).
 //
-// Run locally:   node tools/predigest.mjs
-// CI runs it on any push touching transcripts/ or derived/ and commits the
-// changed digest (see .github/workflows/digest.yml).
+// Run locally:   tools/digest.sh   (extract + predigest), then commit the
+// regenerated files. CI does not digest — the output is committed.
 import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";

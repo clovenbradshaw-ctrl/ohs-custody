@@ -67,8 +67,9 @@ which, per doc:
   byte span (verified at build time), so the payload stays small,
 - writes the `.zst` twins.
 
-`.github/workflows/digest.yml` reruns this on any push touching the corpus,
-and `vendor_holodeck.py` reruns it on every re-vendor (and preserves this
+Digesting is done locally, not in CI: run `tools/digest.sh` after changing
+the corpus and commit the regenerated files. `vendor_holodeck.py` also reruns
+it on every re-vendor (and preserves this
 file and `VENDOR.md` across the wipe).
 
 ## Faithfulness rules (do not break)
