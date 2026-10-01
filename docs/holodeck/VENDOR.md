@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `9c73f3cb523e1d67d97260451c82f273b990511a`
-Vendored: 2026-10-01T19:20:09+00:00 by `python3 vendor_holodeck.py`
+Vendored: 2026-10-01T19:32:39+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -31,12 +31,17 @@ is duplicated here.
 - lazy: open a source loads its text + derives statement texts from spans
 - analysis: rehydrate + fetchDecodedOHS helpers
 - analysis: return the prebuilt analysis while the workspace is exactly the seeded set
+- honesty: banner in the Sources view discloses the loaded slice
+- honesty: expose ohsLoadedNote in render
+- honesty: ohsLoadedNote at top level of render
+- launch: land on Sources, hide Start here
+- launch: remove Start here from the nav
 
-Patched `index.html` sha256: `3ffc661769e4b8298468b7ebc0f76819a8f95d0cc7707f1ebb6b5ca5153f7ced`
+Patched `index.html` sha256: `4b7aa9b39b1826dc31015a7f35df5b8e886fe7edf61a7984425889c2a98e25d7`
 
-Seed manifest `ohs-seed.json`: `140` entries `23797b69d5fb`
+Seed manifest `ohs-seed.json`: `140` entries `fd77933f36a3`
 
-Log `ohs.log`: `140` docs `abea65c8f36a` `41.2MB` (schema `ohs-log@3`, spans + source pointers)
+Log `ohs.log`: `140` docs `76cb262a8010` `41.2MB` (schema `ohs-log@3`, spans + source pointers)
 
 ## Files
 

@@ -1059,6 +1059,10 @@ select option{background:var(--s1);color:var(--ink)}
       </sc-if>
 
       <sc-if value="{{ v.sources }}" hint-placeholder-val="{{ false }}">
+        <sc-if value="{{ ohsLoadedNote }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;align-items:center;gap:8px;background:var(--s1);border:1px solid var(--line2);border-radius:12px;padding:10px 14px;margin-bottom:10px;font:400 13px 'Hanken Grotesk';color:var(--mut);text-wrap:pretty">{{ ohsLoadedNote }}</div>
+        </sc-if>
+
         <sc-if value="{{ hasFacets }}" hint-placeholder-val="{{ false }}">
           <div style="display:flex;flex-direction:column;gap:8px;background:var(--s1);border:1px solid var(--line);border-radius:12px;padding:12px 14px">
             <sc-for list="{{ srcFacets }}" as="fa" hint-placeholder-count="3">
@@ -3313,7 +3317,7 @@ function rehydrateOhsAnalysis(P, docs, loadedIds) {
   return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById };
 }
 class Component extends DCLogic {
-  state = { corpus: null, added: loadAdded(), view: 'summary', sel: null, f: {}, q: '', readDoc: null, showPos: false, showAdd: false, showSettings: false, draftTitle: '', draftYear: '', draftText: '', fw: {}, note: '', theme: loadTheme(), railOpen: loadRailOpen(), segOpen: loadSegOpen(), dragging: false, busy: '', just: null, readMode: 'original', htmlVer: 0, txAsk: null, txPrior: 'workspace', txLang: 'en', txModel: 'base', txBusy: false, txProg: '', ground: { on: true, names: true, figures: true, dates: true, sentences: true } };
+  state = { corpus: null, added: loadAdded(), view: 'sources', sel: null, f: {}, q: '', readDoc: null, showPos: false, showAdd: false, showSettings: false, draftTitle: '', draftYear: '', draftText: '', fw: {}, note: '', theme: loadTheme(), railOpen: loadRailOpen(), segOpen: loadSegOpen(), dragging: false, busy: '', just: null, readMode: 'original', htmlVer: 0, txAsk: null, txPrior: 'workspace', txLang: 'en', txModel: 'base', txBusy: false, txProg: '', ground: { on: true, names: true, figures: true, dates: true, sentences: true } };
   _html = {};
 
   componentDidMount() {
@@ -5556,7 +5560,8 @@ class Component extends DCLogic {
       : srcGroups.map(g => ({ label: g.label + ' · ' + g.n, hasLabel: true, rows: mkRows(rowsAll.filter(r => r.group === g.label)) }));
     const seg = on => ({ bg: on ? 'var(--sel2)' : 'transparent', col: on ? 'var(--ink)' : 'var(--mut)' });
     const meetVals = {};
-    const svVals = { ...meetVals, srcHiddenNote: this._srcHidden ? plural(this._srcHidden, 'other source') + ' with nothing in this selection ' + (this._srcHidden === 1 ? 'is' : 'are') + ' hidden' : '', svCards: svMode === 'cards', svTable: svMode === 'table', svTabsOn: svGroup === 'tabs',
+    const svVals = { ...meetVals, srcHiddenNote: this._srcHidden ? plural(this._srcHidden, 'other source') + ' with nothing in this selection ' + (this._srcHidden === 1 ? 'is' : 'are') + ' hidden' : '',
+      ohsLoadedNote: (this._ohsP && this._ohsLoadedIds && this._ohsLoadedIds.size < this._ohsP.docs.length) ? this._ohsLoadedIds.size + ' of ' + this._ohsP.docs.length + ' sources loaded — statements fold as you open sources' : null, svCards: svMode === 'cards', svTable: svMode === 'table', svTabsOn: svGroup === 'tabs',
       svModes: [['cards', 'Cards'], ['table', 'Table']].map(([k, l]) => ({ label: l, ...seg(svMode === k), onClick: () => this.setState({ svMode: k }) })),
       svGroups: [['tabs', 'Tabs by kind'], ['sections', 'Sections by kind'], ['one', 'One list']].map(([k, l]) => ({ label: l, ...seg(svGroup === k), onClick: () => this.setState({ svGroup: k }) })),
       svTabs: tabs.map(t => ({ label: t.label, n: t.n, bd: t.id === svTab ? '#8b5cf6' : 'transparent', col: t.id === svTab ? 'var(--ink)' : 'var(--mut)', onClick: () => this.setState({ svTab: t.id }) })),
@@ -5825,7 +5830,7 @@ class Component extends DCLogic {
     ];
     const gHi = on => ({ bg: on ? 'var(--sel)' : 'transparent', bd: on ? '#8b5cf6' : 'transparent', weight: on ? 600 : 500 });
     const goalNav = [{ id: 'summary', label: 'Start here', count: '' }, { id: 'draft', label: 'Draft', count: this.activePins().length ? String(this.activePins().length) : '' }, { id: 'ask', label: 'Ask the Fold', count: this._conv && this._conv.turns && this._conv.turns.length ? String(this._conv.turns.length) : '' }, { id: 'records', label: 'Records', count: this._db ? String(this._db.schema.tables.length) : '' }, { id: 'ingest', label: 'Ingest & publish', count: (this._net && this._net.chain && this._net.chain.length) ? String(this._net.chain.length) : '' }, ...GOALS.map(g => ({ id: g[0], label: g[1], count: counts[g[0]] }))].map(g => ({ ...g, ...gHi(view === g.id), onClick: () => this.go(g.id) }));
-    const NAVG = [['', [['summary', 'Start here'], ['ask', 'Ask the Fold']]], ['Read', [['sources', 'Sources'], ['names', 'Names'], ['records', 'Assertions']]], ['Explore', [['connections', 'Connections']]], ['Your work', [['draft', 'Draft'], ['ingest', 'Add & publish']]]];
+    const NAVG = [['', [['ask', 'Ask the Fold']]], ['Read', [['sources', 'Sources'], ['names', 'Names'], ['records', 'Assertions']]], ['Explore', [['connections', 'Connections']]], ['Your work', [['draft', 'Draft'], ['ingest', 'Add & publish']]]];
     const countFor = id => ({
       sources: String(A.docs.filter(d => this.counted(d)).length), names: String(D.nameList.length), records: String(F.length),
       connections: String(D.edgeList.length),

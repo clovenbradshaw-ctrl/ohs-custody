@@ -289,6 +289,34 @@ OHS_OVERLAY_PATCHES = [
         "    }\n"
         "    const id = this.corpusId(); const seenU = new Set();",
     ),
+    (
+        "honesty: banner in the Sources view discloses the loaded slice",
+        '<sc-if value="{{ v.sources }}" hint-placeholder-val="{{ false }}">',
+        '<sc-if value="{{ v.sources }}" hint-placeholder-val="{{ false }}">\n'
+        '        <sc-if value="{{ ohsLoadedNote }}" hint-placeholder-val="{{ false }}">\n'
+        "          <div style=\"display:flex;align-items:center;gap:8px;background:var(--s1);border:1px solid var(--line2);border-radius:12px;padding:10px 14px;margin-bottom:10px;font:400 13px 'Hanken Grotesk';color:var(--mut);text-wrap:pretty\">{{ ohsLoadedNote }}</div>\n"
+        '        </sc-if>\n',
+    ),
+    (
+        "honesty: expose ohsLoadedNote in render",
+        "      srcNote: nOn + ' of ' + kept.length + ' sources on', allOn: () => this.setState({ offDocs: {} }), someOff: nOn < kept.le",
+        "      srcNote: nOn + ' of ' + kept.length + ' sources on', allOn: () => this.setState({ offDocs: {} }), someOff: nOn < kept.le",
+    ),
+    (
+        "honesty: ohsLoadedNote at top level of render",
+        "srcHiddenNote: this._srcHidden ? plural(this._srcHidden, 'other source') + ' with nothing in this selection ' + (this._srcHidden === 1 ? 'is' : 'are') + ' hidden' : '', svCards: sv",
+        "srcHiddenNote: this._srcHidden ? plural(this._srcHidden, 'other source') + ' with nothing in this selection ' + (this._srcHidden === 1 ? 'is' : 'are') + ' hidden' : '',\n      ohsLoadedNote: (this._ohsP && this._ohsLoadedIds && this._ohsLoadedIds.size < this._ohsP.docs.length) ? this._ohsLoadedIds.size + ' of ' + this._ohsP.docs.length + ' sources loaded — statements fold as you open sources' : null, svCards: sv",
+    ),
+    (
+        "launch: land on Sources, hide Start here",
+        "state = { corpus: null, added: loadAdded(), view: 'summary', sel: null, f: {}, q: '', readDoc: null,",
+        "state = { corpus: null, added: loadAdded(), view: 'sources', sel: null, f: {}, q: '', readDoc: null,",
+    ),
+    (
+        "launch: remove Start here from the nav",
+        "const NAVG = [['', [['summary', 'Start here'], ['ask', 'Ask the Fold']]], ['Read",
+        "const NAVG = [['', [['ask', 'Ask the Fold']]], ['Read",
+    ),
 ]
 
 
