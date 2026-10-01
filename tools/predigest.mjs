@@ -91,6 +91,25 @@ async function main() {
   const payload = { generated: new Date().toISOString(), schema: "ohs-readings@1", entries: readings };
   fs.writeFileSync(OUT, JSON.stringify(payload));
   console.log(`wrote ${OUT}: ${Object.keys(readings).length} docs, ${fs.statSync(OUT).size} bytes, ${Math.round((Date.now() - tStart) / 1000)}s`);
+
+  // One-shot bundle: every doc (text + pre-read eng) in a single file, so the
+  // app loads ALL data with one fetch + one analysis pass.
+  const BUNDLE = path.join(HD, "ohs-bundle.json");
+  const docs = entries.map((e) => {
+    const eng = (readings[e.path] || {}).eng;
+    return {
+      title: e.title,
+      year: null,
+      type: "Repo file",
+      text: fs.readFileSync(path.join(ROOT, e.path), "utf8"),
+      url: e.url,
+      note: `From ohs-custody · ${e.path}`,
+      measured: true,
+      extra: eng ? { eng } : {},
+    };
+  });
+  fs.writeFileSync(BUNDLE, JSON.stringify({ generated: new Date().toISOString(), docs }));
+  console.log(`wrote ${BUNDLE}: ${docs.length} docs, ${fs.statSync(BUNDLE).size} bytes`);
 }
 
 main().catch((e) => { console.error("predigest failed:", e); process.exit(1); });

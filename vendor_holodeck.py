@@ -29,6 +29,7 @@ Rules:
     raw.githubusercontent.com URLs, so no data is duplicated here.
 """
 import hashlib
+import json
 import pathlib
 import subprocess
 import sys
@@ -67,19 +68,28 @@ OHS_OVERLAY_PATCHES = [
         "  // transcripts) go first. Each background batch restores the\n"
         "  // visitor's view/selection/question so the trickle never yanks\n"
         "  // them around, and the import announcement stays cleared.\n"
-        "  // The live tree listing needs api.github.com (60 req/hr shared\n"
-        "  // quota); on failure it falls back to the vendored ohs-seed.json\n"
-        "  // manifest (same shapes, possibly older), and if both fail the\n"
-        "  // pill says so and retries once after 90s instead of dying silent.\n"
-        "  // Engine reads are PRE-DIGESTED: docs/holodeck/ohs-readings.json\n"
-        "  // carries the vendored reader's compact output per path, attached\n"
-        "  // as measured:true + extra.eng so addDocs NEVER waits on a live\n"
-        "  // engine host. Docs without a digest still live-read (safe).\n"
+        "  // FAST PATH FIRST: docs/holodeck/ohs-bundle.json holds every doc\n"
+        "  // (text + pre-read eng) in ONE file. One fetch + one addDocs + one\n"
+        "  // analysis pass = all data at once, no per-file fetches, no\n"
+        "  // re-analysis per batch. If the bundle fetch fails, it falls back\n"
+        "  // to the trickle path below.\n"
         "  async ohsSeed() {\n"
         "    let docs = [];\n"
         "    try { docs = this.analysis().docs || []; } catch (e) {}\n"
         "    if (docs.length) return;\n"
         "    const say = m => { try { this.setState({ busy: m }); } catch (e) {} };\n"
+        "    try {\n"
+        "      const br = await fetch(new URL('ohs-bundle.json', location.href).href, { cache: 'no-cache' });\n"
+        "      if (br.ok) {\n"
+        "        const B = await br.json();\n"
+        "        if (B && Array.isArray(B.docs) && B.docs.length) {\n"
+        "          say('Loading OHS corpus · ' + B.docs.length + ' documents…');\n"
+        "          await this.addDocs(B.docs);\n"
+        "          this.setState({ just: null, busy: '' });\n"
+        "          return;\n"
+        "        }\n"
+        "      }\n"
+        "    } catch (e) {}\n"
         "    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\\.json$/;\n"
         "    const isSeedPath = p => /\\.txt$/i.test(p) && (p.indexOf('transcripts/') === 0 || p.indexOf('derived/') === 0) && !MACHINE_JSON.test(p);\n"
         "    let READINGS = {};\n"
@@ -263,6 +273,11 @@ def main():
     if r.returncode != 0:
         raise SystemExit(f"predigest failed: {r.stdout[-500:]} {r.stderr[-500:]}")
     readings_sha = sha256(DEST / "ohs-readings.json")
+
+    # One-shot bundle: all docs + pre-read eng in a single file.
+    bundle_n = len(json.loads((DEST / "ohs-bundle.json").read_text(encoding="utf-8"))["docs"])
+    bundle_sha = sha256(DEST / "ohs-bundle.json")
+    bundle_bytes = (DEST / "ohs-bundle.json").stat().st_size
 
     upstream_sha = git_sha(SRC)
     upstream_status = git_status_short(SRC)

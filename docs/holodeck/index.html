@@ -3336,19 +3336,28 @@ class Component extends DCLogic {
   // transcripts) go first. Each background batch restores the
   // visitor's view/selection/question so the trickle never yanks
   // them around, and the import announcement stays cleared.
-  // The live tree listing needs api.github.com (60 req/hr shared
-  // quota); on failure it falls back to the vendored ohs-seed.json
-  // manifest (same shapes, possibly older), and if both fail the
-  // pill says so and retries once after 90s instead of dying silent.
-  // Engine reads are PRE-DIGESTED: docs/holodeck/ohs-readings.json
-  // carries the vendored reader's compact output per path, attached
-  // as measured:true + extra.eng so addDocs NEVER waits on a live
-  // engine host. Docs without a digest still live-read (safe).
+  // FAST PATH FIRST: docs/holodeck/ohs-bundle.json holds every doc
+  // (text + pre-read eng) in ONE file. One fetch + one addDocs + one
+  // analysis pass = all data at once, no per-file fetches, no
+  // re-analysis per batch. If the bundle fetch fails, it falls back
+  // to the trickle path below.
   async ohsSeed() {
     let docs = [];
     try { docs = this.analysis().docs || []; } catch (e) {}
     if (docs.length) return;
     const say = m => { try { this.setState({ busy: m }); } catch (e) {} };
+    try {
+      const br = await fetch(new URL('ohs-bundle.json', location.href).href, { cache: 'no-cache' });
+      if (br.ok) {
+        const B = await br.json();
+        if (B && Array.isArray(B.docs) && B.docs.length) {
+          say('Loading OHS corpus · ' + B.docs.length + ' documents…');
+          await this.addDocs(B.docs);
+          this.setState({ just: null, busy: '' });
+          return;
+        }
+      }
+    } catch (e) {}
     const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
     const isSeedPath = p => /\.txt$/i.test(p) && (p.indexOf('transcripts/') === 0 || p.indexOf('derived/') === 0) && !MACHINE_JSON.test(p);
     let READINGS = {};

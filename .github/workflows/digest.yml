@@ -24,11 +24,11 @@ jobs:
         run: node tools/predigest.mjs
       - name: Commit changed digest
         run: |
-          if ! git diff --quiet -- docs/holodeck/ohs-readings.json; then
+          if ! git diff --quiet -- docs/holodeck/ohs-readings.json docs/holodeck/ohs-bundle.json; then
             git config user.name "ohs-custody digester"
             git config user.email "digester@users.noreply.github.com"
-            git add docs/holodeck/ohs-readings.json
-            git commit -m "[skip ci] predigest: refresh ohs-readings.json ($(git rev-parse --short HEAD))"
+            git add docs/holodeck/ohs-readings.json docs/holodeck/ohs-bundle.json
+            git commit -m "[skip ci] predigest: refresh ohs-readings + ohs-bundle ($(git rev-parse --short HEAD))"
             git push
           else
             echo "digest unchanged"
