@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `82033ed0a24de8a6804ee87d8bd1392fe03d91b4`
-Vendored: 2026-10-01T15:11:45+00:00 by `python3 vendor_holodeck.py`
+Vendored: 2026-10-01T15:22:33+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -32,11 +32,11 @@ is duplicated here.
 - analysis: rehydrate + fetchDecodedOHS helpers
 - analysis: return the prebuilt analysis while the workspace is exactly the seeded set
 
-Patched `index.html` sha256: `f85d79d20d1ca0c652457a61541790ca3a6762ab93093bf94f910dbb17c4321e`
+Patched `index.html` sha256: `a6143cdbfd58b8ead39072b1061732dea65d3a937bc2346f7761b7f40630e26e`
 
-Seed manifest `ohs-seed.json`: `140` entries `d3e5ee869857`
+Seed manifest `ohs-seed.json`: `140` entries `9066bd0a0d46`
 
-Digest `ohs-readings.json`: `25e833737604` (engine pre-reads, schema `ohs-readings@1`)
+Digest `ohs-readings.json`: `39209771d2f4` (engine pre-reads, schema `ohs-readings@1`)
 
 ## Files
 

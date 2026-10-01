@@ -3233,23 +3233,22 @@ const whenOf = (st, d) => d.pubLabel || (d.year ? String(d.year) : 'Undated');
 const assertLine = (st, A) => { const d = A.docById[st.doc]; const w = whoSays(st, A); return (w ? w.who + (w.how === 'quoted' ? ' (quoted)' : w.how === 'publisher' ? '' : ' (' + w.how + ')') + ' · ' : '') + d.title + ' · ' + whenOf(st, d); };
 
 // ── OHS Pages overlay: fetch a JSON artifact preferring its .zst twin,
-// decoded with the same zstd-wasm the app's reading-worker already uses.
+// decoded with the browser's native DecompressionStream('zstd') — no
+// external CDN import on the seed path — falling back to the .json.
 async function fetchDecodedOHS(path, onStep) {
   const step = s => { try { onStep && onStep(s); } catch (e) {} };
-  const zst = path + '.zst';
-  try {
-    const r = await fetch(new URL(zst, location.href).href, { cache: 'no-cache' });
-    if (r.ok) {
-      step('fetch');
-      const M = await import('https://esm.sh/@bokuweb/zstd-wasm@0.0.27');
-      await M.init();
-      const raw = M.decompress(new Uint8Array(await r.arrayBuffer()));
+  const r = await fetch(new URL(path + '.zst', location.href).href, { cache: 'no-cache' });
+  if (r.ok) {
+    step('fetch');
+    const buf = new Uint8Array(await r.arrayBuffer());
+    try {
+      const raw = new Uint8Array(await new Response(new Blob([buf]).stream().pipeThrough(new DecompressionStream('zstd'))).arrayBuffer());
       step('decode');
       const parsed = JSON.parse(new TextDecoder().decode(raw));
       step('parse');
       return parsed;
-    }
-  } catch (e) {}
+    } catch (e) { /* native zstd unavailable — fall back to the .json */ }
+  }
   const r2 = await fetch(new URL(path, location.href).href, { cache: 'no-cache' });
   if (!r2.ok) throw new Error('artifact unavailable: ' + path);
   const parsed2 = await r2.json();
