@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
-Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `82033ed0a24de8a6804ee87d8bd1392fe03d91b4`
-Vendored: 2026-10-01T16:36:02+00:00 by `python3 vendor_holodeck.py`
+Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `9c73f3cb523e1d67d97260451c82f273b990511a`
+Vendored: 2026-10-01T19:01:45+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -28,19 +28,20 @@ is duplicated here.
 - chrome: topic placeholder names the OHS audit, not a bridge collapse
 - loading: centered progress overlay (spinner + staged bar) during seed
 - loading: expose seedPct in render
+- lazy: open a source loads its text + derives statement texts from spans
 - analysis: rehydrate + fetchDecodedOHS helpers
 - analysis: return the prebuilt analysis while the workspace is exactly the seeded set
 
-Patched `index.html` sha256: `e3efd3e6d75f35edc53cbfe5a5890294222a8aa2fc1170ac3544ff01f7fefe2e`
+Patched `index.html` sha256: `dd49ad7615f024c4a18bfef7d3d4cb08c0ef9a989a2d03af529985ef664f9684`
 
-Seed manifest `ohs-seed.json`: `140` entries `739d93184c3e`
+Seed manifest `ohs-seed.json`: `140` entries `0e049b025b7b`
 
-Digest `ohs-readings.json`: `87b3a5f959cc` (engine pre-reads, schema `ohs-readings@1`)
+Log `ohs.log`: `140` docs `aaafacccb475` `42.5MB` (schema `ohs-log@3`, spans + source pointers)
 
 ## Files
 
-- `index.html` `133b87ca6f0d`
-- `fold-net.js` `cb13f407d608`
+- `index.html` `1b2e9272936a`
+- `fold-net.js` `8eb260d7c5ba`
 - `holodeck-ask.js` `f3791b142e3f`
 - `holodeck-doors.js` `724201428af9`
 - `holodeck-echo.js` `401bf4bc20c0`

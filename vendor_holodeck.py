@@ -82,19 +82,18 @@ OHS_OVERLAY_PATCHES = [
         "    try {\n"
         "      stage(5, 'Loading OHS corpus · sources…');\n"
         "      const L = await loadLogOHS();\n"
-        "      if (L && Array.isArray(L.docs) && L.docs.length) {\n"
+        "      if (L && Array.isArray(L.docs) && L.docs.length && Array.isArray(L.sts) && L.sts.length) {\n"
         "        const cid = this.corpusId();\n"
         "        const added = { ...this.state.added, [cid]: L.docs };\n"
         "        this.saveAdded(added);\n"
-        "        // Phase 1: a minimal graph from the log's docs alone — Sources renders now.\n"
-        "        this._ohsMinimal = { sts: [], names: {}, byId: {}, stsByDoc: {}, echoes: {}, echoFloor: 0, docs: L.docs, docById: Object.fromEntries(L.docs.map(d => [d.id, d])) };\n"
+        "        // Compute once, append: seed a FAST partial graph — the priority\n"
+        "        // sources' statements — and fold the rest per-source on open.\n"
+        "        const PRIORITY = [/WELSCH/i, /MHRC/i, /SEP23/i, /DEC9/i, /2026-09-29/i, /2026-06-30/i, /sept23-audit/i, /2026-09-09/i, /2026-09-23/i, /HID-2023/i];\n"
+        "        const loaded = new Set(L.docs.filter(d => PRIORITY.some(re => re.test(d.title))).map(d => d.id));\n"
+        "        L.corrKey = this.corrKey(cid);\n"
+        "        this._ohsP = L; this._ohsLoadedIds = loaded; this._ohsRev = 1; this._ohsA = null; this._ohsMinimal = null;\n"
+        "        console.log('OHS seed: docs=' + L.docs.length + ' sts=' + L.sts.length + ' names=' + Object.keys(L.names || {}).length + ' loaded=' + loaded.size + ' sources');\n"
         "        this.setState({ added, just: null, busy: '', seedPct: 100 });\n"
-        "        // Phase 2: the log already carries the index — fold it in immediately.\n"
-        "        if (L.sts && L.sts.length && L.docIds === L.docs.map(d => d.id).join(',')) {\n"
-        "          L.corrKey = this.corrKey(this.corpusId());\n"
-        "          this._ohsP = L; this._ohsA = null; this._ohsMinimal = null;\n"
-        "          try { this.setState({ just: null, busy: '' }); } catch (e) {}\n"
-        "        }\n"
         "        return;\n"
         "      }\n"
         "    } catch (e) {}\n"
@@ -192,6 +191,11 @@ OHS_OVERLAY_PATCHES = [
         "dragging: S.dragging, isBusy: !!S.busy, busy: S.busy, seedPct: S.seedPct || 0,",
     ),
     (
+        "lazy: open a source loads its text + derives statement texts from spans",
+        "  read(docId, stId) { const S0 = this.state;",
+        "  async read(docId, stId) { try { await this.ensureOhsText(docId); } catch (e) {} try { if (this._ohsP && this._ohsP.stsByDoc && this._ohsLoadedIds && !this._ohsLoadedIds.has(docId) && this._ohsP.stsByDoc[docId] && this._ohsP.stsByDoc[docId].length) { this._ohsLoadedIds.add(docId); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; } } catch (e) {} const S0 = this.state;",
+    ),
+    (
         "analysis: rehydrate + fetchDecodedOHS helpers",
         "class Component extends DCLogic {",
         "// ── OHS Pages overlay: load a JSON artifact. Pages serves .json with\n"
@@ -207,7 +211,7 @@ OHS_OVERLAY_PATCHES = [
         "// after the first visit; revisits read it instantly and revalidate\n"
         "// against the tiny ohs-seed.json fingerprint.\n"
         "const ohsFpOf = seed => seed.entries.map(e => e.path + ':' + e.sha256).join('|');\n"
-        "const OHS_DIGEST_VERSION = 'v3'; // bump when the digest shape changes, so stale stashes are discarded\n"
+        "const OHS_DIGEST_VERSION = 'v4'; // bump when the digest shape changes, so stale stashes are discarded\n"
         "async function ohsCached(key) { try { return await idbGet(key); } catch (e) { return null; } }\n"
         "async function ohsStash(key, val) { try { await idbPut(key, val); } catch (e) {} }\n"
         "async function ohsFingerprint() {\n"
@@ -229,23 +233,36 @@ OHS_OVERLAY_PATCHES = [
         "  if (live != null) ohsStash('ohs:fingerprint', live);\n"
         "  return L;\n"
         "}\n"
+        "async function ensureOhsText(docId) {\n"
+        "  try {\n"
+        "    const A = this.analysis(); const d = A.docById[docId];\n"
+        "    if (!d || d.text) return;\n"
+        "    const r = await fetch(new URL('src/' + docId + '.txt', location.href).href, { cache: 'no-cache' });\n"
+        "    if (!r.ok) return;\n"
+        "    d.text = await r.text();\n"
+        "    const ss = A.stsByDoc[docId] || [];\n"
+        "    ss.forEach(st => { if (st.s != null && st.e != null && st.text == null) st.text = d.text.slice(st.s, st.e); });\n"
+        "    try { this.forceUpdate(); } catch (e) {}\n"
+        "  } catch (e) {}\n"
+        "}\n"
         "// Rehydrate the pre-digested analysis: ships sts once + names with their\n"
         "// statement objects; rebuild the index maps here, same shapes analyze()\n"
         "// produces, so the render sees a real graph.\n"
-        "function rehydrateOhsAnalysis(P, docs) {\n"
-        "  const byId = Object.fromEntries(P.sts.map(s => [s.id, s]));\n"
+        "function rehydrateOhsAnalysis(P, docs, loadedIds) {\n"
+        "  // Fold the LOADED subset only: statements of sources not yet opened are\n"
+        "  // kept out of the graph so renderValsFull stays fast. Each fold (open a\n"
+        "  // source) widens loadedIds and rebuilds this projection — compute once\n"
+        "  // per change, not per frame.\n"
+        "  const isLoaded = s => !loadedIds || loadedIds.has(s.doc);\n"
+        "  const sts = P.sts.filter(isLoaded);\n"
+        "  const byId = Object.fromEntries(sts.map(s => [s.id, s]));\n"
         "  const docById = Object.fromEntries(docs.map(d => [d.id, d]));\n"
-        "  // Byte-addressed statements: text is null where the doc's cleaned text\n"
-        "  // reproduces it from the byte span; derive it here so the payload stays\n"
-        "  // small and the span stays the source of truth. topics is dropped from\n"
-        "  // the digest (not figured out yet) — give each statement an empty list\n"
-        "  // so every render path that reads st.topics keeps working.\n"
-        "  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } if (!Array.isArray(s.topics)) s.topics = []; });\n"
-        "  // names.docs is a Set in analyze; the digest serializes it as an array.\n"
+        "  sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } if (!Array.isArray(s.topics)) s.topics = []; });\n"
+        "  const presentDocs = new Set(sts.map(s => s.doc));\n"
         "  const names = {};\n"
-        "  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs) };\n"
-        "  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });\n"
-        "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names, byId, docById };\n"
+        "  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs.filter(id => presentDocs.has(id))), sts: v.sts.map(id => byId[id]).filter(Boolean) };\n"
+        "  const stsByDoc = {}; sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });\n"
+        "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById };\n"
         "}\n"
         "class Component extends DCLogic {",
     ),
@@ -257,7 +274,7 @@ OHS_OVERLAY_PATCHES = [
         "    if (this._ohsP) {\n"
         "      const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));\n"
         "      if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {\n"
-        "        if (!this._ohsA) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || []); } catch (e) { this._ohsA = null; console.error('OHS rehydrate failed', e); } }\n"
+        "        if (!this._ohsA || this._ohsA._rev !== this._ohsRev) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || [], this._ohsLoadedIds); if (this._ohsA) this._ohsA._rev = this._ohsRev; } catch (e) { this._ohsA = null; console.error('OHS rehydrate failed', e); } }\n"
         "        if (this._ohsA) return this._ohsA;\n"
         "        // Rehydrate failed: NEVER fall through to live analyze over the\n"
         "        // seeded corpus (synchronous multi-minute freeze). Return a\n"
@@ -388,12 +405,10 @@ def main():
                        capture_output=True, text=True, timeout=1800)
     if r.returncode != 0:
         raise SystemExit(f"predigest failed: {r.stdout[-500:]} {r.stderr[-500:]}")
-    readings_sha = sha256(DEST / "ohs-readings.json")
-
-    # One-shot bundle: all docs + pre-read eng in a single file.
-    bundle_n = len(json.loads((DEST / "ohs-bundle.json").read_text(encoding="utf-8"))["docs"])
-    bundle_sha = sha256(DEST / "ohs-bundle.json")
-    bundle_bytes = (DEST / "ohs-bundle.json").stat().st_size
+    # One log: all docs + index + per-source statement groups.
+    log_n = len(json.loads((DEST / "ohs.log").read_text(encoding="utf-8"))["docs"])
+    log_sha = sha256(DEST / "ohs.log")
+    log_bytes = (DEST / "ohs.log").stat().st_size
 
     upstream_sha = git_sha(SRC)
     upstream_status = git_status_short(SRC)
@@ -425,7 +440,7 @@ def main():
     lines += [f"- {d}" for d in overlay] + [""]
     lines += [f"Patched `index.html` sha256: `{overlay_sha}`", ""]
     lines += [f"Seed manifest `ohs-seed.json`: `{seed_n}` entries `{seed_sha[:12]}`", ""]
-    lines += [f"Digest `ohs-readings.json`: `{readings_sha[:12]}` (engine pre-reads, schema `ohs-readings@1`)", ""]
+    lines += [f"Log `ohs.log`: `{log_n}` docs `{log_sha[:12]}` `{log_bytes/1e6:.1f}MB` (schema `ohs-log@3`, spans + source pointers)", ""]
     lines += ["## Files", ""]
     for rel, h in manifest:
         lines.append(f"- `{rel}` `{h[:12]}`")

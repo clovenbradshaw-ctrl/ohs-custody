@@ -82,18 +82,22 @@ export async function merge(temp, server, user, password, rooms, carry) {
 // ---------- rooms ----------
 export async function resolve(s, idOrAlias) { if (/^!/.test(idOrAlias)) return idOrAlias; const j = await api(s, 'GET', '/_matrix/client/v3/directory/room/' + encodeURIComponent(idOrAlias)); return j.room_id; }
 export async function join(s, idOrAlias) { const j = await api(s, 'POST', '/_matrix/client/v3/join/' + encodeURIComponent(idOrAlias), {}); return j.room_id; }
-export async function createWorkspace(s, { name, alias, isPublic, config }) {
+export async function createWorkspace(s, { name, alias, isPublic, config, visibility, preset, topic }) {
   const initial_state = [{ type: CONFIG, state_key: '', content: config || {} }];
   if (isPublic) initial_state.push({ type: 'm.room.history_visibility', state_key: '', content: { history_visibility: 'world_readable' } }, { type: 'm.room.guest_access', state_key: '', content: { guest_access: 'can_join' } });
-  const body = { name, preset: isPublic ? 'public_chat' : 'private_chat', visibility: isPublic ? 'public' : 'private', initial_state, topic: isPublic ? 'Fold workspace: public source custody, hash-chained blocks' : 'Fold workspace: private work' };
+  const body = { name, preset: preset || (isPublic ? 'public_chat' : 'private_chat'), visibility: visibility || (isPublic ? 'public' : 'private'), initial_state, topic: topic || (isPublic ? 'Fold workspace: public source custody, hash-chained blocks' : 'Fold workspace: private work') };
   if (alias) body.room_alias_name = alias;
   const j = await api(s, 'POST', '/_matrix/client/v3/createRoom', body); return j.room_id;
 }
+export async function setRoomAlias(s, roomId, alias) { return api(s, 'PUT', '/_matrix/client/v3/directory/room/' + encodeURIComponent(alias), { room_id: roomId }); }
 export async function invite(s, room, userId) { return api(s, 'POST', '/_matrix/client/v3/rooms/' + encodeURIComponent(room) + '/invite', { user_id: userId }); }
 export async function getState(s, room, type, key) { try { return await api(s, 'GET', '/_matrix/client/v3/rooms/' + encodeURIComponent(room) + '/state/' + encodeURIComponent(type) + '/' + encodeURIComponent(key || '')); } catch (e) { if (e.status === 404) return null; throw e; } }
 export async function setState(s, room, type, key, content) { return api(s, 'PUT', '/_matrix/client/v3/rooms/' + encodeURIComponent(room) + '/state/' + encodeURIComponent(type) + '/' + encodeURIComponent(key || ''), content); }
 export const getConfig = (s, room) => getState(s, room, CONFIG, '');
 export const setConfig = (s, room, c) => setState(s, room, CONFIG, '', c);
+// ---------- account data (private, synced to the account's own devices) ----------
+export async function getAccountData(s, type) { try { return await api(s, 'GET', '/_matrix/client/v3/user/' + encodeURIComponent(s.user) + '/account_data/' + encodeURIComponent(type)); } catch (e) { if (e.status === 404) return null; throw e; } }
+export async function setAccountData(s, type, content) { return api(s, 'PUT', '/_matrix/client/v3/user/' + encodeURIComponent(s.user) + '/account_data/' + encodeURIComponent(type), content); }
 async function send(s, room, type, content) { const txn = 'fx' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); return api(s, 'PUT', '/_matrix/client/v3/rooms/' + encodeURIComponent(room) + '/send/' + encodeURIComponent(type) + '/' + txn, content); }
 export async function events(s, room, type, max) {
   const out = []; let from = ''; for (let k = 0; k < 40; k++) {

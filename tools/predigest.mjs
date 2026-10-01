@@ -54,69 +54,16 @@ function writeArtifact(file, obj) {
 }
 
 async function main() {
-  const { makeEngineRelationReader } = await import(
-    path.join(HD, "holodeck-reader.js")
-  );
-  const read = await makeEngineRelationReader();
-
   const seed = JSON.parse(fs.readFileSync(SEED, "utf8"));
   const entries = seed.entries.filter((e) => e.path.endsWith(".txt"));
-  const readings = {};
-  let done = 0;
   const tStart = Date.now();
-  for (const e of entries) {
-    const abs = path.join(ROOT, e.path);
-    const txt = fs.readFileSync(abs, "utf8");
-    const t0 = Date.now();
-    let out;
-    try {
-      out = await read([{ text: txt, name: e.title }], {});
-    } catch (err) {
-      console.error(`read failed ${e.path}: ${err.message}`);
-      continue;
-    }
-    const edges = out.edges || [];
-    const byName = new Map();
-    const desc = [];
-    const seenDesc = new Set();
-    for (const ed of edges) {
-      for (const side of ["end1", "end2"]) {
-        const nm = ed[side];
-        if (!nm || typeof nm !== "string") continue;
-        if (!byName.has(nm)) byName.set(nm, { surfaces: [nm], routes: ["relation"], grain: null });
-        const face = ed[side + "Face"];
-        if (face && face !== nm && !seenDesc.has(face)) {
-          seenDesc.add(face);
-          desc.push({ surfaces: [face], routes: ["descriptor"] });
-        }
-      }
-    }
-    readings[e.path] = {
-      sha256: hash(fs.readFileSync(abs)),
-      eng: {
-        ms: Date.now() - t0,
-        basis: "predigest:v1 (vendored holodeck-reader edges -> compact)",
-        relations: edges.length,
-        referents: [...byName.values()],
-        descriptorBeings: desc,
-      },
-    };
-    done++;
-    if (done % 20 === 0) console.log(`digested ${done}/${entries.length} (${Math.round((Date.now() - tStart) / 1000)}s)`);
-  }
-  const payload = { generated: new Date().toISOString(), schema: "ohs-readings@1", entries: readings };
-  writeArtifact(OUT, payload);
-  console.log(`wrote ${OUT}: ${Object.keys(readings).length} docs, ${fs.statSync(OUT).size} bytes, ${Math.round((Date.now() - tStart) / 1000)}s`);
 
-  // One-shot bundle: every doc (text + pre-read eng) in a single file, so the
-  // app loads ALL data with one fetch. Docs carry STABLE ids (the app mints
-  // runtime ids for live adds; the pre-digested analysis keys off these).
-  // Text here is the CLEANED doc text analyze produces (statement byte spans
-  // s/e index into it), so statement text can be derived instead of shipped.
-  const BUNDLE = path.join(HD, "ohs-bundle.json");
+  // One-shot corpus: every doc, one entry, with a STABLE id. id must be
+  // unique PER SOURCE — sha256(file bytes) collides when distinct files yield
+  // identical extracted text (several contract PDFs did, corrupting stsByDoc);
+  // hash the path too (the path is unique, so the id is unique).
   const docs = entries.map((e) => {
-    const eng = (readings[e.path] || {}).eng;
-    const id = "ohs-" + hash(fs.readFileSync(path.join(ROOT, e.path))).slice(0, 10);
+    const id = "ohs-" + hash(e.path + ":" + hash(fs.readFileSync(path.join(ROOT, e.path)))).slice(0, 12);
     return {
       id,
       title: e.title,
@@ -126,7 +73,6 @@ async function main() {
       url: e.url,
       note: `From ohs-custody · ${e.path}`,
       measured: true,
-      extra: eng ? { eng } : {},
     };
   });
 
@@ -145,67 +91,44 @@ async function main() {
   );
   const a0 = Date.now();
   const A = analyze_offline({ docs }, {});
-  const ANALYSIS = path.join(HD, "ohs-analysis.json");
   const docIds = docs.map((d) => d.id).join(",");
-  // Reduced serialization (byte-addressed): the app's in-memory A shares
-  // references (JSON triples them) and statement text dominates the payload.
-  // Ships sts ONCE with text DROPPED wherever the doc's cleaned text already
-  // reproduces it from the byte span (s/e) — rehydrate derives those. names
-  // carry their statement objects (some reference degenerate sts absent from
-  // the list). Bundle carries analyze's cleaned doc text so spans resolve.
-  const cleanDocs = A.docs; // cleaned text, same ids as the seeded docs
+  // Single append-only log — the computed-once fold. Statements carry spans
+  // only (no text; the render derives text from the doc's text at rehydrate).
+  // rawNames/shadow/topics are consumed only inside analyze(); dropped here.
+  const cleanDocs = A.docs;
   const sts = A.sts.map((s) => {
-    const d = cleanDocs.find((x) => x.id === s.doc);
-    // rawNames/shadow/topics are consumed only inside analyze() itself — the
-    // render reads names/spans/frame/where. Dropping them shrinks the payload
-    // (topics is explicitly un-figured-out; rehydrate gives sts an empty list).
-    const { rawNames, shadow, topics, ...rest } = s;
-    if (d && typeof s.s === "number" && typeof s.e === "number" && d.text.slice(s.s, s.e) === s.text) {
-      return { ...rest, text: null };
-    }
+    const { rawNames, shadow, topics, text, ...rest } = s;
     return rest;
   });
   const names = {};
   for (const [k, v] of Object.entries(A.names)) {
-    // docs is a Set in analyze; JSON would flatten it to {} and the render
-    // spreads n.docs (paradigms) — serialize as an array, Set on rehydrate.
-    names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: Array.from(v.docs), sts: v.sts };
+    names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: Array.from(v.docs), sts: v.sts.map((s) => s.id) };
   }
-  writeArtifact(
-    ANALYSIS,
-    {
-      generated: new Date().toISOString(),
-      schema: "ohs-analysis@1",
-      docIds,
-      sts,
-      names,
-      echoes: A.echoes,
-      echoFloor: A.echoFloor,
-    }
-  );
-  // Single append-only log: everything the app needs in ONE file, byte-
-  // addressed to the source files. Statements are byte spans (s/e) into the
-  // cleaned doc text; each doc record carries its path + sha256 pointer; the
-  // index/edges/connections fold out of it. One fetch on the wire (Pages
-  // gzips it), append-only via git history.
+  const stsByDoc = {}; sts.forEach((s) => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
+  const metaDocs = cleanDocs.map((d) => {
+    // docs carry the cleaned text the render reads; html/heads/blocks/links/
+    // live/extra are projection artifacts the main render doesn't read.
+    const { html, heads, blocks, links, live, extra, ...meta } = d;
+    return meta;
+  });
   const LOG = path.join(HD, "ohs.log");
   writeArtifact(
     LOG,
     {
-      schema: "ohs-log@1",
+      schema: "ohs-log@3",
       generated: new Date().toISOString(),
       docIds,
-      docs: cleanDocs,
+      docs: metaDocs,
       sts,
+      stsByDoc,
       names,
       echoes: A.echoes,
       echoFloor: A.echoFloor,
     }
   );
-  const keptText2 = sts.filter((s) => s.text != null).length;
   console.log(
-    `wrote ${LOG}: ${sts.length} statements (${keptText2} with text, ${sts.length - keptText2} byte-derived), ` +
-    `${Object.keys(names).length} names, ${fs.statSync(LOG).size} bytes, ${fs.statSync(LOG + ".zst").size} bytes zst`
+    `wrote ${LOG}: ${sts.length} sts (spans), ${Object.keys(names).length} names, ` +
+    `${fs.statSync(LOG).size} bytes, ${fs.statSync(LOG + ".zst").size} bytes zst`
   );
 }
 

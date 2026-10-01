@@ -2177,6 +2177,20 @@ select option{background:var(--s1);color:var(--ink)}
               <sc-if value="{{ ing.hasShare }}" hint-placeholder-val="{{ false }}"><input readOnly="{{ true }}" value="{{ ing.share }}" style="background:var(--s2);border:1px solid var(--line2);border-radius:8px;padding:5px 10px;font:500 12px 'JetBrains Mono';color:var(--ink2);outline:none"></input></sc-if>
             </sc-if>
           </section>
+          <section style="background:var(--s1);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px">
+            <span style="font:600 12px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;color:var(--mut)">Compute workers · Heimdall</span>
+            <sc-if value="{{ ing.notSignedIn }}" hint-placeholder-val="{{ true }}"><span style="font:400 13px/1.45 'Hanken Grotesk';color:var(--mut);text-wrap:pretty">Invites are minted under your own Matrix account — sign in above first.</span></sc-if>
+            <sc-if value="{{ ing.canWrite }}" hint-placeholder-val="{{ false }}">
+              <span style="font:400 13px/1.5 'Hanken Grotesk';color:var(--mut);text-wrap:pretty">Send the link to any phone or laptop — it downloads a small model and becomes a compute worker for your fleet. The link is short on purpose: type it by hand on the remote computer.</span>
+              <div style="display:flex;gap:8px;flex-wrap:wrap"><button onClick="{{ ing.onHdMint }}" style="background:#8b5cf6;border:0;color:#fff;border-radius:8px;padding:6px 14px;cursor:pointer;font:600 14px 'Hanken Grotesk'">{{ ing.hdBusy ? 'Minting…' : 'Create worker invite' }}</button></div>
+              <sc-if value="{{ ing.hasHd }}" hint-placeholder-val="{{ false }}">
+                <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input readOnly="{{ true }}" value="{{ ing.hdLink }}" style="flex:1 1 200px;min-width:0;background:var(--s2);border:1px solid var(--line2);border-radius:8px;padding:5px 10px;font:500 12px 'JetBrains Mono';color:var(--ink2);outline:none"></input><button onClick="{{ ing.onHdCopy }}" style="background:none;border:1px solid var(--line2);border-radius:8px;padding:5px 12px;cursor:pointer;font:500 13px 'Hanken Grotesk';color:var(--ink2)">Copy</button></div>
+                <span style="font:400 13px/1.45 'Hanken Grotesk';color:var(--mut);text-wrap:pretty">{{ ing.hdNote }}</span>
+              </sc-if>
+              <div style="display:flex;gap:8px;flex-wrap:wrap"><input onChange="{{ ing.onHdCode }}" inputmode="numeric" placeholder="6-digit code from your worker" style="flex:1 1 180px;min-width:0;background:var(--s2);border:1px solid var(--line2);border-radius:8px;padding:6px 10px;font:500 13px 'JetBrains Mono';color:var(--ink);outline:none"></input><button onClick="{{ ing.onHdRecord }}" style="background:none;border:1px solid var(--line2);border-radius:8px;padding:5px 12px;cursor:pointer;font:500 13px 'Hanken Grotesk';color:var(--ink2)">Record code</button></div>
+              <span style="font:400 12px/1.45 'Hanken Grotesk';color:var(--dim);text-wrap:pretty">The worker reads you its 6-digit code; you record it here. Acceptance is confirmed live by the heimdall site against this same account — the registry is one, whatever surface minted the invite.</span>
+            </sc-if>
+          </section>
       </div>
     </div>
   </sc-if>
@@ -3245,7 +3259,7 @@ async function fetchDecodedOHS(path) {
 // after the first visit; revisits read it instantly and revalidate
 // against the tiny ohs-seed.json fingerprint.
 const ohsFpOf = seed => seed.entries.map(e => e.path + ':' + e.sha256).join('|');
-const OHS_DIGEST_VERSION = 'v3'; // bump when the digest shape changes, so stale stashes are discarded
+const OHS_DIGEST_VERSION = 'v4'; // bump when the digest shape changes, so stale stashes are discarded
 async function ohsCached(key) { try { return await idbGet(key); } catch (e) { return null; } }
 async function ohsStash(key, val) { try { await idbPut(key, val); } catch (e) {} }
 async function ohsFingerprint() {
@@ -3267,23 +3281,36 @@ async function loadLogOHS() {
   if (live != null) ohsStash('ohs:fingerprint', live);
   return L;
 }
+async function ensureOhsText(docId) {
+  try {
+    const A = this.analysis(); const d = A.docById[docId];
+    if (!d || d.text) return;
+    const r = await fetch(new URL('src/' + docId + '.txt', location.href).href, { cache: 'no-cache' });
+    if (!r.ok) return;
+    d.text = await r.text();
+    const ss = A.stsByDoc[docId] || [];
+    ss.forEach(st => { if (st.s != null && st.e != null && st.text == null) st.text = d.text.slice(st.s, st.e); });
+    try { this.forceUpdate(); } catch (e) {}
+  } catch (e) {}
+}
 // Rehydrate the pre-digested analysis: ships sts once + names with their
 // statement objects; rebuild the index maps here, same shapes analyze()
 // produces, so the render sees a real graph.
-function rehydrateOhsAnalysis(P, docs) {
-  const byId = Object.fromEntries(P.sts.map(s => [s.id, s]));
+function rehydrateOhsAnalysis(P, docs, loadedIds) {
+  // Fold the LOADED subset only: statements of sources not yet opened are
+  // kept out of the graph so renderValsFull stays fast. Each fold (open a
+  // source) widens loadedIds and rebuilds this projection — compute once
+  // per change, not per frame.
+  const isLoaded = s => !loadedIds || loadedIds.has(s.doc);
+  const sts = P.sts.filter(isLoaded);
+  const byId = Object.fromEntries(sts.map(s => [s.id, s]));
   const docById = Object.fromEntries(docs.map(d => [d.id, d]));
-  // Byte-addressed statements: text is null where the doc's cleaned text
-  // reproduces it from the byte span; derive it here so the payload stays
-  // small and the span stays the source of truth. topics is dropped from
-  // the digest (not figured out yet) — give each statement an empty list
-  // so every render path that reads st.topics keeps working.
-  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } if (!Array.isArray(s.topics)) s.topics = []; });
-  // names.docs is a Set in analyze; the digest serializes it as an array.
+  sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } if (!Array.isArray(s.topics)) s.topics = []; });
+  const presentDocs = new Set(sts.map(s => s.doc));
   const names = {};
-  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs) };
-  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
-  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names, byId, docById };
+  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs.filter(id => presentDocs.has(id))), sts: v.sts.map(id => byId[id]).filter(Boolean) };
+  const stsByDoc = {}; sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
+  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById };
 }
 class Component extends DCLogic {
   state = { corpus: null, added: loadAdded(), view: 'summary', sel: null, f: {}, q: '', readDoc: null, showPos: false, showAdd: false, showSettings: false, draftTitle: '', draftYear: '', draftText: '', fw: {}, note: '', theme: loadTheme(), railOpen: loadRailOpen(), segOpen: loadSegOpen(), dragging: false, busy: '', just: null, readMode: 'original', htmlVer: 0, txAsk: null, txPrior: 'workspace', txLang: 'en', txModel: 'base', txBusy: false, txProg: '', ground: { on: true, names: true, figures: true, dates: true, sentences: true } };
@@ -3417,19 +3444,18 @@ class Component extends DCLogic {
     try {
       stage(5, 'Loading OHS corpus · sources…');
       const L = await loadLogOHS();
-      if (L && Array.isArray(L.docs) && L.docs.length) {
+      if (L && Array.isArray(L.docs) && L.docs.length && Array.isArray(L.sts) && L.sts.length) {
         const cid = this.corpusId();
         const added = { ...this.state.added, [cid]: L.docs };
         this.saveAdded(added);
-        // Phase 1: a minimal graph from the log's docs alone — Sources renders now.
-        this._ohsMinimal = { sts: [], names: {}, byId: {}, stsByDoc: {}, echoes: {}, echoFloor: 0, docs: L.docs, docById: Object.fromEntries(L.docs.map(d => [d.id, d])) };
+        // Compute once, append: seed a FAST partial graph — the priority
+        // sources' statements — and fold the rest per-source on open.
+        const PRIORITY = [/WELSCH/i, /MHRC/i, /SEP23/i, /DEC9/i, /2026-09-29/i, /2026-06-30/i, /sept23-audit/i, /2026-09-09/i, /2026-09-23/i, /HID-2023/i];
+        const loaded = new Set(L.docs.filter(d => PRIORITY.some(re => re.test(d.title))).map(d => d.id));
+        L.corrKey = this.corrKey(cid);
+        this._ohsP = L; this._ohsLoadedIds = loaded; this._ohsRev = 1; this._ohsA = null; this._ohsMinimal = null;
+        console.log('OHS seed: docs=' + L.docs.length + ' sts=' + L.sts.length + ' names=' + Object.keys(L.names || {}).length + ' loaded=' + loaded.size + ' sources');
         this.setState({ added, just: null, busy: '', seedPct: 100 });
-        // Phase 2: the log already carries the index — fold it in immediately.
-        if (L.sts && L.sts.length && L.docIds === L.docs.map(d => d.id).join(',')) {
-          L.corrKey = this.corrKey(this.corpusId());
-          this._ohsP = L; this._ohsA = null; this._ohsMinimal = null;
-          try { this.setState({ just: null, busy: '' }); } catch (e) {}
-        }
         return;
       }
     } catch (e) {}
@@ -3938,6 +3964,35 @@ class Component extends DCLogic {
   async refreshRoom() { const N = await this.net(); const s = this._net && this._net.s; const room = this.wsRooms().pub; if (!s || !room) return; const cfg = (await N.getConfig(s, room)) || { v: 1, watches: [] }; const ch = await N.readChain(s, room); this._net = { ...this._net, cfg, chain: ch.chain, chainOk: ch.ok, head: ch.head }; this.forceUpdate(); }
   async saveWatches(watches) { return this.netDo('Save watches', async N => { const s = this._net.s; const room = this.wsRooms().pub; const cfg = { ...(this._net.cfg || { v: 1 }), watches }; await N.setConfig(s, room, cfg); this._net.cfg = cfg; this.ilog('Watches saved to the room.'); }); }
   async invitePriv(uid) { return this.netDo('Invite', async N => { await N.invite(this._net.s, this.wsRooms().priv, uid.trim()); this.ilog('Invited ' + uid + ' to your private room.'); }); }
+  heimdallMod() { if (!this._hdP) this._hdP = import(new URL('holodeck-heimdall.js', location.href).href); return this._hdP; }
+  // Heimdall compute invite: mint a fleet room under THIS account with a short
+  // local alias, so the invite link is just `?r=<code>` — something a person
+  // can actually type by hand on a remote worker's computer. The worker's
+  // 6-digit pairing code is recorded into the same org.heimdall.codes account
+  // data the heimdall site confirms acceptance against (one account = one
+  // registry, whichever surface minted it).
+  async heimdallMint() { return this.netDo('Heimdall invite', async N => {
+    const s = this._net.s; if (!s || s.guest) throw new Error('sign in with an account to mint invites');
+    const H = await this.heimdallMod();
+    const http = {
+      createRoom: async (name) => N.createWorkspace(s, { name, isPublic: false, visibility: 'private', preset: 'public_chat', topic: 'Heimdall compute fleet: a room is only a directory for WebRTC signaling — no prompts or answers live here' }),
+      setRoomAlias: (roomId, alias) => N.setRoomAlias(s, roomId, alias),
+    };
+    const out = await H.mintInvite({ http, hs: s.base, host: s.user, name: s.user.replace(/^@/, '').split(':')[0] });
+    this._hd = { link: out.link, code: out.code, room: out.roomId, exp: out.exp, note: 'fleet room ' + out.roomId + ' · link expires ' + new Date(out.exp).toLocaleString() };
+    try { await navigator.clipboard.writeText(out.link); this._hd.note += ' · copied'; } catch (e) {}
+    this.ilog('Heimdall invite ready: ' + out.link + ' — have the worker read you their 6-digit code, then record it below.');
+    this.forceUpdate();
+  }); }
+  async heimdallRecord() { return this.netDo('Record code', async N => {
+    const s = this._net.s; const H = await this.heimdallMod();
+    const code = String(this._hdCode || '').trim();
+    if (!/^\d{6}$/.test(code)) throw new Error('enter the 6-digit code your worker gave you');
+    const r = await H.recordCode({ code, read: () => N.getAccountData(s, H.CODES_TYPE), write: (content) => N.setAccountData(s, H.CODES_TYPE, content) });
+    this._hd = { ...(this._hd || {}), note: r.ok ? (r.duplicate ? code + ' was already recorded' : 'recorded ' + code + ' — that worker can accept now') : 'enter the 6 digits the worker gave you' };
+    if (r.ok) this._hdCode = ''; this.forceUpdate(); return r;
+  }); }
+  async heimdallCopy() { try { await navigator.clipboard.writeText(this._hd && this._hd.link); this.ilog('Invite link copied: ' + (this._hd && this._hd.link)); } catch (e) { this.ilog('Could not copy: ' + e.message, 'bad'); } }
   syncPrivate(now) { const s = this._net && this._net.s; const room = this.wsRooms().priv; if (!s || s.guest || !room) return; clearTimeout(this._privT); this._privT = setTimeout(async () => { try { const N = await this.net(); await N.savePrivate(s, room, 'work', { pins: this.rawPins(), filters: this.state.f || {}, forWhoms: this.state.fw || {}, meta: (this.metaAll() || {})[this.corpusId()] || {}, readLog: this.readLog() }); this._net.privAt = new Date().toLocaleTimeString(); this.forceUpdate(); } catch (e) {} }, now ? 0 : 2500); }
   async loadPrivateWork() { return this.netDo('Load private work', async N => { const d = await N.loadPrivate(this._net.s, this.wsRooms().priv, 'work'); if (!d) throw new Error('nothing saved yet'); if (d.pins) this.savePins(d.pins); if (d.filters) this.setState({ f: d.filters }); if (d.forWhoms) this.setState({ fw: d.forWhoms }); this.ilog('Loaded your pins, drafts and filters from the private room.'); }); }
   knownIds(A) { const s = new Set(); A.docs.forEach(d => { if (d.media && d.media.id) s.add(d.media.id); if (d.url) s.add(d.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')); }); return s; }
@@ -4457,6 +4512,7 @@ class Component extends DCLogic {
       onLogin: () => this.signIn(this._mxU, this._mxP), onGuest: () => this.signIn(), onLogout: () => this.signOut(),
       hasPub: !!R.pub, noPub: !R.pub, pub: R.pub || '', onCreatePub: () => this.createPublic(), onJoinAlias: e => { this._mxA = e.target.value; }, onJoin: () => this._mxA && this.joinPublic(this._mxA),
       hasPriv: !!R.priv, noPriv: !R.priv, priv: R.priv || '', onCreatePriv: () => this.createPrivate(), onInviteId: e => { this._mxI = e.target.value; }, onInvite: () => this._mxI && this.invitePriv(this._mxI), onLoadPriv: () => this.loadPrivateWork(), privAt: n.privAt ? 'Last synced ' + n.privAt : 'Syncs pins, drafts, filters and reading history a few seconds after each change.',
+      hd: this._hd || {}, hasHd: !!(this._hd && this._hd.link), hdLink: (this._hd && this._hd.link) || '', hdNote: (this._hd && this._hd.note) || '', hdBusy: S.netBusy === 'Heimdall invite' || S.netBusy === 'Record code', onHdMint: () => this.heimdallMint(), onHdCopy: () => this.heimdallCopy(), onHdCode: e => { this._hdCode = e.target.value; }, onHdRecord: () => this.heimdallRecord(),
       watches: W.map((w, i) => ({ q: w.q, kind: w.kind === 'youtube' ? 'YouTube' : 'Web', onRemove: () => this.saveWatches(W.filter((_, j) => j !== i)) })), hasWatches: W.length > 0, onWatchQ: e => { this._wq = e.target.value; }, onAddWatch: kind => () => { const q = (this._wq || '').trim(); if (q) this.saveWatches([...W, { q, kind }]); },
       onAddYt: () => { const q = (this._wq || '').trim(); if (q) this.saveWatches([...W, { q: q.replace(/^https?:\/\/www\.youtube\.com\/results\?search_query=/, '').replace(/\+/g, ' '), kind: 'youtube' }]); }, onAddWeb: () => { const q = (this._wq || '').trim(); if (q) this.saveWatches([...W, { q, kind: 'web' }]); },
       proxy: cfg.searchProxy || '', onProxy: e => this.setNetCfg({ searchProxy: e.target.value.trim() }), onFind: () => this.findNew(),
@@ -4889,7 +4945,7 @@ class Component extends DCLogic {
     if (this._ohsP) {
       const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));
       if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {
-        if (!this._ohsA) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || []); } catch (e) { this._ohsA = null; console.error('OHS rehydrate failed', e); } }
+        if (!this._ohsA || this._ohsA._rev !== this._ohsRev) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || [], this._ohsLoadedIds); if (this._ohsA) this._ohsA._rev = this._ohsRev; } catch (e) { this._ohsA = null; console.error('OHS rehydrate failed', e); } }
         if (this._ohsA) return this._ohsA;
         // Rehydrate failed: NEVER fall through to live analyze over the
         // seeded corpus (synchronous multi-minute freeze). Return a
@@ -5013,7 +5069,7 @@ class Component extends DCLogic {
     this.setState({ added, corpus: newId, view: 'summary', sel: null, f: {}, q: '', readDoc: null, just: null }); }
   sel(type, id) { const S0 = this.state; if (type === 'name' && S0.view === 'reader' && !(S0.sel && S0.sel.type === 'name' && S0.sel.id === id)) this.pushHist(); if (type === 'doc') this.markRead(id); this.setState(s => (s.sel && s.sel.type === type && s.sel.id === id) ? { sel: null, selAll: false, pfIdx: 0, pfAll: false } : { sel: { type, id }, selAll: false, pfIdx: 0, pfAll: false }); }
   go(view) { this.setState({ view, readDoc: null }); }
-  read(docId, stId) { const S0 = this.state; if (S0.view !== 'reader' || docId !== S0.readDoc || (S0.sel && S0.sel.type === 'name')) this.pushHist(); this.markRead(docId); if (docId !== this.state.readDoc) { this.state.seekT = 0; this._faithFound = null; } this.setState({ view: 'reader', readDoc: docId, sel: stId ? { type: 'statement', id: stId } : { type: 'doc', id: docId } }); }
+  async read(docId, stId) { try { await this.ensureOhsText(docId); } catch (e) {} try { if (this._ohsP && this._ohsP.stsByDoc && this._ohsLoadedIds && !this._ohsLoadedIds.has(docId) && this._ohsP.stsByDoc[docId] && this._ohsP.stsByDoc[docId].length) { this._ohsLoadedIds.add(docId); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; } } catch (e) {} const S0 = this.state; if (S0.view !== 'reader' || docId !== S0.readDoc || (S0.sel && S0.sel.type === 'name')) this.pushHist(); this.markRead(docId); if (docId !== this.state.readDoc) { this.state.seekT = 0; this._faithFound = null; } this.setState({ view: 'reader', readDoc: docId, sel: stId ? { type: 'statement', id: stId } : { type: 'doc', id: docId } }); }
   saveAdded(added) { try { localStorage.setItem('fold-explorer-added', JSON.stringify(added)); } catch (e) {} }
   // Fold the new statements into the holograph by the surprise view's own rules (holoKit), recording each step,
   // then hand the trace to the replay player. The picture before is everything else in the workspace.
