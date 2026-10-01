@@ -19,6 +19,12 @@ What it does:
 Rules:
   - Never hand-edit anything under docs/holodeck/ except VENDOR.md's
     "local notes" section. All upstream changes arrive via re-vendor.
+  - The OHS instance overlay below (OHS_OVERLAY_PATCHES) is the one
+    exception: small, recorded string replacements applied to the vendored
+    copy after every re-vendor, so this Pages instance boots onto the OHS
+    corpus instead of an empty room. If an upstream change breaks a patch
+    anchor, this script fails loudly -- read VENDOR.md, adjust the patch,
+    re-run.
   - The app fetches OHS corpus data from this same repo at runtime via
     raw.githubusercontent.com URLs, so no data is duplicated here.
 """
@@ -41,6 +47,65 @@ TOP_LEVEL_JS = [
     "holodeck-region.js",
 ]
 TOP_LEVEL_JS = sorted(set(TOP_LEVEL_JS))
+
+# OHS instance overlay: (description, old, new). Applied to the vendored copy
+# after every re-vendor; each must match exactly once or the run aborts.
+OHS_OVERLAY_PATCHES = [
+    (
+        "boot: seed the OHS corpus on first run with an empty workspace",
+        "  componentDidMount() {\n    setTimeout(() => { try { this.netInit(); } catch (e) {} }, 800);",
+        "  componentDidMount() {\n"
+        "    setTimeout(() => { try { this.netInit(); } catch (e) {} }, 800);\n"
+        "    setTimeout(() => { try { this.ohsSeed(); } catch (e) {} }, 1500);",
+    ),
+    (
+        "seed: ohsSeed pulls transcripts/ + derived/ out of this same repo",
+        "  async pullRepo(owner, repo, opt) {",
+        "  // ── OHS Pages overlay: first-run seed. Pulls the custody corpus out\n"
+        "  // of this same repo (tracks main, so it stays current) when the\n"
+        "  // workspace is empty. Skipped once the visitor has any docs.\n"
+        "  async ohsSeed() {\n"
+        "    try { if (localStorage.getItem('ohs-pages-seeded-v1') === '1') return; } catch (e) {}\n"
+        "    let docs = [];\n"
+        "    try { docs = this.analysis().docs || []; } catch (e) {}\n"
+        "    if (docs.length) { try { localStorage.setItem('ohs-pages-seeded-v1', '1'); } catch (e) {} return; }\n"
+        "    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\\.json$/;\n"
+        "    await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'transcripts/', skipRe: MACHINE_JSON });\n"
+        "    await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'derived/', skipRe: MACHINE_JSON });\n"
+        "    try { localStorage.setItem('ohs-pages-seeded-v1', '1'); } catch (e) {}\n"
+        "  }\n"
+        "  async pullRepo(owner, repo, opt) {",
+    ),
+    (
+        "ingest: pullRepo accepts opt.prefix / opt.skipRe path filters",
+        "    const files = tree.filter(x => x.type === 'blob' && textRe.test(x.path) && !skipDir.test(x.path));",
+        "    let files = tree.filter(x => x.type === 'blob' && textRe.test(x.path) && !skipDir.test(x.path));\n"
+        "    if (opt.prefix) files = files.filter(x => x.path === opt.prefix || x.path.indexOf(opt.prefix) === 0);\n"
+        "    if (opt.skipRe) files = files.filter(x => !opt.skipRe.test(x.path));",
+    ),
+    (
+        "ingest: never read this instance's own app shell (docs/) as corpus",
+        "    const skipDir = /(^|\\/)(node_modules|vendor|dist|build|\\.git|coverage|target|\\.venv|venv|__pycache__|\\.next|\\.cache|\\.ipynb_checkpoints)(\\/|$)/i;",
+        "    const skipDir = /(^|\\/)(node_modules|vendor|dist|build|\\.git|coverage|target|\\.venv|venv|__pycache__|\\.next|\\.cache|\\.ipynb_checkpoints|docs)(\\/|$)/i;",
+    ),
+    (
+        "chrome: topic placeholder names the OHS audit, not a bridge collapse",
+        "topicPlaceholder: inferred ? 'e.g. ' + inferred.name : 'e.g. the bridge collapse'",
+        "topicPlaceholder: inferred ? 'e.g. ' + inferred.name : 'e.g. the OHS audit'",
+    ),
+]
+
+
+def apply_ohs_overlay():
+    idx = (DEST / "index.html").read_text(encoding="utf-8")
+    applied = []
+    for desc, old, new in OHS_OVERLAY_PATCHES:
+        n = idx.count(old)
+        assert n == 1, f"overlay patch anchor matched {n}x (expected 1x): {desc}"
+        idx = idx.replace(old, new)
+        applied.append(desc)
+    (DEST / "index.html").write_text(idx, encoding="utf-8")
+    return applied
 
 
 def sha256(p):
@@ -103,6 +168,10 @@ def main():
     # Jekyll off: Pages must serve .js/.json untouched.
     (ROOT / "docs" / ".nojekyll").write_text("", encoding="utf-8")
 
+    # OHS instance overlay (re-applied after every re-vendor).
+    overlay = apply_ohs_overlay()
+    overlay_sha = sha256(DEST / "index.html")
+
     upstream_sha = git_sha(SRC)
     upstream_status = git_status_short(SRC)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -129,6 +198,9 @@ def main():
         lines += ["```"] + dirty + ["```", ""]
     else:
         lines += ["None -- working tree was clean.", ""]
+    lines += ["## OHS instance overlay (re-applied by this script)", ""]
+    lines += [f"- {d}" for d in overlay] + [""]
+    lines += [f"Patched `index.html` sha256: `{overlay_sha}`", ""]
     lines += ["## Files", ""]
     for rel, h in manifest:
         lines.append(f"- `{rel}` `{h[:12]}`")

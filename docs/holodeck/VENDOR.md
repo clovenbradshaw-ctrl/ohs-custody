@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `e89d7df3868cf26b9acf7b31561a0cdc37d14896`
-Vendored: 2026-10-01T03:13:35+00:00 by `python3 vendor_holodeck.py`
+Vendored: 2026-10-01T03:21:26+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -18,6 +18,16 @@ is duplicated here.
 ?? holodeck-echo.js
 ?? holodeck-echo.test.mjs
 ```
+
+## OHS instance overlay (re-applied by this script)
+
+- boot: seed the OHS corpus on first run with an empty workspace
+- seed: ohsSeed pulls transcripts/ + derived/ out of this same repo
+- ingest: pullRepo accepts opt.prefix / opt.skipRe path filters
+- ingest: never read this instance's own app shell (docs/) as corpus
+- chrome: topic placeholder names the OHS audit, not a bridge collapse
+
+Patched `index.html` sha256: `b30d74ab8bfca25d100f5b2bd4f7dfc474842935ac0ea677bde6342de9afe9c3`
 
 ## Files
 
