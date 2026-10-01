@@ -250,10 +250,15 @@ OHS_OVERLAY_PATCHES = [
         "  const docById = Object.fromEntries(docs.map(d => [d.id, d]));\n"
         "  // Byte-addressed statements: text is null where the doc's cleaned text\n"
         "  // reproduces it from the byte span; derive it here so the payload stays\n"
-        "  // small and the span stays the source of truth.\n"
-        "  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } });\n"
+        "  // small and the span stays the source of truth. topics is dropped from\n"
+        "  // the digest (not figured out yet) — give each statement an empty list\n"
+        "  // so every render path that reads st.topics keeps working.\n"
+        "  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } if (!Array.isArray(s.topics)) s.topics = []; });\n"
+        "  // names.docs is a Set in analyze; the digest serializes it as an array.\n"
+        "  const names = {};\n"
+        "  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs) };\n"
         "  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });\n"
-        "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names: P.names, byId, docById };\n"
+        "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names, byId, docById };\n"
         "}\n"
         "class Component extends DCLogic {",
     ),

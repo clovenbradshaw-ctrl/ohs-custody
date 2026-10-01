@@ -3286,10 +3286,15 @@ function rehydrateOhsAnalysis(P, docs) {
   const docById = Object.fromEntries(docs.map(d => [d.id, d]));
   // Byte-addressed statements: text is null where the doc's cleaned text
   // reproduces it from the byte span; derive it here so the payload stays
-  // small and the span stays the source of truth.
-  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } });
+  // small and the span stays the source of truth. topics is dropped from
+  // the digest (not figured out yet) — give each statement an empty list
+  // so every render path that reads st.topics keeps working.
+  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } if (!Array.isArray(s.topics)) s.topics = []; });
+  // names.docs is a Set in analyze; the digest serializes it as an array.
+  const names = {};
+  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs) };
   const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
-  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names: P.names, byId, docById };
+  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names, byId, docById };
 }
 class Component extends DCLogic {
   state = { corpus: null, added: loadAdded(), view: 'summary', sel: null, f: {}, q: '', readDoc: null, showPos: false, showAdd: false, showSettings: false, draftTitle: '', draftYear: '', draftText: '', fw: {}, note: '', theme: loadTheme(), railOpen: loadRailOpen(), segOpen: loadSegOpen(), dragging: false, busy: '', just: null, readMode: 'original', htmlVer: 0, txAsk: null, txPrior: 'workspace', txLang: 'en', txModel: 'base', txBusy: false, txProg: '', ground: { on: true, names: true, figures: true, dates: true, sentences: true } };

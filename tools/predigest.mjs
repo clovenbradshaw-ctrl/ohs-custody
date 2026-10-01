@@ -157,9 +157,10 @@ async function main() {
   const cleanDocs = A.docs; // cleaned text, same ids as the seeded docs
   const sts = A.sts.map((s) => {
     const d = cleanDocs.find((x) => x.id === s.doc);
-    // rawNames/shadow are consumed only inside analyze() itself — the render
-    // reads names/spans/frame/where/topics. Dropping them shrinks the payload.
-    const { rawNames, shadow, ...rest } = s;
+    // rawNames/shadow/topics are consumed only inside analyze() itself — the
+    // render reads names/spans/frame/where. Dropping them shrinks the payload
+    // (topics is explicitly un-figured-out; rehydrate gives sts an empty list).
+    const { rawNames, shadow, topics, ...rest } = s;
     if (d && typeof s.s === "number" && typeof s.e === "number" && d.text.slice(s.s, s.e) === s.text) {
       return { ...rest, text: null };
     }
@@ -167,7 +168,9 @@ async function main() {
   });
   const names = {};
   for (const [k, v] of Object.entries(A.names)) {
-    names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: v.docs, sts: v.sts };
+    // docs is a Set in analyze; JSON would flatten it to {} and the render
+    // spreads n.docs (paradigms) — serialize as an array, Set on rehydrate.
+    names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: Array.from(v.docs), sts: v.sts };
   }
   writeArtifact(
     ANALYSIS,
