@@ -3232,46 +3232,51 @@ function whoSays(st, A) {
 const whenOf = (st, d) => d.pubLabel || (d.year ? String(d.year) : 'Undated');
 const assertLine = (st, A) => { const d = A.docById[st.doc]; const w = whoSays(st, A); return (w ? w.who + (w.how === 'quoted' ? ' (quoted)' : w.how === 'publisher' ? '' : ' (' + w.how + ')') + ' · ' : '') + d.title + ' · ' + whenOf(st, d); };
 
-// ── OHS Pages overlay: fetch a JSON artifact. Pages serves .json with
+// ── OHS Pages overlay: load a JSON artifact. Pages serves .json with
 // Content-Encoding: gzip, so the browser decompresses transparently —
 // no manual decode, no external module, works in every browser.
-async function fetchDecodedOHS(path, onStep) {
-  const step = s => { try { onStep && onStep(s); } catch (e) {} };
+async function fetchDecodedOHS(path) {
   const r = await fetch(new URL(path, location.href).href, { cache: 'no-cache' });
   if (!r.ok) throw new Error('artifact unavailable: ' + path);
-  const parsed = await r.json();
-  step('parse');
-  return parsed;
+  return await r.json();
 }
-// ── OHS Pages overlay: load the artifacts, cache-first. The materialized
-// view of the append-only corpus log is stashed in IndexedDB on the first
-// visit; revisits read it instantly (zero download) and revalidate against
-// the tiny ohs-seed.json fingerprint. A changed corpus re-fetches + re-stashes.
-async function loadArtifactsOHS(stage, stepPct) {
-  const fpOf = seed => seed.entries.map(e => e.path + ':' + e.sha256).join('|');
-  try {
-    const [cB, cP, cF] = await Promise.all([idbGet('ohs:bundle'), idbGet('ohs:analysis'), idbGet('ohs:fingerprint')]);
-    if (cB && cP && cF && Array.isArray(cB.docs) && Array.isArray(cP.sts)) {
-      let trust = true;
-      try {
-        const r = await fetch(new URL('ohs-seed.json', location.href).href, { cache: 'no-cache' });
-        if (r.ok) { const seed = await r.json(); trust = fpOf(seed) === cF; }
-      } catch (e) { trust = true; }
-      if (trust) return { B: cB, P: cP, fresh: false };
-    }
-  } catch (e) {}
-  stage(2, 'Loading OHS corpus · downloading…');
-  const B = await fetchDecodedOHS('ohs-bundle.json', stepPct(8));
-  stage(35, 'Loading OHS corpus · ' + (B && B.docs ? B.docs.length : 0) + ' documents, decoding analysis…');
-  let P = null;
-  try { P = await fetchDecodedOHS('ohs-analysis.json', stepPct(45)); } catch (e) { P = null; }
+// ── OHS Pages overlay: load an artifact, cache-first (the stash). The
+// materialized view of the append-only corpus log is kept in IndexedDB
+// after the first visit; revisits read it instantly and revalidate
+// against the tiny ohs-seed.json fingerprint.
+const ohsFpOf = seed => seed.entries.map(e => e.path + ':' + e.sha256).join('|');
+async function ohsCached(key) { try { return await idbGet(key); } catch (e) { return null; } }
+async function ohsStash(key, val) { try { await idbPut(key, val); } catch (e) {} }
+async function ohsFingerprint() {
   try {
     const r = await fetch(new URL('ohs-seed.json', location.href).href, { cache: 'no-cache' });
-    if (r.ok) { const seed = await r.json(); idbPut('ohs:fingerprint', fpOf(seed)).catch(() => {}); }
-    if (B) idbPut('ohs:bundle', B).catch(() => {});
-    if (P) idbPut('ohs:analysis', P).catch(() => {});
-  } catch (e) {}
-  return { B, P, fresh: true };
+    if (!r.ok) return null;
+    return ohsFpOf(await r.json());
+  } catch (e) { return null; }
+}
+async function loadBundleOHS() {
+  const cF = await ohsCached('ohs:fingerprint'), cB = await ohsCached('ohs:bundle');
+  if (cB && Array.isArray(cB.docs) && cB.docs.length) {
+    const live = await ohsFingerprint();
+    if (live == null || live === cF) return cB; // cache trusted (or seed unreachable)
+  }
+  const B = await fetchDecodedOHS('ohs-bundle.json');
+  ohsStash('ohs:bundle', B);
+  const live = await ohsFingerprint();
+  if (live != null) ohsStash('ohs:fingerprint', live);
+  return B;
+}
+async function loadAnalysisOHS() {
+  const cF = await ohsCached('ohs:fingerprint'), cP = await ohsCached('ohs:analysis');
+  if (cP && Array.isArray(cP.sts) && cP.sts.length) {
+    const live = await ohsFingerprint();
+    if (live == null || live === cF) return cP; // cache trusted (or seed unreachable)
+  }
+  const P = await fetchDecodedOHS('ohs-analysis.json');
+  ohsStash('ohs:analysis', P);
+  const live = await ohsFingerprint();
+  if (live != null) ohsStash('ohs:fingerprint', live);
+  return P;
 }
 // Rehydrate the pre-digested analysis: ships sts once + names with their
 // statement objects; rebuild the index maps here, same shapes analyze()
@@ -3415,23 +3420,27 @@ class Component extends DCLogic {
     if (docs.length) return;
     const say = m => { try { this.setState({ busy: m }); } catch (e) {} };
     const stage = (pct, msg) => { try { this.setState({ seedPct: pct, busy: msg }); } catch (e) {} };
-    const stepPct = base => s => { stage(base + (s === 'fetch' ? 2 : s === 'decode' ? 12 : 22), 'Loading OHS corpus · ' + (s === 'fetch' ? 'downloading…' : s === 'decode' ? 'decoding…' : 'indexing…')); };
-    const A = await loadArtifactsOHS(stage, stepPct);
-    const B = A.B, P = A.P;
-    if (B && Array.isArray(B.docs) && B.docs.length && P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {
-      P.corrKey = this.corrKey(this.corpusId());
-      this._ohsP = P; this._ohsA = null;
-      const cid = this.corpusId();
-      const added = { ...this.state.added, [cid]: B.docs };
-      this.saveAdded(added);
-      if (A.fresh) { stage(100, 'Loading OHS corpus · ready'); this.setState({ added, just: null, busy: '', seedPct: 100 }); }
-      else { this.setState({ added, just: null, busy: '' }); }
-      return;
-    }
-    // Missing/stale digest: never re-analyze 140 docs in-browser.
-    stage(100, 'Loading OHS corpus · failed');
-    this.setState({ busy: '', just: null, note: 'The pre-digested OHS analysis did not load. A fresh re-digest is needed (see DIGEST-CONTRACT.md). The corpus itself is preserved.' });
-    return;
+    try {
+      stage(5, 'Loading OHS corpus · sources…');
+      const B = await loadBundleOHS();
+      if (B && Array.isArray(B.docs) && B.docs.length) {
+        const cid = this.corpusId();
+        const added = { ...this.state.added, [cid]: B.docs };
+        this.saveAdded(added);
+        // Phase 1: a minimal graph from the bundle alone — Sources renders now.
+        this._ohsMinimal = { sts: [], names: {}, byId: {}, stsByDoc: {}, echoes: {}, echoFloor: 0, docs: B.docs, docById: Object.fromEntries(B.docs.map(d => [d.id, d])) };
+        this.setState({ added, just: null, busy: '', seedPct: 100 });
+        // Phase 2: fold the full analysis in the background; the guard swaps it in.
+        loadAnalysisOHS().then(P => {
+          if (P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {
+            P.corrKey = this.corrKey(this.corpusId());
+            this._ohsP = P; this._ohsA = null; this._ohsMinimal = null;
+            try { this.setState({ just: null, busy: '' }); } catch (e) {}
+          }
+        }).catch(() => {});
+        return;
+      }
+    } catch (e) {}
     const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
     const isSeedPath = p => /\.txt$/i.test(p) && (p.indexOf('transcripts/') === 0 || p.indexOf('derived/') === 0) && !MACHINE_JSON.test(p);
     let READINGS = {};
@@ -4884,6 +4893,7 @@ class Component extends DCLogic {
   corpusId() { return this.state.corpus || 'custom'; }
   baseDocs(id) { return SAMPLES[id] ? SAMPLES[id].docs : []; }
   analysis() {
+    if (this._ohsMinimal) return this._ohsMinimal;
     if (this._ohsP) {
       const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));
       if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {
