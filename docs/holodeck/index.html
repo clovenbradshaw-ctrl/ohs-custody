@@ -3263,7 +3263,7 @@ async function fetchDecodedOHS(path) {
 // after the first visit; revisits read it instantly and revalidate
 // against the tiny ohs-seed.json fingerprint.
 const ohsFpOf = seed => seed.entries.map(e => e.path + ':' + e.sha256).join('|');
-const OHS_DIGEST_VERSION = 'v4'; // bump when the digest shape changes, so stale stashes are discarded
+const OHS_DIGEST_VERSION = 'v5'; // bump when the digest shape changes, so stale stashes are discarded
 async function ohsCached(key) { try { return await idbGet(key); } catch (e) { return null; } }
 async function ohsStash(key, val) { try { await idbPut(key, val); } catch (e) {} }
 async function ohsFingerprint() {
@@ -3312,7 +3312,11 @@ function rehydrateOhsAnalysis(P, docs, loadedIds) {
   sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } if (!Array.isArray(s.topics)) s.topics = []; });
   const presentDocs = new Set(sts.map(s => s.doc));
   const names = {};
-  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs.filter(id => presentDocs.has(id))), sts: v.sts.map(id => byId[id]).filter(Boolean) };
+  // names[n].sts stays STATEMENT IDS (strings), exactly as analyze keeps
+  // them — the render and paradigms() resolve via byId — but restricted
+  // to LOADED statements: ids from unloaded sources would leave byId[id]
+  // undefined and crash paradigms()'s .doc read.
+  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs.filter(id => presentDocs.has(id))), sts: v.sts.filter(id => byId[id]) };
   const stsByDoc = {}; sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
   return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById };
 }

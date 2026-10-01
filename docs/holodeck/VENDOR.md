@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `9c73f3cb523e1d67d97260451c82f273b990511a`
-Vendored: 2026-10-01T19:32:39+00:00 by `python3 vendor_holodeck.py`
+Vendored: 2026-10-01T21:41:02+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -37,11 +37,11 @@ is duplicated here.
 - launch: land on Sources, hide Start here
 - launch: remove Start here from the nav
 
-Patched `index.html` sha256: `4b7aa9b39b1826dc31015a7f35df5b8e886fe7edf61a7984425889c2a98e25d7`
+Patched `index.html` sha256: `30857a943b2f39a62a1efb23bce12495832d73a8c5fdcdd159c8d8f823f9e4cf`
 
-Seed manifest `ohs-seed.json`: `140` entries `fd77933f36a3`
+Seed manifest `ohs-seed.json`: `140` entries `80740440ed8d`
 
-Log `ohs.log`: `140` docs `76cb262a8010` `41.2MB` (schema `ohs-log@3`, spans + source pointers)
+Log `ohs.log`: `140` docs `a21c4c52c39b` `42.2MB` (schema `ohs-log@3`, spans + source pointers)
 
 ## Files
 

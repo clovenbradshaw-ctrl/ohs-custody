@@ -118,7 +118,9 @@ async function main() {
   });
   const names = {};
   for (const [k, v] of Object.entries(A.names)) {
-    names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: Array.from(v.docs), sts: v.sts.map((s) => s.id) };
+    // analyze's names[n].sts is ALREADY an array of statement IDs (strings) —
+    // mapping .id on them yielded null and broke every name's statement wiring.
+    names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: Array.from(v.docs), sts: v.sts };
   }
   const stsByDoc = {}; sts.forEach((s) => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
   const metaDocs = cleanDocs.map((d) => {
