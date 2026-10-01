@@ -169,32 +169,103 @@ OHS_OVERLAY_PATCHES = [
         "topicPlaceholder: inferred ? 'e.g. ' + inferred.name : 'e.g. the OHS audit'",
     ),
     (
-        "analysis: rehydrate the pre-digested analysis (deduped JSON -> live graph) + zstd decode",
+        "loading: centered progress overlay (spinner + staged bar) during seed",
+        '<sc-if value="{{ isBusy }}" hint-placeholder-val="{{ false }}">',
+        '<sc-if value="{{ isBusy }}" hint-placeholder-val="{{ false }}">\n'
+        '    <style>\n'
+        "      @keyframes ohsSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }\n"
+        "      .ohs-spinner { width:44px;height:44px;margin:0 auto;border:4px solid var(--s2);border-top-color:#8b5cf6;border-radius:50%;animation:ohsSpin 1s linear infinite; }\n"
+        '    </style>\n'
+        '    <div style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.38);z-index:90">\n'
+        "      <div style=\"background:var(--bg);border:1px solid var(--line2);border-radius:16px;padding:30px 36px;min-width:320px;max-width:90vw;text-align:center;box-shadow:0 14px 44px rgba(0,0,0,.4)\">\n"
+        '        <div class="ohs-spinner"></div>\n'
+        "        <div style=\"font:500 15px 'Hanken Grotesk';color:var(--ink);margin-top:18px;text-wrap:pretty\">{{ busy }}</div>\n"
+        "        <div style=\"height:6px;background:var(--s2);border-radius:999px;margin-top:16px;overflow:hidden\">\n"
+        "          <div style=\"height:100%;width:{{ seedPct }}%;background:#8b5cf6;border-radius:999px;transition:width .35s ease\"></div>\n"
+        "        </div>\n"
+        "      </div>\n"
+        "    </div>\n",
+    ),
+    (
+        "loading: expose seedPct in render",
+        "dragging: S.dragging, isBusy: !!S.busy, busy: S.busy,",
+        "dragging: S.dragging, isBusy: !!S.busy, busy: S.busy, seedPct: S.seedPct || 0,",
+    ),
+    (
+        "loading: seed drives staged progress",
+        "    try {\n"
+        "      const B = await fetchDecodedOHS('ohs-bundle.json');\n"
+        "      if (B && Array.isArray(B.docs) && B.docs.length) {\n"
+        "        say('Loading OHS corpus · ' + B.docs.length + ' documents…');\n"
+        "        let P = null;\n"
+        "        try { P = await fetchDecodedOHS('ohs-analysis.json'); } catch (e) { P = null; }\n"
+        "        if (P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {\n"
+        "          P.corrKey = this.corrKey(this.corpusId());\n"
+        "          this._ohsP = P; this._ohsA = null;\n"
+        "          const cid = this.corpusId();\n"
+        "          const added = { ...this.state.added, [cid]: B.docs };\n"
+        "          this.saveAdded(added);\n"
+        "          this.setState({ added, just: null, busy: '' });\n"
+        "          return;\n"
+        "        }\n",
+        "    const stage = (pct, msg) => { try { this.setState({ seedPct: pct, busy: msg }); } catch (e) {} };\n"
+        "    const stepPct = base => s => { stage(base + (s === 'fetch' ? 2 : s === 'decode' ? 12 : 22), 'Loading OHS corpus · ' + (s === 'fetch' ? 'downloading…' : s === 'decode' ? 'decoding…' : 'indexing…')); };\n"
+        "    try {\n"
+        "      stage(2, 'Loading OHS corpus · downloading…');\n"
+        "      const B = await fetchDecodedOHS('ohs-bundle.json', stepPct(8));\n"
+        "      if (B && Array.isArray(B.docs) && B.docs.length) {\n"
+        "        stage(35, 'Loading OHS corpus · ' + B.docs.length + ' documents, decoding analysis…');\n"
+        "        let P = null;\n"
+        "        try { P = await fetchDecodedOHS('ohs-analysis.json', stepPct(45)); } catch (e) { P = null; }\n"
+        "        if (P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {\n"
+        "          P.corrKey = this.corrKey(this.corpusId());\n"
+        "          this._ohsP = P; this._ohsA = null;\n"
+        "          const cid = this.corpusId();\n"
+        "          const added = { ...this.state.added, [cid]: B.docs };\n"
+        "          this.saveAdded(added);\n"
+        "          stage(100, 'Loading OHS corpus · ready');\n"
+        "          this.setState({ added, just: null, busy: '', seedPct: 100 });\n"
+        "          return;\n"
+        "        }\n",
+    ),
+    (
+        "analysis: rehydrate + fetchDecodedOHS helpers",
         "class Component extends DCLogic {",
         "// ── OHS Pages overlay: fetch a JSON artifact preferring its .zst twin,\n"
         "// decoded with the same zstd-wasm the app's reading-worker already uses.\n"
-        "async function fetchDecodedOHS(path) {\n"
+        "async function fetchDecodedOHS(path, onStep) {\n"
+        "  const step = s => { try { onStep && onStep(s); } catch (e) {} };\n"
         "  const zst = path + '.zst';\n"
         "  try {\n"
         "    const r = await fetch(new URL(zst, location.href).href, { cache: 'no-cache' });\n"
         "    if (r.ok) {\n"
+        "      step('fetch');\n"
         "      const M = await import('https://esm.sh/@bokuweb/zstd-wasm@0.0.27');\n"
         "      await M.init();\n"
         "      const raw = M.decompress(new Uint8Array(await r.arrayBuffer()));\n"
-        "      return JSON.parse(new TextDecoder().decode(raw));\n"
+        "      step('decode');\n"
+        "      const parsed = JSON.parse(new TextDecoder().decode(raw));\n"
+        "      step('parse');\n"
+        "      return parsed;\n"
         "    }\n"
         "  } catch (e) {}\n"
         "  const r2 = await fetch(new URL(path, location.href).href, { cache: 'no-cache' });\n"
         "  if (!r2.ok) throw new Error('artifact unavailable: ' + path);\n"
-        "  return await r2.json();\n"
+        "  const parsed2 = await r2.json();\n"
+        "  step('parse');\n"
+        "  return parsed2;\n"
         "}\n"
         "// Rehydrate the pre-digested analysis: ships sts once + names with their\n"
         "// statement objects; rebuild the index maps here, same shapes analyze()\n"
         "// produces, so the render sees a real graph.\n"
         "function rehydrateOhsAnalysis(P, docs) {\n"
         "  const byId = Object.fromEntries(P.sts.map(s => [s.id, s]));\n"
-        "  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });\n"
         "  const docById = Object.fromEntries(docs.map(d => [d.id, d]));\n"
+        "  // Byte-addressed statements: text is null where the doc's cleaned text\n"
+        "  // reproduces it from the byte span; derive it here so the payload stays\n"
+        "  // small and the span stays the source of truth.\n"
+        "  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } });\n"
+        "  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });\n"
         "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names: P.names, byId, docById };\n"
         "}\n"
         "class Component extends DCLogic {",

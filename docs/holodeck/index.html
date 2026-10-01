@@ -2265,6 +2265,20 @@ select option{background:var(--s1);color:var(--ink)}
     </div>
   </sc-if>
   <sc-if value="{{ isBusy }}" hint-placeholder-val="{{ false }}">
+    <style>
+      @keyframes ohsSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      .ohs-spinner { width:44px;height:44px;margin:0 auto;border:4px solid var(--s2);border-top-color:#8b5cf6;border-radius:50%;animation:ohsSpin 1s linear infinite; }
+    </style>
+    <div style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.38);z-index:90">
+      <div style="background:var(--bg);border:1px solid var(--line2);border-radius:16px;padding:30px 36px;min-width:320px;max-width:90vw;text-align:center;box-shadow:0 14px 44px rgba(0,0,0,.4)">
+        <div class="ohs-spinner"></div>
+        <div style="font:500 15px 'Hanken Grotesk';color:var(--ink);margin-top:18px;text-wrap:pretty">{{ busy }}</div>
+        <div style="height:6px;background:var(--s2);border-radius:999px;margin-top:16px;overflow:hidden">
+          <div style="height:100%;width:{{ seedPct }}%;background:#8b5cf6;border-radius:999px;transition:width .35s ease"></div>
+        </div>
+      </div>
+    </div>
+
     <div style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:70;background:var(--sel);border:1px solid #8b5cf6;border-radius:999px;padding:8px 18px;font:500 14px 'Hanken Grotesk';color:var(--ink)">{{ busy }}</div>
   </sc-if>
 </div>
@@ -3220,28 +3234,39 @@ const assertLine = (st, A) => { const d = A.docById[st.doc]; const w = whoSays(s
 
 // ── OHS Pages overlay: fetch a JSON artifact preferring its .zst twin,
 // decoded with the same zstd-wasm the app's reading-worker already uses.
-async function fetchDecodedOHS(path) {
+async function fetchDecodedOHS(path, onStep) {
+  const step = s => { try { onStep && onStep(s); } catch (e) {} };
   const zst = path + '.zst';
   try {
     const r = await fetch(new URL(zst, location.href).href, { cache: 'no-cache' });
     if (r.ok) {
+      step('fetch');
       const M = await import('https://esm.sh/@bokuweb/zstd-wasm@0.0.27');
       await M.init();
       const raw = M.decompress(new Uint8Array(await r.arrayBuffer()));
-      return JSON.parse(new TextDecoder().decode(raw));
+      step('decode');
+      const parsed = JSON.parse(new TextDecoder().decode(raw));
+      step('parse');
+      return parsed;
     }
   } catch (e) {}
   const r2 = await fetch(new URL(path, location.href).href, { cache: 'no-cache' });
   if (!r2.ok) throw new Error('artifact unavailable: ' + path);
-  return await r2.json();
+  const parsed2 = await r2.json();
+  step('parse');
+  return parsed2;
 }
 // Rehydrate the pre-digested analysis: ships sts once + names with their
 // statement objects; rebuild the index maps here, same shapes analyze()
 // produces, so the render sees a real graph.
 function rehydrateOhsAnalysis(P, docs) {
   const byId = Object.fromEntries(P.sts.map(s => [s.id, s]));
-  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
   const docById = Object.fromEntries(docs.map(d => [d.id, d]));
+  // Byte-addressed statements: text is null where the doc's cleaned text
+  // reproduces it from the byte span; derive it here so the payload stays
+  // small and the span stays the source of truth.
+  P.sts.forEach(s => { if (s.text == null) { const d = docById[s.doc]; if (d) s.text = d.text.slice(s.s, s.e); } });
+  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
   return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names: P.names, byId, docById };
 }
 class Component extends DCLogic {
@@ -3372,19 +3397,23 @@ class Component extends DCLogic {
     try { docs = this.analysis().docs || []; } catch (e) {}
     if (docs.length) return;
     const say = m => { try { this.setState({ busy: m }); } catch (e) {} };
+    const stage = (pct, msg) => { try { this.setState({ seedPct: pct, busy: msg }); } catch (e) {} };
+    const stepPct = base => s => { stage(base + (s === 'fetch' ? 2 : s === 'decode' ? 12 : 22), 'Loading OHS corpus · ' + (s === 'fetch' ? 'downloading…' : s === 'decode' ? 'decoding…' : 'indexing…')); };
     try {
-      const B = await fetchDecodedOHS('ohs-bundle.json');
+      stage(2, 'Loading OHS corpus · downloading…');
+      const B = await fetchDecodedOHS('ohs-bundle.json', stepPct(8));
       if (B && Array.isArray(B.docs) && B.docs.length) {
-        say('Loading OHS corpus · ' + B.docs.length + ' documents…');
+        stage(35, 'Loading OHS corpus · ' + B.docs.length + ' documents, decoding analysis…');
         let P = null;
-        try { P = await fetchDecodedOHS('ohs-analysis.json'); } catch (e) { P = null; }
+        try { P = await fetchDecodedOHS('ohs-analysis.json', stepPct(45)); } catch (e) { P = null; }
         if (P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {
           P.corrKey = this.corrKey(this.corpusId());
           this._ohsP = P; this._ohsA = null;
           const cid = this.corpusId();
           const added = { ...this.state.added, [cid]: B.docs };
           this.saveAdded(added);
-          this.setState({ added, just: null, busy: '' });
+          stage(100, 'Loading OHS corpus · ready');
+          this.setState({ added, just: null, busy: '', seedPct: 100 });
           return;
         }
         await this.addDocs(B.docs);
@@ -5843,7 +5872,7 @@ class Component extends DCLogic {
         : 'flex:0 0 40px;position:sticky;top:0;height:100vh;overflow:hidden;box-sizing:border-box;border-right:1px solid var(--line);background:var(--s1);padding:16px 8px 20px;display:flex;flex-direction:column;gap:18px',
       toggleRail: () => { const open = !S.railOpen; try { localStorage.setItem('fold-explorer-rail', open ? '1' : '0'); } catch (e) {} this.setState({ railOpen: open }); },
       themeIcon: S.theme === 'dark' ? '☀' : '☾', themeTitle: S.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode',
-      dragging: S.dragging, isBusy: !!S.busy, busy: S.busy,
+      dragging: S.dragging, isBusy: !!S.busy, busy: S.busy, seedPct: S.seedPct || 0,
       hasJust: !!J && view !== 'reader', just, dismissJust: () => this.setState({ just: null }), showDropStrip: !J && view === 'summary',
       demo: { title: demo.title, label: demo.url ? demo.title + ' — Wikipedia link' : demo.title + '.txt', onClick: () => demo.url ? this.ingestUrl(demo.url, { title: demo.title, year: demo.year, fallback: demo.text }) : this.addDocs([{ title: demo.title, year: demo.year, type: 'Text', text: demo.text }]), onDragStart: e => { if (demo.url) { e.dataTransfer.setData('text/uri-list', demo.url); e.dataTransfer.setData('text/plain', demo.url); e.dataTransfer.setData('application/x-fold-fallback', demo.text); } else e.dataTransfer.setData('text/plain', demo.text); e.dataTransfer.setData('application/x-fold-title', demo.title); e.dataTransfer.setData('application/x-fold-year', String(demo.year)); e.dataTransfer.effectAllowed = 'copy'; } },
       onCorpus: e => this.setState({ corpus: e.target.value, view: 'summary', sel: null, f: {}, readDoc: null }),

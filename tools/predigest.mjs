@@ -112,6 +112,8 @@ async function main() {
   // One-shot bundle: every doc (text + pre-read eng) in a single file, so the
   // app loads ALL data with one fetch. Docs carry STABLE ids (the app mints
   // runtime ids for live adds; the pre-digested analysis keys off these).
+  // Text here is the CLEANED doc text analyze produces (statement byte spans
+  // s/e index into it), so statement text can be derived instead of shipped.
   const BUNDLE = path.join(HD, "ohs-bundle.json");
   const docs = entries.map((e) => {
     const eng = (readings[e.path] || {}).eng;
@@ -128,8 +130,6 @@ async function main() {
       extra: eng ? { eng } : {},
     };
   });
-  writeArtifact(BUNDLE, { generated: new Date().toISOString(), docs });
-  console.log(`wrote ${BUNDLE}: ${docs.length} docs, ${fs.statSync(BUNDLE).size} bytes`);
 
   // Pre-digested analysis: the app's OWN analyze() over the full corpus, run
   // here (jsdom shim), serialized. The app loads it instead of recomputing,
@@ -148,11 +148,20 @@ async function main() {
   const A = analyze_offline({ docs }, {});
   const ANALYSIS = path.join(HD, "ohs-analysis.json");
   const docIds = docs.map((d) => d.id).join(",");
-  // Reduced serialization: the app's in-memory A shares references, which
-  // JSON duplicates 3x (sts/stsByDoc/byId). Ship sts ONCE and names with
-  // their statement objects intact (a handful of analyze's name.sts entries
-  // reference degenerate statements absent from sts — mapping to ids would
-  // lose them). The app rebuilds stsByDoc/byId/docById on load.
+  // Reduced serialization (byte-addressed): the app's in-memory A shares
+  // references (JSON triples them) and statement text dominates the payload.
+  // Ships sts ONCE with text DROPPED wherever the doc's cleaned text already
+  // reproduces it from the byte span (s/e) — rehydrate derives those. names
+  // carry their statement objects (some reference degenerate sts absent from
+  // the list). Bundle carries analyze's cleaned doc text so spans resolve.
+  const cleanDocs = A.docs; // cleaned text, same ids as the seeded docs
+  const sts = A.sts.map((s) => {
+    const d = cleanDocs.find((x) => x.id === s.doc);
+    if (d && typeof s.s === "number" && typeof s.e === "number" && d.text.slice(s.s, s.e) === s.text) {
+      return { ...s, text: null };
+    }
+    return s;
+  });
   const names = {};
   for (const [k, v] of Object.entries(A.names)) {
     names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: v.docs, sts: v.sts };
@@ -163,15 +172,18 @@ async function main() {
       generated: new Date().toISOString(),
       schema: "ohs-analysis@1",
       docIds,
-      sts: A.sts,
+      sts,
       names,
       echoes: A.echoes,
       echoFloor: A.echoFloor,
     }
   );
+  // Bundle now carries the cleaned doc text (same ids) so span derivation works.
+  writeArtifact(BUNDLE, { generated: new Date().toISOString(), docs: cleanDocs });
+  const keptText = sts.filter((s) => s.text != null).length;
   console.log(
-    `wrote ${ANALYSIS}: ${A.sts.length} statements, ${Object.keys(names).length} names, ` +
-    `${fs.statSync(ANALYSIS).size} bytes, ${Math.round((Date.now() - a0) / 1000)}s`
+    `wrote ${ANALYSIS}: ${sts.length} statements (${keptText} with text, ${sts.length - keptText} byte-derived), ` +
+    `${Object.keys(names).length} names, ${fs.statSync(ANALYSIS).size} bytes, ${Math.round((Date.now() - a0) / 1000)}s`
   );
 }
 

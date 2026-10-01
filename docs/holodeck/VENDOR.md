@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `82033ed0a24de8a6804ee87d8bd1392fe03d91b4`
-Vendored: 2026-10-01T15:01:11+00:00 by `python3 vendor_holodeck.py`
+Vendored: 2026-10-01T15:11:45+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -26,14 +26,17 @@ is duplicated here.
 - ingest: pullRepo accepts opt.prefix / opt.skipRe path filters
 - ingest: never read this instance's own app shell (docs/) as corpus
 - chrome: topic placeholder names the OHS audit, not a bridge collapse
-- analysis: rehydrate the pre-digested analysis (deduped JSON -> live graph) + zstd decode
+- loading: centered progress overlay (spinner + staged bar) during seed
+- loading: expose seedPct in render
+- loading: seed drives staged progress
+- analysis: rehydrate + fetchDecodedOHS helpers
 - analysis: return the prebuilt analysis while the workspace is exactly the seeded set
 
-Patched `index.html` sha256: `2fe8ddd357bfa147dfb1549d10f85909b9fee819930694879b533cd27b20f9ed`
+Patched `index.html` sha256: `f85d79d20d1ca0c652457a61541790ca3a6762ab93093bf94f910dbb17c4321e`
 
-Seed manifest `ohs-seed.json`: `140` entries `f4a0710ee47b`
+Seed manifest `ohs-seed.json`: `140` entries `d3e5ee869857`
 
-Digest `ohs-readings.json`: `c31a64b997d9` (engine pre-reads, schema `ohs-readings@1`)
+Digest `ohs-readings.json`: `25e833737604` (engine pre-reads, schema `ohs-readings@1`)
 
 ## Files
 
