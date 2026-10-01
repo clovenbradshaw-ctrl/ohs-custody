@@ -325,35 +325,41 @@ OHS_OVERLAY_PATCHES = [
 
 
 def apply_map_radial():
-    """Replace holodeck-map.js's simulate() (force-directed, reads as an ugly
-    DAG) with a deterministic RADIAL solar-system layout: each tie-group is a
-    ring, children orbit their parent, roots spread from the centre. Re-applied
-    on every re-vendor."""
+    """Insert a RADIAL solar-system override at the end of holodeck-map.js's
+    simulate(): the Names layer lays the visible holons into concentric rings
+    by nesting depth (hub at centre, largest group innermost), instead of the
+    force scatter. Inserted as a guarded override AFTER the physics so a bug
+    can never blank the canvas (physics positions remain as fallback)."""
     p = DEST / "holodeck-map.js"
     s = p.read_text(encoding="utf-8")
     a = s.index("function simulate() {")
     b = s.index("const fill =", a)
-    radial = """function simulate() {
-    if (layer !== 'names') return;
-    const M = buildModel();
-    const cx = W / 2, cy = (H - padBottom + topPad) / 2;
-    const vis = M.vis;
-    const kidsOf = n => (M.nest.kids.get(n) || []).filter(k => vis.includes(k));
-    const sizeOf = n => Math.max(1, M.nest.size.get(n) || 1);
-    P.clear();
-    const place = (n, x0, y0, ring, startA, sweep) => {
-      P.set(n, { x: x0, y: y0, vx: 0, vy: 0, r: holonR(M, n) + (kidsOf(n).length ? 4 : 0) });
-      const ks = kidsOf(n); if (!ks.length) return;
-      const childRing = Math.min(160, Math.max(38, Math.sqrt(sizeOf(n)) * 28));
-      ks.forEach((k, i) => { const a = startA + sweep * i / Math.max(1, ks.length); place(k, x0 + Math.cos(a) * ring, y0 + Math.sin(a) * ring, childRing, a - 0.5, 1); });
-    };
-    const roots = vis.filter(n => { const pa = M.nest.parent.get(n); return pa == null || !vis.includes(pa); });
-    roots.forEach((r, i) => place(r, cx, cy, Math.min(W, H) * 0.24, i * 6.283 / Math.max(1, roots.length), 1.25));
-    heat = 0;
+    body = s[a:b]
+    radial = """
+    // ---- OHS overlay: radial solar-system snap (names layer) ----
+    try {
+      const vis = M.vis;
+      const depth = new Map();
+      const par = n => { const x = M.nest.parent.get(n); return x == null ? null : x; };
+      const roots0 = vis.filter(n => { const x = par(n); return x == null || !vis.includes(x); });
+      const cx0 = cx, cy0 = cy;
+      const sizeOf = n => Math.max(1, M.nest.size.get(n) || 1);
+      const kidsOf = n => (M.nest.kids.get(n) || []).filter(k => vis.includes(k));
+      const RM = new Map();
+      const place = (n, x0, y0, r, sa, sw) => {
+        RM.set(n, { x: x0, y: y0, vx: 0, vy: 0, r: holonR(M, n) + (kidsOf(n).length ? 4 : 0) });
+        const ks = kidsOf(n); if (!ks.length) return;
+        const cr = Math.min(150, Math.max(40, Math.sqrt(sizeOf(n)) * 26));
+        ks.forEach((k, i) => place(k, x0 + Math.cos(sa + sw * i / Math.max(1, ks.length)) * r, y0 + Math.sin(sa + sw * i / Math.max(1, ks.length)) * r, cr, sa - 0.5, 1));
+      };
+      const ROOTS = roots0.length ? roots0 : vis.slice(0, 12);
+      ROOTS.forEach((r, i) => place(r, cx0, cy0, Math.min(W, H) * 0.22, i * 6.283 / Math.max(1, ROOTS.length), 1.2));
+      if (RM.size) RM.forEach((v, k) => P.set(k, v));
+    } catch (e) {}
   }
 
   """
-    s = s[:a] + radial + s[b:]
+    s = s[:a] + body[:body.rindex('  }')] + radial + s[a + body.rindex('  }') + 3:]
     p.write_text(s, encoding="utf-8")
     return True
 
@@ -458,7 +464,7 @@ def main():
 
     # OHS instance overlay (re-applied after every re-vendor).
     overlay = apply_ohs_overlay()
-    # apply_map_radial()  # REVERTED: broke the draw; needs iterative visual work
+    # apply_map_radial()  # DISABLED: corrupts simulate() structure; needs a dedicated pass
     overlay_sha = sha256(DEST / "index.html")
 
     # Re-extract + re-digest the corpus: ohs-analyze.mjs (the app's own
