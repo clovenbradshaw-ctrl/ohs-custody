@@ -19,21 +19,36 @@ All live under `docs/holodeck/`, each shipped as plain `.json` plus a
 
 ## Consumption contract (what the app does)
 
-1. **Seed fast path** (`ohsSeed`): `fetchDecodedOHS('ohs-bundle.json')` and
-   `fetchDecodedOHS('ohs-analysis.json')`. If `P.docIds === docs.map(d=>d.id).join(',')`,
-   seed `state.added[custom]` = the bundle docs directly and stash `P`; **no
-   `addDocs`, no `analyze` run**. Otherwise fall back to `addDocs` (which
-   analyzes), or to the per-file trickle.
-2. **`analysis()` guard**: while the seeded workspace's doc ids and
-   `corrKey` still match `P.docIds`/`P.corrKey`, return the rehydrated
-   prebuilt graph. The moment the visitor adds, removes, or files a
-   correction, the guard releases and the app's own `analyze()` folds the
-   change on top — the base is pre-digested, local actions append to it.
-3. **`rehydrateOhsAnalysis(P, docs)`**: rebuilds `byId`, `stsByDoc`,
+1. **Seed — two phases (amino-style lazy materialization).**
+   - **Phase 1 (instant):** `loadBundleOHS()` — the small bundle only, cache-first
+     from IndexedDB, revalidated against the `ohs-seed.json` fingerprint. Seeds
+     `state.added[custom]` and a **minimal graph** (`docs` + `docById`, empty
+     `sts`/`names`) via `this._ohsMinimal`, so the **Sources view renders
+     immediately** — no 33 MB parse on the critical path.
+   - **Phase 2 (background):** `loadAnalysisOHS()` folds the full analysis in
+     behind; when it lands and `docIds` match, the `analysis()` guard swaps the
+     minimal graph for the rehydrated full graph. A failed or slow analysis
+     leaves the app fully usable on the bundle alone.
+2. **`analysis()` guard** — order: `_ohsMinimal` → `_ohsP` (full, rehydrated)
+   → live `analyze()`. The full graph is returned while the seeded workspace's
+   doc ids and `corrKey` match `P.docIds`/`P.corrKey`; the moment the visitor
+   adds, removes, or files a correction, the guard releases and the app's own
+   `analyze()` folds the change on top — the base is pre-digested, local
+   actions append to it.
+3. **The stash.** The bundle + analysis are kept in IndexedDB
+   (`ohs:bundle`, `ohs:analysis`, `ohs:fingerprint`) after first load, so
+   revisits are zero-download; the fingerprint (a fold of `ohs-seed.json`
+   path+sha256 entries) is the only thing re-fetched, and only a changed
+   corpus re-fetches the artifacts.
+4. **`rehydrateOhsAnalysis(P, docs)`**: rebuilds `byId`, `stsByDoc`,
    `docById` from `P.sts` and the seeded docs, and derives every
    byte-addressed statement's text: `docById[st.doc].text.slice(st.s, st.e)`.
    These index maps the digest deliberately omits (JSON would triple the
    shared references).
+
+Any holodeck instance that produces these artifacts and applies this loading
+connector behaves this way: instant first paint, incremental fold, zero
+download on revisits.
 
 ## Producer contract (how to make these)
 
