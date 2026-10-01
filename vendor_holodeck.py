@@ -324,6 +324,40 @@ OHS_OVERLAY_PATCHES = [
 ]
 
 
+def apply_map_radial():
+    """Replace holodeck-map.js's simulate() (force-directed, reads as an ugly
+    DAG) with a deterministic RADIAL solar-system layout: each tie-group is a
+    ring, children orbit their parent, roots spread from the centre. Re-applied
+    on every re-vendor."""
+    p = DEST / "holodeck-map.js"
+    s = p.read_text(encoding="utf-8")
+    a = s.index("function simulate() {")
+    b = s.index("const fill =", a)
+    radial = """function simulate() {
+    if (layer !== 'names') return;
+    const M = buildModel();
+    const cx = W / 2, cy = (H - padBottom + topPad) / 2;
+    const vis = M.vis;
+    const kidsOf = n => (M.nest.kids.get(n) || []).filter(k => vis.includes(k));
+    const sizeOf = n => Math.max(1, M.nest.size.get(n) || 1);
+    P.clear();
+    const place = (n, x0, y0, ring, startA, sweep) => {
+      P.set(n, { x: x0, y: y0, vx: 0, vy: 0, r: holonR(M, n) + (kidsOf(n).length ? 4 : 0) });
+      const ks = kidsOf(n); if (!ks.length) return;
+      const childRing = Math.min(160, Math.max(38, Math.sqrt(sizeOf(n)) * 28));
+      ks.forEach((k, i) => { const a = startA + sweep * i / Math.max(1, ks.length); place(k, x0 + Math.cos(a) * ring, y0 + Math.sin(a) * ring, childRing, a - 0.5, 1); });
+    };
+    const roots = vis.filter(n => { const pa = M.nest.parent.get(n); return pa == null || !vis.includes(pa); });
+    roots.forEach((r, i) => place(r, cx, cy, Math.min(W, H) * 0.24, i * 6.283 / Math.max(1, roots.length), 1.25));
+    heat = 0;
+  }
+
+  """
+    s = s[:a] + radial + s[b:]
+    p.write_text(s, encoding="utf-8")
+    return True
+
+
 def apply_ohs_overlay():
     idx = (DEST / "index.html").read_text(encoding="utf-8")
     applied = []
@@ -424,6 +458,7 @@ def main():
 
     # OHS instance overlay (re-applied after every re-vendor).
     overlay = apply_ohs_overlay()
+    # apply_map_radial()  # REVERTED: broke the draw; needs iterative visual work
     overlay_sha = sha256(DEST / "index.html")
 
     # Re-extract + re-digest the corpus: ohs-analyze.mjs (the app's own
