@@ -344,7 +344,7 @@ def main():
     if DEST.exists():
         # Pristine re-vendor: wipe everything except VENDOR.md local notes.
         for p in sorted(DEST.rglob("*")):
-            if p.name == "VENDOR.md":
+            if p.name in ("VENDOR.md", "DIGEST-CONTRACT.md"):
                 continue
             if p.is_file():
                 p.unlink()
