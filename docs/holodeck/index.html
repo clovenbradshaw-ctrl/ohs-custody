@@ -3330,18 +3330,55 @@ class Component extends DCLogic {
   // ── An address that resolves to a repository. Not a special case in the interface: ingestUrl calls this
   // for any github.com/owner/repo address, wherever it came from. No file-count or file-size limit; text files
   // only, and vendored directories are skipped. Admitted with one addDocs, since each call re-reads the workspace.
-  // ── OHS Pages overlay: first-run seed. Pulls the custody corpus out
-  // of this same repo (tracks main, so it stays current) whenever the
-  // workspace is empty. Deliberately not gated on a done-flag: if the
-  // browser failed to persist the docs (quota), an empty room must
-  // re-seed rather than trust a stale flag. Skipped once docs exist.
+  // ── OHS Pages overlay: lazy seed. One tree listing, then small
+  // addDocs batches so first paint lands in seconds and the rest
+  // fills in behind it. Priority docs (audit minutes, MHRC, newest
+  // transcripts) go first. Each background batch restores the
+  // visitor's view/selection/question so the trickle never yanks
+  // them around, and the import announcement stays cleared.
+  // Engine reads + full analysis still run per doc (no semantic
+  // shortcuts) -- the fill takes minutes in the background.
   async ohsSeed() {
     let docs = [];
     try { docs = this.analysis().docs || []; } catch (e) {}
     if (docs.length) return;
+    const say = m => { try { this.setState({ busy: m }); } catch (e) {} };
+    let tree = [];
+    try {
+      const r = await fetch('https://api.github.com/repos/clovenbradshaw-ctrl/ohs-custody/git/trees/HEAD?recursive=1', { headers: { Accept: 'application/vnd.github+json' } });
+      if (!r.ok) throw new Error('tree ' + r.status);
+      tree = (await r.json()).tree || [];
+    } catch (e) { say(''); return; }
     const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
-    await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'transcripts/', skipRe: MACHINE_JSON });
-    await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'derived/', skipRe: MACHINE_JSON });
+    const paths = tree.filter(x => x.type === 'blob' && /\.txt$/i.test(x.path) && (x.path.indexOf('transcripts/') === 0 || x.path.indexOf('derived/') === 0) && !MACHINE_JSON.test(x.path)).map(x => x.path);
+    if (!paths.length) { say(''); return; }
+    const PRIORITY = [/WELSCH/i, /MHRC/i, /SEP23-MINUTES/i, /DEC9/i, /2026-09-29/i, /2026-06-30/i, /sept23-audit/i, /2026-09-09/i, /2026-09-23-ce/i, /HID-2023/i];
+    const score = p => { for (let i = 0; i < PRIORITY.length; i++) if (PRIORITY[i].test(p)) return i; return PRIORITY.length; };
+    paths.sort((a, b) => score(a) - score(b) || (a < b ? -1 : 1));
+    const rawBase = 'https://raw.githubusercontent.com/clovenbradshaw-ctrl/ohs-custody/HEAD/';
+    const get = async p => {
+      try {
+        const r = await fetch(rawBase + p.split('/').map(encodeURIComponent).join('/'), { cache: 'no-cache' });
+        if (!r.ok) return null;
+        const t = await r.text();
+        if (t.trim().length < 40) return null;
+        return { title: p.split('/').slice(-2).join('/'), year: null, type: 'Repo file', text: t, url: 'https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/' + p, note: 'From ohs-custody · ' + p };
+      } catch (e) { return null; }
+    };
+    const pull = async ps => { const out = []; await Promise.all(ps.map(async p => { const d = await get(p); if (d) out.push(d); })); return out; };
+    let done = 0;
+    say('Loading OHS corpus · ' + done + ' / ' + paths.length + ' files…');
+    const first = await pull(paths.slice(0, 8));
+    done += first.length;
+    if (first.length) await this.addDocs(first);
+    for (let i = 8; i < paths.length; i += 12) {
+      say('Loading OHS corpus · ' + done + ' / ' + paths.length + ' files…');
+      await new Promise(r => setTimeout(r, 2000));
+      const S = this.state, k = { view: S.view, sel: S.sel, readDoc: S.readDoc, q: S.q, f: S.f };
+      const batchDocs = await pull(paths.slice(i, i + 12));
+      done += batchDocs.length;
+      if (batchDocs.length) { await this.addDocs(batchDocs); try { this.setState({ view: k.view, sel: k.sel, readDoc: k.readDoc, q: k.q, f: k.f, just: null }); } catch (e) {} }
+    }
     this.setState({ just: null, busy: '' });
   }
   async pullRepo(owner, repo, opt) {
