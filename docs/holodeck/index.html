@@ -3245,6 +3245,7 @@ async function fetchDecodedOHS(path) {
 // after the first visit; revisits read it instantly and revalidate
 // against the tiny ohs-seed.json fingerprint.
 const ohsFpOf = seed => seed.entries.map(e => e.path + ':' + e.sha256).join('|');
+const OHS_DIGEST_VERSION = 'v3'; // bump when the digest shape changes, so stale stashes are discarded
 async function ohsCached(key) { try { return await idbGet(key); } catch (e) { return null; } }
 async function ohsStash(key, val) { try { await idbPut(key, val); } catch (e) {} }
 async function ohsFingerprint() {
@@ -3254,29 +3255,17 @@ async function ohsFingerprint() {
     return ohsFpOf(await r.json());
   } catch (e) { return null; }
 }
-async function loadBundleOHS() {
-  const cF = await ohsCached('ohs:fingerprint'), cB = await ohsCached('ohs:bundle');
-  if (cB && Array.isArray(cB.docs) && cB.docs.length) {
+async function loadLogOHS() {
+  const cV = await ohsCached('ohs:version'), cF = await ohsCached('ohs:fingerprint'), cL = await ohsCached('ohs:log');
+  if (cL && Array.isArray(cL.docs) && Array.isArray(cL.sts) && cV === OHS_DIGEST_VERSION) {
     const live = await ohsFingerprint();
-    if (live == null || live === cF) return cB; // cache trusted (or seed unreachable)
+    if (live == null || live === cF) return cL; // cache trusted (or seed unreachable)
   }
-  const B = await fetchDecodedOHS('ohs-bundle.json');
-  ohsStash('ohs:bundle', B);
+  const L = await fetchDecodedOHS('ohs.log');
+  ohsStash('ohs:log', L); ohsStash('ohs:version', OHS_DIGEST_VERSION);
   const live = await ohsFingerprint();
   if (live != null) ohsStash('ohs:fingerprint', live);
-  return B;
-}
-async function loadAnalysisOHS() {
-  const cF = await ohsCached('ohs:fingerprint'), cP = await ohsCached('ohs:analysis');
-  if (cP && Array.isArray(cP.sts) && cP.sts.length) {
-    const live = await ohsFingerprint();
-    if (live == null || live === cF) return cP; // cache trusted (or seed unreachable)
-  }
-  const P = await fetchDecodedOHS('ohs-analysis.json');
-  ohsStash('ohs:analysis', P);
-  const live = await ohsFingerprint();
-  if (live != null) ohsStash('ohs:fingerprint', live);
-  return P;
+  return L;
 }
 // Rehydrate the pre-digested analysis: ships sts once + names with their
 // statement objects; rebuild the index maps here, same shapes analyze()
@@ -3427,22 +3416,20 @@ class Component extends DCLogic {
     const stage = (pct, msg) => { try { this.setState({ seedPct: pct, busy: msg }); } catch (e) {} };
     try {
       stage(5, 'Loading OHS corpus · sources…');
-      const B = await loadBundleOHS();
-      if (B && Array.isArray(B.docs) && B.docs.length) {
+      const L = await loadLogOHS();
+      if (L && Array.isArray(L.docs) && L.docs.length) {
         const cid = this.corpusId();
-        const added = { ...this.state.added, [cid]: B.docs };
+        const added = { ...this.state.added, [cid]: L.docs };
         this.saveAdded(added);
-        // Phase 1: a minimal graph from the bundle alone — Sources renders now.
-        this._ohsMinimal = { sts: [], names: {}, byId: {}, stsByDoc: {}, echoes: {}, echoFloor: 0, docs: B.docs, docById: Object.fromEntries(B.docs.map(d => [d.id, d])) };
+        // Phase 1: a minimal graph from the log's docs alone — Sources renders now.
+        this._ohsMinimal = { sts: [], names: {}, byId: {}, stsByDoc: {}, echoes: {}, echoFloor: 0, docs: L.docs, docById: Object.fromEntries(L.docs.map(d => [d.id, d])) };
         this.setState({ added, just: null, busy: '', seedPct: 100 });
-        // Phase 2: fold the full analysis in the background; the guard swaps it in.
-        loadAnalysisOHS().then(P => {
-          if (P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {
-            P.corrKey = this.corrKey(this.corpusId());
-            this._ohsP = P; this._ohsA = null; this._ohsMinimal = null;
-            try { this.setState({ just: null, busy: '' }); } catch (e) {}
-          }
-        }).catch(() => {});
+        // Phase 2: the log already carries the index — fold it in immediately.
+        if (L.sts && L.sts.length && L.docIds === L.docs.map(d => d.id).join(',')) {
+          L.corrKey = this.corrKey(this.corpusId());
+          this._ohsP = L; this._ohsA = null; this._ohsMinimal = null;
+          try { this.setState({ just: null, busy: '' }); } catch (e) {}
+        }
         return;
       }
     } catch (e) {}
@@ -4902,8 +4889,13 @@ class Component extends DCLogic {
     if (this._ohsP) {
       const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));
       if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {
-        if (!this._ohsA) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || []); } catch (e) { this._ohsA = null; } }
+        if (!this._ohsA) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || []); } catch (e) { this._ohsA = null; console.error('OHS rehydrate failed', e); } }
         if (this._ohsA) return this._ohsA;
+        // Rehydrate failed: NEVER fall through to live analyze over the
+        // seeded corpus (synchronous multi-minute freeze). Return a
+        // sources-only graph so the app stays usable and clickable.
+        const dF = this.state.added[this.corpusId()] || [];
+        return { sts: [], names: {}, byId: {}, stsByDoc: {}, echoes: {}, echoFloor: 0, docs: dF, docById: Object.fromEntries(dF.map(d => [d.id, d])) };
       } else { this._ohsP = null; this._ohsA = null; }
     }
     const id = this.corpusId(); const seenU = new Set(); const docs = this.baseDocs(id).concat(this.state.added[id] || []).filter(d => { const u = d.url && d.url.replace(/^https?:\/\/(www\.)?/, '').replace(/[#?].*$/, '').replace(/\/$/, '').toLowerCase(); if (!u || d.ohsId) { if (u) seenU.add(u); return true; } if (seenU.has(u)) return false; seenU.add(u); return true; });

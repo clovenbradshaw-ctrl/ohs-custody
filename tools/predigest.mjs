@@ -183,12 +183,29 @@ async function main() {
       echoFloor: A.echoFloor,
     }
   );
-  // Bundle now carries the cleaned doc text (same ids) so span derivation works.
-  writeArtifact(BUNDLE, { generated: new Date().toISOString(), docs: cleanDocs });
-  const keptText = sts.filter((s) => s.text != null).length;
+  // Single append-only log: everything the app needs in ONE file, byte-
+  // addressed to the source files. Statements are byte spans (s/e) into the
+  // cleaned doc text; each doc record carries its path + sha256 pointer; the
+  // index/edges/connections fold out of it. One fetch on the wire (Pages
+  // gzips it), append-only via git history.
+  const LOG = path.join(HD, "ohs.log");
+  writeArtifact(
+    LOG,
+    {
+      schema: "ohs-log@1",
+      generated: new Date().toISOString(),
+      docIds,
+      docs: cleanDocs,
+      sts,
+      names,
+      echoes: A.echoes,
+      echoFloor: A.echoFloor,
+    }
+  );
+  const keptText2 = sts.filter((s) => s.text != null).length;
   console.log(
-    `wrote ${ANALYSIS}: ${sts.length} statements (${keptText} with text, ${sts.length - keptText} byte-derived), ` +
-    `${Object.keys(names).length} names, ${fs.statSync(ANALYSIS).size} bytes, ${Math.round((Date.now() - a0) / 1000)}s`
+    `wrote ${LOG}: ${sts.length} statements (${keptText2} with text, ${sts.length - keptText2} byte-derived), ` +
+    `${Object.keys(names).length} names, ${fs.statSync(LOG).size} bytes, ${fs.statSync(LOG + ".zst").size} bytes zst`
   );
 }
 
