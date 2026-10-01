@@ -4945,8 +4945,12 @@ class Component extends DCLogic {
     if (this._ohsP) {
       const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));
       if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {
+        // Fold the doc the user is focused on — the reader doc OR the selected
+        // source (FALSIFIED: the card title button calls onSelect, not
+        // read(), so fold on selection too, view-driven, not handler-driven).
+        try { const rd = this.state.readDoc || (this.state.sel && this.state.sel.type === 'doc' ? this.state.sel.id : null); if (rd && this._ohsP.stsByDoc && this._ohsP.stsByDoc[rd] && this._ohsP.stsByDoc[rd].length && this._ohsLoadedIds && !this._ohsLoadedIds.has(rd)) { this._ohsLoadedIds.add(rd); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; } } catch (e) {}
         if (!this._ohsA || this._ohsA._rev !== this._ohsRev) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || [], this._ohsLoadedIds); if (this._ohsA) this._ohsA._rev = this._ohsRev; } catch (e) { this._ohsA = null; console.error('OHS rehydrate failed', e); } }
-        if (this._ohsA) return this._ohsA;
+        if (this._ohsA) { try { window.__holodeckA = this._ohsA; window.__ohsDiag = { loaded: this._ohsLoadedIds ? this._ohsLoadedIds.size : 0, rev: this._ohsRev, sts: this._ohsA.sts.length }; } catch (e) {} return this._ohsA; }
         // Rehydrate failed: NEVER fall through to live analyze over the
         // seeded corpus (synchronous multi-minute freeze). Return a
         // sources-only graph so the app stays usable and clickable.
@@ -5069,7 +5073,7 @@ class Component extends DCLogic {
     this.setState({ added, corpus: newId, view: 'summary', sel: null, f: {}, q: '', readDoc: null, just: null }); }
   sel(type, id) { const S0 = this.state; if (type === 'name' && S0.view === 'reader' && !(S0.sel && S0.sel.type === 'name' && S0.sel.id === id)) this.pushHist(); if (type === 'doc') this.markRead(id); this.setState(s => (s.sel && s.sel.type === type && s.sel.id === id) ? { sel: null, selAll: false, pfIdx: 0, pfAll: false } : { sel: { type, id }, selAll: false, pfIdx: 0, pfAll: false }); }
   go(view) { this.setState({ view, readDoc: null }); }
-  async read(docId, stId) { try { await this.ensureOhsText(docId); } catch (e) {} try { if (this._ohsP && this._ohsP.stsByDoc && this._ohsLoadedIds && !this._ohsLoadedIds.has(docId) && this._ohsP.stsByDoc[docId] && this._ohsP.stsByDoc[docId].length) { this._ohsLoadedIds.add(docId); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; } } catch (e) {} const S0 = this.state; if (S0.view !== 'reader' || docId !== S0.readDoc || (S0.sel && S0.sel.type === 'name')) this.pushHist(); this.markRead(docId); if (docId !== this.state.readDoc) { this.state.seekT = 0; this._faithFound = null; } this.setState({ view: 'reader', readDoc: docId, sel: stId ? { type: 'statement', id: stId } : { type: 'doc', id: docId } }); }
+  async read(docId, stId) { try { window.__lastRead = docId; } catch (e) {} try { await this.ensureOhsText(docId); } catch (e) {} try { if (this._ohsP && this._ohsP.stsByDoc && this._ohsLoadedIds && !this._ohsLoadedIds.has(docId) && this._ohsP.stsByDoc[docId] && this._ohsP.stsByDoc[docId].length) { this._ohsLoadedIds.add(docId); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; console.log('OHS fold OK', docId, this._ohsLoadedIds.size); } else { console.log('OHS fold skip', docId, 'inLoaded=' + !!(this._ohsLoadedIds && this._ohsLoadedIds.has(docId)), 'n=' + (this._ohsP && this._ohsP.stsByDoc && this._ohsP.stsByDoc[docId] ? this._ohsP.stsByDoc[docId].length : 0)); } } catch (e) { console.error('OHS fold err', e); } const S0 = this.state; if (S0.view !== 'reader' || docId !== S0.readDoc || (S0.sel && S0.sel.type === 'name')) this.pushHist(); this.markRead(docId); if (docId !== this.state.readDoc) { this.state.seekT = 0; this._faithFound = null; } this.setState({ view: 'reader', readDoc: docId, sel: stId ? { type: 'statement', id: stId } : { type: 'doc', id: docId } }); }
   saveAdded(added) { try { localStorage.setItem('fold-explorer-added', JSON.stringify(added)); } catch (e) {} }
   // Fold the new statements into the holograph by the surprise view's own rules (holoKit), recording each step,
   // then hand the trace to the replay player. The picture before is everything else in the workspace.

@@ -193,7 +193,7 @@ OHS_OVERLAY_PATCHES = [
     (
         "lazy: open a source loads its text + derives statement texts from spans",
         "  read(docId, stId) { const S0 = this.state;",
-        "  async read(docId, stId) { try { await this.ensureOhsText(docId); } catch (e) {} try { if (this._ohsP && this._ohsP.stsByDoc && this._ohsLoadedIds && !this._ohsLoadedIds.has(docId) && this._ohsP.stsByDoc[docId] && this._ohsP.stsByDoc[docId].length) { this._ohsLoadedIds.add(docId); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; } } catch (e) {} const S0 = this.state;",
+        "  async read(docId, stId) { try { window.__lastRead = docId; } catch (e) {} try { await this.ensureOhsText(docId); } catch (e) {} try { if (this._ohsP && this._ohsP.stsByDoc && this._ohsLoadedIds && !this._ohsLoadedIds.has(docId) && this._ohsP.stsByDoc[docId] && this._ohsP.stsByDoc[docId].length) { this._ohsLoadedIds.add(docId); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; console.log('OHS fold OK', docId, this._ohsLoadedIds.size); } else { console.log('OHS fold skip', docId, 'inLoaded=' + !!(this._ohsLoadedIds && this._ohsLoadedIds.has(docId)), 'n=' + (this._ohsP && this._ohsP.stsByDoc && this._ohsP.stsByDoc[docId] ? this._ohsP.stsByDoc[docId].length : 0)); } } catch (e) { console.error('OHS fold err', e); } const S0 = this.state;",
     ),
     (
         "analysis: rehydrate + fetchDecodedOHS helpers",
@@ -274,8 +274,12 @@ OHS_OVERLAY_PATCHES = [
         "    if (this._ohsP) {\n"
         "      const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));\n"
         "      if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {\n"
+        "        // Fold the doc the user is focused on — the reader doc OR the selected\n"
+        "        // source (FALSIFIED: the card title button calls onSelect, not\n"
+        "        // read(), so fold on selection too, view-driven, not handler-driven).\n"
+        "        try { const rd = this.state.readDoc || (this.state.sel && this.state.sel.type === 'doc' ? this.state.sel.id : null); if (rd && this._ohsP.stsByDoc && this._ohsP.stsByDoc[rd] && this._ohsP.stsByDoc[rd].length && this._ohsLoadedIds && !this._ohsLoadedIds.has(rd)) { this._ohsLoadedIds.add(rd); this._ohsRev = (this._ohsRev || 1) + 1; this._ohsA = null; } } catch (e) {}\n"
         "        if (!this._ohsA || this._ohsA._rev !== this._ohsRev) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || [], this._ohsLoadedIds); if (this._ohsA) this._ohsA._rev = this._ohsRev; } catch (e) { this._ohsA = null; console.error('OHS rehydrate failed', e); } }\n"
-        "        if (this._ohsA) return this._ohsA;\n"
+        "        if (this._ohsA) { try { window.__holodeckA = this._ohsA; window.__ohsDiag = { loaded: this._ohsLoadedIds ? this._ohsLoadedIds.size : 0, rev: this._ohsRev, sts: this._ohsA.sts.length }; } catch (e) {} return this._ohsA; }\n"
         "        // Rehydrate failed: NEVER fall through to live analyze over the\n"
         "        // seeded corpus (synchronous multi-minute freeze). Return a\n"
         "        // sources-only graph so the app stays usable and clickable.\n"

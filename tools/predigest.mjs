@@ -96,9 +96,25 @@ async function main() {
   // only (no text; the render derives text from the doc's text at rehydrate).
   // rawNames/shadow/topics are consumed only inside analyze(); dropped here.
   const cleanDocs = A.docs;
+  // FALSIFIED then fixed: analyze's st.spans index its NORMALIZED text, not the
+  // cleaned doc text shipped in the log — so highlights pointed at the wrong
+  // bytes. Recompute each statement's name positions against the shipped doc
+  // text: search each name string within the statement's slice, record the
+  // absolute offset. Spans now index what the app actually displays.
+  const docById = Object.fromEntries(cleanDocs.map((d) => [d.id, d]));
   const sts = A.sts.map((s) => {
-    const { rawNames, shadow, topics, text, ...rest } = s;
-    return rest;
+    const { rawNames, shadow, topics, text, spans, ...rest } = s;
+    const d = docById[s.doc];
+    const spanOut = [];
+    if (d && typeof s.s === "number" && typeof s.e === "number") {
+      const slice = d.text.slice(s.s, s.e);
+      for (const n of s.names || []) {
+        if (!n) continue;
+        const idx = slice.indexOf(n);
+        if (idx !== -1) spanOut.push({ s: s.s + idx, e: s.s + idx + n.length, name: n });
+      }
+    }
+    return { ...rest, spans: spanOut };
   });
   const names = {};
   for (const [k, v] of Object.entries(A.names)) {
