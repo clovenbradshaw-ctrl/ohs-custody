@@ -3390,11 +3390,11 @@ class Component extends DCLogic {
     const first = await pull(paths.slice(0, 8));
     done += first.length;
     if (first.length) await this.addDocs(first);
-    for (let i = 8; i < paths.length; i += 12) {
+    for (let i = 8; i < paths.length; i += 20) {
       say('Loading OHS corpus · ' + done + ' / ' + paths.length + ' files…');
       await new Promise(r => setTimeout(r, 2000));
       const S = this.state, k = { view: S.view, sel: S.sel, readDoc: S.readDoc, q: S.q, f: S.f };
-      const batchDocs = await pull(paths.slice(i, i + 12));
+      const batchDocs = await pull(paths.slice(i, i + 20));
       done += batchDocs.length;
       if (batchDocs.length) { await this.addDocs(batchDocs); try { this.setState({ view: k.view, sel: k.sel, readDoc: k.readDoc, q: k.q, f: k.f, just: null }); } catch (e) {} }
     }
