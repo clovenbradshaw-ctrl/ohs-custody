@@ -67,6 +67,10 @@ OHS_OVERLAY_PATCHES = [
         "  // transcripts) go first. Each background batch restores the\n"
         "  // visitor's view/selection/question so the trickle never yanks\n"
         "  // them around, and the import announcement stays cleared.\n"
+        "  // The live tree listing needs api.github.com (60 req/hr shared\n"
+        "  // quota); on failure it falls back to the vendored ohs-seed.json\n"
+        "  // manifest (same shapes, possibly older), and if both fail the\n"
+        "  // pill says so and retries once after 90s instead of dying silent.\n"
         "  // Engine reads + full analysis still run per doc (no semantic\n"
         "  // shortcuts) -- the fill takes minutes in the background.\n"
         "  async ohsSeed() {\n"
@@ -74,15 +78,25 @@ OHS_OVERLAY_PATCHES = [
         "    try { docs = this.analysis().docs || []; } catch (e) {}\n"
         "    if (docs.length) return;\n"
         "    const say = m => { try { this.setState({ busy: m }); } catch (e) {} };\n"
-        "    let tree = [];\n"
+        "    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\\.json$/;\n"
+        "    const isSeedPath = p => /\\.txt$/i.test(p) && (p.indexOf('transcripts/') === 0 || p.indexOf('derived/') === 0) && !MACHINE_JSON.test(p);\n"
+        "    let paths = null;\n"
         "    try {\n"
         "      const r = await fetch('https://api.github.com/repos/clovenbradshaw-ctrl/ohs-custody/git/trees/HEAD?recursive=1', { headers: { Accept: 'application/vnd.github+json' } });\n"
         "      if (!r.ok) throw new Error('tree ' + r.status);\n"
-        "      tree = (await r.json()).tree || [];\n"
-        "    } catch (e) { say(''); return; }\n"
-        "    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\\.json$/;\n"
-        "    const paths = tree.filter(x => x.type === 'blob' && /\\.txt$/i.test(x.path) && (x.path.indexOf('transcripts/') === 0 || x.path.indexOf('derived/') === 0) && !MACHINE_JSON.test(x.path)).map(x => x.path);\n"
-        "    if (!paths.length) { say(''); return; }\n"
+        "      paths = (await r.json()).tree.filter(x => x.type === 'blob' && isSeedPath(x.path)).map(x => x.path);\n"
+        "    } catch (e) { paths = null; }\n"
+        "    if (!paths) {\n"
+        "      try {\n"
+        "        const r = await fetch(new URL('ohs-seed.json', location.href).href, { cache: 'no-cache' });\n"
+        "        if (r.ok) paths = (await r.json()).entries.map(x => x.path).filter(isSeedPath);\n"
+        "      } catch (e) { paths = null; }\n"
+        "    }\n"
+        "    if (!paths || !paths.length) {\n"
+        "      say('Could not reach GitHub to list the OHS corpus — retrying…');\n"
+        "      setTimeout(() => { try { this.ohsSeed(); } catch (e) {} }, 90000);\n"
+        "      return;\n"
+        "    }\n"
         "    const PRIORITY = [/WELSCH/i, /MHRC/i, /SEP23-MINUTES/i, /DEC9/i, /2026-09-29/i, /2026-06-30/i, /sept23-audit/i, /2026-09-09/i, /2026-09-23-ce/i, /HID-2023/i];\n"
         "    const score = p => { for (let i = 0; i < PRIORITY.length; i++) if (PRIORITY[i].test(p)) return i; return PRIORITY.length; };\n"
         "    paths.sort((a, b) => score(a) - score(b) || (a < b ? -1 : 1));\n"
@@ -150,6 +164,29 @@ def sha256(p):
     return hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
 
 
+def build_seed_manifest():
+    """The seed file list, so ohsSeed never depends on api.github.com
+    (60 req/hr shared quota): one static fetch from raw.githubusercontent,
+    which is unthrottled. Regenerated on every re-vendor."""
+    import json
+
+    entries = []
+    for sub in ("transcripts", "derived"):
+        for p in sorted((ROOT / sub).glob("*.txt")):
+            rel = f"{sub}/{p.name}"
+            entries.append({
+                "path": rel,
+                "title": rel,
+                "url": f"https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/{rel}",
+                "sha256": sha256(p),
+                "bytes": p.stat().st_size,
+            })
+    out = DEST / "ohs-seed.json"
+    out.write_text(json.dumps({"generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                               "entries": entries}, indent=1), encoding="utf-8")
+    return len(entries), sha256(out)
+
+
 def git_sha(src):
     r = subprocess.run(["git", "rev-parse", "HEAD"], cwd=str(src),
                        capture_output=True, text=True)
@@ -206,6 +243,9 @@ def main():
     # Jekyll off: Pages must serve .js/.json untouched.
     (ROOT / "docs" / ".nojekyll").write_text("", encoding="utf-8")
 
+    # Seed manifest: static file list for the lazy seed (no api.github.com).
+    seed_n, seed_sha = build_seed_manifest()
+
     # OHS instance overlay (re-applied after every re-vendor).
     overlay = apply_ohs_overlay()
     overlay_sha = sha256(DEST / "index.html")
@@ -239,6 +279,7 @@ def main():
     lines += ["## OHS instance overlay (re-applied by this script)", ""]
     lines += [f"- {d}" for d in overlay] + [""]
     lines += [f"Patched `index.html` sha256: `{overlay_sha}`", ""]
+    lines += [f"Seed manifest `ohs-seed.json`: `{seed_n}` entries `{seed_sha[:12]}`", ""]
     lines += ["## Files", ""]
     for rel, h in manifest:
         lines.append(f"- `{rel}` `{h[:12]}`")

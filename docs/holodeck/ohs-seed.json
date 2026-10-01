@@ -1,0 +1,985 @@
+{
+ "generated": "2026-10-01T14:01:50+00:00",
+ "entries": [
+  {
+   "path": "transcripts/2020-09-09-hpc-meeting.txt",
+   "title": "transcripts/2020-09-09-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2020-09-09-hpc-meeting.txt",
+   "sha256": "d241ca60744002ce6aeca4876503808452bdf7980a2e258e3c3324503c89e7bc",
+   "bytes": 75045
+  },
+  {
+   "path": "transcripts/2021-04-14-hpc-meeting.txt",
+   "title": "transcripts/2021-04-14-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2021-04-14-hpc-meeting.txt",
+   "sha256": "28ce434830e585cad1eec4ff1da82898c29f3ba55938b92764c7ede36af0d4e3",
+   "bytes": 71110
+  },
+  {
+   "path": "transcripts/2021-04-16-hpc-meeting.txt",
+   "title": "transcripts/2021-04-16-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2021-04-16-hpc-meeting.txt",
+   "sha256": "136833fb9d7288e33c918aa104d3b6a39ad458b0d88ad20b9164a2fb2f00d228",
+   "bytes": 50831
+  },
+  {
+   "path": "transcripts/2021-04-29-hpc-meeting.txt",
+   "title": "transcripts/2021-04-29-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2021-04-29-hpc-meeting.txt",
+   "sha256": "1c04dd0cd69462680d6ecf5582e7d9d2397a4b9eef8cfecd91b3f43fba7b14d6",
+   "bytes": 42166
+  },
+  {
+   "path": "transcripts/2022-03-17-hpc-meeting.txt",
+   "title": "transcripts/2022-03-17-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2022-03-17-hpc-meeting.txt",
+   "sha256": "9229f033cdda20d9d24566a4d6595e01e7cf2cfdf02d73d149a1158cb791979a",
+   "bytes": 49084
+  },
+  {
+   "path": "transcripts/2022-06-08-hpc-meeting.txt",
+   "title": "transcripts/2022-06-08-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2022-06-08-hpc-meeting.txt",
+   "sha256": "497297661a5a0714a38c60a0142d511214177a2d54d1c4a5b2d3c25543b03d9f",
+   "bytes": 92845
+  },
+  {
+   "path": "transcripts/2023-02-08-hpc-meeting.txt",
+   "title": "transcripts/2023-02-08-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-02-08-hpc-meeting.txt",
+   "sha256": "33aad6a4a2ae6e7bdd89460e46bb28364b39703ed902c8ef2ba35d4e67ad5469",
+   "bytes": 71676
+  },
+  {
+   "path": "transcripts/2023-03-08-hpc-meeting.txt",
+   "title": "transcripts/2023-03-08-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-03-08-hpc-meeting.txt",
+   "sha256": "ee1b8b3a17d9da45ce998e3ba9f420def351c6e35e019b37da14e9328841766f",
+   "bytes": 58236
+  },
+  {
+   "path": "transcripts/2023-04-12-hpc-meeting.txt",
+   "title": "transcripts/2023-04-12-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-04-12-hpc-meeting.txt",
+   "sha256": "816e28eb03a6213eab05bbd9e8ffdce7b26d6bd2065502cda9eaa87b0cb423ac",
+   "bytes": 39344
+  },
+  {
+   "path": "transcripts/2023-05-10-hpc-meeting.txt",
+   "title": "transcripts/2023-05-10-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-05-10-hpc-meeting.txt",
+   "sha256": "726a4039d838a1abcc4f835ae686b75e0b9f6e32cb3e8c7cb713db5d3af850ff",
+   "bytes": 65578
+  },
+  {
+   "path": "transcripts/2023-06-14-hpc-meeting.txt",
+   "title": "transcripts/2023-06-14-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-06-14-hpc-meeting.txt",
+   "sha256": "bc261a778f865825a8164cbb8ca17654440fb1d08b680c0db382279464364f6f",
+   "bytes": 73455
+  },
+  {
+   "path": "transcripts/2023-07-12-hpc-meeting.txt",
+   "title": "transcripts/2023-07-12-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-07-12-hpc-meeting.txt",
+   "sha256": "76eb20596a51d19bb02a574765c7ff83ebd77a8841c819c3b39dbd548464bf29",
+   "bytes": 46890
+  },
+  {
+   "path": "transcripts/2023-08-09-hpc-meeting.txt",
+   "title": "transcripts/2023-08-09-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-08-09-hpc-meeting.txt",
+   "sha256": "a4a2e4c7e98948e45d10a46e5318133c808c2098da76db041aed258310b23457",
+   "bytes": 70950
+  },
+  {
+   "path": "transcripts/2023-09-13-hpc-meeting.txt",
+   "title": "transcripts/2023-09-13-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-09-13-hpc-meeting.txt",
+   "sha256": "bfcced1fa20681a1a9c3e886051651e061f62ae32ef454ca96775b7e69269872",
+   "bytes": 83268
+  },
+  {
+   "path": "transcripts/2023-10-11-hpc-meeting.txt",
+   "title": "transcripts/2023-10-11-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-10-11-hpc-meeting.txt",
+   "sha256": "2877ac2a83de03327905da32919a12e52720e086e6f6fb943badac0588c3340c",
+   "bytes": 49553
+  },
+  {
+   "path": "transcripts/2023-12-13-hpc-meeting.txt",
+   "title": "transcripts/2023-12-13-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2023-12-13-hpc-meeting.txt",
+   "sha256": "cb0e726314b962ad7ed7134bfa7648f2082bb942e352427aa63abf75d25b1fb8",
+   "bytes": 62373
+  },
+  {
+   "path": "transcripts/2024-02-14-hpc-meeting.txt",
+   "title": "transcripts/2024-02-14-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-02-14-hpc-meeting.txt",
+   "sha256": "35305f1cd5c5c4a9c9eb5e8a4932279092d5d6d18712de81050147e76e43d34a",
+   "bytes": 45822
+  },
+  {
+   "path": "transcripts/2024-03-13-hpc-meeting.txt",
+   "title": "transcripts/2024-03-13-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-03-13-hpc-meeting.txt",
+   "sha256": "8a98cc2f559282b606410fa9446e1a7a996712754a60fbae6af403e11f8efdff",
+   "bytes": 67637
+  },
+  {
+   "path": "transcripts/2024-04-10-hpc-meeting.txt",
+   "title": "transcripts/2024-04-10-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-04-10-hpc-meeting.txt",
+   "sha256": "c5efe335d45a4a050c68bb29b9fe3f063cc4e9af5e00b38ad702e24c13e50a2b",
+   "bytes": 50043
+  },
+  {
+   "path": "transcripts/2024-06-12-hpc-meeting.txt",
+   "title": "transcripts/2024-06-12-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-06-12-hpc-meeting.txt",
+   "sha256": "58c93779fffc25226ce2454adefe33c6a7127f2630b1af65e634e1ee0715eeca",
+   "bytes": 60990
+  },
+  {
+   "path": "transcripts/2024-08-14-hpc-meeting.txt",
+   "title": "transcripts/2024-08-14-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-08-14-hpc-meeting.txt",
+   "sha256": "8a36e2096f1d6ef477ce2e8a4002e2580a42a5e80b26b754b41e4d6d6968b1cd",
+   "bytes": 75712
+  },
+  {
+   "path": "transcripts/2024-09-11-hpc-meeting.txt",
+   "title": "transcripts/2024-09-11-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-09-11-hpc-meeting.txt",
+   "sha256": "52efe65f3cf4d450d52fe0ff0df898dd588d6759c5195f1d3de57460465d8bbb",
+   "bytes": 90129
+  },
+  {
+   "path": "transcripts/2024-10-09-hpc-meeting.txt",
+   "title": "transcripts/2024-10-09-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-10-09-hpc-meeting.txt",
+   "sha256": "7cb32bd3c8493654d5f311453c10e7d7f21991e63d49f0dfa8ac4c1a835e08aa",
+   "bytes": 64542
+  },
+  {
+   "path": "transcripts/2024-11-13-hpc-meeting.txt",
+   "title": "transcripts/2024-11-13-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-11-13-hpc-meeting.txt",
+   "sha256": "d6d151c7c5ce4a86020a5e183849c9db22e5d1684e3c02da6e004c638f798a34",
+   "bytes": 54708
+  },
+  {
+   "path": "transcripts/2024-12-11-hpc-meeting.txt",
+   "title": "transcripts/2024-12-11-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2024-12-11-hpc-meeting.txt",
+   "sha256": "5d238edbfffac1befb4f3c9d0dda2793c740257566d3113d489fcc97a904523a",
+   "bytes": 79610
+  },
+  {
+   "path": "transcripts/2025-01-08-hpc-meeting.txt",
+   "title": "transcripts/2025-01-08-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-01-08-hpc-meeting.txt",
+   "sha256": "d1a9e1fb45be34b487c26bf96bd9e8a9535f133b3a1b4bf7c9d5be652d1b87b3",
+   "bytes": 75277
+  },
+  {
+   "path": "transcripts/2025-02-12-hpc-meeting.txt",
+   "title": "transcripts/2025-02-12-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-02-12-hpc-meeting.txt",
+   "sha256": "a9a7d65576afc863f9ea4b348341cc7a737221bf8d7f1957fa4450defda88268",
+   "bytes": 83740
+  },
+  {
+   "path": "transcripts/2025-03-12-hpc-meeting.txt",
+   "title": "transcripts/2025-03-12-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-03-12-hpc-meeting.txt",
+   "sha256": "46fb133f5d21d4498299a6546af6b1e9652aac3f114dec427e4bc150ace7ec5c",
+   "bytes": 64719
+  },
+  {
+   "path": "transcripts/2025-04-09-hpc-meeting.txt",
+   "title": "transcripts/2025-04-09-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-04-09-hpc-meeting.txt",
+   "sha256": "8af82f5e6a8ce7258536c435814eee82e0ca50d1601283394cf0c75252b96361",
+   "bytes": 89488
+  },
+  {
+   "path": "transcripts/2025-05-14-hpc-meeting.txt",
+   "title": "transcripts/2025-05-14-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-05-14-hpc-meeting.txt",
+   "sha256": "d78a279047ad72c9a2033d81213e1f3b051d6bcf68fbd8c6cda3b5e664fd0bcd",
+   "bytes": 71649
+  },
+  {
+   "path": "transcripts/2025-06-11-hpc-meeting.txt",
+   "title": "transcripts/2025-06-11-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-06-11-hpc-meeting.txt",
+   "sha256": "ffa20683d7f8f3929cb7ee41dddc5052103a693c31ac0ee2ba4ef5df865ba1b6",
+   "bytes": 77643
+  },
+  {
+   "path": "transcripts/2025-07-09-hpc-meeting.txt",
+   "title": "transcripts/2025-07-09-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-07-09-hpc-meeting.txt",
+   "sha256": "a20d8cf7126474c88c3229a5452f5f61802385adac052bf282e18a7d6804d3c8",
+   "bytes": 70350
+  },
+  {
+   "path": "transcripts/2025-08-13-hpc-meeting.txt",
+   "title": "transcripts/2025-08-13-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-08-13-hpc-meeting.txt",
+   "sha256": "dc4f39ffc8f0e6c87b5127bd051aba63e9d7e71e50a11b52c4e4263542207a64",
+   "bytes": 75036
+  },
+  {
+   "path": "transcripts/2025-09-10-hpc-meeting.txt",
+   "title": "transcripts/2025-09-10-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-09-10-hpc-meeting.txt",
+   "sha256": "43faa2b12b428137569ca76a3bed7ff8270d74d47caeae4b04234bbd02ee2867",
+   "bytes": 86550
+  },
+  {
+   "path": "transcripts/2025-10-08-hpc-meeting.txt",
+   "title": "transcripts/2025-10-08-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-10-08-hpc-meeting.txt",
+   "sha256": "8a0b2be68c957c86b9e408804d66997617c50b713d92586ba73079c56a521eb2",
+   "bytes": 52816
+  },
+  {
+   "path": "transcripts/2025-11-12-hpc-meeting.txt",
+   "title": "transcripts/2025-11-12-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-11-12-hpc-meeting.txt",
+   "sha256": "a3ed681672d61edbd10a4f15d09166b81808aefe2192b5130d3d8d6c75441a46",
+   "bytes": 71148
+  },
+  {
+   "path": "transcripts/2025-12-22-hpc-meeting.txt",
+   "title": "transcripts/2025-12-22-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2025-12-22-hpc-meeting.txt",
+   "sha256": "06a499f7dc114b28a60596a0eab5f7f2d9e7742f0a706a20c65d2e0caa6bef39",
+   "bytes": 61993
+  },
+  {
+   "path": "transcripts/2026-01-14-hpc-meeting.txt",
+   "title": "transcripts/2026-01-14-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-01-14-hpc-meeting.txt",
+   "sha256": "b98fa12198d47faa0c2e47f3983047b8b6600aad7b25a1827bdaec91a8ad6c4e",
+   "bytes": 56603
+  },
+  {
+   "path": "transcripts/2026-02-11-hpc-meeting.txt",
+   "title": "transcripts/2026-02-11-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-02-11-hpc-meeting.txt",
+   "sha256": "b9efc2431db6c80cf5d52784ac999138bb27dc27178057c90dbf80049dc6ccb0",
+   "bytes": 83273
+  },
+  {
+   "path": "transcripts/2026-03-11-hpc-meeting.txt",
+   "title": "transcripts/2026-03-11-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-03-11-hpc-meeting.txt",
+   "sha256": "23cd3be0d66bd9d0dec836ef314b09123d876fbdc60a9e8a00d6732a22078c04",
+   "bytes": 72077
+  },
+  {
+   "path": "transcripts/2026-04-08-hpc-meeting.txt",
+   "title": "transcripts/2026-04-08-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-04-08-hpc-meeting.txt",
+   "sha256": "10290d6ba260102ba46325c20d32c0828a972026b5ebefb8bf5d3f820318fa12",
+   "bytes": 77844
+  },
+  {
+   "path": "transcripts/2026-05-13-hpc-meeting.txt",
+   "title": "transcripts/2026-05-13-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-05-13-hpc-meeting.txt",
+   "sha256": "1ee5d8c483c4c220e6ce0683398161bdc98f2d874882a0086302a369904426fa",
+   "bytes": 91516
+  },
+  {
+   "path": "transcripts/2026-06-10-hpc-meeting.txt",
+   "title": "transcripts/2026-06-10-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-06-10-hpc-meeting.txt",
+   "sha256": "400334e786d8d856122cfdc87785c209f62f9340836e75649920d08370659300",
+   "bytes": 78507
+  },
+  {
+   "path": "transcripts/2026-06-23-symposium.txt",
+   "title": "transcripts/2026-06-23-symposium.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-06-23-symposium.txt",
+   "sha256": "3ec68c8932ee1a2c40082535e430453aa9c2ff1e10af80fe1e4993299ee93160",
+   "bytes": 126728
+  },
+  {
+   "path": "transcripts/2026-06-30-audit-committee.txt",
+   "title": "transcripts/2026-06-30-audit-committee.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-06-30-audit-committee.txt",
+   "sha256": "e33333cb0cede5ed1ff6fcf55a75e6653f5e44dafdc1afd0f2f2acb4972701bd",
+   "bytes": 132205
+  },
+  {
+   "path": "transcripts/2026-07-08-hpc-meeting.txt",
+   "title": "transcripts/2026-07-08-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-07-08-hpc-meeting.txt",
+   "sha256": "db3c0abcb557b9274dbbb3cfb0c8e7fc4b9e096246ca0298b0a748e22b68f78b",
+   "bytes": 84107
+  },
+  {
+   "path": "transcripts/2026-08-05-special-called.txt",
+   "title": "transcripts/2026-08-05-special-called.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-08-05-special-called.txt",
+   "sha256": "34ccfde10b20536d13ca70b5c6d8029c50e614e8f4dc1f488236926eb0fdfe30",
+   "bytes": 61108
+  },
+  {
+   "path": "transcripts/2026-09-09-hpc-meeting.txt",
+   "title": "transcripts/2026-09-09-hpc-meeting.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-09-09-hpc-meeting.txt",
+   "sha256": "d3eda79b9fe20f1152570111b5c9a5b01416b503c21de1b447a8b932d8523c27",
+   "bytes": 74356
+  },
+  {
+   "path": "transcripts/2026-09-23-ce-committee.txt",
+   "title": "transcripts/2026-09-23-ce-committee.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-09-23-ce-committee.txt",
+   "sha256": "a7965d63b010a85c59b894062caeb90791733586fc452fdf2e2332a29ed542ec",
+   "bytes": 80255
+  },
+  {
+   "path": "transcripts/2026-09-29-audit-committee.txt",
+   "title": "transcripts/2026-09-29-audit-committee.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/2026-09-29-audit-committee.txt",
+   "sha256": "787ff8048a1066ef30603d7db09bf70536808e1a70401abfb11f4b5f342dee32",
+   "bytes": 106900
+  },
+  {
+   "path": "transcripts/sept23-audit-committee.txt",
+   "title": "transcripts/sept23-audit-committee.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/transcripts/sept23-audit-committee.txt",
+   "sha256": "059d575c602c1b9073b1badafa7a16cd3d09c622be8c484124dff1367de5497c",
+   "bytes": 83627
+  },
+  {
+   "path": "derived/AUD-CTTE-BYLAWS.txt",
+   "title": "derived/AUD-CTTE-BYLAWS.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/AUD-CTTE-BYLAWS.txt",
+   "sha256": "23cea5300ea82da21f182c58f2279a41f5be8a38a86a3e28a023464163923f60",
+   "bytes": 5784
+  },
+  {
+   "path": "derived/AUD-CTTE-DEC9.txt",
+   "title": "derived/AUD-CTTE-DEC9.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/AUD-CTTE-DEC9.txt",
+   "sha256": "7043d9c421d330cd6530e7a99eb117909aad1bbe5cfe546183334b081dd536dc",
+   "bytes": 7568
+  },
+  {
+   "path": "derived/AUD-CTTE-SEP23-AGENDA.txt",
+   "title": "derived/AUD-CTTE-SEP23-AGENDA.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/AUD-CTTE-SEP23-AGENDA.txt",
+   "sha256": "13c63f2dd6cbb9db3642e73dc582ca31984225db9bb9a623810f8b76c9214411",
+   "bytes": 4352
+  },
+  {
+   "path": "derived/AUD-CTTE-SEP23-MINUTES.txt",
+   "title": "derived/AUD-CTTE-SEP23-MINUTES.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/AUD-CTTE-SEP23-MINUTES.txt",
+   "sha256": "651854a1f5a9e837e3397ba5608ac175b7f1c37526faf069fe0e2fce0d8e14f2",
+   "bytes": 11043
+  },
+  {
+   "path": "derived/AUD-HID-2023.txt",
+   "title": "derived/AUD-HID-2023.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/AUD-HID-2023.txt",
+   "sha256": "501833a161e3bb8e06d4426b525863112ebbcc233f1f53969d0ac4304fc1ed18",
+   "bytes": 48916
+  },
+  {
+   "path": "derived/AUD-HID-FOLLOWUP-2025.txt",
+   "title": "derived/AUD-HID-FOLLOWUP-2025.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/AUD-HID-FOLLOWUP-2025.txt",
+   "sha256": "69ace81ae7c8c21cd2327f91164f7858b8ace839700a04dd2d492a2373feb764",
+   "bytes": 12354
+  },
+  {
+   "path": "derived/COC-DEIGNAN-RANKING-2026.txt",
+   "title": "derived/COC-DEIGNAN-RANKING-2026.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/COC-DEIGNAN-RANKING-2026.txt",
+   "sha256": "8f6ef111b647bab6f257d14e1e8de0597d569b6cea6b16f236a90dd499e08a9b",
+   "bytes": 11739
+  },
+  {
+   "path": "derived/CONTRACT-091423-COR-CORT-BUSINESS-SERVICES-C.txt",
+   "title": "derived/CONTRACT-091423-COR-CORT-BUSINESS-SERVICES-C.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-091423-COR-CORT-BUSINESS-SERVICES-C.txt",
+   "sha256": "f08cb17e273ed8959a9a15ebcd0b46f53de50c5d984d6012693b3cd388d48992",
+   "bytes": 51258
+  },
+  {
+   "path": "derived/CONTRACT-19525-PARK-CENTER.txt",
+   "title": "derived/CONTRACT-19525-PARK-CENTER.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-19525-PARK-CENTER.txt",
+   "sha256": "ba74eba5334171043410e459ba153d0e9a096dd268b88b7ccce25d4e47123d74",
+   "bytes": 204
+  },
+  {
+   "path": "derived/CONTRACT-19526-ECKMAN-GREEMAN-ASSOC.txt",
+   "title": "derived/CONTRACT-19526-ECKMAN-GREEMAN-ASSOC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-19526-ECKMAN-GREEMAN-ASSOC.txt",
+   "sha256": "66cf270d085c0587ad2d21ba2d70690ba4d66420d050ab4842ecc39a287a8b9b",
+   "bytes": 208
+  },
+  {
+   "path": "derived/CONTRACT-355031-PARK-CENTER.txt",
+   "title": "derived/CONTRACT-355031-PARK-CENTER.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-355031-PARK-CENTER.txt",
+   "sha256": "529dce0f90da7ca986852c1a88394d0b3c63e4271dc6e7ed09ac41aec6a0b6b2",
+   "bytes": 33821
+  },
+  {
+   "path": "derived/CONTRACT-360585-PARK-CENTER.txt",
+   "title": "derived/CONTRACT-360585-PARK-CENTER.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-360585-PARK-CENTER.txt",
+   "sha256": "1aa0464ba3f88e5875078c737b9aacc378ea08f5d2844a408ec6fc1505b3b30a",
+   "bytes": 32917
+  },
+  {
+   "path": "derived/CONTRACT-437356-CENTERSTONE-CMHC.txt",
+   "title": "derived/CONTRACT-437356-CENTERSTONE-CMHC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-437356-CENTERSTONE-CMHC.txt",
+   "sha256": "ceedcc906324e7ac10fe5347674521688315b6abb77acca03ecc0995df346b9b",
+   "bytes": 428235
+  },
+  {
+   "path": "derived/CONTRACT-437356-THE-CONTRIBUTOR-INC.txt",
+   "title": "derived/CONTRACT-437356-THE-CONTRIBUTOR-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-437356-THE-CONTRIBUTOR-INC.txt",
+   "sha256": "9d0d818795d8359e72b7d74637c596647cefa365f4c2a39156a2269e5359d6fa",
+   "bytes": 120
+  },
+  {
+   "path": "derived/CONTRACT-455595-WELLSKY-CORPORATION.txt",
+   "title": "derived/CONTRACT-455595-WELLSKY-CORPORATION.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-455595-WELLSKY-CORPORATION.txt",
+   "sha256": "aa243a29fa186d2d1dd55379257342ad51765e685946b83b22216e7c4f30813e",
+   "bytes": 448126
+  },
+  {
+   "path": "derived/CONTRACT-6472724-PARK-CENTER.txt",
+   "title": "derived/CONTRACT-6472724-PARK-CENTER.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6472724-PARK-CENTER.txt",
+   "sha256": "f5bed951edc29f49f19a4e26b126dc69cd09e1e55574836418451760b040b355",
+   "bytes": 173540
+  },
+  {
+   "path": "derived/CONTRACT-6489282-ANDREA-MILLER.txt",
+   "title": "derived/CONTRACT-6489282-ANDREA-MILLER.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6489282-ANDREA-MILLER.txt",
+   "sha256": "d5206861241ffe4fe3940b2dfa4b89e6ff10a71efe185ddc5e6711369647622d",
+   "bytes": 149901
+  },
+  {
+   "path": "derived/CONTRACT-6530492-HOUSING-NOLA-DBA-LOUISAN.txt",
+   "title": "derived/CONTRACT-6530492-HOUSING-NOLA-DBA-LOUISAN.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6530492-HOUSING-NOLA-DBA-LOUISAN.txt",
+   "sha256": "c8ee26c57b024c61e8fe8448a202a0ae950c6a054fe9e22ec9fc82e52dddf005",
+   "bytes": 247174
+  },
+  {
+   "path": "derived/CONTRACT-6563183-PADMISSION-LLC.txt",
+   "title": "derived/CONTRACT-6563183-PADMISSION-LLC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6563183-PADMISSION-LLC.txt",
+   "sha256": "b69dc689052918f0742a74a50cd1feca10b6c6484d744e841c575f3f5c83751b",
+   "bytes": 298070
+  },
+  {
+   "path": "derived/CONTRACT-6563187-THE-VILLAGE-AT-GLENCLIFF-2.txt",
+   "title": "derived/CONTRACT-6563187-THE-VILLAGE-AT-GLENCLIFF-2.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6563187-THE-VILLAGE-AT-GLENCLIFF-2.txt",
+   "sha256": "e4d5641fcb8290133746a13e25162806760038486b97629a717f49878a4a1461",
+   "bytes": 80
+  },
+  {
+   "path": "derived/CONTRACT-6563187-THE-VILLAGE-AT-GLENCLIFF.txt",
+   "title": "derived/CONTRACT-6563187-THE-VILLAGE-AT-GLENCLIFF.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6563187-THE-VILLAGE-AT-GLENCLIFF.txt",
+   "sha256": "a551ed60faf72ba475ac58c4988d9c924ebab88c798252820bd6fe271c1a9044",
+   "bytes": 174467
+  },
+  {
+   "path": "derived/CONTRACT-6563187-THE-VILLAGE-OF-GLENCLIFF-2.txt",
+   "title": "derived/CONTRACT-6563187-THE-VILLAGE-OF-GLENCLIFF-2.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6563187-THE-VILLAGE-OF-GLENCLIFF-2.txt",
+   "sha256": "fad8781e626db7180821e39b765e7067b4a8df170eb6a872ca268f2eb4cce66a",
+   "bytes": 51482
+  },
+  {
+   "path": "derived/CONTRACT-6563187-THE-VILLAGE-OF-GLENCLIFF.txt",
+   "title": "derived/CONTRACT-6563187-THE-VILLAGE-OF-GLENCLIFF.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6563187-THE-VILLAGE-OF-GLENCLIFF.txt",
+   "sha256": "706d736eac71d481190115f111f2f5095b67a2a0933e3629eff2536da91889c7",
+   "bytes": 51218
+  },
+  {
+   "path": "derived/CONTRACT-6604854-THE-PARK-CENTER-INC.txt",
+   "title": "derived/CONTRACT-6604854-THE-PARK-CENTER-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-6604854-THE-PARK-CENTER-INC.txt",
+   "sha256": "49985e72e8757ba8d3101fda9f674e78886fdcda6380ef7346729539e1fc61b5",
+   "bytes": 141717
+  },
+  {
+   "path": "derived/CONTRACT-L-1466-MCNEILLY-CENTER-FOR-CHIL.txt",
+   "title": "derived/CONTRACT-L-1466-MCNEILLY-CENTER-FOR-CHIL.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-1466-MCNEILLY-CENTER-FOR-CHIL.txt",
+   "sha256": "af8effa7b94a0316c6f9624f7aa206cbbc32ceab914bc6c9fcf364deb8fa9a76",
+   "bytes": 64
+  },
+  {
+   "path": "derived/CONTRACT-L-1569-MDHA.txt",
+   "title": "derived/CONTRACT-L-1569-MDHA.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-1569-MDHA.txt",
+   "sha256": "c1cbf6d906c2ee0a3174175ce1914f26df5ab05e16d8d50887bbb59d1f249317",
+   "bytes": 32
+  },
+  {
+   "path": "derived/CONTRACT-L-2752-KEY-ALLIANCE-TKA.txt",
+   "title": "derived/CONTRACT-L-2752-KEY-ALLIANCE-TKA.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-2752-KEY-ALLIANCE-TKA.txt",
+   "sha256": "e4d5641fcb8290133746a13e25162806760038486b97629a717f49878a4a1461",
+   "bytes": 80
+  },
+  {
+   "path": "derived/CONTRACT-L-2895-CAMPUS-FOR-HUMAN-DEVELOP.txt",
+   "title": "derived/CONTRACT-L-2895-CAMPUS-FOR-HUMAN-DEVELOP.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-2895-CAMPUS-FOR-HUMAN-DEVELOP.txt",
+   "sha256": "66cf270d085c0587ad2d21ba2d70690ba4d66420d050ab4842ecc39a287a8b9b",
+   "bytes": 208
+  },
+  {
+   "path": "derived/CONTRACT-L-2896-CAMPUS-FOR-HUMAN-DEVELOP.txt",
+   "title": "derived/CONTRACT-L-2896-CAMPUS-FOR-HUMAN-DEVELOP.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-2896-CAMPUS-FOR-HUMAN-DEVELOP.txt",
+   "sha256": "66cf270d085c0587ad2d21ba2d70690ba4d66420d050ab4842ecc39a287a8b9b",
+   "bytes": 208
+  },
+  {
+   "path": "derived/CONTRACT-L-3493-ROOM-IN-THE-INN-2.txt",
+   "title": "derived/CONTRACT-L-3493-ROOM-IN-THE-INN-2.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-3493-ROOM-IN-THE-INN-2.txt",
+   "sha256": "ba99203cc8a1576a1ac3aca267c0483d2af939b7bdf038ba332ebb9c87795a05",
+   "bytes": 88
+  },
+  {
+   "path": "derived/CONTRACT-L-3493-ROOM-IN-THE-INN.txt",
+   "title": "derived/CONTRACT-L-3493-ROOM-IN-THE-INN.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-3493-ROOM-IN-THE-INN.txt",
+   "sha256": "ba99203cc8a1576a1ac3aca267c0483d2af939b7bdf038ba332ebb9c87795a05",
+   "bytes": 88
+  },
+  {
+   "path": "derived/CONTRACT-L-3494-ROOM-IN-THE-INN.txt",
+   "title": "derived/CONTRACT-L-3494-ROOM-IN-THE-INN.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-3494-ROOM-IN-THE-INN.txt",
+   "sha256": "ba99203cc8a1576a1ac3aca267c0483d2af939b7bdf038ba332ebb9c87795a05",
+   "bytes": 88
+  },
+  {
+   "path": "derived/CONTRACT-L-4039-MDHA.txt",
+   "title": "derived/CONTRACT-L-4039-MDHA.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4039-MDHA.txt",
+   "sha256": "0f46fd1535c452fc92dbe0248b94d2c4fb3b676e57474f30bcb02550ccde02ba",
+   "bytes": 9962
+  },
+  {
+   "path": "derived/CONTRACT-L-4070-ROOM-IN-THE-INN.txt",
+   "title": "derived/CONTRACT-L-4070-ROOM-IN-THE-INN.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4070-ROOM-IN-THE-INN.txt",
+   "sha256": "0f86d80ea4b50363c28cc8da68c8b74529e5bd96716edf4416707e23ffe1f12b",
+   "bytes": 23253
+  },
+  {
+   "path": "derived/CONTRACT-L-4071-ROOM-IN-THE-INN.txt",
+   "title": "derived/CONTRACT-L-4071-ROOM-IN-THE-INN.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4071-ROOM-IN-THE-INN.txt",
+   "sha256": "47bc3daeda26430e5052854246224b8453fddc0d1d6b33983cc2ba31eeb88e06",
+   "bytes": 24438
+  },
+  {
+   "path": "derived/CONTRACT-L-4388-MDHA.txt",
+   "title": "derived/CONTRACT-L-4388-MDHA.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4388-MDHA.txt",
+   "sha256": "625f8e4e3d97a9fda7bf2dd644c198d7122457058dac5cc855cd704003a62b07",
+   "bytes": 17670
+  },
+  {
+   "path": "derived/CONTRACT-L-4611-INTERFAITH-DENTAL-CLINIC.txt",
+   "title": "derived/CONTRACT-L-4611-INTERFAITH-DENTAL-CLINIC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4611-INTERFAITH-DENTAL-CLINIC.txt",
+   "sha256": "b177b733365564ec166a2b6efbb9a640ef017d5890db621468f807d9de95fcb2",
+   "bytes": 27022
+  },
+  {
+   "path": "derived/CONTRACT-L-4612-NEEDLINK-NASHVILLE-INC.txt",
+   "title": "derived/CONTRACT-L-4612-NEEDLINK-NASHVILLE-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4612-NEEDLINK-NASHVILLE-INC.txt",
+   "sha256": "6497b5996fcc57ac5ec58e1d90ff9ff5a171d74108e9d71f5e79634f48368661",
+   "bytes": 29742
+  },
+  {
+   "path": "derived/CONTRACT-L-4613-OPERATION-STAND-DOWN-TEN.txt",
+   "title": "derived/CONTRACT-L-4613-OPERATION-STAND-DOWN-TEN.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4613-OPERATION-STAND-DOWN-TEN.txt",
+   "sha256": "8fc8b364f2fd3d92bf367de15560b1f83e46aecbef73d59b2059b09db94a6bd5",
+   "bytes": 28291
+  },
+  {
+   "path": "derived/CONTRACT-L-4614-REBUILDING-TOGETHER-NASH.txt",
+   "title": "derived/CONTRACT-L-4614-REBUILDING-TOGETHER-NASH.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4614-REBUILDING-TOGETHER-NASH.txt",
+   "sha256": "fbe9ffe53aa5eb516ffa2c75bc1e62b194c5a20a235a85725aff484fe7792c2f",
+   "bytes": 29445
+  },
+  {
+   "path": "derived/CONTRACT-L-4615-TURNIP-GREEN-CREATIVE-RE.txt",
+   "title": "derived/CONTRACT-L-4615-TURNIP-GREEN-CREATIVE-RE.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4615-TURNIP-GREEN-CREATIVE-RE.txt",
+   "sha256": "0063af35ca0714734a360808f8687a28d2eb9d62a067e91202fd50806663da60",
+   "bytes": 28366
+  },
+  {
+   "path": "derived/CONTRACT-L-4616-WESTMINSTER-HOME-CONNECT.txt",
+   "title": "derived/CONTRACT-L-4616-WESTMINSTER-HOME-CONNECT.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4616-WESTMINSTER-HOME-CONNECT.txt",
+   "sha256": "667b9bb3df22cc49460748f5c4e37cf27b73b91a0735680aae6efdaef222e5b0",
+   "bytes": 29005
+  },
+  {
+   "path": "derived/CONTRACT-L-4617-ROOM-IN-THE-INN-INC.txt",
+   "title": "derived/CONTRACT-L-4617-ROOM-IN-THE-INN-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-4617-ROOM-IN-THE-INN-INC.txt",
+   "sha256": "ba99203cc8a1576a1ac3aca267c0483d2af939b7bdf038ba332ebb9c87795a05",
+   "bytes": 88
+  },
+  {
+   "path": "derived/CONTRACT-L-5350-COMMUNITY-CARE-FELLOWSHI.txt",
+   "title": "derived/CONTRACT-L-5350-COMMUNITY-CARE-FELLOWSHI.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5350-COMMUNITY-CARE-FELLOWSHI.txt",
+   "sha256": "af8effa7b94a0316c6f9624f7aa206cbbc32ceab914bc6c9fcf364deb8fa9a76",
+   "bytes": 64
+  },
+  {
+   "path": "derived/CONTRACT-L-5375-THE-SALVATION-ARMY.txt",
+   "title": "derived/CONTRACT-L-5375-THE-SALVATION-ARMY.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5375-THE-SALVATION-ARMY.txt",
+   "sha256": "af8effa7b94a0316c6f9624f7aa206cbbc32ceab914bc6c9fcf364deb8fa9a76",
+   "bytes": 64
+  },
+  {
+   "path": "derived/CONTRACT-L-5428-THE-PARK-CENTER.txt",
+   "title": "derived/CONTRACT-L-5428-THE-PARK-CENTER.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5428-THE-PARK-CENTER.txt",
+   "sha256": "2a1dc1aa3b8c14b94b0d19c65b30bdf4579a4c0847b5d44450b9b96f415dbaf1",
+   "bytes": 5458
+  },
+  {
+   "path": "derived/CONTRACT-L-5439-MDHA.txt",
+   "title": "derived/CONTRACT-L-5439-MDHA.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5439-MDHA.txt",
+   "sha256": "57b83b8c084b604f6896d1c0f0cc73cf793014a7422de856d6b88dbbb78f8bea",
+   "bytes": 48
+  },
+  {
+   "path": "derived/CONTRACT-L-5506-UNITED-NEIGHBORHOOD-HEAL.txt",
+   "title": "derived/CONTRACT-L-5506-UNITED-NEIGHBORHOOD-HEAL.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5506-UNITED-NEIGHBORHOOD-HEAL.txt",
+   "sha256": "645d5be7a7e52488281c6a2b6028d3fc866f76ba72686e0ab38da278e5058dfc",
+   "bytes": 104
+  },
+  {
+   "path": "derived/CONTRACT-L-5598-PARK-CENTER-INC.txt",
+   "title": "derived/CONTRACT-L-5598-PARK-CENTER-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5598-PARK-CENTER-INC.txt",
+   "sha256": "20f0bc058bda69e29278a62ff9eda2505688eda98fe717d7910c34048436fc9b",
+   "bytes": 72
+  },
+  {
+   "path": "derived/CONTRACT-L-5599-COLBY-S-ARMY-INC.txt",
+   "title": "derived/CONTRACT-L-5599-COLBY-S-ARMY-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5599-COLBY-S-ARMY-INC.txt",
+   "sha256": "20f0bc058bda69e29278a62ff9eda2505688eda98fe717d7910c34048436fc9b",
+   "bytes": 72
+  },
+  {
+   "path": "derived/CONTRACT-L-5600-STEP-UP-ON-SECOND-STREET.txt",
+   "title": "derived/CONTRACT-L-5600-STEP-UP-ON-SECOND-STREET.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5600-STEP-UP-ON-SECOND-STREET.txt",
+   "sha256": "645d5be7a7e52488281c6a2b6028d3fc866f76ba72686e0ab38da278e5058dfc",
+   "bytes": 104
+  },
+  {
+   "path": "derived/CONTRACT-L-5601-MENDING-HEARTS-INC.txt",
+   "title": "derived/CONTRACT-L-5601-MENDING-HEARTS-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5601-MENDING-HEARTS-INC.txt",
+   "sha256": "20f0bc058bda69e29278a62ff9eda2505688eda98fe717d7910c34048436fc9b",
+   "bytes": 72
+  },
+  {
+   "path": "derived/CONTRACT-L-5602-ROOM-IN-THE-INN-INC.txt",
+   "title": "derived/CONTRACT-L-5602-ROOM-IN-THE-INN-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5602-ROOM-IN-THE-INN-INC.txt",
+   "sha256": "8e101af2fc333cf77d05c6c755749a4039b5a0e1847e176a97009bf2065cc706",
+   "bytes": 96
+  },
+  {
+   "path": "derived/CONTRACT-L-5776-ROOM-IN-THE-INN-INC.txt",
+   "title": "derived/CONTRACT-L-5776-ROOM-IN-THE-INN-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-5776-ROOM-IN-THE-INN-INC.txt",
+   "sha256": "580a75bba5d0ac7856c766ce1ead34497328d4b5f1607bdef2f62d86d9ecc65a",
+   "bytes": 103295
+  },
+  {
+   "path": "derived/CONTRACT-L-6044-DISMAS-HOUSE.txt",
+   "title": "derived/CONTRACT-L-6044-DISMAS-HOUSE.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6044-DISMAS-HOUSE.txt",
+   "sha256": "08be8dd32452cc82f03e6db06a281c8c76b17ebcedd0daba9ab5640011bbe7f9",
+   "bytes": 144
+  },
+  {
+   "path": "derived/CONTRACT-L-6045-MENDING-HEARTS.txt",
+   "title": "derived/CONTRACT-L-6045-MENDING-HEARTS.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6045-MENDING-HEARTS.txt",
+   "sha256": "0f322e4ef23d16d1e43a79660c6b61b4e2ba9a3676e3f14761e2300bbd9b7b69",
+   "bytes": 160
+  },
+  {
+   "path": "derived/CONTRACT-L-6046-THE-CONTRIBUTOR.txt",
+   "title": "derived/CONTRACT-L-6046-THE-CONTRIBUTOR.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6046-THE-CONTRIBUTOR.txt",
+   "sha256": "08be8dd32452cc82f03e6db06a281c8c76b17ebcedd0daba9ab5640011bbe7f9",
+   "bytes": 144
+  },
+  {
+   "path": "derived/CONTRACT-L-6047-PARK-CENTER-INC.txt",
+   "title": "derived/CONTRACT-L-6047-PARK-CENTER-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6047-PARK-CENTER-INC.txt",
+   "sha256": "08be8dd32452cc82f03e6db06a281c8c76b17ebcedd0daba9ab5640011bbe7f9",
+   "bytes": 144
+  },
+  {
+   "path": "derived/CONTRACT-L-6048-SAFE-HAVEN-FAMILY-SHELTE.txt",
+   "title": "derived/CONTRACT-L-6048-SAFE-HAVEN-FAMILY-SHELTE.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6048-SAFE-HAVEN-FAMILY-SHELTE.txt",
+   "sha256": "e4d5641fcb8290133746a13e25162806760038486b97629a717f49878a4a1461",
+   "bytes": 80
+  },
+  {
+   "path": "derived/CONTRACT-L-6054-DEPAUL-USA.txt",
+   "title": "derived/CONTRACT-L-6054-DEPAUL-USA.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6054-DEPAUL-USA.txt",
+   "sha256": "645d5be7a7e52488281c6a2b6028d3fc866f76ba72686e0ab38da278e5058dfc",
+   "bytes": 104
+  },
+  {
+   "path": "derived/CONTRACT-L-6124-THE-SALVATION-ARMY.txt",
+   "title": "derived/CONTRACT-L-6124-THE-SALVATION-ARMY.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6124-THE-SALVATION-ARMY.txt",
+   "sha256": "e4d5641fcb8290133746a13e25162806760038486b97629a717f49878a4a1461",
+   "bytes": 80
+  },
+  {
+   "path": "derived/CONTRACT-L-6182-THE-SALVATION-ARMY-A-GEO.txt",
+   "title": "derived/CONTRACT-L-6182-THE-SALVATION-ARMY-A-GEO.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6182-THE-SALVATION-ARMY-A-GEO.txt",
+   "sha256": "e4d5641fcb8290133746a13e25162806760038486b97629a717f49878a4a1461",
+   "bytes": 80
+  },
+  {
+   "path": "derived/CONTRACT-L-6220-WELCOME-HOME-MINISTRIES.txt",
+   "title": "derived/CONTRACT-L-6220-WELCOME-HOME-MINISTRIES.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6220-WELCOME-HOME-MINISTRIES.txt",
+   "sha256": "e4d5641fcb8290133746a13e25162806760038486b97629a717f49878a4a1461",
+   "bytes": 80
+  },
+  {
+   "path": "derived/CONTRACT-L-6348-THE-CONTRIBUTOR-INC.txt",
+   "title": "derived/CONTRACT-L-6348-THE-CONTRIBUTOR-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6348-THE-CONTRIBUTOR-INC.txt",
+   "sha256": "cc33330c642dd730d3fac791500ac1086f129138a843ecc01a79b74513aaf95b",
+   "bytes": 336
+  },
+  {
+   "path": "derived/CONTRACT-L-6425-THEHOSPITALITY-HUB-OF-ME.txt",
+   "title": "derived/CONTRACT-L-6425-THEHOSPITALITY-HUB-OF-ME.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6425-THEHOSPITALITY-HUB-OF-ME.txt",
+   "sha256": "f2ca91a26b842bc418b90b136cd461078eb8565cec0082476d9499ce7bde79c6",
+   "bytes": 432
+  },
+  {
+   "path": "derived/CONTRACT-L-6426-COMMUNITY-CARE-FELLOWSHI.txt",
+   "title": "derived/CONTRACT-L-6426-COMMUNITY-CARE-FELLOWSHI.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6426-COMMUNITY-CARE-FELLOWSHI.txt",
+   "sha256": "9d0d818795d8359e72b7d74637c596647cefa365f4c2a39156a2269e5359d6fa",
+   "bytes": 120
+  },
+  {
+   "path": "derived/CONTRACT-L-6427-NASHVILLE-LAUNCH-PAD-INC.txt",
+   "title": "derived/CONTRACT-L-6427-NASHVILLE-LAUNCH-PAD-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6427-NASHVILLE-LAUNCH-PAD-INC.txt",
+   "sha256": "ed51d454a85745c144bb4d206a08793796a74665419e03417de7b2413373ffa8",
+   "bytes": 264
+  },
+  {
+   "path": "derived/CONTRACT-L-6761-DEPAUL-USA-INC.txt",
+   "title": "derived/CONTRACT-L-6761-DEPAUL-USA-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-6761-DEPAUL-USA-INC.txt",
+   "sha256": "9d0d818795d8359e72b7d74637c596647cefa365f4c2a39156a2269e5359d6fa",
+   "bytes": 120
+  },
+  {
+   "path": "derived/CONTRACT-L-7116-ROOM-IN-THE-INN-INC.txt",
+   "title": "derived/CONTRACT-L-7116-ROOM-IN-THE-INN-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-7116-ROOM-IN-THE-INN-INC.txt",
+   "sha256": "74ce53dd58c8f44778a7ea93d3dd10b4cbaf652b39c4d744b784cc53ace5f07e",
+   "bytes": 34346
+  },
+  {
+   "path": "derived/CONTRACT-L-87-4739-YEARWOOD-JOHNSON-STANTON.txt",
+   "title": "derived/CONTRACT-L-87-4739-YEARWOOD-JOHNSON-STANTON.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-87-4739-YEARWOOD-JOHNSON-STANTON.txt",
+   "sha256": "24e6c0c7feb89ea13613a27516cf8c7ff7f1ed6bffc15be86b2d4e61cd7e7143",
+   "bytes": 61066
+  },
+  {
+   "path": "derived/CONTRACT-L-94-5880-EDUCATION-BD-OF.txt",
+   "title": "derived/CONTRACT-L-94-5880-EDUCATION-BD-OF.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-94-5880-EDUCATION-BD-OF.txt",
+   "sha256": "fb91a6e38d9f0c98b85c64f28bf1c3c2fb498e2c441ee196718b753442f5f697",
+   "bytes": 61076
+  },
+  {
+   "path": "derived/CONTRACT-L-94-5893-TN-DEPT-HEALTH.txt",
+   "title": "derived/CONTRACT-L-94-5893-TN-DEPT-HEALTH.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-94-5893-TN-DEPT-HEALTH.txt",
+   "sha256": "fb91a6e38d9f0c98b85c64f28bf1c3c2fb498e2c441ee196718b753442f5f697",
+   "bytes": 61076
+  },
+  {
+   "path": "derived/CONTRACT-L-94-5953-LEGAL-SERVICES.txt",
+   "title": "derived/CONTRACT-L-94-5953-LEGAL-SERVICES.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-94-5953-LEGAL-SERVICES.txt",
+   "sha256": "fb91a6e38d9f0c98b85c64f28bf1c3c2fb498e2c441ee196718b753442f5f697",
+   "bytes": 61076
+  },
+  {
+   "path": "derived/CONTRACT-L-95-6161-TN-DEPT-FINANCE.txt",
+   "title": "derived/CONTRACT-L-95-6161-TN-DEPT-FINANCE.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-95-6161-TN-DEPT-FINANCE.txt",
+   "sha256": "fb91a6e38d9f0c98b85c64f28bf1c3c2fb498e2c441ee196718b753442f5f697",
+   "bytes": 61076
+  },
+  {
+   "path": "derived/CONTRACT-L-99-7190-DAVIDSON-CO-COMMUNITY-SE.txt",
+   "title": "derived/CONTRACT-L-99-7190-DAVIDSON-CO-COMMUNITY-SE.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-L-99-7190-DAVIDSON-CO-COMMUNITY-SE.txt",
+   "sha256": "d8eca8ef79140b4f4249836d1604bda8c6dfad451f937b4957da7656ab1e6f38",
+   "bytes": 61076
+  },
+  {
+   "path": "derived/CONTRACT-M-2673-IRWIN-PAINTING-CO-INC.txt",
+   "title": "derived/CONTRACT-M-2673-IRWIN-PAINTING-CO-INC.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-M-2673-IRWIN-PAINTING-CO-INC.txt",
+   "sha256": "fb91a6e38d9f0c98b85c64f28bf1c3c2fb498e2c441ee196718b753442f5f697",
+   "bytes": 61076
+  },
+  {
+   "path": "derived/CONTRACT-TN0060L4J042114-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "title": "derived/CONTRACT-TN0060L4J042114-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-TN0060L4J042114-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "sha256": "20f0bc058bda69e29278a62ff9eda2505688eda98fe717d7910c34048436fc9b",
+   "bytes": 72
+  },
+  {
+   "path": "derived/CONTRACT-TN0060L4J042316-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "title": "derived/CONTRACT-TN0060L4J042316-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-TN0060L4J042316-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "sha256": "3324f8dfb1014c2c8a67e24959f28d0c04a20ee83aa33b39197bfd60167b3dda",
+   "bytes": 456
+  },
+  {
+   "path": "derived/CONTRACT-TN0269L4J042105-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "title": "derived/CONTRACT-TN0269L4J042105-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-TN0269L4J042105-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "sha256": "20f0bc058bda69e29278a62ff9eda2505688eda98fe717d7910c34048436fc9b",
+   "bytes": 72
+  },
+  {
+   "path": "derived/CONTRACT-TN0269L4J042307-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "title": "derived/CONTRACT-TN0269L4J042307-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-TN0269L4J042307-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "sha256": "3324f8dfb1014c2c8a67e24959f28d0c04a20ee83aa33b39197bfd60167b3dda",
+   "bytes": 456
+  },
+  {
+   "path": "derived/CONTRACT-TN0321H4J041800-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "title": "derived/CONTRACT-TN0321H4J041800-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-TN0321H4J041800-U-S-DEPT-HOUSING-URBAN-D.txt",
+   "sha256": "846c5e092df5f591737023f78ac05b5e54ca13c8c3faaf29763a7e57bf7bc43e",
+   "bytes": 232
+  },
+  {
+   "path": "derived/CONTRACT-TN0454L4J042300-U-S-DEPT-HEALTH-HUMAN-SE-2.txt",
+   "title": "derived/CONTRACT-TN0454L4J042300-U-S-DEPT-HEALTH-HUMAN-SE-2.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-TN0454L4J042300-U-S-DEPT-HEALTH-HUMAN-SE-2.txt",
+   "sha256": "20f0bc058bda69e29278a62ff9eda2505688eda98fe717d7910c34048436fc9b",
+   "bytes": 72
+  },
+  {
+   "path": "derived/CONTRACT-TN0454L4J042300-U-S-DEPT-HEALTH-HUMAN-SE.txt",
+   "title": "derived/CONTRACT-TN0454L4J042300-U-S-DEPT-HEALTH-HUMAN-SE.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/CONTRACT-TN0454L4J042300-U-S-DEPT-HEALTH-HUMAN-SE.txt",
+   "sha256": "b11e58c1f3193ee002a39b72df566626666b6009683030ae90112936b12cca3b",
+   "bytes": 320
+  },
+  {
+   "path": "derived/LEG-AMD1.txt",
+   "title": "derived/LEG-AMD1.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/LEG-AMD1.txt",
+   "sha256": "f7d9ea14228cd49241f9044b126ef2eb4ca9ada3714cec75fab48427e53dee4c",
+   "bytes": 587
+  },
+  {
+   "path": "derived/LEG-AMD2.txt",
+   "title": "derived/LEG-AMD2.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/LEG-AMD2.txt",
+   "sha256": "889bdbc19eacc6db453577b44154b33519d6370575a0908bfa03f972e7bebd03",
+   "bytes": 881
+  },
+  {
+   "path": "derived/MHRC-ED-DETERMINATION.txt",
+   "title": "derived/MHRC-ED-DETERMINATION.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/MHRC-ED-DETERMINATION.txt",
+   "sha256": "8bcf4faf991c8aa9b76e98f9f09084bb1cd891c6e8083f644ae48877f3b7f4d0",
+   "bytes": 10884
+  },
+  {
+   "path": "derived/MHRC-STAFF-INVESTIGATIVE-REPORT.txt",
+   "title": "derived/MHRC-STAFF-INVESTIGATIVE-REPORT.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/MHRC-STAFF-INVESTIGATIVE-REPORT.txt",
+   "sha256": "a21b9463aee7bab6763b9cc98d288739759074d64ae451ed632cf096c1885408",
+   "bytes": 21672
+  },
+  {
+   "path": "derived/MUNI-263040.rendered.txt",
+   "title": "derived/MUNI-263040.rendered.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/MUNI-263040.rendered.txt",
+   "sha256": "4d12915d7d79bdc190b2ed0ab1e408789af2d753cbb08523fb30fc7c75fbca6f",
+   "bytes": 2613
+  },
+  {
+   "path": "derived/WELSCH-AUDIT-REQUEST-LETTER.txt",
+   "title": "derived/WELSCH-AUDIT-REQUEST-LETTER.txt",
+   "url": "https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/derived/WELSCH-AUDIT-REQUEST-LETTER.txt",
+   "sha256": "b3e48b970de7c096e489788664242e7f2519d012407ccc4b957e9c8e77bb0349",
+   "bytes": 10505
+  }
+ ]
+}

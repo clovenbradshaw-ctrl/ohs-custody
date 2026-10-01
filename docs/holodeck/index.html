@@ -3336,6 +3336,10 @@ class Component extends DCLogic {
   // transcripts) go first. Each background batch restores the
   // visitor's view/selection/question so the trickle never yanks
   // them around, and the import announcement stays cleared.
+  // The live tree listing needs api.github.com (60 req/hr shared
+  // quota); on failure it falls back to the vendored ohs-seed.json
+  // manifest (same shapes, possibly older), and if both fail the
+  // pill says so and retries once after 90s instead of dying silent.
   // Engine reads + full analysis still run per doc (no semantic
   // shortcuts) -- the fill takes minutes in the background.
   async ohsSeed() {
@@ -3343,15 +3347,25 @@ class Component extends DCLogic {
     try { docs = this.analysis().docs || []; } catch (e) {}
     if (docs.length) return;
     const say = m => { try { this.setState({ busy: m }); } catch (e) {} };
-    let tree = [];
+    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
+    const isSeedPath = p => /\.txt$/i.test(p) && (p.indexOf('transcripts/') === 0 || p.indexOf('derived/') === 0) && !MACHINE_JSON.test(p);
+    let paths = null;
     try {
       const r = await fetch('https://api.github.com/repos/clovenbradshaw-ctrl/ohs-custody/git/trees/HEAD?recursive=1', { headers: { Accept: 'application/vnd.github+json' } });
       if (!r.ok) throw new Error('tree ' + r.status);
-      tree = (await r.json()).tree || [];
-    } catch (e) { say(''); return; }
-    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
-    const paths = tree.filter(x => x.type === 'blob' && /\.txt$/i.test(x.path) && (x.path.indexOf('transcripts/') === 0 || x.path.indexOf('derived/') === 0) && !MACHINE_JSON.test(x.path)).map(x => x.path);
-    if (!paths.length) { say(''); return; }
+      paths = (await r.json()).tree.filter(x => x.type === 'blob' && isSeedPath(x.path)).map(x => x.path);
+    } catch (e) { paths = null; }
+    if (!paths) {
+      try {
+        const r = await fetch(new URL('ohs-seed.json', location.href).href, { cache: 'no-cache' });
+        if (r.ok) paths = (await r.json()).entries.map(x => x.path).filter(isSeedPath);
+      } catch (e) { paths = null; }
+    }
+    if (!paths || !paths.length) {
+      say('Could not reach GitHub to list the OHS corpus — retrying…');
+      setTimeout(() => { try { this.ohsSeed(); } catch (e) {} }, 90000);
+      return;
+    }
     const PRIORITY = [/WELSCH/i, /MHRC/i, /SEP23-MINUTES/i, /DEC9/i, /2026-09-29/i, /2026-06-30/i, /sept23-audit/i, /2026-09-09/i, /2026-09-23-ce/i, /HID-2023/i];
     const score = p => { for (let i = 0; i < PRIORITY.length; i++) if (PRIORITY[i].test(p)) return i; return PRIORITY.length; };
     paths.sort((a, b) => score(a) - score(b) || (a < b ? -1 : 1));
