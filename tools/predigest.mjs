@@ -14,6 +14,7 @@
 // Run locally:   node tools/predigest.mjs
 // CI runs it on any push touching transcripts/ or derived/ and commits the
 // changed digest (see .github/workflows/digest.yml).
+import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
@@ -36,6 +37,22 @@ globalThis.fetch = async (url, ...a) => {
 };
 
 const hash = (buf) => createHash("sha256").update(buf).digest("hex");
+
+// Write a JSON artifact plus a zstd-compressed twin (.zst). The browser
+// fetches the .zst and decodes with the same zstd-wasm the app's
+// reading-worker already uses (esm.sh @bokuweb/zstd-wasm), falling back to
+// the .json. zstd cuts the analysis ~35MB -> ~4MB on the wire.
+function writeArtifact(file, obj) {
+  const raw = JSON.stringify(obj);
+  fs.writeFileSync(file, raw);
+  const zst = file + ".zst";
+  const r = spawnSync("zstd", ["-q", "-f", "-o", zst, file], { encoding: "utf8" });
+  if (r.status !== 0) {
+    console.warn(`zstd failed for ${file} (${r.stderr || r.status}); keeping .json only`);
+    return;
+  }
+  console.log(`  ${path.basename(file)}: raw=${(raw.length / 1e6).toFixed(1)}MB zst=${(fs.statSync(zst).size / 1e6).toFixed(1)}MB`);
+}
 
 async function main() {
   const { makeEngineRelationReader } = await import(
@@ -89,15 +106,18 @@ async function main() {
     if (done % 20 === 0) console.log(`digested ${done}/${entries.length} (${Math.round((Date.now() - tStart) / 1000)}s)`);
   }
   const payload = { generated: new Date().toISOString(), schema: "ohs-readings@1", entries: readings };
-  fs.writeFileSync(OUT, JSON.stringify(payload));
+  writeArtifact(OUT, payload);
   console.log(`wrote ${OUT}: ${Object.keys(readings).length} docs, ${fs.statSync(OUT).size} bytes, ${Math.round((Date.now() - tStart) / 1000)}s`);
 
   // One-shot bundle: every doc (text + pre-read eng) in a single file, so the
-  // app loads ALL data with one fetch + one analysis pass.
+  // app loads ALL data with one fetch. Docs carry STABLE ids (the app mints
+  // runtime ids for live adds; the pre-digested analysis keys off these).
   const BUNDLE = path.join(HD, "ohs-bundle.json");
   const docs = entries.map((e) => {
     const eng = (readings[e.path] || {}).eng;
+    const id = "ohs-" + hash(fs.readFileSync(path.join(ROOT, e.path))).slice(0, 10);
     return {
+      id,
       title: e.title,
       year: null,
       type: "Repo file",
@@ -108,8 +128,51 @@ async function main() {
       extra: eng ? { eng } : {},
     };
   });
-  fs.writeFileSync(BUNDLE, JSON.stringify({ generated: new Date().toISOString(), docs }));
+  writeArtifact(BUNDLE, { generated: new Date().toISOString(), docs });
   console.log(`wrote ${BUNDLE}: ${docs.length} docs, ${fs.statSync(BUNDLE).size} bytes`);
+
+  // Pre-digested analysis: the app's OWN analyze() over the full corpus, run
+  // here (jsdom shim), serialized. The app loads it instead of recomputing,
+  // so first render is instant; local adds/corrections fold on top via the
+  // app's own analysis() (which the guard lets through once the workspace
+  // diverges from the seeded set).
+  const { JSDOM } = await import("jsdom");
+  const dom = new JSDOM("<!doctype html><html><body></body></html>");
+  globalThis.DOMParser = dom.window.DOMParser;
+  globalThis.document = dom.window.document;
+  globalThis.window = dom.window;
+  const { analyze_offline } = await import(
+    path.join(path.dirname(fileURLToPath(import.meta.url)), "ohs-analyze.mjs")
+  );
+  const a0 = Date.now();
+  const A = analyze_offline({ docs }, {});
+  const ANALYSIS = path.join(HD, "ohs-analysis.json");
+  const docIds = docs.map((d) => d.id).join(",");
+  // Reduced serialization: the app's in-memory A shares references, which
+  // JSON duplicates 3x (sts/stsByDoc/byId). Ship sts ONCE and names with
+  // their statement objects intact (a handful of analyze's name.sts entries
+  // reference degenerate statements absent from sts — mapping to ids would
+  // lose them). The app rebuilds stsByDoc/byId/docById on load.
+  const names = {};
+  for (const [k, v] of Object.entries(A.names)) {
+    names[k] = { name: v.name, type: v.type, aliases: v.aliases || [], docs: v.docs, sts: v.sts };
+  }
+  writeArtifact(
+    ANALYSIS,
+    {
+      generated: new Date().toISOString(),
+      schema: "ohs-analysis@1",
+      docIds,
+      sts: A.sts,
+      names,
+      echoes: A.echoes,
+      echoFloor: A.echoFloor,
+    }
+  );
+  console.log(
+    `wrote ${ANALYSIS}: ${A.sts.length} statements, ${Object.keys(names).length} names, ` +
+    `${fs.statSync(ANALYSIS).size} bytes, ${Math.round((Date.now() - a0) / 1000)}s`
+  );
 }
 
 main().catch((e) => { console.error("predigest failed:", e); process.exit(1); });

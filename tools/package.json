@@ -1,0 +1,1 @@
+{"name":"ohs-tools","private":true,"type":"module","dependencies":{"acorn":"^8.14.0","jsdom":"^25.0.0"}}

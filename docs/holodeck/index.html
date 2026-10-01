@@ -3218,6 +3218,32 @@ function whoSays(st, A) {
 const whenOf = (st, d) => d.pubLabel || (d.year ? String(d.year) : 'Undated');
 const assertLine = (st, A) => { const d = A.docById[st.doc]; const w = whoSays(st, A); return (w ? w.who + (w.how === 'quoted' ? ' (quoted)' : w.how === 'publisher' ? '' : ' (' + w.how + ')') + ' · ' : '') + d.title + ' · ' + whenOf(st, d); };
 
+// ── OHS Pages overlay: fetch a JSON artifact preferring its .zst twin,
+// decoded with the same zstd-wasm the app's reading-worker already uses.
+async function fetchDecodedOHS(path) {
+  const zst = path + '.zst';
+  try {
+    const r = await fetch(new URL(zst, location.href).href, { cache: 'no-cache' });
+    if (r.ok) {
+      const M = await import('https://esm.sh/@bokuweb/zstd-wasm@0.0.27');
+      await M.init();
+      const raw = M.decompress(new Uint8Array(await r.arrayBuffer()));
+      return JSON.parse(new TextDecoder().decode(raw));
+    }
+  } catch (e) {}
+  const r2 = await fetch(new URL(path, location.href).href, { cache: 'no-cache' });
+  if (!r2.ok) throw new Error('artifact unavailable: ' + path);
+  return await r2.json();
+}
+// Rehydrate the pre-digested analysis: ships sts once + names with their
+// statement objects; rebuild the index maps here, same shapes analyze()
+// produces, so the render sees a real graph.
+function rehydrateOhsAnalysis(P, docs) {
+  const byId = Object.fromEntries(P.sts.map(s => [s.id, s]));
+  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
+  const docById = Object.fromEntries(docs.map(d => [d.id, d]));
+  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names: P.names, byId, docById };
+}
 class Component extends DCLogic {
   state = { corpus: null, added: loadAdded(), view: 'summary', sel: null, f: {}, q: '', readDoc: null, showPos: false, showAdd: false, showSettings: false, draftTitle: '', draftYear: '', draftText: '', fw: {}, note: '', theme: loadTheme(), railOpen: loadRailOpen(), segOpen: loadSegOpen(), dragging: false, busy: '', just: null, readMode: 'original', htmlVer: 0, txAsk: null, txPrior: 'workspace', txLang: 'en', txModel: 'base', txBusy: false, txProg: '', ground: { on: true, names: true, figures: true, dates: true, sentences: true } };
   _html = {};
@@ -3347,15 +3373,23 @@ class Component extends DCLogic {
     if (docs.length) return;
     const say = m => { try { this.setState({ busy: m }); } catch (e) {} };
     try {
-      const br = await fetch(new URL('ohs-bundle.json', location.href).href, { cache: 'no-cache' });
-      if (br.ok) {
-        const B = await br.json();
-        if (B && Array.isArray(B.docs) && B.docs.length) {
-          say('Loading OHS corpus · ' + B.docs.length + ' documents…');
-          await this.addDocs(B.docs);
-          this.setState({ just: null, busy: '' });
+      const B = await fetchDecodedOHS('ohs-bundle.json');
+      if (B && Array.isArray(B.docs) && B.docs.length) {
+        say('Loading OHS corpus · ' + B.docs.length + ' documents…');
+        let P = null;
+        try { P = await fetchDecodedOHS('ohs-analysis.json'); } catch (e) { P = null; }
+        if (P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {
+          P.corrKey = this.corrKey(this.corpusId());
+          this._ohsP = P; this._ohsA = null;
+          const cid = this.corpusId();
+          const added = { ...this.state.added, [cid]: B.docs };
+          this.saveAdded(added);
+          this.setState({ added, just: null, busy: '' });
           return;
         }
+        await this.addDocs(B.docs);
+        this.setState({ just: null, busy: '' });
+        return;
       }
     } catch (e) {}
     const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
@@ -4810,6 +4844,13 @@ class Component extends DCLogic {
   corpusId() { return this.state.corpus || 'custom'; }
   baseDocs(id) { return SAMPLES[id] ? SAMPLES[id].docs : []; }
   analysis() {
+    if (this._ohsP) {
+      const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));
+      if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {
+        if (!this._ohsA) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || []); } catch (e) { this._ohsA = null; } }
+        if (this._ohsA) return this._ohsA;
+      } else { this._ohsP = null; this._ohsA = null; }
+    }
     const id = this.corpusId(); const seenU = new Set(); const docs = this.baseDocs(id).concat(this.state.added[id] || []).filter(d => { const u = d.url && d.url.replace(/^https?:\/\/(www\.)?/, '').replace(/[#?].*$/, '').replace(/\/$/, '').toLowerCase(); if (!u || d.ohsId) { if (u) seenU.add(u); return true; } if (seenU.has(u)) return false; seenU.add(u); return true; });
     const key = id + ':' + docs.map(d => d.id).join(',') + ':' + this.state.htmlVer + ':' + this.corrKey(id);
     if (this._key !== key) { this._key = key; this._A = analyze({ docs }, this._html); this.applyCorrections(this._A, id); }

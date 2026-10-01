@@ -20,15 +20,22 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Install digest tools
+        working-directory: tools
+        run: |
+          npm install
+          sudo apt-get install -y zstd
+      - name: Extract the app's own analyze
+        run: node tools/extract_analyze.mjs > tools/ohs-analyze.mjs
       - name: Digest the corpus
         run: node tools/predigest.mjs
       - name: Commit changed digest
         run: |
-          if ! git diff --quiet -- docs/holodeck/ohs-readings.json docs/holodeck/ohs-bundle.json; then
+          git add tools/ohs-analyze.mjs docs/holodeck/ohs-readings.json docs/holodeck/ohs-readings.json.zst docs/holodeck/ohs-bundle.json docs/holodeck/ohs-bundle.json.zst docs/holodeck/ohs-analysis.json docs/holodeck/ohs-analysis.json.zst
+          if ! git diff --cached --quiet; then
             git config user.name "ohs-custody digester"
             git config user.email "digester@users.noreply.github.com"
-            git add docs/holodeck/ohs-readings.json docs/holodeck/ohs-bundle.json
-            git commit -m "[skip ci] predigest: refresh ohs-readings + ohs-bundle ($(git rev-parse --short HEAD))"
+            git commit -m "[skip ci] predigest: refresh readings/bundle/analysis ($(git rev-parse --short HEAD))"
             git push
           else
             echo "digest unchanged"

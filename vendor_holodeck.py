@@ -79,15 +79,23 @@ OHS_OVERLAY_PATCHES = [
         "    if (docs.length) return;\n"
         "    const say = m => { try { this.setState({ busy: m }); } catch (e) {} };\n"
         "    try {\n"
-        "      const br = await fetch(new URL('ohs-bundle.json', location.href).href, { cache: 'no-cache' });\n"
-        "      if (br.ok) {\n"
-        "        const B = await br.json();\n"
-        "        if (B && Array.isArray(B.docs) && B.docs.length) {\n"
-        "          say('Loading OHS corpus · ' + B.docs.length + ' documents…');\n"
-        "          await this.addDocs(B.docs);\n"
-        "          this.setState({ just: null, busy: '' });\n"
+        "      const B = await fetchDecodedOHS('ohs-bundle.json');\n"
+        "      if (B && Array.isArray(B.docs) && B.docs.length) {\n"
+        "        say('Loading OHS corpus · ' + B.docs.length + ' documents…');\n"
+        "        let P = null;\n"
+        "        try { P = await fetchDecodedOHS('ohs-analysis.json'); } catch (e) { P = null; }\n"
+        "        if (P && Array.isArray(P.sts) && P.sts.length && P.docIds === B.docs.map(d => d.id).join(',')) {\n"
+        "          P.corrKey = this.corrKey(this.corpusId());\n"
+        "          this._ohsP = P; this._ohsA = null;\n"
+        "          const cid = this.corpusId();\n"
+        "          const added = { ...this.state.added, [cid]: B.docs };\n"
+        "          this.saveAdded(added);\n"
+        "          this.setState({ added, just: null, busy: '' });\n"
         "          return;\n"
         "        }\n"
+        "        await this.addDocs(B.docs);\n"
+        "        this.setState({ just: null, busy: '' });\n"
+        "        return;\n"
         "      }\n"
         "    } catch (e) {}\n"
         "    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\\.json$/;\n"
@@ -159,6 +167,50 @@ OHS_OVERLAY_PATCHES = [
         "chrome: topic placeholder names the OHS audit, not a bridge collapse",
         "topicPlaceholder: inferred ? 'e.g. ' + inferred.name : 'e.g. the bridge collapse'",
         "topicPlaceholder: inferred ? 'e.g. ' + inferred.name : 'e.g. the OHS audit'",
+    ),
+    (
+        "analysis: rehydrate the pre-digested analysis (deduped JSON -> live graph) + zstd decode",
+        "class Component extends DCLogic {",
+        "// ── OHS Pages overlay: fetch a JSON artifact preferring its .zst twin,\n"
+        "// decoded with the same zstd-wasm the app's reading-worker already uses.\n"
+        "async function fetchDecodedOHS(path) {\n"
+        "  const zst = path + '.zst';\n"
+        "  try {\n"
+        "    const r = await fetch(new URL(zst, location.href).href, { cache: 'no-cache' });\n"
+        "    if (r.ok) {\n"
+        "      const M = await import('https://esm.sh/@bokuweb/zstd-wasm@0.0.27');\n"
+        "      await M.init();\n"
+        "      const raw = M.decompress(new Uint8Array(await r.arrayBuffer()));\n"
+        "      return JSON.parse(new TextDecoder().decode(raw));\n"
+        "    }\n"
+        "  } catch (e) {}\n"
+        "  const r2 = await fetch(new URL(path, location.href).href, { cache: 'no-cache' });\n"
+        "  if (!r2.ok) throw new Error('artifact unavailable: ' + path);\n"
+        "  return await r2.json();\n"
+        "}\n"
+        "// Rehydrate the pre-digested analysis: ships sts once + names with their\n"
+        "// statement objects; rebuild the index maps here, same shapes analyze()\n"
+        "// produces, so the render sees a real graph.\n"
+        "function rehydrateOhsAnalysis(P, docs) {\n"
+        "  const byId = Object.fromEntries(P.sts.map(s => [s.id, s]));\n"
+        "  const stsByDoc = {}; P.sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });\n"
+        "  const docById = Object.fromEntries(docs.map(d => [d.id, d]));\n"
+        "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts: P.sts, names: P.names, byId, docById };\n"
+        "}\n"
+        "class Component extends DCLogic {",
+    ),
+    (
+        "analysis: return the prebuilt analysis while the workspace is exactly the seeded set",
+        "  analysis() {\n    const id = this.corpusId(); const seenU = new Set();",
+        "  analysis() {\n"
+        "    if (this._ohsP) {\n"
+        "      const cur = ((this.state.added[this.corpusId()] || []).map(d => d.id).join(','));\n"
+        "      if (this._ohsP.docIds === cur && this._ohsP.corrKey === this.corrKey(this.corpusId())) {\n"
+        "        if (!this._ohsA) { try { this._ohsA = rehydrateOhsAnalysis(this._ohsP, this.state.added[this.corpusId()] || []); } catch (e) { this._ohsA = null; } }\n"
+        "        if (this._ohsA) return this._ohsA;\n"
+        "      } else { this._ohsP = null; this._ohsA = null; }\n"
+        "    }\n"
+        "    const id = this.corpusId(); const seenU = new Set();",
     ),
 ]
 
@@ -265,9 +317,17 @@ def main():
     overlay = apply_ohs_overlay()
     overlay_sha = sha256(DEST / "index.html")
 
-    # Re-digest the corpus: ohs-readings.json lives under DEST and the wipe
-    # just removed it, so it must be rebuilt now, from the freshly-vendored
-    # reader, so the app can attach engine results instead of waiting live.
+    # Re-extract + re-digest the corpus: ohs-analyze.mjs (the app's own
+    # analyze), ohs-readings.json, ohs-bundle.json and ohs-analysis.json live
+    # under docs/holodeck/ (the wipe removed them) and must be rebuilt now
+    # from the freshly-vendored reader + app, so the app can load everything
+    # pre-read instead of analyzing live.
+    r = subprocess.run(["node", "tools/extract_analyze.mjs"], cwd=str(ROOT),
+                       capture_output=True, text=True, timeout=120)
+    if r.returncode != 0:
+        raise SystemExit(f"extract_analyze failed: {r.stdout[-500:]} {r.stderr[-500:]}")
+    with open(ROOT / "tools" / "ohs-analyze.mjs", "w", encoding="utf-8") as f:
+        f.write(r.stdout)
     r = subprocess.run(["node", "tools/predigest.mjs"], cwd=str(ROOT),
                        capture_output=True, text=True, timeout=1800)
     if r.returncode != 0:
