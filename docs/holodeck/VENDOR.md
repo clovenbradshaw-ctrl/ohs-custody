@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `82033ed0a24de8a6804ee87d8bd1392fe03d91b4`
-Vendored: 2026-10-01T15:22:33+00:00 by `python3 vendor_holodeck.py`
+Vendored: 2026-10-01T15:34:26+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -28,15 +28,14 @@ is duplicated here.
 - chrome: topic placeholder names the OHS audit, not a bridge collapse
 - loading: centered progress overlay (spinner + staged bar) during seed
 - loading: expose seedPct in render
-- loading: seed drives staged progress
 - analysis: rehydrate + fetchDecodedOHS helpers
 - analysis: return the prebuilt analysis while the workspace is exactly the seeded set
 
-Patched `index.html` sha256: `a6143cdbfd58b8ead39072b1061732dea65d3a937bc2346f7761b7f40630e26e`
+Patched `index.html` sha256: `66d4d96d6143f8446ce2509dc7cc223cbafef9f01d7ac918da9a94c3caf2e521`
 
-Seed manifest `ohs-seed.json`: `140` entries `9066bd0a0d46`
+Seed manifest `ohs-seed.json`: `140` entries `62b10e7229db`
 
-Digest `ohs-readings.json`: `39209771d2f4` (engine pre-reads, schema `ohs-readings@1`)
+Digest `ohs-readings.json`: `51f78f502cf2` (engine pre-reads, schema `ohs-readings@1`)
 
 ## Files
 

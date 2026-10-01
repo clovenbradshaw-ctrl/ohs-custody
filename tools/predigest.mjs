@@ -157,10 +157,13 @@ async function main() {
   const cleanDocs = A.docs; // cleaned text, same ids as the seeded docs
   const sts = A.sts.map((s) => {
     const d = cleanDocs.find((x) => x.id === s.doc);
+    // rawNames/shadow are consumed only inside analyze() itself — the render
+    // reads names/spans/frame/where/topics. Dropping them shrinks the payload.
+    const { rawNames, shadow, ...rest } = s;
     if (d && typeof s.s === "number" && typeof s.e === "number" && d.text.slice(s.s, s.e) === s.text) {
-      return { ...s, text: null };
+      return { ...rest, text: null };
     }
-    return s;
+    return rest;
   });
   const names = {};
   for (const [k, v] of Object.entries(A.names)) {
