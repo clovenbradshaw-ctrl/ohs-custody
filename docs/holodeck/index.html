@@ -3331,17 +3331,18 @@ class Component extends DCLogic {
   // for any github.com/owner/repo address, wherever it came from. No file-count or file-size limit; text files
   // only, and vendored directories are skipped. Admitted with one addDocs, since each call re-reads the workspace.
   // ── OHS Pages overlay: first-run seed. Pulls the custody corpus out
-  // of this same repo (tracks main, so it stays current) when the
-  // workspace is empty. Skipped once the visitor has any docs.
+  // of this same repo (tracks main, so it stays current) whenever the
+  // workspace is empty. Deliberately not gated on a done-flag: if the
+  // browser failed to persist the docs (quota), an empty room must
+  // re-seed rather than trust a stale flag. Skipped once docs exist.
   async ohsSeed() {
-    try { if (localStorage.getItem('ohs-pages-seeded-v1') === '1') return; } catch (e) {}
     let docs = [];
     try { docs = this.analysis().docs || []; } catch (e) {}
-    if (docs.length) { try { localStorage.setItem('ohs-pages-seeded-v1', '1'); } catch (e) {} return; }
+    if (docs.length) return;
     const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
     await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'transcripts/', skipRe: MACHINE_JSON });
     await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'derived/', skipRe: MACHINE_JSON });
-    try { localStorage.setItem('ohs-pages-seeded-v1', '1'); } catch (e) {}
+    this.setState({ just: null, busy: '' });
   }
   async pullRepo(owner, repo, opt) {
     opt = opt || {}; const A = this.addState();

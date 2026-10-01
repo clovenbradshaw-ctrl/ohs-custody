@@ -62,17 +62,18 @@ OHS_OVERLAY_PATCHES = [
         "seed: ohsSeed pulls transcripts/ + derived/ out of this same repo",
         "  async pullRepo(owner, repo, opt) {",
         "  // ── OHS Pages overlay: first-run seed. Pulls the custody corpus out\n"
-        "  // of this same repo (tracks main, so it stays current) when the\n"
-        "  // workspace is empty. Skipped once the visitor has any docs.\n"
+        "  // of this same repo (tracks main, so it stays current) whenever the\n"
+        "  // workspace is empty. Deliberately not gated on a done-flag: if the\n"
+        "  // browser failed to persist the docs (quota), an empty room must\n"
+        "  // re-seed rather than trust a stale flag. Skipped once docs exist.\n"
         "  async ohsSeed() {\n"
-        "    try { if (localStorage.getItem('ohs-pages-seeded-v1') === '1') return; } catch (e) {}\n"
         "    let docs = [];\n"
         "    try { docs = this.analysis().docs || []; } catch (e) {}\n"
-        "    if (docs.length) { try { localStorage.setItem('ohs-pages-seeded-v1', '1'); } catch (e) {} return; }\n"
+        "    if (docs.length) return;\n"
         "    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\\.json$/;\n"
         "    await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'transcripts/', skipRe: MACHINE_JSON });\n"
         "    await this.pullRepo('clovenbradshaw-ctrl', 'ohs-custody', { prefix: 'derived/', skipRe: MACHINE_JSON });\n"
-        "    try { localStorage.setItem('ohs-pages-seeded-v1', '1'); } catch (e) {}\n"
+        "    this.setState({ just: null, busy: '' });\n"
         "  }\n"
         "  async pullRepo(owner, repo, opt) {",
     ),
