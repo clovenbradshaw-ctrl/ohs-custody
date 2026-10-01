@@ -71,8 +71,10 @@ OHS_OVERLAY_PATCHES = [
         "  // quota); on failure it falls back to the vendored ohs-seed.json\n"
         "  // manifest (same shapes, possibly older), and if both fail the\n"
         "  // pill says so and retries once after 90s instead of dying silent.\n"
-        "  // Engine reads + full analysis still run per doc (no semantic\n"
-        "  // shortcuts) -- the fill takes minutes in the background.\n"
+        "  // Engine reads are PRE-DIGESTED: docs/holodeck/ohs-readings.json\n"
+        "  // carries the vendored reader's compact output per path, attached\n"
+        "  // as measured:true + extra.eng so addDocs NEVER waits on a live\n"
+        "  // engine host. Docs without a digest still live-read (safe).\n"
         "  async ohsSeed() {\n"
         "    let docs = [];\n"
         "    try { docs = this.analysis().docs || []; } catch (e) {}\n"
@@ -80,6 +82,8 @@ OHS_OVERLAY_PATCHES = [
         "    const say = m => { try { this.setState({ busy: m }); } catch (e) {} };\n"
         "    const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\\.json$/;\n"
         "    const isSeedPath = p => /\\.txt$/i.test(p) && (p.indexOf('transcripts/') === 0 || p.indexOf('derived/') === 0) && !MACHINE_JSON.test(p);\n"
+        "    let READINGS = {};\n"
+        "    try { const rr = await fetch(new URL('ohs-readings.json', location.href).href, { cache: 'no-cache' }); if (rr.ok) READINGS = ((await rr.json()).entries) || {}; } catch (e) { READINGS = {}; }\n"
         "    let paths = null;\n"
         "    try {\n"
         "      const r = await fetch('https://api.github.com/repos/clovenbradshaw-ctrl/ohs-custody/git/trees/HEAD?recursive=1', { headers: { Accept: 'application/vnd.github+json' } });\n"
@@ -107,7 +111,8 @@ OHS_OVERLAY_PATCHES = [
         "        if (!r.ok) return null;\n"
         "        const t = await r.text();\n"
         "        if (t.trim().length < 40) return null;\n"
-        "        return { title: p.split('/').slice(-2).join('/'), year: null, type: 'Repo file', text: t, url: 'https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/' + p, note: 'From ohs-custody · ' + p };\n"
+        "        const pre = READINGS[p];\n"
+        "        return { title: p.split('/').slice(-2).join('/'), year: null, type: 'Repo file', text: t, url: 'https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/' + p, note: 'From ohs-custody · ' + p, ...(pre ? { measured: true, extra: { eng: pre.eng } } : {}) };\n"
         "      } catch (e) { return null; }\n"
         "    };\n"
         "    const pull = async ps => { const out = []; await Promise.all(ps.map(async p => { const d = await get(p); if (d) out.push(d); })); return out; };\n"
@@ -250,6 +255,15 @@ def main():
     overlay = apply_ohs_overlay()
     overlay_sha = sha256(DEST / "index.html")
 
+    # Re-digest the corpus: ohs-readings.json lives under DEST and the wipe
+    # just removed it, so it must be rebuilt now, from the freshly-vendored
+    # reader, so the app can attach engine results instead of waiting live.
+    r = subprocess.run(["node", "tools/predigest.mjs"], cwd=str(ROOT),
+                       capture_output=True, text=True, timeout=1800)
+    if r.returncode != 0:
+        raise SystemExit(f"predigest failed: {r.stdout[-500:]} {r.stderr[-500:]}")
+    readings_sha = sha256(DEST / "ohs-readings.json")
+
     upstream_sha = git_sha(SRC)
     upstream_status = git_status_short(SRC)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -280,6 +294,7 @@ def main():
     lines += [f"- {d}" for d in overlay] + [""]
     lines += [f"Patched `index.html` sha256: `{overlay_sha}`", ""]
     lines += [f"Seed manifest `ohs-seed.json`: `{seed_n}` entries `{seed_sha[:12]}`", ""]
+    lines += [f"Digest `ohs-readings.json`: `{readings_sha[:12]}` (engine pre-reads, schema `ohs-readings@1`)", ""]
     lines += ["## Files", ""]
     for rel, h in manifest:
         lines.append(f"- `{rel}` `{h[:12]}`")

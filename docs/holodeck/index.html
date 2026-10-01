@@ -3340,8 +3340,10 @@ class Component extends DCLogic {
   // quota); on failure it falls back to the vendored ohs-seed.json
   // manifest (same shapes, possibly older), and if both fail the
   // pill says so and retries once after 90s instead of dying silent.
-  // Engine reads + full analysis still run per doc (no semantic
-  // shortcuts) -- the fill takes minutes in the background.
+  // Engine reads are PRE-DIGESTED: docs/holodeck/ohs-readings.json
+  // carries the vendored reader's compact output per path, attached
+  // as measured:true + extra.eng so addDocs NEVER waits on a live
+  // engine host. Docs without a digest still live-read (safe).
   async ohsSeed() {
     let docs = [];
     try { docs = this.analysis().docs || []; } catch (e) {}
@@ -3349,6 +3351,8 @@ class Component extends DCLogic {
     const say = m => { try { this.setState({ busy: m }); } catch (e) {} };
     const MACHINE_JSON = /(segments|speaker-bindings|entities|pages)\.json$/;
     const isSeedPath = p => /\.txt$/i.test(p) && (p.indexOf('transcripts/') === 0 || p.indexOf('derived/') === 0) && !MACHINE_JSON.test(p);
+    let READINGS = {};
+    try { const rr = await fetch(new URL('ohs-readings.json', location.href).href, { cache: 'no-cache' }); if (rr.ok) READINGS = ((await rr.json()).entries) || {}; } catch (e) { READINGS = {}; }
     let paths = null;
     try {
       const r = await fetch('https://api.github.com/repos/clovenbradshaw-ctrl/ohs-custody/git/trees/HEAD?recursive=1', { headers: { Accept: 'application/vnd.github+json' } });
@@ -3376,7 +3380,8 @@ class Component extends DCLogic {
         if (!r.ok) return null;
         const t = await r.text();
         if (t.trim().length < 40) return null;
-        return { title: p.split('/').slice(-2).join('/'), year: null, type: 'Repo file', text: t, url: 'https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/' + p, note: 'From ohs-custody · ' + p };
+        const pre = READINGS[p];
+        return { title: p.split('/').slice(-2).join('/'), year: null, type: 'Repo file', text: t, url: 'https://github.com/clovenbradshaw-ctrl/ohs-custody/blob/HEAD/' + p, note: 'From ohs-custody · ' + p, ...(pre ? { measured: true, extra: { eng: pre.eng } } : {}) };
       } catch (e) { return null; }
     };
     const pull = async ps => { const out = []; await Promise.all(ps.map(async p => { const d = await get(p); if (d) out.push(d); })); return out; };

@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `e89d7df3868cf26b9acf7b31561a0cdc37d14896`
-Vendored: 2026-10-01T14:01:50+00:00 by `python3 vendor_holodeck.py`
+Vendored: 2026-10-01T14:26:24+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -27,9 +27,11 @@ is duplicated here.
 - ingest: never read this instance's own app shell (docs/) as corpus
 - chrome: topic placeholder names the OHS audit, not a bridge collapse
 
-Patched `index.html` sha256: `18992c4eeaa9087a14da468b1800985714ef6c2a78554deae7e8227753504904`
+Patched `index.html` sha256: `23c3c0846e45f3e8930030d4de7875f926d8b7421e22d461719e2fdc12cc4013`
 
-Seed manifest `ohs-seed.json`: `140` entries `557eb7647b7d`
+Seed manifest `ohs-seed.json`: `140` entries `1216c9fa71b3`
+
+Digest `ohs-readings.json`: `50b894502488` (engine pre-reads, schema `ohs-readings@1`)
 
 ## Files
 

@@ -1,0 +1,35 @@
+name: digest
+on:
+  push:
+    branches: [main]
+    paths:
+      - "transcripts/**"
+      - "derived/**"
+      - "tools/**"
+      - "vendor_holodeck.py"
+  workflow_dispatch:
+
+jobs:
+  predigest:
+    runs-on: ubuntu-latest
+    if: "!startsWith(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Digest the corpus
+        run: node tools/predigest.mjs
+      - name: Commit changed digest
+        run: |
+          if ! git diff --quiet -- docs/holodeck/ohs-readings.json; then
+            git config user.name "ohs-custody digester"
+            git config user.email "digester@users.noreply.github.com"
+            git add docs/holodeck/ohs-readings.json
+            git commit -m "[skip ci] predigest: refresh ohs-readings.json ($(git rev-parse --short HEAD))"
+            git push
+          else
+            echo "digest unchanged"
+          fi
