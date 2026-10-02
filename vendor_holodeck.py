@@ -471,7 +471,7 @@ def main():
 
     # OHS instance overlay (re-applied after every re-vendor).
     overlay = apply_ohs_overlay()
-    apply_map_radial()
+    # apply_map_radial(): REMOVED — the core holodeck repo now carries the relativistic+live layout in holodeck-map.js; vendoring copies it, so no patch is needed (and patching would double the loop condition).
     overlay_sha = sha256(DEST / "index.html")
 
     # Re-extract + re-digest the corpus: ohs-analyze.mjs (the app's own

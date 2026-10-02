@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
-Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `740954a5e7ef1313daebf785cee532e437850e4a`
-Vendored: 2026-10-02T02:29:27+00:00 by `python3 vendor_holodeck.py`
+Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `c07de60ec9d513efba71f4820e87a841241638a4`
+Vendored: 2026-10-02T02:32:28+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -39,9 +39,9 @@ is duplicated here.
 
 Patched `index.html` sha256: `30857a943b2f39a62a1efb23bce12495832d73a8c5fdcdd159c8d8f823f9e4cf`
 
-Seed manifest `ohs-seed.json`: `140` entries `35a9f0d6eff9`
+Seed manifest `ohs-seed.json`: `140` entries `ec80e25b66e9`
 
-Log `ohs.log`: `140` docs `b1868c33d059` `42.2MB` (schema `ohs-log@3`, spans + source pointers)
+Log `ohs.log`: `140` docs `481dcd87797f` `42.2MB` (schema `ohs-log@3`, spans + source pointers)
 
 ## Files
 
@@ -54,7 +54,7 @@ Log `ohs.log`: `140` docs `b1868c33d059` `42.2MB` (schema `ohs-log@3`, spans + s
 - `holodeck-hang.js` `5d80e157fcc2`
 - `holodeck-holons.js` `c7ef3561dfa3`
 - `holodeck-ingest-player.js` `b5164b42ad78`
-- `holodeck-map.js` `326590346b96`
+- `holodeck-map.js` `b162a23041f3`
 - `holodeck-match.js` `4c66d94d9a35`
 - `holodeck-media.js` `7c735be8a876`
 - `holodeck-reader.js` `ee20051e6fb8`
