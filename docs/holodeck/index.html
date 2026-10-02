@@ -1236,6 +1236,19 @@ select option{background:var(--s1);color:var(--ink)}
               <sc-if value="{{ pf.hasMoreList }}" hint-placeholder-val="{{ false }}"><button onClick="{{ pf.onMoreList }}" style="all:unset;cursor:pointer;font:500 14px 'Hanken Grotesk';color:var(--acc);padding:8px 0 10px">{{ pf.moreList }}</button></sc-if>
             </div>
           </sc-if>
+          <sc-if value="{{ pf.hasProf }}" hint-placeholder-val="{{ false }}">
+            <div style="background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:14px 22px;display:flex;flex-direction:column;gap:5px">
+              <span style="font:600 12px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;color:var(--mut)">Profile — key parameters, induced per kind</span>
+              <span style="font:500 12px 'JetBrains Mono';color:var(--acc)">{{ pf.profKind }}<span style="color:var(--mut)"> · {{ pf.profCount }} parameter{{ pf.profCount === 1 ? '' : 's' }}</span></span>
+              <sc-for list="{{ pf.profRows }}" as="r" hint-placeholder-count="4">
+                <div style="display:grid;grid-template-columns:1.4fr auto 1.8fr;gap:10px;align-items:center;padding:5px 0;border-top:1px solid var(--line)">
+                  <span style="font:600 13px 'Hanken Grotesk';color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.star }} {{ r.rel }}</span>
+                  <span style="font:600 10px 'JetBrains Mono';border:1px solid var(--line2);border-radius:99px;padding:1px 7px;color:var(--mut);white-space:nowrap">{{ r.standing }}</span>
+                  <span style="font:400 13px 'Hanken Grotesk';color:var(--ink2);text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="{{ r.vals }}">{{ r.vals }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
         </sc-if>
       </sc-if>
 
@@ -2133,6 +2146,18 @@ select option{background:var(--s1);color:var(--ink)}
       <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
       <span style="font:500 13px 'Hanken Grotesk';color:var(--mut);margin-right:2px">{{ pf.tagTitle }}</span>
       <sc-for list="{{ pf.tags }}" as="t" hint-placeholder-count="3"><button onClick="{{ t.onClick }}" style="background:var(--s1);border:1px solid {{ t.color }};border-radius:999px;padding:2px 10px;cursor:pointer;font:500 13px 'Hanken Grotesk';color:var(--ink)">{{ t.label }}</button></sc-for>
+      </div>
+      </sc-if>
+      <sc-if value="{{ pf.hasProf }}" hint-placeholder-val="{{ false }}">
+      <div style="background:var(--s1);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;margin-top:10px">
+        <span style="font:600 11px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;color:var(--mut)">Profile — induced per kind</span>
+        <span style="font:500 11px 'JetBrains Mono';color:var(--acc)">{{ pf.profKind }}</span>
+        <sc-for list="{{ pf.profRows }}" as="r" hint-placeholder-count="4">
+          <div style="display:grid;grid-template-columns:1.2fr auto;gap:0 8px;align-items:baseline;padding:5px 0;border-top:1px solid var(--line)">
+            <span style="font:600 13px 'Hanken Grotesk';color:var(--ink)">{{ r.star }} {{ r.rel }}<span style="font:600 9px 'JetBrains Mono';color:var(--mut)"> · {{ r.standing }}</span></span>
+            <span style="grid-column:1 / -1;font:400 12px 'Hanken Grotesk';color:var(--ink2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.vals }}</span>
+          </div>
+        </sc-for>
       </div>
       </sc-if>
       </div>
@@ -3151,6 +3176,9 @@ async function searchSources(scope, q, page) {
   return { results: j.response.docs.map(d => ({ title: first(d.title) || d.identifier, url: 'https://archive.org/details/' + d.identifier, snippet: plainText(Array.isArray(d.description) ? d.description.join(' ') : d.description).slice(0, 300), source: first(d.creator) || 'Internet Archive', meta: [d.mediatype, d.year].filter(Boolean).join(' · '), thumb: 'https://archive.org/services/img/' + d.identifier, kind: 'archive' })), more: page * 20 + j.response.docs.length < (j.response.numFound || 0), engine: 'Internet Archive' };
 }
 let _hdFort = null; try { import(new URL('holodeck-fort.js', location.href).href).then(M => { _hdFort = M; }).catch(() => {}); } catch (e) {}
+// Entity profiles (holodeck-profile.js): kind-induced key parameters per being,
+// built from the workspace's own relations. Loaded like the other modules.
+let _hdProf = null;
 let _hdMed = null; const hdMedia = () => _hdMed || (_hdMed = import(new URL('holodeck-media.js', location.href).href));
 const hdTr = (a, b, c, x) => hdT(a, b, c, x);
 // Every file comes through here. Sound, images, scores, math, sheets and unknown bytes go to holodeck-media.js; everything
@@ -3280,9 +3308,8 @@ async function loadLogOHS() {
     if (live == null || live === cF) { try { const r = await fetch(new URL('ohs-ties.json', location.href).href, { cache: 'no-cache' }); if (r.ok) { const t = await r.json(); if (t && Array.isArray(t.triples)) cL.ties = t; } } catch (e) {} return cL; } // cache trusted (or seed unreachable)
   }
   const L = await fetchDecodedOHS('ohs.log');
-  // Predicate layer (ohs-ties@1): typed, directed (agent,verb,patient) relations
-  // extracted from the statement spans against the English POS prior and gated
-  // by Sullivan's null. Optional — the map falls back to dmdCo ties without it.
+  // Predicate layer (ohs-ties@1): typed, directed (agent,verb,patient) relations.
+  // Optional — the map falls back to dmdCo ties without it.
   try { const r = await fetch(new URL('ohs-ties.json', location.href).href, { cache: 'no-cache' }); if (r.ok) { const t = await r.json(); if (t && Array.isArray(t.triples)) L.ties = t; } } catch (e) {}
   ohsStash('ohs:log', L); ohsStash('ohs:version', OHS_DIGEST_VERSION);
   const live = await ohsFingerprint();
@@ -3332,7 +3359,7 @@ class Component extends DCLogic {
     setTimeout(() => { try { this.netInit(); } catch (e) {} }, 800);
     setTimeout(() => { try { this.ohsSeed(); } catch (e) {} }, 1500);
     setTimeout(() => this.measureHdr(), 400);
-    this.applyTheme(); this._c = 0; import(new URL('holodeck-match.js', location.href).href).then(M => { this._mt = M; this._qc = null; this.forceUpdate(); }).catch(() => {}); this.loadHtml(); if (typeof location !== 'undefined' && /fx-share=/.test(location.hash)) { this.netInit(); this.setState({ view: 'draft' }); }
+    this.applyTheme(); this._c = 0; import(new URL('holodeck-match.js', location.href).href).then(M => { this._mt = M; this._qc = null; this.forceUpdate(); }).catch(() => {}); import(new URL('holodeck-profile.js', location.href).href).then(M => { _hdProf = M; this._pbA = null; this.forceUpdate(); }).catch(() => {}); this.loadHtml(); if (typeof location !== 'undefined' && /fx-share=/.test(location.hash)) { this.netInit(); this.setState({ view: 'draft' }); }
     this._onRz = () => { this.measureHdr(); if ((window.innerWidth < SIDE_PANEL_MIN_VW) !== this._narrow) this.forceUpdate(); }; window.addEventListener('resize', this._onRz);
 
     this._onSelCh = () => { cancelAnimationFrame(this._selRaf); this._selRaf = requestAnimationFrame(() => this.updatePinPop()); };
@@ -6073,12 +6100,7 @@ class Component extends DCLogic {
     const h = React.createElement;
     const longer = D.nameList.filter(n => n.name.includes(' ')).map(n => n.name);
     const frag = n => !n.name.includes(' ') && longer.some(L => L !== n.name && (L.endsWith(' ' + n.name) || L.endsWith('’' + n.name) || L.endsWith("'" + n.name)) && A.names[L] && A.names[L].sts.length >= 2);
-    // OHS: DMD gate on the PLANET set, not just the edges. The app already
-    // computes the dmdCo-gated tie list (D.edgeList); keep only names that
-    // appear in it (a significant relational tie) or rank high by count — so
-    // the map stops filling with one-mention tokens and the no-tie crowd.
-    const tiedN = new Set(); (D.edgeList || []).forEach(e => { tiedN.add(e.a); tiedN.add(e.b); });
-    const pool = D.nameList.filter(n => holoName(n.name, A) && !(n.name.length <= 2 && !(n.aliases || []).length) && !frag(n) && (tiedN.has(n.name) || n.sts.length >= 5)).slice(0, 160); if (!pool.length) return h('p', { style: { color: 'var(--mut)', margin: '12px' } }, 'No names to connect.');
+    const pool = D.nameList.filter(n => holoName(n.name, A) && !(n.name.length <= 2 && !(n.aliases || []).length) && !frag(n)).slice(0, 160); if (!pool.length) return h('p', { style: { color: 'var(--mut)', margin: '12px' } }, 'No names to connect.');
     const docs = A.docs.filter(d => this._cnt.has(d.id)).map(d => ({ id: d.id, title: d.title }));
     const key = pool.map(n => n.name + ':' + n.sts.length).join('|') + '#' + F.length + '#' + docs.map(d => d.id).join(',');
     let M = this._mapMemo;
@@ -6101,7 +6123,7 @@ class Component extends DCLogic {
     const nOn = kept.filter(d => !off[d.id]).length;
     const play = () => { if (this._play) { clearInterval(this._play); this._play = null; this.forceUpdate(); return; } let y = (S.tMax && S.tMax < mx) ? S.tMax : mn; this.setState({ tMax: y }); this._play = setInterval(() => { y += 1; if (y >= mx) { clearInterval(this._play); this._play = null; this.setState({ tMax: null }); return; } this.setState({ tMax: y }); }, 900); };
     return {
-      orb: { title: 'Names, nested by the verbs that bind them', note: 'Each name sits under the name a verb binds it to \u2014 the longest-run relation it takes part in, kept only if it recurs beyond a shuffled-verb null. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },
+      orb: { title: 'Names, nested by the verbs that bind them', note: 'Each name sits under the name a verb binds it to — the longest-run relation it takes part in, kept only if it recurs beyond a shuffled-verb null. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },
       tl: { has: yrs.length > 1, min: mn, max: mx, val, label: val === mx ? 'Up to ' + mx + ' · everything' : 'Up to ' + val, onChange: e => { const v = +e.target.value; this.setState({ tMax: v >= mx ? null : v }); }, playLabel: this._play ? 'Stop' : 'Play', play, start: String(mn), end: String(mx) },
       srcPick: { open: !!S.srcOpen, label: S.srcOpen ? 'Done' : 'Choose sources', toggle: () => this.setState({ srcOpen: !S.srcOpen }), q: S.srcQ || '', onQ: e => this.setState({ srcQ: e.target.value }),
         count: (() => { const q = (S.srcQ || '').trim().toLowerCase(); const n = q ? kept.filter(d => d.title.toLowerCase().includes(q)).length : kept.length; return q ? n + ' match' : plural(n, 'source'); })() },
@@ -6342,6 +6364,32 @@ class Component extends DCLogic {
     return { pfCo: { open: true, label: 'Hide company', toggle: () => this.setState({ pfCoOpen: false }), note: !r.ok ? r.why : r.list.length ? 'Names whose neighbouring words match ' + name + '’s more closely than 95% of pairs among the other names do. Spelling plays no part: this is where each name sits in a sentence.' : 'No name keeps company with ' + name + ' more closely than names do with each other at random.', list: r.ok ? r.list.map(x => ({ name: x.name, sim: x.sim.toFixed(2), shared: x.shared.length ? 'both appear ' + x.shared.join(', ') : '', onClick: () => this.openProfile(x.name) })) : [] } };
   }
   openProfile(name) { this.pushHist(); this.setState(s => ({ view: 'profile', readDoc: null, pfFrom: s.view === 'profile' ? s.pfFrom : s.view, sel: { type: 'name', id: name }, pfIdx: 0, pfAll: false, selAll: false })); if (typeof window !== 'undefined') window.scrollTo(0, 0); }
+  // The workspace's entity profiles, kind-induced once per analysis and cached
+  // (like the relational database). The relation source is the workspace's own
+  // reading: each name's type, aliases, the frames of the statements it appears
+  // in, the sources that name it, and the beings it keeps company with.
+  profileBuild(A) {
+    if (this._pbA === A) return this._pb;
+    this._pbA = A; this._pb = null;
+    try {
+      const M = _hdProf; if (!M || !M.buildFromTriples) return null;
+      const tri = M.triplesFromAnalysis(A);
+      const beings = [...new Set(tri.map(t => t.subject))];
+      this._pb = M.buildFromTriples(tri, { beings, exposureFloor: 2, draws: 99, alpha: 0.05, seed: 5 });
+    } catch (e) { this._pbErr = String(e && e.message || e); }
+    return this._pb;
+  }
+  profileRows(A, name) {
+    const M = _hdProf; if (!M) return null;
+    const built = this.profileBuild(A); if (!built) return null;
+    const p = built.byId.get(name); if (!p) return null;
+    return {
+      established: p.established,
+      kind: p.kinds.map(k => (k.signatures || []).slice(0, 6).join(' · ')).join(' / ') || 'no kind established',
+      count: p.parameters.length,
+      rows: M.paramRows(p, built).map(r => ({ rel: r.rel, star: r.star, standing: r.standing, cls: r.cls, vals: r.values.map(v => v.text + (v.n > 1 ? ' ×' + v.n : '')).join(' · ') + (r.more ? ' ' + r.more : '') })),
+    };
+  }
   profileVals(A, det) {
     const S = this.state, sel = S.sel; const off = { has: false, tags: [], elsewhere: [], facts: [] };
     const page = S.view === 'profile';
@@ -6359,7 +6407,9 @@ class Component extends DCLogic {
       els.forEach(e => { e.style.outline = ''; }); el.style.outline = '2px solid #8b5cf6'; el.style.outlineOffset = '2px'; el.style.borderRadius = '2px';
       this.setState({ pfIdx: i }); };
     const d = det.d;
+    const pr = this.profileRows(A, n.name);
     return { has: true, eyebrow: d.eyebrow, color: d.color, title: n.name,
+      hasProf: !!(pr && pr.rows.length), profKind: pr ? pr.kind : '', profEstablished: pr ? pr.established : false, profCount: pr ? pr.count : 0, profRows: pr ? pr.rows : [],
       facts: d.facts, here: N ? plural(N, 'mention') + ' in this source' : 'Not named in this source’s statements', hasStep: N > 1, pos: N > 1 ? (Math.min(idx, N - 1) + 1) + ' / ' + N : '', prev: () => step(-1), next: () => step(1),
       hasTags: !!(d.tags && d.tags.length), tags: page ? (d.tags || []).map(t => ({ ...t, onClick: () => this.openProfile(t.label) })) : (d.tags || []), tagTitle: d.tagTitle,
       hasElse: elsewhere.length > 0, elseTitle: page ? 'In ' + plural(elsewhere.length, 'source') : 'Also in ' + plural(elsewhere.length, 'other source'), elsewhere: elsewhere.slice(0, S.pfAll ? 99 : 3), hasMoreElse: !S.pfAll && elsewhere.length > 3, moreElse: 'Show all ' + elsewhere.length, onMoreElse: () => this.setState({ pfAll: true }),

@@ -115,17 +115,27 @@ export function mountMap(host, opts = {}) {
       // Cached per (model, origin, size) so per-frame work is just the spin.
       const vis = M.vis.slice();
       const visSet = new Set(vis);
-      const adj = new Map();
-      const addE = (a, b) => { if (a == null || b == null || a === b || !visSet.has(a) || !visSet.has(b)) return; if (!adj.has(a)) adj.set(a, new Set()); if (!adj.has(b)) adj.set(b, new Set()); adj.get(a).add(b); adj.get(b).add(a); };
-      (D.edges || []).forEach(E => addE(E.a, E.b));
-      if (M.agg) M.agg.forEach(E => addE(E.a, E.b));
+      const adj = new Map(), wadj = new Map();
+      const addE = (a, b, w) => { if (a == null || b == null || a === b || !visSet.has(a) || !visSet.has(b)) return;
+        if (!adj.has(a)) adj.set(a, new Set()); if (!adj.has(b)) adj.set(b, new Set()); adj.get(a).add(b); adj.get(b).add(a);
+        const ww = Math.max(1, w || 1);
+        if (!wadj.has(a)) wadj.set(a, new Map()); if (!wadj.has(b)) wadj.set(b, new Map());
+        const ma = wadj.get(a), mb = wadj.get(b); ma.set(b, Math.max(ma.get(b) || 0, ww)); mb.set(a, Math.max(mb.get(a) || 0, ww)); };
+      (D.edges || []).forEach(E => addE(E.a, E.b, E.c || (E.sts && E.sts.length)));
+      if (M.agg) M.agg.forEach(E => addE(E.a, E.b, E.c));
       let origin = (sel && visSet.has(sel)) ? sel : null;
       if (!origin) { let best = vis[0] || null, bd = -1; vis.forEach(n => { const d = (adj.get(n) || new Set()).size; if (d > bd) { bd = d; best = n; } }); origin = best; }
-      const dist = new Map(); if (origin) dist.set(origin, 0);
-      let frontier = origin ? [origin] : [];
-      while (frontier.length) { const nxt = []; frontier.forEach(n => (adj.get(n) || new Set()).forEach(m => { if (!dist.has(m)) { dist.set(m, dist.get(n) + 1); nxt.push(m); } })); frontier = nxt; }
+      // GRAVITY: orbit radius ∝ 1/bond. Edge length is the bond's inverse
+      // (scaled so the strongest bond is length 1), so a strongly-bound name
+      // sits close and a weakly-bound one drifts out; Dijkstra gives the
+      // cumulative relational distance that becomes the orbit ring.
+      let WMAX = 1; wadj.forEach(mm => mm.forEach(w => { if (w > WMAX) WMAX = w; }));
+      const dist = new Map(); vis.forEach(n => dist.set(n, Infinity)); if (origin) dist.set(origin, 0);
+      const done = new Set();
+      while (true) { let u = null, bd = Infinity; vis.forEach(n => { if (!done.has(n) && dist.get(n) < bd) { bd = dist.get(n); u = n; } }); if (u == null) break; done.add(u);
+        (wadj.get(u) || new Map()).forEach((w, m) => { if (!done.has(m)) { const nd = dist.get(u) + WMAX / w; if (nd < dist.get(m)) dist.set(m, nd); } }); }
       const rings = new Map();
-      vis.forEach(n => { const r = dist.has(n) ? dist.get(n) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
+      vis.forEach(n => { const r = isFinite(dist.get(n)) ? Math.min(40, Math.max(0, Math.round(dist.get(n)))) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
       const step = Math.min(W, H) * 0.12;
       const lay = new Map();
       const radii = new Set();

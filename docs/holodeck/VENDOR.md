@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
-Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `96d286b52412c10655544535fa5909f30aae4f43`
-Vendored: 2026-10-02T02:44:49+00:00 by `python3 vendor_holodeck.py`
+Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `b0b4984a13faf82e1a1ffc936406e8d64abfca00`
+Vendored: 2026-10-02T03:18:19+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -36,16 +36,18 @@ is duplicated here.
 - honesty: ohsLoadedNote at top level of render
 - launch: land on Sources, hide Start here
 - launch: remove Start here from the nav
+- gravity: build the edge list from predicate ties (fallback to dmdCo)
+- gravity: copy names the verbs that bind them
 
-Patched `index.html` sha256: `30857a943b2f39a62a1efb23bce12495832d73a8c5fdcdd159c8d8f823f9e4cf`
+Patched `index.html` sha256: `c087f7dba629bd72c5cf50789d3db7bd2fa39177551e3362f54d36639a0aa2b1`
 
-Seed manifest `ohs-seed.json`: `140` entries `bf5c5a7602de`
+Seed manifest `ohs-seed.json`: `140` entries `78098e209ecf`
 
-Log `ohs.log`: `140` docs `00df23bea6d5` `42.2MB` (schema `ohs-log@3`, spans + source pointers)
+Log `ohs.log`: `140` docs `6eb158773519` `42.2MB` (schema `ohs-log@3`, spans + source pointers)
 
 ## Files
 
-- `index.html` `1b2e9272936a`
+- `index.html` `bb6fcc706e8d`
 - `fold-net.js` `8eb260d7c5ba`
 - `holodeck-ask.js` `f3791b142e3f`
 - `holodeck-doors.js` `724201428af9`
@@ -54,7 +56,7 @@ Log `ohs.log`: `140` docs `00df23bea6d5` `42.2MB` (schema `ohs-log@3`, spans + s
 - `holodeck-hang.js` `5d80e157fcc2`
 - `holodeck-holons.js` `c7ef3561dfa3`
 - `holodeck-ingest-player.js` `b5164b42ad78`
-- `holodeck-map.js` `b2ee1cbd3f9d`
+- `holodeck-map.js` `325a99472ba8`
 - `holodeck-match.js` `4c66d94d9a35`
 - `holodeck-media.js` `7c735be8a876`
 - `holodeck-reader.js` `ee20051e6fb8`
@@ -79,6 +81,9 @@ Log `ohs.log`: `140` docs `00df23bea6d5` `42.2MB` (schema `ohs-log@3`, spans + s
 - `vendor/eoreader7/native/kernel/activation.js` `db42f97a3a7b`
 - `vendor/eoreader7/native/kernel/contest.js` `0a85fc2056c1`
 - `vendor/eoreader7/native/kernel/cube.js` `6cd6d10254eb`
+- `vendor/eoreader7/native/kernel/entity-kind-induction.js` `334cbd0eefa2`
+- `vendor/eoreader7/native/kernel/entity-profile.js` `3c0a7807a434`
+- `vendor/eoreader7/native/kernel/kind-functional-induction.js` `a984c7531f13`
 - `vendor/eoreader7/native/kernel/rng.js` `18d6f2fa5202`
 - `vendor/eoreader7/native/memory/activation.js` `b3806df63eef`
 - `vendor/eoreader7/native/organs/aposiopesis.js` `7a81abe0423d`

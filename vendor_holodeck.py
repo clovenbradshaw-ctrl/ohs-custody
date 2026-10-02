@@ -225,9 +225,12 @@ OHS_OVERLAY_PATCHES = [
         "  const cV = await ohsCached('ohs:version'), cF = await ohsCached('ohs:fingerprint'), cL = await ohsCached('ohs:log');\n"
         "  if (cL && Array.isArray(cL.docs) && Array.isArray(cL.sts) && cV === OHS_DIGEST_VERSION) {\n"
         "    const live = await ohsFingerprint();\n"
-        "    if (live == null || live === cF) return cL; // cache trusted (or seed unreachable)\n"
+        "    if (live == null || live === cF) { try { const r = await fetch(new URL('ohs-ties.json', location.href).href, { cache: 'no-cache' }); if (r.ok) { const t = await r.json(); if (t && Array.isArray(t.triples)) cL.ties = t; } } catch (e) {} return cL; } // cache trusted (or seed unreachable)\n"
         "  }\n"
         "  const L = await fetchDecodedOHS('ohs.log');\n"
+        "  // Predicate layer (ohs-ties@1): typed, directed (agent,verb,patient) relations.\n"
+        "  // Optional — the map falls back to dmdCo ties without it.\n"
+        "  try { const r = await fetch(new URL('ohs-ties.json', location.href).href, { cache: 'no-cache' }); if (r.ok) { const t = await r.json(); if (t && Array.isArray(t.triples)) L.ties = t; } } catch (e) {}\n"
         "  ohsStash('ohs:log', L); ohsStash('ohs:version', OHS_DIGEST_VERSION);\n"
         "  const live = await ohsFingerprint();\n"
         "  if (live != null) ohsStash('ohs:fingerprint', live);\n"
@@ -266,7 +269,7 @@ OHS_OVERLAY_PATCHES = [
         "  // undefined and crash paradigms()'s .doc read.\n"
         "  for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs.filter(id => presentDocs.has(id))), sts: v.sts.filter(id => byId[id]) };\n"
         "  const stsByDoc = {}; sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });\n"
-        "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById };\n"
+        "  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById, ties: P.ties || null };\n"
         "}\n"
         "class Component extends DCLogic {",
     ),
@@ -320,6 +323,24 @@ OHS_OVERLAY_PATCHES = [
         "launch: remove Start here from the nav",
         "const NAVG = [['', [['summary', 'Start here'], ['ask', 'Ask the Fold']]], ['Read",
         "const NAVG = [['', [['ask', 'Ask the Fold']]], ['Read",
+    ),
+    (
+        "gravity: build the edge list from predicate ties (fallback to dmdCo)",
+        "    const edgeList = edgeAll.filter(e => dmdCo(e.sts.length, nc[e.a] || 0, nc[e.b] || 0, F.length));",
+        "    // GRAVITY. Prefer the predicate layer (ohs-ties@1): typed, directed\n"
+        "    // (agent,verb,patient) relations that recur beyond Sullivan's verb-permuted\n"
+        "    // null. Fall back to dmdCo co-occurrence only when no tie layer is present.\n"
+        "    const allTies = (A.ties && Array.isArray(A.ties.triples)) ? A.ties.triples.filter(t => names[t.a] && names[t.b]) : [];\n"
+        "    const recTies = allTies.filter(t => t.recFrac == null || t.recFrac >= 0.5);\n"
+        "    const tieRows = recTies.length ? recTies : allTies;\n"
+        "    const edgeList = tieRows.length\n"
+        "      ? tieRows.map(t => ({ a: t.a, b: t.b, verb: t.v, c: t.n, sts: { length: t.n } })).sort((a, b) => b.c - a.c)\n"
+        "      : edgeAll.filter(e => dmdCo(e.sts.length, nc[e.a] || 0, nc[e.b] || 0, F.length));",
+    ),
+    (
+        "gravity: copy names the verbs that bind them",
+        "      orb: { title: 'Names, nested by what they are tied to', note: 'Each name sits under the name it shares the most statements with, more than chance would give. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },",
+        "      orb: { title: 'Names, nested by the verbs that bind them', note: 'Each name sits under the name a verb binds it to \u2014 the longest-run relation it takes part in, kept only if it recurs beyond a shuffled-verb null. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },",
     ),
 ]
 
@@ -489,6 +510,13 @@ def main():
                        capture_output=True, text=True, timeout=1800)
     if r.returncode != 0:
         raise SystemExit(f"predigest failed: {r.stdout[-500:]} {r.stderr[-500:]}")
+    # The predicate layer: extract typed, directed (agent,verb,patient) relations
+    # from the fresh log against the English POS prior, gated by Sullivan's null
+    # and register provenance. Rebuilt every vendor, like the log itself.
+    r = subprocess.run(["node", "--max-old-space-size=6144", "tools/predicate-extract.mjs", "--write"], cwd=str(ROOT),
+                       capture_output=True, text=True, timeout=1800)
+    if r.returncode != 0:
+        raise SystemExit(f"predicate-extract failed: {r.stdout[-500:]} {r.stderr[-500:]}")
     # One log: all docs + index + per-source statement groups.
     log_n = len(json.loads((DEST / "ohs.log").read_text(encoding="utf-8"))["docs"])
     log_sha = sha256(DEST / "ohs.log")

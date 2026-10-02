@@ -111,6 +111,6 @@ console.log("\ntop relations (rec = supporting docs from the meeting record):");
 rows.slice(0, 20).forEach(r => console.log(String(r.n).padStart(4), "rec=" + r.rec + "/" + r.docs, "null=" + r.null, " ", r.a, "—[" + r.v + "]→", r.b));
 
 if (WRITE) {
-  fs.writeFileSync(OUT, JSON.stringify({ schema: "ohs-ties@1", generated: new Date().toISOString(), giver: prior.giver, nullFloor: 2, nullRecurring: recur(nullTriples), triples: rows }, null, 0));
+  fs.writeFileSync(OUT, JSON.stringify({ schema: "ohs-ties@1", generated: new Date().toISOString(), giver: prior.giver, basis: "agent/patient are the named spans before/after the verb in surface order, NOT theta-roles; passive and coordination are not resolved", nullFloor: 2, nullRecurring: recur(nullTriples), triples: rows }, null, 0));
   console.log("\nwrote", OUT);
 }
