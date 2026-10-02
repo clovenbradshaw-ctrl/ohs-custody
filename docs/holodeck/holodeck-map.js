@@ -126,12 +126,14 @@ export function mountMap(host, opts = {}) {
       vis.forEach(n => { const r = dist.has(n) ? dist.get(n) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
       const step = Math.min(W, H) * 0.12;
       const lay = new Map();
+      const radii = new Set();
       rings.forEach((list, r) => {
         const radius = r === 0 ? 0 : Math.min(Math.min(W, H) * 0.46, step * r + step * 0.5);
-        const speed = r === 0 ? 0 : (0.05 / (1 + r * 0.5));
+        if (radius > 0) radii.add(Math.round(radius));
+        const speed = r === 0 ? 0 : (0.22 / (1 + r * 0.45));
         list.forEach((n, i) => lay.set(n, { radius, speed, base: -Math.PI / 2 + i * 6.283 / Math.max(1, list.length) + (r % 2 ? 0.35 : 0), r: holonR(M, n) + ((M.nest.kids.get(n) || []).length ? 4 : 0) }));
       });
-      simulate._lay = lay; simulate._k = key; simulate._prior = P.get(origin);
+      simulate._lay = lay; simulate._k = key; simulate._rings = [...radii].sort((a, b) => a - b);
     }
     const cx = W / 2, cy = (H - padBottom + topPad) / 2;
     simulate._t = (simulate._t || 0) + 1;
@@ -145,6 +147,10 @@ export function mountMap(host, opts = {}) {
     const M = buildModel(), hot = new Set([...(D.hot || [])].map(n => M.rep.get(n) || n)), odd = D.odd || new Map();
     const hotE = new Set((D.hotPairs || []).map(([a, b]) => { const x = M.rep.get(a), y = M.rep.get(b); return x && y && x !== y ? eKey(x, y) : ''; }));
     hitsAt.length = 0;
+    // OHS: draw the orbit rings so the relational-distance shells read as a
+    // solar system (faint concentric circles around the origin).
+    if (simulate._rings) { const ocx = W / 2, ocy = (H - padBottom + topPad) / 2, ox = X(ocx), oy = Y(ocy); g.save(); g.setLineDash([3, 6]); g.strokeStyle = col.line2; g.globalAlpha = 0.5; g.lineWidth = 1;
+      simulate._rings.forEach(rad => { g.beginPath(); g.arc(ox, oy, Rz(rad), 0, 6.283); g.stroke(); }); g.restore(); }
     M.agg.forEach((E, key) => { const a = P.get(E.a), b = P.get(E.b); if (!a || !b) return; g.beginPath(); g.moveTo(X(a.x), Y(a.y)); g.lineTo(X(b.x), Y(b.y));
       g.strokeStyle = E.neg ? col.bad : E.mine ? col.acc : col.edge; g.globalAlpha = hotE.has(key) ? 1 : E.mine ? 0.7 : 0.35; g.lineWidth = Math.min(5, 0.8 + Math.log2(1 + E.c)) + (hotE.has(key) ? 1.5 : 0); g.setLineDash(E.neg ? [5, 4] : []); g.stroke(); });
     g.setLineDash([]); g.globalAlpha = 1;
