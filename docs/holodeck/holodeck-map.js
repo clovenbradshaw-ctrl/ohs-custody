@@ -106,32 +106,38 @@ export function mountMap(host, opts = {}) {
   function simulate() {
     if (layer !== 'names') return;
     const M = buildModel();
-    // OHS: RELATIVISTIC solar system, LIVE. Orbits are RELATIONAL distance
-    // (BFS hops in the bond graph) from an origin = the selected name, else
-    // the most-bonded name. Each ring ROTATES (inner faster), so names orbit
-    // continuously. Re-centring re-forms the system.
-    const vis = M.vis.slice();
-    const visSet = new Set(vis);
-    const adj = new Map();
-    const addE = (a, b) => { if (a == null || b == null || a === b || !visSet.has(a) || !visSet.has(b)) return; if (!adj.has(a)) adj.set(a, new Set()); if (!adj.has(b)) adj.set(b, new Set()); adj.get(a).add(b); adj.get(b).add(a); };
-    (D.edges || []).forEach(E => addE(E.a, E.b));
-    if (M.agg) M.agg.forEach(E => addE(E.a, E.b));
-    let origin = (sel && visSet.has(sel)) ? sel : null;
-    if (!origin) { let best = vis[0] || null, bd = -1; vis.forEach(n => { const d = (adj.get(n) || new Set()).size; if (d > bd) { bd = d; best = n; } }); origin = best; }
-    const dist = new Map(); if (origin) dist.set(origin, 0);
-    let frontier = origin ? [origin] : [];
-    while (frontier.length) { const nxt = []; frontier.forEach(n => (adj.get(n) || new Set()).forEach(m => { if (!dist.has(m)) { dist.set(m, dist.get(n) + 1); nxt.push(m); } })); frontier = nxt; }
+    const key = M.nk + '|' + M.vk + '|' + (sel || '') + '|' + W + 'x' + H;
+    if (simulate._k !== key) {
+      // OHS: RELATIVISTIC solar system. Compute the layout ONCE: origin =
+      // selected name else most-bonded; BFS relational distance = orbit ring.
+      // Cached per (model, origin, size) so per-frame work is just the spin.
+      const vis = M.vis.slice();
+      const visSet = new Set(vis);
+      const adj = new Map();
+      const addE = (a, b) => { if (a == null || b == null || a === b || !visSet.has(a) || !visSet.has(b)) return; if (!adj.has(a)) adj.set(a, new Set()); if (!adj.has(b)) adj.set(b, new Set()); adj.get(a).add(b); adj.get(b).add(a); };
+      (D.edges || []).forEach(E => addE(E.a, E.b));
+      if (M.agg) M.agg.forEach(E => addE(E.a, E.b));
+      let origin = (sel && visSet.has(sel)) ? sel : null;
+      if (!origin) { let best = vis[0] || null, bd = -1; vis.forEach(n => { const d = (adj.get(n) || new Set()).size; if (d > bd) { bd = d; best = n; } }); origin = best; }
+      const dist = new Map(); if (origin) dist.set(origin, 0);
+      let frontier = origin ? [origin] : [];
+      while (frontier.length) { const nxt = []; frontier.forEach(n => (adj.get(n) || new Set()).forEach(m => { if (!dist.has(m)) { dist.set(m, dist.get(n) + 1); nxt.push(m); } })); frontier = nxt; }
+      const rings = new Map();
+      vis.forEach(n => { const r = dist.has(n) ? dist.get(n) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
+      const step = Math.min(W, H) * 0.12;
+      const lay = new Map();
+      rings.forEach((list, r) => {
+        const radius = r === 0 ? 0 : Math.min(Math.min(W, H) * 0.46, step * r + step * 0.5);
+        const speed = r === 0 ? 0 : (0.05 / (1 + r * 0.5));
+        list.forEach((n, i) => lay.set(n, { radius, speed, base: -Math.PI / 2 + i * 6.283 / Math.max(1, list.length) + (r % 2 ? 0.35 : 0), r: holonR(M, n) + ((M.nest.kids.get(n) || []).length ? 4 : 0) }));
+      });
+      simulate._lay = lay; simulate._k = key; simulate._prior = P.get(origin);
+    }
     const cx = W / 2, cy = (H - padBottom + topPad) / 2;
-    const rings = new Map();
-    vis.forEach(n => { const r = dist.has(n) ? dist.get(n) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
-    const step = Math.min(W, H) * 0.12;
-    rings.forEach((list, r) => {
-      const radius = r === 0 ? 0 : Math.min(Math.min(W, H) * 0.46, step * r + step * 0.5);
-      const speed = r === 0 ? 0 : (0.0016 / (1 + r * 0.5));
-      list.forEach((n, i) => { const base = -Math.PI / 2 + i * 6.283 / Math.max(1, list.length) + (r % 2 ? 0.35 : 0); const prev = P.get(n); const ang = (prev && prev.ang != null) ? prev.ang + speed : base;
-        const x = cx + Math.cos(ang) * radius, y = cy + Math.sin(ang) * radius;
-        P.set(n, { x: Math.max(30, Math.min(W - 30, x)), y: Math.max(topPad + 14, Math.min(H - padBottom - 20, y)), vx: 0, vy: 0, ang, r: holonR(M, n) + ((M.nest.kids.get(n) || []).length ? 4 : 0) }); });
-    });
+    simulate._t = (simulate._t || 0) + 1;
+    simulate._lay.forEach((L, n) => { const ang = L.base + simulate._t * L.speed * 0.02;
+      const x = cx + Math.cos(ang) * L.radius, y = cy + Math.sin(ang) * L.radius;
+      P.set(n, { x: Math.max(30, Math.min(W - 30, x)), y: Math.max(topPad + 14, Math.min(H - padBottom - 20, y)), vx: 0, vy: 0, ang, r: L.r }); });
   }
 
   const fill = x => { const c = x.color; if (!c) return x.mine ? col.acc : col.blue; if (!c.startsWith('var(')) return c; if (!cc.has(c)) cc.set(c, css(c.slice(4, -1).trim())); return cc.get(c); };
