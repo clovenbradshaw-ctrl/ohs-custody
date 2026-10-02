@@ -105,16 +105,31 @@ export function mountMap(host, opts = {}) {
 
   function simulate() {
     if (layer !== 'names') return;
-    const M = buildModel(), g0 = D.nodes.length + ':' + M.nk + ':' + M.vk; if (g0 !== sigH) { sigH = g0; heat = Math.max(heat, 0.8); } heat = Math.max(0, heat * 0.985 - 0.0005); if (heat < 0.01) return;
-    const V = M.vis.map(nodeOf).filter(Boolean).concat(D.nodes.filter(x => !solid(x)));
-    const cx = W / 2, cy = (H - padBottom + topPad) / 2, R = Math.min(W, H) * 0.44, L = Math.max(34, Math.min(110, Math.sqrt(W * H / (V.length + 1)) * 0.7)), KR = L * L * 0.5;
-    V.forEach(x => { const p = posOf(x); p.r = solid(x) ? holonR(M, x.n) + (M.nest.kids.get(x.n).length ? 4 : 0) : 3; });
-    for (let i = 0; i < V.length; i++) { const a = P.get(V[i].n); for (let j = i + 1; j < V.length; j++) { const b = P.get(V[j].n); let dx = a.x - b.x, dy = a.y - b.y; const d2 = dx * dx + dy * dy + 0.01; if (d2 > 9 * L * L) continue;
-      const f = KR / d2 * 0.6; a.vx += dx * f; a.vy += dy * f; b.vx -= dx * f; b.vy -= dy * f;
-      const need = a.r + b.r + 8; if (d2 < need * need) { const d = Math.sqrt(d2), push = (need - d) * 0.08 / d; a.vx += dx * push; a.vy += dy * push; b.vx -= dx * push; b.vy -= dy * push; } } }
-    M.agg.forEach(E => { const a = P.get(E.a), b = P.get(E.b); if (!a || !b) return; const dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || 1, f = (d - L) * 0.01 * Math.min(2, 0.6 + Math.log2(1 + E.c) * 0.3); a.vx += dx / d * f; a.vy += dy / d * f; b.vx -= dx / d * f; b.vy -= dy / d * f; });
-    V.forEach(x => { const p = P.get(x.n); if (!solid(x)) { const dx = p.x - cx, dy = p.y - cy, d = Math.hypot(dx, dy) || 1, f = (R - d) * 0.02; p.vx += dx / d * f; p.vy += dy / d * f; } else { p.vx += (cx - p.x) * 0.006; p.vy += (cy - p.y) * 0.006; }
-      p.vx *= 0.7; p.vy *= 0.7; const sp = Math.hypot(p.vx, p.vy), cap = 1 + 7 * heat; if (sp > cap) { p.vx *= cap / sp; p.vy *= cap / sp; } p.x = Math.max(24, Math.min(W - 24, p.x + p.vx)); p.y = Math.max(topPad + 12, Math.min(H - padBottom - 18, p.y + p.vy)); });
+    const M = buildModel(), g0 = D.nodes.length + ':' + M.nk + ':' + M.vk + ':' + (sel || ''); if (g0 !== sigH) { sigH = g0; heat = Math.max(heat, 0.8); } heat = Math.max(0, heat * 0.985 - 0.0005); if (heat < 0.01) return;
+    // OHS: RELATIVISTIC solar system. Orbits are RELATIONAL distance from a
+    // chosen origin, measured as hops in the bond graph (BFS). The origin is
+    // the selected name, else the most-bonded name. Re-centring re-forms it.
+    const vis = M.vis.slice();
+    const visSet = new Set(vis);
+    const adj = new Map();
+    const addE = (a, b) => { if (a == null || b == null || a === b || !visSet.has(a) || !visSet.has(b)) return; if (!adj.has(a)) adj.set(a, new Set()); if (!adj.has(b)) adj.set(b, new Set()); adj.get(a).add(b); adj.get(b).add(a); };
+    (D.edges || []).forEach(E => addE(E.a, E.b));
+    if (M.agg) M.agg.forEach(E => addE(E.a, E.b));
+    let origin = (sel && visSet.has(sel)) ? sel : null;
+    if (!origin) { let best = vis[0] || null, bd = -1; vis.forEach(n => { const d = (adj.get(n) || new Set()).size; if (d > bd) { bd = d; best = n; } }); origin = best; }
+    const dist = new Map(); if (origin) dist.set(origin, 0);
+    let frontier = origin ? [origin] : [];
+    while (frontier.length) { const nxt = []; frontier.forEach(n => (adj.get(n) || new Set()).forEach(m => { if (!dist.has(m)) { dist.set(m, dist.get(n) + 1); nxt.push(m); } })); frontier = nxt; }
+    const cx = W / 2, cy = (H - padBottom + topPad) / 2;
+    const rings = new Map();
+    vis.forEach(n => { const r = dist.has(n) ? dist.get(n) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
+    P.clear();
+    const step = Math.min(W, H) * 0.12;
+    rings.forEach((list, r) => {
+      const radius = r === 0 ? 0 : Math.min(Math.min(W, H) * 0.46, step * r + step * 0.5);
+      list.forEach((n, i) => { const a = -Math.PI / 2 + i * 6.283 / Math.max(1, list.length) + (r % 2 ? 0.35 : 0); const x = cx + Math.cos(a) * radius, y = cy + Math.sin(a) * radius;
+        P.set(n, { x: Math.max(30, Math.min(W - 30, x)), y: Math.max(topPad + 14, Math.min(H - padBottom - 20, y)), vx: 0, vy: 0, r: holonR(M, n) + ((M.nest.kids.get(n) || []).length ? 4 : 0) }); });
+    });
   }
 
   const fill = x => { const c = x.color; if (!c) return x.mine ? col.acc : col.blue; if (!c.startsWith('var(')) return c; if (!cc.has(c)) cc.set(c, css(c.slice(4, -1).trim())); return cc.get(c); };

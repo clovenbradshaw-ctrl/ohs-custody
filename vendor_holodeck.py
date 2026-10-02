@@ -325,28 +325,40 @@ OHS_OVERLAY_PATCHES = [
 
 
 def apply_map_radial():
-    """Replace holodeck-map.js's simulate() (force scatter) with a radial
-    solar-system layout: largest visible holon at the centre, the rest on an
-    elliptical ring around it. Exact-string swap (clean, no splicing)."""
+    """Install the RELATIVISTIC solar-system layout in holodeck-map.js: orbits
+    are relational distance (bond-graph BFS) from an origin (the selected
+    name, else the most-bonded name); re-centring re-forms the system."""
     p = DEST / "holodeck-map.js"
     s = p.read_text(encoding="utf-8")
     a = s.index("  function simulate() {")
     b = s.index("  const fill =", a)
     sim = """  function simulate() {
     if (layer !== 'names') return;
-    const M = buildModel(), g0 = D.nodes.length + ':' + M.nk + ':' + M.vk; if (g0 !== sigH) { sigH = g0; heat = Math.max(heat, 0.8); } heat = Math.max(0, heat * 0.985 - 0.0005); if (heat < 0.01) return;
-    // OHS: radial solar-system layout — largest holon at the centre, the rest
-    // on an elliptical ring around it. Deterministic; no force simulation.
-    const cx = W / 2, cy = (H - padBottom + topPad) / 2;
+    const M = buildModel(), g0 = D.nodes.length + ':' + M.nk + ':' + M.vk + ':' + (sel || ''); if (g0 !== sigH) { sigH = g0; heat = Math.max(heat, 0.8); } heat = Math.max(0, heat * 0.985 - 0.0005); if (heat < 0.01) return;
+    // OHS: RELATIVISTIC solar system. Orbits are RELATIONAL distance from a
+    // chosen origin, measured as hops in the bond graph (BFS). The origin is
+    // the selected name, else the most-bonded name. Re-centring re-forms it.
     const vis = M.vis.slice();
-    const kidsOf = n => (M.nest.kids.get(n) || []).filter(k => vis.includes(k));
-    const sizeOf = n => Math.max(1, M.nest.size.get(n) || 1);
-    const put = (n, x, y) => P.set(n, { x, y, vx: 0, vy: 0, r: holonR(M, n) + (kidsOf(n).length ? 4 : 0) });
+    const visSet = new Set(vis);
+    const adj = new Map();
+    const addE = (a, b) => { if (a == null || b == null || a === b || !visSet.has(a) || !visSet.has(b)) return; if (!adj.has(a)) adj.set(a, new Set()); if (!adj.has(b)) adj.set(b, new Set()); adj.get(a).add(b); adj.get(b).add(a); };
+    (D.edges || []).forEach(E => addE(E.a, E.b));
+    if (M.agg) M.agg.forEach(E => addE(E.a, E.b));
+    let origin = (sel && visSet.has(sel)) ? sel : null;
+    if (!origin) { let best = vis[0] || null, bd = -1; vis.forEach(n => { const d = (adj.get(n) || new Set()).size; if (d > bd) { bd = d; best = n; } }); origin = best; }
+    const dist = new Map(); if (origin) dist.set(origin, 0);
+    let frontier = origin ? [origin] : [];
+    while (frontier.length) { const nxt = []; frontier.forEach(n => (adj.get(n) || new Set()).forEach(m => { if (!dist.has(m)) { dist.set(m, dist.get(n) + 1); nxt.push(m); } })); frontier = nxt; }
+    const cx = W / 2, cy = (H - padBottom + topPad) / 2;
+    const rings = new Map();
+    vis.forEach(n => { const r = dist.has(n) ? dist.get(n) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
     P.clear();
-    const arr = vis.slice().sort((x, y) => sizeOf(y) - sizeOf(x));
-    if (arr[0]) put(arr[0], cx, cy);
-    const others = arr.slice(1), RX = Math.max(120, W * 0.34), RY = Math.max(80, Math.min(W, H) * 0.30);
-    others.forEach((n, i) => { const a = -Math.PI / 2 + i * 6.283 / Math.max(1, others.length); put(n, cx + Math.cos(a) * RX, cy + Math.sin(a) * RY); });
+    const step = Math.min(W, H) * 0.12;
+    rings.forEach((list, r) => {
+      const radius = r === 0 ? 0 : Math.min(Math.min(W, H) * 0.46, step * r + step * 0.5);
+      list.forEach((n, i) => { const a = -Math.PI / 2 + i * 6.283 / Math.max(1, list.length) + (r % 2 ? 0.35 : 0); const x = cx + Math.cos(a) * radius, y = cy + Math.sin(a) * radius;
+        P.set(n, { x: Math.max(30, Math.min(W - 30, x)), y: Math.max(topPad + 14, Math.min(H - padBottom - 20, y)), vx: 0, vy: 0, r: holonR(M, n) + ((M.nest.kids.get(n) || []).length ? 4 : 0) }); });
+    });
   }
 
 """
@@ -455,7 +467,7 @@ def main():
 
     # OHS instance overlay (re-applied after every re-vendor).
     overlay = apply_ohs_overlay()
-    # apply_map_radial()  # OFF: mechanical ring is not a projection of the holograph
+    apply_map_radial()
     overlay_sha = sha256(DEST / "index.html")
 
     # Re-extract + re-digest the corpus: ohs-analyze.mjs (the app's own
