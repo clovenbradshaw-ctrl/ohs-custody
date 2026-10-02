@@ -1,4 +1,4 @@
-// eoreader6 · perceiver/text/surfaces — candidate referent surfaces, and the
+// the legacy engine · perceiver/text/surfaces — candidate referent surfaces, and the
 // structural (engine-tier) coreference between them. No word sets anywhere:
 // every filter here is derived from the text's own statistics.
 //

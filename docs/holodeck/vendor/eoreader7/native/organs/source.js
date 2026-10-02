@@ -467,7 +467,7 @@ export function delimitedTable(text) {
  * `[{ start, end, label }]` in the coordinates of the file as it sits on disk.
  *
  * They are RECEIVED, never discovered here. Finding where one stretch of a
- * source ends is the segments organ's job in eoreader6, and it earns that
+ * source ends is the segments organ's job in the legacy engine, and it earns that
  * boundary from the material's own shape — a short line, followed by a blank
  * line, numbered or roman-numeraled or all-caps, with substance beneath it.
  * This module does not know the word "chapter" and must not learn it: a

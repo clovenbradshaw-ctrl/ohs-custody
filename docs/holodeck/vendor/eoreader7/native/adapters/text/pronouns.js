@@ -1,4 +1,4 @@
-// eoreader6 · perceiver/text/pronouns — binding a THIRD-PERSON SINGULAR
+// the legacy engine · perceiver/text/pronouns — binding a THIRD-PERSON SINGULAR
 // pronoun to a referent BY ACTIVATION, never by nearest name.
 //
 // surfaces.js's own gap says this plainly: pronoun binding is MODEL tier,

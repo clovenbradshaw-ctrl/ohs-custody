@@ -334,10 +334,11 @@ def apply_map_radial():
     b = s.index("  const fill =", a)
     sim = """  function simulate() {
     if (layer !== 'names') return;
-    const M = buildModel(), g0 = D.nodes.length + ':' + M.nk + ':' + M.vk + ':' + (sel || ''); if (g0 !== sigH) { sigH = g0; heat = Math.max(heat, 0.8); } heat = Math.max(0, heat * 0.985 - 0.0005); if (heat < 0.01) return;
-    // OHS: RELATIVISTIC solar system. Orbits are RELATIONAL distance from a
-    // chosen origin, measured as hops in the bond graph (BFS). The origin is
-    // the selected name, else the most-bonded name. Re-centring re-forms it.
+    const M = buildModel();
+    // OHS: RELATIVISTIC solar system, LIVE. Orbits are RELATIONAL distance
+    // (BFS hops in the bond graph) from an origin = the selected name, else
+    // the most-bonded name. Each ring ROTATES (inner faster), so names orbit
+    // continuously. Re-centring re-forms the system.
     const vis = M.vis.slice();
     const visSet = new Set(vis);
     const adj = new Map();
@@ -352,17 +353,20 @@ def apply_map_radial():
     const cx = W / 2, cy = (H - padBottom + topPad) / 2;
     const rings = new Map();
     vis.forEach(n => { const r = dist.has(n) ? dist.get(n) : 99; if (!rings.has(r)) rings.set(r, []); rings.get(r).push(n); });
-    P.clear();
     const step = Math.min(W, H) * 0.12;
     rings.forEach((list, r) => {
       const radius = r === 0 ? 0 : Math.min(Math.min(W, H) * 0.46, step * r + step * 0.5);
-      list.forEach((n, i) => { const a = -Math.PI / 2 + i * 6.283 / Math.max(1, list.length) + (r % 2 ? 0.35 : 0); const x = cx + Math.cos(a) * radius, y = cy + Math.sin(a) * radius;
-        P.set(n, { x: Math.max(30, Math.min(W - 30, x)), y: Math.max(topPad + 14, Math.min(H - padBottom - 20, y)), vx: 0, vy: 0, r: holonR(M, n) + ((M.nest.kids.get(n) || []).length ? 4 : 0) }); });
+      const speed = r === 0 ? 0 : (0.0016 / (1 + r * 0.5));
+      list.forEach((n, i) => { const base = -Math.PI / 2 + i * 6.283 / Math.max(1, list.length) + (r % 2 ? 0.35 : 0); const prev = P.get(n); const ang = (prev && prev.ang != null) ? prev.ang + speed : base;
+        const x = cx + Math.cos(ang) * radius, y = cy + Math.sin(ang) * radius;
+        P.set(n, { x: Math.max(30, Math.min(W - 30, x)), y: Math.max(topPad + 14, Math.min(H - padBottom - 20, y)), vx: 0, vy: 0, ang, r: holonR(M, n) + ((M.nest.kids.get(n) || []).length ? 4 : 0) }); });
     });
   }
 
 """
     s = s[:a] + sim + s[b:]
+    # keep the animation loop redrawing on the names layer (live orbits)
+    s = s.replace("(dirty || heat > 0.01)", "(dirty || heat > 0.01 || layer === 'names')")
     p.write_text(s, encoding="utf-8")
     return True
 

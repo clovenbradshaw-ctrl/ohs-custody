@@ -1,4 +1,4 @@
-// eoreader6 · perceiver/text/spans — real meaningful spans, not arbitrary
+// the legacy engine · perceiver/text/spans — real meaningful spans, not arbitrary
 // fixed-size chunks. Everything built earlier this session (motif
 // detection, structure tests, significance) operated on chunkWords(words,
 // 40) — 40-word windows with no relationship to sentence or clause

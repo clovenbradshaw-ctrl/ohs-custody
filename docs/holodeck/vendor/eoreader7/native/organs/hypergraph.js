@@ -173,7 +173,7 @@ export { GRAMMAR_MIN_SHARE };
 // MIN_SURFACES_PER_VERB = 1. discoverRelationVocab refuses to default this —
 // how much recurrence makes a pattern is the caller's to say — so it is said
 // here, and justified WITHOUT reference to any golden or fixture (the
-// eoreader6 rule about calibrating against the answer key): a turn's offered
+// the legacy engine rule about calibrating against the answer key): a turn's offered
 // passages are an excerpt of a few paragraphs, far too small for
 // cross-surface recurrence to be a fair gate on a verb; and the vocabulary
 // only widens what this check can HEAR — extractRelations emits no triple
@@ -280,7 +280,7 @@ const sourceOf = (ref) => String(ref ?? "").split("#")[0] || null;
  * `relationsFor(passages, { negationWords })` threads straight through to
  * discoverRelationVocab/extractRelations's own injected-prior seam
  * (relations.js, following bin/priors/lang/en.json's pattern in
- * eoreader6.1). Omitted, the engine's own English NEGATION_WORDS applies,
+ * the legacy engine.1). Omitted, the engine's own English NEGATION_WORDS applies,
  * unchanged from before this option existed. Supplying a Set (e.g.
  * bin/priors/lang/eu.json's `negation` array for Basque) reads the
  * material's negation with that language's own vendored closed class
@@ -342,7 +342,7 @@ const sourceOf = (ref) => String(ref ?? "").split("#")[0] || null;
 // anchor, it answers a direct question ("is this word ever a verb")
 // about every word in the essay.
 // The operating point perceiver/text/pronouns.js::resolvePronouns is called
-// at, reused whole from eoreader6.1's host/corpus.js rather than invented
+// at, reused whole from the legacy engine.1's host/corpus.js rather than invented
 // here — corpus.js's own header names exactly what these are: "an
 // engineering starting point, not yet validated against a retrieval-quality
 // golden... moving these two numbers as one gets built is expected, not a
@@ -399,7 +399,7 @@ const PRONOUN_MIN_MARGIN = 0.2;
  * with `minSentences: 0`, a one-off place name ("Greeneville", "Maryland")
  * gets promoted to full referent status exactly like "Johnson" does,
  * so it blocks the attempt just as hard. The REAL, validated pipeline this
- * organ was proven on (eoreader6.1's own corpus.js, on War and Peace) never
+ * organ was proven on (the legacy engine.1's own corpus.js, on War and Peace) never
  * passes that override — `discoverReferents(surfaces, {})` uses its own
  * DERIVED recurrence floor (`deriveMinSentences`), so a name mentioned once
  * in passing never earns referent status and a truly recurring person (the
@@ -1619,7 +1619,7 @@ export function makeRelationReader(organs) {
     // universality archon): the reader's constructed edges and claims carry
     // ONLY the earned names end1/label/end2, and a raw extractor triple may
     // arrive in EITHER the legacy SVO shape ({subject, verb, object} —
-    // eoreader6 relations.js) or the neutral shape ({end1, label, end2,
+    // the legacy engine relations.js) or the neutral shape ({end1, label, end2,
     // cell, grain} — the language dispatch's GFP and positional readers).
     // `endOf` reads the arrangement first and falls back to the legacy
     // names, so the fold can inject the dispatch's neutral extractors and

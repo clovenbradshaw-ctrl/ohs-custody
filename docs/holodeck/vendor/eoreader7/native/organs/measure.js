@@ -9,13 +9,13 @@
 // whether anything in those bytes is more than the file's own arithmetic — so
 // the moment a reader wanted that, the analysis got hand-rolled somewhere else.
 // The dfr-causal-analysis repo is what that looks like at scale: four Node
-// scripts importing eoreader6 by an absolute path on one laptop, three Python
+// scripts importing the legacy engine by an absolute path on one laptop, three Python
 // scripts hand-rolling their own permutation nulls with `random.shuffle`, and
 // two more (coverage_equity.py, instrument_feasibility.py) reporting weighted
 // averages and medians with no null in them at all — in a repo whose own
 // plain-language writeup says "never report a number."
 //
-// So this is the door. Everything statistical here is eoreader6's, imported and
+// So this is the door. Everything statistical here is the legacy engine's, imported and
 // never copied: `nul/index.js` builds the nothing and places the observation,
 // `emergence/binding.js` tests co-arrival per pair. What this module adds is
 // the part the engine deliberately leaves to its callers, and the part a person
@@ -760,7 +760,7 @@ function placeSeries(decl, series, column, nul) {
 
 /**
  * Which of a column's values arrive together more than their own arrival rates
- * force — eoreader6's `bindLinks`, per pair, with its own displacement null.
+ * force — the legacy engine's `bindLinks`, per pair, with its own displacement null.
  *
  * This is the organ the dfr repo's matter_grouping.py hand-rolled: positions
  * held, times permuted, a dominance count and a p-value computed by hand at

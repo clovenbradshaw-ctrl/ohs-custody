@@ -68,7 +68,7 @@ import { GRAMMAR_MIN_SHARE } from "../adapters/text/grain-typing.js";
 // A cut on sentence-initial share was tried first and REFUSED on the
 // measurement: names run 0.13-0.42 and openers 0.30-0.77, ranges that
 // overlap, so any cut would be a threshold tuned against the answer — the
-// one thing eoreader6.1's own CLAUDE.md forbids outright.
+// one thing the legacy engine.1's own CLAUDE.md forbids outright.
 //
 // What separates them is a fact about WORD CLASS, and this repo already
 // holds that fact as a received resource with a named giver: `POSPrior@1`,

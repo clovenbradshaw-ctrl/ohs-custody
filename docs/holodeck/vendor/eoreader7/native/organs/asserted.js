@@ -67,7 +67,7 @@ consists in a repudiation of the discrepant meaning".”
 //     ("fired in 3 of 20 shuffled copies"), and NEVER a verdict: a cut on
 //     the rate would need calibration, calibration would need a golden, and
 //     tuning a threshold against a golden's own score is the exact move
-//     eoreader6.1's CLAUDE.md forbids. The counts are the disclosure; if
+//     the legacy engine.1's CLAUDE.md forbids. The counts are the disclosure; if
 //     the eval harness shows they separate real from planted edges, a cut
 //     can be EARNED by a later pass — it is not invented here.
 //

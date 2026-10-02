@@ -1,4 +1,4 @@
-// eoreader6 · emergence/activation — ASSOCIATIVE MEMORY THAT READS LEFT TO
+// the legacy engine · emergence/activation — ASSOCIATIVE MEMORY THAT READS LEFT TO
 // RIGHT. What brings a prior passage to the surface when a new one arrives,
 // computed with nothing from the future.
 //

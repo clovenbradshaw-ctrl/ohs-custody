@@ -1,4 +1,4 @@
-// eoreader6 · perceiver/text/priors — the prior register for closed-class
+// the legacy engine · perceiver/text/priors — the prior register for closed-class
 // word sets. Every received closed class enters through DEF.admit, names its
 // giver, declares its scope (Amendment IV). These are not mined from the
 // material; they are received facts about a language's function words or a

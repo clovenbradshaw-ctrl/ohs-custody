@@ -1,7 +1,7 @@
 # Holodeck vendor manifest
 
-Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `9c73f3cb523e1d67d97260451c82f273b990511a`
-Vendored: 2026-10-02T02:19:03+00:00 by `python3 vendor_holodeck.py`
+Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `740954a5e7ef1313daebf785cee532e437850e4a`
+Vendored: 2026-10-02T02:29:27+00:00 by `python3 vendor_holodeck.py`
 
 ## Scope
 
@@ -39,9 +39,9 @@ is duplicated here.
 
 Patched `index.html` sha256: `30857a943b2f39a62a1efb23bce12495832d73a8c5fdcdd159c8d8f823f9e4cf`
 
-Seed manifest `ohs-seed.json`: `140` entries `e57180ff7c6b`
+Seed manifest `ohs-seed.json`: `140` entries `35a9f0d6eff9`
 
-Log `ohs.log`: `140` docs `95346b415cf9` `42.2MB` (schema `ohs-log@3`, spans + source pointers)
+Log `ohs.log`: `140` docs `b1868c33d059` `42.2MB` (schema `ohs-log@3`, spans + source pointers)
 
 ## Files
 
@@ -54,7 +54,7 @@ Log `ohs.log`: `140` docs `95346b415cf9` `42.2MB` (schema `ohs-log@3`, spans + s
 - `holodeck-hang.js` `5d80e157fcc2`
 - `holodeck-holons.js` `c7ef3561dfa3`
 - `holodeck-ingest-player.js` `b5164b42ad78`
-- `holodeck-map.js` `525dedb6e074`
+- `holodeck-map.js` `326590346b96`
 - `holodeck-match.js` `4c66d94d9a35`
 - `holodeck-media.js` `7c735be8a876`
 - `holodeck-reader.js` `ee20051e6fb8`
@@ -68,30 +68,30 @@ Log `ohs.log`: `140` docs `95346b415cf9` `42.2MB` (schema `ohs-log@3`, spans + s
 - `vendor/eoreader7/native/adapters/text/clause-spans.js` `966bcafa7994`
 - `vendor/eoreader7/native/adapters/text/grain-typing.js` `04b7a26e4cf4`
 - `vendor/eoreader7/native/adapters/text/morphology.js` `63ad28135e36`
-- `vendor/eoreader7/native/adapters/text/priors.js` `8893d556a1d7`
-- `vendor/eoreader7/native/adapters/text/pronouns.js` `058b06ed7013`
+- `vendor/eoreader7/native/adapters/text/priors.js` `4a23db12c801`
+- `vendor/eoreader7/native/adapters/text/pronouns.js` `cff13ff6e3a1`
 - `vendor/eoreader7/native/adapters/text/relations-gfp.js` `39818ba59987`
 - `vendor/eoreader7/native/adapters/text/relations-language.js` `ced5e7109882`
 - `vendor/eoreader7/native/adapters/text/relations-positional.js` `7bbe3a878f5d`
-- `vendor/eoreader7/native/adapters/text/spans.js` `9d942fcb17e7`
-- `vendor/eoreader7/native/adapters/text/surfaces.js` `51d42b67a39c`
+- `vendor/eoreader7/native/adapters/text/spans.js` `ed29b9710a12`
+- `vendor/eoreader7/native/adapters/text/surfaces.js` `8ede54ae08b9`
 - `vendor/eoreader7/native/adapters/text/wordclass.js` `9025253abe7d`
 - `vendor/eoreader7/native/kernel/activation.js` `db42f97a3a7b`
 - `vendor/eoreader7/native/kernel/contest.js` `0a85fc2056c1`
 - `vendor/eoreader7/native/kernel/cube.js` `6cd6d10254eb`
 - `vendor/eoreader7/native/kernel/rng.js` `18d6f2fa5202`
-- `vendor/eoreader7/native/memory/activation.js` `d158635f02a8`
+- `vendor/eoreader7/native/memory/activation.js` `b3806df63eef`
 - `vendor/eoreader7/native/organs/aposiopesis.js` `7a81abe0423d`
-- `vendor/eoreader7/native/organs/asserted.js` `493c6a4b0aa8`
+- `vendor/eoreader7/native/organs/asserted.js` `50e761c546ea`
 - `vendor/eoreader7/native/organs/cast.js` `ed70847af4bc`
 - `vendor/eoreader7/native/organs/cite.js` `5f6fb996afc2`
 - `vendor/eoreader7/native/organs/fact-block.js` `e97380e55cef`
 - `vendor/eoreader7/native/organs/grounding.js` `cb543b1d303c`
-- `vendor/eoreader7/native/organs/heard-surfaces.js` `aedc2f293c86`
-- `vendor/eoreader7/native/organs/hypergraph.js` `bfacf323db05`
+- `vendor/eoreader7/native/organs/heard-surfaces.js` `42070c0ba8f3`
+- `vendor/eoreader7/native/organs/hypergraph.js` `eb4ff23c1579`
 - `vendor/eoreader7/native/organs/kind-standing.js` `b2a444fcb5c4`
-- `vendor/eoreader7/native/organs/measure.js` `6845afc61639`
-- `vendor/eoreader7/native/organs/source.js` `4eb878ddd527`
+- `vendor/eoreader7/native/organs/measure.js` `a6e4298399cc`
+- `vendor/eoreader7/native/organs/source.js` `8ed374d6f9f5`
 - `vendor/eoreader7/native/organs/speaker.js` `741b2302237b`
 - `vendor/eoreader7/native/organs/web.js` `a2e373046c8b`
 - `vendor/eoreader7/native/priors/morphology-eng.json` `77f972b82800`
