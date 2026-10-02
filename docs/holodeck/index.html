@@ -3277,9 +3277,13 @@ async function loadLogOHS() {
   const cV = await ohsCached('ohs:version'), cF = await ohsCached('ohs:fingerprint'), cL = await ohsCached('ohs:log');
   if (cL && Array.isArray(cL.docs) && Array.isArray(cL.sts) && cV === OHS_DIGEST_VERSION) {
     const live = await ohsFingerprint();
-    if (live == null || live === cF) return cL; // cache trusted (or seed unreachable)
+    if (live == null || live === cF) { try { const r = await fetch(new URL('ohs-ties.json', location.href).href, { cache: 'no-cache' }); if (r.ok) { const t = await r.json(); if (t && Array.isArray(t.triples)) cL.ties = t; } } catch (e) {} return cL; } // cache trusted (or seed unreachable)
   }
   const L = await fetchDecodedOHS('ohs.log');
+  // Predicate layer (ohs-ties@1): typed, directed (agent,verb,patient) relations
+  // extracted from the statement spans against the English POS prior and gated
+  // by Sullivan's null. Optional — the map falls back to dmdCo ties without it.
+  try { const r = await fetch(new URL('ohs-ties.json', location.href).href, { cache: 'no-cache' }); if (r.ok) { const t = await r.json(); if (t && Array.isArray(t.triples)) L.ties = t; } } catch (e) {}
   ohsStash('ohs:log', L); ohsStash('ohs:version', OHS_DIGEST_VERSION);
   const live = await ohsFingerprint();
   if (live != null) ohsStash('ohs:fingerprint', live);
@@ -3318,7 +3322,7 @@ function rehydrateOhsAnalysis(P, docs, loadedIds) {
   // undefined and crash paradigms()'s .doc read.
   for (const [k, v] of Object.entries(P.names)) names[k] = { ...v, docs: new Set(v.docs.filter(id => presentDocs.has(id))), sts: v.sts.filter(id => byId[id]) };
   const stsByDoc = {}; sts.forEach(s => { (stsByDoc[s.doc] = stsByDoc[s.doc] || []).push(s); });
-  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById };
+  return { stsByDoc, echoes: P.echoes, echoFloor: P.echoFloor, docs, sts, names, byId, docById, ties: P.ties || null };
 }
 class Component extends DCLogic {
   state = { corpus: null, added: loadAdded(), view: 'sources', sel: null, f: {}, q: '', readDoc: null, showPos: false, showAdd: false, showSettings: false, draftTitle: '', draftYear: '', draftText: '', fw: {}, note: '', theme: loadTheme(), railOpen: loadRailOpen(), segOpen: loadSegOpen(), dragging: false, busy: '', just: null, readMode: 'original', htmlVer: 0, txAsk: null, txPrior: 'workspace', txLang: 'en', txModel: 'base', txBusy: false, txProg: '', ground: { on: true, names: true, figures: true, dates: true, sentences: true } };
@@ -5370,7 +5374,15 @@ class Component extends DCLogic {
     const nameList = Object.values(names).sort((a, b) => b.sts.length - a.sts.length || a.name.localeCompare(b.name));
     const nc = {}; Object.values(names).forEach(n => { nc[n.name] = n.sts.length; });
     const edgeAll = Object.values(edges).sort((a, b) => b.sts.length - a.sts.length);
-    const edgeList = edgeAll.filter(e => dmdCo(e.sts.length, nc[e.a] || 0, nc[e.b] || 0, F.length));
+    // GRAVITY. Prefer the predicate layer (ohs-ties@1): typed, directed
+    // (agent,verb,patient) relations that recur beyond Sullivan's verb-permuted
+    // null. Fall back to dmdCo co-occurrence only when no tie layer is present.
+    const allTies = (A.ties && Array.isArray(A.ties.triples)) ? A.ties.triples.filter(t => names[t.a] && names[t.b]) : [];
+    const recTies = allTies.filter(t => t.recFrac == null || t.recFrac >= 0.5);
+    const tieRows = recTies.length ? recTies : allTies;
+    const edgeList = tieRows.length
+      ? tieRows.map(t => ({ a: t.a, b: t.b, verb: t.v, c: t.n, sts: { length: t.n } })).sort((a, b) => b.c - a.c)
+      : edgeAll.filter(e => dmdCo(e.sts.length, nc[e.a] || 0, nc[e.b] || 0, F.length));
     const edgeHidden = edgeAll.length - edgeList.length;
     const unitList = Object.values(units).sort((a, b) => b.items.length - a.items.length);
     unitList.forEach(u => { const vals = new Set(u.items.map(x => x.g.value)); u.generic = ['dollar', 'pound', 'euro', 'percent'].includes(u.unit); u.differs = !u.generic && u.docs.size > 1 && vals.size > 1; });
@@ -6061,7 +6073,12 @@ class Component extends DCLogic {
     const h = React.createElement;
     const longer = D.nameList.filter(n => n.name.includes(' ')).map(n => n.name);
     const frag = n => !n.name.includes(' ') && longer.some(L => L !== n.name && (L.endsWith(' ' + n.name) || L.endsWith('’' + n.name) || L.endsWith("'" + n.name)) && A.names[L] && A.names[L].sts.length >= 2);
-    const pool = D.nameList.filter(n => holoName(n.name, A) && !(n.name.length <= 2 && !(n.aliases || []).length) && !frag(n)).slice(0, 160); if (!pool.length) return h('p', { style: { color: 'var(--mut)', margin: '12px' } }, 'No names to connect.');
+    // OHS: DMD gate on the PLANET set, not just the edges. The app already
+    // computes the dmdCo-gated tie list (D.edgeList); keep only names that
+    // appear in it (a significant relational tie) or rank high by count — so
+    // the map stops filling with one-mention tokens and the no-tie crowd.
+    const tiedN = new Set(); (D.edgeList || []).forEach(e => { tiedN.add(e.a); tiedN.add(e.b); });
+    const pool = D.nameList.filter(n => holoName(n.name, A) && !(n.name.length <= 2 && !(n.aliases || []).length) && !frag(n) && (tiedN.has(n.name) || n.sts.length >= 5)).slice(0, 160); if (!pool.length) return h('p', { style: { color: 'var(--mut)', margin: '12px' } }, 'No names to connect.');
     const docs = A.docs.filter(d => this._cnt.has(d.id)).map(d => ({ id: d.id, title: d.title }));
     const key = pool.map(n => n.name + ':' + n.sts.length).join('|') + '#' + F.length + '#' + docs.map(d => d.id).join(',');
     let M = this._mapMemo;
@@ -6084,7 +6101,7 @@ class Component extends DCLogic {
     const nOn = kept.filter(d => !off[d.id]).length;
     const play = () => { if (this._play) { clearInterval(this._play); this._play = null; this.forceUpdate(); return; } let y = (S.tMax && S.tMax < mx) ? S.tMax : mn; this.setState({ tMax: y }); this._play = setInterval(() => { y += 1; if (y >= mx) { clearInterval(this._play); this._play = null; this.setState({ tMax: null }); return; } this.setState({ tMax: y }); }, 900); };
     return {
-      orb: { title: 'Names, nested by what they are tied to', note: 'Each name sits under the name it shares the most statements with, more than chance would give. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },
+      orb: { title: 'Names, nested by the verbs that bind them', note: 'Each name sits under the name a verb binds it to \u2014 the longest-run relation it takes part in, kept only if it recurs beyond a shuffled-verb null. Click a ring to open the names inside it, or a name to see the statements it appears in. Sources and Statements are the layers around it.', canBack: !!selName, back: () => this.setState({ sel: null }) },
       tl: { has: yrs.length > 1, min: mn, max: mx, val, label: val === mx ? 'Up to ' + mx + ' · everything' : 'Up to ' + val, onChange: e => { const v = +e.target.value; this.setState({ tMax: v >= mx ? null : v }); }, playLabel: this._play ? 'Stop' : 'Play', play, start: String(mn), end: String(mx) },
       srcPick: { open: !!S.srcOpen, label: S.srcOpen ? 'Done' : 'Choose sources', toggle: () => this.setState({ srcOpen: !S.srcOpen }), q: S.srcQ || '', onQ: e => this.setState({ srcQ: e.target.value }),
         count: (() => { const q = (S.srcQ || '').trim().toLowerCase(); const n = q ? kept.filter(d => d.title.toLowerCase().includes(q)).length : kept.length; return q ? n + ' match' : plural(n, 'source'); })() },

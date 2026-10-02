@@ -32,7 +32,8 @@ const CSS = `
 .hm-layers,.hm-tg{display:flex;align-items:center;gap:2px;background:var(--s1);border:1px solid var(--line);border-radius:8px;padding:2px 4px}
 .hm-layers button[aria-pressed=true]{color:var(--ink);box-shadow:inset 0 -2px 0 var(--acc)}
 .hm-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.hm-lv{font:500 12px 'JetBrains Mono',monospace;color:var(--mut);min-width:84px;text-align:center;white-space:nowrap}
+.hm-lv,.hm-spd{font:500 12px 'JetBrains Mono',monospace;color:var(--mut);min-width:84px;text-align:center;white-space:nowrap}
+.hm-spd{min-width:40px}
 .hm-card{position:absolute;left:12px;top:46px;z-index:2;width:min(380px,calc(100% - 24px));max-height:min(46%,320px);overflow:auto;background:var(--s1);border:1px solid var(--line2);border-radius:10px;padding:10px 12px;color:var(--ink2)}
 .hm-card.full{width:calc(100% - 24px);max-height:calc(100% - 64px)}
 .hm-card[hidden]{display:none}
@@ -55,9 +56,10 @@ export function mountMap(host, opts = {}) {
   const legend = `<div class="hm-key"><span><i style="border:1.5px dashed var(--dim)"></i>ring: holds more names, click to open</span><span><i style="background:var(--acc)"></i>a name; larger means more statements</span><span>${opts.wheelZoom ? 'scroll' : 'Ctrl + scroll'} to zoom · drag to pan · ↑ ↓ step a level</span></div>`;
   root.innerHTML = `<canvas></canvas><div class="hm-top"><div class="hm-layers" role="group" aria-label="Layer"><button type="button" data-layer="sources" title="The readings and the names they share">Sources</button><button type="button" data-layer="names" aria-pressed="true" title="Names, nested into groups that open on click">Names</button><button type="button" data-layer="statements" title="What a name sits in">Statements</button></div>` +
     `<div class="hm-tools"><span class="hm-tg" title="Zoom the picture"><button type="button" data-z="out" title="Zoom out">−</button><button type="button" data-z="in" title="Zoom in">+</button><button type="button" data-z="fit" title="Fit everything">Fit</button></span>` +
-    `<span class="hm-tg" title="Move between levels of nesting"><button type="button" data-lv="up" title="Up a level: fewer, larger groups">↑</button><span class="hm-lv"></span><button type="button" data-lv="down" title="Down a level: open the groups">↓</button></span></div></div><div class="hm-card" hidden></div>${opts.legend ? legend : ''}`;
+    `<span class="hm-tg" title="Move between levels of nesting"><button type="button" data-lv="up" title="Up a level: fewer, larger groups">↑</button><span class="hm-lv"></span><button type="button" data-lv="down" title="Down a level: open the groups">↓</button></span>` +
+    `<span class="hm-tg" title="Orbit speed"><button type="button" data-spd="slow" title="Slower orbit">🐢</button><span class="hm-spd"></span><button type="button" data-spd="fast" title="Faster orbit">🐇</button></span></div></div><div class="hm-card" hidden></div>${opts.legend ? legend : ''}`;
   host.appendChild(root);
-  const gc = root.querySelector('canvas'), cardEl = root.querySelector('.hm-card'), layersEl = root.querySelector('.hm-layers'), topEl = root.querySelector('.hm-top'), lvEl = root.querySelector('.hm-lv');
+  const gc = root.querySelector('canvas'), cardEl = root.querySelector('.hm-card'), layersEl = root.querySelector('.hm-layers'), topEl = root.querySelector('.hm-top'), lvEl = root.querySelector('.hm-lv'); { const s = root.querySelector('.hm-spd'); if (s) s.textContent = '0.25×'; }
   const padBottom = opts.padBottom ?? 30, css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888';
   let col = {}, W = 0, H = 0, dpr = 1, topPad = 54, alive = true, raf = 0, frame = 0;
   const readCols = () => { col = { acc: css('--acc'), blue: css('--blue'), dim: css('--dim'), ink: css('--ink'), ink2: css('--ink2'), bad: css('--bad'), amber: css('--amber'), edge: css('--edge'), line2: css('--line2'), bg: css('--bg') }; };
@@ -137,7 +139,7 @@ export function mountMap(host, opts = {}) {
     }
     const cx = W / 2, cy = (H - padBottom + topPad) / 2;
     simulate._t = (simulate._t || 0) + 1;
-    simulate._lay.forEach((L, n) => { const ang = L.base + simulate._t * L.speed * 0.02;
+    simulate._lay.forEach((L, n) => { const ang = L.base + simulate._t * L.speed * 0.02 * (simulate._spd || 0.25);
       const x = cx + Math.cos(ang) * L.radius, y = cy + Math.sin(ang) * L.radius;
       P.set(n, { x: Math.max(30, Math.min(W - 30, x)), y: Math.max(topPad + 14, Math.min(H - padBottom - 20, y)), vx: 0, vy: 0, ang, r: L.r }); });
   }
@@ -160,15 +162,16 @@ export function mountMap(host, opts = {}) {
       if (h) items.push({ id: x.n, x: X(p.x), y: Y(p.y), r: Rz(5), text: x.n, pri: 1e9, force: true }); });
     g.globalAlpha = 1;
     M.vis.forEach(n => { const x = nodeOf(n), p = x && P.get(n); if (!p) return;
-      const r = Rz(holonR(M, n)), sx = X(p.x), sy = Y(p.y), h = hot.has(n), nk = M.nest.kids.get(n).length, isOpen = M.open.has(n), od = odd.get(n);
+      const r = Rz(holonR(M, n)), sx = X(p.x), sy = Y(p.y), h = hot.has(n), nk = M.nest.kids.get(n).length, isOpen = M.open.has(n), od = odd.get(n), isoN = model.nest.parent.get(n) === VIRT, dark = n === VIRT;
+      if (isoN) { g.beginPath(); g.arc(sx, sy, Math.max(1.6, r * 0.8), 0, 6.283); g.fillStyle = '#05070a'; g.globalAlpha = 0.85; g.fill(); g.globalAlpha = 1; return; }
       if (od === 'stands' || od === 'contested') { g.beginPath(); g.arc(sx, sy, r + 6, 0, 6.283); g.strokeStyle = col.amber; g.lineWidth = 2; g.setLineDash(od === 'contested' ? [3, 3] : []); g.stroke(); g.setLineDash([]); }
       if (nk) { g.beginPath(); g.arc(sx, sy, r + 4, 0, 6.283); g.strokeStyle = isOpen ? col.acc : col.line2; g.lineWidth = 1.5; g.setLineDash(isOpen ? [] : [3, 3]); g.stroke(); g.setLineDash([]); }
-      g.beginPath(); g.arc(sx, sy, r + (h ? 2 : 0), 0, 6.283); g.fillStyle = fill(x); g.fill(); if (h || sel === n) { g.strokeStyle = col.ink; g.lineWidth = 2; g.stroke(); }
-      hitsAt.push({ id: n, x: sx, y: sy, r: r + (nk ? 4 : 0) });
+      g.beginPath(); g.arc(sx, sy, r + (h ? 2 : 0), 0, 6.283); g.fillStyle = dark ? '#05070a' : fill(x); g.fill(); if (dark) { g.strokeStyle = col.dim; g.lineWidth = 1.5; g.stroke(); } else if (h || sel === n) { g.strokeStyle = col.ink; g.lineWidth = 2; g.stroke(); }
+      hitsAt.push({ id: n, x: sx, y: sy, r: Math.max(13, r + (nk ? 4 : 0)) });
       items.push({ id: n, x: sx, y: sy, r: r + (nk ? 5 : 1), text: (n.length > 24 ? n.slice(0, 23) + '…' : n) + (nk && !isOpen ? '  +' + (M.nest.size.get(n) - 1) : ''), pri: M.nest.weight.get(n), force: h || sel === n }); });
     g.font = "12px 'Hanken Grotesk', sans-serif";
     const meas = t => { let w = wcache.get(t); if (w == null) { w = g.measureText(t).width; wcache.set(t, w); } return w; };
-    placeLabels(items, W, H - padBottom + 10, meas, 13, topPad - 6).forEach(L => { g.textAlign = L.align; g.fillStyle = hot.has(L.id) || sel === L.id ? col.ink : col.ink2; g.fillText(L.text, L.x, L.y); });
+    placeLabels(items, W, H - padBottom + 10, meas, 13, topPad - 6).forEach(L => { hitsAt.push({ id: L.id, x: L.x, y: L.y - 4, r: 11 }); g.textAlign = L.align; g.fillStyle = hot.has(L.id) || sel === L.id ? col.ink : col.ink2; g.fillText(L.text, L.x, L.y); });
     g.textAlign = 'center';
     if (!D.nodes.length) { g.fillStyle = col.dim; g.font = "13px 'Hanken Grotesk', sans-serif"; g.fillText(opts.empty || 'Names appear here as they are found.', W / 2, H / 2); }
   }
@@ -244,12 +247,13 @@ export function mountMap(host, opts = {}) {
     const h = pick(e); gc.style.cursor = h ? 'pointer' : 'grab'; gc.title = h ? tipOf(h) : ''; });
   gc.addEventListener('pointerup', () => { drag = null; });
   gc.addEventListener('click', e => { if (moved) { moved = false; return; } const h = pick(e);
-    if (layer === 'names') { if (h) { sel = h.id; if (model && model.nest.kids.get(h.id).length) { manual.set(h.id, !model.open.has(h.id)); heat = 1; } } else sel = null; }
+    if (layer === 'names') { if (h && !h.noPick) { sel = h.id; if (model && model.nest.kids.get(h.id).length) { manual.set(h.id, !model.open.has(h.id)); heat = 1; } } else { sel = null; manual.clear(); view.k = 1; view.x = 0; view.y = 0; heat = 1; } }
     else if (layer === 'sources') sel = h ? h.id : null;
     dirty = true; renderCard(); });
   gc.addEventListener('dblclick', e => { if (!pick(e)) fit(); });
   gc.addEventListener('wheel', e => { if (!(opts.wheelZoom || e.ctrlKey || e.metaKey)) return; e.preventDefault(); const r = gc.getBoundingClientRect(); zoomAt(e.clientX - r.left, e.clientY - r.top, Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0015))); }, { passive: false });
-  root.querySelector('.hm-tools').addEventListener('click', e => { const b = e.target.closest('[data-z],[data-lv]'); if (!b || b.disabled) return;
+  root.querySelector('.hm-tools').addEventListener('click', e => { const b = e.target.closest('[data-z],[data-lv],[data-spd]'); if (!b || b.disabled) return;
+    if (b.dataset.spd) { simulate._spd = Math.min(8, Math.max(0.1, (simulate._spd || 0.5) * (b.dataset.spd === 'fast' ? 1.6 : 1 / 1.6))); const el = root.querySelector('.hm-spd'); if (el) el.textContent = (simulate._spd).toFixed(1) + '×'; return; }
     if (b.dataset.z === 'fit') fit(); else if (b.dataset.z) zoomAt(W / 2, H / 2, b.dataset.z === 'in' ? 1.35 : 1 / 1.35); else if (b.dataset.lv === 'up') levelUp(); else levelDown(); });
   layersEl.addEventListener('click', e => { const b = e.target.closest('[data-layer]'); if (b) setLayer(b.dataset.layer); });
   cardEl.addEventListener('click', e => { const b = e.target.closest('[data-name],[data-layer],[data-profile]'); if (!b) return;
