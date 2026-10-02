@@ -140,46 +140,6 @@ select option{background:var(--s1);color:var(--ink)}
         </div>
       </sc-if>
 
-      <sc-if value="{{ hasJust }}" hint-placeholder-val="{{ false }}">
-        <div style="display:flex;flex-direction:column;gap:6px;padding:4px 0 14px;border-bottom:1px solid var(--line)">
-          <div style="display:flex;gap:4px 12px;align-items:baseline;flex-wrap:wrap">
-            <span style="font:500 18px 'Newsreader',serif;color:var(--ink)">Added {{ just.title }}</span>
-            <span style="font:400 13px 'Hanken Grotesk';color:var(--dim)">{{ just.summary }}</span>
-            <button onClick="{{ dismissJust }}" title="Dismiss" aria-label="Dismiss" style="all:unset;margin-left:auto;cursor:pointer;color:var(--dim);font-size:13px;padding:0 4px" style-hover="color:var(--ink)">✕</button>
-          </div>
-          <sc-if value="{{ just.hasNames }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;gap:2px 14px;flex-wrap:wrap">
-              <sc-for list="{{ just.names }}" as="x" hint-placeholder-count="3">
-                <button onClick="{{ x.onClick }}" title="{{ x.tip }}" style="all:unset;cursor:pointer;font:{{ x.w }} 14px 'Hanken Grotesk';color:{{ x.col }}" style-hover="text-decoration:underline">{{ x.label }}</button>
-              </sc-for>
-            </div>
-          </sc-if>
-          <sc-if value="{{ just.hasOdd }}" hint-placeholder-val="{{ false }}">
-            <div style="display:flex;flex-direction:column;gap:3px">
-              <sc-for list="{{ just.odd }}" as="o" hint-placeholder-count="1">
-                <div style="font:400 13px/1.45 'Hanken Grotesk';color:var(--ink2);max-width:80ch"><span style="color:var(--amber);font-weight:600">{{ o.tag }}</span> “{{ o.label }}” <span style="color:var(--dim)">· {{ o.why }}</span> <button onClick="{{ o.onInspect }}" style="all:unset;cursor:pointer;color:var(--acc);font-weight:600" style-hover="color:var(--ink)">Inspect</button> <button onClick="{{ o.onCorrect }}" title="That's incorrect — strike this as a name" style="all:unset;cursor:pointer;color:var(--dim);font-weight:500" style-hover="color:var(--bad)">That's incorrect</button></div>
-              </sc-for>
-              <sc-if value="{{ just.oddMore }}" hint-placeholder-val="{{ false }}"><button onClick="{{ just.onOddAll }}" style="all:unset;cursor:pointer;font:400 13px 'Hanken Grotesk';color:var(--dim)" style-hover="color:var(--ink)">{{ just.oddMore }}</button></sc-if>
-            </div>
-          </sc-if>
-          <sc-for list="{{ just.noteLines }}" as="nl" hint-placeholder-count="1"><span style="font:400 13px/1.45 'Hanken Grotesk';color:var(--dim);max-width:75ch">{{ nl.text }}</span></sc-for>
-          <sc-for list="{{ just.noteGroups }}" as="g" hint-placeholder-count="1">
-            <details style="font:400 13px/1.45 'Hanken Grotesk';color:var(--dim);max-width:80ch">
-              <summary style="cursor:pointer;color:var(--mut)">From {{ g.repo }} · {{ g.count }}</summary>
-              <div style="display:flex;flex-wrap:wrap;gap:2px 16px;padding-top:6px;font:400 12px 'JetBrains Mono',ui-monospace,monospace;color:var(--dim)">
-                <sc-for list="{{ g.files }}" as="f" hint-placeholder-count="3"><span>{{ f.path }}</span></sc-for>
-              </div>
-            </details>
-          </sc-for>
-          <div style="display:flex;gap:4px 18px;flex-wrap:wrap;padding-top:2px">
-            <sc-if value="{{ justSeen }}" hint-placeholder-val="{{ false }}"><button onClick="{{ justKeep }}" style="all:unset;cursor:pointer;font:600 14px 'Hanken Grotesk';color:var(--acc)" style-hover="color:var(--ink)">Keep as a source</button></sc-if>
-            <button onClick="{{ just.onRead }}" style="all:unset;cursor:pointer;font:600 14px 'Hanken Grotesk';color:var(--acc)" style-hover="color:var(--ink)">Read it →</button>
-            <sc-if value="{{ just.hasReplay }}" hint-placeholder-val="{{ false }}"><button onClick="{{ just.onReplay }}" style="all:unset;cursor:pointer;font:500 14px 'Hanken Grotesk';color:var(--mut)" style-hover="color:var(--ink)">Watch it being read</button></sc-if>
-            <button onClick="{{ just.onConnections }}" style="all:unset;cursor:pointer;font:500 14px 'Hanken Grotesk';color:var(--mut)" style-hover="color:var(--ink)">Connections</button>
-            <button onClick="{{ just.onPatterns }}" style="all:unset;cursor:pointer;font:500 14px 'Hanken Grotesk';color:var(--mut)" style-hover="color:var(--ink)">Patterns</button>
-          </div>
-        </div>
-      </sc-if>
       <sc-if value="{{ showDropStrip }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap;font:400 14px 'Hanken Grotesk';color:var(--mut);padding:2px 0">
           <span style="white-space:nowrap">Drop, paste or link anything to add it.</span>
