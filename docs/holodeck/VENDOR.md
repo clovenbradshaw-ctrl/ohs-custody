@@ -3,6 +3,10 @@
 Upstream: https://github.com/clovenbradshaw-ctrl/holodeck @ `b0b4984a13faf82e1a1ffc936406e8d64abfca00`
 Vendored: 2026-10-02T03:18:19+00:00 by `python3 vendor_holodeck.py`
 
+## Partial re-sync (2026-10-06)
+
+REC's glyph changed from ⊛ to ◉ (EO wiki, Operator Naming). Two files were copied byte-identical from `scores-patch-points/holodeck @ d929a2e`, by hand, because `vendor_holodeck.py` was not re-run: `vendor/bare-metal/src/operators.js` and `vendor/bare-metal/public/data-chat.js`. Everything else here is still as of the commit above. Records already written keep ⊛; read both as REC.
+
 ## Scope
 
 Runtime files only: `index.html`, top-level app `*.js` (minus
