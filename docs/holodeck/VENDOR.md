@@ -5,7 +5,7 @@ Vendored: 2026-10-02T03:18:19+00:00 by `python3 vendor_holodeck.py`
 
 ## Partial re-sync (2026-10-06)
 
-REC's glyph changed from ⊛ to ◉ (EO wiki, Operator Naming). Two files were copied byte-identical from `scores-patch-points/holodeck @ d929a2e`, by hand, because `vendor_holodeck.py` was not re-run: `vendor/bare-metal/src/operators.js` and `vendor/bare-metal/public/data-chat.js`. Everything else here is still as of the commit above. Records already written keep ⊛; read both as REC.
+REC's glyph changed from ⊛ to ◉ (EO wiki, Operator Naming). Two files were copied byte-identical from `scores-patch-points/holodeck @ d929a2e`, by hand, because `vendor_holodeck.py` was not re-run: `vendor/bare-metal/src/operators.js` and `vendor/bare-metal/public/data-chat.js`. A second pass the same day copied the same two files again for CON's glyph (⤫ → ⋈) from the next `scores-patch-points/holodeck` commit. Everything else here is still as of the commit above. Records already written keep ⊛; read both as REC.
 
 ## Scope
 
